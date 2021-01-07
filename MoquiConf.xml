@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- No copyright or license for configuration file, details here are not considered a creative work. -->
+<moqui-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-2.1.xsd">
+    <screen-facade>
+        <!-- qvt is a custom extension for Quasar & Vue JS component templates (extended HTML) -->
+        <screen-text-output type="qvt" mime-type="text/html" always-standalone="true"
+                macro-template-location="component://moqui-qfuncs/template/screen-macro/DefaultScreenMacros.qvt.ftl"/>
+        <!--<screen-text-output type="qjs" mime-type="application/javascript" always-standalone="true"
+                macro-template-location="template/screen-macro/DefaultScreenMacros.plain.ftl"/>
+        <screen-text-output type="qvue" mime-type="text/html" always-standalone="true"
+                macro-template-location="template/screen-macro/DefaultScreenMacros.plain.ftl"/>-->
+
+        <screen location="component://webroot/screen/webroot.xml" default-subscreen="qfuncs">
+            <!-- qfuncs is a SPA wrapper around apps.xml just like vapps.xml -->
+            <subscreens-item name="qfuncs" menu-include="false" location="component://moqui-qfuncs/screen/qfapps.xml"/>
+            <subscreens-item name="qfstatic" menu-include="false" location="component://moqui-qfuncs/screen/qfstatic.xml"/>
+        </screen>
+    </screen-facade>
+</moqui-conf>
