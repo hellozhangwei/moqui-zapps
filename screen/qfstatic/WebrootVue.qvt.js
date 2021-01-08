@@ -1,5 +1,10 @@
 /* This software is in the public domain under CC0 1.0 Universal plus a Grant of Patent License. */
 
+// some globals for all Vue components to directly use the moqui object (for methods, constants, etc) and the window object
+Vue.prototype.moqui = moqui;
+Vue.prototype.moment = moment;
+Vue.prototype.window = window;
+
 moqui.urlExtensions = { js:'qjs', vue:'qvue', vuet:'qvt' }
 
 // simple stub for define if it doesn't exist (ie no require.js, etc); mimic pattern of require.js define()
@@ -75,8 +80,22 @@ moqui.notifyValidationError = function(valError) {
     moqui.webrootVue.$q.notify($.extend({}, moqui.notifyOptsError, { message:message }));
     moqui.webrootVue.addNotify(message, 'negative');
 };
-moqui.handleAjaxError = function(jqXHR, textStatus, errorThrown) {
-    var resp = jqXHR.responseText;
+moqui.handleAjaxError = function(jqXHR, textStatus, errorThrown, responseText) {
+    var resp;
+    if (responseText) {
+        resp = responseText;
+    } else if (jqXHR.responseType === 'blob') {
+        var reader = new FileReader();
+        reader.onload = function(evt) {
+            var bodyText = evt.target.result;
+            moqui.handleAjaxError(jqXHR, textStatus, errorThrown, bodyText);
+        };
+        reader.readAsText(jqXHR.response);
+        return;
+    } else {
+        resp = jqXHR.responseText;
+    }
+
     var respObj;
     try { respObj = JSON.parse(resp); } catch (e) { /* ignore error, don't always expect it to be JSON */ }
     console.warn('ajax ' + textStatus + ' (' + jqXHR.status + '), message ' + errorThrown /*+ '; response: ' + resp*/);
@@ -87,6 +106,7 @@ moqui.handleAjaxError = function(jqXHR, textStatus, errorThrown) {
     } else {
         if (respObj && moqui.isPlainObject(respObj)) {
             notified = moqui.notifyMessages(respObj.messageInfos, respObj.errors, respObj.validationErrors);
+            console.log("got here notified ", notified);
         } else if (resp && moqui.isString(resp) && resp.length) {
             notified = moqui.notifyMessages(resp);
         }
@@ -102,6 +122,7 @@ moqui.handleAjaxError = function(jqXHR, textStatus, errorThrown) {
             moqui.webrootVue.addNotify(msg, 'negative');
         }
     } else if (!notified) {
+        console.log("got here 2 notified ", notified);
         var errMsg = 'Error: ' + errorThrown + ' (' + textStatus + ')';
         moqui.webrootVue.$q.notify($.extend({}, moqui.notifyOptsError, { message:errMsg }));
         moqui.webrootVue.addNotify(errMsg, 'negative');
@@ -140,10 +161,15 @@ moqui.loadComponent = function(urlInfo, callback, divId) {
         path = urlInfo.path; extraPath = urlInfo.extraPath; search = urlInfo.search;
         bodyParameters = urlInfo.bodyParameters; renderModes = urlInfo.renderModes;
     }
+    // if Quasar says it's mobile then tell the server via _uiType parameter
+    console.log("Load Component " + JSON.stringify(urlInfo) + " Window Width " + window.innerWidth + " Quasar Platform: " + JSON.stringify(Quasar.Platform.is) + " search: " + search);
+    if ((window.innerWidth <= 600 || Quasar.Platform.is.mobile) && (!search || search.indexOf("_uiType") === -1)) {
+        search = (search || '') + '&_uiType=mobile';
+    }
 
     /* NOTE DEJ 20200718: uncommented componentCache but leaving comment in place in case remains an issue (makes user experience much smoother):
      * CACHE DISABLED: issue with more recent Vue JS where cached components don't re-render when assigned so screens don't load
-     * to reproduce: make a screen like a dashboad slow loading with a Thread.sleep(5000), from another screen select it
+     * to reproduce: make a screen like a dashboard slow loading with a Thread.sleep(5000), from another screen select it
      * in the menu and before it loads click on a link for another screen, won't load and gets into a bad state where
      * nothing in the same path will load, need to somehow force it to re-render;
      * note that vm.$forceUpdate() in m-subscreens-active component before return false did not work
@@ -318,19 +344,22 @@ Vue.component('m-stylesheet', {
 Vue.component('m-container-box', {
     name: "mContainerBox",
     props: { type:{type:String,'default':'default'}, title:String, initialOpen:{type:Boolean,'default':true} },
-    data: function() { return { isBodyOpen:this.initialOpen }},
+    data: function() { return { expanded:this.initialOpen }},
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
-    '<q-card flat bordered class="q-ma-sm">' +
-        '<q-card-actions @click.self="toggleBody">' +
-            '<h5 v-if="title && title.length" @click="toggleBody">{{title}}</h5>' +
+    '<q-card flat bordered class="q-ma-sm m-container-box">' +
+        '<q-card-actions @click="expanded = !expanded">' +
+        '<q-btn color="grey" round flat dense :icon="expanded?\'fa fa-angle-down\':\'fa fa-angle-right\'" />' +
+            '<span class="text-h5" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
         '</q-card-actions>' +
-        '<q-card-section :class="{in:isBodyOpen}"><slot></slot></q-card-section>' +
-    '</q-card>',
-    methods: { toggleBody: function() { this.isBodyOpen = !this.isBodyOpen; } }
+        '<q-slide-transition><div v-show="expanded">' +
+            '<q-separator />' +
+            '<q-card-section :class="{in:expanded}"><slot></slot></q-card-section>' +
+        '</div></q-slide-transition>' +
+    '</q-card>'
 });
 Vue.component('m-box-body', {
     name: "mBoxBody",
@@ -340,11 +369,11 @@ Vue.component('m-box-body', {
 });
 Vue.component('m-dialog', {
     name: "mDialog",
-    props: { draggable:{type:Boolean,default:true}, value:{type:Boolean,'default':false}, id:String, color:String, width:{type:String}, title:{type:String} },
+    props: { draggable:{type:Boolean,'default':true}, value:{type:Boolean,'default':false}, id:String, color:String, width:{type:String}, title:{type:String} },
     data: function() { return { isShown:false }; },
     template:
-    '<q-dialog v-bind:value="value" v-on:input="$emit(\'input\', $event)" :id="id" @show="onShow" @hide="onHide">' +
-        '<q-card ref="dialogCard" flat bordered :style="{width:((width||760)+\'px\')}" style="max-width:90vw;">' +
+    '<q-dialog v-bind:value="value" v-on:input="$emit(\'input\', $event)" :id="id" @show="onShow" @hide="onHide" :maximized="$q.platform.is.mobile">' +
+        '<q-card ref="dialogCard" flat bordered :style="{width:((width||760)+\'px\'),\'max-width\':($q.platform.is.mobile?\'100vw\':\'90vw\')}">' +
             '<q-card-actions ref="dialogHeader" :style="{cursor:(draggable?\'move\':\'default\')}">' +
                 '<h5 class="q-pl-sm non-selectable">{{title}}</h5><q-space></q-space>' +
                 '<q-btn icon="close" flat round dense v-close-popup></q-btn>' +
@@ -401,16 +430,15 @@ Vue.component('m-dialog', {
 });
 Vue.component('m-container-dialog', {
     name: "mContainerDialog",
-    props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String}, openDialog:{type:Boolean,'default':false} },
+    props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String},
+        openDialog:{type:Boolean,'default':false}, buttonIcon:{type:String,'default':'open_in_new'} },
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<q-btn dense outline no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn size="xs" flat outline no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
-    methods: {
-        hide: function() { this.isShown = false; },
-    },
+    methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
     mounted: function() { if (this.openDialog) { this.isShown = true; } }
 });
 Vue.component('m-dynamic-container', {
@@ -433,7 +461,7 @@ Vue.component('m-dynamic-dialog', {
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense outline no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
+        '<q-btn size="xs" rounded outline no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
@@ -491,7 +519,7 @@ Vue.component('m-tree-item', {
     name: "mTreeItem",
     template:
     '<li :id="model.id">' +
-        '<i v-if="isFolder" @click="toggle" class="glyphicon" :class="{\'glyphicon-chevron-right\':!open, \'glyphicon-chevron-down\':open}"></i>' +
+        '<i v-if="isFolder" @click="toggle" class="fa" :class="{\'fa-chevron-right\':!open, \'fa-chevron-down\':open}"></i>' +
         '<i v-else class="fa fa-square-o"></i>' +
         ' <span @click="setSelected">' +
             '<m-link v-if="model.a_attr" :href="model.a_attr.urlText" :load-id="model.a_attr.loadId" :class="{\'text-success\':selected}">{{model.text}}</m-link>' +
@@ -539,7 +567,7 @@ Vue.component('m-editable', {
             var vm = this; edConfig.loadurl = this.loadUrl; edConfig.loadtype = "POST";
             edConfig.loaddata = function(value) { return $.extend({ currentValue:value, moquiSessionToken:vm.$root.moquiSessionToken }, vm.loadParameters); };
         }
-        $(this.$el).editable(this.url, edConfig);
+        // TODO, replace with something in quasar: $(this.$el).editable(this.url, edConfig);
     },
     render: function(createEl) { return createEl(this.labelType, { attrs:{ id:this.id, 'class':'editable-label' }, domProps: { innerHTML:this.labelValue } }); }
 });
@@ -552,7 +580,9 @@ Vue.component('m-form', {
     data: function() { return { fields:Object.assign({}, this.fieldsInitial), fieldsChanged:{}, buttonClicked:null }},
     // NOTE: <slot v-bind:fields="fields"> also requires prefix from caller, using <m-form v-slot:default="formProps"> in qvt.ftl macro
     // see https://vuejs.org/v2/guide/components-slots.html
-    template: '<q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm"><slot v-bind:fields="fields"></slot></q-form>',
+    template:
+        '<q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
+            '<slot v-bind:fields="fields"></slot></q-form>',
     methods: {
         submitForm: function() {
             if (this.noValidate) {
@@ -564,6 +594,7 @@ Vue.component('m-form', {
                     if (success) {
                         vm.submitGo();
                     } else {
+                        /*
                         // For convenience, attempt to focus the first invalid element.
                         // Begin by finding the first invalid input
                         var invEle = jqEl.find('div.has-error input, div.has-error select, div.has-error textarea').first();
@@ -587,6 +618,7 @@ Vue.component('m-form', {
                                 } else invEle.focus();
                             } else invEle.focus();
                         }
+                        */
                     }
                 })
             }
@@ -596,6 +628,7 @@ Vue.component('m-form', {
             this.fieldsChanged = {};
         },
         submitGo: function() {
+            var vm = this;
             var jqEl = $(this.$el);
             // get button pressed value and disable ASAP to avoid double submit
             var btnName = null, btnValue = null;
@@ -606,12 +639,21 @@ Vue.component('m-form', {
                 setTimeout(function() { $btn.prop('disabled', false); }, 3000);
             }
             var formData = Object.keys(this.fields).length ? new FormData() : new FormData(this.$refs.qForm.$el);
-            $.each(this.fields, function(key, value) { if (value) { formData.set(key, value); } });
-            for (var fieldName of formData.keys()) {
+            $.each(this.fields, function(key, value) { formData.set(key, value || ""); });
+            // NOTE: using iterator directly to avoid using 'for of' which requires more recent ES version (for minify, browser compatibility)
+            var formDataIterator = formData.entries()[Symbol.iterator]();
+            while (true) {
+                var iterEntry = formDataIterator.next();
+                if (iterEntry.done) break;
+                var pair = iterEntry.value;
+                var fieldName = pair[0];
+                var fieldValue = pair[1];
                 // NOTE: this shouldn't happen as when not getting from FormData q-input with mask should have null value when empty, but just in case skip String values that are unfilled masks
                 // NOTE: with q-input mask place holder is underscore, look for 2; this will cause issues if a valid user input starts with 2 underscores, may need better approach here and in m-form-link
-                var fieldValue = formData.get(fieldName);
-                if (moqui.isString(fieldValue) && fieldValue.startsWith("__")) formData.delete(fieldName);
+                if (moqui.isString(fieldValue) && fieldValue.startsWith("__")) {
+                    // instead of delete set to empty string, otherwise can't clear masked fields: formData["delete"](fieldName);
+                    formData.set(fieldName, "");
+                }
             }
             formData.set('moquiSessionToken', this.$root.moquiSessionToken);
             if (btnName) { formData.set(btnName, btnValue); }
@@ -619,11 +661,75 @@ Vue.component('m-form', {
             // console.info('m-form parameters ' + JSON.stringify(formData));
             // for (var key of formData.keys()) { console.log('m-form key ' + key + ' val ' + JSON.stringify(formData.get(key))); }
             this.$root.loading++;
-            $.ajax({ type:this.method, url:(this.$root.appRootPath + this.action), data:formData, contentType:false, processData:false,
-                headers:{Accept:'application/json'}, error:moqui.handleLoadError, success:this.handleResponse });
+
+            /* this didn't work, JS console error: Failed to execute 'createObjectURL' on 'URL': Overload resolution failed
+            $.ajax({ type:this.method, url:(this.$root.appRootPath + this.action), data:formData, contentType:false, processData:false, dataType:'text',
+                xhrFields:{responseType:'blob'}, headers:{Accept:'application/json'}, error:moqui.handleLoadError, success:this.handleResponse });
+             */
+
+            var xhr = new XMLHttpRequest();
+            xhr.open(this.method, (this.$root.appRootPath + this.action), true);
+            xhr.responseType = 'blob';
+            xhr.withCredentials = true;
+            xhr.onload = function () {
+                if (this.status === 200) {
+                    // decrement loading counter
+                    vm.$root.loading--;
+
+                    var disposition = xhr.getResponseHeader('Content-Disposition');
+                    if (disposition && (disposition.indexOf('attachment') !== -1 || disposition.indexOf('inline') !== -1)) {
+                        // download code here thanks to Jonathan Amend, see: https://stackoverflow.com/questions/16086162/handle-file-download-from-ajax-post/23797348#23797348
+                        var blob = this.response;
+                        var filename = "";
+                        if (disposition && disposition.indexOf('attachment') !== -1) {
+                            var filenameRegex = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
+                            var matches = filenameRegex.exec(disposition);
+                            if (matches != null && matches[1]) filename = matches[1].replace(/['"]/g, '');
+                        }
+
+                        if (typeof window.navigator.msSaveBlob !== 'undefined') {
+                            window.navigator.msSaveBlob(blob, filename);
+                        } else {
+                            var URL = window.URL || window.webkitURL;
+                            var downloadUrl = URL.createObjectURL(blob);
+
+                            if (filename) {
+                                var a = document.createElement("a");
+                                if (typeof a.download === 'undefined') {
+                                    window.location.href = downloadUrl;
+                                } else {
+                                    a.href = downloadUrl;
+                                    a.download = filename;
+                                    document.body.appendChild(a);
+                                    a.click();
+                                }
+                            } else {
+                                window.location.href = downloadUrl;
+                            }
+
+                            setTimeout(function () { URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
+                        }
+                    } else {
+                        var reader = new FileReader();
+                        reader.onload = function(evt) {
+                            var bodyText = evt.target.result;
+                            try {
+                                vm.handleResponse(JSON.parse(bodyText));
+                            } catch(e) {
+                                vm.handleResponse(bodyText);
+                            }
+
+                        };
+                        reader.readAsText(this.response);
+                    }
+                } else {
+                    moqui.handleLoadError(this, this.statusText, "");
+                }
+            };
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.send(formData);
         },
         handleResponse: function(resp) {
-            this.$root.loading--;
             var notified = false;
             // console.info('m-form response ' + JSON.stringify(resp));
             if (resp && moqui.isPlainObject(resp)) {
@@ -642,7 +748,8 @@ Vue.component('m-form', {
             } else if (!notified) {
                 moqui.webrootVue.$q.notify($.extend({}, moqui.notifyOpts, { message:"Submit successful" }));
             }
-        },
+        }
+        /* TODO
         fieldChange: function (evt) {
             var targetDom = evt.delegateTarget; var targetEl = $(targetDom);
             if (targetEl.hasClass("input-group") && targetEl.children("input").length) {
@@ -656,7 +763,6 @@ Vue.component('m-form', {
                     changed = targetDom.checked !== targetDom.defaultChecked; }
                 else { changed = targetDom.value !== targetDom.defaultValue; }
             } else if (targetDom.nodeName === "SELECT") {
-                /* TODO
                 if (targetDom.multiple) {
                     var optLen = targetDom.options.length;
                     for (var i = 0; i < optLen; i++) {
@@ -666,7 +772,6 @@ Vue.component('m-form', {
                 } else {
                     changed = !targetDom.options[targetDom.selectedIndex].defaultSelected;
                 }
-                 */
             }
             // console.log("changed? " + changed + " node " + targetDom.nodeName + " type " + targetEl.attr("type") + " " + targetEl.attr("name") + " to " + targetDom.value + " default " + targetDom.defaultValue);
             // console.log(targetDom.defaultValue);
@@ -682,21 +787,19 @@ Vue.component('m-form', {
                 targetEl.removeClass("is-changed");
             }
         }
+         */
     },
     mounted: function() {
         var vm = this;
         var jqEl = $(this.$el);
-        /* TODO if (!this.noValidate) jqEl.validate({ errorClass: 'help-block', errorElement: 'span',
-            highlight: function(element, errorClass, validClass) { $(element).parents('.form-group').removeClass('has-success').addClass('has-error'); },
-            unhighlight: function(element, errorClass, validClass) { $(element).parents('.form-group').removeClass('has-error').addClass('has-success'); }
-        });*/
-        // TODO jqEl.find('[data-toggle="tooltip"]').tooltip({placement:'auto top'});
-        if (this.focusField && this.focusField.length > 0) jqEl.find('[name^="' + this.focusField + '"]').addClass('default-focus').focus();
-        // TODO: should not need to watch input fields any more
+        if (this.focusField && this.focusField.length) jqEl.find('[name^="' + this.focusField + '"]').addClass('default-focus').focus();
+
+        /* TODO: should not need to watch input fields any more
         // watch changed fields
         jqEl.find(':input').on('change', this.fieldChange);
         // special case for date-time using bootstrap-datetimepicker
         jqEl.find('div.input-group.date').on('change', this.fieldChange);
+        */
         // TODO: find other way to get button clicked (Vue event?)
         // watch button clicked
         jqEl.find('button[type="submit"], input[type="submit"], input[type="image"]').on('click', function() { vm.buttonClicked = this; });
@@ -706,7 +809,9 @@ Vue.component('m-form-link', {
     name: "mFormLink",
     props: { fieldsInitial:Object, action:{type:String,required:true}, focusField:String, noValidate:Boolean, bodyParameterNames:Array },
     data: function() { return { fields:Object.assign({}, this.fieldsInitial) }},
-    template: '<q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm"><slot :clearForm="clearForm" :fields="fields"></slot></q-form>',
+    template:
+        '<q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
+            '<slot :clearForm="clearForm" :fields="fields"></slot></q-form>',
     methods: {
         submitForm: function() {
             if (this.noValidate) {
@@ -750,8 +855,15 @@ Vue.component('m-form-link', {
             var plainKeyList = [];
             var parmStr = "";
             var bodyParameters = null;
-            for(var pair of formData.entries()) {
-                var key = pair[0]; var value = pair[1];
+            // NOTE: using iterator directly to avoid using 'for of' which requires more recent ES version (for minify, browser compatibility)
+            var formDataIterator = formData.entries()[Symbol.iterator]();
+            while (true) {
+                var iterEntry = formDataIterator.next();
+                if (iterEntry.done) break;
+                var pair = iterEntry.value;
+                var key = pair[0];
+                var value = pair[1];
+
                 if (value.trim().length === 0 || key === "moquiSessionToken" || key === "moquiFormName" || key.indexOf('[]') > 0) continue;
                 if (key.indexOf("_op") > 0 || key.indexOf("_not") > 0 || key.indexOf("_ic") > 0) {
                     extraList.push({name:key, value:value});
@@ -840,24 +952,19 @@ Vue.component('m-form-paginate', {
 Vue.component('m-form-go-page', {
     name: "mFormGoPage",
     props: { idVal:{type:String,required:true}, maxIndex:Number, formList:Object },
+    data: function() { return { pageIndex:"" } },
     template:
-    '<form v-if="!formList || (formList.paginate && formList.paginate.pageMaxIndex > 4)" @submit.prevent="goPage" class="form-inline" :id="idVal+\'_GoPage\'">' +
-        '<div class="form-group">' +
-            '<label class="sr-only" :for="idVal+\'_GoPage_pageIndex\'">Page Number</label>' +
-            '<input type="text" class="form-control" size="6" name="pageIndex" :id="idVal+\'_GoPage_pageIndex\'" placeholder="Page #">' +
-        '</div><button type="submit" class="btn btn-default">Go</button>' +
-    '</form>',
+    '<q-form v-if="!formList || (formList.paginate && formList.paginate.pageMaxIndex > 4)" @submit.prevent="goPage" :id="idVal+\'_GoPage\'">' +
+        '<q-input dense v-model="pageIndex" type="text" size="4" name="pageIndex" :id="idVal+\'_GoPage_pageIndex\'" placeholder="Page #"' +
+        '   :rules="[val => /^\\d*$/.test(val) || \'digits only\', val => ((formList && +val <= formList.paginate.pageMaxIndex) || (maxIndex && +val < maxIndex)) || \'higher than max\']"></q-input>' +
+        '<q-btn dense flat no-caps type="submit" label="Go"></q-btn>' +
+    '</q-form>',
     methods: { goPage: function() {
         var formList = this.formList;
-        var jqEl = $('#' + this.idVal + '_GoPage_pageIndex');
-        var newIndex = jqEl.val() - 1;
-        if (newIndex < 0 || (formList && newIndex > formList.paginate.pageMaxIndex) || (this.maxIndex && newIndex > this.maxIndex)) {
-            jqEl.parents('.form-group').addClass('has-error');
-        } else {
-            jqEl.parents('.form-group').removeClass('has-error');
-            if (formList) { formList.setPageIndex(newIndex); } else { this.$root.setParameters({pageIndex:newIndex}); }
-            jqEl.val('');
-        }
+        var newIndex = +this.pageIndex - 1;
+        if (formList) { formList.setPageIndex(newIndex); } else { this.$root.setParameters({pageIndex:newIndex}); }
+        var vm = this;
+        this.$nextTick(function() { vm.pageIndex = ""; });
     }}
 });
 Vue.component('m-form-column-config', {
@@ -878,6 +985,8 @@ Vue.component('m-form-column-config', {
                         '<q-btn-dropdown dense outline no-caps label="Display"><q-list dense>' +
                             '<q-item v-for="(toColumn, toColumnIdx) in columns.slice(1)" :key="toColumn.id" clickable>' +
                                 '<q-item-section @click="moveToCol(columnIdx, fieldIdx, toColumnIdx+1)">{{toColumn.label}}</q-item-section></q-item>' +
+                            '<q-item clickable>' +
+                                '<q-item-section @click="moveToCol(columnIdx, fieldIdx, columns.length+1)">New Column</q-item-section></q-item>' +
                         '</q-list></q-btn-dropdown>' +
                     '</q-item-section>' +
                     '<q-item-section v-else side><q-btn-group flat>' +
@@ -935,11 +1044,13 @@ Vue.component('m-form-column-config', {
             this.$refs.mForm.fields.ResetColumns = "ResetColumns";
             this.$refs.mForm.submitGo();
         },
-        generalFormFields() {
+        generalFormFields: function() {
             var fields = this.$refs.mForm.fields;
             fields.formLocation = this.formLocation;
             if (this.findParameters) for (var curKey in Object.keys(this.findParameters))
                 fields[curKey] = this.findParameters[curKey];
+            console.log("Save column config " + this.formLocation + " Window Width " + window.innerWidth + " Quasar Platform: " + JSON.stringify(Quasar.Platform.is));
+            if (window.innerWidth <= 600 || Quasar.Platform.is.mobile) fields._uiType = 'mobile';
         }
     }
 });
@@ -1030,13 +1141,13 @@ Vue.component('m-form-list', {
 Vue.component('m-date-time', {
     name: "mDateTime",
     props: { id:String, name:{type:String,required:true}, value:String, type:{type:String,'default':'date-time'}, label:String,
-        size:String, format:String, tooltip:String, form:String, required:String, disable:Boolean, autoYear:String,
+        size:String, format:String, tooltip:String, form:String, required:String, rules:Array, disable:Boolean, autoYear:String,
         minuteStep:{type:Number,'default':5} },
     template:
     // NOTE: tried :fill-mask="formatVal" but results in all Y, only supports single character for mask placeholder... how to show more helpful date mask?
     // TODO: add back @focus="focusDate" @blur="blurDate" IFF needed given different mask/etc behavior
-    '<q-input dense outlined stack-label :label="label" v-bind:value="value" v-on:input="$emit(\'input\', $event)"' +
-            ' :mask="inputMask" fill-mask :id="id" :name="name" :form="form" :disable="disable" :size="sizeVal" style="max-width:fit-content;">' +
+    '<q-input dense outlined stack-label :label="label" v-bind:value="value" v-on:input="$emit(\'input\', $event)" :rules="rules"' +
+            ' :mask="inputMask" fill-mask :id="id" :name="name" :form="form" :disable="disable" :size="sizeVal" style="max-width:max-content;">' +
         '<template v-slot:prepend v-if="type==\'date\' || type==\'date-time\' || !type">' +
             '<q-icon name="event" class="cursor-pointer">' +
                 '<q-popup-proxy ref="qDateProxy" transition-show="scale" transition-hide="scale">' +
@@ -1091,8 +1202,8 @@ Vue.component('m-date-time', {
         var value = this.value;
         var format = this.formatVal;
         var jqEl = $(this.$el);
+        /* TODO
         if (this.type === "time") {
-            /* TODO
             jqEl.datetimepicker({toolbarPlacement:'top', debug:false, showClose:true, showClear:true, showTodayButton:true, useStrict:true,
                 defaultDate:(value && value.length ? moment(value,this.formatVal) : null), format:format,
                 extraFormats:this.extraFormatsVal, stepping:this.minuteStep, locale:this.$root.locale,
@@ -1104,11 +1215,9 @@ Vue.component('m-date-time', {
             jqEl.on("dp.change", function() { jqEl.val(jqEl.find("input").first().val()); jqEl.trigger("change"); vm.$emit('input', this.value); })
 
             jqEl.val(jqEl.find("input").first().val());
-             */
 
             // TODO if (this.tooltip && this.tooltip.length) jqEl.tooltip({ title: this.tooltip, placement: "auto" });
         } else {
-            /* TODO
             jqEl.datetimepicker({toolbarPlacement:'top', debug:false, showClose:true, showClear:true, showTodayButton:true, useStrict:true,
                 defaultDate:(value && value.length ? moment(value,this.formatVal) : null), format:format,
                 extraFormats:this.extraFormatsVal, stepping:this.minuteStep, locale:this.$root.locale,
@@ -1122,10 +1231,10 @@ Vue.component('m-date-time', {
             jqEl.on("dp.change", function() { jqEl.val(jqEl.find("input").first().val()); jqEl.trigger("change"); vm.$emit('input', this.value); })
 
             jqEl.val(jqEl.find("input").first().val());
-             */
 
             // TODO if (this.tooltip && this.tooltip.length) jqEl.tooltip({ title: this.tooltip, placement: "auto" });
         }
+        */
         // TODO if (format === "YYYY-MM-DD") { jqEl.find('input').inputmask("yyyy-mm-dd", { clearIncomplete:false, clearMaskOnLostFocus:true, showMaskOnFocus:true, showMaskOnHover:false, removeMaskOnSubmit:false }); }
         // TODO if (format === "YYYY-MM-DD HH:mm") { jqEl.find('input').inputmask("yyyy-mm-dd hh:mm", { clearIncomplete:false, clearMaskOnLostFocus:true, showMaskOnFocus:true, showMaskOnHover:false, removeMaskOnSubmit:false }); }
     }
@@ -1152,13 +1261,13 @@ Vue.component('m-date-period', {
         '</m-date-time>' +
     '</div>' +
     '<div v-else class="row"><q-input dense outlined stack-label :label="label" v-model="fields[name+\'_pdate\']"' +
-            ' mask="####-##-##" fill-mask :id="id" :name="name+\'_pdate\'" :form="form" style="max-width:fit-content;">' +
+            ' mask="####-##-##" fill-mask :id="id" :name="name+\'_pdate\'" :form="form" style="max-width:max-content;">' +
         '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
         '<template v-slot:before>' +
             '<q-select class="q-pr-xs" dense outlined options-dense emit-value map-options v-model="fields[name+\'_poffset\']" :name="name+\'_poffset\'"' +
-                ' stack-label label="Offset" :options="dateOffsets" :form="form"></q-select>' +
+                ' stack-label label="Offset" :options="dateOffsets" :form="form" behavior="menu"></q-select>' +
             '<q-select dense outlined options-dense emit-value map-options v-model="fields[name+\'_period\']" :name="name+\'_period\'"' +
-                ' stack-label label="Period" :options="datePeriods" :form="form"></q-select>' +
+                ' stack-label label="Period" :options="datePeriods" :form="form" behavior="menu"></q-select>' +
         '</template>' +
         '<template v-slot:prepend>' +
             '<q-icon name="event" class="cursor-pointer">' +
@@ -1179,7 +1288,11 @@ Vue.component('m-date-period', {
             this.fields[this.name+'_from'] = null; this.fields[this.name+'_thru'] = null;
         }
     },
-    beforeMount: function() { if (((this.fromDate && this.fromDate.length) || (this.thruDate && this.thruDate.length))) this.fromThruMode = true; }
+    mounted: function() {
+        var fromDate = this.fields[this.name+'_from'];
+        var thruDate = this.fields[this.name+'_thru'];
+        if (((fromDate && fromDate.length) || (thruDate && thruDate.length))) this.fromThruMode = true;
+    }
 });
 
 Vue.component('m-display', {
@@ -1192,7 +1305,7 @@ Vue.component('m-display', {
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
         '</q-input>' +
         '<span v-else :id="id">' +
-            '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
+            '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip><slot></slot>' +
             '{{displayValue}}' +
         '</span>',
     methods: {
@@ -1221,16 +1334,18 @@ Vue.component('m-display', {
             // console.log("m-display populateFromUrl 1 " + this.valueUrl + " reqData.hasAllParms " + reqData.hasAllParms + " dependsOptional " + this.dependsOptional);
             // console.log(reqData);
             if (!this.valueUrl || !this.valueUrl.length) {
-                console.warn("In m-display tried to populateFromUrl but no valueUrl");
+                console.warn("In m-display for " + this.name + " tried to populateFromUrl but no valueUrl");
                 return;
             }
             if (!reqData.hasAllParms && !this.dependsOptional) {
-                console.warn("In m-display tried to populateFromUrl but not hasAllParms and not dependsOptional");
+                console.warn("In m-display for " + this.name + "  tried to populateFromUrl but not hasAllParms and not dependsOptional");
+                this.$emit('input', null);
+                this.curDisplay = null;
                 return;
             }
             var vm = this;
             this.loading = true;
-            $.ajax({ type:"POST", url:this.valueUrl, data:reqData, dataType:"json", headers:{Accept:'application/json'},
+            $.ajax({ type:"POST", url:this.valueUrl, data:reqData, dataType:"text", headers:{Accept:'text/plain'},
                 error:function(jqXHR, textStatus, errorThrown) {
                     vm.loading = false;
                     moqui.handleAjaxError(jqXHR, textStatus, errorThrown);
@@ -1256,7 +1371,7 @@ Vue.component('m-display', {
                     vm.curDisplay = newLabel;
                 }
             });
-        },
+        }
     },
     computed: {
         displayValue: function() { return this.curDisplay && this.curDisplay.length ? this.curDisplay : this.value; }
@@ -1279,17 +1394,22 @@ Vue.component('m-display', {
 
 Vue.component('m-drop-down', {
     name: "mDropDown",
-    props: { value:[Array,String], options:{type:Array,'default':()=>[]}, combo:Boolean, allowEmpty:Boolean, multiple:Boolean, optionsUrl:String,
+    props: { value:[Array,String], options:{type:Array,'default':function(){return [];}}, combo:Boolean,
+        allowEmpty:Boolean, multiple:Boolean, requiredManualSelect:Boolean,
+        optionsUrl:String, optionsParameters:Object, optionsLoadInit:Boolean,
         serverSearch:Boolean, serverDelay:{type:Number,'default':300}, serverMinLength:{type:Number,'default':1},
-        optionsParameters:Object, labelField:{type:String,'default':'label'}, valueField:{type:String,'default':'value'},
-        dependsOn:Object, dependsOptional:Boolean, optionsLoadInit:Boolean, form:String, fields:{type:Object},
+        labelField:{type:String,'default':'label'}, valueField:{type:String,'default':'value'},
+        dependsOn:Object, dependsOptional:Boolean, form:String, fields:{type:Object},
         tooltip:String, label:String, name:String, id:String, disable:Boolean, onSelectGoTo:String },
     data: function() { return { curOptions:this.options, allOptions:this.options, lastVal:null, lastSearch:null, loading:false } },
     template:
+        // was: ':fill-input="!multiple" hide-selected' changed to ':hide-selected="multiple"' to show selected to the left of input,
+        //     fixes issues with fill-input where set values would sometimes not be displayed
         '<q-select ref="qSelect" v-bind:value="value" v-on:input="handleInput($event)"' +
-                ' dense outlined options-dense use-input :fill-input="!multiple" hide-selected :name="name" :id="id" :form="form"' +
+                ' dense outlined options-dense use-input :hide-selected="multiple" :name="name" :id="id" :form="form"' +
                 ' input-debounce="500" @filter="filterFn" :clearable="allowEmpty||multiple" :disable="disable"' +
-                ' :multiple="multiple" :emit-value="!onSelectGoTo" map-options' +
+                ' :multiple="multiple" :emit-value="!onSelectGoTo" map-options behavior="menu"' +
+                ' :rules="[val => allowEmpty||multiple||val===\'\'||(val&&val.length)||\'Please select an option\']"' +
                 ' stack-label :label="label" :loading="loading" :options="curOptions">' +
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
             '<template v-slot:no-option><q-item><q-item-section class="text-grey">No results</q-item-section></q-item></template>' +
@@ -1423,6 +1543,7 @@ Vue.component('m-drop-down', {
                         } else {
                             vm.setNewOptions(procList);
                             if (vm.$refs.qSelect) vm.$refs.qSelect.refresh();
+                            // tried this for some drop-downs getting value set and have options but not showing current value's label, didn't work: if (vm.$refs.qSelect) vm.$nextTick(function() { vm.$refs.qSelect.refresh(); });
                             // NOTE: don't want to do this, was mistakenly used before, use only if setting the input value string to an explicit value otherwise clears it and calls filter again: vm.$refs.qSelect.updateInputValue();
                         }
                     }
@@ -1462,9 +1583,9 @@ Vue.component('m-drop-down', {
 
             // console.warn("curOptions updated " + this.name + " allowEmpty " + this.allowEmpty + " value '" + this.value + "' " + " isInNewOptions " + isInNewOptions + ": " + JSON.stringify(options));
             if (!isInNewOptions) {
-                if (!this.allowEmpty && !this.multiple && options && options.length && options[0].value) {
+                if (!this.allowEmpty && !this.multiple && options && options.length && options[0].value && (!this.requiredManualSelect || options.length === 1)) {
                     // simulate normal select behavior with no empty option (not allowEmpty) where first value is selected by default
-                    // console.warn("setting " + this.name + " to " + options[0].value);
+                    // console.warn("checkCurrentValue setting " + this.name + " to " + options[0].value + " options " + options.length);
                     this.$emit('input', options[0].value);
                 } else {
                     // console.warn("setting " + this.name + " to null");
@@ -1519,11 +1640,12 @@ Vue.component('m-drop-down', {
                 else if (this.value && this.value.length && moqui.isString(this.value)) { this.populateFromUrl({term:this.value}); }
             }
         }
-        // simulate normal select behavior with no empty option (not allowEmpty) where first value is selected by default
-        if (!this.multiple && !this.allowEmpty && (!this.value || !this.value.length) && this.options && this.options.length) {
+        // simulate normal select behavior with no empty option (not allowEmpty) where first value is selected by default - but only do for 1 option to force user to think and choose from multiple
+        if (!this.multiple && !this.allowEmpty && (!this.value || !this.value.length) && this.options && this.options.length && (!this.requiredManualSelect || this.options.length === 1)) {
             this.$emit('input', this.options[0].value);
         }
-    },
+    }
+    /* probably don't need, remove sometime:
     watch: {
         // need to watch for change to options prop? options: function(options) { this.curOptions = options; },
         curOptionsFoo: function(options) {
@@ -1532,15 +1654,19 @@ Vue.component('m-drop-down', {
 
         }
     }
+     */
 });
 
 Vue.component('m-text-line', {
     name: "mTextLine",
-    props: { value:String, type:String, id:String, name:String, size:String, fields:{type:Object}, label:String, tooltip:String, disable:Boolean,
-        defaultUrl:String, defaultParameters:Object, dependsOn:Object, dependsOptional:Boolean, defaultLoadInit:Boolean, rules:Array },
+    props: { value:String, type:{type:String,'default':'text'}, id:String, name:String, size:String, fields:{type:Object},
+        label:String, tooltip:String, prefix:String, disable:Boolean, mask:String, fillMask:String, rules:Array,
+        defaultUrl:String, defaultParameters:Object, dependsOn:Object, dependsOptional:Boolean, defaultLoadInit:Boolean },
     data: function() { return { loading:false } },
     template:
-        '<q-input dense outlined stack-label :label="label" v-bind:value="value" v-on:input="$emit(\'input\', $event)" :type="type" :id="id" :name="name" :size="size" :loading="loading" lazy-rules :rules="rules" :disable="disable">' +
+        '<q-input dense outlined stack-label :label="label" :prefix="prefix" v-bind:value="value" v-on:input="$emit(\'input\', $event)" :type="type"' +
+                ' :id="id" :name="name" :size="size" :loading="loading" :rules="rules" :disable="disable" :mask="mask" :fill-mask="fillMask"' +
+                ' autocapitalize="off" autocomplete="off">' +
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
         '</q-input>',
     methods: {
@@ -1588,7 +1714,7 @@ Vue.component('m-text-line', {
                     if (defaultText && defaultText.length) vm.$emit('input', defaultText);
                 }
             });
-        },
+        }
     },
     mounted: function() {
         if (this.defaultUrl && this.defaultUrl.length) {
@@ -1606,36 +1732,50 @@ Vue.component('m-text-line', {
     }
 });
 
+/* Lazy loading Chart JS wrapper component */
+Vue.component('m-chart', {
+    name: 'mChart',
+    props: { config:{type:Object,required:true}, height:{type:String,'default':'400px'}, width:{type:String,'default':'100%'} },
+    template: '<div class="chart-container" style="position:relative;" :style="{height:height,width:width}"><canvas ref="canvas"></canvas></div>',
+    data: function() { return { instance:null } },
+    mounted: function() {
+        var vm = this;
+        moqui.loadScript('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js', function(err) {
+            if (err) return;
+            vm.instance = new Chart(vm.$refs.canvas, vm.config);
+        }, function() { return !!window.Chart; });
+    }
+});
 /* Lazy loading CK Editor wrapper component, based on https://github.com/ckeditor/ckeditor4-vue */
 /* see https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html */
 Vue.component('m-ck-editor', {
     name: 'mCkEditor',
     template:'<div><textarea ref="area"></textarea></div>',
-    props: { value:{type:String,default:''}, useInline:Boolean, config:Object, readOnly:{type:Boolean,default:null} },
+    props: { value:{type:String,'default':''}, useInline:Boolean, config:Object, readOnly:{type:Boolean,'default':null} },
     data: function() { return { destroyed:false, ckeditor:null } },
     mounted: function() {
-        const vm = this;
+        var vm = this;
         moqui.loadScript('https://cdn.ckeditor.com/4.14.1/standard-all/ckeditor.js', function(err) {
             if (err) return;
             if (vm.destroyed) return;
-            const config = vm.config || {};
+            var config = vm.config || {};
             if (vm.readOnly !== null) config.readOnly = vm.readOnly;
 
             CKEDITOR.dtd.$removeEmpty['i'] = false;
-            const method = vm.useInline ? 'inline' : 'replace';
-            const editor = vm.ckeditor = CKEDITOR[method](vm.$refs.area, config);
+            var method = vm.useInline ? 'inline' : 'replace';
+            var editor = vm.ckeditor = CKEDITOR[method](vm.$refs.area, config);
             editor.on('instanceReady', function() {
-                const data = vm.value;
+                var data = vm.value;
                 editor.fire('lockSnapshot');
                 editor.setData(data, { callback: function() {
                     editor.on('change', function(evt) {
-                        const curData = editor.getData();
+                        var curData = editor.getData();
                         if (vm.value !== curData) vm.$emit('input', curData, evt, editor);
                     });
                     editor.on('focus', function(evt) { vm.$emit('focus', evt, editor); });
                     editor.on('blur', function(evt) { vm.$emit('blur', evt, editor); });
 
-                    const newData = editor.getData();
+                    var newData = editor.getData();
                     // Locking the snapshot prevents the 'change' event. Trigger it manually to update the bound data.
                     if (data !== newData) {
                         vm.$once('input', function() { vm.$emit('ready', editor); });
@@ -1646,48 +1786,49 @@ Vue.component('m-ck-editor', {
                     editor.fire('unlockSnapshot');
                 }});
             });
-        });
+        }, function() { return !!window.CKEDITOR; });
     },
     beforeDestroy: function() {
         if (this.ckeditor) { this.ckeditor.destroy(); }
         this.destroyed = true;
     },
     watch: {
-        value(val) { if (this.ckeditor && this.ckeditor.getData() !== val) this.ckeditor.setData(val); },
-        readOnly(val) { if (this.ckeditor) this.ckeditor.setReadOnly( val ); }
+        value: function(val) { if (this.ckeditor && this.ckeditor.getData() !== val) this.ckeditor.setData(val); },
+        readOnly: function(val) { if (this.ckeditor) this.ckeditor.setReadOnly( val ); }
     }
 });
+/* Lazy loading Simple MDE wrapper component */
 Vue.component('m-simple-mde', {
     name: 'mSimpleMde',
     template:'<div><textarea ref="area"></textarea></div>',
-    props: { value:{type:String,default:''}, config:Object },
+    props: { value:{type:String,'default':''}, config:Object },
     data: function() { return { simplemde:null } },
     mounted: function() {
-        const vm = this;
+        var vm = this;
         moqui.loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.css');
         moqui.loadScript('https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js', function(err) {
             if (err) return;
             // needed? forceSync:true
-            const fullConfig = Object.assign({
+            var fullConfig = Object.assign({
                 element: vm.$refs.area,
                 initialValue: vm.value
             }, vm.config);
-            const editor = vm.simplemde = new SimpleMDE(fullConfig);
+            var editor = vm.simplemde = new SimpleMDE(fullConfig);
 
-            editor.codemirror.on('change', (instance, changeObj) => {
+            editor.codemirror.on('change', function(instance, changeObj) {
                 if (changeObj.origin === 'setValue') return;
-                const val = editor.value();
+                var val = editor.value();
                 vm.$emit('input', val);
             });
-            editor.codemirror.on('blur', () => {
-                const val = editor.value();
+            editor.codemirror.on('blur', function() {
+                var val = editor.value();
                 vm.$emit('blur', val);
             });
 
             vm.$nextTick(function() { vm.$emit('initialized', editor); });
-        });
+        }, function() { return !!window.SimpleMDE; });
     },
-    watch: { value(val) { if (this.simplemde && this.simplemde.value() !== val) this.simplemde.value(val); } }
+    watch: { value: function(val) { if (this.simplemde && this.simplemde.value() !== val) this.simplemde.value(val); } }
 });
 
 
@@ -1701,8 +1842,8 @@ Vue.component('m-subscreens-tabs', {
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
      */
     template:
-    '<div v-if="subscreens.length > 0"><q-tabs dense no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
-        '<q-tab v-for="tab in subscreens" :key="tab.name" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
+    '<div v-if="subscreens.length > 0"><q-tabs dense class="bg-grey-1 text-teal" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
+        '<q-tab v-for="tab in subscreens" :key="tab.name" icon="add" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
     methods: {
         goTo: function(pathWithParams) { this.$root.setUrl(this.$root.getLinkPath(pathWithParams)); }
@@ -1821,9 +1962,11 @@ Vue.component('m-menu-item-content', {
 
 moqui.webrootVue = new Vue({
     el: '#apps-root',
-    data: { basePath:"", linkBasePath:"", currentPathList:[], extraPathList:[], activeSubscreens:[], currentParameters:{}, bodyParameters:null,
-        navMenuList:[], navHistoryList:[], navPlugins:[], notifyHistoryList:[], lastNavTime:Date.now(), loading:0, currentLoadRequest:null, activeContainers:{},
-        moquiSessionToken:"", appHost:"", appRootPath:"", userId:"", locale:"en", notificationClient:null, qzVue:null, leftOpen:false },
+    data: { basePath:"", linkBasePath:"", currentPathList:[], extraPathList:[], currentParameters:{}, bodyParameters:null,
+        activeSubscreens:[], navMenuList:[], navHistoryList:[], navPlugins:[], accountPlugins:[], notifyHistoryList:[],
+        lastNavTime:Date.now(), loading:0, currentLoadRequest:null, activeContainers:{},
+        moquiSessionToken:"", appHost:"", appRootPath:"", userId:"", locale:"en",
+        notificationClient:null, qzVue:null, leftOpen:false, moqui:moqui, drawer: false, miniState:false },
     methods: {
         setUrl: function(url, bodyParameters, onComplete) {
             // cancel current load if needed
@@ -1852,7 +1995,7 @@ moqui.webrootVue = new Vue({
                 var srch = this.currentSearch;
                 var screenUrl = this.currentPath + (srch.length > 0 ? '?' + srch : '');
                 if (!screenUrl || screenUrl.length === 0) return;
-                console.info("current URL changing to " + screenUrl);
+                console.info("Current URL changing to " + screenUrl);
                 this.lastNavTime = Date.now();
                 // TODO: somehow only clear out activeContainers that are in subscreens actually reloaded? may cause issues if any but last screen have m-dynamic-container
                 this.activeContainers = {};
@@ -1874,6 +2017,9 @@ moqui.webrootVue = new Vue({
 
                 // set the window URL
                 window.history.pushState(null, this.ScreenTitle, url);
+                // scroll to top
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
             }
         },
         callOnComplete: function(onComplete, redirectedFrom) {
@@ -1930,12 +2076,20 @@ moqui.webrootVue = new Vue({
             if (contComp) { contComp.reload(); } else { console.error("Container with ID " + contId + " not found, not reloading"); }},
         loadContainer: function(contId, url) { var contComp = this.activeContainers[contId];
             if (contComp) { contComp.load(url); } else { console.error("Container with ID " + contId + " not found, not loading url " + url); }},
+
         addNavPlugin: function(url) { var vm = this; moqui.loadComponent(this.appRootPath + url, function(comp) { vm.navPlugins.push(comp); }) },
         addNavPluginsWait: function(urlList, urlIndex) { if (urlList && urlList.length > urlIndex) {
             this.addNavPlugin(urlList[urlIndex]);
             var vm = this;
             if (urlList.length > (urlIndex + 1)) { setTimeout(function(){ vm.addNavPluginsWait(urlList, urlIndex + 1); }, 500); }
         } },
+        addAccountPlugin: function(url) { var vm = this; moqui.loadComponent(this.appRootPath + url, function(comp) { vm.accountPlugins.push(comp); }) },
+        addAccountPluginsWait: function(urlList, urlIndex) { if (urlList && urlList.length > urlIndex) {
+            this.addAccountPlugin(urlList[urlIndex]);
+            var vm = this;
+            if (urlList.length > (urlIndex + 1)) { setTimeout(function(){ vm.addAccountPluginsWait(urlList, urlIndex + 1); }, 500); }
+        } },
+
         addNotify: function(message, type) {
             var histList = this.notifyHistoryList.slice(0);
             var nowDate = new Date();
@@ -1956,6 +2110,12 @@ moqui.webrootVue = new Vue({
             $.ajax({ type:'POST', url:(this.appRootPath + '/apps/setPreference'), error:moqui.handleAjaxError,
                 data:{ moquiSessionToken:this.moquiSessionToken, preferenceKey:'QUASAR_LEFT_OPEN', preferenceValue:(this.leftOpen ? 'true' : 'false') } });
         },
+        drawerClick: function (e) {
+            if (this.miniState) {
+              this.miniState = false
+              e.stopPropagation()
+            }
+        },
         stopProp: function (e) { e.stopPropagation(); },
         getNavHref: function(navIndex) {
             if (!navIndex) navIndex = this.navMenuList.length - 1;
@@ -1970,8 +2130,15 @@ moqui.webrootVue = new Vue({
             }
         },
         getLinkPath: function(path) {
+            if (moqui.isPlainObject(path)) path = moqui.makeHref(path);
             if (this.appRootPath && this.appRootPath.length && path.indexOf(this.appRootPath) !== 0) path = this.appRootPath + path;
-            if (path.indexOf(this.basePath) === 0) path = path.replace(this.basePath, this.linkBasePath);
+            var pathList = path.split('/');
+            // element 0 in array after split is empty string from leading '/'
+            var wrapperIdx = this.appRootPath ? 2 : 1;
+            if (pathList.length > wrapperIdx) {
+                pathList[wrapperIdx] = this.linkBasePath.slice(1);
+                path = pathList.join("/");
+            }
             return path;
         },
         getQuasarColor: function(bootstrapColor) { return moqui.getQuasarColor(bootstrapColor); }
@@ -2083,6 +2250,10 @@ moqui.webrootVue = new Vue({
         var navPluginUrlList = [];
         $('.confNavPluginUrl').each(function(idx, el) { navPluginUrlList.push($(el).val()); });
         this.addNavPluginsWait(navPluginUrlList, 0);
+
+        var accountPluginUrlList = [];
+        $('.confAccountPluginUrl').each(function(idx, el) { accountPluginUrlList.push($(el).val()); });
+        this.addAccountPluginsWait(accountPluginUrlList, 0);
     },
     mounted: function() {
         var jqEl = $(this.$el);
@@ -2110,9 +2281,11 @@ window.addEventListener('popstate', function() { moqui.webrootVue.setUrl(window.
 // NOTE: simulate vue-router so this.$router.resolve() works in a basic form; required for use of q-btn 'to' attribute along with router-link component defined above
 moqui.webrootRouter = {
     resolve: function resolve(to, current, append) {
-        var location;
-        if (moqui.isString(to)) { location = moqui.parseHref(to); } else { location = to; }
+        var location = moqui.isString(to) ? moqui.parseHref(to) : to;
+
         var path = location.path;
+        if (moqui.webrootVue) location.path = path = moqui.webrootVue.getLinkPath(path);
+
         var lslIdx = path.lastIndexOf("/");
         var name = lslIdx === -1 ? path : path.slice(lslIdx+1);
 
@@ -2121,10 +2294,10 @@ moqui.webrootRouter = {
         return { location:location, route:route, href:moqui.makeHref(location), normalizedTo:location, resolved:route }
     },
     replace: function(location, onComplete, onAbort) { moqui.webrootVue.setUrl(location, null, onComplete); },
-    push: function(location, onComplete, onAbort) { moqui.webrootVue.setUrl(location, null, onComplete); },
+    push: function(location, onComplete, onAbort) { moqui.webrootVue.setUrl(location, null, onComplete); }
 }
 Object.defineProperty(Vue.prototype, '$router', {
-    get: function get() { return moqui.webrootRouter; },
+    get: function get() { return moqui.webrootRouter; }
 });
 Object.defineProperty(Vue.prototype, '$route', {
     get: function get() { return moqui.webrootVue.getRoute(); }
