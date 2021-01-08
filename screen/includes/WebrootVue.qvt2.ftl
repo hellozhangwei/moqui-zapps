@@ -171,7 +171,7 @@ along with this software (see the LICENSE.md file). If not, see
 >
     <q-scroll-area class="fit">
         <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="link === 'inbox'">
                 <q-item-section avatar>
                     <q-icon name="o_assignment" />
                 </q-item-section>
@@ -181,7 +181,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item active clickable v-ripple>
+            <q-item active clickable v-ripple to="/qapps/PopcAdmin/Customer/FindCustomer">
                 <q-item-section avatar>
                     <q-icon name="o_group" />
                 </q-item-section>
@@ -191,7 +191,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Catalog/Product/FindProduct">
                 <q-item-section avatar>
                     <q-icon name="o_category" />
                 </q-item-section>
@@ -201,7 +201,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Asset/Asset/FindAsset">
                 <q-item-section avatar>
                     <q-icon name="o_apartment" />
                 </q-item-section>
@@ -211,7 +211,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Order/FindOrder">
                 <q-item-section avatar>
                     <q-icon name="o_assignment_returned"/>
                 </q-item-section>
@@ -221,7 +221,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Supplier/FindSupplier">
                 <q-item-section avatar>
                     <q-icon name="o_local_offer" />
                 </q-item-section>
@@ -231,7 +231,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Manufacturing/Run/FindRun">
                 <q-item-section avatar>
                     <q-icon name="o_room_preferences" />
                 </q-item-section>
@@ -240,7 +240,8 @@ along with this software (see the LICENSE.md file). If not, see
                     生产管理
                 </q-item-section>
             </q-item>
-            <q-separator></q-separator><q-item clickable v-ripple>
+            <q-separator></q-separator>
+            <q-item clickable v-ripple to="/qapps/PopcAdmin/Accounting/dashboard">
                 <q-item-section avatar>
                     <q-icon name="o_account_balance" />
                 </q-item-section>
@@ -250,7 +251,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </q-item-section>
             </q-item>
             <q-separator></q-separator>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/qapps/system/dashboard">
                 <q-item-section avatar>
                     <q-icon name="o_settings" />
                 </q-item-section>
