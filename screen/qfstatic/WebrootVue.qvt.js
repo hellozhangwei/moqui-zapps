@@ -1966,7 +1966,7 @@ moqui.webrootVue = new Vue({
         activeSubscreens:[], navMenuList:[], navHistoryList:[], navPlugins:[], accountPlugins:[], notifyHistoryList:[],
         lastNavTime:Date.now(), loading:0, currentLoadRequest:null, activeContainers:{},
         moquiSessionToken:"", appHost:"", appRootPath:"", userId:"", locale:"en",
-        notificationClient:null, qzVue:null, leftOpen:false, moqui:moqui, drawer: false, miniState:false },
+        notificationClient:null, qzVue:null, leftOpen:false, moqui:moqui, miniState:false },
     methods: {
         setUrl: function(url, bodyParameters, onComplete) {
             // cancel current load if needed
@@ -2110,11 +2110,10 @@ moqui.webrootVue = new Vue({
             $.ajax({ type:'POST', url:(this.appRootPath + '/apps/setPreference'), error:moqui.handleAjaxError,
                 data:{ moquiSessionToken:this.moquiSessionToken, preferenceKey:'QUASAR_LEFT_OPEN', preferenceValue:(this.leftOpen ? 'true' : 'false') } });
         },
-        drawerClick: function (e) {
-            if (this.miniState) {
-              this.miniState = false
-              e.stopPropagation()
-            }
+        toggleMiniState: function() {
+            this.miniState = !this.miniState;
+            console.log('toggle mini state')
+            //todo store miniState to user preference
         },
         stopProp: function (e) { e.stopPropagation(); },
         getNavHref: function(navIndex) {

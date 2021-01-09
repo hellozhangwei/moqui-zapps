@@ -32,7 +32,7 @@ along with this software (see the LICENSE.md file). If not, see
     <#-- to build a layout use the handy Quasar tool: https://quasar.dev/layout-builder -->
     <q-layout view="hHh LpR fFf">
         <q-header reveal bordered class="${headerClass}" id="top" style="background: linear-gradient(145deg,#1976d2 11%,#0f477e 75%) !important"><q-toolbar style="font-size:15px;">
-            <q-btn dense flat icon="menu" @click="drawer = !drawer"></q-btn>
+            <q-btn dense flat icon="menu" @click="toggleLeftOpen"></q-btn>
 
             <#--
             <#assign headerLogoList = sri.getThemeValues("STRT_HEADER_LOGO")>
@@ -159,16 +159,10 @@ along with this software (see the LICENSE.md file). If not, see
             </q-btn>
         </q-toolbar></q-header>
 
-<q-drawer
-    v-model="drawer"
-    show-if-above
-    :mini="!drawer || miniState"
-    @click.capture="drawerClick"
-    :width="200"
-    :breakpoint="500"
-    bordered
-    content-class="bg-grey-1"
->
+<!--
+<q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
+-->
+<q-drawer v-model="leftOpen" show-if-above :mini="!leftOpen || miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
     <q-scroll-area class="fit">
         <q-list padding>
             <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="link === 'inbox'">
@@ -269,15 +263,7 @@ along with this software (see the LICENSE.md file). If not, see
       to mini-mode
     -->
     <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -17px">
-        <q-btn
-            dense
-            round
-            unelevated
-            color="grey-4"
-            text-color="grey"
-            icon="chevron_left"
-            @click="miniState = true"
-        />
+        <q-btn dense round unelevated color="grey-4" text-color="grey" icon="chevron_left" @click="toggleMiniState"/>
     </div>
 </q-drawer>
 
