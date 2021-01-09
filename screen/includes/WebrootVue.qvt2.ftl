@@ -165,7 +165,7 @@ along with this software (see the LICENSE.md file). If not, see
 <q-drawer v-model="leftOpen" show-if-above :mini="!leftOpen || miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
     <q-scroll-area class="fit">
         <q-list padding>
-            <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="link === 'inbox'">
+            <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="1 === 1">
                 <q-item-section avatar>
                     <q-icon name="o_assignment" />
                 </q-item-section>
