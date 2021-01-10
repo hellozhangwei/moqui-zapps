@@ -2112,8 +2112,8 @@ moqui.webrootVue = new Vue({
         },
         toggleMiniState: function() {
             this.miniState = !this.miniState;
-            console.log('toggle mini state')
-            //todo store miniState to user preference
+            $.ajax({ type:'POST', url:(this.appRootPath + '/apps/setPreference'), error:moqui.handleAjaxError,
+                data:{ moquiSessionToken:this.moquiSessionToken, preferenceKey:'QUASAR_LEFT_MINI', preferenceValue:(this.miniState ? 'true' : 'false') } });
         },
         stopProp: function (e) { e.stopPropagation(); },
         getNavHref: function(navIndex) {
@@ -2240,6 +2240,7 @@ moqui.webrootVue = new Vue({
         this.userId = $("#confUserId").val();
         this.locale = $("#confLocale").val(); if (moqui.localeMap[this.locale]) this.locale = moqui.localeMap[this.locale];
         this.leftOpen = $("#confLeftOpen").val() === 'true';
+        this.miniState = $("#confLeftMini").val() === 'true';
 
         var confDarkMode = $("#confDarkMode").val();
         this.$q.dark.set(confDarkMode === "true");
