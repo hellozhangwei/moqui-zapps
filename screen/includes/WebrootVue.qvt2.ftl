@@ -48,7 +48,7 @@ along with this software (see the LICENSE.md file). If not, see
             <q-toolbar-title>${ec.resource.expand(headerTitleList?first, "")}</q-toolbar-title>
             </#if>
             -->
-            <q-toolbar-title>世德ERP</q-toolbar-title>
+            <q-toolbar-title>MOQUI</q-toolbar-title>
             <#-- NOTE: tried using q-breadcrumbs but last item with q-breadcrumbs--last class makes never clickable! -->
             <#--
             <template v-for="(navMenuItem, menuIndex) in navMenuList"><template v-if="menuIndex < (navMenuList.length - 1)">
