@@ -166,6 +166,21 @@ along with this software (see the LICENSE.md file). If not, see
 <q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
     <q-scroll-area class="fit">
         <q-list padding>
+
+            <template v-if="navMenuList[1]">
+                <template v-for="(subscreen, subscreenIndex) in navMenuList[1].subscreens" >
+                    <q-item clickable v-ripple :active="subscreen.active" :to="subscreen.pathWithParams">
+                        <q-item-section avatar>
+                            <q-icon v-if="subscreen.imageType === 'icon'" :name="subscreen.image"></q-icon>
+                            <q-icon v-else :name="'img:' + subscreen.image"></q-icon>
+                        </q-item-section>
+                        <q-item-section>{{subscreen.title}}</q-item-section>
+                    </q-item>
+                    <q-separator></q-separator>
+                </template>
+            </template>
+
+<!--
             <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="1 === 1">
                 <q-item-section avatar>
                     <q-icon name="o_assignment" />
@@ -254,7 +269,7 @@ along with this software (see the LICENSE.md file). If not, see
                 <q-item-section>
                     系统管理
                 </q-item-section>
-            </q-item>
+            </q-item>-->
         </q-list>
     </q-scroll-area>
 
