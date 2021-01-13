@@ -343,13 +343,13 @@ Vue.component('m-stylesheet', {
 /* ========== layout components ========== */
 Vue.component('m-container-box', {
     name: "mContainerBox",
-    props: { type:{type:String,'default':'default'}, title:String, initialOpen:{type:Boolean,'default':true} },
+    props: { type:{type:String,'default':'default'}, title:String, initialOpen:{type:Boolean,'default':true} , collapsable:{type:Boolean,'default':true} },
     data: function() { return { expanded:this.initialOpen }},
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
     '<q-card flat bordered class="q-ma-sm m-container-box">' +
-        '<q-card-actions @click="expanded = !expanded">' +
-        '<q-btn color="grey" round flat dense :icon="expanded?\'fa fa-angle-down\':\'fa fa-angle-right\'" />' +
+        '<q-card-actions @click="collapsable?(expanded = !expanded):null">' +
+            '<q-btn v-if="collapsable" color="grey" round flat dense :icon="expanded?\'fa fa-angle-down\':\'fa fa-angle-right\'" />' +
             '<span class="text-h5" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +

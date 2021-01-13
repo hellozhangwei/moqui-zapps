@@ -88,7 +88,11 @@ ${sri.renderSection(.node["@name"])}
     <#assign boxHeader = .node["box-header"][0]!>
     <#assign boxType = ec.resource.expandNoL10n(.node["@type"], "")!>
     <#if !boxType?has_content><#assign boxType = "default"></#if>
-    <m-container-box<#if contBoxDivId?has_content> id="${contBoxDivId}"</#if> type="${boxType}"<#if boxHeader??> title="${ec.getResource().expand(boxHeader["@title"]!"", "")?html}"</#if> :initial-open="<#if ec.getResource().expandNoL10n(.node["@initial"]!, "") == "closed">false<#else>true</#if>">
+    <m-container-box<#if contBoxDivId?has_content> id="${contBoxDivId}"</#if>
+        <#t> type="${boxType}"
+        <#t><#if boxHeader??> title="${ec.getResource().expand(boxHeader["@title"]!"", "")?html}"</#if>
+        <#t> :initial-open="<#if ec.getResource().expandNoL10n(.node["@initial"]!, "") == "closed">false<#else>true</#if>"
+        <#t> :collapsable="<#if ec.getResource().expandNoL10n(.node["@collapsable"]!, "") == "false">false<#else>true</#if>">
         <#-- NOTE: direct use of the m-container-box component would not use template elements but rather use the 'slot' attribute directly on the child elements which we can't do here -->
         <#if boxHeader??><template slot="header"><#recurse boxHeader></template></#if>
         <#if .node["box-toolbar"]?has_content><template slot="toolbar"><#recurse .node["box-toolbar"][0]></template></#if>
@@ -315,7 +319,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#assign iconClass = linkNode["@icon"]!>
                     <#if !iconClass?has_content && linkNode["@text"]?has_content><#assign iconClass = sri.getThemeIconClass(linkNode["@text"])!></#if>
                     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
-                    <#rt><q-btn  size="xs" rounded  no-caps type="submit" <#if linkNode["@link-type"]! == "hidden-form-link">flat<#else>outline</#if>
+                    <#rt><q-btn dense no-caps type="submit" <#if linkNode["@link-type"]! == "hidden-form-link">flat<#else>outline</#if>
                             <#t> color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>" class="m-link<#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                         <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
@@ -506,9 +510,17 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign fgTitle = ec.getL10n().localize(.node["@title"]!)!>
     <#if isAccordion!false>
         <#assign accIsActive = accordionIndex?string == accordionActive>
-        <q-expansion-item switch-toggle-side :header-style="{ border: '1px solid rgba(0,0,0,0.12)'}" class="q-mb-sm	<#if .node["@style"]?has_content> ${.node["@style"]}</#if>" header-class="bg-grey-2" label="${fgTitle!"Fields"}" <#if accIsActive> default-opened</#if>>
-            <q-card bordered style="border-top-width: 0px"><q-card-section><#recurse .node/></q-card-section></q-card>
-        </q-expansion-item>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="${accordionId}_heading${accordionIndex}"><h5 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#${accordionId}" href="#${accordionId}_collapse${accordionIndex}"
+                   aria-expanded="true" aria-controls="${accordionId}_collapse${accordionIndex}"<#if !accIsActive> class="collapsed"</#if>>${fgTitle!"Fields"}</a>
+            </h5></div>
+            <div id="${accordionId}_collapse${accordionIndex}" class="panel-collapse collapse<#if accIsActive> in</#if>" role="tabpanel" aria-labelledby="${accordionId}_heading${accordionIndex}">
+                <div class="panel-body<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
+                    <#recurse .node/>
+                </div>
+            </div>
+        </div>
         <#assign accordionIndex = accordionIndex + 1>
     <#elseif .node["@box"]! == "true">
         <div class="panel panel-default">
@@ -531,9 +543,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign accordionIndex = 1>
     <#assign accordionId = .node["@id"]!(formId + "_accordion")>
     <#assign accordionActive = .node["@active"]!"1">
-    <q-list class="q-ma-sm">
+    <div class="panel-group" id="${accordionId}" role="tablist" aria-multiselectable="true">
         <#recurse .node/>
-    </q-list>
+    </div><!-- accordionId ${accordionId} -->
     <#assign isAccordion = false>
 </#macro>
 <#macro "field-col-row">
@@ -630,6 +642,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign currentFindUrlParms = currentFindUrl.getParameterMap()>
     <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
     <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
+    <#assign userDefaultFormListFindId = formListInfo.getUserDefaultFormListFindId(ec)!"">
     <#if isHeaderDialog>
         <#assign haveFilters = false>
         <#assign curFindSummary>
@@ -640,8 +653,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#if !(fieldSubNode["hidden"]?has_content || fieldSubNode["ignored"]?has_content)><#assign allHidden = false></#if>
                 </#list>
                 <#if !(ec.getResource().condition(fieldNode["@hide"]!, "") || allHidden ||
-                ((!fieldNode["@hide"]?has_content) && fieldNode?children?size == 1 &&
-                (headerFieldNode["hidden"]?has_content || headerFieldNode["ignored"]?has_content)))>
+                        ((!fieldNode["@hide"]?has_content) && fieldNode?children?size == 1 &&
+                         (headerFieldNode["hidden"]?has_content || headerFieldNode["ignored"]?has_content)))>
                     <#t>${sri.pushContext()}
                     <#list headerFieldNode?children as widgetNode><#if widgetNode?node_name == "set">${sri.setInContext(widgetNode)}</#if></#list>
                     <#list headerFieldNode?children as widgetNode><#if widgetNode?node_name != "set">
@@ -656,93 +669,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             </#if></#list>
         </#assign>
     </#if>
-
     <#if (isHeaderDialog || isSavedFinds || isSelectColumns || isPaginated) && hideNav! != "true">
-
-        <tr class="form-list-nav-row"><th colspan="${numColumns}">
-
-            <div class="row">
-                <#if isHeaderDialog>
-                <#assign headerFormId = formId + "_header">
-                <!--<#assign headerFormButtonText = ec.getL10n().localize("Find Options")>-->
-<!--                <m-container-dialog id="${formId + "_hdialog"}" title="${headerFormButtonText}">-->
-<!--                <m-container-box type="info" title="Find Oooptions" :initial-open="false">-->
-                <!--<template v-slot:button><q-btn dense outline no-caps label="${headerFormButtonText}"></q-btn></template>-->
-                <#-- Find Parameters Form -->
-                <#assign curUrlInstance = sri.getCurrentScreenUrl()>
-                <#assign skipFormSave = skipForm!false>
-                <#assign skipForm = false>
-                <#assign fieldsJsName = "formProps.fields">
-                <#assign orderByOptions>
-                <#list formNode["field"] as fieldNode><#if fieldNode["header-field"]?has_content>
-                <#assign headerFieldNode = fieldNode["header-field"][0]>
-                <#assign showOrderBy = (headerFieldNode["@show-order-by"])!>
-                <#if showOrderBy?has_content && showOrderBy != "false">
-                <#assign caseInsensitive = showOrderBy == "case-insensitive">
-                <#assign orderFieldName = fieldNode["@name"]>
-                <#assign orderFieldTitle><@fieldTitle headerFieldNode/></#assign>
-            <#t>{value:'${caseInsensitive?string("^", "") + orderFieldName}',label:'${orderFieldTitle} ${ec.getL10n().localize("(Asc)")}'},
-            <#t>{value:'${"-" + caseInsensitive?string("^", "") + orderFieldName}',label:'${orderFieldTitle} ${ec.getL10n().localize("(Desc)")}'},
-        </#if>
-        </#if></#list>
-</#assign>
-<m-form-link name="${headerFormId}" id="${headerFormId}" action="${curUrlInstance.path}" v-slot:default="formProps"<#rt>
-<#t> :fields-initial="${Static["org.moqui.util.WebUtilities"].fieldValuesEncodeHtmlJsSafe(sri.getFormListHeaderValues(formNode))}">
-<!--<q-btn dense outline no-caps name="clearParameters" @click.prevent="formProps.clearForm" label="${ec.getL10n().localize("Clear Parameters")}"></q-btn>-->
-<q-btn dense outline no-caps name="clearParameters" @click.prevent="formProps.clearForm" label="清空"></q-btn>
-
-<#-- Always add an orderByField to select one or more columns to order by -->
-<q-select dense outlined options-dense multiple clearable emit-value map-options v-model="formProps.fields.orderByField"
-          name="orderByField" id="${headerFormId}_orderByField" stack-label label="${ec.getL10n().localize("Order By")}"
-:options="[${orderByOptions}]"></q-select>
-
-<#t>${sri.pushSingleFormMapContext("")}
-<#list formNode["field"] as fieldNode><#if fieldNode["header-field"]?has_content && fieldNode["header-field"][0]?children?has_content>
-<#assign headerFieldNode = fieldNode["header-field"][0]>
-<#assign allHidden = true>
-<#list fieldNode?children as fieldSubNode>
-<#if !(fieldSubNode["hidden"]?has_content || fieldSubNode["ignored"]?has_content)><#assign allHidden = false></#if>
-</#list>
-
-<#if !(ec.getResource().condition(fieldNode["@hide"]!, "") || allHidden ||
-((!fieldNode["@hide"]?has_content) && fieldNode?children?size == 1 &&
-(headerFieldNode["hidden"]?has_content || headerFieldNode["ignored"]?has_content)))>
-<@formSingleWidget headerFieldNode headerFormId "col-sm" false false/>
-<#elseif (headerFieldNode["hidden"])?has_content>
-<#recurse headerFieldNode/>
-</#if>
-</#if></#list>
-<#t>${sri.popContext()}<#-- context was pushed so pop here at the end -->
-</m-form-link>
-<#assign skipForm = skipFormSave>
-<#-- TODO: anything needed for per-row or multi forms? -->
-<#assign fieldsJsName = "">
-<!--</m-container-dialog>-->
-<!--</m-container-box>-->
-</#if>
-            </div>
-
-<#if isHeaderDialog>
-<!--<tr><th colspan="${numColumns}" style="font-weight: normal">-->
-<div class="row">
-    ${curFindSummary!""}
-    <#if haveFilters>
-    <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
-    <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
-    <#assign curUrlInstance = sri.getCurrentScreenUrl()>
-    <m-form-link name="${headerFormId}_clr" id="${headerFormId}_clr" action="${curUrlInstance.path}"
-                 :fields-initial="{<#list hiddenParameterKeys as hiddenParameterKey>'${hiddenParameterKey}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(hiddenParameterMap.get(hiddenParameterKey)!)}'<#sep>,</#list>}">
-    <q-btn size="xs" outlined no-caps type="submit" label="Reset" color="grey-5">
-        <q-tooltip>Reset to Default</q-tooltip></q-btn>
-    </m-form-link>
-</#if>
-</div>
-<!--</th></tr>-->
-</#if>
-<q-separator></q-separator>
-            <div class="row justify-end">
-
-            <q-btn-group class="q-ma-sm">
+        <tr class="form-list-nav-row"><th colspan="${numColumns}"><div class="row">
+            <div class="col-xs-12 col-sm-6"><div class="row">
             <#if isSavedFinds>
                 <#assign userFindInfoList = formListInfo.getUserFormListFinds(ec)>
                 <#if userFindInfoList?has_content>
@@ -754,7 +683,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     </#if>
                     <q-btn-dropdown dense outline no-caps label="<#if activeUserFindName?has_content>${activeUserFindName?html}<#else>${ec.getL10n().localize("Select Find")}</#if>" color="<#if activeUserFindName?has_content>info</#if>"><q-list dense>
                         <q-item clickable v-close-popup><q-item-section>
-                            <m-link href="${sri.buildUrl(sri.getScreenUrlInstance().path).pathWithParams}">${ec.getL10n().localize("Clear Current Find")}</m-link>
+                            <m-link href="${sri.buildUrl(sri.getScreenUrlInstance().path).addParameter("formListFindId", "_clear").pathWithParams}">${ec.getL10n().localize("Clear Current Find")}</m-link>
                         </q-item-section></q-item>
                         <#list userFindInfoList as userFindInfo>
                             <#assign formListFind = userFindInfo.formListFind>
@@ -768,6 +697,61 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                         </#list>
                     </q-list></q-btn-dropdown>
                 </#if>
+            </#if>
+            <#if isHeaderDialog>
+                <#assign headerFormId = formId + "_header">
+                <#assign headerFormButtonText = ec.getL10n().localize("Find Options")>
+                <m-container-dialog id="${formId + "_hdialog"}" title="${headerFormButtonText}">
+                    <template v-slot:button><q-btn dense outline no-caps label="${headerFormButtonText}"></q-btn></template>
+                    <#-- Find Parameters Form -->
+                    <#assign curUrlInstance = sri.getCurrentScreenUrl()>
+                    <#assign skipFormSave = skipForm!false>
+                    <#assign skipForm = false>
+                    <#assign fieldsJsName = "formProps.fields">
+                    <#assign orderByOptions>
+                        <#list formNode["field"] as fieldNode><#if fieldNode["header-field"]?has_content>
+                            <#assign headerFieldNode = fieldNode["header-field"][0]>
+                            <#assign showOrderBy = (headerFieldNode["@show-order-by"])!>
+                            <#if showOrderBy?has_content && showOrderBy != "false">
+                                <#assign caseInsensitive = showOrderBy == "case-insensitive">
+                                <#assign orderFieldName = fieldNode["@name"]>
+                                <#assign orderFieldTitle><@fieldTitle headerFieldNode/></#assign>
+                                <#t>{value:'${caseInsensitive?string("^", "") + orderFieldName}',label:'${orderFieldTitle} ${ec.getL10n().localize("(Asc)")}'},
+                                <#t>{value:'${"-" + caseInsensitive?string("^", "") + orderFieldName}',label:'${orderFieldTitle} ${ec.getL10n().localize("(Desc)")}'},
+                            </#if>
+                        </#if></#list>
+                    </#assign>
+                    <m-form-link name="${headerFormId}" id="${headerFormId}" action="${curUrlInstance.path}" v-slot:default="formProps"<#rt>
+                            <#t> :fields-initial="${Static["org.moqui.util.WebUtilities"].fieldValuesEncodeHtmlJsSafe(sri.getFormListHeaderValues(formNode))}">
+                        <q-btn dense outline no-caps name="clearParameters" @click.prevent="formProps.clearForm" label="${ec.getL10n().localize("Clear Parameters")}"></q-btn>
+
+                        <#-- Always add an orderByField to select one or more columns to order by -->
+                        <q-select dense outlined options-dense multiple clearable emit-value map-options v-model="formProps.fields.orderByField"
+                                name="orderByField" id="${headerFormId}_orderByField" stack-label label="${ec.getL10n().localize("Order By")}"
+                                :options="[${orderByOptions}]"></q-select>
+
+                        <#t>${sri.pushSingleFormMapContext("")}
+                        <#list formNode["field"] as fieldNode><#if fieldNode["header-field"]?has_content && fieldNode["header-field"][0]?children?has_content>
+                            <#assign headerFieldNode = fieldNode["header-field"][0]>
+                            <#assign allHidden = true>
+                            <#list fieldNode?children as fieldSubNode>
+                                <#if !(fieldSubNode["hidden"]?has_content || fieldSubNode["ignored"]?has_content)><#assign allHidden = false></#if>
+                            </#list>
+
+                            <#if !(ec.getResource().condition(fieldNode["@hide"]!, "") || allHidden ||
+                                    ((!fieldNode["@hide"]?has_content) && fieldNode?children?size == 1 &&
+                                    (headerFieldNode["hidden"]?has_content || headerFieldNode["ignored"]?has_content)))>
+                                <@formSingleWidget headerFieldNode headerFormId "col-sm" false false/>
+                            <#elseif (headerFieldNode["hidden"])?has_content>
+                                <#recurse headerFieldNode/>
+                            </#if>
+                        </#if></#list>
+                        <#t>${sri.popContext()}<#-- context was pushed so pop here at the end -->
+                    </m-form-link>
+                    <#assign skipForm = skipFormSave>
+                    <#-- TODO: anything needed for per-row or multi forms? -->
+                    <#assign fieldsJsName = "">
+                </m-container-dialog>
             </#if>
 
             <#if isSelectColumns>
@@ -793,7 +777,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#sep>,</#list>
                 </#assign>
                 <m-container-dialog id="${selectColumnsDialogId}" title="${ec.l10n.localize("Column Fields")}">
-                    <template v-slot:button><q-btn size="xs" flat no-caps label="${ec.getL10n().localize("Columns")}"></q-btn></template>
+                    <template v-slot:button><q-btn dense outline no-caps label="${ec.getL10n().localize("Columns")}"></q-btn></template>
                     <m-form-column-config id="${formId}_SelColsForm" action="${sri.buildUrl("formSelectColumns").path}"
                         <#if currentFindUrlParms?has_content> :find-parameters="{<#list currentFindUrlParms.keySet() as parmName>'${parmName}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(currentFindUrlParms.get(parmName)!)}'<#sep>,</#list>}"</#if>
                         :columns-initial="[{id:'hidden', label:'${ec.l10n.localize("Do Not Display")}', children:[${hiddenChildren}]},${columnFieldInfo}]"
@@ -805,14 +789,15 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#if isSavedFinds>
                 <#assign savedFormButtonText = ec.getL10n().localize("Saved Finds")>
                 <m-container-dialog id="${formId + "_sfdialog"}" title="${savedFormButtonText}">
-                    <template v-slot:button><q-btn size="xs" flat no-caps label="${savedFormButtonText}"></q-btn></template>
+                    <template v-slot:button><q-btn dense outline no-caps label="${savedFormButtonText}"></q-btn></template>
                     <#assign activeFormListFind = formListInfo.getFormInstance().getActiveFormListFind(ec)!>
                     <#assign formSaveFindUrl = sri.buildUrl("formSaveFind").path>
                     <#assign descLabel = ec.getL10n().localize("Description")>
 
                     <#if activeFormListFind?has_content>
                         <#assign screenScheduled = formListInfo.getScreenForm().getFormListFindScreenScheduled(activeFormListFind.formListFindId, ec)!>
-                        <div><strong>${ec.getL10n().localize("Active Saved Find:")} ${activeFormListFind.description?html}</strong></div>
+                        <div><strong>${ec.getL10n().localize("Active Saved Find:")}</strong> ${activeFormListFind.description?html}
+                            <#if userDefaultFormListFindId == activeFormListFind.formListFindId><span class="text-info">(${ec.getL10n().localize("My Default")})</span></#if></div>
                         <#if screenScheduled?has_content>
                             <p>(Scheduled for <#if screenScheduled.renderMode! == 'xsl-fo'>PDF<#else>${screenScheduled.renderMode!?upper_case}</#if><#rt>
                                 <#t> ${Static["org.moqui.impl.service.ScheduledJobRunner"].getCronDescription(screenScheduled.cronExpression, ec.user.getLocale(), true)!})</p>
@@ -846,16 +831,16 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#list userFindInfoList as userFindInfo>
                         <#assign formListFind = userFindInfo.formListFind>
                         <#assign findParameters = userFindInfo.findParameters>
-                    <#-- use only formListFindId now that ScreenRenderImpl picks it up and auto adds configured parameters:
-                    <#assign doFindUrl = sri.buildUrl(sri.getScreenUrlInstance().path).addParameters(findParameters)> -->
+                        <#-- use only formListFindId now that ScreenRenderImpl picks it up and auto adds configured parameters:
+                        <#assign doFindUrl = sri.buildUrl(sri.getScreenUrlInstance().path).addParameters(findParameters)> -->
                         <#assign doFindUrl = sri.buildUrl(sri.getScreenUrlInstance().path).addParameter("formListFindId", formListFind.formListFindId)>
                         <#assign saveFindFormId = formId + "_SaveFind" + userFindInfo_index>
                         <#if currentFindUrlParms?has_content>
                             <div class="big-row">
                                 <m-form id="${saveFindFormId}" name="${saveFindFormId}" action="${formSaveFindUrl}" v-slot:default="formProps"
                                         :fields-initial="{formLocation:'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(formListInfo.getSavedFindFullLocation())}', formListFindId:'${formListFind.formListFindId}',<#rt>
-                                <#t>_findDescription:'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(formListFind.description?html)}',
-                                <#t><#list currentFindUrlParms.keySet() as parmName>'${parmName}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(currentFindUrlParms.get(parmName)!)}',</#list>}">
+                                            <#t>_findDescription:'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(formListFind.description?html)}',
+                                            <#t><#list currentFindUrlParms.keySet() as parmName>'${parmName}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(currentFindUrlParms.get(parmName)!)}',</#list>}">
                                     <div class="q-my-auto big-row-item"><q-input v-model="formProps.fields._findDescription" dense outlined stack-label label="${descLabel}" size="30" name="_findDescription" id="${saveFindFormId}_description" required="required"></q-input></div>
                                     <div class="on-right q-my-auto big-row-item"><q-btn dense outline no-caps type="submit" name="UpdateFind" label="${ec.getL10n().localize("Update")}">
                                             <q-tooltip>Update saved find using description and current find parameters</q-tooltip>
@@ -864,17 +849,29 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                                         <div class="q-my-auto big-row-item"><q-btn dense flat no-caps type="submit" name="DeleteFind" color="negative" icon="delete_forever" onclick="return confirm('${ec.getL10n().localize("Delete")} ${formListFind.description?js_string}?');"></q-btn></div>
                                     </#if>
                                     <div class="q-my-auto big-row-item"><q-btn dense outline no-caps to="${doFindUrl.pathWithParams}" label="${ec.getL10n().localize("Do Find")}"></q-btn></div>
+                                    <#if userDefaultFormListFindId == formListFind.formListFindId>
+                                        <div class="q-my-auto big-row-item"><q-btn dense outline no-caps type="submit" name="ClearDefault" color="info" label="${ec.getL10n().localize("Clear Default")}"></q-btn></div>
+                                    <#else>
+                                        <div class="q-my-auto big-row-item"><q-btn dense outline no-caps type="submit" name="MakeDefault" label="${ec.getL10n().localize("Make Default")}"></q-btn></div>
+                                    </#if>
                                 </m-form>
                             </div>
                         <#else>
-                            <div>
-                                <q-btn dense outline no-caps to="${doFindUrl.pathWithParams}" label="${ec.getL10n().localize("Do Find")}"></q-btn>
-                                <#if userFindInfo.isByUserId == "true">
-                                    <m-form id="${saveFindFormId}" action="${formSaveFindUrl}" :no-validate="true" :fields-initial="{formListFindId:'${formListFind.formListFindId}'}">
-                                        <q-btn dense flat no-caps type="submit" name="DeleteFind" color="negative" icon="delete_forever" onclick="return confirm('${ec.getL10n().localize("Delete")} ${formListFind.description?js_string}?');"></q-btn>
-                                    </m-form>
-                                </#if>
-                                <strong>${formListFind.description?html}</strong>
+                            <div class="big-row">
+                                <div class="q-my-auto big-row-item on-left"><q-input dense outlined readonly value="${formListFind.description?html}"></q-input></div>
+                                <div class="q-my-auto big-row-item"><q-btn dense outline no-caps to="${doFindUrl.pathWithParams}" label="${ec.getL10n().localize("Do Find")}"></q-btn></div>
+                                <m-form id="${saveFindFormId}" action="${formSaveFindUrl}" :no-validate="true"
+                                        :fields-initial="{formListFindId:'${formListFind.formListFindId}', formLocation:'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(formListInfo.getSavedFindFullLocation())}'}">
+                                    <#if userFindInfo.isByUserId == "true">
+                                        <div class="q-my-auto big-row-item"><q-btn dense flat no-caps type="submit" name="DeleteFind" color="negative" icon="delete_forever"
+                                                onclick="return confirm('${ec.getL10n().localize("Delete")} ${formListFind.description?js_string}?');"></q-btn></div>
+                                    </#if>
+                                    <#if userDefaultFormListFindId == formListFind.formListFindId>
+                                        <div class="q-my-auto big-row-item"><q-btn dense outline no-caps type="submit" name="ClearDefault" color="info" label="${ec.getL10n().localize("Clear Default")}"></q-btn></div>
+                                    <#else>
+                                        <div class="q-my-auto big-row-item"><q-btn dense outline no-caps type="submit" name="MakeDefault" label="${ec.getL10n().localize("Make Default")}"></q-btn></div>
+                                    </#if>
+                                </m-form>
                             </div>
                         </#if>
                     </#list>
@@ -884,12 +881,12 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#if formNode["@show-csv-button"]! == "true">
                 <#assign csvLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("renderMode", "csv")
                         .addParameter("pageNoLimit", "true").addParameter("lastStandalone", "true").addParameter("saveFilename", formNode["@name"] + ".csv")>
-                <q-btn size="xs" type="a" href="${csvLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("CSV")}"></q-btn>
+                <q-btn dense outline type="a" href="${csvLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("CSV")}"></q-btn>
             </#if>
             <#if formNode["@show-xlsx-button"]! == "true" && ec.screen.isRenderModeValid("xlsx")>
                 <#assign xlsxLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("renderMode", "xlsx")
                         .addParameter("pageNoLimit", "true").addParameter("lastStandalone", "true").addParameter("saveFilename", formNode["@name"] + ".xlsx")>
-                <q-btn size="xs" outlined rounded type="a" href="${xlsxLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("XLS")}"></q-btn>
+                <q-btn dense outline type="a" href="${xlsxLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("XLS")}"></q-btn>
             </#if>
             <#if formNode["@show-text-button"]! == "true">
                 <#assign showTextDialogId = formId + "_TextDialog">
@@ -982,13 +979,43 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <strong class="text-warning on-right" style="display:inline-block;padding-top:2px;">${ec.getL10n().localize("No results found")}</strong>
                 </#if>
             </#if>
-            </q-btn-group >
+            </div></div>
 
+            <#if isPaginated>
+            <div class="col-xs-12 col-sm-6"><div class="row">
+                <q-space></q-space>
+                <#-- no more paginate/show-all button, use page size drop-down with 500 instead:
+                <#if formNode["@show-all-button"]! == "true" && (context[listName + 'Count'] < 500)>
+                    <#if context["pageNoLimit"]?has_content>
+                        <#assign allLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().removeParameter("pageNoLimit")>
+                        <m-link href="${allLinkUrl.pathWithParams}" class="btn btn-default">${ec.getL10n().localize("Paginate")}</m-link>
+                    <#else>
+                        <#assign allLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageNoLimit", "true")>
+                        <m-link href="${allLinkUrl.pathWithParams}" class="btn btn-default">${ec.getL10n().localize("Show All")}</m-link>
+                    </#if>
+                </#if>
+                -->
+                <#if formNode["@show-all-button"]! == "true" || formNode["@show-page-size"]! == "true">
+                    <q-btn-dropdown dense outline no-caps label="${context[listName + "PageSize"]?c}"><q-list dense>
+                        <#list [10,20,50,100,200,500] as curPageSize>
+                            <#assign pageSizeUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageSize", curPageSize?c)>
+                            <q-item clickable v-close-popup><q-item-section>
+                                <m-link href="${pageSizeUrl.pathWithParams}">${curPageSize?c}</m-link>
+                            </q-item-section></q-item>
+                        </#list>
+                    </q-list></q-btn-dropdown>
+                </#if>
 
+                <#assign curPageMaxIndex = context[listName + "PageMaxIndex"]>
+                <#if (curPageMaxIndex > 4)><m-form-go-page id-val="${formId}" :max-index="${curPageMaxIndex?c}"></m-form-go-page></#if>
+                <m-form-paginate :paginate="{ count:${context[listName + "Count"]?c}, pageIndex:${context[listName + "PageIndex"]?c},<#rt>
+                    <#t> pageSize:${context[listName + "PageSize"]?c}, pageMaxIndex:${context[listName + "PageMaxIndex"]?c},
+                    <#lt> pageRangeLow:${context[listName + "PageRangeLow"]?c}, pageRangeHigh:${context[listName + "PageRangeHigh"]?c} }"></m-form-paginate>
+            </div></div>
+            </#if>
+        </div></th></tr>
 
-        </div><q-separator></q-separator></th></tr>
-
-        <!--<#if isHeaderDialog>
+        <#if isHeaderDialog>
         <tr><th colspan="${numColumns}" style="font-weight: normal">
             ${curFindSummary!""}
             <#if haveFilters>
@@ -997,12 +1024,12 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#assign curUrlInstance = sri.getCurrentScreenUrl()>
                 <m-form-link name="${headerFormId}_clr" id="${headerFormId}_clr" action="${curUrlInstance.path}"
                          :fields-initial="{<#list hiddenParameterKeys as hiddenParameterKey>'${hiddenParameterKey}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(hiddenParameterMap.get(hiddenParameterKey)!)}'<#sep>,</#list>}">
-                    <q-btn size="xs" outlined no-caps type="submit" label="Reset" color="grey-5">
+                    <q-btn dense flat type="submit" icon="clear" color="negative">
                         <q-tooltip>Reset to Default</q-tooltip></q-btn>
                 </m-form-link>
             </#if>
         </th></tr>
-        </#if>-->
+        </#if>
     </#if>
 </#macro>
 
@@ -1100,11 +1127,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </#if>
 
         <div class="q-my-sm q-table__container q-table__card q-table--horizontal-separator q-table--dense q-table--flat" :class="{'q-table--dark':$q.dark.isActive, 'q-table__card--dark':$q.dark.isActive, 'q-dark':$q.dark.isActive,}">
-        <#--div class="q-my-sm q-table__container q-table__card q-table--horizontal-separator q-table--dense q-table--flat shadow-2 rounded-borders" :class="{'q-table--dark':$q.dark.isActive, 'q-table__card--dark':$q.dark.isActive, 'q-dark':$q.dark.isActive,}"-->
-
-            <div class="table q-table ${tableStyle} rounded-borders shadow-2" id="${formId}_table">
+        <div class="table q-table ${tableStyle}" id="${formId}_table">
         <#if !skipHeader>
-            <div class="thead"><!--bg-green-11-->
+            <div class="thead">
                 <@paginationHeader formListInfo formId isHeaderDialog/>
                 <#assign ownerForm = headerFormId>
                 <div class="tr">
@@ -1303,7 +1328,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <tr class="form-list-nav-row"><th colspan="${numColumns}"><div class="row">
                 <q-space></q-space>
                 <#if formNode["@show-all-button"]! == "true" || formNode["@show-page-size"]! == "true">
-                    <q-btn-dropdown dense flat no-caps color="grey" label="${context[listName + "PageSize"]?c}"><q-list dense>
+                    <q-btn-dropdown dense outline no-caps label="${context[listName + "PageSize"]?c}"><q-list dense>
                         <#list [10,20,50,100,200,500] as curPageSize>
                             <#assign pageSizeUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageSize", curPageSize?c)>
                             <q-item clickable v-close-popup><q-item-section>
@@ -1740,7 +1765,6 @@ a => A, d => D, y => Y
             <#t><#if .node["@required-manual-select"]! == "true"> :required-manual-select="true"</#if>
             <#t><#if .node?parent["@tooltip"]?has_content> tooltip="${ec.getResource().expand(.node?parent["@tooltip"], "")}"</#if>
             <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if .node["@size"]?has_content> size="${.node["@size"]}"</#if>
-            <#t><#if onSelectGoTo?has_content> onSelectGoTo="${onSelectGoTo}"</#if>
             <#if isDynamicOptions> options-url="${doUrlInfo.url}" value-field="${doNode["@value-field"]!"value"}" label-field="${doNode["@label-field"]!"label"}"<#if doNode["@depends-optional"]! == "true"> :depends-optional="true"</#if>
                 <#t> :depends-on="{<#list depNodeList as depNode><#local depNodeField = depNode["@field"]>'${depNode["@parameter"]!depNodeField}':'${depNodeField}'<#sep>, </#list>}"
                 <#t> :options-parameters="{<#list doUrlParameterMap.keySet() as parameterKey><#if doUrlParameterMap.get(parameterKey)?has_content>'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(parameterKey)}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(doUrlParameterMap.get(parameterKey))}', </#if></#list>}"
