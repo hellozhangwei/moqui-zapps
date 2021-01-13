@@ -357,7 +357,7 @@ Vue.component('m-container-box', {
         '</q-card-actions>' +
         '<q-slide-transition><div v-show="expanded">' +
             '<q-separator />' +
-            '<q-card-section :class="{in:expanded}"><slot></slot></q-card-section>' +
+            '<q-card-section :class="{in:expanded}" class="no-padding"><slot></slot></q-card-section>' +
         '</div></q-slide-transition>' +
     '</q-card>'
 });
