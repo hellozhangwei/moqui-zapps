@@ -435,7 +435,7 @@ Vue.component('m-container-dialog', {
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<span @click.stop="show()"><slot name="button"><q-btn size="xs" flat outline no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn size="xs" flat no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
