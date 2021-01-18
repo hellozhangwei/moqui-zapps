@@ -278,8 +278,8 @@ along with this software (see the LICENSE.md file). If not, see
       so that user can switch back
       to mini-mode
     -->
-    <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -17px">
-        <q-btn dense round unelevated color="grey-4" text-color="grey" icon="chevron_left" @click="toggleMiniState"/>
+    <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -14px">
+        <q-btn size="xs" round unelevated color="grey-4" text-color="grey" icon="chevron_left" @click="toggleMiniState"/>
     </div>
 </q-drawer>
 
