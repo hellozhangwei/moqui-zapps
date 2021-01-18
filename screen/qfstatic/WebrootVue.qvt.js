@@ -347,10 +347,10 @@ Vue.component('m-container-box', {
     data: function() { return { expanded:this.initialOpen }},
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
-    '<q-card flat bordered class="q-ma-sm m-container-box">' +
+    '<q-card flat bordered class="q-ma-sm m-container-box full-width">' +
         '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="bg-grey-3">' +
             '<q-icon v-if="collapsable" :name="expanded?\'expand_more\':\'expand_less\'" />' +
-            '<span class="text-h7" v-if="title && title.length">{{title}}</span>' +
+            '<span class="text-h6" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
@@ -1843,7 +1843,7 @@ Vue.component('m-subscreens-tabs', {
      */
     template:
     '<div v-if="subscreens.length > 0"><q-tabs dense class="bg-grey-1 text-teal" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
-        '<q-tab v-for="tab in subscreens" :key="tab.name" icon="add" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
+        '<q-tab v-for="tab in subscreens" :key="tab.name" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
     methods: {
         goTo: function(pathWithParams) { this.$root.setUrl(this.$root.getLinkPath(pathWithParams)); }
