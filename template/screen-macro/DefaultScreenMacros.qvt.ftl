@@ -660,7 +660,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#list headerFieldNode?children as widgetNode><#if widgetNode?node_name != "set">
                         <#assign fieldValue><@widgetTextValue widgetNode/></#assign>
                         <#if fieldValue?has_content>
-                            <span style="white-space:nowrap;"><strong><@fieldTitle headerFieldNode/>:</strong> <span class="text-success">${fieldValue}</span></span>
+                            <span style="white-space:nowrap;"><span class="text-grey"><@fieldTitle headerFieldNode/>:</span> <span class="text-success">${fieldValue}</span></span>
                             <#assign haveFilters = true>
                         </#if>
                     </#if></#list>
@@ -1019,15 +1019,15 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </div></th></tr>
 
         <#if isHeaderDialog>
-        <tr><th colspan="${numColumns}" style="font-weight: normal">
-            ${curFindSummary!""}
+        <tr><th colspan="${numColumns}" style="font-weight: normal" class="text-left">
+            <strong>当前查找条件:</strong>${curFindSummary!""}
             <#if haveFilters>
                 <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
                 <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
                 <#assign curUrlInstance = sri.getCurrentScreenUrl()>
                 <m-form-link name="${headerFormId}_clr" id="${headerFormId}_clr" action="${curUrlInstance.path}"
                          :fields-initial="{<#list hiddenParameterKeys as hiddenParameterKey>'${hiddenParameterKey}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(hiddenParameterMap.get(hiddenParameterKey)!)}'<#sep>,</#list>}">
-                    <q-btn dense flat type="submit" icon="clear" color="negative">
+                    <q-btn dense flat type="submit" icon="loop" label="重置条件" color="grey">
                         <q-tooltip>Reset to Default</q-tooltip></q-btn>
                 </m-form-link>
             </#if>
