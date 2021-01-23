@@ -955,9 +955,9 @@ Vue.component('m-form-go-page', {
     data: function() { return { pageIndex:"" } },
     template:
     '<q-form v-if="!formList || (formList.paginate && formList.paginate.pageMaxIndex > 4)" @submit.prevent="goPage" :id="idVal+\'_GoPage\'">' +
-        '<q-input dense v-model="pageIndex" type="text" size="4" name="pageIndex" :id="idVal+\'_GoPage_pageIndex\'" placeholder="Page #"' +
+        '<q-input dense borderless v-model="pageIndex" type="text" size="4" name="pageIndex" :id="idVal+\'_GoPage_pageIndex\'" placeholder="Page #"' +
         '   :rules="[val => /^\\d*$/.test(val) || \'digits only\', val => ((formList && +val <= formList.paginate.pageMaxIndex) || (maxIndex && +val < maxIndex)) || \'higher than max\']"></q-input>' +
-        '<q-btn dense flat no-caps type="submit" label="Go"></q-btn>' +
+        '<q-btn dense flat no-caps color="grey" type="submit" label="Go"></q-btn>' +
     '</q-form>',
     methods: { goPage: function() {
         var formList = this.formList;
@@ -1853,7 +1853,9 @@ Vue.component('m-subscreens-tabs', {
             if (!this.pathIndex || this.pathIndex < 0) return [];
             var navMenu = this.$root.navMenuList[this.pathIndex];
             if (!navMenu || !navMenu.subscreens) return [];
-            return navMenu.subscreens;
+            var subscreens = [];
+            $.each(navMenu.subscreens, function(idx, tab) {if (tab.menuInclude) subscreens.push(tab);});
+            return subscreens;
         },
         activeTab: function () {
             if (!this.pathIndex || this.pathIndex < 0) return null;
