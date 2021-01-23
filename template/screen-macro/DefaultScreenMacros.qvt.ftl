@@ -1331,7 +1331,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <tr class="form-list-nav-row"><th colspan="${numColumns}"><div class="row">
                 <q-space></q-space>
                 <#if formNode["@show-all-button"]! == "true" || formNode["@show-page-size"]! == "true">
-                    <q-btn-dropdown dense outline no-caps color="grey" label="${context[listName + "PageSize"]?c}"><q-list dense>
+                    <q-btn-dropdown dense flat no-caps color="grey" label="${context[listName + "PageSize"]?c}"><q-list dense>
                         <#list [10,20,50,100,200,500] as curPageSize>
                             <#assign pageSizeUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageSize", curPageSize?c)>
                             <q-item clickable v-close-popup><q-item-section>
