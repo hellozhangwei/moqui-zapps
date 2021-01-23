@@ -702,7 +702,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#assign headerFormId = formId + "_header">
                 <#assign headerFormButtonText = ec.getL10n().localize("Find Options")>
                 <m-container-dialog id="${formId + "_hdialog"}" title="${headerFormButtonText}">
-                    <template v-slot:button><q-btn dense outline no-caps label="${headerFormButtonText}"></q-btn></template>
+                    <template v-slot:button><q-btn dense outline no-caps color="grey" label="${headerFormButtonText}"></q-btn></template>
                     <#-- Find Parameters Form -->
                     <#assign curUrlInstance = sri.getCurrentScreenUrl()>
                     <#assign skipFormSave = skipForm!false>
@@ -726,9 +726,11 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                         <q-btn dense outline no-caps name="clearParameters" @click.prevent="formProps.clearForm" label="${ec.getL10n().localize("Clear Parameters")}"></q-btn>
 
                         <#-- Always add an orderByField to select one or more columns to order by -->
+                        <div class="q-ma-sm">
                         <q-select dense outlined options-dense multiple clearable emit-value map-options v-model="formProps.fields.orderByField"
                                 name="orderByField" id="${headerFormId}_orderByField" stack-label label="${ec.getL10n().localize("Order By")}"
                                 :options="[${orderByOptions}]"></q-select>
+                        </div>
 
                         <#t>${sri.pushSingleFormMapContext("")}
                         <#list formNode["field"] as fieldNode><#if fieldNode["header-field"]?has_content && fieldNode["header-field"][0]?children?has_content>
@@ -777,7 +779,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#sep>,</#list>
                 </#assign>
                 <m-container-dialog id="${selectColumnsDialogId}" title="${ec.l10n.localize("Column Fields")}">
-                    <template v-slot:button><q-btn dense outline no-caps label="${ec.getL10n().localize("Columns")}"></q-btn></template>
+                    <template v-slot:button><q-btn dense outline no-caps color="grey" label="${ec.getL10n().localize("Columns")}"></q-btn></template>
                     <m-form-column-config id="${formId}_SelColsForm" action="${sri.buildUrl("formSelectColumns").path}"
                         <#if currentFindUrlParms?has_content> :find-parameters="{<#list currentFindUrlParms.keySet() as parmName>'${parmName}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(currentFindUrlParms.get(parmName)!)}'<#sep>,</#list>}"</#if>
                         :columns-initial="[{id:'hidden', label:'${ec.l10n.localize("Do Not Display")}', children:[${hiddenChildren}]},${columnFieldInfo}]"
@@ -789,7 +791,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#if isSavedFinds>
                 <#assign savedFormButtonText = ec.getL10n().localize("Saved Finds")>
                 <m-container-dialog id="${formId + "_sfdialog"}" title="${savedFormButtonText}">
-                    <template v-slot:button><q-btn dense outline no-caps label="${savedFormButtonText}"></q-btn></template>
+                    <template v-slot:button><q-btn dense outline no-caps color="grey" label="${savedFormButtonText}"></q-btn></template>
                     <#assign activeFormListFind = formListInfo.getFormInstance().getActiveFormListFind(ec)!>
                     <#assign formSaveFindUrl = sri.buildUrl("formSaveFind").path>
                     <#assign descLabel = ec.getL10n().localize("Description")>
@@ -881,18 +883,18 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#if formNode["@show-csv-button"]! == "true">
                 <#assign csvLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("renderMode", "csv")
                         .addParameter("pageNoLimit", "true").addParameter("lastStandalone", "true").addParameter("saveFilename", formNode["@name"] + ".csv")>
-                <q-btn dense outline type="a" href="${csvLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("CSV")}"></q-btn>
+                <q-btn dense outline color="grey" type="a" href="${csvLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("CSV")}"></q-btn>
             </#if>
             <#if formNode["@show-xlsx-button"]! == "true" && ec.screen.isRenderModeValid("xlsx")>
                 <#assign xlsxLinkUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("renderMode", "xlsx")
                         .addParameter("pageNoLimit", "true").addParameter("lastStandalone", "true").addParameter("saveFilename", formNode["@name"] + ".xlsx")>
-                <q-btn dense outline type="a" href="${xlsxLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("XLS")}"></q-btn>
+                <q-btn dense outline color="grey" type="a" href="${xlsxLinkUrl.getUrlWithParams()}" label="${ec.getL10n().localize("XLS")}"></q-btn>
             </#if>
             <#if formNode["@show-text-button"]! == "true">
                 <#assign showTextDialogId = formId + "_TextDialog">
                 <#assign textLinkUrl = sri.getScreenUrlInstance()>
                 <#assign textLinkUrlParms = textLinkUrl.getParameterMap()>
-                <m-container-dialog id="${showTextDialogId}" button-text="${ec.getL10n().localize("Text")}" title="${ec.getL10n().localize("Export Fixed-Width Plain Text")}">
+                <m-container-dialog id="${showTextDialogId}" color="grey" button-text="${ec.getL10n().localize("Text")}" title="${ec.getL10n().localize("Export Fixed-Width Plain Text")}">
                     <#-- NOTE: don't use m-form, most commonly results in download and if not won't be html -->
                     <form id="${formId}_Text" method="post" action="${textLinkUrl.getUrl()}">
                         <input type="hidden" name="renderMode" value="text">
@@ -935,7 +937,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#assign showPdfDialogId = formId + "_PdfDialog">
                 <#assign pdfLinkUrl = sri.getScreenUrlInstance()>
                 <#assign pdfLinkUrlParms = pdfLinkUrl.getParameterMap()>
-                <m-container-dialog id="${showPdfDialogId}" button-text="${ec.getL10n().localize("PDF")}" title="${ec.getL10n().localize("Generate PDF")}">
+                <m-container-dialog id="${showPdfDialogId}" color="grey" button-text="${ec.getL10n().localize("PDF")}" title="${ec.getL10n().localize("Generate PDF")}">
                     <#-- NOTE: don't use m-form, most commonly results in download and if not won't be html -->
                     <form id="${formId}_Pdf" method="post" action="${ec.web.getWebappRootUrl(false, null)}/fop${pdfLinkUrl.getPath()}">
                         <input type="hidden" name="pageNoLimit" value="true">
@@ -996,7 +998,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 </#if>
                 -->
                 <#if formNode["@show-all-button"]! == "true" || formNode["@show-page-size"]! == "true">
-                    <q-btn-dropdown dense outline no-caps label="${context[listName + "PageSize"]?c}"><q-list dense>
+                    <q-btn-dropdown dense flat no-caps color="grey" label="${context[listName + "PageSize"]?c}"><q-list dense>
                         <#list [10,20,50,100,200,500] as curPageSize>
                             <#assign pageSizeUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageSize", curPageSize?c)>
                             <q-item clickable v-close-popup><q-item-section>
@@ -1328,7 +1330,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <tr class="form-list-nav-row"><th colspan="${numColumns}"><div class="row">
                 <q-space></q-space>
                 <#if formNode["@show-all-button"]! == "true" || formNode["@show-page-size"]! == "true">
-                    <q-btn-dropdown dense outline no-caps label="${context[listName + "PageSize"]?c}"><q-list dense>
+                    <q-btn-dropdown dense outline no-caps color="grey" label="${context[listName + "PageSize"]?c}"><q-list dense>
                         <#list [10,20,50,100,200,500] as curPageSize>
                             <#assign pageSizeUrl = sri.getScreenUrlInstance().cloneUrlInstance().addParameter("pageSize", curPageSize?c)>
                             <q-item clickable v-close-popup><q-item-section>
