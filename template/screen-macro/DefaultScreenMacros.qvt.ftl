@@ -670,8 +670,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </#assign>
     </#if>
     <#if (isHeaderDialog || isSavedFinds || isSelectColumns || isPaginated) && hideNav! != "true">
-        <tr class="form-list-nav-row"><th colspan="${numColumns}"><div class="row">
-            <div class="col-xs-12 col-sm-6"><div class="row">
+        <tr class="form-list-nav-row bg-grey-3"><th colspan="${numColumns}"><div class="row">
+            <div class="col text-left">
             <#if isSavedFinds>
                 <#assign userFindInfoList = formListInfo.getUserFormListFinds(ec)>
                 <#if userFindInfoList?has_content>
@@ -981,10 +981,11 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <strong class="text-warning on-right" style="display:inline-block;padding-top:2px;">${ec.getL10n().localize("No results found")}</strong>
                 </#if>
             </#if>
-            </div></div>
+            </div>
 
             <#if isPaginated>
-            <div class="col-xs-12 col-sm-6"><div class="row">
+
+            <div class="col"><div class="row">
                 <q-space></q-space>
                 <#-- no more paginate/show-all button, use page size drop-down with 500 instead:
                 <#if formNode["@show-all-button"]! == "true" && (context[listName + 'Count'] < 500)>
@@ -1128,7 +1129,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     :fields-initial="${Static["org.moqui.util.WebUtilities"].fieldValuesEncodeHtmlJsSafe(sri.makeFormListMultiMap(formListInfo, listObject, formListUrlInfo))}">
         </#if>
 
-        <div class="q-my-sm q-table__container q-table__card q-table--horizontal-separator q-table--dense q-table--flat" :class="{'q-table--dark':$q.dark.isActive, 'q-table__card--dark':$q.dark.isActive, 'q-dark':$q.dark.isActive,}">
+        <div class="q-my-sm q-table__container q-table__card q-table--horizontal-separator q-table--dense q-table--flat q-table--bordered" :class="{'q-table--dark':$q.dark.isActive, 'q-table__card--dark':$q.dark.isActive, 'q-dark':$q.dark.isActive,}">
         <div class="table q-table ${tableStyle}" id="${formId}_table">
         <#if !skipHeader>
             <div class="thead">
