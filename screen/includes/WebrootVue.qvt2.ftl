@@ -284,13 +284,13 @@ along with this software (see the LICENSE.md file). If not, see
 </q-drawer>
 
         <q-page-container><q-page>
-            <div class="q-pa-sm" style="border-bottom: 1px solid rgba(0,0,0,0.12);">
+            <div class="q-pa-md" style="border-bottom: 1px solid rgba(0,0,0,0.12);">
                 <template v-for="(navMenuItem, menuIndex) in navMenuList">
                     <m-link :href="getNavHref(menuIndex)" class="gt-xs">{{navMenuItem.title}}</m-link>
                     <q-icon v-if="menuIndex < (navMenuList.length - 1)" size="1.5em" name="chevron_right" color="grey" class="gt-xs"></q-icon>
                 </template>
             </div>
-            <div class="q-ma-sm">
+            <div class="q-ma-md">
                 <m-subscreens-active></m-subscreens-active>
             </div>
         </q-page></q-page-container>
