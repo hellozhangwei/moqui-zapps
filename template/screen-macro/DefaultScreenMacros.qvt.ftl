@@ -670,7 +670,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </#assign>
     </#if>
     <#if (isHeaderDialog || isSavedFinds || isSelectColumns || isPaginated) && hideNav! != "true">
-        <tr class="form-list-nav-row bg-grey-3"><th colspan="${numColumns}"><div class="row">
+        <tr class="form-list-nav-row bg-grey-3"><th colspan="${numColumns}"><div class="row q-pa-md">
             <div class="col text-left">
             <#if isSavedFinds>
                 <#assign userFindInfoList = formListInfo.getUserFormListFinds(ec)>
@@ -681,7 +681,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                             <#if userFindInfo.formListFind.formListFindId == ec.getContext().formListFindId>
                                 <#assign activeUserFindName = userFindInfo.description/></#if></#list>
                     </#if>
-                    <q-btn-dropdown dense outline no-caps label="<#if activeUserFindName?has_content>${activeUserFindName?html}<#else>${ec.getL10n().localize("Select Find")}</#if>" color="<#if activeUserFindName?has_content>info</#if>"><q-list dense>
+                    <q-btn-dropdown dense outline no-caps label="<#if activeUserFindName?has_content>${activeUserFindName?html}<#else>${ec.getL10n().localize("Select Find")}</#if>" color="grey"><q-list dense>
                         <q-item clickable v-close-popup><q-item-section>
                             <m-link href="${sri.buildUrl(sri.getScreenUrlInstance().path).addParameter("formListFindId", "_clear").pathWithParams}">${ec.getL10n().localize("Clear Current Find")}</m-link>
                         </q-item-section></q-item>
@@ -1019,7 +1019,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </div></th></tr>
 
         <#if isHeaderDialog>
-        <tr><th colspan="${numColumns}" style="font-weight: normal" class="text-left">
+        <tr class="bg-grey-2"><th colspan="${numColumns}" style="font-weight: normal" class="text-left">
             <strong>当前查找条件:</strong>${curFindSummary!""}
             <#if haveFilters>
                 <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
@@ -1135,7 +1135,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <div class="thead">
                 <@paginationHeader formListInfo formId isHeaderDialog/>
                 <#assign ownerForm = headerFormId>
-                <div class="tr">
+                <div class="tr bg-grey-1">
                     <#if needHeaderForm && !isHeaderDialog>
                         <#assign fieldsJsName = "formProps.fields">
                         <#assign headerUrlInstance = sri.getCurrentScreenUrl()>
