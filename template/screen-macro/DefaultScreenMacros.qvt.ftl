@@ -1761,7 +1761,7 @@ a => A, d => D, y => Y
         <#if currentValue?has_content && !currentDescription?has_content><#assign currentDescription><@widgetTextValue .node true/></#assign></#if>
     </#if>
     <#assign fieldLabel><@fieldTitle ddSubFieldNode/></#assign>
-    <m-drop-down name="${name}" id="${tlId}"<#if fieldLabel?has_content> label="${fieldLabel}"</#if><#if formDisabled!> disable</#if><#rt>
+    <m-drop-down name="${name}" id="${tlId}"<#if fieldLabel?has_content && (ddSubFieldNode?node_name != 'header-field')> label="${fieldLabel}"</#if><#if formDisabled!> disable</#if><#rt>
             <#t> class="<#if isDynamicOptions>dynamic-options</#if><#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if><#if validationClasses?has_content> ${validationClasses}</#if>"<#rt>
             <#t><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${name}" :fields="${fieldsJsName}"<#else><#if allowMultiple> :value="[<#list currentValueList as curVal><#if curVal?has_content>'${curVal}',</#if></#list>]"<#else> value="${currentValue!}"</#if></#if>
             <#t><#if allowMultiple> :multiple="true"</#if><#if allowEmpty> :allow-empty="true"</#if><#if .node["@combo-box"]! == "true"> :combo="true"</#if>
