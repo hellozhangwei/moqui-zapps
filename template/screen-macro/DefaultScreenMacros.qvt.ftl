@@ -1143,7 +1143,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                                 <#t> :fields-initial="${Static["org.moqui.util.WebUtilities"].fieldValuesEncodeHtmlJsSafe(sri.getFormListHeaderValues(formNode))}">
                     </#if>
 
-                    <#list mainColInfoList as columnFieldList><div class="th text-left"><#list columnFieldList as fieldNode>
+                    <#list mainColInfoList as columnFieldList><div class="th text-left" <#if columnWidthList?? && columnWidthList[columnFieldList_index]??>style="width:${columnWidthList[columnFieldList_index]!}"</#if>><#list columnFieldList as fieldNode>
                         <div><@formListHeaderField fieldNode isHeaderDialog/></div>
                     </#list></div><#-- /th --></#list>
 
