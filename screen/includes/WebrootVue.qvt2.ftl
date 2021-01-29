@@ -171,8 +171,7 @@ along with this software (see the LICENSE.md file). If not, see
                 <template v-for="(subscreen, subscreenIndex) in navMenuList[1].subscreens" >
                     <q-item clickable v-ripple :active="subscreen.active" :to="subscreen.pathWithParams">
                         <q-item-section avatar>
-                            <q-icon v-if="subscreen.imageType === 'icon'" :name="subscreen.image"></q-icon>
-                            <q-icon v-else :name="'img:' + subscreen.image"></q-icon>
+                            <q-icon :name="(subscreen.imageType == 'icon')?subscreen.image:'img:' + subscreen.image"></q-icon>
                         </q-item-section>
                         <q-item-section>{{subscreen.title}}</q-item-section>
                     </q-item>
