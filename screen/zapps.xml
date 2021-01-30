@@ -41,7 +41,7 @@ along with this software (see the LICENSE.md file). If not, see
             // Quasar
             footer_scripts.add("/libs/quasar/quasar.umd.min.js")
             // Webroot Quasar-Vue instance, in footer so runs after page loaded
-            footer_scripts.add('/qfstatic/WebrootVue.qvt.js')
+            footer_scripts.add('/zstatic/WebrootVue.qvt.js')
         } else {
             /* ========== Dev Mode ========== */
             html_scripts.add('/js/MoquiLib.js')
@@ -52,7 +52,7 @@ along with this software (see the LICENSE.md file). If not, see
             // Quasar
             footer_scripts.add("/libs/quasar/quasar.umd.min.js")
             // Webroot Quasar-Vue instance, in footer so runs after page loaded
-            footer_scripts.add('/qfstatic/WebrootVue.qvt.js')
+            footer_scripts.add('/zstatic/WebrootVue.qvt.js')
         }
 
         // conditional QZ Tray scripts, only include if enabled

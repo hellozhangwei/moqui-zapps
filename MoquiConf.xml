@@ -13,7 +13,7 @@
         <screen location="component://webroot/screen/webroot.xml" default-subscreen="zapps">
             <!-- zapps is a SPA wrapper around apps.xml just like vapps.xml -->
             <subscreens-item name="zapps" menu-include="false" location="component://moqui-zapps/screen/zapps.xml"/>
-            <subscreens-item name="qfstatic" menu-include="false" location="component://moqui-zapps/screen/qfstatic.xml"/>
+            <subscreens-item name="zstatic" menu-include="false" location="component://moqui-zapps/screen/zstatic.xml"/>
         </screen>
     </screen-facade>
 </moqui-conf>
