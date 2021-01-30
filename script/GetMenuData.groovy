@@ -46,7 +46,8 @@ def getSubscreens(appsMenu) {
         String currentScreenPath = "${appsMenu.path}/${currentSubscreensItem.name}"
         ScreenUrlInfo.UrlInstance currentUrlInfo = sri.buildUrl(currentScreenPath)
         ScreenUrlInfo sui = currentUrlInfo.sui
-        if(currentScreenDef && currentSubscreensItem.getMenuInclude() && currentUrlInfo?.isPermitted() && !currentScreenDef.hasRequired) {
+        if(currentScreenDef && currentSubscreensItem.getMenuInclude() && currentUrlInfo?.isPermitted()
+                && !currentScreenDef.hasRequired && !currentScreenDef.isStandalone()) {
 
             String pathWithParams = "/" + sui.preTransitionPathNameList.join("/")
             String parmString = currentUrlInfo.getParameterString()
