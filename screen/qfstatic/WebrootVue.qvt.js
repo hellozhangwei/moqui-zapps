@@ -1933,21 +1933,25 @@ Vue.component('m-menu-tree-item', {
     props: { menuItems: {}},
     template:
         '<div><template v-for="(menuItem, index) in menuItems" >' +
-            '<q-expansion-item v-if="menuItem.subscreens && menuItem.subscreens.length > 0" :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams">' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
-                '<template v-slot:header>' +
-                    '<q-item-section avatar>' +
-                        '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
-                    '</q-item-section>' +
-                    '<q-item-section>{{menuItem.title}}</q-item-section>' +
-                '</template>' +
-                '<template v-slot:default><m-menu-tree-item v-if="menuItem.subscreens && menuItem.subscreens.length>0" :menuItems="menuItem.subscreens"></m-menu-tree-item></template>' +
-            '</q-expansion-item>' +
-            '<q-item v-else clickable v-ripple :active="menuItem.active" :to="menuItem.pathWithParams">' +
+            '<template  v-if="menuItem.subscreens && menuItem.subscreens.length > 0">' +
+                '<q-expansion-item :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams">' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
+                    '<template v-slot:header>' +
+                        '<q-item-section avatar>' +
+                            '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
+                        '</q-item-section>' +
+                        '<q-item-section>{{menuItem.title}}</q-item-section>' +
+                    '</template>' +
+                    '<template v-slot:default><m-menu-tree-item v-if="menuItem.subscreens && menuItem.subscreens.length>0" :menuItems="menuItem.subscreens"></m-menu-tree-item></template>' +
+                '</q-expansion-item><q-separator></q-separator>' +
+        '</template>' +
+        '<template v-else>' +
+            '<q-item clickable v-ripple :active="menuItem.active" :to="menuItem.pathWithParams">' +
                 '<q-item-section avatar>' +
                     '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image"></q-icon>' +
                 '</q-item-section>' +
                 '<q-item-section>{{menuItem.title}}</q-item-section>' +
-            '</q-item>' +
+            '</q-item><q-separator></q-separator>' +
+        '</template>' +
         '</template></div>' ,
     methods: {
         getMenuIcon: function(menuItem) {
