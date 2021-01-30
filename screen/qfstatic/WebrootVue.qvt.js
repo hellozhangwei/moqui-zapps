@@ -1915,6 +1915,61 @@ Vue.component('m-subscreens-active', {
     mounted: function() { this.$root.addSubscreen(this); }
 });
 
+Vue.component('m-menu-tree', {
+    name: "mMenuTree",
+    data: function() { return { menuTreeData: {} } },
+    template:
+        '<div><template v-for="(subscreen, index) in menuTreeData.subscreens" >' +
+            '<m-menu-tree-item :menuItems="subscreen.subscreens"></m-menu-tree-item>' +
+        '</template></div>',
+    beforeCreate: function() {
+        var vm = this;
+
+        $.ajax({ type:"GET", url:"/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
+            var outerList = null;
+            console.log("menu response " + outerListText);
+            vm.menuTreeData = outerListText
+        }});
+    }
+});
+
+Vue.component('m-menu-tree-item', {
+    name: "mMenuTreeItem",
+    props: { menuItems: {}},
+    template:
+        '<div><template v-for="(menuItem, index) in menuItems" >' +
+            '<q-expansion-item v-if="menuItem.subscreens && menuItem.subscreens.length > 0" :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams">' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
+                '<template v-slot:header>' +
+                    '<q-item-section avatar>' +
+                        '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
+                    '</q-item-section>' +
+                    '<q-item-section>{{menuItem.title}}</q-item-section>' +
+                '</template>' +
+                '<template v-slot:default><m-menu-tree-item v-if="menuItem.subscreens && menuItem.subscreens.length>0" :menuItems="menuItem.subscreens"></m-menu-tree-item></template>' +
+            '</q-expansion-item>' +
+            '<q-item v-else clickable v-ripple :active="menuItem.active" :to="menuItem.pathWithParams">' +
+                '<q-item-section avatar>' +
+                    '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image"></q-icon>' +
+                '</q-item-section>' +
+                '<q-item-section>{{menuItem.title}}</q-item-section>' +
+            '</q-item>' +
+        '</template></div>' ,
+    methods: {
+        getMenuIcon: function(menuItem) {
+            if(menuItem.image) {
+                if(menuItem.imageType == 'icon') {
+                    return menuItem.image
+                } else {
+                    return 'img:' + menuItem.image
+                }
+            } else {
+                menuItem.image = 'push_pin'
+                menuItem.imageType = 'icon'
+            }
+        }
+    }
+});
+
 Vue.component('m-menu-nav-item', {
     name: "mMenuNavItem",
     props: { menuIndex:Number },
