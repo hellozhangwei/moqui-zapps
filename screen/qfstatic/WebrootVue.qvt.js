@@ -1917,13 +1917,14 @@ Vue.component('m-subscreens-active', {
 
 Vue.component('m-menu-tree', {
     name: "mMenuTree",
-    data: function() { return { menuTreeData: {} } },
-    template:'<m-menu-tree-item :menuItems="menuTreeData.subscreens"></m-menu-tree-item>' ,
+    data: function() { return { menuTreeData: {}, showSpinner:true } },
+    template:'<div><q-spinner v-if="showSpinner" color="primary" size="3em"/><m-menu-tree-item :menuItems="menuTreeData.subscreens"></m-menu-tree-item></div>' ,
     beforeCreate: function() {
         var vm = this;
         $.ajax({ type:"GET", url:"/qfuncs/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
             //console.log("menuTreeData= " + outerListText);
             vm.menuTreeData = outerListText
+            vm.showSpinner = false;
         }});
     }
 });
