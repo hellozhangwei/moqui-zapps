@@ -34,7 +34,6 @@ getSubscreens(rootScreenMap)
 //menuDataList[0].subscreens = rootScreenMap.subscreens
 if (menuDataList != null) ec.web.sendJsonResponse(rootScreenMap)
 
-
 def getSubscreens(appsMenu) {
 
     ScreenDefinition parentScreenDef = sri.sfi.getScreenDefinition(appsMenu.location)
@@ -66,8 +65,8 @@ def getSubscreens(appsMenu) {
                              renderModes:sui.targetScreen.renderModes,
                              location:currentScreenDef.location]
             if ("icon".equals(imageType)) subscreenMap.imageType = "icon"
-            def active = ("/" + sri.screenUrlInfo.extraPathNameList.join("/") + "/").indexOf(currentScreenPath + "/")>=0
-            if (active) subscreenMap.active = true
+            //def active = ("/" + sri.screenUrlInfo.extraPathNameList.join("/") + "/").indexOf(currentScreenPath + "/")>=0
+            //if (active) subscreenMap.active = true
             if (currentUrlInfo.disableLink) subscreenMap.disableLink = true
 
             subscreens.add(subscreenMap)
