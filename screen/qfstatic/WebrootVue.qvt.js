@@ -1930,11 +1930,12 @@ Vue.component('m-menu-tree', {
 
 Vue.component('m-menu-tree-item', {
     name: "mMenuTreeItem",
+    data: function() {return {activePath: ''}},
     props: { menuItems: {}},
     template:
         '<div><template v-for="(menuItem, index) in menuItems" >' +
             '<template  v-if="menuItem.subscreens && menuItem.subscreens.length > 0">' +
-                '<q-expansion-item :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams">' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
+                '<q-expansion-item :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams" :header-class="(activePath === menuItem.path)?\'text-primary\':\'\'" @click="activePath = menuItem.path" >' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
                     '<template v-slot:header>' +
                         '<q-item-section avatar>' +
                             '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
@@ -1945,7 +1946,7 @@ Vue.component('m-menu-tree-item', {
                 '</q-expansion-item><q-separator></q-separator>' +
         '</template>' +
         '<template v-else>' +
-            '<q-item clickable v-ripple :active="menuItem.active" :to="menuItem.pathWithParams">' +
+            '<q-item clickable v-ripple :to="menuItem.pathWithParams" :active="activePath === menuItem.path" @click="activePath = menuItem.path">' +
                 '<q-item-section avatar>' +
                     '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image"></q-icon>' +
                 '</q-item-section>' +
