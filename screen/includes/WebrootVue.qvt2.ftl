@@ -163,9 +163,15 @@ along with this software (see the LICENSE.md file). If not, see
 <!--
 <q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
 -->
-<q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
+
+<q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="250" :breakpoint="500" bordered content-class="bg-grey-1">
     <q-scroll-area class="fit">
         <q-list padding>
+            <m-menu-tree></m-menu-tree>
+
+          <#--
+          <template v-if="navMenuList[0]">
+                <template v-for="(subscreen, subscreenIndex) in navMenuList[0].subscreens" >
 
             <template v-if="navMenuList[1]">
                 <template v-for="(subscreen, subscreenIndex) in navMenuList[1].subscreens" >
@@ -178,6 +184,7 @@ along with this software (see the LICENSE.md file). If not, see
                     <q-separator></q-separator>
                 </template>
             </template>
+            -->
 
 <!--
             <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="1 === 1">
