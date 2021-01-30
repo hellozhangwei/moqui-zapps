@@ -1918,16 +1918,11 @@ Vue.component('m-subscreens-active', {
 Vue.component('m-menu-tree', {
     name: "mMenuTree",
     data: function() { return { menuTreeData: {} } },
-    template:
-        '<div><template v-for="(subscreen, index) in menuTreeData.subscreens" >' +
-            '<m-menu-tree-item :menuItems="subscreen.subscreens"></m-menu-tree-item>' +
-        '</template></div>',
+    template:'<m-menu-tree-item :menuItems="menuTreeData.subscreens"></m-menu-tree-item>' ,
     beforeCreate: function() {
         var vm = this;
-
-        $.ajax({ type:"GET", url:"/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
-            var outerList = null;
-            console.log("menu response " + outerListText);
+        $.ajax({ type:"GET", url:"/qfuncs/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
+            //console.log("menuTreeData= " + outerListText);
             vm.menuTreeData = outerListText
         }});
     }
