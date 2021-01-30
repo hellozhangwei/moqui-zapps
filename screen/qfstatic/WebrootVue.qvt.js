@@ -1936,7 +1936,7 @@ Vue.component('m-menu-tree-item', {
     template:
         '<div><template v-for="(menuItem, index) in menuItems" >' +
             '<template  v-if="menuItem.subscreens && menuItem.subscreens.length > 0">' +
-                '<q-expansion-item :value="false" :content-inset-level="0.3" :to="menuItem.pathWithParams" :header-class="(activePath === menuItem.path)?\'text-primary\':\'\'" @click="activePath = menuItem.path" >' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
+                '<q-expansion-item :value="initSelected(menuItem.path)" :content-inset-level="0.3" :to="menuItem.pathWithParams" :header-class="(activePath === menuItem.path)?\'text-primary\':\'\'" @click="activePath = menuItem.path" >' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
                     '<template v-slot:header>' +
                         '<q-item-section avatar>' +
                             '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
@@ -1947,7 +1947,7 @@ Vue.component('m-menu-tree-item', {
                 '</q-expansion-item><q-separator></q-separator>' +
         '</template>' +
         '<template v-else>' +
-            '<q-item clickable v-ripple :to="menuItem.pathWithParams" :active="activePath === menuItem.path" @click="activePath = menuItem.path">' +
+            '<q-item clickable v-ripple :to="menuItem.pathWithParams" :active="(activePath === menuItem.path) || initSelected(menuItem.path)" @click="activePath = menuItem.path">' +
                 '<q-item-section avatar>' +
                     '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image"></q-icon>' +
                 '</q-item-section>' +
@@ -1967,7 +1967,15 @@ Vue.component('m-menu-tree-item', {
                 menuItem.image = 'push_pin'
                 menuItem.imageType = 'icon'
             }
+        },
+        initSelected: function(path) {
+            //this is used for expanding/selecting the corresponding menu item when entering a full url in browser address bar
+            var curPathList = this.$root.currentPathList
+            var fullPath = this.$root.basePath + '/' + curPathList.slice(0).join('/');
+            return fullPath.startsWith(path)
+            //return '/apps/marble/Asset'.startsWith(path)
         }
+
     }
 });
 
