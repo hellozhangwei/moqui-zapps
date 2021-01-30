@@ -1921,7 +1921,7 @@ Vue.component('m-menu-tree', {
     template:'<div><q-spinner v-if="showSpinner" color="primary" size="3em"/><m-menu-tree-item :menuItems="menuTreeData.subscreens"></m-menu-tree-item></div>' ,
     beforeCreate: function() {
         var vm = this;
-        $.ajax({ type:"GET", url:"/qfuncs/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
+        $.ajax({ type:"GET", url:"/zapps/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
             //console.log("menuTreeData= " + outerListText);
             vm.menuTreeData = outerListText
             vm.showSpinner = false;

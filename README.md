@@ -4,4 +4,4 @@
 
 Usage：
 
-http://localhost:8080/qfuncs/example
+http://localhost:8080/zapps/example

@@ -16,7 +16,7 @@ along with this software (see the LICENSE.md file). If not, see
     <input type="hidden" id="confAppHost" value="${ec.web.getHostName(true)}">
     <input type="hidden" id="confAppRootPath" value="${ec.web.servletContext.contextPath}">
     <input type="hidden" id="confBasePath" value="${ec.web.servletContext.contextPath}/apps">
-    <input type="hidden" id="confLinkBasePath" value="${ec.web.servletContext.contextPath}/qfuncs">
+    <input type="hidden" id="confLinkBasePath" value="${ec.web.servletContext.contextPath}/zapps">
     <input type="hidden" id="confUserId" value="${ec.user.userId!''}">
     <input type="hidden" id="confLocale" value="${ec.user.locale.toLanguageTag()}">
     <input type="hidden" id="confDarkMode" value="${ec.user.getPreference("QUASAR_DARK")!"false"}">
@@ -187,7 +187,7 @@ along with this software (see the LICENSE.md file). If not, see
             -->
 
 <!--
-            <q-item clickable v-ripple to="/qfuncs/PopcAdmin/Order/FindOrder" :active="1 === 1">
+            <q-item clickable v-ripple to="/zapps/PopcAdmin/Order/FindOrder" :active="1 === 1">
                 <q-item-section avatar>
                     <q-icon name="o_assignment" />
                 </q-item-section>

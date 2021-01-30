@@ -18,7 +18,7 @@ along with this software (see the LICENSE.md file). If not, see
 
     <transition name="menuTreeData" read-only="true" begin-transaction="false">
         <actions>
-            <script location="component://moqui-qfuncs/script/GetMenuData.groovy"/>
+            <script location="component://moqui-zapps/script/GetMenuData.groovy"/>
         </actions>
         <default-response type="none"/>
     </transition>
@@ -67,7 +67,7 @@ along with this software (see the LICENSE.md file). If not, see
     <widgets>
         <render-mode>
             <!-- for html just render the navbar (Vue page wrapper and nav component) -->
-            <text type="html" location="component://moqui-qfuncs/screen/includes/WebrootVue.qvt2.ftl"/>
+            <text type="html" location="component://moqui-zapps/screen/includes/WebrootVue.qvt2.ftl"/>
 
             <!-- not meant to be used for anything else, for all other render modes go directly through /apps -->
         </render-mode>

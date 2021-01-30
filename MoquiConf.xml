@@ -4,16 +4,16 @@
     <screen-facade>
         <!-- qvt is a custom extension for Quasar & Vue JS component templates (extended HTML) -->
         <screen-text-output type="qvt" mime-type="text/html" always-standalone="true"
-                macro-template-location="component://moqui-qfuncs/template/screen-macro/DefaultScreenMacros.qvt.ftl"/>
+                macro-template-location="component://moqui-zapps/template/screen-macro/DefaultScreenMacros.qvt.ftl"/>
         <!--<screen-text-output type="qjs" mime-type="application/javascript" always-standalone="true"
                 macro-template-location="template/screen-macro/DefaultScreenMacros.plain.ftl"/>
         <screen-text-output type="qvue" mime-type="text/html" always-standalone="true"
                 macro-template-location="template/screen-macro/DefaultScreenMacros.plain.ftl"/>-->
 
-        <screen location="component://webroot/screen/webroot.xml" default-subscreen="qfuncs">
-            <!-- qfuncs is a SPA wrapper around apps.xml just like vapps.xml -->
-            <subscreens-item name="qfuncs" menu-include="false" location="component://moqui-qfuncs/screen/qfapps.xml"/>
-            <subscreens-item name="qfstatic" menu-include="false" location="component://moqui-qfuncs/screen/qfstatic.xml"/>
+        <screen location="component://webroot/screen/webroot.xml" default-subscreen="zapps">
+            <!-- zapps is a SPA wrapper around apps.xml just like vapps.xml -->
+            <subscreens-item name="zapps" menu-include="false" location="component://moqui-zapps/screen/zapps.xml"/>
+            <subscreens-item name="qfstatic" menu-include="false" location="component://moqui-zapps/screen/qfstatic.xml"/>
         </screen>
     </screen-facade>
 </moqui-conf>
