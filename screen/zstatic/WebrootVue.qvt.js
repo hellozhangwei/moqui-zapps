@@ -1939,7 +1939,7 @@ Vue.component('m-menu-tree-item', {
                 '<q-expansion-item :value="initSelected(menuItem.path)" :content-inset-level="0.3" :to="menuItem.pathWithParams" :header-class="(activePath === menuItem.path)?\'text-primary\':\'\'" @click="activePath = menuItem.path" >' +// :to="menuItem.pathWithParams" @input="go(menuItem.pathWithParams)"
                     '<template v-slot:header>' +
                         '<q-item-section avatar>' +
-                            '<q-icon :name="getMenuIcon(menuItem)"></q-icon>' +
+                            '<q-icon :name="getMenuIcon(menuItem)" style="font-size: 1.4em;"></q-icon>' +
                         '</q-item-section>' +
                         '<q-item-section>{{menuItem.title}}</q-item-section>' +
                     '</template>' +
@@ -1949,7 +1949,7 @@ Vue.component('m-menu-tree-item', {
         '<template v-else>' +
             '<q-item clickable v-ripple :to="menuItem.pathWithParams" :active="(activePath === menuItem.path) || initSelected(menuItem.path)" @click="activePath = menuItem.path">' +
                 '<q-item-section avatar>' +
-                    '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image"></q-icon>' +
+                    '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image" style="font-size: 1.4em;"></q-icon>' +
                 '</q-item-section>' +
                 '<q-item-section>{{menuItem.title}}</q-item-section>' +
             '</q-item><q-separator></q-separator>' +
