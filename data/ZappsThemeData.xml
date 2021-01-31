@@ -28,8 +28,13 @@ along with this software (see the LICENSE.md file). If not, see
                                       resourceValue="/libs/font-awesome/css/font-awesome.min.css"/>
     <!-- FUTURE consider using material icons instead of font-awesome - ISSUE: there are many XML Screen files with 'fa-' references
         AND material icons requires very different syntax with <i class="material-icons-outlined">invert_colors</i> (2 parts) unlike fa with <i class="fa fa-shopping-cart"></i> (1 part) -->
+    <!--<moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
+                                      resourceValue="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"/>-->
+
+    <!--google font国内镜像-->
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
-                                      resourceValue="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"/>
+                                      resourceValue="https://fonts.loli.net/css?family=Roboto:100,300,400,500,700,900|Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"/>
+
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="4" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="/libs/quasar/quasar.min.css"/>
 
