@@ -15,11 +15,14 @@ List menuDataList = sri.getMenuData(sri.screenUrlInfo.extraPathNameList)
 //ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition("component://MarbleERP/screen/marble.xml")
 //def currentScreenPath = "/apps/marble"
 
-ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition("component://webroot/screen/webroot/apps.xml")
-def currentScreenPath = "/apps"
+//ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition("component://webroot/screen/webroot/apps.xml")
+//def currentScreenPath = "/apps"
 
 //ScreenDefinition currentScreenDef =sri.getRootScreenDef()
 //def currentScreenPath = ""
+
+ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition(zapps_root_app)
+def currentScreenPath = zapps_root_app_path
 
 def rootScreenMap = [:]
 rootScreenMap.name = currentScreenDef.getDefaultMenuName()

@@ -15,7 +15,8 @@ along with this software (see the LICENSE.md file). If not, see
     <input type="hidden" id="confMoquiSessionToken" value="${ec.web.sessionToken}">
     <input type="hidden" id="confAppHost" value="${ec.web.getHostName(true)}">
     <input type="hidden" id="confAppRootPath" value="${ec.web.servletContext.contextPath}">
-    <input type="hidden" id="confBasePath" value="${ec.web.servletContext.contextPath}/apps">
+    <#--<input type="hidden" id="confBasePath" value="${ec.web.servletContext.contextPath}/apps">-->
+    <input type="hidden" id="confBasePath" value="${zapps_root_app_path}">
     <input type="hidden" id="confLinkBasePath" value="${ec.web.servletContext.contextPath}/zapps">
     <input type="hidden" id="confUserId" value="${ec.user.userId!''}">
     <input type="hidden" id="confLocale" value="${ec.user.locale.toLanguageTag()}">
@@ -48,7 +49,7 @@ along with this software (see the LICENSE.md file). If not, see
             <q-toolbar-title>${ec.resource.expand(headerTitleList?first, "")}</q-toolbar-title>
             </#if>
             -->
-            <q-toolbar-title>Z-SYS<#--<template v-if="navMenuList[1]">{{navMenuList[1].title}}</template>--></q-toolbar-title>
+            <q-toolbar-title><template v-if="navMenuList[0]">{{navMenuList[0].title}}</template></q-toolbar-title>
             <#-- NOTE: tried using q-breadcrumbs but last item with q-breadcrumbs--last class makes never clickable! -->
             <#--
             <template v-for="(navMenuItem, menuIndex) in navMenuList"><template v-if="menuIndex < (navMenuList.length - 1)">
