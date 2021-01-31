@@ -250,6 +250,11 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign iconClass = ec.getResource().expandNoL10n(iconClass!, "")/>
     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
 
+    <#assign buttonOutline = "true">
+    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
+    <#assign buttonFlat = "false">
+    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
+
     <#assign labelWrapper = linkNode["@link-type"]! == "anchor" && linkNode?ancestors("form-single")?has_content>
     <#if labelWrapper>
         <#assign fieldLabel><@fieldTitle linkNode?parent/></#assign>
@@ -292,7 +297,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#t></${linkElement}>
         <#else>
             <#if linkFormId?has_content>
-            <#rt><q-btn dense outline no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
+            <#rt><q-btn dense no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
+                    <#t> <#if buttonOutline?has_content> outline</#if>
+                    <#t> <#if buttonFlat?has_content> flat </#if>
                     <#t> class="<#if linkNode["@style"]?has_content>${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>"
                     <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                     <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
