@@ -146,6 +146,12 @@ ${sri.renderSection(.node["@name"])}
     <#-- TODO: somehow support at least fa icons backward compatible? won't be doing glyphicons anyway -->
     <#assign iconClass = "">
     <#if .node["@icon"]?has_content><#assign iconClass = .node["@icon"]></#if>
+
+    <#assign buttonOutline = "">
+    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
+    <#assign buttonFlat = "">
+    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
+
     <#if .node["@condition"]?has_content><#assign conditionResult = ec.getResource().condition(.node["@condition"], "")><#else><#assign conditionResult = true></#if>
     <#if conditionResult>
         <#assign buttonText = ec.getResource().expand(.node["@button-text"], "")>
@@ -154,7 +160,9 @@ ${sri.renderSection(.node["@name"])}
         <#assign cdDivId><@nodeId .node/></#assign>
         <m-container-dialog id="${cdDivId}" color="<@getQuasarColor ec.getResource().expandNoL10n(.node["@type"]!"primary", "")/>" width="${.node["@width"]!""}"
                 button-text="${buttonText}" button-class="${ec.getResource().expandNoL10n(.node["@button-style"]!"", "")}"
-                <#if iconClass?has_content>button-icon="${iconClass}"</#if>
+                <#if iconClass?has_content> button-icon="${iconClass}"</#if>
+                <#if buttonOutline?has_content> :button-outline="${buttonOutline}"</#if>
+                <#if buttonFlat?has_content> :button-flat="${buttonFlat}"</#if>
                 title="${title}"<#if _openDialog! == cdDivId> :openDialog="true"</#if>>
             <#recurse>
         </m-container-dialog>

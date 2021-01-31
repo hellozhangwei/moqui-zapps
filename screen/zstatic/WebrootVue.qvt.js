@@ -348,7 +348,7 @@ Vue.component('m-container-box', {
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
     '<q-card flat bordered class="q-ma-sm m-container-box full-width">' +
-        '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="bg-grey-3">' +
+        '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="bg-grey-1">' +
             '<span class="text-h6" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
@@ -430,12 +430,16 @@ Vue.component('m-dialog', {
 });
 Vue.component('m-container-dialog', {
     name: "mContainerDialog",
-    props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String},
-        openDialog:{type:Boolean,'default':false}, buttonIcon:{type:String,'default':'open_in_new'} },
+    props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String}
+            , openDialog:{type:Boolean,'default':false}
+            , buttonIcon:{type:String,'default':'open_in_new'}
+            , buttonOutline:{type:Boolean,'default':true}
+            , buttonFlat:{type:Boolean,'default':false}
+        },
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<span @click.stop="show()"><slot name="button"><q-btn dense outline no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
