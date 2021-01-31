@@ -1842,7 +1842,7 @@ Vue.component('m-subscreens-tabs', {
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
      */
     template:
-    '<div v-if="subscreens.length > 0"><q-tabs dense class="bg-grey-1 text-grey" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
+    '<div v-if="subscreens.length > 1"><q-tabs dense class="bg-grey-1 text-grey" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
         '<q-tab v-for="tab in subscreens" :key="tab.name" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
     methods: {
@@ -1853,9 +1853,7 @@ Vue.component('m-subscreens-tabs', {
             if (!this.pathIndex || this.pathIndex < 0) return [];
             var navMenu = this.$root.navMenuList[this.pathIndex];
             if (!navMenu || !navMenu.subscreens) return [];
-            var subscreens = [];
-            $.each(navMenu.subscreens, function(idx, tab) {if (tab.menuInclude) subscreens.push(tab);});
-            return subscreens;
+            return navMenu.subscreens;
         },
         activeTab: function () {
             if (!this.pathIndex || this.pathIndex < 0) return null;
