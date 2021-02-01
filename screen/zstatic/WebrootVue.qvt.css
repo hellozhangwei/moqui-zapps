@@ -212,25 +212,9 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 }
 
 /*---Custom section start ----*/
-.q-mini-drawer-hide {
-  display:block !important; /*show toggle button when left menu is under mini mode*/
-}
-
-.form-order-by {
-    margin-top: -3px;
-    white-space: nowrap;
-    height: 18px;
-    display: inline-block;
-    vertical-align: top;
-}
-.form-order-by a {
-    display: block;
-    height: 10px;
-    font-size: 14px;
-    margin: -2px 0;
-    color: #9e9e9e;
-}
-.form-order-by a.active {
-    color: #1976d2;
-}
+.q-mini-drawer-hide {display:block !important; }/*show toggle button when left menu is under mini mode*/
+.form-order-by {margin-top: -3px;white-space: nowrap;height: 18px;display: inline-block;vertical-align: top;}
+.form-order-by a {display: block;height: 10px;font-size: 14px;margin: -2px 0;color: #9e9e9e;}
+.form-order-by a.active {color: #1976d2;}
+.form-header-field .row .q-field__label {display: none} /*This is a tricky for hide input label in table header */
 /*---Custom section end----*/
