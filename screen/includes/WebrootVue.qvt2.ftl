@@ -165,7 +165,7 @@ along with this software (see the LICENSE.md file). If not, see
 <q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
 -->
 
-<q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
+<q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-2">
     <q-scroll-area class="fit">
         <q-list padding>
             <m-menu-tree></m-menu-tree>
