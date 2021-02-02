@@ -958,18 +958,18 @@ Vue.component('m-form-paginate', {
     name: "mFormPaginate",
     props: { paginate:Object, formList:Object },
     template:
-    '<div v-if="paginate" class="q-pagination row no-wrap items-center text-grey">' +
+    '<div v-if="paginate" class="q-pagination row no-wrap items-center">' +
         '<template v-if="paginate.pageIndex > 0">' +
-            '<q-btn dense flat no-caps @click.prevent="setIndex(0)" icon="skip_previous"></q-btn>' +
-            '<q-btn dense flat no-caps @click.prevent="setIndex(paginate.pageIndex-1)" icon="fast_rewind"></q-btn></template>' +
-        '<template v-else><q-btn dense flat no-caps disabled icon="skip_previous"></q-btn><q-btn dense flat no-caps disabled icon="fast_rewind"></q-btn></template>' +
-        '<q-btn v-for="prevIndex in prevArray" :key="prevIndex" dense flat no-caps @click.prevent="setIndex(prevIndex)" :label="prevIndex+1" color="grey"></q-btn>' +
-        '<q-btn dense flat no-caps disabled>{{paginate.pageIndex+1}} / {{paginate.pageMaxIndex+1}} ({{paginate.pageRangeLow}}-{{paginate.pageRangeHigh}} / {{paginate.count}})</q-btn>' +
-        '<q-btn v-for="nextIndex in nextArray" :key="nextIndex" dense flat no-caps @click.prevent="setIndex(nextIndex)" :label="nextIndex+1" color="grey"></q-btn>' +
+            '<q-btn dense flat no-caps color="grey-7" @click.prevent="setIndex(0)" icon="skip_previous"></q-btn>' +
+            '<q-btn dense flat no-caps color="grey-7" @click.prevent="setIndex(paginate.pageIndex-1)" icon="fast_rewind"></q-btn></template>' +
+        '<template v-else><q-btn dense flat no-caps disabled color="grey-5" icon="skip_previous"></q-btn><q-btn dense flat no-caps disabled color="grey-5" icon="fast_rewind"></q-btn></template>' +
+        '<q-btn v-for="prevIndex in prevArray" :key="prevIndex" dense flat no-caps @click.prevent="setIndex(prevIndex)" :label="prevIndex+1" color="grey-7"></q-btn>' +
+        '<q-btn dense flat no-caps disabled color="grey-5">{{paginate.pageIndex+1}} / {{paginate.pageMaxIndex+1}} ({{paginate.pageRangeLow}}-{{paginate.pageRangeHigh}} / {{paginate.count}})</q-btn>' +
+        '<q-btn v-for="nextIndex in nextArray" :key="nextIndex" dense flat no-caps @click.prevent="setIndex(nextIndex)" :label="nextIndex+1" color="grey-7"></q-btn>' +
         '<template v-if="paginate.pageIndex < paginate.pageMaxIndex">' +
-            '<q-btn dense flat no-caps @click.prevent="setIndex(paginate.pageIndex+1)" icon="fast_forward"></q-btn>' +
-            '<q-btn dense flat no-caps @click.prevent="setIndex(paginate.pageMaxIndex)" icon="skip_next"></q-btn></template>' +
-        '<template v-else><q-btn dense flat no-caps disabled icon="fast_forward"></q-btn><q-btn dense flat no-caps disabled icon="skip_next"></q-btn></template>' +
+            '<q-btn dense flat color="grey-7" no-caps @click.prevent="setIndex(paginate.pageIndex+1)" icon="fast_forward"></q-btn>' +
+            '<q-btn dense flat color="grey-7" no-caps @click.prevent="setIndex(paginate.pageMaxIndex)" icon="skip_next"></q-btn></template>' +
+        '<template v-else><q-btn dense flat no-caps disabled color="grey-5" icon="fast_forward"></q-btn><q-btn dense flat no-caps disabled color="grey-5" icon="skip_next"></q-btn></template>' +
     '</div>',
     computed: {
         prevArray: function() {
