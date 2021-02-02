@@ -1982,7 +1982,7 @@ Vue.component('m-menu-tree-item', {
                         '<q-item-section>{{menuItem.title}}</q-item-section>' +
                     '</template>' +
                     '<template v-slot:default><m-menu-tree-item v-if="menuItem.subscreens && menuItem.subscreens.length>0" :menuItems="menuItem.subscreens"></m-menu-tree-item></template>' +
-                '</q-expansion-item><q-separator></q-separator>' +
+                '</q-expansion-item><!--q-separator></q-separator-->' +
         '</template>' +
         '<template v-else>' +
             '<q-item clickable v-ripple :to="menuItem.pathWithParams" :active="(activePath === menuItem.path) || initSelected(menuItem.path)" @click="activePath = menuItem.path">' +
@@ -1990,7 +1990,7 @@ Vue.component('m-menu-tree-item', {
                     '<q-icon :name="(menuItem.imageType == \'icon\')?menuItem.image:\'img:\' + menuItem.image" style="font-size: 1.4em;"></q-icon>' +
                 '</q-item-section>' +
                 '<q-item-section>{{menuItem.title}}</q-item-section>' +
-            '</q-item><q-separator></q-separator>' +
+            '</q-item><!--q-separator></q-separator-->' +
         '</template>' +
         '</template></div>' ,
     methods: {
