@@ -217,4 +217,5 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 .form-order-by a {display: block;height: 10px;font-size: 14px;margin: -2px 0;color: #9e9e9e;}
 .form-order-by a.active {color: #1976d2;}
 .form-header-field .row .q-field__label {display: none} /*This is a tricky for hide input label in table header */
+.q-field--outlined.q-field--readonly .q-field__control:before {border-style: none;}
 /*---Custom section end----*/
