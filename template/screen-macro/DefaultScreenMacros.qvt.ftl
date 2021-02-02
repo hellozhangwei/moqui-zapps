@@ -1544,7 +1544,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign fieldLabel><@fieldTitle .node?parent/></#assign>
     <#assign useWrapper = (.node["@no-wrapper"]!"false") != "true">
     <#if useWrapper>
-    <q-field dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if containerStyle?has_content> class="${containerStyle}"</#if><#if formDisabled!false> disable</#if>>
+    <q-field dense borderless<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if containerStyle?has_content> class="${containerStyle}"</#if><#if formDisabled!false> disable</#if>>
         <#if .node?parent["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node?parent["@tooltip"], "")}</q-tooltip></#if>
         <template v-slot:control>
     </#if>
@@ -1846,7 +1846,7 @@ a => A, d => D, y => Y
     <#assign tlId><@fieldId .node/></#assign>
     <#assign curName><@fieldName .node/></#assign>
     <#assign fieldLabel><@fieldTitle .node?parent/></#assign>
-    <q-field dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if formDisabled!> disable</#if>>
+    <q-field dense borderless<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if formDisabled!> disable</#if>>
         <#if .node?parent["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node?parent["@tooltip"], "")}</q-tooltip></#if>
         <template v-slot:control>
         <#list (options.keySet())! as key>
