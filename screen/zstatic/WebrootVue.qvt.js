@@ -591,28 +591,28 @@ moqui.checkboxSetMixin = {
             var csSize = this.checkboxStates.length;
             for (var i = 0; i < csSize; i++) this.checkboxStates[i] = newState;
         }
-    },
-    getCheckboxValueArray: function() {
-        if (!this.checkboxValues) return [];
-        var valueArray = [];
-        var csSize = this.checkboxStates.length;
-        for (var i = 0; i < csSize; i++) if (this.checkboxStates[i] && this.checkboxValues[i]) valueArray.push(this.checkboxValues[i]);
-        return valueArray;
-    },
-    addCheckboxParameters: function(formData, parameter, listMode) {
-        var parmName = parameter || this.checkboxParameter;
-        var useList = (listMode !== null && listMode !== undefined && listMode) ? listMode : this.checkboxListMode;
-        // NOTE: formData must be a FormData object, or at least have a set(name, value) method
-        var valueArray = this.getCheckboxValueArray();
-        if (!valueArray.length) return false;
-        if (useList) {
-            formData.set(parmName, valueArray.join(','));
-        } else {
-            for (var i = 0; i < valueArray.length; i++)
-                formData.set(parmName + '_' + i, valueArray[i]);
-            formData.set('_isMulti', 'true');
+        ,getCheckboxValueArray: function() {
+            if (!this.checkboxValues) return [];
+            var valueArray = [];
+            var csSize = this.checkboxStates.length;
+            for (var i = 0; i < csSize; i++) if (this.checkboxStates[i] && this.checkboxValues[i]) valueArray.push(this.checkboxValues[i]);
+            return valueArray;
+        },
+        addCheckboxParameters: function(formData, parameter, listMode) {
+            var parmName = parameter || this.checkboxParameter;
+            var useList = (listMode !== null && listMode !== undefined && listMode) ? listMode : this.checkboxListMode;
+            // NOTE: formData must be a FormData object, or at least have a set(name, value) method
+            var valueArray = this.getCheckboxValueArray();
+            if (!valueArray.length) return false;
+            if (useList) {
+                formData.set(parmName, valueArray.join(','));
+            } else {
+                for (var i = 0; i < valueArray.length; i++)
+                    formData.set(parmName + '_' + i, valueArray[i]);
+                formData.set('_isMulti', 'true');
+            }
+            return true;
         }
-        return true;
     },
     watch: {
         checkboxStates: { deep:true, handler:function(newArray) {
