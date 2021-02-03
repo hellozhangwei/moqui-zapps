@@ -349,11 +349,11 @@ Vue.component('m-container-box', {
     template:
     '<q-card flat bordered class="q-ma-sm m-container-box full-width">' +
         '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="bg-grey-1">' +
-            '<span class="text-h6" v-if="title && title.length">{{title}}</span>' +
+            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm text-grey-7" size="sm"/>' +
+            '<span class="text-subtitle1" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
-            '<q-icon v-if="collapsable" :name="expanded?\'remove\':\'add\'" />' +
         '</q-card-actions>' +
         '<q-slide-transition><div v-show="expanded">' +
             '<q-separator />' +
