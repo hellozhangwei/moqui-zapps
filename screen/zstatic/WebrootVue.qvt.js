@@ -1882,7 +1882,7 @@ Vue.component('m-subscreens-tabs', {
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
      */
     template:
-    '<div v-if="subscreens.length > 1"><q-tabs dense class="bg-grey-1 text-grey" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
+    '<div v-if="subscreens.length > 1"><q-tabs dense class="bg-grey-3 text-grey" no-caps align="left" active-color="primary" indicator-color="primary" :value="activeTab">' +
         '<q-tab v-for="tab in subscreens" :key="tab.name" :name="tab.name" :label="tab.title" :disable="tab.disableLink" @click.prevent="goTo(tab.pathWithParams)"></q-tab>' +
     '</q-tabs><q-separator class="q-mb-md"></q-separator></div>',
     methods: {
