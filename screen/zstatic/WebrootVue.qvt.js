@@ -347,16 +347,16 @@ Vue.component('m-container-box', {
     data: function() { return { expanded:this.initialOpen }},
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
-    '<q-card flat bordered class="q-ma-sm m-container-box full-width">' +
-        '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="bg-grey-1">' +
+    '<q-card flat bordered class="q-ma-sm no-border">' +
+        '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="">' +
             '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm text-grey-7" size="sm"/>' +
             '<span class="text-subtitle1" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
         '</q-card-actions>' +
+        '<q-separator />' +
         '<q-slide-transition><div v-show="expanded">' +
-            '<q-separator />' +
             '<q-card-section :class="{in:expanded}" class="no-padding"><slot></slot></q-card-section>' +
         '</div></q-slide-transition>' +
     '</q-card>'
@@ -467,7 +467,7 @@ Vue.component('m-dynamic-dialog', {
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
+        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
