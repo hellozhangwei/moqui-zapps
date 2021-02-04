@@ -349,7 +349,7 @@ Vue.component('m-container-box', {
     template:
     '<q-card flat bordered class="q-ma-sm no-border">' +
         '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="">' +
-            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm text-grey-7" size="sm"/>' +
+            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm text-grey-7" size="xs"/>' +
             '<span class="text-subtitle1" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
@@ -439,7 +439,7 @@ Vue.component('m-container-dialog', {
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" size="xs" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
@@ -467,7 +467,7 @@ Vue.component('m-dynamic-dialog', {
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
+        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" size="xs" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
