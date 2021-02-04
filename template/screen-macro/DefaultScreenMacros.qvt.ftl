@@ -176,6 +176,10 @@ ${sri.renderSection(.node["@name"])}
 <#macro "dynamic-dialog">
     <#assign iconClass = "fa fa-share">
     <#if .node["@icon"]?has_content><#assign iconClass = .node["@icon"]></#if>
+    <#assign buttonOutline = "">
+    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
+    <#assign buttonFlat = "">
+    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
     <#if .node["@condition"]?has_content><#assign conditionResult = ec.getResource().condition(.node["@condition"], "")><#else><#assign conditionResult = true></#if>
     <#if conditionResult>
         <#assign buttonText = ec.getResource().expand(.node["@button-text"], "")>
@@ -187,7 +191,12 @@ ${sri.renderSection(.node["@name"])}
             <q-btn disabled dense outline no-caps icon="open_in_new" label="${buttonText}" color="<@getQuasarColor ec.getResource().expandNoL10n(.node["@type"]!"primary", "")/>" class="${ec.getResource().expandNoL10n(.node["@button-style"]!"", "")}"></q-btn>
         <#else>
             <m-dynamic-dialog id="${ddDivId}" url="${urlInstance.urlWithParams}" color="<@getQuasarColor ec.getResource().expandNoL10n(.node["@type"]!"primary", "")/>" width="${.node["@width"]!""}"
-                    button-text="${buttonText}" button-class="${ec.getResource().expandNoL10n(.node["@button-style"]!"", "")}" title="${title}"<#if _openDialog! == ddDivId> :openDialog="true"</#if>></m-dynamic-dialog>
+                    button-text="${buttonText}" button-class="${ec.getResource().expandNoL10n(.node["@button-style"]!"", "")}"
+                    <#if buttonOutline?has_content> :button-outline="${buttonOutline}"</#if>
+                    <#if buttonFlat?has_content> :button-flat="${buttonFlat}"</#if>
+                    title="${title}"<#if _openDialog! == ddDivId> :openDialog="true"</#if>>
+
+</m-dynamic-dialog>
         </#if>
         <#-- used to use afterFormText for m-dynamic-dialog inside another form, needed now?
         <#assign afterFormText>

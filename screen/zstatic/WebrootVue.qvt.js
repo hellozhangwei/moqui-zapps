@@ -461,11 +461,13 @@ Vue.component('m-dynamic-container', {
 Vue.component('m-dynamic-dialog', {
     name: "mDynamicDialog",
     props: { id:{type:String}, url:{type:String,required:true}, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String},
-        openDialog:{type:Boolean,'default':false}, dynamicParams:{type:Object,'default':null} },
+        openDialog:{type:Boolean,'default':false}, dynamicParams:{type:Object,'default':null}
+        , buttonOutline:{type:Boolean,'default':true}
+        , buttonFlat:{type:Boolean,'default':false}},
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense outline no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
+        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :label="buttonText" :color="color" :class="buttonClass" @click="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
