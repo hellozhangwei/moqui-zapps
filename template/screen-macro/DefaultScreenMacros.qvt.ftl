@@ -429,11 +429,12 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <#assign badgeMessage = ec.getResource().expand(.node["@badge"]!, "")/>
 
         <#-- NOTE: do not use auto-close or v-close-popup because it closes dialogs as well as the menu! -->
-        <q-btn-dropdown dense outline no-caps color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
+        <q-btn-dropdown dense flat no-caps color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
+                <#if iconClass?has_content> icon="${iconClass}"</#if>
                 <#lt><#if .node["@style"]?has_content> class="${ec.getResource().expandNoL10n(.node["@style"], "")}"</#if>>
             <template v-slot:label>
                 <#if .node["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node["@tooltip"], "")}</q-tooltip></#if>
-                <#if iconClass?has_content><i class="${iconClass} q-icon<#if linkText?? && linkText?trim?has_content> on-left</#if>"></i></#if>
+               <#-- <#if iconClass?has_content><i class="${iconClass} q-icon<#if linkText?? && linkText?trim?has_content> on-left</#if>"></i></#if>-->
                 <#if .node["image"]?has_content><#visit .node["image"][0]><#else>${linkText}</#if>
                 <#if badgeMessage?has_content><q-badge class="on-right" transparent>${badgeMessage}</q-badge></#if>
             </template>
