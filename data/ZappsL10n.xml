@@ -27,5 +27,14 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Postal Addresses" localized="邮寄地址" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Old Addresses" localized="旧邮寄地址" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Address" localized="添加邮寄地址" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create User" localized="创建用户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Payment Methods" localized="付款方式" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Credit Card" localized="新建信用卡" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Bank Account" localized="新建银行账号" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Settings" localized="设置" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Select Setting" localized="选择" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Enter Setting" localized="新建" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Classifications" localized="类型" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Set Classification" localized="设置" />
 
 </entity-facade-xml>
