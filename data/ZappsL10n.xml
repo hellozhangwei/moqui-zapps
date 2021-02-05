@@ -3,16 +3,18 @@
 
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Duplicates" localized="查重" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Identification" localized="税号" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Identification" localized="添加税号" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Identification" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Notes" localized="记录" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Note" localized="添加记录" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Note" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Sales Account Contacts" localized="客户联系人" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Contact" localized="添加联系人" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Contact" localized="新建联系人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Contact of Sales Accounts" localized="联系人公司" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add to Sales Account" localized="添加" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Contact" localized="添加" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Contact" localized="新建" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Parent Sales Account" localized="父公司" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Parent Account" localized="添加父公司" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Parent Account" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Child Sales Accounts" localized="子公司" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Child Account" localized="添加子公司" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Child Account" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Phone, Email, and Other" localized="联系方式" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="View Old" localized="旧联系方式" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add New" localized="添加新" />
@@ -21,7 +23,7 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="URL" localized="URL" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Other" localized="其他" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Content" localized="附件" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Content" localized="添加附件" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Content" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Postal Addresses" localized="邮寄地址" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Old Addresses" localized="旧邮寄地址" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Address" localized="添加邮寄地址" />
