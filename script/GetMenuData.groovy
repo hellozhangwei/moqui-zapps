@@ -66,7 +66,7 @@ def getSubscreens(appsMenu) {
                              path: currentScreenPath,
                              pathWithParams:pathWithParams,
                              image:image,
-                             renderModes:sui.targetScreen.renderModes,
+                             renderModes:sui.targetScreen?.renderModes,
                              location:currentScreenDef.location]
             if ("icon".equals(imageType)) subscreenMap.imageType = "icon"
             //def active = ("/" + sri.screenUrlInfo.extraPathNameList.join("/") + "/").indexOf(currentScreenPath + "/")>=0

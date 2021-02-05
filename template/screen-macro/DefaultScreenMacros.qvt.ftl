@@ -151,6 +151,8 @@ ${sri.renderSection(.node["@name"])}
     <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
     <#assign buttonFlat = "">
     <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
+    <#assign buttonSize = "">
+    <#if .node["@button-size"]?has_content><#assign buttonSize = .node["@button-size"]></#if>
 
     <#if .node["@condition"]?has_content><#assign conditionResult = ec.getResource().condition(.node["@condition"], "")><#else><#assign conditionResult = true></#if>
     <#if conditionResult>
@@ -163,6 +165,7 @@ ${sri.renderSection(.node["@name"])}
                 <#if iconClass?has_content> button-icon="${iconClass}"</#if>
                 <#if buttonOutline?has_content> :button-outline="${buttonOutline}"</#if>
                 <#if buttonFlat?has_content> :button-flat="${buttonFlat}"</#if>
+                <#if buttonSize?has_content> button-size="${buttonSize}"</#if>
                 title="${title}"<#if _openDialog! == cdDivId> :openDialog="true"</#if>>
             <#recurse>
         </m-container-dialog>
@@ -180,6 +183,8 @@ ${sri.renderSection(.node["@name"])}
     <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
     <#assign buttonFlat = "">
     <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
+    <#assign buttonSize = "">
+    <#if .node["@button-size"]?has_content><#assign buttonSize = .node["@button-size"]></#if>
     <#if .node["@condition"]?has_content><#assign conditionResult = ec.getResource().condition(.node["@condition"], "")><#else><#assign conditionResult = true></#if>
     <#if conditionResult>
         <#assign buttonText = ec.getResource().expand(.node["@button-text"], "")>
@@ -194,6 +199,7 @@ ${sri.renderSection(.node["@name"])}
                     button-text="${buttonText}" button-class="${ec.getResource().expandNoL10n(.node["@button-style"]!"", "")}"
                     <#if buttonOutline?has_content> :button-outline="${buttonOutline}"</#if>
                     <#if buttonFlat?has_content> :button-flat="${buttonFlat}"</#if>
+                    <#if buttonSize?has_content> button-size="${buttonSize}"</#if>
                     title="${title}"<#if _openDialog! == ddDivId> :openDialog="true"</#if>>
 
 </m-dynamic-dialog>
