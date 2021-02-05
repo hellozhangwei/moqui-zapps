@@ -432,6 +432,7 @@ Vue.component('m-container-dialog', {
     name: "mContainerDialog",
     props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String}
             , openDialog:{type:Boolean,'default':false}
+            , buttonSize:{type:String,'default':'md'}
             , buttonIcon:{type:String,'default':'open_in_new'}
             , buttonOutline:{type:Boolean,'default':true}
             , buttonFlat:{type:Boolean,'default':false}
@@ -439,7 +440,7 @@ Vue.component('m-container-dialog', {
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" size="xs" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
@@ -463,11 +464,12 @@ Vue.component('m-dynamic-dialog', {
     props: { id:{type:String}, url:{type:String,required:true}, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String},
         openDialog:{type:Boolean,'default':false}, dynamicParams:{type:Object,'default':null}
         , buttonOutline:{type:Boolean,'default':true}
+        , buttonSize:{type:String,'default':'md'}
         , buttonFlat:{type:Boolean,'default':false}},
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" size="xs" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
+        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
