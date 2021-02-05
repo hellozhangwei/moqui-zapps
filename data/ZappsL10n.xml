@@ -36,5 +36,11 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Enter Setting" localized="新建" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Classifications" localized="类型" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Set Classification" localized="设置" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Financial Info" localized="财务" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Agreements" localized="合同" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Calendar" localized="日历" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Messages" localized="沟通" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Requests" localized="审批" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Time" localized="考勤" />
 
 </entity-facade-xml>
