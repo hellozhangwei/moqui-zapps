@@ -11,7 +11,7 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="New Contact" localized="新建联系人" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Parent Sales Account" localized="父公司" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Parent Account" localized="添加父公司" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Child Sales Account" localized="子公司" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Child Sales Accounts" localized="子公司" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Child Account" localized="添加子公司" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Phone, Email, and Other" localized="联系方式" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="View Old" localized="旧联系方式" />
