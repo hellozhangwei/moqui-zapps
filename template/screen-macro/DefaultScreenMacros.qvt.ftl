@@ -429,7 +429,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <#assign badgeMessage = ec.getResource().expand(.node["@badge"]!, "")/>
 
         <#-- NOTE: do not use auto-close or v-close-popup because it closes dialogs as well as the menu! -->
-        <q-btn-dropdown dense flat no-caps color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
+        <q-btn-dropdown dense flat no-caps @click.stop color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
                 <#if iconClass?has_content> icon="${iconClass}"</#if>
                 <#lt><#if .node["@style"]?has_content> class="${ec.getResource().expandNoL10n(.node["@style"], "")}"</#if>>
             <template v-slot:label>
