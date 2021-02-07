@@ -4,7 +4,7 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Duplicates" localized="查重" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Identification" localized="税号" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Identification" localized="添加" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="Notes" localized="记录" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Notes" localized="备注" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Note" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Sales Account Contacts" localized="客户联系人" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Contact of Sales Accounts" localized="联系人公司" />
