@@ -42,5 +42,9 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Messages" localized="沟通" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Requests" localized="审批" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Time" localized="考勤" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="User Account" localized="用户账号" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Account Detail" localized="账号详情" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Disable Account" localized="禁用账号" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Reset Password" localized="重置密码" />
 
 </entity-facade-xml>
