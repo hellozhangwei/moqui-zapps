@@ -77,7 +77,7 @@ form.q-form { width:100%; }
 .q-field--disabled .q-field__control > div { opacity:1 !important; }
 /* END q-field label move */
 
-.q-field--focused .q-field__input { border-bottom: var(--q-color-primary) solid 1px; margin-left:8px; }
+/*.q-field--focused .q-field__input { border-bottom: var(--q-color-primary) solid 1px; margin-left:8px; }*//*this is the underline of select*/
 
 .q-field--dense .q-field__marginal { height:auto; min-height:40px; }
 .q-field__prepend { max-width:75%; }
