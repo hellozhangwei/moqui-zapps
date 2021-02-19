@@ -47,5 +47,10 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Disable Account" localized="禁用账号" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Enable Account" localized="启用账号" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Reset Password" localized="重置密码" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Assets" localized="资产管理" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Fixed Asset" localized="固定资产" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Inventory Asset" localized="库存资产" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Containers" localized="容器" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Pools" localized="仓库池" />
 
 </entity-facade-xml>
