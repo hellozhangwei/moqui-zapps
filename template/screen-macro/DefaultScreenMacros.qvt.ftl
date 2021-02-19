@@ -100,6 +100,11 @@ ${sri.renderSection(.node["@name"])}
         <#if .node["box-body-nopad"]?has_content><#recurse .node["box-body-nopad"][0]></#if>
     </m-container-box>
 </#macro>
+
+<#macro "vertical-separator">
+  <q-separator vertical style="height:20px" class="self-center" ></q-separator>
+</#macro>
+
 <#macro "container-row">
     <#assign contRowDivId><@nodeId .node/></#assign>
     <#-- was using q-col-gutter-md but causes overlap between rows as uses negative + positive margin approach, one example is Assets link on PopCommerceAdmin/dashboard.xml that gets covered by col in row below it -->

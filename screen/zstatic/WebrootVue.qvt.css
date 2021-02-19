@@ -45,7 +45,7 @@ body.test.body--dark #top { background:#224422!important; color:white; }
 
 .non-selectable { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.q-btn { margin:2px; }
+/*.q-btn { margin:2px; }*/
 .q-btn--dense .q-btn__wrapper { padding:4px 8px; }
 .q-btn .q-icon, .q-btn .q-spinner { font-size:14px; padding:2px 0; } /* was 1.715em ~= 24px */
 /* using q-btn flat for link style buttons, reduce margin/padding/height to match inline text */
