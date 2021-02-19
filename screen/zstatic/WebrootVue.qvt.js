@@ -354,8 +354,8 @@ Vue.component('m-container-box', {
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
+            '<q-separator />' +
         '</q-card-actions>' +
-        '<q-separator />' +
         '<q-slide-transition><div v-show="expanded">' +
             '<q-card-section :class="{in:expanded}" class="no-padding"><slot></slot></q-card-section>' +
         '</div></q-slide-transition>' +
