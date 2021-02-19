@@ -270,10 +270,10 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign iconClass = ec.getResource().expandNoL10n(iconClass!, "")/>
     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
 
-    <#assign buttonOutline = "true">
-    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]></#if>
-    <#assign buttonFlat = "false">
-    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
+    <#assign buttonOutline = true>
+    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]?boolean></#if>
+    <#assign buttonFlat = false>
+    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]?boolean></#if>
 
     <#assign labelWrapper = linkNode["@link-type"]! == "anchor" && linkNode?ancestors("form-single")?has_content>
     <#if labelWrapper>
@@ -308,8 +308,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#if linkNode["@link-type"]! != "anchor">
                     <#t>>
                     <q-btn dense size="xs" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
-                        <#t> <#if buttonOutline?has_content> outline</#if>
-                        <#t> <#if buttonFlat?has_content> flat </#if>
+                        <#t> <#if buttonOutline> outline</#if>
+                        <#t> <#if buttonFlat> flat </#if>
                         <#t><#if iconClass?has_content> icon="${iconClass}" </#if><#rt>
                         <#t> class=" <#if linkNode["@style"]?has_content> ${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>" label="${linkText}">
                 <#else>
@@ -324,8 +324,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <#else>
             <#if linkFormId?has_content>
             <#rt><q-btn dense no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
-                    <#t> <#if buttonOutline?has_content> outline</#if>
-                    <#t> <#if buttonFlat?has_content> flat </#if>
+                    <#t> <#if buttonOutline> outline</#if>
+                    <#t> <#if buttonFlat> flat </#if>
                     <#t> class="<#if linkNode["@style"]?has_content>${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>"
                     <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                     <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
