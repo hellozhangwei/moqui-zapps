@@ -318,7 +318,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
                 <#--<#t><#if iconClass?has_content><i class="${iconClass} q-icon<#if linkText?? && linkText?trim?has_content> on-left</#if>"></i> </#if><#rt>-->
                 <#t><#if linkNode["image"]?has_content><#visit linkNode["image"][0]><#else><#if linkNode["@link-type"]! == "anchor">${linkText}</#if></#if>
-                <#t><#if badgeMessage?has_content> <q-badge class="on-right" transparent>${badgeMessage}</q-badge></#if>
+                <#t><#if badgeMessage?has_content> <q-badge class="on-right" color="orange-3" transparent>${badgeMessage}</q-badge></#if>
                 <#if linkNode["@link-type"]! != "anchor"></q-btn></#if>
             <#t></${linkElement}>
         <#else>
