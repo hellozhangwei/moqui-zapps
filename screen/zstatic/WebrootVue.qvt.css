@@ -221,4 +221,7 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 .q-expansion-item--expanded>.q-expansion-item__container>a{
     color: var(--q-color-primary);
 }
+.small-input .q-field__control {height:30px !important;}
+.hide-input-label .q-field__label {display: none}
+
 /*---Custom section end----*/
