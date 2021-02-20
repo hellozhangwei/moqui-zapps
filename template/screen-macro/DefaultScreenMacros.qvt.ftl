@@ -307,7 +307,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#-- TODO non q-btn approach might simulate styles like old stuff, initial attempt failed though: <#if linkNode["@link-type"]! != "anchor">btn btn-${linkNode["@btn-type"]!"primary"} btn-sm</#if> -->
                 <#if linkNode["@link-type"]! != "anchor">
                     <#t>>
-                    <q-btn dense size="xs" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
+                    <q-btn dense size="sm" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
                         <#t> <#if buttonOutline> outline</#if>
                         <#t> <#if buttonFlat> flat </#if>
                         <#t><#if iconClass?has_content> icon="${iconClass}" </#if><#rt>
