@@ -1983,7 +1983,9 @@ a => A, d => D, y => Y
     <#if !iconClass?has_content><#assign iconClass = sri.getThemeIconClass(buttonText)!></#if>
     <#assign buttonFlat = "">
     <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
-    <q-btn dense <#if buttonFlat?has_content> flat </#if> no-caps type="submit" name="<@fieldName .node/>" value="<@fieldName .node/>" id="<@fieldId .node/>"<#rt>
+    <#assign buttonSize = "md">
+    <#if .node["@button-size"]?has_content><#assign buttonSize = .node["@button-size"]></#if>
+    <q-btn dense size="${buttonSize}" <#if buttonFlat?has_content> flat </#if> no-caps type="submit" name="<@fieldName .node/>" value="<@fieldName .node/>" id="<@fieldId .node/>"<#rt>
             <#t> color="<@getQuasarColor .node["@type"]!"primary"/>"<#if formDisabled!> disabled</#if>
             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}');"</#if>
             <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if !.node["image"]?has_content> label="${buttonText}"</#if>>
