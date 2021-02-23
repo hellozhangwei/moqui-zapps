@@ -286,7 +286,7 @@ along with this software (see the LICENSE.md file). If not, see
       to mini-mode
     -->
     <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -14px">
-        <q-btn size="xs" round unelevated color="grey-4" text-color="grey" icon="chevron_left" @click="toggleMiniState"/>
+        <q-btn size="xs" round unelevated color="grey-4" text-color="grey" :icon="miniState?'chevron_right':'chevron_left'" @click="toggleMiniState"/>
     </div>
 </q-drawer>
 
