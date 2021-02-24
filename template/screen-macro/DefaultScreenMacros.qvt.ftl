@@ -271,9 +271,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
 
     <#assign buttonOutline = true>
-    <#if .node["@button-outline"]?has_content><#assign buttonOutline = .node["@button-outline"]?boolean></#if>
+    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>
     <#assign buttonFlat = false>
-    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]?boolean></#if>
+    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>
 
     <#assign labelWrapper = linkNode["@link-type"]! == "anchor" && linkNode?ancestors("form-single")?has_content>
     <#if labelWrapper>
@@ -283,7 +283,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 
     <#if urlInstance.disableLink>
         <span>
-            <q-btn dense no-caps disabled <#if linkNode["@link-type"]! != "anchor" && linkNode["@link-type"]! != "hidden-form-link">outline<#else>flat</#if><#rt>
+            <q-btn unelevated dense no-caps disabled <#if linkNode["@link-type"]! != "anchor" && linkNode["@link-type"]! != "hidden-form-link">outline<#else>flat</#if><#rt>
                 <#t> class="m-link<#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                 <#t><#if linkFormId?has_content> id="${linkFormId}"</#if><#if linkText?has_content> label="${linkText}"</#if>>
                 <#if iconClass?has_content><i class="${iconClass}"></i></#if><#if linkNode["image"]?has_content><#visit linkNode["image"][0]></#if>
@@ -307,8 +307,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#-- TODO non q-btn approach might simulate styles like old stuff, initial attempt failed though: <#if linkNode["@link-type"]! != "anchor">btn btn-${linkNode["@btn-type"]!"primary"} btn-sm</#if> -->
                 <#if linkNode["@link-type"]! != "anchor">
                     <#t>>
-                    <q-btn dense size="sm" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
-                        <#t> <#if buttonOutline> outline</#if>
+                    <q-btn unelevated dense size="sm" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
+                        <#t> <#if buttonOutline> outline </#if>
                         <#t> <#if buttonFlat> flat </#if>
                         <#t><#if iconClass?has_content> icon="${iconClass}" </#if><#rt>
                         <#t> class=" <#if linkNode["@style"]?has_content> ${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>" label="${linkText}">
@@ -323,8 +323,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#t></${linkElement}>
         <#else>
             <#if linkFormId?has_content>
-            <#rt><q-btn dense no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
-                    <#t> <#if buttonOutline> outline</#if>
+            <#rt><q-btn unelevated dense size="sm" no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
+                    <#t> <#if buttonOutline> outline </#if>
                     <#t> <#if buttonFlat> flat </#if>
                     <#t> class="<#if linkNode["@style"]?has_content>${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>"
                     <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
@@ -1985,7 +1985,7 @@ a => A, d => D, y => Y
     <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]></#if>
     <#assign buttonSize = "md">
     <#if .node["@button-size"]?has_content><#assign buttonSize = .node["@button-size"]></#if>
-    <q-btn dense size="${buttonSize}" <#if buttonFlat?has_content> flat </#if> no-caps type="submit" name="<@fieldName .node/>" value="<@fieldName .node/>" id="<@fieldId .node/>"<#rt>
+    <q-btn dense unelevated size="${buttonSize}" <#if buttonFlat?has_content> flat </#if> no-caps type="submit" name="<@fieldName .node/>" value="<@fieldName .node/>" id="<@fieldId .node/>"<#rt>
             <#t> color="<@getQuasarColor .node["@type"]!"primary"/>"<#if formDisabled!> disabled</#if>
             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}');"</#if>
             <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if !.node["image"]?has_content> label="${buttonText}"</#if>>
