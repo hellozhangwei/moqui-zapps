@@ -102,7 +102,10 @@ ${sri.renderSection(.node["@name"])}
 </#macro>
 
 <#macro "vertical-separator">
-  <q-separator vertical style="height:20px" class="self-center" ></q-separator>
+    <#if .node["@condition"]?has_content><#assign conditionResult = ec.getResource().condition(.node["@condition"], "")><#else><#assign conditionResult = true></#if>
+    <#if conditionResult>
+        <q-separator vertical style="height:20px" class="self-center" ></q-separator>
+    </#if>
 </#macro>
 
 <#macro "container-row">
