@@ -52,5 +52,38 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Inventory Asset" localized="库存资产" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Containers" localized="容器" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Pools" localized="仓库池" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Outgoing Shipment" localized="新建出库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Incoming Shipment" localized="新建入库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Transfer Shipment" localized="新建移库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Package Tracking" localized="包裹追踪" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipments" localized="出库入库" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Insert" localized="装箱单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Origin Facility" localized="发货仓" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Origin Facility" localized="发货仓" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Destination Facility" localized="收货仓" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment From Party" localized="发货人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment To Party" localized="收货人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Ship By" localized="承运人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Destination Address" localized="收货地址" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Origin Address" localized="发货地址" />
+
+    <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Sales Return Shipment" parentEnumId="ShpTpIncoming" enumId="ShpTpSalesReturn" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Sales Shipment" parentEnumId="ShpTpOutgoing" enumId="ShpTpSales" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Purchase Shipment" parentEnumId="ShpTpIncoming" enumId="ShpTpPurchase" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Purchase Return Shipment" parentEnumId="ShpTpOutgoing" enumId="ShpTpPurchaseReturn" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Drop Shipment" enumId="ShpTpDrop" enumTypeId="ShipmentType"/>
+    <moqui.basic.Enumeration description="Transfer Shipment" enumId="ShpTpTransfer" enumTypeId="ShipmentType"/>
+
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpIncoming" locale="zh_CN" localized="入库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpOutgoing" locale="zh_CN" localized="出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpSalesReturn" locale="zh_CN" localized="销售退货入库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpSales" locale="zh_CN" localized="销售出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpPurchase" locale="zh_CN" localized="采购入库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpPurchaseReturn" locale="zh_CN" localized="采购退货出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpDrop" locale="zh_CN" localized="代发货出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpTransfer" locale="zh_CN" localized="移库出库单"/>
+
 
 </entity-facade-xml>
