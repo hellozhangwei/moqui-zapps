@@ -54,7 +54,7 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Pools" localized="仓库池" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="New Outgoing Shipment" localized="新建出库单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="New Incoming Shipment" localized="新建入库单" />
-    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Transfer Shipment" localized="新建移库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Transfer Shipment" localized="新建调拨单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Package Tracking" localized="包裹追踪" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipments" localized="出库入库" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Insert" localized="装箱单" />
