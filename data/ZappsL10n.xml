@@ -66,6 +66,9 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Ship By" localized="承运人" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Destination Address" localized="收货地址" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Origin Address" localized="发货地址" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Invoice" localized="账单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Invoices" localized="账单管理" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Payments" localized="支付管理" />
 
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
