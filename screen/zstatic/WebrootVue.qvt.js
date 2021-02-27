@@ -347,7 +347,7 @@ Vue.component('m-container-box', {
     data: function() { return { expanded:this.initialOpen }},
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
-    '<q-card flat bordered class="q-ma-sm no-border">' +
+    '<q-card flat class="q-ma-sm">' +
         '<q-card-actions @click="collapsable?(expanded = !expanded):null" class="">' +
             '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm text-grey-7" size="xs"/>' +
             '<span class="text-subtitle1" v-if="title && title.length">{{title}}</span>' +
