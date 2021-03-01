@@ -300,6 +300,10 @@ along with this software (see the LICENSE.md file). If not, see
             <div class="q-ma-md">
                 <m-subscreens-active></m-subscreens-active>
             </div>
+
+            <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
+                <q-btn size="md" round icon="keyboard_arrow_up" color="primary"></q-btn>
+            </q-page-scroller>
         </q-page></q-page-container>
 
         <q-footer reveal bordered class="text-white row q-pa-xs" id="footer">
