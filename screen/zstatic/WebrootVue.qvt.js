@@ -432,10 +432,10 @@ Vue.component('m-container-dialog', {
     name: "mContainerDialog",
     props: { id:String, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String}
             , openDialog:{type:Boolean,'default':false}
-            , buttonSize:{type:String,'default':'md'}
+            , buttonSize:{type:String,'default':'sm'}
             , buttonIcon:{type:String,'default':'open_in_new'}
-            , buttonOutline:{type:Boolean,'default':true}
-            , buttonFlat:{type:Boolean,'default':false}
+            , buttonOutline:{type:Boolean,'default':false}
+            , buttonFlat:{type:Boolean,'default':true}
         },
     data: function() { return { isShown:false }},
     template:
