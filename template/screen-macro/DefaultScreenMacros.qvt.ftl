@@ -286,7 +286,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 
     <#if urlInstance.disableLink>
         <span>
-            <q-btn unelevated dense no-caps disabled <#if linkNode["@link-type"]! != "anchor" && linkNode["@link-type"]! != "hidden-form-link">outline<#else>flat</#if><#rt>
+            <q-btn unelevated dense no-caps disabled size="sm"
+                   <#--<#if linkNode["@link-type"]! != "anchor" && linkNode["@link-type"]! != "hidden-form-link">outline<#else>flat</#if><#rt>-->
                 <#t> class="m-link<#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                 <#t><#if linkFormId?has_content> id="${linkFormId}"</#if><#if linkText?has_content> label="${linkText}"</#if>>
                 <#if iconClass?has_content><i class="${iconClass}"></i></#if><#if linkNode["image"]?has_content><#visit linkNode["image"][0]></#if>
