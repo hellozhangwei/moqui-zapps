@@ -1242,9 +1242,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <div class="q-my-sm q-table__container q-table__card q-table--horizontal-separator q-table--dense q-table--flat q-table--bordered" :class="{'q-table--dark':$q.dark.isActive, 'q-table__card--dark':$q.dark.isActive, 'q-dark':$q.dark.isActive,}">
         <div class="table q-table ${tableStyle}" id="${formId}_table">
         <#if !skipHeader>
-            <div class="thead bg-grey-1">
+            <div class="thead">
                 <@paginationHeader formListInfo formId isHeaderDialog/>
-                <div class="tr">
+                <div class="tr bg-grey-1">
                     <#if isRowSelection>
                         <div class="th"><span class="q-my-auto">
                             <q-checkbox size="sm" v-model="formProps.checkboxAllState" @input="formProps.setCheckboxAllState">
