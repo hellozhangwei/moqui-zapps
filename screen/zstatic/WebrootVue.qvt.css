@@ -135,7 +135,7 @@ td, .td { min-height:21px; }
 .q-table--vertical-separator .td:first-child, .q-table--cell-separator .td:first-child, .q-table--vertical-separator .th:first-child,
     .q-table--cell-separator .th:first-child { border-left: 0; }
 .q-table--dense .q-table .th, .q-table--dense .q-table .td { padding: 4px 8px; }
-.q-table--dense .q-table .thead .tr, .q-table--dense .q-table .tbody .tr, .q-table--dense .q-table .tbody .td { height: 28px; }
+.q-table--dense .q-table .thead .tr, .q-table--dense .q-table .tbody .tr, .q-table--dense .q-table .tbody .td { height: 40px; }
 .q-table--dense .q-table .th:first-child, .q-table--dense .q-table .td:first-child { padding-left: 16px; }
 .q-table--dense .q-table .th:last-child, .q-table--dense .q-table .td:last-child { padding-right: 16px; }
 .q-table .thead, .q-table .tr, .q-table .th, .q-table .td { border-color: rgba(0,0,0,0.12); }
