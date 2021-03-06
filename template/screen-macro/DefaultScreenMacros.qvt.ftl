@@ -1453,7 +1453,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#-- end/footer -->
     <#if !skipEnd>
         <#if isMulti && listHasContent>
-            <tr><td colspan="${numColumns}">
+            <tr><td colspan="${numColumns}" align="right">
                 <#list formNode["field"] as fieldNode><@formListSubField fieldNode false false true true/></#list>
             </td></tr>
         </#if>
