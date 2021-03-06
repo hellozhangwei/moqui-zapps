@@ -222,7 +222,7 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
     color: var(--q-color-primary);
 }
 .small-input .q-field__control {height:30px !important;}
-.hide-input-label .q-field__label {display: none}
+.hide-field-label .q-field__label {display: none}
 .q-drawer--dark .q-drawer__content{background-color:black !important;}
 .q-dark .thead tr {background-color:black !important;}
 .q-dark .thead div {background-color:black !important;}
