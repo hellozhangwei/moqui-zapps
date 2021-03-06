@@ -463,9 +463,9 @@ Vue.component('m-dynamic-dialog', {
     name: "mDynamicDialog",
     props: { id:{type:String}, url:{type:String,required:true}, color:String, buttonText:String, buttonClass:String, title:String, width:{type:String},
         openDialog:{type:Boolean,'default':false}, dynamicParams:{type:Object,'default':null}
-        , buttonOutline:{type:Boolean,'default':true}
-        , buttonSize:{type:String,'default':'md'}
-        , buttonFlat:{type:Boolean,'default':false}},
+        , buttonOutline:{type:Boolean,'default':false}
+        , buttonSize:{type:String,'default':'sm'}
+        , buttonFlat:{type:Boolean,'default':true}},
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
