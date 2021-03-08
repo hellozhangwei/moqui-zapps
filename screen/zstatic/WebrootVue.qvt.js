@@ -2054,7 +2054,9 @@ Vue.component('m-menu-tree-item', {
             return fullPath.startsWith(path)
             //return '/apps/marble/Asset'.startsWith(path)
         }
-
+    },
+    mounted: function() {
+        $(this.$el)[0].scrollIntoView()
     }
 });
 
