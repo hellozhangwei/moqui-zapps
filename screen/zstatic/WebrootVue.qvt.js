@@ -2056,7 +2056,7 @@ Vue.component('m-menu-tree-item', {
         }
     },
     mounted: function() {
-        $(this.$el)[0].scrollIntoView()
+        $(this.$el)[0].scrollIntoView({block: "start"})
     }
 });
 
