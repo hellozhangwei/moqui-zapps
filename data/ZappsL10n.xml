@@ -69,6 +69,11 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Invoice" localized="账单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Invoices" localized="账单管理" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Payments" localized="支付管理" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Transactions" localized="会计账务" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Human Res" localized="人力资源" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Employees" localized="员工管理" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Departments" localized="部门管理" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Employee Rates" localized="报价管理" />
 
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
