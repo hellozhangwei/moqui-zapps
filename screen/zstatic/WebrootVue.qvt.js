@@ -1035,7 +1035,7 @@ Vue.component('m-form-go-page', {
     data: function() { return { pageIndex:"" } },
     template:
         '<q-form v-if="!formList || (formList.paginate && formList.paginate.pageMaxIndex > 4)" @submit.prevent="goPage">' +
-            '<q-input dense borderless v-model="pageIndex" type="text" size="4" name="pageIndex" placeholder="Page #"' +
+            '<q-input dense borderless v-model="pageIndex" type="text" size="6" name="pageIndex" placeholder="Page #"' +
                 '   :rules="[val => /^\\d*$/.test(val) || \'digits only\', val => ((formList && +val <= formList.paginate.pageMaxIndex) || (maxIndex && +val < maxIndex)) || \'higher than max\']">' +
                 '<template v-slot:append><q-btn dense flat no-caps type="submit" icon="redo" @click="goPage"></q-btn></template>' +
             '</q-input>' +
