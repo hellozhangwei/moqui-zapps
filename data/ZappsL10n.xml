@@ -81,6 +81,8 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Purchase Return Shipment" localized="采购退货出库单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Drop Shipment" localized="直运出库单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Transfer Shipment" localized="调拨出库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Consumable Shipment" localized="领用出库单"/>
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Lend Shipment" localized="借用出库单"/>
 
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
