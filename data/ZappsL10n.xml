@@ -75,6 +75,13 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Departments" localized="部门管理" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Employee Rates" localized="报价管理" />
 
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Sales Shipment" localized="销售出库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Sales Return Shipment" localized="销售退货入库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Purchase Shipment" localized="采购入库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Purchase Return Shipment" localized="采购退货出库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Drop Shipment" localized="直运出库单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Transfer Shipment" localized="调拨出库单" />
+
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Sales Return Shipment" parentEnumId="ShpTpIncoming" enumId="ShpTpSalesReturn" enumTypeId="ShipmentType"/>
@@ -90,7 +97,7 @@
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpSales" locale="zh_CN" localized="销售出库单"/>
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpPurchase" locale="zh_CN" localized="采购入库单"/>
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpPurchaseReturn" locale="zh_CN" localized="采购退货出库单"/>
-    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpDrop" locale="zh_CN" localized="代发货出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpDrop" locale="zh_CN" localized="直运出库单"/>
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpTransfer" locale="zh_CN" localized="调拨出库单"/>
 
 
