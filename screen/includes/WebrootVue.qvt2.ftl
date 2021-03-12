@@ -135,8 +135,7 @@ along with this software (see the LICENSE.md file). If not, see
             <a href="#" @click.prevent="goPreviousScreen()" data-toggle="tooltip" data-original-title="${ec.l10n.localize("Previous Screen")}"
                data-placement="bottom" class="btn btn-default btn-sm navbar-btn navbar-right"><i class="fa fa-chevron-left"></i></a>
             -->
-
-            <q-btn dense flat icon="account_circle">
+            <q-btn dense flat no-caps icon="account_circle" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
                 <q-tooltip>${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}</q-tooltip>
                 <q-menu><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
                     <q-card-section horizontal class="q-pa-md">
