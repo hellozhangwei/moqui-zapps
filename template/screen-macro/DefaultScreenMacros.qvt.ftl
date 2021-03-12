@@ -92,6 +92,7 @@ ${sri.renderSection(.node["@name"])}
         <#t> type="${boxType}"
         <#t><#if boxHeader??> title="${ec.getResource().expand(boxHeader["@title"]!"", "")?html}"</#if>
         <#t> :initial-open="<#if ec.getResource().expandNoL10n(.node["@initial"]!, "") == "closed">false<#else>true</#if>"
+        <#t> :bordered="<#if ec.getResource().expandNoL10n(.node["@bordered"]!, "") == "true">true<#else>false</#if>"
         <#t> :collapsable="<#if ec.getResource().expandNoL10n(.node["@collapsable"]!, "") == "false">false<#else>true</#if>">
         <#-- NOTE: direct use of the m-container-box component would not use template elements but rather use the 'slot' attribute directly on the child elements which we can't do here -->
         <#if boxHeader??><template slot="header"><#recurse boxHeader></template></#if>
