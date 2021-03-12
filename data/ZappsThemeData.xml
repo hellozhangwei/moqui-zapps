@@ -63,11 +63,11 @@ along with this software (see the LICENSE.md file). If not, see
 
     <!-- /qapps (qvt/qvue) header plugins -->
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="125" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
-                                      resourceValue="/ssstatic/lib/QuickSearch.qvue"/>
+                                      resourceValue="/zstatic/lib/QuickSearch.qvue"/>
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="130" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
-                                      resourceValue="/ssstatic/lib/ActiveOrgNav.qvue"/>
+                                      resourceValue="/zstatic/lib/ActiveOrgNav.qvue"/>
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="135" resourceTypeEnumId="STRT_HEADER_ACCOUNT_COMP"
-                                      resourceValue="/ssstatic/lib/MyAccountNav.qvue"/>
+                                      resourceValue="/zstatic/lib/MyAccountNav.qvue"/>
 
     <!--sample data-->
     <!--
