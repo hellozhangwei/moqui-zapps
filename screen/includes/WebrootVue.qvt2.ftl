@@ -87,7 +87,7 @@ along with this software (see the LICENSE.md file). If not, see
             <component :is="qzVue" ref="qzVue"></component>
 
             <#-- screen documentation/help -->
-            <q-btn dense flat icon="help_outline" color="info" :class="{hidden:!documentMenuList.length}">
+            <q-btn dense round flat icon="help_outline" color="info" :class="{hidden:!documentMenuList.length}">
                 <q-tooltip>${ec.l10n.localize("Documentation")}</q-tooltip>
                 <q-menu><q-list dense class="q-my-md">
                     <q-item v-for="screenDoc in documentMenuList" :key="screenDoc.index"><q-item-section>
@@ -100,7 +100,7 @@ along with this software (see the LICENSE.md file). If not, see
             <template v-for="navPlugin in navPlugins"><component :is="navPlugin"></component></template>
 
             <#-- notify history -->
-            <q-btn dense flat icon="notifications">
+            <q-btn dense round flat icon="notifications">
                 <q-tooltip>${ec.l10n.localize("Notify History")}</q-tooltip>
                 <q-menu><q-list dense style="min-width: 300px">
                     <q-item v-for="histItem in notifyHistoryList"><q-item-section>
@@ -114,7 +114,7 @@ along with this software (see the LICENSE.md file). If not, see
 
             <#-- screen history menu -->
             <#-- get initial history from server? <#assign screenHistoryList = ec.web.getScreenHistory()><#list screenHistoryList as screenHistory><#if (screenHistory_index >= 25)><#break></#if>{url:pathWithParams, name:title}</#list> -->
-            <q-btn dense flat icon="history">
+            <q-btn dense round flat icon="history">
                 <q-tooltip>${ec.l10n.localize("Screen History")}</q-tooltip>
                 <q-menu><q-list dense style="min-width: 300px">
                     <q-item v-for="histItem in navHistoryList" :key="histItem.pathWithParams" clickable v-close-popup><q-item-section>
@@ -135,7 +135,7 @@ along with this software (see the LICENSE.md file). If not, see
             <a href="#" @click.prevent="goPreviousScreen()" data-toggle="tooltip" data-original-title="${ec.l10n.localize("Previous Screen")}"
                data-placement="bottom" class="btn btn-default btn-sm navbar-btn navbar-right"><i class="fa fa-chevron-left"></i></a>
             -->
-            <q-btn dense flat no-caps icon="account_circle" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
+            <q-btn dense rounded flat no-caps icon="account_circle" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
                 <q-tooltip>${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}</q-tooltip>
                 <q-menu><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
                     <q-card-section horizontal class="q-pa-md">

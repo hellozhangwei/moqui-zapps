@@ -1,6 +1,6 @@
 <!-- This software is in the public domain under CC0 1.0 Universal plus a Grant of Patent License. -->
 <template>
-    <q-btn dense flat icon="edit_location" :label="activeOrg && activeOrg.pseudoId" :class="{'text-positive':activeOrg}">
+    <q-btn dense round flat icon="edit_location" :label="activeOrg && activeOrg.pseudoId" :class="{'text-positive':activeOrg}">
         <q-tooltip>Active Organization</q-tooltip>
         <q-menu><q-list dense>
             <q-item v-if="activeOrg" clickable v-close-popup @click="updateActive(null)"><q-item-section>Clear Active Organization</q-item-section></q-item>

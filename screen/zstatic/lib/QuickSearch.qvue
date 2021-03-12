@@ -1,7 +1,7 @@
 <!-- This software is in the public domain under CC0 1.0 Universal plus a Grant of Patent License. -->
 <template>
     <q-input rounded outlined dark dense name="queryString" v-model="queryString" :size="inputSize" @focus="inputSize=20" @blur="inputSize=8" @keydown.enter.prevent="goSearch()">
-        <template v-slot:append><q-btn dark dense flat type="submit" name="submitButton" icon="search" @click="goSearch()"></q-btn></template>
+        <template v-slot:append><q-btn dark round dense flat type="submit" name="submitButton" icon="search" @click="goSearch()"></q-btn></template>
         <q-tooltip>Search or Lookup by ID</q-tooltip>
     </q-input>
 </template>
