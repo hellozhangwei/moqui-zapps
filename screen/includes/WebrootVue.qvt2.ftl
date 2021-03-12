@@ -141,20 +141,22 @@ along with this software (see the LICENSE.md file). If not, see
                 <q-menu><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
                     <q-card-section horizontal class="q-pa-md">
                         <q-card-section>
-                            <#if (ec.user.userAccount.userFullName)?has_content><div class="q-mb-sm text-strong">${ec.l10n.localize("Welcome")} ${ec.user.userAccount.userFullName}</div></#if>
-
+                            <#--<#if (ec.user.userAccount.userFullName)?has_content><div class="q-mb-sm text-strong">${ec.l10n.localize("Welcome")} ${ec.user.userAccount.userFullName}</div></#if>-->
                             <#-- account plugins -->
                             <template v-for="accountPlugin in accountPlugins"><component :is="accountPlugin"></component></template>
                         </q-card-section>
                         <q-separator vertical></q-separator>
                         <q-card-actions vertical class="justify-around q-px-md">
-                            <#-- dark/light switch -->
-                            <q-btn flat dense @click.prevent="switchDarkLight()" icon="invert_colors">
-                                <q-tooltip>${ec.l10n.localize("Switch Dark/Light")}</q-tooltip></q-btn>
-                            <#-- logout button -->
-                            <q-btn flat dense icon="settings_power" color="negative" type="a" href="${sri.buildUrl("/Login/logout").url}"
-                                   onclick="return confirm('${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}?')">
-                                <q-tooltip>${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}</q-tooltip></q-btn>
+                            <div class="row">
+                                <#-- dark/light switch -->
+                                <q-btn flat dense @click.prevent="switchDarkLight()" icon="invert_colors">
+                                    <q-tooltip>${ec.l10n.localize("Switch Dark/Light")}</q-tooltip></q-btn>
+                                <#-- logout button -->
+                                <q-btn flat dense icon="logout" color="negative" type="a" href="${sri.buildUrl("/Login/logout").url}"
+                                       onclick="return confirm('${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}?')">
+                                    <q-tooltip>${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}</q-tooltip></q-btn>
+                            </div>
+
                         </q-card-actions>
                     </q-card-section>
                 </q-card></q-menu>
