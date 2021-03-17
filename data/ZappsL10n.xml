@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-facade-xml type="seed">
 
+    <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
+
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Duplicates" localized="查重" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Identification" localized="唯一标识" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Identification" localized="添加" />
