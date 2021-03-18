@@ -275,9 +275,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
 
     <#--<#assign buttonOutline = true>
-    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>
-    <#assign buttonFlat = false>
-    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>-->
+    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>-->
+    <#assign buttonFlat = true>
+    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>
 
     <#assign labelWrapper = linkNode["@link-type"]! == "anchor" && linkNode?ancestors("form-single")?has_content>
     <#if labelWrapper>
@@ -312,9 +312,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                 <#-- TODO non q-btn approach might simulate styles like old stuff, initial attempt failed though: <#if linkNode["@link-type"]! != "anchor">btn btn-${linkNode["@btn-type"]!"primary"} btn-sm</#if> -->
                 <#if linkNode["@link-type"]! != "anchor">
                     <#t>>
-                    <q-btn unelevated dense size="sm" flat no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
-                        <#--<#t> <#if buttonOutline> outline </#if>
-                        <#t> <#if buttonFlat> flat </#if>-->
+                    <q-btn unelevated dense size="sm" no-caps color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"<#rt>
+                        <#--<#t> <#if buttonOutline> outline </#if>-->
+                        <#t> <#if buttonFlat> flat </#if>
                         <#t><#if iconClass?has_content> icon="${iconClass}" </#if><#rt>
                         <#t> class=" <#if linkNode["@style"]?has_content> ${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>" label="${linkText}">
                 <#else>
