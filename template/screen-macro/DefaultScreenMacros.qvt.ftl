@@ -449,6 +449,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#if textMap?has_content><#assign linkText = ec.getResource().expand(.node["@text"], "", textMap)>
         <#else><#assign linkText = ec.getResource().expand(.node["@text"]!"", "")></#if>
 
+    <#assign buttonFlat = true>
+    <#if .node["@button-flat"]?has_content><#assign buttonFlat = .node["@button-flat"]?boolean></#if>
+
     <#if linkText == "null"><#assign linkText = ""></#if>
     <#if linkText?has_content || .node["image"]?has_content || .node["@icon"]?has_content>
         <#if .node["@encode"]! != "false"><#assign linkText = linkText?html></#if>
@@ -457,8 +460,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <#assign badgeMessage = ec.getResource().expand(.node["@badge"]!, "")/>
 
         <#-- NOTE: do not use auto-close or v-close-popup because it closes dialogs as well as the menu! -->
-        <q-btn-dropdown dense size="sm" flat no-caps @click.stop color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
-                <#if iconClass?has_content> icon="${iconClass}"</#if>
+        <q-btn-dropdown dense size="sm" no-caps @click.stop color="<@getQuasarColor .node["@btn-type"]!"primary"/>"<#rt>
+                <#t><#if iconClass?has_content> icon="${iconClass}"</#if>
+                <#t><#if buttonFlat> flat </#if>
                 <#lt><#if .node["@style"]?has_content> class="${ec.getResource().expandNoL10n(.node["@style"], "")}"</#if>>
             <template v-slot:label>
                 <#if .node["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node["@tooltip"], "")}</q-tooltip></#if>
