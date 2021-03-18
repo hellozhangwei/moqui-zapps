@@ -1925,9 +1925,12 @@ a => A, d => D, y => Y
 <#macro file>
     <#assign curFieldName><@fieldName .node/></#assign>
     <#assign fieldLabel><@fieldTitle .node?parent/></#assign>
-    <q-file dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${curFieldName}"</#if><#if formDisabled!> disable</#if>
+    <q-file dense clearable outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${curFieldName}"</#if><#if formDisabled!> disable</#if>
             name="<@fieldName .node/>" size="${.node.@size!"30"}"<#if .node.@multiple! == "true"> multiple</#if><#if .node.@accept?has_content> accept="${.node.@accept}"</#if><#if .node.@maxlength?has_content> maxlength="${.node.@maxlength}"</#if><#if ownerForm?has_content> form="${ownerForm}"</#if>>
         <#if .node?parent["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node?parent["@tooltip"], "")}</q-tooltip></#if>
+        <template v-slot:prepend>
+            <q-icon name="attach_file" />
+        </template>
     </q-file>
 </#macro>
 
@@ -2005,8 +2008,9 @@ a => A, d => D, y => Y
     <q-btn dense unelevated size="${buttonSize}" <#if buttonFlat?has_content> flat </#if> no-caps type="submit" name="<@fieldName .node/>" value="<@fieldName .node/>" id="<@fieldId .node/>"<#rt>
             <#t> color="<@getQuasarColor .node["@type"]!"primary"/>"<#if formDisabled!> disabled</#if>
             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}');"</#if>
-            <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if !.node["image"]?has_content> label="${buttonText}"</#if>>
-        <#if iconClass?has_content><i class="${iconClass}"></i></#if>
+            <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if !.node["image"]?has_content> label="${buttonText}"</#if>
+            <#t><#if iconClass?has_content> icon="${iconClass}"</#if>>
+        <#--<#if iconClass?has_content><i class="${iconClass}"></i></#if>-->
         <#if .node?parent["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(.node?parent["@tooltip"], "")}</q-tooltip></#if>
     <#if .node["image"]?has_content><#assign imageNode = .node["image"][0]>
         <img src="${sri.makeUrlByType(imageNode["@url"],imageNode["@url-type"]!"content",null,"true")}" alt="<#if imageNode["@alt"]?has_content>${imageNode["@alt"]}<#else><@fieldTitle .node?parent/></#if>"<#if imageNode["@width"]?has_content> width="${imageNode["@width"]}"</#if><#if imageNode["@height"]?has_content> height="${imageNode["@height"]}"</#if>>
