@@ -578,27 +578,22 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign fgTitle = ec.getL10n().localize(.node["@title"]!)!>
     <#if isAccordion!false>
         <#assign accIsActive = accordionIndex?string == accordionActive>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="${accordionId}_heading${accordionIndex}"><h5 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#${accordionId}" href="#${accordionId}_collapse${accordionIndex}"
-                   aria-expanded="true" aria-controls="${accordionId}_collapse${accordionIndex}"<#if !accIsActive> class="collapsed"</#if>>${fgTitle!"Fields"}</a>
-            </h5></div>
-            <div id="${accordionId}_collapse${accordionIndex}" class="panel-collapse collapse<#if accIsActive> in</#if>" role="tabpanel" aria-labelledby="${accordionId}_heading${accordionIndex}">
-                <div class="panel-body<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
-                    <#recurse .node/>
-                </div>
+        <q-expansion-item switch-toggle-side dense-toggle header-class="bg-grey-2 q-mb-sm" label="${fgTitle!"Fields"}" >
+            <div class="<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
+                <#recurse .node/>
             </div>
-        </div>
+        </q-expansion-item>
         <#assign accordionIndex = accordionIndex + 1>
     <#elseif .node["@box"]! == "true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab"><h5 class="panel-title">${fgTitle!"Fields"}</h5></div>
-            <div class="panel-collapse collapse in" role="tabpanel">
-                <div class="panel-body<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
-                    <#recurse .node/>
-                </div>
-            </div>
-        </div>
+        <q-card class="q-mb-md">
+          <q-card-section class="bg-grey-2">
+            <div class="text-subtitle2">${fgTitle}</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            <#recurse .node/>
+          </q-card-section>
+        </q-card>
     <#else>
         <div class="form-single-field-group<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
             <#if fgTitle?has_content><h5>${fgTitle}</h5></#if>
@@ -611,9 +606,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign accordionIndex = 1>
     <#assign accordionId = .node["@id"]!(formSingleId + "_accordion")>
     <#assign accordionActive = .node["@active"]!"1">
-    <div class="panel-group" id="${accordionId}" role="tablist" aria-multiselectable="true">
-        <#recurse .node/>
-    </div><!-- accordionId ${accordionId} -->
+    <q-list>
+       <#recurse .node/>
+    </q-list>
     <#assign isAccordion = false>
 </#macro>
 <#macro "field-col-row">
