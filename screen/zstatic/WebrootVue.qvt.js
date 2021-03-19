@@ -444,7 +444,7 @@ Vue.component('m-container-dialog', {
     data: function() { return { isShown:false }},
     template:
     '<span>' +
-        '<span @click.stop="show()"><slot name="button"><q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
+        '<span @click.stop="show()"><slot name="button"><q-btn dense unelevated :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
         '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
@@ -473,7 +473,7 @@ Vue.component('m-dynamic-dialog', {
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"", isShown:false} },
     template:
     '<span>' +
-        '<q-btn dense :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
+        '<q-btn dense unelevated :outline="buttonOutline" :flat="buttonFlat" no-caps icon="open_in_new" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass" @click.stop="isShown = true"></q-btn>' +
         '<m-dialog ref="dialog" v-model="isShown" :id="id" :title="title" :color="color" :width="width"><component :is="curComponent"></component></m-dialog>' +
     '</span>',
     methods: {
