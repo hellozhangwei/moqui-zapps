@@ -353,8 +353,8 @@ Vue.component('m-container-box', {
     template:
     '<q-card flat :bordered="bordered">' +
         '<q-card-actions @click="collapsable?(expanded = !expanded):null" :class="type" style="border-bottom: solid 1px rgba(0, 0, 0, 0.12);">' +
-            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm" :class="expanded?\'text-primary\':\'text-grey\'" size="xs"/>' +
-            '<span class="text-subtitle2" :class="expanded?\'text-primary\':\'text-grey\'" v-if="title && title.length">{{title}}</span>' +
+            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm" :class="expanded?\'text-secondary\':\'text-grey\'" size="xs"/>' +
+            '<span class="text-subtitle2" :class="expanded?\'text-secondary\':\'text-grey\'" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
             '<slot name="toolbar"></slot>' +
@@ -891,11 +891,17 @@ Vue.component('m-form', {
 });
 Vue.component('m-form-link', {
     name: "mFormLink",
-    props: { fieldsInitial:Object, action:{type:String,required:true}, focusField:String, noValidate:Boolean, bodyParameterNames:Array },
-    data: function() { return { fields:Object.assign({}, this.fieldsInitial) }},
+    props: { fieldsInitial:Object
+        , action:{type:String,required:true}
+        , focusField:String
+        , noValidate:Boolean
+        , bodyParameterNames:Array
+        , resultId:{type:String} },
+    data: function() { return { fields:Object.assign({}, this.fieldsInitial), resultComponent:moqui.EmptyComponent }},
     template:
-        '<q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
-            '<slot :clearForm="clearForm" :fields="fields"></slot></q-form>',
+        '<div><q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
+            '<slot :clearForm="clearForm" :fields="fields"></slot></q-form>'
+        + '<component v-if="resultId" :is="resultComponent"></component></div>',
     methods: {
         submitForm: function() {
             if (this.noValidate) {
@@ -977,7 +983,12 @@ Vue.component('m-form-link', {
             var url = this.action;
             if (url.indexOf('?') > 0) { url = url + '&' + parmStr; } else { url = url + '?' + parmStr; }
             // console.log("form-link url " + url + " bodyParameters " + JSON.stringify(bodyParameters));
-            this.$root.setUrl(url, bodyParameters);
+            var vm = this;
+            if(this.resultId) {
+                moqui.loadComponent(url, function(comp) { vm.resultComponent = comp; }, this.resultId)
+            } else {
+                this.$root.setUrl(url, bodyParameters);
+            }
 
         },
         resetForm: function() {
@@ -1192,6 +1203,7 @@ Vue.component('m-form-list', {
             var searchObj = this.search; if (!searchObj) { searchObj = this.$root.currentParameters; }
             var url = this.rows; if (url.indexOf('/') === -1) { url = this.$root.currentPath + '/actions/' + url; }
             console.info("Fetching rows with url " + url + " searchObj " + JSON.stringify(searchObj));
+            vm.rowList=[]
             $.ajax({ type:"GET", url:url, data:searchObj, dataType:"json", headers:{Accept:'application/json'},
                 error:moqui.handleAjaxError, success: function(list, status, jqXHR) {
                     if (list && moqui.isArray(list)) {
