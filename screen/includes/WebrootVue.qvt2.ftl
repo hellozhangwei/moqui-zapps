@@ -137,7 +137,7 @@ along with this software (see the LICENSE.md file). If not, see
             -->
             <q-btn dense rounded flat no-caps icon="account_circle" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
                 <q-tooltip>${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}</q-tooltip>
-                <q-menu><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
+                <q-menu content-class="bg-light-blue-10 text-white"><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
                     <q-card-section horizontal class="q-pa-md">
                         <q-card-section>
                             <#--<#if (ec.user.userAccount.userFullName)?has_content><div class="q-mb-sm text-strong">${ec.l10n.localize("Welcome")} ${ec.user.userAccount.userFullName}</div></#if>-->
