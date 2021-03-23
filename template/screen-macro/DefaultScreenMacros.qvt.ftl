@@ -331,9 +331,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#t></${linkElement}>
         <#else>
             <#if linkFormId?has_content>
-            <#rt><q-btn unelevated dense size="sm" no-caps type="submit" flat form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
-                    <#--<#t> <#if buttonOutline> outline </#if>
-                    <#t> <#if buttonFlat> flat </#if>-->
+            <#rt><q-btn unelevated dense size="sm" no-caps type="submit" form="${linkFormId}" id="${linkFormId}_button" color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>"
+                    <#--<#t> <#if buttonOutline> outline </#if>-->
+                    <#t> <#if buttonFlat> flat </#if>
                     <#t> class="<#if linkNode["@style"]?has_content>${ec.getResource().expandNoL10n(linkNode["@style"], "")}</#if>"
                     <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                     <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
@@ -356,9 +356,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 <#macro linkFormForm linkNode linkFormId linkText urlInstance>
 
     <#--<#assign buttonOutline = true>
-    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>
+    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>-->
     <#assign buttonFlat = false>
-    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>-->
+    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>
 
     <#if !urlInstance.disableLink && !sri.isAnchorLink(linkNode, urlInstance)>
         <#if urlInstance.getTargetTransition()?has_content><#assign linkFormType = "m-form"><#else><#assign linkFormType = "m-form-link"></#if>
@@ -376,10 +376,10 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#assign iconClass = linkNode["@icon"]!>
                     <#if !iconClass?has_content && linkNode["@text"]?has_content><#assign iconClass = sri.getThemeIconClass(linkNode["@text"])!></#if>
                     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
-                    <#rt><q-btn unelevated dense no-caps size="sm" type="submit" flat
+                    <#rt><q-btn unelevated dense no-caps size="sm" type="submit"
                             <#--<#if linkNode["@link-type"]! == "hidden-form-link">flat<#else>outline</#if>
-                            <#t> <#if buttonOutline> outline </#if>
-                            <#t> <#if buttonFlat> flat </#if>-->
+                            <#t> <#if buttonOutline> outline </#if>-->
+                            <#t> <#if buttonFlat> flat </#if>
                             <#t> color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>" class=" <#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                         <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
