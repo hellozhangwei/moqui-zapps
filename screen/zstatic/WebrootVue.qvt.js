@@ -452,9 +452,12 @@ Vue.component('m-container-dialog', {
 });
 Vue.component('m-dynamic-container', {
     name: "mDynamicContainer",
-    props: { id:{type:String,required:true}, url:{type:String} },
+    props: { id:{type:String,required:true}
+            , url:{type:String}
+            , formFields:{type:Object,'default':null}
+        },
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"" } },
-    template: '<component :is="curComponent"></component>',
+    template: '<component :is="curComponent" :formFields="formFields"></component>',
     methods: { reload: function() { var saveUrl = this.curUrl; this.curUrl = ""; var vm = this; setTimeout(function() { vm.curUrl = saveUrl; }, 20); },
         load: function(url) { if (this.curUrl === url) { this.reload(); } else { this.curUrl = url; } }},
     watch: { curUrl: function(newUrl) {
