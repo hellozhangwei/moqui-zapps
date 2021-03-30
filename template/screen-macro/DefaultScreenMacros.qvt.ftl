@@ -733,7 +733,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     </#if>
     <#if (isHeaderDialog || isSavedFinds || isSelectColumns || isPaginated) && hideNav! != "true">
         <tr class="form-list-nav-row bg-grey-3"><th colspan="${numColumns}"><div class="row q-pa-md">
-            <div class="col text-left">
+            <div class="col text-left"><div class="row q-gutter-x-xs">
             <#if isSavedFinds>
                 <#assign userFindInfoList = formListInfo.getUserFormListFinds(ec)>
                 <#if userFindInfoList?has_content>
@@ -816,6 +816,16 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#-- TODO: anything needed for per-row or multi forms? -->
                     <#assign fieldsJsName = "">
                 </m-container-dialog>
+                <#if haveFilters>
+                    <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
+                    <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
+                    <#assign curUrlInstance = sri.getCurrentScreenUrl()>
+                    <m-form-link name="${headerFormId}_clr" id="${headerFormId}_clr" action="${curUrlInstance.path}"
+                                 :fields-initial="{<#list hiddenParameterKeys as hiddenParameterKey>'${hiddenParameterKey}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(hiddenParameterMap.get(hiddenParameterKey)!)}'<#sep>,</#list>}">
+                        <q-btn dense no-caps outline type="submit" icon="clear" label="${ec.getL10n().localize("Clear Find")}" color="secondary">
+                            <q-tooltip>Reset to Default</q-tooltip></q-btn>
+                    </m-form-link>
+                </#if>
             </#if>
 
             <#if isSelectColumns>
@@ -1043,7 +1053,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <strong class="text-warning on-right q-my-auto">${ec.getL10n().localize("No results found")}</strong>
                 </#if>
             </#if>
-            </div>
+            </div></div><!--end div in line 736-->
 
             <#if isPaginated>
 
@@ -1082,17 +1092,17 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 
         <#if isHeaderDialog>
         <tr class="bg-grey-2"><th colspan="${numColumns}" style="font-weight: normal" class="text-left">
-            <strong>当前查找条件:</strong>${curFindSummary!""}
-            <#if haveFilters>
+            <span class="text-subtitle2 text-secondary">${ec.getL10n().localize("Current Search Conditions")}:</span>${curFindSummary!""}
+            <#--<#if haveFilters>
                 <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
                 <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
                 <#assign curUrlInstance = sri.getCurrentScreenUrl()>
                 <m-form-link name="${headerFormId}_clr" id="${headerFormId}_clr" action="${curUrlInstance.path}"
                          :fields-initial="{<#list hiddenParameterKeys as hiddenParameterKey>'${hiddenParameterKey}':'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(hiddenParameterMap.get(hiddenParameterKey)!)}'<#sep>,</#list>}">
-                    <q-btn dense flat type="submit" icon="loop" label="重置条件" color="secondary">
+                    <q-btn dense no-caps flat type="submit" icon="loop" label="${ec.getL10n().localize("Reset To Default")}" color="secondary">
                         <q-tooltip>Reset to Default</q-tooltip></q-btn>
                 </m-form-link>
-            </#if>
+            </#if>-->
         </th></tr>
         </#if>
     </#if>
