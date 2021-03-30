@@ -49,6 +49,18 @@
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
     <moqui.basic.LocalizedMessage locale="zh" original="Customer List" localized="客户列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Role" localized="客户角色" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Name" localized="客户名称" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Class" localized="客户类型" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer ID" localized="客户ID" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Dups" localized="重复" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Disabled" localized="禁用" />
+    <moqui.basic.LocalizedMessage locale="en" original="FindSalesOrdersLink" localized="Sales Orders" />
+    <moqui.basic.LocalizedMessage locale="zh" original="FindSalesOrdersLink" localized="销售订单" />
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Current Search Conditions" localized="当前查找条件" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Clear Find" localized="重置条件" />
+
 
     <moqui.basic.LocalizedMessage locale="zh" original="Find Duplicates" localized="查重" />
     <moqui.basic.LocalizedMessage locale="zh" original="Identification" localized="唯一标识" />
