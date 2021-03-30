@@ -183,7 +183,9 @@ ${sri.renderSection(.node["@name"])}
 <#macro "dynamic-container">
     <#assign dcDivId><@nodeId .node/></#assign>
     <#assign urlInstance = sri.makeUrlByType(.node["@transition"], "transition", .node, "true").addParameter("_dynamic_container_id", dcDivId)>
-    <m-dynamic-container id="${dcDivId}" url="${urlInstance.passThroughSpecialParameters().pathWithParams}"></m-dynamic-container>
+    <m-dynamic-container id="${dcDivId}" url="${urlInstance.passThroughSpecialParameters().pathWithParams}"<#rt>
+        <#t><#if fieldsJsName?has_content> :form-fields="${fieldsJsName}"</#if>>
+    </m-dynamic-container>
 </#macro>
 <#macro "dynamic-dialog">
     <#assign iconClass = "fa fa-share">
@@ -585,21 +587,16 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             </div>
         </q-expansion-item>
         <#assign accordionIndex = accordionIndex + 1>
-    <#elseif .node["@box"]! == "true">
-        <q-card class="q-mb-md">
-          <q-card-section class="bg-grey-2">
+    <#else>
+        <q-card flat <#if .node["@box"]! == "true">bordered</#if> class="q-mb-md <#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
+          <q-card-section class="bg-grey-2xxx">
             <div class="text-subtitle2">${fgTitle}</div>
           </q-card-section>
 
-          <q-card-section class="q-pt-none">
+          <q-card-section class="q-ml-md">
             <#recurse .node/>
           </q-card-section>
         </q-card>
-    <#else>
-        <div class="form-single-field-group<#if .node["@style"]?has_content> ${.node["@style"]}</#if>">
-            <#if fgTitle?has_content><h5>${fgTitle}</h5></#if>
-            <#recurse .node/>
-        </div>
     </#if>
 </#macro>
 <#macro "field-accordion">
