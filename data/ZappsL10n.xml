@@ -48,6 +48,9 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
+    <moqui.basic.LocalizedMessage locale="zh" original="New Person Customer" localized="新建客人客户"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Account" localized="新建客户"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Contact" localized="新建联系人"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Customer List" localized="客户列表" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Role" localized="客户角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Name" localized="客户名称" />
