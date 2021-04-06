@@ -359,7 +359,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 
     <#--<#assign buttonOutline = true>
     <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>-->
-    <#assign buttonFlat = false>
+    <#assign buttonFlat = true>
     <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>
 
     <#if !urlInstance.disableLink && !sri.isAnchorLink(linkNode, urlInstance)>
