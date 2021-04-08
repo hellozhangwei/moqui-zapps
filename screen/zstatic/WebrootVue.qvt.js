@@ -1410,13 +1410,17 @@ Vue.component('m-display', {
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip><slot></slot>' +
             '{{displayValue}}' +
         '</span>',*/
-        '<q-field borderless :label="label" stack-label>' +
+        '<q-field v-if="labelWrapper" borderless :label="label" stack-label>' +
             '<template v-slot:control>' +
                 '<div class="q-mt-sm self-center full-width no-outline" tabindex="0">{{displayValue}}' +
                     '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
                 '</div>' +
             '</template>' +
-        '</q-field>',
+        '</q-field>' +
+        '<span v-else :id="id">' +
+            '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip><slot></slot>' +
+            '{{displayValue}}' +
+        '</span>',
     methods: {
         serverData: function() {
             var hasAllParms = true;
