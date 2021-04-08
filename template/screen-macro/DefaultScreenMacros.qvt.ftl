@@ -176,7 +176,13 @@ ${sri.renderSection(.node["@name"])}
                 <#if buttonFlat?has_content> :button-flat="${buttonFlat}"</#if>
                 <#if buttonSize?has_content> button-size="${buttonSize}"</#if>
                 title="${title}"<#if _openDialog! == cdDivId> :openDialog="true"</#if>>
-            <#recurse>
+                <template slot-scope="dialogSlotProps">
+                    <#--<button @click="dialogSlotProps.hide">close test</button>
+                    <m-form  action="." @submitted="dialogSlotProps.hide">
+                        <q-btn dense @click.stop unelevated type="submit" color="primary" label="Update xxx"></q-btn>
+                    </m-form>-->
+                    <#recurse>
+                </template>
         </m-container-dialog>
     </#if>
 </#macro>
@@ -509,6 +515,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     </#if>
     <#assign formDisabled = urlInstance.disableLink>
 
+    <#assign inDialog = formSingleNode["@open-in-dialog"]! == "true"><#--999${.node?parent?node_name=='container-dialog'}-->
+
     <#-- TODO: handle disabled forms, for Quasar looks like will need to disable each field, maybe with a property on m-form and m-form-link (and something else for plain form?) -->
     <#--  disabled="disabled"</#if> <#if urlInstance.disableLink> :disabled="true"</#if> -->
     <#if !skipStart>
@@ -518,6 +526,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
             <#t><#if formSingleNode["@background-reload-id"]?has_content> submit-reload-id="${formSingleNode["@background-reload-id"]}"</#if>
             <#t><#if formSingleNode["@background-hide-id"]?has_content> submit-hide-id="${formSingleNode["@background-hide-id"]}"</#if>
             <#t><#if formSingleNode["@result-id"]?has_content> result-id="${formSingleNode["@result-id"]}"</#if>
+            <#if inDialog><#t> @submitted="dialogSlotProps.hide" </#if>
             <#t><#if formSingleNode["@exclude-empty-fields"]! == "true"> :exclude-empty-fields="true"</#if>
             <#lt><#if _formListSelectedForm!false> :parentCheckboxSet="formProps"</#if>
             <#if fieldsJsName?has_content> v-slot:default="formProps" :fields-initial="${Static["org.moqui.util.WebUtilities"].fieldValuesEncodeHtmlJsSafe(sri.getFormFieldValues(formSingleNode))}"</#if>>

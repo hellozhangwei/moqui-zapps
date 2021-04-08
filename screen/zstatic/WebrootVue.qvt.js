@@ -445,7 +445,7 @@ Vue.component('m-container-dialog', {
     template:
     '<span>' +
         '<span @click.stop="show()"><slot name="button"><q-btn dense unelevated :outline="buttonOutline" :flat="buttonFlat" no-caps :icon="buttonIcon" :size="buttonSize" :label="buttonText" :color="color" :class="buttonClass"></q-btn></slot></span>' +
-        '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot></slot></m-dialog>' +
+        '<m-dialog v-model="isShown" :id="id" :title="title" :color="color" :width="width"><slot :hide="hide"></slot></m-dialog>' +
     '</span>',
     methods: { show: function() { this.isShown = true; }, hide: function() { this.isShown = false; } },
     mounted: function() { if (this.openDialog) { this.isShown = true; } }
@@ -809,6 +809,8 @@ Vue.component('m-form', {
                         };
                         reader.readAsText(this.response);
                     }
+
+                    vm.$emit('submitted');
                 } else {
                     moqui.handleLoadError(this, this.statusText, "");
                 }
