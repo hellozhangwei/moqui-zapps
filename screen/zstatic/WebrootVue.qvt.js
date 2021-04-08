@@ -457,7 +457,7 @@ Vue.component('m-dynamic-container', {
             , formFields:{type:Object,'default':null}
         },
     data: function() { return { curComponent:moqui.EmptyComponent, curUrl:"" } },
-    template: '<component :is="curComponent" :formFields="formFields"></component>',
+    template: '<transition name="component-fade" mode="out-in"><component :is="curComponent" :formFields="formFields" ></component></transition>',
     methods: { reload: function() { var saveUrl = this.curUrl; this.curUrl = ""; var vm = this; setTimeout(function() { vm.curUrl = saveUrl; }, 20); },
         load: function(url) { if (this.curUrl === url) { this.reload(); } else { this.curUrl = url; } }},
     watch: { curUrl: function(newUrl) {
@@ -1979,7 +1979,7 @@ Vue.component('m-subscreens-tabs', {
 Vue.component('m-subscreens-active', {
     name: "mSubscreensActive",
     data: function() { return { activeComponent:moqui.EmptyComponent, pathIndex:-1, pathName:null } },
-    template: '<component :is="activeComponent"></component>',
+    template: '<transition name="component-fade" mode="out-in"><component :is="activeComponent"></component></transition>',
     // method instead of a watch on pathName so that it runs even when newPath is the same for non-static reloading
     methods: { loadActive: function() {
         var vm = this;
