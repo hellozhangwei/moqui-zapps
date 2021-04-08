@@ -714,6 +714,8 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
     <#assign hiddenParameterMap = sri.getFormHiddenParameters(formNode)>
     <#assign hiddenParameterKeys = hiddenParameterMap.keySet()>
     <#assign userDefaultFormListFindId = formListInfo.getUserDefaultFormListFindId(ec)!"">
+    <#assign origFormDisabled = formDisabled!false>
+    <#assign formDisabled = false>
     <#if isHeaderDialog>
         <#assign haveFilters = false>
         <#assign curFindSummary>
@@ -1115,6 +1117,7 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         </th></tr>
         </#if>
     </#if>
+    <#assign formDisabled = origFormDisabled>
 </#macro>
 
 <#macro formListSelectedRowCard rowSelectionNode>
