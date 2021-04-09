@@ -87,11 +87,19 @@ ${sri.renderSection(.node["@name"])}
     <#assign contBoxDivId><@nodeId .node/></#assign>
     <#assign boxHeader = .node["box-header"][0]!>
     <#assign boxType = ec.resource.expandNoL10n(.node["@type"], "")!>
+    <#if ec.getResource().expandNoL10n(.node["@initial"]!, "") == "closed">
+        <#assign initialOpen = "false">
+    <#else>
+        <#assign initialOpen = "true">
+    </#if>
+    <#if _expandBox?has_content && _expandBox==contBoxDivId!>
+      <#assign initialOpen = "true">
+    </#if>
     <#if !boxType?has_content><#assign boxType = "default"></#if>
     <m-container-box<#if contBoxDivId?has_content> id="${contBoxDivId}"</#if>
         <#t> type="${boxType}"
         <#t><#if boxHeader??> title="${ec.getResource().expand(boxHeader["@title"]!"", "")?html}"</#if>
-        <#t> :initial-open="<#if ec.getResource().expandNoL10n(.node["@initial"]!, "") == "closed">false<#else>true</#if>"
+        <#t> :initial-open="${initialOpen}"
         <#t> :bordered="<#if ec.getResource().expandNoL10n(.node["@bordered"]!, "") == "true">true<#else>false</#if>"
         <#t> :collapsable="<#if ec.getResource().expandNoL10n(.node["@collapsable"]!, "") == "false">false<#else>true</#if>">
         <#-- NOTE: direct use of the m-container-box component would not use template elements but rather use the 'slot' attribute directly on the child elements which we can't do here -->
