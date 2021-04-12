@@ -14,59 +14,59 @@ along with this software (see the LICENSE.md file). If not, see
 -->
 <entity-facade-xml type="seed-initial">
 
-    <moqui.basic.Enumeration description="Internal Applications - Quasar" enumId="STT_INTERNAL_QUASAR_FUNCS" enumTypeId="ScreenThemeType" enumCode="DEFAULT_QUASAR_FUNCS"/>
+    <moqui.basic.Enumeration description="Internal Applications - ZAPPS" enumId="STT_ZAPPS" enumTypeId="ScreenThemeType" enumCode="DEFAULT_ZAPPS"/>
 
     <!-- Default Theme -->
-    <moqui.screen.ScreenTheme screenThemeId="DEFAULT_QUASAR_FUNCS" screenThemeTypeEnumId="STT_INTERNAL_QUASAR_FUNCS" description="Moqui Default Quasar Funcs Theme"/>
+    <moqui.screen.ScreenTheme screenThemeId="DEFAULT_ZAPPS" screenThemeTypeEnumId="STT_ZAPPS" description="Moqui Default Quasar Funcs Theme"/>
 
     <!-- Default Theme (note that DEFAULT ScreenTheme record defined in ScreenEntities.xml) -->
 
     <!-- Required CSS files for layout/widgets/etc used in XML Screen/Form template macros -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="1" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="1" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
     <!-- NOTE: using FA 4.7.0 with 'fa' class, for FA 5+ must change all to 'fas' class -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="2" resourceTypeEnumId="STRT_STYLESHEET"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="2" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="/libs/font-awesome/css/font-awesome.min.css"/>
     <!-- FUTURE consider using material icons instead of font-awesome - ISSUE: there are many XML Screen files with 'fa-' references
         AND material icons requires very different syntax with <i class="material-icons-outlined">invert_colors</i> (2 parts) unlike fa with <i class="fa fa-shopping-cart"></i> (1 part) -->
-    <!--<moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
+    <!--<moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"/>-->
 
     <!--google font国内镜像-->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="3" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="https://fonts.proxy.ustclug.org/css?family=Roboto:100,300,400,500,700,900|Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"/>
 
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="4" resourceTypeEnumId="STRT_STYLESHEET"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="4" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="/libs/quasar/quasar.min.css"/>
 
     <!-- Add external theme(s) here  -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="10" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="10" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
 
     <!-- Quasar layout and theme, loaded last to override -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="20" resourceTypeEnumId="STRT_STYLESHEET"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="20" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="/zstatic/WebrootVue.qvt.css"/>
 
     <!-- Logo, icon, body class -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="100" resourceTypeEnumId="STRT_HEADER_LOGO"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="100" resourceTypeEnumId="STRT_HEADER_LOGO"
                                       resourceValue="/images/MoquiLogoSmall.png"/>
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="101" resourceTypeEnumId="STRT_SHORTCUT_ICON"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="101" resourceTypeEnumId="STRT_SHORTCUT_ICON"
                                       resourceValue="/favicon.ico"/>
-    <!-- <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="102" resourceTypeEnumId="STRT_BODY_CLASS"
+    <!-- <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="102" resourceTypeEnumId="STRT_BODY_CLASS"
             resourceValue="bg-light"/> -->
 
     <!-- Footer items -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="200" resourceTypeEnumId="STRT_FOOTER_ITEM">
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="200" resourceTypeEnumId="STRT_FOOTER_ITEM">
         <resourceValue><![CDATA[<div class="col-md-6 text-center q-px-md"><a class="text-grey-1" href="https://www.moqui.org/" target="_blank">${ec.resource.expand('Built on Moqui ${ec.factory.moquiVersion}', '')}</a></div>]]></resourceValue>
     </moqui.screen.ScreenThemeResource>
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="201" resourceTypeEnumId="STRT_FOOTER_ITEM">
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="201" resourceTypeEnumId="STRT_FOOTER_ITEM">
         <resourceValue><![CDATA[<div class="col-md-6 text-center q-px-md"><a class="text-grey-1" href="/qapps/ScreenTree">${ec.l10n.localize('Site Map')}</a></div>]]></resourceValue>
     </moqui.screen.ScreenThemeResource>
 
     <!-- /qapps (qvt/qvue) header plugins -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="125" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="125" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
                                       resourceValue="/zstatic/lib/QuickSearch.qvue"/>
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="130" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="130" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
                                       resourceValue="/zstatic/lib/ActiveOrgNav.qvue"/>
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_QUASAR_FUNCS" sequenceNum="135" resourceTypeEnumId="STRT_HEADER_ACCOUNT_COMP"
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="135" resourceTypeEnumId="STRT_HEADER_ACCOUNT_COMP"
                                       resourceValue="/zstatic/lib/MyAccountNav.qvue"/>
 
     <!--sample data-->
