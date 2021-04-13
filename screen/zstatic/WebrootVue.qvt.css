@@ -228,4 +228,6 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 .body--dark .q-tabs{background-color:black !important;}
 .component-fade-enter-active, .component-fade-leave-active {transition: opacity .3s ease;}
 .component-fade-enter, .component-fade-leave-to {opacity: 0;} /* .component-fade-leave-active below version 2.1.8 */
+.q-card .q-table .th { font-weight: 400; font-size: 12px;}
+.q-card .q-table .tbody .td {font-size: 12px;}
 /*---Custom section end----*/
