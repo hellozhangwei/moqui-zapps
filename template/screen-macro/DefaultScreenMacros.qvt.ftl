@@ -1775,6 +1775,7 @@ a => A, d => D, y => Y
 <#macro "date-time">
     <#assign dtSubFieldNode = .node?parent>
     <#assign dtFieldNode = dtSubFieldNode?parent>
+    <#assign dtFormNode = dtFieldNode?parent>
     <#assign javaFormat = .node["@format"]!>
     <#if !javaFormat?has_content>
         <#if .node["@type"]! == "time"><#assign javaFormat="HH:mm">
@@ -1783,7 +1784,7 @@ a => A, d => D, y => Y
     </#if>
     <#assign curName><@fieldName .node/></#assign>
     <#assign validationClasses = formInstance.getFieldValidationClasses(dtSubFieldNode)>
-    <m-date-time id="<@fieldId .node/>" name="${curName}" type="${.node["@type"]!""}" size="${.node["@size"]!""}" label="<@fieldTitle dtSubFieldNode/>"<#if formDisabled!> disable</#if><#rt>
+    <m-date-time id="<@fieldId .node/>" name="${curName}" type="${.node["@type"]!""}" size="${.node["@size"]!""}"<#if labelWrapper> label="<@fieldTitle dtSubFieldNode/>"</#if><#if formDisabled!> disable</#if><#rt>
         <#t><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${curName}"<#else> value="${sri.getFieldValueString(dtFieldNode, .node["@default-value"]!"", javaFormat)?html}"</#if>
         <#t><#if .node?parent["@tooltip"]?has_content> tooltip="${ec.getResource().expand(.node?parent["@tooltip"], "")}"</#if>
         <#t><#if ownerForm?has_content> form="${ownerForm}"</#if><#if javaFormat?has_content> format="<@getMomentDateFormat javaFormat/>"</#if>
@@ -2077,11 +2078,13 @@ a => A, d => D, y => Y
 <#macro "text-line">
     <#assign tlSubFieldNode = .node?parent>
     <#assign tlFieldNode = tlSubFieldNode?parent>
+    <#assign tlFormNode = tlFieldNode?parent>
     <#assign tlId><@fieldId .node/></#assign>
     <#assign name><@fieldName .node/></#assign>
     <#assign fieldValue = sri.getFieldValueString(.node)>
     <#assign validationClasses = formInstance.getFieldValidationClasses(tlSubFieldNode)>
     <#assign validationRules = formInstance.getFieldValidationJsRules(tlSubFieldNode)!>
+    <#assign labelWrapper = tlFormNode?node_name == "form-single">
     <#-- NOTE: removed number type (<#elseif validationClasses?contains("number")>number) because on Safari, maybe others, ignores size and behaves funny for decimal values -->
     <#if .node["@ac-transition"]?has_content>
         <#assign acUrlInfo = sri.makeUrlByType(.node["@ac-transition"], "transition", .node, "false")>
@@ -2120,7 +2123,7 @@ a => A, d => D, y => Y
             <#lt><#if validationClasses?contains("email")>email<#elseif validationClasses?contains("url")>url<#else>text</#if></#if></#assign>
         <#-- TODO: possibly transform old mask values (for RobinHerbots/Inputmask used in vapps/vuet) -->
         <#assign expandedMask = ec.getResource().expandNoL10n(.node["@mask"]!"", "")!>
-        <m-text-line dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if> id="${tlId}" type="${inputType}"<#rt>
+        <m-text-line dense outlined<#if labelWrapper> stack-label label="${fieldLabel}"</#if> id="${tlId}" type="${inputType}"<#rt>
                 <#t> name="${name}"<#if .node.@prefix?has_content> prefix="${ec.resource.expand(.node.@prefix, "")}"</#if>
                 <#t> <#if fieldsJsName?has_content>v-model="${fieldsJsName}.${name}" :fields="${fieldsJsName}"<#else><#if fieldValue?html == fieldValue>value="${fieldValue}"<#else>:value="'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(fieldValue)}'"</#if></#if>
                 <#t><#if .node.@size?has_content> size="${.node.@size}"<#else> style="width:100%;"</#if><#if .node.@maxlength?has_content> maxlength="${.node.@maxlength}"</#if>
