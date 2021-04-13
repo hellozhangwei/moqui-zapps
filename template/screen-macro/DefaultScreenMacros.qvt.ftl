@@ -1893,6 +1893,8 @@ a => A, d => D, y => Y
 <#macro "drop-down">
     <#assign ddSubFieldNode = .node?parent>
     <#assign ddFieldNode = ddSubFieldNode?parent>
+    <#assign ddFormNode = ddFieldNode?parent>
+    <#assign labelWrapper = ddFormNode?node_name == "form-single">
     <#assign tlId><@fieldId .node/></#assign>
     <#assign allowMultiple = ec.getResource().expandNoL10n(.node["@allow-multiple"]!, "") == "true">
     <#assign allowEmpty = ec.getResource().expandNoL10n(.node["@allow-empty"]!, "") == "true">
@@ -1923,7 +1925,7 @@ a => A, d => D, y => Y
         <#if currentValue?has_content && !currentDescription?has_content><#assign currentDescription><@widgetTextValue .node true/></#assign></#if>
     </#if>
     <#assign fieldLabel><@fieldTitle ddSubFieldNode/></#assign>
-    <m-drop-down name="${name}" id="${tlId}"<#if fieldLabel?has_content> label="${fieldLabel}"</#if><#if formDisabled!> disable</#if><#rt>
+    <m-drop-down name="${name}" id="${tlId}"<#if labelWrapper && fieldLabel?has_content> label="${fieldLabel}"</#if><#if formDisabled!> disable</#if><#rt>
             <#t> class="<#if isDynamicOptions>dynamic-options</#if><#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if><#if validationClasses?has_content> ${validationClasses}</#if>"<#rt>
             <#t><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${name}" :fields="${fieldsJsName}"<#else><#if allowMultiple> :value="[<#list currentValueList as curVal><#if curVal?has_content>'${curVal}',</#if></#list>]"<#else> value="${currentValue!}"</#if></#if>
             <#t><#if allowMultiple> :multiple="true"</#if><#if allowEmpty> :allow-empty="true"</#if><#if .node["@combo-box"]! == "true"> :combo="true"</#if>
@@ -2123,7 +2125,7 @@ a => A, d => D, y => Y
             <#lt><#if validationClasses?contains("email")>email<#elseif validationClasses?contains("url")>url<#else>text</#if></#if></#assign>
         <#-- TODO: possibly transform old mask values (for RobinHerbots/Inputmask used in vapps/vuet) -->
         <#assign expandedMask = ec.getResource().expandNoL10n(.node["@mask"]!"", "")!>
-        <m-text-line dense outlined<#if labelWrapper> stack-label label="${fieldLabel}"</#if> id="${tlId}" type="${inputType}"<#rt>
+        <m-text-line dense outlined<#if labelWrapper && fieldLabel?has_content> stack-label label="${fieldLabel}"</#if> id="${tlId}" type="${inputType}"<#rt>
                 <#t> name="${name}"<#if .node.@prefix?has_content> prefix="${ec.resource.expand(.node.@prefix, "")}"</#if>
                 <#t> <#if fieldsJsName?has_content>v-model="${fieldsJsName}.${name}" :fields="${fieldsJsName}"<#else><#if fieldValue?html == fieldValue>value="${fieldValue}"<#else>:value="'${Static["org.moqui.util.WebUtilities"].encodeHtmlJsSafe(fieldValue)}'"</#if></#if>
                 <#t><#if .node.@size?has_content> size="${.node.@size}"<#else> style="width:100%;"</#if><#if .node.@maxlength?has_content> maxlength="${.node.@maxlength}"</#if>
