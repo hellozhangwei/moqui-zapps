@@ -60,6 +60,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Disabled" localized="禁用" />
     <moqui.basic.LocalizedMessage locale="en" original="FindSalesOrdersLink" localized="Sales Orders" />
     <moqui.basic.LocalizedMessage locale="zh" original="FindSalesOrdersLink" localized="销售订单" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Find Supplier" localized="供应商列表" />
 
     <moqui.basic.LocalizedMessage locale="zh" original="Current Search Conditions" localized="当前查找条件" />
     <moqui.basic.LocalizedMessage locale="zh" original="Clear Find" localized="重置条件" />
@@ -67,7 +68,7 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="Find Duplicates" localized="查重" />
     <moqui.basic.LocalizedMessage locale="zh" original="Identification" localized="唯一标识" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Add Identification" localized="添加" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Add Identification" localized="添加唯一标识" />
     <moqui.basic.LocalizedMessage locale="zh" original="Notes" localized="备注" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Note" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Account Contacts" localized="客户联系人" />
