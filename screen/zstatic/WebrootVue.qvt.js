@@ -1403,14 +1403,14 @@ Vue.component('m-display', {
         fields:{type:Object}, tooltip:String, label:String, labelWrapper:Boolean, name:String, id:String },
     data: function() { return { curDisplay:this.display, loading:false } },
     template:
-       /* '<q-input v-if="labelWrapper" dense outlined readonly stack-label :value="displayValue" :label="label" :id="id" :name="name" :loading="loading">' +
+        '<q-input v-if="labelWrapper" dense outlined readonly stack-label :value="displayValue" :label="label" :id="id" :name="name" :loading="loading">' +
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
         '</q-input>' +
         '<span v-else :id="id">' +
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip><slot></slot>' +
             '{{displayValue}}' +
-        '</span>',*/
-        '<q-field v-if="labelWrapper" borderless :label="label" stack-label>' +
+        '</span>',
+        /*'<q-field v-if="labelWrapper" borderless :label="label" stack-label>' +
             '<template v-slot:control>' +
                 '<div class="q-mt-sm self-center full-width no-outline" tabindex="0">{{displayValue}}' +
                     '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip>' +
@@ -1420,7 +1420,7 @@ Vue.component('m-display', {
         '<span v-else :id="id">' +
             '<q-tooltip v-if="tooltip">{{tooltip}}</q-tooltip><slot></slot>' +
             '{{displayValue}}' +
-        '</span>',
+        '</span>',*/
     methods: {
         serverData: function() {
             var hasAllParms = true;
