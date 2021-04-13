@@ -1776,6 +1776,7 @@ a => A, d => D, y => Y
     <#assign dtSubFieldNode = .node?parent>
     <#assign dtFieldNode = dtSubFieldNode?parent>
     <#assign dtFormNode = dtFieldNode?parent>
+    <#assign labelWrapper = (dtFormNode?node_name == "form-single") || (dtFormNode["@header-dialog"]! == "true")>
     <#assign javaFormat = .node["@format"]!>
     <#if !javaFormat?has_content>
         <#if .node["@type"]! == "time"><#assign javaFormat="HH:mm">
