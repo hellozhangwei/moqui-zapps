@@ -1894,7 +1894,7 @@ a => A, d => D, y => Y
     <#assign ddSubFieldNode = .node?parent>
     <#assign ddFieldNode = ddSubFieldNode?parent>
     <#assign ddFormNode = ddFieldNode?parent>
-    <#assign labelWrapper = ddFormNode?node_name == "form-single">
+    <#assign labelWrapper = (ddFormNode?node_name == "form-single") || (ddFormNode["@header-dialog"]! == "true")>
     <#assign tlId><@fieldId .node/></#assign>
     <#assign allowMultiple = ec.getResource().expandNoL10n(.node["@allow-multiple"]!, "") == "true">
     <#assign allowEmpty = ec.getResource().expandNoL10n(.node["@allow-empty"]!, "") == "true">
@@ -2086,7 +2086,7 @@ a => A, d => D, y => Y
     <#assign fieldValue = sri.getFieldValueString(.node)>
     <#assign validationClasses = formInstance.getFieldValidationClasses(tlSubFieldNode)>
     <#assign validationRules = formInstance.getFieldValidationJsRules(tlSubFieldNode)!>
-    <#assign labelWrapper = tlFormNode?node_name == "form-single">
+    <#assign labelWrapper = (tlFormNode?node_name == "form-single") || (tlFormNode["@header-dialog"]! == "true")>
     <#-- NOTE: removed number type (<#elseif validationClasses?contains("number")>number) because on Safari, maybe others, ignores size and behaves funny for decimal values -->
     <#if .node["@ac-transition"]?has_content>
         <#assign acUrlInfo = sri.makeUrlByType(.node["@ac-transition"], "transition", .node, "false")>
