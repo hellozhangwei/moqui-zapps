@@ -39,7 +39,8 @@ along with this software (see the LICENSE.md file). If not, see
                                       resourceValue="/libs/quasar/quasar.min.css"/>
 
     <!-- Add external theme(s) here  -->
-    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="10" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
+    <!--<moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="10" resourceTypeEnumId="STRT_STYLESHEET"
+                                      resourceValue="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.min.css"/>-->
 
     <!-- Quasar layout and theme, loaded last to override -->
     <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT_ZAPPS" sequenceNum="20" resourceTypeEnumId="STRT_STYLESHEET"
