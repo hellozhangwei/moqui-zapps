@@ -2067,7 +2067,7 @@ a => A, d => D, y => Y
         <m-simple-mde<#if fieldsJsName?has_content> v-model="${fieldsJsName}.${name}"</#if>
                 :config="{ indentWithTabs:false, autoDownloadFontAwesome:false, autofocus:true, spellChecker:false }"></m-simple-mde>
     <#else>
-        <q-input type="textarea" dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if> name="${name}" for="<@fieldId .node/>"
+        <q-input type="textarea" autogrow dense outlined<#if fieldLabel?has_content> stack-label label="${fieldLabel}"</#if> name="${name}" for="<@fieldId .node/>"
                 <#t><#if fieldsJsName?has_content> v-model="${fieldsJsName}.${name}"</#if><#if formDisabled!> disable</#if>
                 <#t><#if .node["@cols"]?has_content> cols="${.node["@cols"]}"<#else> style="width:100%;"</#if>
                 <#t> rows="${.node["@rows"]!"3"}"<#if .node["@read-only"]! == "true"> readonly="readonly"</#if>
