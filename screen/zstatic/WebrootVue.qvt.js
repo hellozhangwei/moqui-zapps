@@ -362,9 +362,14 @@ Vue.component('m-container-box', {
             '<slot name="toolbar"></slot>' +
             //'<q-separator />' +
         '</q-card-actions>' +
-        '<q-slide-transition><div v-show="expanded">' +
+        '<q-slide-transition :duration="500"><div v-show="expanded">' +
             '<q-card-section :class="{in:expanded}" class="no-padding"><slot></slot></q-card-section>' +
         '</div></q-slide-transition>' +
+        //'<transition appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">' +
+        //    '<div v-show="expanded">' +
+        //        '<q-card-section :class="{in:expanded}" class="no-padding"><slot></slot></q-card-section>' +
+        //    '</div>'+
+        //'</transition>' + //uncommented animate.css in ZappsThemeData.xml
     '</q-card>'
 });
 Vue.component('m-box-body', {
