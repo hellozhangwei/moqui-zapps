@@ -352,8 +352,10 @@ Vue.component('m-container-box', {
     // TODO: handle type, somehow, with text color and Bootstrap to Quasar mapping
     template:
     '<q-card flat :bordered="bordered">' +
-        '<q-card-actions @click="collapsable?(expanded = !expanded):null" :class="type" style="border-bottom: solid 1px rgba(0, 0, 0, 0.12);">' +
-            '<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm" :class="expanded?\'text-secondary\':\'text-grey\'" size="xs"/>' +
+        //'<q-card-actions @click="collapsable?(expanded = !expanded):null" :class="type" style="border-bottom: solid 1px rgba(0, 0, 0, 0.12);">' +
+            //'<q-icon v-if="collapsable" :name="expanded?\'expand_less\':\'expand_more\'" class="q-mr-sm" :class="expanded?\'text-secondary\':\'text-grey\'" size="xs"/>' +
+        '<q-card-actions :class="type" style="border-bottom: solid 1px rgba(0, 0, 0, 0.12);">' +
+            '<q-btn flat round dense size="sm" class="q-mr-sm" :color="expanded?\'secondary\':\'grey\'" :icon="expanded?\'expand_less\':\'expand_more\'"  @click="collapsable?(expanded = !expanded):null"/>' +
             '<span class="text-subtitle2" :class="expanded?\'text-secondary\':\'text-grey\'" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
