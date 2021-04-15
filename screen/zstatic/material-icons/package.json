@@ -1,0 +1,62 @@
+{
+  "_from": "material-icons",
+  "_id": "material-icons@0.6.1",
+  "_inBundle": false,
+  "_integrity": "sha512-uF15dnHT0CeseY6zIgOumK3CRpqrhQ1jissbf1Mu992Im1gjXhPKAbF0D4wr0nnryodsXDrX6mxOL1vlU9wz2w==",
+  "_location": "/material-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "material-icons",
+    "name": "material-icons",
+    "escapedName": "material-icons",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/material-icons/-/material-icons-0.6.1.tgz",
+  "_shasum": "e1be0dd93c3e80ce22ae9b2affccd0308d856d1e",
+  "_spec": "material-icons",
+  "_where": "/Users/weizhang/Downloads/test",
+  "browser": "iconfont/material-icons.css",
+  "bugs": {
+    "url": "https://github.com/marella/material-icons/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Material design icon font and CSS framework for self hosting the icons.",
+  "devDependencies": {
+    "got": "^11.8.2",
+    "node-sass": "^5.0.0"
+  },
+  "homepage": "https://marella.github.io/material-icons/demo/",
+  "keywords": [
+    "material-icons",
+    "material-design-icons",
+    "material-design",
+    "iconfont",
+    "icons",
+    "font",
+    "css",
+    "sass"
+  ],
+  "license": "Apache-2.0",
+  "name": "material-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marella/material-icons.git"
+  },
+  "scripts": {
+    "build": "npm run build:codepoints && npm run build:iconfont && npm run build:css && npm run build:css:min",
+    "build:codepoints": "node scripts/codepoints.js",
+    "build:css": "node-sass --output-style=expanded css/material-icons.scss css/material-icons.css",
+    "build:css:min": "node-sass --output-style=compressed css/material-icons.scss css/material-icons.min.css",
+    "build:iconfont": "node-sass --output-style=expanded iconfont/material-icons.scss iconfont/material-icons.css"
+  },
+  "version": "0.6.1"
+}
