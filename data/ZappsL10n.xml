@@ -13,6 +13,9 @@
     <moqui.basic.LocalizedMessage locale="en" original="SalesOpportunityTitle" localized="Sales Opportunity"/>
     <moqui.basic.LocalizedMessage locale="zh" original="SalesOpportunityTitle" localized="销售机会"/>
 
+    <moqui.basic.LocalizedMessage locale="en" original="MarketingCampaignTitle" localized="Marketing Campaign"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="MarketingCampaignTitle" localized="市场营销"/>
+
     <moqui.basic.LocalizedMessage locale="en" original="TaskTitle" localized="Task"/>
     <moqui.basic.LocalizedMessage locale="zh" original="TaskTitle" localized="任务"/>
 
