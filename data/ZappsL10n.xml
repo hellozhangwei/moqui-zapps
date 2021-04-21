@@ -10,6 +10,12 @@
     <moqui.basic.LocalizedMessage locale="en" original="SalesOrderTitle" localized="Sales Order"/>
     <moqui.basic.LocalizedMessage locale="zh" original="SalesOrderTitle" localized="销售管理"/>
 
+    <moqui.basic.LocalizedMessage locale="en" original="SalesOpportunityTitle" localized="Sales Opportunity"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="SalesOpportunityTitle" localized="销售机会"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="TaskTitle" localized="Task"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="TaskTitle" localized="任务"/>
+
     <moqui.basic.LocalizedMessage locale="en" original="CatalogTitle" localized="Catalog"/>
     <moqui.basic.LocalizedMessage locale="zh" original="CatalogTitle" localized="品类管理"/>
 
