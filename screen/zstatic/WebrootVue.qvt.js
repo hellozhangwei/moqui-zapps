@@ -908,10 +908,10 @@ Vue.component('m-form-link', {
         , focusField:String
         , noValidate:Boolean
         , bodyParameterNames:Array
-        , resultId:{type:String} },
+        , resultId:{type:String}, name:{type:String,required:true}, id:String },
     data: function() { return { fields:Object.assign({}, this.fieldsInitial), resultComponent:moqui.EmptyComponent }},
     template:
-        '<div><q-form ref="qForm" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
+        '<div><q-form ref="qForm" :name="name" :id="id" @submit.prevent="submitForm" @reset.prevent="resetForm" autocapitalize="off" autocomplete="off">' +
             '<slot :clearForm="clearForm" :fields="fields"></slot></q-form>'
         + '<component v-if="resultId" :is="resultComponent"></component></div>',
     methods: {
