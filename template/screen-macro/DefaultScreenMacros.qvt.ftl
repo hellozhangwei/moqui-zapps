@@ -1478,6 +1478,10 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
         <#t>${sri.popContext()}<#-- context was pushed for the form so pop here at the end -->
     </#if>
 
+    <#if !listHasContent>
+      <tr><td colspan="${numColumns}" class="text-grey">No Result</td></tr>
+    </#if>
+
     <#-- end/footer -->
     <#if !skipEnd>
         <#if isMulti && listHasContent>
