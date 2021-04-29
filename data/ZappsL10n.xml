@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-facade-xml type="seed">
 
+    <moqui.basic.LocalizedMessage locale="en" original="DashboardTitle" localized="Dashboard"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardTitle" localized="首页"/>
+
     <moqui.basic.LocalizedMessage locale="en" original="CustomerTitle" localized="Customer"/>
     <moqui.basic.LocalizedMessage locale="zh" original="CustomerTitle" localized="客户管理"/>
 
@@ -21,6 +24,15 @@
 
     <moqui.basic.LocalizedMessage locale="en" original="CatalogTitle" localized="Catalog"/>
     <moqui.basic.LocalizedMessage locale="zh" original="CatalogTitle" localized="品类管理"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="CategoryTitle" localized="Category"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="CategoryTitle" localized="分类"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="ProductTitle" localized="Product"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="ProductTitle" localized="产品"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="SearchProductsTitle" localized="Search Products"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="SearchProductsTitle" localized="批处理"/>
 
     <moqui.basic.LocalizedMessage locale="en" original="AssetTitle" localized="Assets"/>
     <moqui.basic.LocalizedMessage locale="zh" original="AssetTitle" localized="资产管理"/>
@@ -54,6 +66,36 @@
 
     <moqui.basic.LocalizedMessage locale="en" original="MyAccountTitle" localized="My Account"/>
     <moqui.basic.LocalizedMessage locale="zh" original="MyAccountTitle" localized="个人中心"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="ShippingTitle" localized="Shipping"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="ShippingTitle" localized="拣货管理"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="AccountingTitle" localized="Accounting"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="AccountingTitle" localized="财务管理"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="AccountingDashboardTitle" localized="Dashboard"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="AccountingDashboardTitle" localized="仪表盘"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="FinancialAccountTitle" localized="Financial Account"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="FinancialAccountTitle" localized="金融账户"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="GLJournalsTitle" localized="GL Journals"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="GLJournalsTitle" localized="总账凭证"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="GlAccountTitle" localized="Gl Account"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="GlAccountTitle" localized="总账科目"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="TimePeriodTitle" localized="Time Period"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="TimePeriodTitle" localized="会计期间"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="BudgetsTitle" localized="Budgets"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="BudgetsTitle" localized="预算"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="ReportsTitle" localized="Reports"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="ReportsTitle" localized="报表"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="SystemTitle" localized="System"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="SystemTitle" localized="系统管理"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
@@ -172,6 +214,12 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Transfer Shipment" localized="调拨发货单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Consumable Shipment" localized="领用发货单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Lend Shipment" localized="借用发货单"/>-->
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Issued and Invoiced" localized="成交记录"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Issued and Invoiced" localized="成交记录"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Analysis" localized="销售分析"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Summary" localized="销售统计"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Order List" localized="订单列表"/>
 
 
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
