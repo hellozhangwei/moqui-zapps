@@ -150,7 +150,7 @@ along with this software (see the LICENSE.md file). If not, see
                         </q-card-section>
                         <q-separator vertical></q-separator>
                         <q-card-actions vertical class="justify-around q-px-md">
-                            <div class="row">
+                            <div class="row no-wrap">
                                 <#-- dark/light switch -->
                                 <q-btn flat dense @click.prevent="switchDarkLight()" icon="invert_colors">
                                     <q-tooltip>${ec.l10n.localize("Switch Dark/Light")}</q-tooltip></q-btn>
