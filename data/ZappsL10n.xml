@@ -37,6 +37,18 @@
     <moqui.basic.LocalizedMessage locale="en" original="AssetTitle" localized="Assets"/>
     <moqui.basic.LocalizedMessage locale="zh" original="AssetTitle" localized="资产管理"/>
 
+    <moqui.basic.LocalizedMessage locale="en" original="FixedAssetTitle" localized="Fixed Asset"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="FixedAssetTitle" localized="固定资产"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="LotTitle" localized="Lot"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="LotTitle" localized="批次"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="InventoryCheckTitle" localized="Inventory Check"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="InventoryCheckTitle" localized="盘点任务"/>
+
+    <moqui.basic.LocalizedMessage locale="en" original="PhysicalInventoryTitle" localized="Physical Inventory"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="PhysicalInventoryTitle" localized="盘点记录"/>
+
     <moqui.basic.LocalizedMessage locale="en" original="PurchaseOrderTitle" localized="Purchase Order"/>
     <moqui.basic.LocalizedMessage locale="zh" original="PurchaseOrderTitle" localized="采购管理"/>
 
