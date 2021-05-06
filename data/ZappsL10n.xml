@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-facade-xml type="seed">
 
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Placed"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardPlaced" localized="已订"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Approved"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardHold" localized="已批准"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardHold" localized="Hold"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardApproved" localized="已挂起"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardSubmitted" localized="Submitted"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardSubmitted" localized="已提交"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardInProgress" localized="In Progress"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardInProgress" localized="进行中"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardSuppliers" localized="Suppliers"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardSuppliers" localized="供应商"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardCustomers" localized="Customers"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardCustomers" localized="客户"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardPurchaseOrders" localized="Purchase Orders"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardPurchaseOrders" localized="采购订单"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardSalesOrders" localized="Sales Orders"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardSalesOrders" localized="采购订单"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardRequests" localized="Requests"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardRequests" localized="审批"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardInventoryAssets" localized="Inventory Assets"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardInventoryAssets" localized="库存"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardReturns" localized="Returns"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardReturns" localized="退换货"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardShipping" localized="Shipping"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardShipping" localized="拣货"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardIncomingShipment" localized="Incoming Shipment"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardIncomingShipment" localized="入库"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardOutgoingShipment" localized="Outgoing Shipment"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardOutgoingShipment" localized="出库"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardCatalog" localized="Catalog"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardCatalog" localized="分类"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardProducts" localized="Products"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardProducts" localized="产品"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardStores" localized="Stores"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardStores" localized="店铺"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardWikiContent" localized="Wiki/Content"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardWikiContent" localized="Wiki内容"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardWikiBlogs" localized="Wiki Blogs"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardWikiBlogs" localized="Wiki博客"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardSurvey" localized="Survey"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardSurvey" localized="调查问卷"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardManufacturing" localized="Manufacturing"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardManufacturing" localized="制造"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardParties" localized="Parties"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardParties" localized="参与者"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardAsset" localized="Asset"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardAsset" localized="资产"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardAccounting" localized="Accounting"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardAccounting" localized="财务"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardFacility" localized="Facility"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardFacility" localized="仓库"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardReports" localized="Reports"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardReports" localized="报表"/>
+
     <moqui.basic.LocalizedMessage locale="en" original="DashboardTitle" localized="Dashboard"/>
     <moqui.basic.LocalizedMessage locale="zh" original="DashboardTitle" localized="首页"/>
 
