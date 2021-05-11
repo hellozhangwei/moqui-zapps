@@ -230,4 +230,11 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 .component-fade-enter, .component-fade-leave-to {opacity: 0;} /* .component-fade-leave-active below version 2.1.8 */
 .q-card .q-table .th { font-weight: 400; font-size: 12px;}
 .q-card .q-table .tbody .td {font-size: 12px;}
+
+/*Style for VIEW permission form*/
+.q-field--disabled .q-field__control:before{border:none}
+.q-field--disabled .q-field__inner {cursor: default;}
+/*.q-field--outlined.q-field--readonly .q-field__control:before {border-style: none;}*/
+.q-field--disabled .q-field__prepend, .q-field--disabled .q-field__append {display: none}
+
 /*---Custom section end----*/
