@@ -3,10 +3,10 @@
 
     <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Placed"/>
     <moqui.basic.LocalizedMessage locale="zh" original="DashboardPlaced" localized="已订"/>
-    <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Approved"/>
-    <moqui.basic.LocalizedMessage locale="zh" original="DashboardHold" localized="已批准"/>
     <moqui.basic.LocalizedMessage locale="default" original="DashboardHold" localized="Hold"/>
-    <moqui.basic.LocalizedMessage locale="zh" original="DashboardApproved" localized="已挂起"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardHold" localized="已挂起"/>
+    <moqui.basic.LocalizedMessage locale="default" original="DashboardApproved" localized="Approved"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="DashboardApproved" localized="已批准"/>
     <moqui.basic.LocalizedMessage locale="default" original="DashboardSubmitted" localized="Submitted"/>
     <moqui.basic.LocalizedMessage locale="zh" original="DashboardSubmitted" localized="已提交"/>
     <moqui.basic.LocalizedMessage locale="default" original="DashboardInProgress" localized="In Progress"/>
