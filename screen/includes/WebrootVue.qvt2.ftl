@@ -100,7 +100,7 @@ along with this software (see the LICENSE.md file). If not, see
             <template v-for="navPlugin in navPlugins"><component :is="navPlugin"></component></template>
 
             <#-- notify history -->
-            <q-btn dense round flat icon="notifications">
+            <q-btn dense round flat icon="notifications" size="12px">
                 <q-tooltip>${ec.l10n.localize("Notify History")}</q-tooltip>
                 <q-menu>
                     <q-list separator style="min-width: 300px">
@@ -118,7 +118,7 @@ along with this software (see the LICENSE.md file). If not, see
 
             <#-- screen history menu -->
             <#-- get initial history from server? <#assign screenHistoryList = ec.web.getScreenHistory()><#list screenHistoryList as screenHistory><#if (screenHistory_index >= 25)><#break></#if>{url:pathWithParams, name:title}</#list> -->
-            <q-btn dense round flat icon="history">
+            <q-btn dense round flat icon="history" size="12px">
                 <q-tooltip>${ec.l10n.localize("Screen History")}</q-tooltip>
                 <q-menu><q-list dense style="min-width: 300px">
                     <q-item v-for="histItem in navHistoryList" :key="histItem.pathWithParams" clickable v-close-popup><q-item-section>
@@ -139,7 +139,7 @@ along with this software (see the LICENSE.md file). If not, see
             <a href="#" @click.prevent="goPreviousScreen()" data-toggle="tooltip" data-original-title="${ec.l10n.localize("Previous Screen")}"
                data-placement="bottom" class="btn btn-default btn-sm navbar-btn navbar-right"><i class="fa fa-chevron-left"></i></a>
             -->
-            <q-btn dense rounded flat no-caps icon="account_circle" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
+            <q-btn dense rounded flat no-caps icon="account_circle" size="12px" label="${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}">
                 <q-tooltip>${(ec.user.userAccount.userFullName)!ec.l10n.localize("Account")}</q-tooltip>
                 <q-menu><q-card flat bordered><#-- always matching header (dark): class="${headerClass}" -->
                     <q-card-section horizontal class="q-pa-md">
@@ -152,10 +152,10 @@ along with this software (see the LICENSE.md file). If not, see
                         <q-card-actions vertical class="justify-around q-px-md">
                             <div class="row no-wrap">
                                 <#-- dark/light switch -->
-                                <q-btn flat dense @click.prevent="switchDarkLight()" icon="invert_colors">
+                                <q-btn flat dense @click.prevent="switchDarkLight()" icon="invert_colors" size="12px">
                                     <q-tooltip>${ec.l10n.localize("Switch Dark/Light")}</q-tooltip></q-btn>
                                 <#-- logout button -->
-                                <q-btn flat dense icon="logout" color="negative" type="a" href="${sri.buildUrl("/Login/logout").url}"
+                                <q-btn flat dense icon="logout" size="12px" color="negative" type="a" href="${sri.buildUrl("/Login/logout").url}"
                                        onclick="return confirm('${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}?')">
                                     <q-tooltip>${ec.l10n.localize("Logout")} ${(ec.user.userAccount.userFullName)!''}</q-tooltip></q-btn>
                             </div>

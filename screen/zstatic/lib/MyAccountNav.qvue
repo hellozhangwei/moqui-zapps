@@ -1,13 +1,13 @@
 <!-- This software is in the public domain under CC0 1.0 Universal plus a Grant of Patent License. -->
 <template>
     <q-btn-group flat>
-        <q-btn dense to="/apps/my/User/Notifications" icon="info" :label="notificationCount"><!--  :class="{'text-warning':notificationCount}" -->
+        <q-btn dense to="/apps/my/User/Notifications" icon="info" :label="notificationCount" size="12px"><!--  :class="{'text-warning':notificationCount}" -->
             <q-tooltip>Notifications</q-tooltip></q-btn>
-        <q-btn dense to="/apps/my/User/Messages/FindMessage?statusId=CeReceived&toCurrentUser=true" icon="message" :label="messageCount">
+        <q-btn dense to="/apps/my/User/Messages/FindMessage?statusId=CeReceived&toCurrentUser=true" icon="message" :label="messageCount" size="12px">
             <q-tooltip>Messages</q-tooltip></q-btn>
-        <q-btn dense to="/apps/my/User/Calendar/MyCalendar" icon="calendar_today" :label="eventCount">
+        <q-btn dense to="/apps/my/User/Calendar/MyCalendar" icon="calendar_today" :label="eventCount" size="12px">
             <q-tooltip>Events This Week</q-tooltip></q-btn>
-        <q-btn dense to="/apps/my/User/Task/MyTasks" icon="done" :label="taskCount">
+        <q-btn dense to="/apps/my/User/Task/MyTasks" icon="done" :label="taskCount" size="12px">
             <q-tooltip>Open Tasks</q-tooltip></q-btn>
     </q-btn-group>
 </template>
