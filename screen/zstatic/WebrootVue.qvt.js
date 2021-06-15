@@ -445,8 +445,8 @@ Vue.component('m-container-dialog', {
             , openDialog:{type:Boolean,'default':false}
             , buttonSize:{type:String,'default':'sm'}
             , buttonIcon:{type:String,'default':'open_in_new'}
-            , buttonOutline:{type:Boolean,'default':false}
-            , buttonFlat:{type:Boolean,'default':true}
+            , buttonOutline:{type:Boolean}
+            , buttonFlat:{type:Boolean}
         },
     data: function() { return { isShown:false }},
     template:
