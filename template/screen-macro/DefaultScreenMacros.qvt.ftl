@@ -311,7 +311,11 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 
     <#if urlInstance.disableLink>
         <span>
-            <q-btn unelevated dense no-caps disabled size="${buttonSize}"
+            <q-btn unelevated dense no-caps disabled size="${buttonSize}"<#rt>
+                    <#t> <#if buttonStack?? && buttonStack=='true'> stack </#if>
+                    <#t> <#if buttonOutline?? && buttonOutline=='true'> outline </#if>
+                    <#t> <#if buttonFlat?? && buttonFlat=='true'> flat </#if>
+                    <#t> <#if iconClass?has_content> icon="${iconClass}" </#if><#rt>
                    <#--<#if linkNode["@link-type"]! != "anchor" && linkNode["@link-type"]! != "hidden-form-link">outline<#else>flat</#if><#rt>-->
                 <#t> class="m-link<#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                 <#t><#if linkFormId?has_content> id="${linkFormId}"</#if><#if linkText?has_content> label="${linkText}"</#if>>
