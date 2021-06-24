@@ -3,8 +3,8 @@
 <moqui-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-2.1.xsd">
     <screen-facade>
         <!-- qvt is a custom extension for Quasar & Vue JS component templates (extended HTML) -->
-        <screen-text-output type="qvt" mime-type="text/html" always-standalone="true"
-                macro-template-location="component://moqui-zapps/template/screen-macro/DefaultScreenMacros.qvt.ftl"/>
+        <!--<screen-text-output type="qvt" mime-type="text/html" always-standalone="true"
+                macro-template-location="component://moqui-zapps/template/screen-macro/DefaultScreenMacros.qvt.ftl"/>-->
         <!--<screen-text-output type="qjs" mime-type="application/javascript" always-standalone="true"
                 macro-template-location="template/screen-macro/DefaultScreenMacros.plain.ftl"/>
         <screen-text-output type="qvue" mime-type="text/html" always-standalone="true"
