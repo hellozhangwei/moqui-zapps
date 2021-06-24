@@ -1526,7 +1526,7 @@ Vue.component('m-drop-down', {
         // was: ':fill-input="!multiple" hide-selected' changed to ':hide-selected="multiple"' to show selected to the left of input,
         //     fixes issues with fill-input where set values would sometimes not be displayed
         '<q-select ref="qSelect" v-bind:value="value" v-on:input="handleInput($event)"' +
-                ' dense outlined options-dense use-input :hide-selected="multiple" :name="name" :id="id" :form="form"' +
+                ' dense outlined options-dense use-input :fill-input="!multiple" hide-selected :name="name" :id="id" :form="form"' +
                 ' input-debounce="500" @filter="filterFn" :clearable="allowEmpty||multiple" :disable="disable"' +
                 ' :multiple="multiple" :emit-value="!onSelectGoTo" map-options behavior="menu"' +
                 ' :rules="[val => allowEmpty||multiple||val===\'\'||(val&&val.length)||\'Please select an option\']"' +
