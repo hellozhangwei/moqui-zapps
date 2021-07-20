@@ -166,7 +166,7 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
-    <moqui.basic.LocalizedMessage locale="zh" original="New Person Customer" localized="新建客人客户"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Person Customer" localized="新建个人客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Account" localized="新建客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Contact" localized="新建联系人"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Customer List" localized="客户列表" />
@@ -205,7 +205,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Email" localized="邮箱" />
     <moqui.basic.LocalizedMessage locale="zh" original="URL" localized="URL" />
     <moqui.basic.LocalizedMessage locale="zh" original="Other" localized="其他" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Content" localized="附件" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Content" localized="内容" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Content" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh" original="Postal Addresses" localized="邮寄地址" />
     <moqui.basic.LocalizedMessage locale="zh" original="Old Addresses" localized="旧邮寄地址" />
@@ -239,7 +239,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="New Incoming Shipment" localized="新建入库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="New Transfer Shipment" localized="新建调拨单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Package Tracking" localized="包裹追踪" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Shipments" localized="出库入库" />
+    <!--<moqui.basic.LocalizedMessage locale="zh" original="Shipments" localized="出库入库" />-->
     <!--<moqui.basic.LocalizedMessage locale="zh" original="Shipments" localized="货物收发（货物进出）"/>-->
     <!--<moqui.basic.LocalizedMessage locale="zh" original="Shipments" localized="运单管理"/>-->
     <moqui.basic.LocalizedMessage locale="zh" original="Shipment Insert" localized="装箱单" />
@@ -252,8 +252,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Shipment Destination Address" localized="收货地址" />
     <moqui.basic.LocalizedMessage locale="zh" original="Shipment Origin Address" localized="发货地址" />
     <moqui.basic.LocalizedMessage locale="zh" original="Invoice" localized="账单" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Invoices" localized="账单管理" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Payments" localized="支付管理" />
+    <!--<moqui.basic.LocalizedMessage locale="zh" original="Invoices" localized="账单管理" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Payments" localized="支付管理" />-->
     <moqui.basic.LocalizedMessage locale="zh" original="Transactions" localized="会计账务" />
     <moqui.basic.LocalizedMessage locale="zh" original="Human Res" localized="人力资源" />
     <moqui.basic.LocalizedMessage locale="zh" original="Employees" localized="员工管理" />
@@ -288,6 +288,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Summary" localized="销售统计"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Order List" localized="订单列表"/>
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Authorize" localized="验证"/>
 
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
