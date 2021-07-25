@@ -385,10 +385,10 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
 </#macro>
 <#macro linkFormForm linkNode linkFormId linkText urlInstance>
 
-    <#--<#assign buttonOutline = true>
-    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]?boolean></#if>-->
-    <#assign buttonFlat = true>
-    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]?boolean></#if>
+    <#assign buttonOutline = "">
+    <#if linkNode["@button-outline"]?has_content><#assign buttonOutline = linkNode["@button-outline"]></#if>
+    <#assign buttonFlat = "">
+    <#if linkNode["@button-flat"]?has_content><#assign buttonFlat = linkNode["@button-flat"]></#if>
 
     <#if !urlInstance.disableLink && !sri.isAnchorLink(linkNode, urlInstance)>
         <#if urlInstance.getTargetTransition()?has_content><#assign linkFormType = "m-form"><#else><#assign linkFormType = "m-form-link"></#if>
@@ -407,9 +407,9 @@ ${sri.renderIncludeScreen(.node["@location"], .node["@share-scope"]!)}
                     <#if !iconClass?has_content && linkNode["@text"]?has_content><#assign iconClass = sri.getThemeIconClass(linkNode["@text"])!></#if>
                     <#assign badgeMessage = ec.getResource().expand(linkNode["@badge"]!, "")/>
                     <#rt><q-btn unelevated dense no-caps size="sm" type="submit"
-                            <#--<#if linkNode["@link-type"]! == "hidden-form-link">flat<#else>outline</#if>
-                            <#t> <#if buttonOutline> outline </#if>-->
-                            <#t> <#if buttonFlat> flat </#if>
+                            <#--<#if linkNode["@link-type"]! == "hidden-form-link">flat<#else>outline</#if>-->
+                            <#t> <#if buttonOutline?? && buttonOutline=='true'> outline </#if>
+                            <#t> <#if buttonFlat?? && buttonFlat=='true'> flat </#if>
                             <#t> color="<@getQuasarColor linkNode["@btn-type"]!"primary"/>" class=" <#if .node["@style"]?has_content> ${ec.getResource().expandNoL10n(.node["@style"], "")}</#if>"
                             <#t><#if confirmationMessage?has_content> onclick="return confirm('${confirmationMessage?js_string}')"</#if>>
                         <#t><#if linkNode["@tooltip"]?has_content><q-tooltip>${ec.getResource().expand(linkNode["@tooltip"], "")}</q-tooltip></#if>
