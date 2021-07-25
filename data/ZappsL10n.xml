@@ -216,6 +216,7 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="Uncomplete Order" localized="撤销订单完成" />
     <moqui.basic.LocalizedMessage locale="zh" original="Un-approve" localized="撤销批准" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Order Sent" localized="订单发送" />
     <moqui.basic.LocalizedMessage locale="zh" original="Approve Warnings" localized="批准警告" />
     <moqui.basic.LocalizedMessage locale="zh" original="Approve Order Anyway" localized="仍然批准" />
     <moqui.basic.LocalizedMessage locale="zh" original="Hold" localized="暂停" />
