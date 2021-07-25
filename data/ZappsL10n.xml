@@ -166,6 +166,12 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Select Find" localized="选择查询"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Details" localized="客户详情"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Info" localized="客户信息"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Return to Customer List" localized="返回客户列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Lead and Organization" localized="新线索与组织"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Person Customer" localized="新建个人客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Account" localized="新建客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Contact" localized="新建联系人"/>
@@ -190,8 +196,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="External ID" localized="外部ID" />
     <moqui.basic.LocalizedMessage locale="zh" original="Orders" localized="订单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Shipments To" localized="出库单" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Convert to Organization" localized="转换成组织" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Convert to Person" localized="转换个人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Organization" localized="转换成组织" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Person" localized="转换个人" />
     <moqui.basic.LocalizedMessage locale="zh" original="Value" localized="值" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Type" localized="ID类型" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Value" localized="ID值" />
@@ -201,6 +207,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Add Other Role" localized="添加其他角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Purpose" localized="用途" />
     <moqui.basic.LocalizedMessage locale="zh" original="Detail" localized="详细" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Operation" localized="操作" />
 
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Order" localized="销售订单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Return to Sales Order List" localized="返回销售订单列表" />
