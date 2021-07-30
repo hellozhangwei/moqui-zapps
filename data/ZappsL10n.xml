@@ -196,8 +196,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="External ID" localized="外部ID" />
     <moqui.basic.LocalizedMessage locale="zh" original="Orders" localized="订单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Shipments To" localized="出库单" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Organization" localized="转换成组织" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Person" localized="转换个人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Organization" localized="转化为组织" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Convert To Person" localized="转化为个人" />
     <moqui.basic.LocalizedMessage locale="zh" original="Value" localized="值" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Type" localized="ID类型" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Value" localized="ID值" />
@@ -351,6 +351,19 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Employees" localized="员工管理" />
     <moqui.basic.LocalizedMessage locale="zh" original="Departments" localized="部门管理" />
     <moqui.basic.LocalizedMessage locale="zh" original="Employee Rates" localized="报价管理" />
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Inventory Asset List" localized="库存列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Receive Non-serialized Inventory Direct" localized="非序列化产品入库" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Receive Serialized Inventory Direct" localized="序列化产品入库" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Asset ID" localized="库存流水号" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Location" localized="位置" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Received Date" localized="入库日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Mfg Date" localized="生产日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Available" localized="可用" />
+    <moqui.basic.LocalizedMessage locale="zh" original="On Hand" localized="在手" />
+    <moqui.basic.LocalizedMessage locale="zh" original="PhI Qty" localized="调整" />
+    <moqui.basic.LocalizedMessage locale="zh" original="PhI Diff" localized="调差" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Move" localized="移动" />
 
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Shipment" localized="销售出库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Return Shipment" localized="销售退货入库单" />
