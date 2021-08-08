@@ -189,6 +189,14 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Current Search Conditions" localized="当前查找条件" />
     <moqui.basic.LocalizedMessage locale="zh" original="Clear Find" localized="重置条件" />
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Category List" localized="分类列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Category" localized="新分类" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Category ID" localized="分类ID" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Category Name" localized="分类名称" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Category Type" localized="分类类型" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Product Count" localized="产品数" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Children" localized="子" />
+
 
     <moqui.basic.LocalizedMessage locale="zh" original="Shipping Instructions" localized="运输指示" />
     <moqui.basic.LocalizedMessage locale="zh" original="Comments" localized="备注" />
