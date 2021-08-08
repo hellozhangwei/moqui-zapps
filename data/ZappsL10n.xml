@@ -365,6 +365,67 @@
     <moqui.basic.LocalizedMessage locale="zh" original="PhI Diff" localized="调差" />
     <moqui.basic.LocalizedMessage locale="zh" original="Move" localized="移动" />
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Product List" localized="产品列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Return to Product List" localized="返回产品列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Image" localized="图片" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Product ID" localized="产品ID" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Product Name" localized="产品名称" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Product Type" localized="产品类型" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Product Class" localized="产品分类" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Asset Type" localized="资产类型" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Asset Class" localized="资产分类" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Product" localized="新建产品" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Amount Included" localized="包含数量" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Intro" localized="上架日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Discontinue" localized="下架日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Sign Req." localized="签名类型" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Owned By Org" localized="拥有者" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Country of Origin" localized="源产地" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Internal Comments" localized="内部注释" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Find Assets" localized="查找资产" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Apply New Feature" localized="应用新特征" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Facility Locations" localized="设施位置" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Add Location" localized="添加位置" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Min Stock" localized="最小库存" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Move Qty" localized="移动数量" />
+    <moqui.basic.LocalizedMessage locale="zh" original="TX Entries" localized="账目" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Check Reservations" localized="检查预留" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Update Cost &amp; Owner" localized="更新费用与拥有者" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Edit Asset" localized="编辑资产" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Asset Detail" localized="资产详情" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Detail History" localized="详情历史" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Container" localized="容器" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Pool" localized="池" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Lot" localized="批次" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Acquire Cost" localized="采购成本" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Acquired Date" localized="采购日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Acquire Order ID" localized="采购订单" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Manufactured Date" localized="制造日期" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Owner Party" localized="拥有者" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Reservations" localized="预留" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Meter Reading" localized="新仪表读数" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Event" localized="新事件" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Add Planned Maintenance" localized="添加维护计划" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Add Other Maintenance" localized="添加维护记录" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Registration" localized="新注册" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Assign Party" localized="添加指派人" />
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Fixed Asset List" localized="固定资产列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Fixed Asset Detail" localized="固定资产详情" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Meter Readings" localized="仪表读数" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Maintenance" localized="维护" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Registrations" localized="注册" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Assignments" localized="指派人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Asset Name" localized="资产名称" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Serial Number" localized="序列号" />
+    <moqui.basic.LocalizedMessage locale="zh" original="New Equipment" localized="新建设备" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Depreciation" localized="折旧" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Depreciation" localized="折旧" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Salvage Value" localized="残值" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Soft Identifier" localized="软标识符"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Expected End Of Life" localized="预计报废日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Year Begin Depreciation" localized="折旧开始年份"/>
+
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Shipment" localized="销售出库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Return Shipment" localized="销售退货入库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Purchase Shipment" localized="采购入库单" />
