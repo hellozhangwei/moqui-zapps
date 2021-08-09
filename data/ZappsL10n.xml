@@ -451,6 +451,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Applied" localized="已应用"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Update Package" localized="修改包装箱"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Reset Pkg" localized="重新装箱"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Label ID" localized="标签ID"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Tracking" localized="追踪"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Ret Tracking" localized="退货追踪"/>
@@ -462,6 +463,11 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Box" localized="箱子"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Orig. ETA" localized="原始预估"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Gateway" localized="网关"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Packed/Issued" localized="装箱/发行"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Remaining" localized="剩余"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Unit" localized="单位"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Receive Accepted" localized="接收"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Rejected" localized="拒收"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Inventory Asset List" localized="库存列表" />
     <moqui.basic.LocalizedMessage locale="zh" original="Receive Non-serialized Inventory Direct" localized="非序列化产品入库" />
