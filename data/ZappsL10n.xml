@@ -189,6 +189,15 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Current Search Conditions" localized="当前查找条件" />
     <moqui.basic.LocalizedMessage locale="zh" original="Clear Find" localized="重置条件" />
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Request List" localized="审批列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Request" localized="新审批"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Request ID" localized="审批ID"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Request Type" localized="审批类型"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Request Status" localized="审批状态"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Request Date" localized="审批日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Response Required Date" localized="答复日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Assign To" localized="指派人"/>
+
     <moqui.basic.LocalizedMessage locale="zh" original="Category List" localized="分类列表" />
     <moqui.basic.LocalizedMessage locale="zh" original="New Category" localized="新分类" />
     <moqui.basic.LocalizedMessage locale="zh" original="Category ID" localized="分类ID" />
