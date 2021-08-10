@@ -586,6 +586,16 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Receive Entire Shipment" localized="全部接收"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Receive Product" localized="接收产品"/>
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Opportunity List" localized="销售机会列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Opportunity" localized="新销售机会"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Opportunity ID" localized="机会ID"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Opportunity Name" localized="机会名称"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Opportunity Stage ID" localized="机会阶段"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Lead/Account" localized="线索/客户"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Next" localized="下一步"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Estimated Amount" localized="预估金额"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Close Date" localized="关闭日期"/>
+
     <moqui.basic.LocalizedMessage locale="zh" original="Parties" localized="参与者"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Returns" localized="退货管理"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Tasks" localized="任务管理"/>
