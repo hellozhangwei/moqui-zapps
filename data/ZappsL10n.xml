@@ -407,6 +407,14 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Actual Arrival" localized="实际到达"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Ship Work Effort ID" localized="运送任务"/>
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Packed Date" localized="打包日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Tracking Code" localized="追踪码"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Track Status" localized="追踪状态"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Last Track" localized="最近追踪"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Estimated Arrival Date" localized="预估到达"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Estimated Ready Date" localized="预估备好"/>
+
+
     <moqui.basic.LocalizedMessage locale="zh" original="Shipment Items" localized="运单条目"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Add Item" localized="添加条目"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Pack/Issue Items" localized="装箱/分发条目"/>
@@ -435,6 +443,7 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="Set Scheduled" localized="已安排"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Set Picked" localized="已拣货"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Set Shipped" localized="已发货"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Cancel Shipment" localized="取消运单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Edit Shipment" localized="编辑运单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Pick" localized="拣货"/>
@@ -542,6 +551,45 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Soft Identifier" localized="软标识符"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Expected End Of Life" localized="预计报废日期"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Year Begin Depreciation" localized="折旧开始年份"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Shipment List" localized="销售出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Shipment" localized="新销售出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Return Shipment List" localized="销售退货入库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Return Shipment" localized="新销售退货入库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Purchase Return Shipment List" localized="采购退货出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Purchase Return Shipment" localized="新采购退货出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Drop Shipment List" localized="直运出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Drop Shipment" localized="新直运出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Consumable Shipment List" localized="领用出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Consumable Shipment" localized="新领用出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Lend Return Shipment List" localized="借用归还入库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Lend Return Shipment" localized="新借用归还入库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Rental Shipment List" localized="租赁出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Rental Shipment" localized="新租赁出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Rental Return Shipment List" localized="租赁归还入库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Rental Return Shipment" localized="新租赁归还入库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Transfer Shipment List" localized="调拨单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Lend Shipment List" localized="借用出库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Lend Shipment" localized="新借用出库单"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Purchase Shipment List" localized="采购入库单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Purchase Shipment" localized="新采购入库单"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Supplier" localized="供应商"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Receive Entire Shipment" localized="全部接收"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Receive Product" localized="接收产品"/>
+
+    <moqui.basic.LocalizedMessage locale="zh" original="Parties" localized="参与者"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Returns" localized="退货管理"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Tasks" localized="任务管理"/>
+
 
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Shipment" localized="销售出库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Return Shipment" localized="销售退货入库单" />
