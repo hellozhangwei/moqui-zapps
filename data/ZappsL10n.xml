@@ -621,6 +621,13 @@
 
     <moqui.basic.LocalizedMessage locale="zh" original="Authorize" localized="验证"/>
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Sales Orders" localized="销售订单"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Search" localized="查找"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Lookup by ID" localized="按ID查找"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Operate" localized="运营"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Manage" localized="管理"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Any Type" localized="全部类型"/>
+
     <moqui.basic.Enumeration description="Incoming Shipment" enumId="ShpTpIncoming" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Outgoing Shipment" enumId="ShpTpOutgoing" enumTypeId="ShipmentType"/>
     <moqui.basic.Enumeration description="Sales Return Shipment" parentEnumId="ShpTpIncoming" enumId="ShpTpSalesReturn" enumTypeId="ShipmentType"/>
