@@ -192,6 +192,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Request List" localized="审批列表"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Request" localized="新审批"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request ID" localized="审批ID"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Request Name" localized="审批名称"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request Type" localized="审批类型"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request Status" localized="审批状态"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request Date" localized="审批日期"/>
@@ -637,6 +638,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Analysis" localized="销售分析"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Summary" localized="销售统计"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Order List" localized="订单列表"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="New Sales Order" localized="新销售订单"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Authorize" localized="验证"/>
 
