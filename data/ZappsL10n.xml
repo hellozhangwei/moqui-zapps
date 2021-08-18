@@ -620,6 +620,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Consumable Shipment" localized="领用出库单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Lend Shipment" localized="借用出库单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Lend Return Shipment" localized="借用归还入库单"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Rental Sales Shipment" localized="借用出库单"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Rental Sales Return Shipment" localized="借用归还入库单"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Rental Shipment" localized="租赁出库单"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Rental Return Shipment" localized="租赁归还入库单"/>
@@ -666,6 +668,10 @@
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpPurchaseReturn" locale="zh" localized="采购退货出库单"/>
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpDrop" locale="zh" localized="直运出库单"/>
     <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="ShpTpTransfer" locale="zh" localized="调拨出库单"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="AsClsMfgEquip" locale="zh"
+                                      localized="制造设备"/>
+    <moqui.basic.LocalizedEntityField entityName="moqui.basic.Enumeration" fieldName="description" pkValue="PtAsset" locale="zh"
+                                      localized="实物产品"/>
 
 
 </entity-facade-xml>
