@@ -237,5 +237,16 @@ ul.float-plain.condensed li { margin: 0 4px 0 0; padding: 4px; }
 .q-field--disabled .q-field__inner {cursor: default;}
 /*.q-field--outlined.q-field--readonly .q-field__control:before {border-style: none;}*/
 .q-field--disabled .q-field__prepend, .q-field--disabled .q-field__append {display: none}
+.q-btn .q-icon{font-size:10px;font-weight :600}
+.q-header .q-btn .q-icon{font-size:14px;}
 
+/*.q-field--dense .q-field__control, .q-field--dense .q-field__marginal {
+    height: 30px;
+}
+.q-field--auto-height.q-field--dense.q-field--labeled .q-field__native {
+    min-height: 30px;
+}
+.q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native {
+    min-height: 30px;
+}*/
 /*---Custom section end----*/
