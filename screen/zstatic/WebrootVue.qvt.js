@@ -1,3 +1,4 @@
+
 /* This software is in the public domain under CC0 1.0 Universal plus a Grant of Patent License. */
 
 // some globals for all Vue components to directly use the moqui object (for methods, constants, etc) and the window object
@@ -384,8 +385,8 @@ Vue.component('m-dialog', {
     data: function() { return { isShown:false }; },
     template:
     '<q-dialog v-bind:value="value" v-on:input="$emit(\'input\', $event)" :id="id" @show="onShow" @hide="onHide" :maximized="$q.platform.is.mobile">' +
-        '<q-card ref="dialogCard" flat bordered :style="{width:((width||760)+\'px\'),\'max-width\':($q.platform.is.mobile?\'100vw\':\'90vw\')}">' +
-            '<q-card-actions ref="dialogHeader" :style="{cursor:(draggable?\'move\':\'default\')}">' +
+        '<q-card ref="dialogCard" flat :style="{width:((width||760)+\'px\'),\'max-width\':($q.platform.is.mobile?\'100vw\':\'90vw\')}">' +
+            '<q-card-actions ref="dialogHeader" :style="{cursor:(draggable?\'move\':\'default\')}" class="bg-primary text-white">' +
                 '<h5 class="q-pl-sm non-selectable">{{title}}</h5><q-space></q-space>' +
                 '<q-btn icon="close" flat round dense v-close-popup></q-btn>' +
             '</q-card-actions><q-separator></q-separator>' +
