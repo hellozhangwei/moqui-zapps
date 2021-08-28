@@ -258,6 +258,14 @@
     <moqui.basic.LocalizedMessage locale="zh_CN" original="New Payment for Invoice" localized="新付款单" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Ref/Check" localized="参考" />
     <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Payment" localized="付款单查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Customer Return" localized="创建客户退货" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Supplier Return" localized="创建供应商退货" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Return ID" localized="退货ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Warehouse" localized="仓库" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Order IDs" localized="订单ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Customer Org" localized="客户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Vendor Org" localized="客户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Vendor Warehouse" localized="供应商仓库" />
 
     <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Placed"/>
     <moqui.basic.LocalizedMessage locale="zh" original="DashboardPlaced" localized="已订"/>
