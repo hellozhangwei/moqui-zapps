@@ -1,5 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-facade-xml type="seed">
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Customers" localized="客户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Internal" localized="内部" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Suppliers" localized="供应商" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Dashboard" localized="仪表盘" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Quick Search" localized="快速查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Stores" localized="店铺" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Accounting" localized="会计" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Human Resources" localized="人力资源" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Manufacturing" localized="制造" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Projects" localized="项目" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Project" localized="项目" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipments" localized="运输" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipping" localized="仓库作业" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Survey" localized="调查问卷" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Wiki/Content" localized="维基/内容" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Financial Accounts" localized="金融账户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Account" localized="账户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Accounts" localized="查找账户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Account" localized="新账户" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Organization" localized="组织" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Organization Name" localized="组织名称" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Update Organization" localized="更新组织" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Data Source" localized="数据源" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Balance" localized="余额" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Person Supplier" localized="新个人供应商" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Organization Supplier" localized="新组织供应商" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Username" localized="用户名" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Purchase Orders" localized="采购订单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Matches" localized="匹配" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Customer Requests" localized="客户请求" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Purchase Requests" localized="采购请求" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Feature Groups" localized="特征组列表" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Feature Group" localized="特征组ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Feature Group" localized="新特征组" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Feature Group" localized="特征组查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Feature ID" localized="特征ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Feature Type" localized="特征类型" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Feature" localized="特征查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Product" localized="产品查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Category" localized="分查询类" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Abbrev" localized="缩写" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Feature" localized="新特征" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Product Owner" localized="产品拥有人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Assoc From" localized="关联从" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Labor Rates" localized="工时费" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Person" localized="新个人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Organization" localized="新组织" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Related" localized="关联" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Picklists" localized="拣货" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Equipment" localized="设备" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="People" localized="人员" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="People Assigned" localized="指派人员" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Owner Org" localized="拥有者" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Name Prefix" localized="名称前缀" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Start Date" localized="开始日期" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Est. Hours" localized="预估工作量" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Create Picklists" localized="创建拣货单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Bulk Create Picklists" localized="批量新建拣货单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Orders per Pick" localized="每单订单数" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Carrier" localized="承运人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Source" localized="源" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Amount Total" localized="总金额" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Quantity Total" localized="总数量" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Pick Loc Qty" localized="拣货库位数量" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Picklist" localized="新拣货单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Pick Location Moves" localized="选择位置移动" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Move Assets" localized="移动资产" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Pack Shipment" localized="包装运单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Orders" localized="添加订单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Shipments" localized="添加运单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add to Picklist" localized="添加到拣货单" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Order Parties" localized="订单参与人" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Ready Date" localized="准备日期" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Person" localized="添加人员" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Equipment" localized="添加设备" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Edit Equipment" localized="编辑设备" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Remove from Load" localized="移除设备" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Actual Complete" localized="实际完成" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Status History" localized="状态历史" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Status" localized="状态" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Pick Bin #" localized="拣货箱#" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Force Close" localized="强制关闭" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Auto Set" localized="自动设置" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Find Party" localized="参与者查询" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Product Store" localized="店铺" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Product Store ID" localized="店铺ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Auto Reservation" localized="自动预约" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Require Inventory" localized="需要库存" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Disable Promotions" localized="禁用促销" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Disable Shipping Calc" localized="禁用运费计算" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Disable Tax Calc" localized="禁用税费计算" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Markup Order Shipping Price" localized="标记订单运费" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Markup Shipment Ship Labels" localized="标记运单标签" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Any Carrier Method" localized="全部配送方法" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Insurance Threshold" localized="保险免赔额" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Auto Approve Delay" localized="自动批准推迟" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Store Domain" localized="店铺域名" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Profile Url Path" localized="客户资料URL" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Wiki Space ID" localized="维基空间ID" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Locale" localized="默认地区" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Currency" localized="默认货币" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Default Order Source" localized="默认订单渠道" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Require Customer Role" localized="需要客户角色" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Tax Gateway" localized="税费网关" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Remote" localized="远端" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipping Options" localized="配送选项" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Sequence" localized="顺序" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Markup %" localized="标记%" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Markup Amt" localized="标记总价" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Promotions" localized="促销" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="New Store" localized="新店铺" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Payment Gateways" localized="支付网关" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipping Gateways" localized="运输网关" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Shipment Gateway" localized="运输网关" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Billing Country" localized="国家" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Billing Account" localized="账号" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Billing Zip" localized="邮编" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Billing Type" localized="类型" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Ins. Percent" localized="保险百分比" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Gateway Config" localized="网关配置" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Payment Gateway" localized="添加支付网关" />
+    <moqui.basic.LocalizedMessage locale="zh_CN" original="Add Shipping Gateway" localized="添加配送网关" />
 
     <moqui.basic.LocalizedMessage locale="default" original="DashboardPlaced" localized="Placed"/>
     <moqui.basic.LocalizedMessage locale="zh" original="DashboardPlaced" localized="已订"/>
@@ -167,6 +289,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="My Account" localized="个人中心" />
 
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Current Search String" localized="当前检索条件"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Select Find" localized="选择查询"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Details" localized="客户详情"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Info" localized="客户信息"/>
@@ -175,7 +298,9 @@
     <moqui.basic.LocalizedMessage locale="zh" original="New Person Customer" localized="新建个人客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Account" localized="新建客户"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Sales Contact" localized="新建联系人"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Find Customer" localized="客户查询" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer List" localized="客户列表" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Customer Data" localized="客户数据" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Role" localized="客户角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Name" localized="客户名称" />
     <moqui.basic.LocalizedMessage locale="zh" original="Customer Class" localized="客户类型" />
@@ -189,6 +314,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Current Search Conditions" localized="当前查找条件" />
     <moqui.basic.LocalizedMessage locale="zh" original="Clear Find" localized="重置条件" />
 
+    <moqui.basic.LocalizedMessage locale="zh" original="Items" localized="条目"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Wiki Pages" localized="维基页面"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request List" localized="审批列表"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Request" localized="新审批"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request ID" localized="审批ID"/>
@@ -196,8 +323,12 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Request Type" localized="审批类型"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request Status" localized="审批状态"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Request Date" localized="审批日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Due Date" localized="截止日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Due" localized="截止日期"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Resolution" localized="解决"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Response Required Date" localized="答复日期"/>
     <moqui.basic.LocalizedMessage locale="zh" original="Assign To" localized="指派人"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Assigned To" localized="指派人"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Category List" localized="分类列表" />
     <moqui.basic.LocalizedMessage locale="zh" original="New Category" localized="新分类" />
@@ -209,18 +340,22 @@
 
 
     <moqui.basic.LocalizedMessage locale="zh" original="Shipping Instructions" localized="运输指示" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Comments" localized="备注" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Comments" localized="评论" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Add Comment" localized="添加评论" />
     <moqui.basic.LocalizedMessage locale="zh" original="Owner" localized="拥有者" />
     <moqui.basic.LocalizedMessage locale="zh" original="External ID" localized="外部ID" />
     <moqui.basic.LocalizedMessage locale="zh" original="Orders" localized="订单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Shipments To" localized="出库单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Convert To Organization" localized="转化为组织" />
     <moqui.basic.LocalizedMessage locale="zh" original="Convert To Person" localized="转化为个人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Shipments From" localized="运单从" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Invoices From" localized="账单从" />
     <moqui.basic.LocalizedMessage locale="zh" original="Value" localized="值" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Type" localized="ID类型" />
     <moqui.basic.LocalizedMessage locale="zh" original="ID Value" localized="ID值" />
     <moqui.basic.LocalizedMessage locale="zh" original="Expire Date" localized="过期时间" />
     <moqui.basic.LocalizedMessage locale="zh" original="Roles" localized="角色" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Role" localized="角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Direct Role" localized="添加直接角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Other Role" localized="添加其他角色" />
     <moqui.basic.LocalizedMessage locale="zh" original="Purpose" localized="用途" />
@@ -275,6 +410,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Re-Calc Prices" localized="重新算价" />
     <moqui.basic.LocalizedMessage locale="zh" original="Close Part" localized="关闭拆单" />
     <moqui.basic.LocalizedMessage locale="zh" original="Facility" localized="设施" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Facilities" localized="设施" />
     <moqui.basic.LocalizedMessage locale="zh" original="Vendor" localized="供应商" />
     <moqui.basic.LocalizedMessage locale="zh" original="Store" localized="店铺" />
     <moqui.basic.LocalizedMessage locale="zh" original="Other Party Order ID" localized="其他当事人订单ID" />
@@ -298,6 +434,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Identification" localized="唯一标识" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Identification" localized="添加唯一标识" />
     <moqui.basic.LocalizedMessage locale="zh" original="Notes" localized="备注" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Note" localized="备注" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Edit Note" localized="编辑备注" />
     <moqui.basic.LocalizedMessage locale="zh" original="Add Note" localized="添加" />
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Account Contacts" localized="客户联系人" />
     <moqui.basic.LocalizedMessage locale="zh" original="Contact of Sales Accounts" localized="联系人公司" />
@@ -334,6 +472,7 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Calendar" localized="日历" />
     <moqui.basic.LocalizedMessage locale="zh" original="Messages" localized="沟通" />
     <moqui.basic.LocalizedMessage locale="zh" original="Requests" localized="审批" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Request" localized="审批" />
     <moqui.basic.LocalizedMessage locale="zh" original="Time" localized="考勤" />
     <moqui.basic.LocalizedMessage locale="zh" original="User Account" localized="用户账号" />
     <moqui.basic.LocalizedMessage locale="zh" original="Account Detail" localized="账号详情" />
@@ -366,9 +505,9 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Payments" localized="支付管理" />-->
     <moqui.basic.LocalizedMessage locale="zh" original="Transactions" localized="会计账务" />
     <moqui.basic.LocalizedMessage locale="zh" original="Human Res" localized="人力资源" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Employees" localized="员工管理" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Departments" localized="部门管理" />
-    <moqui.basic.LocalizedMessage locale="zh" original="Employee Rates" localized="报价管理" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Employees" localized="员工" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Departments" localized="部门" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Employee Rates" localized="员工报价" />
 
     <moqui.basic.LocalizedMessage locale="zh" original="Facility List" localized="设施列表"/>
     <moqui.basic.LocalizedMessage locale="zh" original="New Facility" localized="新设施"/>
@@ -552,6 +691,8 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Maintenance" localized="维护" />
     <moqui.basic.LocalizedMessage locale="zh" original="Registrations" localized="注册" />
     <moqui.basic.LocalizedMessage locale="zh" original="Assignments" localized="指派人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Assignee" localized="指派人" />
+    <moqui.basic.LocalizedMessage locale="zh" original="Set Assignee" localized="设置指派人" />
     <moqui.basic.LocalizedMessage locale="zh" original="Asset Name" localized="资产名称" />
     <moqui.basic.LocalizedMessage locale="zh" original="Serial Number" localized="序列号" />
     <moqui.basic.LocalizedMessage locale="zh" original="New Equipment" localized="新建设备" />
@@ -607,8 +748,11 @@
     <moqui.basic.LocalizedMessage locale="zh" original="Close Date" localized="关闭日期"/>
 
     <moqui.basic.LocalizedMessage locale="zh" original="Parties" localized="参与者"/>
-    <moqui.basic.LocalizedMessage locale="zh" original="Returns" localized="退货管理"/>
-    <moqui.basic.LocalizedMessage locale="zh" original="Tasks" localized="任务管理"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Emails" localized="邮件"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Party" localized="参与者"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Returns" localized="退货"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Tasks" localized="任务"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="Task" localized="任务"/>
 
 
     <moqui.basic.LocalizedMessage locale="zh" original="Sales Shipment" localized="销售出库单" />
