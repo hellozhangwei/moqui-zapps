@@ -96,7 +96,11 @@ zh,Asset Class,资产分类
 zh,Asset Detail,资产详情
 zh,Asset ID,库存流水号
 zh,Asset Name,资产名称
+zh,Asset Owner will default to Facility owner,资产拥有者默认为仓库拥有者
+zh,Asset Pool,资产池
 zh,Asset Reservations,预占资产
+zh,Asset Summary,资产摘要
+zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
 zh,Assets,资产管理
 zh,Assets Link,资产链接
@@ -134,6 +138,7 @@ zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
 zh,Bulk Create Picklists,批量新建拣货单
+zh,Bulk Cost Update,批量更新成本
 zh,Calendar,日历
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Shipment,取消运单
@@ -196,6 +201,7 @@ zh,Create Customer Return,创建客户退货
 zh,Create Invoice,创建账单
 zh,Create Picklists,创建拣货单
 zh,Create Purchase Order,创建采购订单
+zh,Create Physical Inventory,创建库存盘点
 zh,Create Return,创建退货单
 zh,Create Sales Order,创建销售订单
 zh,Create Supplier Return,创建供应商退货
@@ -283,6 +289,7 @@ zh,DashboardWikiBlogs,Wiki博客
 zh,DashboardWikiContent,Wiki/Content
 zh,DashboardWikiContent,Wiki内容
 zh,Data Source,数据源
+zh,Date,日期
 zh,Days To Ship,发货天数
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
@@ -344,6 +351,7 @@ zh,Estimated Arrival Date,预估到达
 zh,Estimated Hours,评估小时
 zh,Estimated Ready Date,预估备好
 zh,Expected End Of Life,预计报废日期
+zh,Expiration,过期时间
 zh,Expire Date,过期时间
 zh,External ID,外部ID
 zh,Facilities,设施
@@ -355,6 +363,7 @@ zh,Facility Name,设施名称
 zh,Facility Size,设置容量
 zh,Facility Type,设施类型
 zh,FacilityTitle,仓库管理
+zh,Facility*,设施*
 zh,Feature,特征
 zh,Feature 2,特征2
 zh,Feature Group ID,特征组ID
@@ -362,6 +371,7 @@ zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
+zh,Find Asset,资产查询
 zh,Find Options,查询条件
 zh,Find Options required to view results,请输入条件以查看结果
 zh,Financial Accounts,金融账户
@@ -374,12 +384,15 @@ zh,Find Customer,客户查询
 zh,Find Duplicates,查重
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
+zh,Find Individual Assets,单独资产查询
 zh,Find Order,订单查询
 zh,Find Party,参与者查询
 zh,Find Payment,付款单查询
+zh,Find Physical Inventory,库存盘点查询
 zh,Find Product,产品查询
 zh,Find Request,审批查询
-zh,Find Supplier,供应商列表
+zh,Find Summary,摘要查询
+zh,Find Supplier,供应商查询
 zh,Find Task,任务查询
 zh,FindSalesOrdersLink,Sales Orders
 zh,FindSalesOrdersLink,销售订单
@@ -427,6 +440,7 @@ zh,Inventory,库存
 zh,Inventory Asset,库存资产
 zh,Inventory Asset List,库存列表
 zh,Inventory Available,库存情况
+zh,Inventory Date,库存日期
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
 zh,Invoice Date,开票日期
@@ -471,9 +485,13 @@ zh,Location Types,位置类型
 zh,Longitude,经度
 zh,Lookup by ID,按ID查找
 zh,Lot,批次
+zh,Lots,批次
+zh,Lot Number,批次
 zh,LotTitle,批次
 zh,Maintenance,维护
 zh,Manage,管理
+zh,Manufacturer,制造商
+zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
 zh,Manufacturing,制造
 zh,ManufacturingTitle,制造管理
@@ -498,6 +516,7 @@ zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
 zh,Move,移动
 zh,Move Assets,移动资产
+zh,Move Asset,移动资产
 zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
@@ -551,6 +570,7 @@ zh,New Store Promotion,新促销
 zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
 zh,Next,下一步
+zh,No Location,没有位置
 zh,No origin shipping address selected,没有选择配送地址
 zh,No results found,没有数据
 zh,No shipment method selected,没有设置配送方法
@@ -560,9 +580,14 @@ zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
 zh,Note,备注
 zh,Notes,备注
+zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
 zh,On Hand,在手
+zh,On Hand Report,在手报告
+zh,Only Cost Matches PO Amount,只包成本与采购金额相等的
+zh,Only No Cost,只包括无成本
+zh,Only No Location,只包括不在位置
 zh,Opened,开始
 zh,Operate,运营
 zh,Operation,操作
@@ -634,6 +659,7 @@ zh,Part Status,拆单状态
 zh,Part Total,拆单总额
 zh,Parties,参与者
 zh,Party,参与者
+zh,Party ID,参与者ID
 zh,Payable,应付
 zh,Payable Return Invoices,应付退货账单
 zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
@@ -651,6 +677,12 @@ zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,"Phone, Email, and Other","电话，邮箱等"
 zh,Phone,电话
+zh,Phys. Inv. ID,库存盘点ID
+zh,Physical Diff,库存差异
+zh,Physical Inventory,库存盘点
+zh,Physical Inventory Date,库存盘点日期
+zh,Physical Inventory Difference,库存差异
+zh,Physical Inventory ID,库存盘点ID
 zh,PhysicalInventoryTitle,盘点记录
 zh,Pick,拣出
 zh,Pick Bin #,拣货箱#
@@ -687,6 +719,7 @@ zh,Product Store,店铺
 zh,Product Store ID,店铺ID
 zh,Product Type,产品类型
 zh,ProductStoreTitle,店铺管理
+zh,Product*,产品*
 zh,ProductTitle,产品
 zh,Profile Url Path,客户资料URL
 zh,Project,项目
@@ -715,16 +748,19 @@ zh,Purpose,用途
 zh,QOH,在手
 zh,Qty,数量
 zh,Quantity,数量
+zh,Quantity Difference,数量差
 zh,Quantity History,数量历史
 zh,Quantity Not Handled,未处理数量
 zh,Quantity Reason,数量原因
 zh,Quantity Total,总数量
+zh,Quantity*,数量*
 zh,Quick Add Items,创建账单
 zh,Quick Items,快速条目
 zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
+zh,Receive,接收
 zh,Receivable,应收
 zh,Receivable Return Invoices,应收退货账单
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
@@ -732,8 +768,11 @@ zh,Receive Accepted,接收
 zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
 zh,Receive Product,接收产品
+zh,Receive Direct,直接入库
 zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Received Date,接收日期
+zh,Received From,入库开始日期
+zh,Received Thru,入库截止日期
 zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Recurring,循环
@@ -885,6 +924,7 @@ zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
 zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,ShippingTitle,拣货管理
+zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
 zh,Sign Req.,签名类型
 zh,Signature Required Type,需要签名类型
 zh,Size UOM,容量单位
@@ -897,10 +937,12 @@ zh,State/Province,州/省
 zh,Statement PDF,清单PDF
 zh,Status,状态
 zh,Status History,状态历史
+zh,Status ID,状态ID
 zh,Store,店铺
 zh,Store Domain,店铺域名
 zh,Stored At,存放
 zh,Stores,店铺
+zh,Submit,提交
 zh,Supplier,供应商
 zh,Supplier Credit Memos,供应商信用凭证
 zh,Supplier Return Shipments,供应商退货入库单
@@ -969,6 +1011,7 @@ zh,User Account,用户账号
 zh,Username,用户名
 zh,Validate,验证
 zh,Value,值
+zh,Variance Reason,差异原因
 zh,Vendor,供应商
 zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
@@ -981,3 +1024,4 @@ zh,Wiki Space ID,维基空间ID
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
 zh,Year Begin Depreciation,折旧开始年份
+zh,Zero Quantity,零数量
