@@ -63,6 +63,7 @@ zh,Add to Picklist,添加到拣货单
 zh,Add To Product,添加到产品
 zh,Add to Sales Account,添加
 zh,Add UOM Dimension,添加度量
+zh,All Parties,全部参与人
 zh,Aisle,通道
 zh,Aging,账龄
 zh,Agreements,合同
@@ -119,6 +120,7 @@ zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Blogs,博客
 zh,Box,箱子
 zh,Box Types,包装箱类型
 zh,Budget Details,预算详情
@@ -166,6 +168,7 @@ zh,Contact of Sales Accounts,联系人公司
 zh,Container,容器
 zh,Containers,容器
 zh,Content,内容
+zh,Content: ,内容:
 zh,Content List,内容列表
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
@@ -186,8 +189,10 @@ zh,Currency,币种
 zh,Current PDF,当前PDF
 zh,Current Search Conditions,当前查找条件
 zh,Current Search String,当前检索条件
+zh,Custom Reports,定制报表
 zh,Customer,客户
 zh,Customer Class,客户类型
+zh,Customer Credit Memos,客户信用凭证
 zh,Customer Data,客户数据
 zh,Customer Details,客户详情
 zh,Customer Email,客户邮箱
@@ -197,6 +202,9 @@ zh,Customer List,客户列表
 zh,Customer Name,客户名称
 zh,Customer Org,客户
 zh,Customer Requests,客户请求
+zh,Customer Return Shipments,客户退货入库单
+zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
+zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
 zh,Customer Role,客户角色
 zh,Customers,客户
 zh,CustomerTitle,客户管理
@@ -351,6 +359,7 @@ zh,Find Order,订单查询
 zh,Find Party,参与者查询
 zh,Find Payment,付款单查询
 zh,Find Product,产品查询
+zh,Find Request,审批查询
 zh,Find Supplier,供应商列表
 zh,Find Task,任务查询
 zh,FindSalesOrdersLink,Sales Orders
@@ -374,6 +383,7 @@ zh,GLJournalsTitle,总账日记账
 zh,GL Journals,总账日记账
 zh,Grand Total,总额
 zh,Group,组
+zh,Has Role,角色包括
 zh,Hold,暂停
 zh,Human Res,人力资源
 zh,Human Resources,人力资源
@@ -383,6 +393,7 @@ zh,ID Value,ID值
 zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
+zh,Incoming Refund Payments,收入退款
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
 zh,Instrument,票据
@@ -390,6 +401,7 @@ zh,Insurance Threshold,保险免赔额
 zh,Internal,内部
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
+zh,Inventory,库存
 zh,Inventory Asset,库存资产
 zh,Inventory Asset List,库存列表
 zh,InventoryCheckTitle,盘点任务
@@ -439,6 +451,7 @@ zh,Manage,管理
 zh,Manufactured Date,制造日期
 zh,Manufacturing,制造
 zh,ManufacturingTitle,制造管理
+zh,Marketing,市场
 zh,MarketingCampaignTitle,市场营销
 zh,Markup %,标记%
 zh,Markup Amt,标记总价
@@ -520,6 +533,7 @@ zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
 zh,Note,备注
 zh,Notes,备注
+zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
 zh,On Hand,在手
 zh,Opened,开始
@@ -558,6 +572,7 @@ zh,Other Parties,其他参与者
 zh,Other Party Order Date,其他当事人订单日期
 zh,Other Party Order ID,其他当事人订单ID
 zh,Other Party Product ID,第三方产品ID
+zh,Outgoing Refund Payments,支出退款
 zh,Owned By Org,拥有者
 zh,Owner,拥有者
 zh,Owner Org,拥有者
@@ -589,6 +604,8 @@ zh,Part Total,拆单总额
 zh,Parties,参与者
 zh,Party,参与者
 zh,Payable,应付
+zh,Payable Return Invoices,应付退货账单
+zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,Payment,付款单
 zh,Payment Applications,核销
 zh,Payment Gateways,支付网关
@@ -598,6 +615,7 @@ zh,Payments,付款单
 zh,Payments,付款
 zh,People,人员
 zh,People Assigned,指派人员
+zh,Period,周期
 zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,Phone, Email, and Other,联系方式
@@ -618,6 +636,7 @@ zh,Placed Date,下定日期
 zh,Pool,池
 zh,Pools,仓库池
 zh,Postal Addresses,邮寄地址
+zh,Pri,优先级
 zh,Price,价格
 zh,Price History,价格历史
 zh,Prices,价格
@@ -649,8 +668,12 @@ zh,Purchase Orders,采购订单
 zh,Purchase Requests,采购请求
 zh,Purchase Return Shipment,采购退货出库单
 zh,Purchase Return Shipment List,采购退货出库单列表
+zh,Purchase Returns,采购退货
 zh,Purchase Shipment,采购入库单
 zh,Purchase Shipment List,采购入库单列表
+zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
+zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
+zh,Purchase <strong>Shipments</strong>,采购<strong>运单</strong>
 zh,PurchaseOrderTitle,采购管理
 zh,Purpose,用途
 zh,QOH,在手
@@ -666,6 +689,8 @@ zh,Quick Search,快速查询
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
 zh,Receivable,应收
+zh,Receivable Return Invoices,应收退货账单
+zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
 zh,Receive Accepted,接收
 zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
@@ -694,6 +719,7 @@ zh,Rental Shipment List,租赁出库单列表
 zh,Reorder Quantity,再订购数量
 zh,Repeat Count,重复次数
 zh,Reports,报表
+zh,Report Builder,报表设计器
 zh,ReportsTitle,报表
 zh,Request,审批
 zh,Request Date,审批日期
@@ -733,6 +759,7 @@ zh,Revision,版本
 zh,Role,角色
 zh,Role,角色
 zh,Roles,角色
+zh,Sales,销售
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
@@ -745,12 +772,15 @@ zh,Sales Order List,订单列表
 zh,Sales Orders,销售订单
 zh,Sales Return Shipment,销售退货入库单
 zh,Sales Return Shipment List,销售退货入库单列表
+zh,Sales Returns & RMA,销售退货
 zh,Sales Shipment,销售出库单
 zh,Sales Shipment List,销售出库单列表
 zh,Sales Summary,销售统计
 zh,Sales Summary Charts,销售统计图表
 zh,SalesOpportunityTitle,销售机会
 zh,SalesOrderTitle,销售管理
+zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
+zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Salvage Value,残值
 zh,Saved Finds,保存的查询
 zh,Search,查找
@@ -806,6 +836,7 @@ zh,Shipping Address and Method,配送地址与方法
 zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
+zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,ShippingTitle,拣货管理
 zh,Sign Req.,签名类型
 zh,Signature Required Type,需要签名类型
@@ -821,9 +852,13 @@ zh,Store Domain,店铺域名
 zh,Stored At,存放
 zh,Stores,店铺
 zh,Supplier,供应商
+zh,Supplier Credit Memos,供应商信用凭证
+zh,Supplier Return Shipments,供应商退货入库单
+zh,Supplier <strong>Payments</strong>,供应商<strong>付款单</strong>
 zh,Suppliers,供应商
 zh,SupplierTitle,供应商管理
 zh,Survey,调查问卷
+zh,Surveys,调查问卷
 zh,SystemTitle,系统管理
 zh,Task,任务
 zh,Task Name,任务名
@@ -874,6 +909,7 @@ zh,Vendor Warehouse,供应商仓库
 zh,View Old,旧联系方式
 zh,Warehouse,仓库
 zh,Was Stored At,原存放
+zh,Wiki,维基
 zh,Wiki Pages,维基页面
 zh,Wiki Space ID,维基空间ID
 zh,Wiki/Content,维基/内容
