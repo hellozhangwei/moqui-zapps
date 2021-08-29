@@ -16,6 +16,7 @@ zh,Actual Complete,实际完成
 zh,Actual Start,实际开始
 zh,Add Address,添加邮寄地址
 zh,Add Assoc,添加关联
+zh,Add All to Category,添加产品到分类
 zh,Add Attachment,添加附件
 zh,Add Box Type,添加包装箱类型
 zh,Add Carrier Shipment Method,添加配送方法
@@ -25,14 +26,18 @@ zh,Add Comment,添加评论
 zh,Add Contact,添加
 zh,Add Content,添加
 zh,Add Dest. Address,添加目的地址
+zh,Add Dimension,添加度量
 zh,Add Direct Role,添加直接角色
 zh,Add Equipment,添加设备
+zh,Add Feature to All,添加产品特征
 zh,Add Identification,添加唯一标识
 zh,Add Item,添加条目
 zh,Add Location,添加位置
 zh,Add Location Type,添加位置类型
 zh,Add New,添加新
 zh,Add Note,添加
+zh,Add Maintenance,添加维护
+zh,Add Meter,添加仪表
 zh,Add Orders,添加订单
 zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
@@ -52,25 +57,33 @@ zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
 zh,Add to Category,添加到分类
+zh,Add To Feature Group,添加到特征组
 zh,Add to Package,装入
 zh,Add to Picklist,添加到拣货单
+zh,Add To Product,添加到产品
 zh,Add to Sales Account,添加
 zh,Add UOM Dimension,添加度量
+zh,Aisle,通道
 zh,Aging,账龄
 zh,Agreements,合同
 zh,AgreementTitle,合同管理
+zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
+zh,Amount/UOM,总金额/单位
 zh,Any Carrier Method,全部配送方法
+zh,Any Field,任意字段
 zh,Any Type,全部类型
 zh,Appl. Type,应用类型
 zh,Applied,已应用
 zh,Applied Payments,已核销
+zh,Apply Feature,应用特征
 zh,Apply Feature Group,应用特征组
 zh,Apply New Feature,应用新特征
 zh,Appr Order Qty,已批准订单数
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
+zh,Area,区
 zh,Asset,资产
 zh,Asset Allow Issue Over QOH,允许超QOH
 zh,Asset Allow Other Owner,允许其他拥有者
@@ -81,6 +94,7 @@ zh,Asset Name,资产名称
 zh,Asset Reservations,预占资产
 zh,Asset Type,资产类型
 zh,Assets,资产管理
+zh,Assets Link,资产链接
 zh,AssetTitle,资产管理
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
@@ -90,6 +104,7 @@ zh,Assignee,指派人
 zh,Assignments,指派人
 zh,Assoc From,关联从
 zh,Assoc. Type,关联类型
+zh,Associated,关联
 zh,Associated From,关联从
 zh,Attachments,附件
 zh,Audit Log,审计日志
@@ -117,7 +132,10 @@ zh,Carrier,承运人
 zh,Carrier Party,承运人
 zh,Carrier Ship Methods,配送方法
 zh,Carrier Shipment Methods,配送方法
+zh,Catalog,产品目录
 zh,CatalogTitle,品类管理
+zh,Categories,分类
+zh,Category,分类
 zh,Category ID,分类ID
 zh,Category List,分类列表
 zh,Category Name,分类名称
@@ -128,14 +146,18 @@ zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Children,子
+zh,Class,类
 zh,Classifications,类型
 zh,Clear Find,重置条件
+zh,Clear Parameters,清空参数
 zh,Clone,克隆
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
 zh,Close Part,关闭拆单
 zh,Closed,关闭
+zh,Clone Product,克隆产品
 zh,Code Expires,代码过期日
+zh,Columns,列
 zh,Comments,评论
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
@@ -252,6 +274,7 @@ zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
 zh,Detail,详细
 zh,Detail History,详情历史
+zh,Dimensions,度量
 zh,Disable Account,禁用账号
 zh,Disable Promotions,禁用促销
 zh,Disable Shipping Calc,禁用运费计算
@@ -305,10 +328,15 @@ zh,Facility Name,设施名称
 zh,Facility Size,设置容量
 zh,Facility Type,设施类型
 zh,FacilityTitle,仓库管理
-zh,Feature Group,特征组ID
+zh,Feature,特征
+zh,Feature 2,特征2
+zh,Feature Group ID,特征组ID
 zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
+zh,Features,特征
+zh,Find Options,查询条件
+zh,Find Options required to view results,请输入条件以查看结果
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
 zh,FinancialAccountTitle,金融账户
@@ -333,6 +361,7 @@ zh,Fixed Asset Detail,固定资产详情
 zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
+zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
 zh,Gateway,网关
@@ -352,6 +381,7 @@ zh,HumanResTitle,人力资源
 zh,ID Type,ID类型
 zh,ID Value,ID值
 zh,Identification,唯一标识
+zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
@@ -378,6 +408,8 @@ zh,Issued and Invoiced,成交记录
 zh,Issued and Invoiced,成交记录
 zh,Issued and Invoiced Report,已出货与已开票报表
 zh,Issued Date,发行日
+zh,Interval Meter,间隔读数
+zh,Interval Quantity,间隔数量
 zh,Item,条目
 zh,Item Description,描述
 zh,Item Total,条目合计
@@ -394,6 +426,7 @@ zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
 zh,List Price,列表价
+zh,Loc Type,位置类型
 zh,Locale,地区
 zh,Location,位置
 zh,Location Types,位置类型
@@ -415,7 +448,9 @@ zh,Matches,匹配
 zh,Message,消息
 zh,Message Remote,远端消息
 zh,Messages,沟通
+zh,Meter Name,仪表名称
 zh,Meter Readings,仪表读数
+zh,Meters,仪表
 zh,Mfg Date,生产日期
 zh,Milestone,里程碑
 zh,Min Quantity,最少数量
@@ -423,10 +458,13 @@ zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
 zh,Move,移动
 zh,Move Assets,移动资产
+zh,Move Dialog,移动对话框
+zh,Move Link,移动链接
 zh,Move Qty,移动数量
 zh,My Account,个人中心
 zh,MyAccountTitle,个人中心
 zh,Name Prefix,名称前缀
+zh,Need Qty,需要数量
 zh,New by Location,新内容按位置
 zh,New Category,新分类
 zh,New Consumable Shipment,新领用出库单
@@ -474,6 +512,7 @@ zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
 zh,Next,下一步
 zh,No origin shipping address selected,没有选择配送地址
+zh,No results found,没有数据
 zh,No shipment method selected,没有设置配送方法
 zh,No shipping address selected,没有设置配送地址
 zh,Not Avail,不可用
@@ -490,6 +529,7 @@ zh,Opportunity ID,机会ID
 zh,Opportunity Name,机会名称
 zh,Opportunity Stage ID,机会阶段
 zh,Order,订单
+zh,Order By,排序
 zh,Order Detail,订单详情
 zh,Order Header,订单头
 zh,Order ID,订单ID
@@ -510,7 +550,9 @@ zh,Orig. ETA,原始预估
 zh,Origin Facility,发货仓
 zh,Origin Facility,发货仓
 zh,Original PDF,原始PDF
+zh,OR Interval UOM,或间隔UOM
 zh,Other,其他
+zh,Other IDs,其他ID
 zh,Other Invc,其他账单
 zh,Other Parties,其他参与者
 zh,Other Party Order Date,其他当事人订单日期
@@ -566,6 +608,7 @@ zh,Pick Bin #,拣货箱#
 zh,Pick Container,拣货箱
 zh,Pick Loc Qty,拣货库位数量
 zh,Pick Location Moves,选择位置移动
+zh,Pick Location(s),拣货位置
 zh,Picked,拣货时间
 zh,Picklist,拣货
 zh,Picklists,拣货
@@ -577,7 +620,10 @@ zh,Pools,仓库池
 zh,Postal Addresses,邮寄地址
 zh,Price,价格
 zh,Price History,价格历史
+zh,Prices,价格
 zh,Priority,优先级
+zh,Product,产品
+zh,Products,产品
 zh,Product Class,产品分类
 zh,Product Count,产品数
 zh,Product ID,产品ID
@@ -636,7 +682,9 @@ zh,Related,关联
 zh,Rem,剩余
 zh,Remaining,剩余
 zh,Remote,远端
+zh,Remove All from Category,从分类移除产品
 zh,Remove from Load,移除设备
+zh,Remove Feature from All,移除产品特征
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
 zh,Rental Sales Return Shipment,借用归还入库单
@@ -644,6 +692,7 @@ zh,Rental Sales Shipment,借用出库单
 zh,Rental Shipment,租赁出库单
 zh,Rental Shipment List,租赁出库单列表
 zh,Reorder Quantity,再订购数量
+zh,Repeat Count,重复次数
 zh,Reports,报表
 zh,ReportsTitle,报表
 zh,Request,审批
@@ -659,6 +708,8 @@ zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
 zh,Required By Date,要求日期
+zh,Res Cnt,预约次数
+zh,Res Qty,预约数量
 zh,Reservation,预占
 zh,Reservation Auto Type,库存锁定类型
 zh,Reservations,预留
@@ -701,7 +752,10 @@ zh,Sales Summary Charts,销售统计图表
 zh,SalesOpportunityTitle,销售机会
 zh,SalesOrderTitle,销售管理
 zh,Salvage Value,残值
+zh,Saved Finds,保存的查询
 zh,Search,查找
+zh,Scheduled Maintenance,维护计划
+zh,Search Products,搜索产品
 zh,SearchProductsTitle,批处理
 zh,Select Find,选择查询
 zh,Select Setting,选择
@@ -711,6 +765,7 @@ zh,Send Email,发邮件
 zh,Sent Date,发送日期
 zh,Seq,顺序
 zh,Seq Num,顺序
+zh,Seq #,顺序
 zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serial Number,序列号
@@ -794,6 +849,7 @@ zh,Transactions,会计凭证
 zh,Transaction Entries,凭证分录
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
+zh,Thru Date,结束日期
 zh,TX,账目
 zh,TX Entries,账目
 zh,Un-approve,撤销批准
