@@ -147,11 +147,14 @@ zh,Check Reservations,检查预留
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
+zh,Child Tasks,子任务
 zh,Children,子
 zh,Class,类
 zh,Classifications,类型
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
+zh,Clock In,开始计时
+zh,Clock Out,结束计时
 zh,Clone,克隆
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
@@ -370,6 +373,7 @@ zh,Fixed Asset Detail,固定资产详情
 zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
+zh,From,开始
 zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
@@ -437,6 +441,7 @@ zh,Lend Return Shipment,借用归还入库单
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
+zh,Link,链接
 zh,List Price,列表价
 zh,Loc Type,位置类型
 zh,Locale,地区
@@ -618,7 +623,7 @@ zh,People Assigned,指派人员
 zh,Period,周期
 zh,PhI Diff,调差
 zh,PhI Qty,调整
-zh,Phone, Email, and Other,联系方式
+zh,"Phone, Email, and Other","电话，邮箱等"
 zh,Phone,电话
 zh,PhysicalInventoryTitle,盘点记录
 zh,Pick,拣出
@@ -784,6 +789,7 @@ zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Salvage Value,残值
 zh,Saved Finds,保存的查询
 zh,Search,查找
+zh,Search Results,查找结果
 zh,Scheduled Maintenance,维护计划
 zh,Search Products,搜索产品
 zh,SearchProductsTitle,批处理
@@ -862,6 +868,7 @@ zh,Surveys,调查问卷
 zh,SystemTitle,系统管理
 zh,Task,任务
 zh,Task Name,任务名
+zh,Task Summary,任务概要
 zh,Tasks,任务
 zh,TaskTitle,任务
 zh,Tax Calc,计算税费
@@ -871,7 +878,9 @@ zh,Their Invoice,对方发票
 zh,Their Order,第三方订单
 zh,Time,考勤
 zh,TimePeriodTitle,会计期间
+zh,Time Entries,工时记录
 zh,Time Periods,会计期间
+zh,Title,标题
 zh,To Address,收件人
 zh,To Addresses,收件人
 zh,To Party,到
