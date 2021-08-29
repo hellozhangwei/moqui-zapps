@@ -1,0 +1,38 @@
+moqui.basic.LocalizedMessage,demo
+locale,original,localized
+en,AccountingDashboardTitle,Dashboard
+en,AccountingTitle,Accounting
+en,AgreementTitle,Agreement
+en,AssetTitle,Assets
+en,BudgetsTitle,Budgets
+en,CatalogTitle,Catalog
+en,CategoryTitle,Category
+en,CustomerTitle,Customer
+en,DashboardTitle,Dashboard
+en,FacilityTitle,Facility
+en,FinancialAccountTitle,Financial Account
+en,FixedAssetTitle,Fixed Asset
+en,GlAccountTitle,Gl Account
+en,GLJournalsTitle,GL Journals
+en,HumanResTitle,Human Res
+en,InventoryCheckTitle,Inventory Check
+en,LotTitle,Lot
+en,ManufacturingTitle,Manufacturing
+en,MarketingCampaignTitle,Marketing Campaign
+en,MyAccountTitle,My Account
+en,PhysicalInventoryTitle,Physical Inventory
+en,ProductStoreTitle,Store
+en,ProjectTitle,Project
+en,ProductTitle,Product
+en,PurchaseOrderTitle,Purchase Order
+en,ReportsTitle,Reports
+en,RequestTitle,Request
+en,SalesOpportunityTitle,Sales Opportunity
+en,SalesOrderTitle,Sales Order
+en,SearchProductsTitle,Search Products
+en,ShipmentTitle,Shipment
+en,ShippingTitle,Shipping
+en,SupplierTitle,Supplier
+en,SystemTitle,System
+en,TaskTitle,Task
+en,TimePeriodTitle,Time Period
