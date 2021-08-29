@@ -63,6 +63,8 @@ zh,Add to Picklist,添加到拣货单
 zh,Add To Product,添加到产品
 zh,Add to Sales Account,添加
 zh,Add UOM Dimension,添加度量
+zh,Address 1,地址1
+zh,Address 2,地址2
 zh,All Parties,全部参与人
 zh,Aisle,通道
 zh,Aging,账龄
@@ -108,6 +110,7 @@ zh,Assoc. Type,关联类型
 zh,Associated,关联
 zh,Associated From,关联从
 zh,Attachments,附件
+zh,Attention,注意
 zh,Audit Log,审计日志
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
@@ -120,9 +123,11 @@ zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Black,黑
 zh,Blogs,博客
 zh,Box,箱子
 zh,Box Types,包装箱类型
+zh,Birth Date,预算详情
 zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
@@ -149,6 +154,7 @@ zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Child Tasks,子任务
 zh,Children,子
+zh,City/Zip,城市/邮编
 zh,Class,类
 zh,Classifications,类型
 zh,Clear Find,重置条件
@@ -175,7 +181,9 @@ zh,Content: ,内容:
 zh,Content List,内容列表
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
+zh,Country,国
 zh,Country of Origin,源产地
+zh,Country/State,国家/省
 zh,Create Account,新账户
 zh,Create Bank Account,新建银行账号
 zh,Create Credit Card,新建信用卡
@@ -367,6 +375,7 @@ zh,Find Supplier,供应商列表
 zh,Find Task,任务查询
 zh,FindSalesOrdersLink,Sales Orders
 zh,FindSalesOrdersLink,销售订单
+zh,First Name,姓
 zh,First Order,第一单
 zh,Fixed Asset,固定资产
 zh,Fixed Asset Detail,固定资产详情
@@ -386,6 +395,7 @@ zh,GL Accounts,总账会计
 zh,GLJournalsTitle,总账日记账
 zh,GL Journals,总账日记账
 zh,Grand Total,总额
+zh,Grey,灰
 zh,Group,组
 zh,Has Role,角色包括
 zh,Hold,暂停
@@ -433,6 +443,7 @@ zh,Item Type,条目类型
 zh,Items,条目
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
+zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
 zh,Latitude,维度
@@ -470,6 +481,7 @@ zh,Meter Name,仪表名称
 zh,Meter Readings,仪表读数
 zh,Meters,仪表
 zh,Mfg Date,生产日期
+zh,Middle Name,中名
 zh,Milestone,里程碑
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
@@ -640,6 +652,7 @@ zh,Placed,下定时间
 zh,Placed Date,下定日期
 zh,Pool,池
 zh,Pools,仓库池
+zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Pri,优先级
 zh,Price,价格
@@ -738,6 +751,7 @@ zh,RequestTitle,审批管理
 zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
+zh,Require Password Change,要求修改密码
 zh,Required By Date,要求日期
 zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
@@ -787,13 +801,16 @@ zh,SalesOrderTitle,销售管理
 zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
 zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Salvage Value,残值
+zh,Save,保存
 zh,Saved Finds,保存的查询
 zh,Search,查找
 zh,Search Results,查找结果
 zh,Scheduled Maintenance,维护计划
 zh,Search Products,搜索产品
 zh,SearchProductsTitle,批处理
+zh,Select Email,选择邮箱
 zh,Select Find,选择查询
+zh,Select Phone,选择电话
 zh,Select Setting,选择
 zh,Selectable Features,可选特征
 zh,Send,发送
@@ -851,6 +868,8 @@ zh,Soft Identifier,软标识符
 zh,Source,源
 zh,Standard Cost,标准成
 zh,Start Date,开始日期
+zh,State,省
+zh,Statement PDF,清单PDF
 zh,Status,状态
 zh,Status History,状态历史
 zh,Store,店铺
@@ -865,6 +884,7 @@ zh,Suppliers,供应商
 zh,SupplierTitle,供应商管理
 zh,Survey,调查问卷
 zh,Surveys,调查问卷
+zh,System Email,系统邮箱
 zh,SystemTitle,系统管理
 zh,Task,任务
 zh,Task Name,任务名
@@ -873,6 +893,7 @@ zh,Tasks,任务
 zh,TaskTitle,任务
 zh,Tax Calc,计算税费
 zh,Tax Gateway,税费网关
+zh,Terminate Date,终止日期
 zh,Text Search,查询
 zh,Their Invoice,对方发票
 zh,Their Order,第三方订单
@@ -880,9 +901,11 @@ zh,Time,考勤
 zh,TimePeriodTitle,会计期间
 zh,Time Entries,工时记录
 zh,Time Periods,会计期间
+zh,Time Zone,时区
 zh,Title,标题
 zh,To Address,收件人
 zh,To Addresses,收件人
+zh,To Name,收件人
 zh,To Party,到
 zh,Total,合计
 zh,Track Status,追踪状态
@@ -906,11 +929,13 @@ zh,Update Order,修改订单
 zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
 zh,Update Quantity,修改数量
+zh,Update User,更新用户
 zh,Upload Content,上传内容
 zh,URL,URL
 zh,User,用户
 zh,User Account,用户账号
 zh,Username,用户名
+zh,Validate,验证
 zh,Value,值
 zh,Vendor,供应商
 zh,Vendor Org,客户
