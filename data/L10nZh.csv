@@ -64,6 +64,7 @@ zh,Add To Product,添加到产品
 zh,Add to Sales Account,添加
 zh,Add UOM Dimension,添加度量
 zh,Address 1,地址1
+zh,Address1,地址1
 zh,Address 2,地址2
 zh,All Parties,全部参与人
 zh,Aisle,通道
@@ -87,6 +88,7 @@ zh,Appr Order Qty,已批准订单数
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
 zh,Area,区
+zh,Area Code,区号
 zh,Asset,资产
 zh,Asset Allow Issue Over QOH,允许超QOH
 zh,Asset Allow Other Owner,允许其他拥有者
@@ -154,14 +156,17 @@ zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Child Tasks,子任务
 zh,Children,子
+zh,City,城市
 zh,City/Zip,城市/邮编
 zh,Class,类
+zh,Class Type,分类
 zh,Classifications,类型
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
 zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
+zh,Close,关闭
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
 zh,Close Part,关闭拆单
@@ -198,6 +203,8 @@ zh,Create User,创建用户
 zh,Create Variants,创建变体
 zh,Currency,币种
 zh,Current PDF,当前PDF
+zh,Current Purchase Orders,当前采购订单
+zh,Current Sales Orders,当前销售订单
 zh,Current Search Conditions,当前查找条件
 zh,Current Search String,当前检索条件
 zh,Custom Reports,定制报表
@@ -312,6 +319,7 @@ zh,Edit Equipment,编辑设备
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
 zh,Edit Shipment,编辑运单
+zh,Effective Date,生效日
 zh,Email,邮箱
 zh,Email Address,邮箱
 zh,Email Messages,邮件消息
@@ -418,6 +426,7 @@ zh,Internal Organization,内部组织
 zh,Inventory,库存
 zh,Inventory Asset,库存资产
 zh,Inventory Asset List,库存列表
+zh,Inventory Available,库存情况
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
 zh,Invoice Date,开票日期
@@ -440,6 +449,7 @@ zh,Item,条目
 zh,Item Description,描述
 zh,Item Total,条目合计
 zh,Item Type,条目类型
+zh,Item Quantity,条目数量
 zh,Items,条目
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
@@ -573,6 +583,7 @@ zh,Order Parties,订单参与人
 zh,Order PDF,订单PDF
 zh,Order Sent,订单发送
 zh,Order Ship By,承运人
+zh,Order Type,订单类型
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
 zh,Organization,组织
@@ -583,12 +594,15 @@ zh,Origin Facility,发货仓
 zh,Original PDF,原始PDF
 zh,OR Interval UOM,或间隔UOM
 zh,Other,其他
+zh,Other ID,其他ID
 zh,Other IDs,其他ID
 zh,Other Invc,其他账单
 zh,Other Parties,其他参与者
+zh,Other Party,其他参与者
 zh,Other Party Order Date,其他当事人订单日期
 zh,Other Party Order ID,其他当事人订单ID
 zh,Other Party Product ID,第三方产品ID
+zh,Other Role,其他角色
 zh,Outgoing Refund Payments,支出退款
 zh,Owned By Org,拥有者
 zh,Owner,拥有者
@@ -648,12 +662,14 @@ zh,Picked,拣货时间
 zh,Picklist,拣货
 zh,Picklists,拣货
 zh,Pickup Date,拣货日期
+zh,Place Warnings,警告下定
 zh,Placed,下定时间
 zh,Placed Date,下定日期
 zh,Pool,池
 zh,Pools,仓库池
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
+zh,Postal Code,邮编
 zh,Pri,优先级
 zh,Price,价格
 zh,Price History,价格历史
@@ -682,6 +698,8 @@ zh,Promo Expires,促销过期日
 zh,Promos,计算促销
 zh,Promotion,促销
 zh,Promotions,促销
+zh,Propose Quote,建议报价
+zh,Purchase Item Type,采购明细类型
 zh,Purchase Orders,采购订单
 zh,Purchase Requests,采购请求
 zh,Purchase Return Shipment,采购退货出库单
@@ -704,6 +722,7 @@ zh,Quantity Total,总数量
 zh,Quick Add Items,创建账单
 zh,Quick Items,快速条目
 zh,Quick Search,快速查询
+zh,Quote Requested,报价请求
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
 zh,Receivable,应收
@@ -715,7 +734,10 @@ zh,Receive Non-serialized Inventory Direct,非序列化产品入库
 zh,Receive Product,接收产品
 zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Received Date,接收日期
+zh,Recent Paid Payables,最近到账应付款
+zh,Recent Paid Receivables,最近到账应收款
 zh,Recurring,循环
+zh,Reject Quote Request,拒绝报价请求
 zh,Ref,参考
 zh,Ref/Check,参考
 zh,Registrations,注册
@@ -784,6 +806,7 @@ zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
 zh,Sales Channel,销售渠道
 zh,Sales Discontinue,下架日期
+zh,Sales Item Type,销售明细类型
 zh,Sales Intro,上架日期
 zh,Sales Opportunity List,销售机会列表
 zh,Sales Order,销售订单
@@ -853,6 +876,7 @@ zh,Shipments,运输
 zh,Shipments From,运单从
 zh,Shipments To,出库单
 zh,ShipmentTitle,出库入库
+zh,Shipped,已发送
 zh,Shipping,仓库作业
 zh,Shipping Address,配送地址
 zh,Shipping Address and Method,配送地址与方法
@@ -869,6 +893,7 @@ zh,Source,源
 zh,Standard Cost,标准成
 zh,Start Date,开始日期
 zh,State,省
+zh,State/Province,州/省
 zh,Statement PDF,清单PDF
 zh,Status,状态
 zh,Status History,状态历史
@@ -897,6 +922,7 @@ zh,Terminate Date,终止日期
 zh,Text Search,查询
 zh,Their Invoice,对方发票
 zh,Their Order,第三方订单
+zh,Their Order ID,对方订单ID
 zh,Time,考勤
 zh,TimePeriodTitle,会计期间
 zh,Time Entries,工时记录
@@ -920,7 +946,13 @@ zh,Thru Date,结束日期
 zh,TX,账目
 zh,TX Entries,账目
 zh,Un-approve,撤销批准
+zh,Unapplied,未核销
+zh,Unpaid,未付
+zh,Unapplied Incoming Payments,未核销的收入款
+zh,Unapplied Outgoing Payments,未核销的支出款
 zh,Uncomplete Order,撤销订单完成
+zh,Unpaid Payables,未支付的应付款
+zh,Unpaid Receivables,未支付的应收款
 zh,Unit,单位
 zh,UOM Dimensions,度量
 zh,Update Cost &amp; Owner,更新费用与拥有者
