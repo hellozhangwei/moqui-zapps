@@ -340,7 +340,9 @@ zh,Gateway Config,网关配置
 zh,General Ledger,总账
 zh,Gift Message,礼物留言
 zh,GlAccountTitle,总账会计
-zh,GLJournalsTitle,总账凭证
+zh,GL Accounts,总账会计
+zh,GLJournalsTitle,总账日记账
+zh,GL Journals,总账日记账
 zh,Grand Total,总额
 zh,Group,组
 zh,Hold,暂停
@@ -788,7 +790,8 @@ zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
-zh,Transactions,会计账务
+zh,Transactions,会计凭证
+zh,Transaction Entries,凭证分录
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
 zh,TX,账目
