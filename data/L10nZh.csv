@@ -1,8 +1,7 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
-zh,${ec.resource.expand('PartyNameOnlyTemplate',''
-zh,${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description}),${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}
+zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
 zh,(Asc),(升)
 zh,(Desc),(降)
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
@@ -217,7 +216,7 @@ zh,Column Fields,列字段
 zh,Columns,列
 zh,Comments,评论
 zh,Condition failed for transition [${location}],not running actions or redirecting
-zh,Condition failed for transition [${location}], not running actions or redirecting,transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转
+zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
 zh,Contact Number,电话
@@ -417,8 +416,8 @@ zh,Feature Type,特征类型
 zh,Features,特征
 zh,Field cannot be empty,输入不能为空
 zh,File ${filename} already exists,skipping entity ${en}.
-zh,File ${filename} already exists, skipping document ${dataDocumentId}.,文件 ${filename}已存在,跳过文档${dataDocumentId}.
-zh,File ${filename} already exists, skipping entity ${en}.,文件 ${filename}已存在,跳过实体${en}.
+zh,"File ${filename} already exists, skipping document ${dataDocumentId}.","文件 ${filename}已存在,跳过文档${dataDocumentId}。"
+zh,"File ${filename} already exists, skipping entity ${en}.","文件 ${filename}已存在,跳过实体${en}。"
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
@@ -457,8 +456,7 @@ zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
 zh,Found issues with password so not updating,密码有问题，没有更新
 zh,From,开始
-zh,From ${ec.resource.expand('PartyNameTemplate',''
-zh,From ${ec.resource.expand('PartyNameTemplate','',fromParty)},,发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)}
+zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},",发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)}
 zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Location,仓位
@@ -545,7 +543,7 @@ zh,Item Quantity Thru,条目数量到
 zh,Item Total,条目合计
 zh,Item Type,条目类型
 zh,Items,条目
-zh,JSON-RPC error with no message, code [${responseMap.error?.code}],JSON-RPC无消息错误, 代码[${responseMap.error?.code}]
+zh,"JSON-RPC error with no message, code [${responseMap.error?.code}]","JSON-RPC无消息错误, 代码[${responseMap.error?.code}]"
 zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]: ${jsonObj},服务[${serviceName ?: method}]的JSON-RPC的返回不是object或者Map: ${jsonObj}
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
@@ -687,19 +685,19 @@ zh,No account found for username ${username},用户名或者密码错误。${use
 zh,No find parameters, choose some to save a new find or update existing,没有查找变量，先选择查找变量进行保存或者更新现有的
 zh,No origin shipping address selected,没有选择配送地址
 zh,No results found,没有数据
-zh,No search implementation installed, not indexing DataDocuments (see the moqui-elasticsearch component),搜索模块未安装，无法索引DataDcouments(请先安装moqui-elasticsearch模块)
-zh,No search implementation installed, not indexing Wiki Space Pages (see the moqui-elasticsearch component),搜索模块未安装，无法索引WiKi页面(请先安装moqui-elasticsearch模块)
-zh,No search implementation installed, not putting DataDocument mappings (see the moqui-elasticsearch component),搜索模块未安装，无法映射DataDcouments(请先安装moqui-elasticsearch模块)
-zh,No search implementation installed, not searching DataDocuments (see the moqui-elasticsearch component),搜索模块未安装，无法搜索DataDocuments(请先安装moqui-elasticsearch模块)
-zh,No search implementation installed, not searching DataDocuments by source (see the moqui-elasticsearch component),搜索模块未安装，无法按源数据搜索DataDocuments(请先安装moqui-elasticsearch模块)
+zh,"No search implementation installed, not indexing DataDocuments (see the moqui-elasticsearch component)","搜索模块未安装，无法索引DataDcouments(请先安装moqui-elasticsearch模块)"
+zh,"No search implementation installed, not indexing Wiki Space Pages (see the moqui-elasticsearch component)","搜索模块未安装，无法索引WiKi页面(请先安装moqui-elasticsearch模块)"
+zh,"No search implementation installed, not putting DataDocument mappings (see the moqui-elasticsearch component)","搜索模块未安装，无法映射DataDcouments(请先安装moqui-elasticsearch模块)"
+zh,"No search implementation installed, not searching DataDocuments (see the moqui-elasticsearch component)","搜索模块未安装，无法搜索DataDocuments(请先安装moqui-elasticsearch模块)"
+zh,"No search implementation installed, not searching DataDocuments by source (see the moqui-elasticsearch component)","搜索模块未安装，无法按源数据搜索DataDocuments(请先安装moqui-elasticsearch模块)"
 zh,No shipment method selected,没有设置配送方法
 zh,No shipping address selected,没有设置配送地址
 zh,Not,不
 zh,Not Avail,不可用
 zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
-zh,Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported,因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录
-zh,Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported,因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件
+zh,"Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录"
+zh,"Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件"
 zh,Note,备注
 zh,Notes,备注
 zh,OR Interval UOM,或间隔UOM
@@ -737,28 +735,28 @@ zh,Order Sent,订单发送
 zh,Order Ship By,承运人
 zh,Order Type,订单类型
 zh,OrderApproveCurrencyDifferent,付款单的货币${payment.amountUomId}与订单的货币${orderHeader.currencyUomId}不一致
-zh,OrderApproveNearOrder,发现相同的订单${nearOrder.orderId}:${nearOrder.orderPartSeqId}。下单时间：${ec.l10n.format(nearOrder.placedDate, null)} (${ec.l10n.format(diffHours, '0.0')}h ${isFuture ? 'after' : 'before'})，数量： ${ec.l10n.format(nearItem.quantity, '0.##')} 产品 ${nearItem.productId}
+zh,OrderApproveNearOrder,"发现相同的订单${nearOrder.orderId}:${nearOrder.orderPartSeqId}。下单时间：${ec.l10n.format(nearOrder.placedDate, null)} (${ec.l10n.format(diffHours, '0.0')}h ${isFuture ? 'after' : 'before'})，数量： ${ec.l10n.format(nearItem.quantity, '0.##')} 产品 ${nearItem.productId}"
 zh,OrderApproveNewCustomer,客户${firstOrderPart.customerPartyId}是新客户
 zh,OrderApprovePartNoCustomer,拆单${orderPart.orderPartSeqId}没有客户
 zh,OrderApprovePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
-zh,OrderApprovePaymentAuthorizedLow,验证金额或后续付款总额${ec.l10n.formatCurrency(totalAuthorized, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}
-zh,OrderApprovePaymentPromisedLow,承诺金额或以后付款总额${ec.l10n.formatCurrency(totalPromised, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}
-zh,OrderApproveShippingAddressTrust,拆单${orderPart.orderPartSeqId} 配送地址 ${postalCm.address1}, ${postalCm.postalCode ?: '-'} 可信度为 ${trustLevelEnum.description}
+zh,OrderApprovePaymentAuthorizedLow,"验证金额或后续付款总额${ec.l10n.formatCurrency(totalAuthorized, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}"
+zh,OrderApprovePaymentPromisedLow,"承诺金额或以后付款总额${ec.l10n.formatCurrency(totalPromised, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}"
+zh,OrderApproveShippingAddressTrust,"拆单${orderPart.orderPartSeqId} 配送地址 ${postalCm.address1}, ${postalCm.postalCode ?: '-'} 可信度为 ${trustLevelEnum.description}"
 zh,OrderApproveStoreManualApprove,==> 店铺设置为需要手动批准
 zh,OrderDetailConfirmCloseOrder,确定关闭订单吗? 如果没有条目被配送了，订单将会被取消。 如果订单条目已经被配送了一部分，那么订单条目数量将被修改为已配送的数量，订单将被设置为完成。
 zh,OrderDetailConfirmClosePart,确定要关闭拆单吗? 如果没有条目被配送了，拆单将会被取消。 如果拆单条目已经被配送了一部分，那么拆单条目数量将被修改为已配送的数量，拆单将被设置为完成。
-zh,OrderDetailItemBilled,已开帐单数量${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.invoiceQuantity, '#,##0.###') : ec.l10n.format(returnableOut.invoiceTotal, '#,##0.00')}
-zh,OrderDetailItemReturnable,可退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnableQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnableTotal, '#,##0.00')}
-zh,OrderDetailItemReturned,已退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnedQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnedTotal, '#,##0.00')}
-zh,OrderDetailPartPaymentIncomplete,付款单金额 (${ec.l10n.formatCurrency(orderPartInfo.paymentsTotal ?: 0.0, orderHeader?.currencyUomId)}) 小于拆单总额 (${ec.l10n.formatCurrency(orderPartInfo.orderPart.partTotal ?: 0.0, orderHeader?.currencyUomId)})
-zh,OrderInventoryInsufficient,只有 ${ec.l10n.format(availableToPromiseTotal, '#,##0')} ${product?.productName ?: productId} 可售
+zh,OrderDetailItemBilled,"已开帐单数量${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.invoiceQuantity, '#,##0.###') : ec.l10n.format(returnableOut.invoiceTotal, '#,##0.00')}"
+zh,OrderDetailItemReturnable,"可退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnableQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnableTotal, '#,##0.00')}"
+zh,OrderDetailItemReturned,"已退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnedQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnedTotal, '#,##0.00')}"
+zh,OrderDetailPartPaymentIncomplete,"付款单金额 (${ec.l10n.formatCurrency(orderPartInfo.paymentsTotal ?: 0.0, orderHeader?.currencyUomId)}) 小于拆单总额 (${ec.l10n.formatCurrency(orderPartInfo.orderPart.partTotal ?: 0.0, orderHeader?.currencyUomId)})"
+zh,OrderInventoryInsufficient,"只有 ${ec.l10n.format(availableToPromiseTotal, '#,##0')} ${product?.productName ?: productId} 可售"
 zh,OrderInventoryNotAvailable,${product?.productName ?: productId} 没有库存
 zh,OrderPlaceNoItems,订单没有条目
 zh,OrderPlacePartNoCustomer,拆单${orderPart.orderPartSeqId}没有客户
 zh,OrderPlacePartNoShippingAddress,拆单${orderPart.orderPartSeqId}没有设置配送地址
 zh,OrderPlacePartNoShippingMethod,拆单${orderPart.orderPartSeqId}没有配送方法
 zh,OrderPlacePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
-zh,OrderPlacePartPaymentIncomplete,拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})
+zh,OrderPlacePartPaymentIncomplete,"拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})"
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
 zh,Organization,组织
@@ -838,7 +836,7 @@ zh,Period,周期
 zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,Phone,电话
-zh,Phone, Email, and Other,电话，邮箱等
+zh,"Phone, Email, and Other","电话，邮箱等"
 zh,Phys. Inv. ID,库存盘点ID
 zh,Physical Diff,库存差异
 zh,Physical Inventory,库存盘点
@@ -1045,7 +1043,7 @@ zh,Save New Find,保存新的查找
 zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
 zh,Saving,保存中...
-zh,Scan Asset, Container, Location, Product,扫描资产，容器，位置，产品
+zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
 zh,Search Any Field,检索任意字段
@@ -1251,5 +1249,5 @@ zh,You must change your password before login.,登录前必须先修改密码
 zh,Yunnan,云南省
 zh,Zero Quantity,零数量
 zh,Zhejiang,浙江省
-zh,at ${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')},时间：${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')}
-zh,to ${ec.resource.expand('PartyNameTemplate','',toParty)},收信人：${ec.resource.expand('PartyNameTemplate','',toParty)}
+zh,"at ${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')}","时间：${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')}"
+zh,"to ${ec.resource.expand('PartyNameTemplate','',toParty)}","收信人：${ec.resource.expand('PartyNameTemplate','',toParty)}"
