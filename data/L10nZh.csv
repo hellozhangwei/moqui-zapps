@@ -1,23 +1,33 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
+#select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
+zh,${ec.resource.expand('PartyNameOnlyTemplate',''
+zh,${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description}),${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}
+zh,(Asc),(升)
+zh,(Desc),(降)
+zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
+zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
 zh,Accepted,接收
 zh,Account,账户
 zh,Account Detail,账号详情
+zh,Account with username ${username} does not have an email address,用户名为${username}的账号没有设置电子邮箱
 zh,Accounting,会计
 zh,AccountingDashboardTitle,仪表盘
 zh,AccountingTitle,财务管理
-zh,Active Warehouse,当前仓库
 zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
 zh,Acquired Date,采购日期
+zh,Active Saved Find:,当前使用的查找:
+zh,Active Warehouse,当前仓库
 zh,Actual,实际
 zh,Actual Arrival,实际到达
 zh,Actual Complete,实际完成
 zh,Actual Start,实际开始
+zh,Add,添加
 zh,Add Address,添加邮寄地址
-zh,Add Assoc,添加关联
 zh,Add All to Category,添加产品到分类
+zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
 zh,Add Box Type,添加包装箱类型
 zh,Add Carrier Shipment Method,添加配送方法
@@ -35,10 +45,10 @@ zh,Add Identification,添加唯一标识
 zh,Add Item,添加条目
 zh,Add Location,添加位置
 zh,Add Location Type,添加位置类型
-zh,Add New,添加新
-zh,Add Note,添加
 zh,Add Maintenance,添加维护
 zh,Add Meter,添加仪表
+zh,Add New,添加新
+zh,Add Note,添加
 zh,Add Orders,添加订单
 zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
@@ -57,30 +67,33 @@ zh,Add Promo Code,添加促销代码
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
-zh,Add to Category,添加到分类
 zh,Add To Feature Group,添加到特征组
+zh,Add To Product,添加到产品
+zh,Add UOM Dimension,添加度量
+zh,Add to Category,添加到分类
 zh,Add to Package,装入
 zh,Add to Picklist,添加到拣货单
-zh,Add To Product,添加到产品
 zh,Add to Sales Account,添加
-zh,Add UOM Dimension,添加度量
 zh,Address 1,地址1
-zh,Address1,地址1
 zh,Address 2,地址2
 zh,Address Trust,地址信任
-zh,All Parties,全部参与人
-zh,Aisle,通道
+zh,Address1,地址1
 zh,Aging,账龄
-zh,Agreements,合同
 zh,AgreementTitle,合同管理
+zh,Agreements,合同
+zh,Aisle,通道
+zh,All Parties,全部参与人
 zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
+zh,Amount UOM,数量 单位
 zh,Amount/UOM,总金额/单位
+zh,Anhui,安徽省
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any Type,全部类型
 zh,Appl. Type,应用类型
+zh,Application,程序
 zh,Applied,已应用
 zh,Applied Payments,已核销
 zh,Apply Feature,应用特征
@@ -91,6 +104,7 @@ zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
 zh,Area,区
 zh,Area Code,区号
+zh,Asc,升序
 zh,Asset,资产
 zh,Asset Adjustments,资产调整
 zh,Asset Allow Issue Over QOH,允许超QOH
@@ -105,9 +119,9 @@ zh,Asset Reservations,预占资产
 zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
+zh,AssetTitle,资产管理
 zh,Assets,资产管理
 zh,Assets Link,资产链接
-zh,AssetTitle,资产管理
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
 zh,Assigned,指派人
@@ -121,32 +135,41 @@ zh,Associated From,关联从
 zh,Attachments,附件
 zh,Attention,注意
 zh,Attn Name,经办人名字
-zh,ATP Diff,ATP变化
 zh,Audit Log,审计日志
+zh,Authenticate failed for user ${newUserAccount.username} because account is disabled and is not schedule to be automatically re-enabled [DISPRM].,账号${newUserAccount.username}已被永久禁用。
+zh,Authenticate failed for user ${newUserAccount.username} because account is disabled and will not be re-enabled until ${reEnableTime} [DISTMP].,账号${newUserAccount.username}已被临时禁用。请在${reEnableTime}之后再试。
+zh,Authenticate failed for user ${newUserAccount.username} because password was changed ${wksSinceChange} weeks ago and must be changed every ${changeWeeks} weeks [PWDTIM].,账号${newUserAccount.username}的密码上次修改已是${wksSinceChange}星期以前，必须每${changeWeeks}星期修改一次。
+zh,Authenticate failed for user [${newUserAccount.username}] because account requires password change [PWDCHG].,账号${newUserAccount.username}需修改密码。
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
-zh,Auto Reservation,自动预约
 zh,Auto Res.,自动预约
+zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
 zh,Available,可用
 zh,Balance,余额
 zh,Bank Accounts,银行账户
+zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
+zh,Begins With,以...开始
+zh,Beijing,北京市
 zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Birth Date,预算详情
 zh,Black,黑
 zh,Blogs,博客
 zh,Box,箱子
 zh,Box Types,包装箱类型
-zh,Birth Date,预算详情
 zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
-zh,Bulk Create Picklists,批量新建拣货单
 zh,Bulk Cost Update,批量更新成本
+zh,Bulk Create Picklists,批量新建拣货单
+zh,CSV,CSV
 zh,Calc Price,计算的价格
 zh,Calendar,日历
+zh,Can only create initial admin account if there are no UserAccount records,仅当没有任何账号时才能创建初始管理员账号
+zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Shipment,取消运单
 zh,Carrier,承运人
@@ -162,67 +185,83 @@ zh,Category List,分类列表
 zh,Category Name,分类名称
 zh,Category Type,分类类型
 zh,CategoryTitle,分类
+zh,Catgories,分类
 zh,Check Reservations,检查预留
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Child Tasks,子任务
 zh,Children,子
+zh,China,中国
+zh,Chongqing,重庆市
 zh,City,城市
 zh,City/Zip,城市/邮编
 zh,Class,类
 zh,Class Type,分类
 zh,Classifications,类型
+zh,Clear Current Find,清空当前查找
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
 zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
+zh,Clone Product,克隆产品
 zh,Close,关闭
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
 zh,Close Part,关闭拆单
 zh,Closed,关闭
-zh,Clone Product,克隆产品
 zh,Code Expires,代码过期日
-zh,Columns,列
+zh,Column,列
 zh,Column Fields,列字段
+zh,Columns,列
 zh,Comments,评论
+zh,Condition failed for transition [${location}],not running actions or redirecting
+zh,Condition failed for transition [${location}], not running actions or redirecting,transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
 zh,Contact Number,电话
 zh,Contact of Sales Accounts,联系人公司
 zh,Container,容器
 zh,Containers,容器
+zh,Contains,包含
 zh,Content,内容
-zh,Content: ,内容:
 zh,Content List,内容列表
+zh,Content:,内容:
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
+zh,Could not find account with username ${username},找不到用户名为${username}的账号
 zh,Country,国
 zh,Country of Origin,源产地
 zh,Country/State,国家/省
+zh,Create,新建
 zh,Create Account,新账户
 zh,Create Bank Account,新建银行账号
 zh,Create Credit Card,新建信用卡
 zh,Create Customer Return,创建客户退货
 zh,Create Invoice,创建账单
+zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Purchase Order,创建采购订单
-zh,Create Physical Inventory,创建库存盘点
 zh,Create Return,创建退货单
 zh,Create Sales Order,创建销售订单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
 zh,Currency,币种
+zh,Current,当前
 zh,Current PDF,当前PDF
 zh,Current Purchase Orders,当前采购订单
 zh,Current Sales Orders,当前销售订单
 zh,Current Search Conditions,当前查找条件
 zh,Current Search String,当前检索条件
+zh,Current password incorrect for user ${username},当前用户${username}密码错误
 zh,Custom Reports,定制报表
 zh,Customer,客户
+zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
+zh,Customer Payments,客户付款单
+zh,Customer Requests,客户请求
+zh,Customer Requests;,客户<strong>请求</strong>
 zh,Customer Class,客户类型
 zh,Customer Credit Memos,客户信用凭证
 zh,Customer Data,客户数据
@@ -233,72 +272,48 @@ zh,Customer Info,客户信息
 zh,Customer List,客户列表
 zh,Customer Name,客户名称
 zh,Customer Org,客户
+zh,Customer Payments,客户付款单
 zh,Customer Requests,客户请求
+zh,Customer Requests;,客户请求
 zh,Customer Return Shipments,客户退货入库单
-zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
-zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
 zh,Customer Role,客户角色
-zh,Customers,客户
 zh,CustomerTitle,客户管理
+zh,Customers,客户
 zh,Dashboard,仪表盘
-zh,DashboardAccounting,Accounting
 zh,DashboardAccounting,财务
-zh,DashboardApproved,Approved
 zh,DashboardApproved,已批准
-zh,DashboardAsset,Asset
 zh,DashboardAsset,资产
-zh,DashboardCatalog,Catalog
 zh,DashboardCatalog,分类
-zh,DashboardCustomers,Customers
 zh,DashboardCustomers,客户
-zh,DashboardFacility,Facility
 zh,DashboardFacility,仓库
-zh,DashboardHold,Hold
 zh,DashboardHold,已挂起
-zh,DashboardIncomingShipment,Incoming Shipment
-zh,DashboardIncomingShipment,入库
-zh,DashboardInProgress,In Progress
 zh,DashboardInProgress,进行中
-zh,DashboardInventoryAssets,Inventory Assets
+zh,DashboardIncomingShipment,入库
 zh,DashboardInventoryAssets,库存
-zh,DashboardManufacturing,Manufacturing
 zh,DashboardManufacturing,制造
-zh,DashboardOutgoingShipment,Outgoing Shipment
 zh,DashboardOutgoingShipment,出库
-zh,DashboardParties,Parties
 zh,DashboardParties,参与者
-zh,DashboardPlaced,Placed
 zh,DashboardPlaced,已订
-zh,DashboardProducts,Products
 zh,DashboardProducts,产品
-zh,DashboardPurchaseOrders,Purchase Orders
 zh,DashboardPurchaseOrders,采购订单
-zh,DashboardReports,Reports
 zh,DashboardReports,报表
-zh,DashboardRequests,Requests
 zh,DashboardRequests,审批
-zh,DashboardReturns,Returns
 zh,DashboardReturns,退换货
-zh,DashboardSalesOrders,Sales Orders
 zh,DashboardSalesOrders,采购订单
-zh,DashboardShipping,Shipping
 zh,DashboardShipping,拣货
-zh,DashboardStores,Stores
 zh,DashboardStores,店铺
-zh,DashboardSubmitted,Submitted
 zh,DashboardSubmitted,已提交
-zh,DashboardSuppliers,Suppliers
 zh,DashboardSuppliers,供应商
-zh,DashboardSurvey,Survey
 zh,DashboardSurvey,调查问卷
 zh,DashboardTitle,首页
-zh,DashboardWikiBlogs,Wiki Blogs
 zh,DashboardWikiBlogs,Wiki博客
-zh,DashboardWikiContent,Wiki/Content
 zh,DashboardWikiContent,Wiki内容
 zh,Data Source,数据源
+zh,Data Source ID,数据源ID
+zh,Data Source Type,数据源类型
 zh,Date,日期
 zh,Date Moved,移动日期
+zh,Day,天
 zh,Days To Ship,发货天数
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
@@ -307,10 +322,12 @@ zh,Default Disable Shipping Calc,禁用运费计算
 zh,Default Disable Tax Calc,禁用税费计算
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
+zh,Delete,删除
 zh,Delivery Date,送达日期
 zh,Departments,部门
 zh,Depreciation,折旧
-zh,Depreciation,折旧
+zh,Desc,降序
+zh,Description,描述
 zh,Dest. Facility,收货仓
 zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
@@ -323,32 +340,43 @@ zh,Disable Shipping Calc,禁用运费计算
 zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
 zh,Display ID,显示ID
+zh,Do Find,进行查找
+zh,Do Not Display,不显示
+zh,Documentation,文档
 zh,Download,下载
+zh,Drag fields to the desired column or do not display,拖放列调整顺序，或拖到不显示。
 zh,Drop Shipment,直运出库单
 zh,Drop Shipment List,直运出库单列表
 zh,Due,截止日期
 zh,Due Date,截止日期
 zh,Dups,重复
+zh,Edit,编辑
 zh,Edit Asset,编辑资产
 zh,Edit Attachment,编辑附件
 zh,Edit Equipment,编辑设备
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
-zh,Edit Shipment,编辑运单
 zh,Edit Physical Inventory,编辑库存盘点
+zh,Edit Shipment,编辑运单
 zh,Effective Date,生效日
 zh,Email,邮箱
 zh,Email Address,邮箱
 zh,Email Messages,邮件消息
 zh,Email Type,邮件类型
+zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServerId}]未定义邮箱密码
+zh,EmailServer [${emailServerId}] has no mailUsername,EmailServer [${emailServerId}]未定义邮箱用户名
+zh,EmailServer [${emailServerId}] has no storeHost,EmailServer [${emailServerId}]未定义邮箱主机地址
 zh,Emails,邮件
 zh,Employee Rates,员工报价
 zh,Employees,员工
+zh,Empty,为空
 zh,Enable Account,启用账号
 zh,Enter Setting,新建
 zh,Entry,登记
 zh,Entry Date,创建日期
+zh,Equals,等于
 zh,Equipment,设备
+zh,Error parsing JSON-RPC response for service [${serviceName ?: method}]: ${t.toString()},解析服务[${serviceName ?: method}]的JSON-RPC返回结果错误 : ${t.toString()}
 zh,Est,评估
 zh,Est Arrival,预估到达
 zh,Est Ready,预估备好
@@ -358,13 +386,17 @@ zh,Est. Hours,预估工作量
 zh,Est. Ready,预估备好
 zh,Estimated Amount,预估金额
 zh,Estimated Arrival Date,预估到达
+zh,Estimated Delivery,预计送达时间
 zh,Estimated Hours,评估小时
 zh,Estimated Ready Date,预估备好
-zh,Estimated Delivery,预计送达时间
 zh,Estimated Ship,预计发货时间
+zh,Example,样例
+zh,Example Feature,样例特征
 zh,Expected End Of Life,预计报废日期
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
+zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
+zh,Export Text,导出文本
 zh,External ID,外部ID
 zh,Facilities,设施
 zh,Facility,设施
@@ -374,8 +406,8 @@ zh,Facility Locations,设施位置
 zh,Facility Name,设施名称
 zh,Facility Size,设置容量
 zh,Facility Type,设施类型
-zh,FacilityTitle,仓库管理
 zh,Facility*,设施*
+zh,FacilityTitle,仓库管理
 zh,Feature,特征
 zh,Feature 2,特征2
 zh,Feature Group ID,特征组ID
@@ -383,13 +415,17 @@ zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
-zh,Find Asset,资产查询
-zh,Find Options,查询条件
-zh,Find Options required to view results,请输入条件以查看结果
+zh,Field cannot be empty,输入不能为空
+zh,File ${filename} already exists,skipping entity ${en}.
+zh,File ${filename} already exists, skipping document ${dataDocumentId}.,文件 ${filename}已存在,跳过文档${dataDocumentId}.
+zh,File ${filename} already exists, skipping entity ${en}.,文件 ${filename}已存在,跳过实体${en}.
+zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
 zh,FinancialAccountTitle,金融账户
+zh,Find,查找
 zh,Find Accounts,查找账户
+zh,Find Asset,资产查询
 zh,Find Assets,查找资产
 zh,Find Category,分查询类
 zh,Find Customer,客户查询
@@ -398,7 +434,10 @@ zh,Find Facility,设施查询
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
 zh,Find Individual Assets,单独资产查询
+zh,Find Options,查询条件
+zh,Find Options required to view results,请输入条件以查看结果
 zh,Find Order,订单查询
+zh,Find Parameters,查找变量
 zh,Find Party,参与者查询
 zh,Find Payment,付款单查询
 zh,Find Physical Inventory,库存盘点查询
@@ -408,7 +447,6 @@ zh,Find Request,审批查询
 zh,Find Summary,摘要查询
 zh,Find Supplier,供应商查询
 zh,Find Task,任务查询
-zh,FindSalesOrdersLink,Sales Orders
 zh,FindSalesOrdersLink,销售订单
 zh,First Name,姓
 zh,First Order,第一单
@@ -417,35 +455,54 @@ zh,Fixed Asset Detail,固定资产详情
 zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
+zh,Found issues with password so not updating,密码有问题，没有更新
 zh,From,开始
+zh,From ${ec.resource.expand('PartyNameTemplate',''
+zh,From ${ec.resource.expand('PartyNameTemplate','',fromParty)},,发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)}
 zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
+zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
+zh,Fujian,福建省
+zh,GL Accounts,总账会计
+zh,GL Journals,总账日记账
+zh,GLJournalsTitle,总账日记账
+zh,Gansu,甘肃省
 zh,Gateway,网关
-zh,Gateways,网关
 zh,Gateway Config,网关配置
 zh,Gateway Type,网关类型
+zh,Gateways,网关
 zh,General Ledger,总账
+zh,Generate PDF,生成PDF文件
 zh,Gift Message,礼物留言
 zh,GlAccountTitle,总账会计
-zh,GL Accounts,总账会计
-zh,GLJournalsTitle,总账日记账
-zh,GL Journals,总账日记账
+zh,Go##Page,跳转到
 zh,Grand Total,总额
 zh,Grey,灰
 zh,Group,组
+zh,Guangdong,广东省
+zh,Guangxi,广西壮族自治区
+zh,Guizhou,贵州省
+zh,Hainan,海南省
 zh,Has Role,角色包括
+zh,Hebei,河北省
+zh,Heilongjiang,黑龙江省
+zh,Henan,河南省
 zh,Hold,暂停
+zh,HongKong,香港特别行政区
+zh,Hubei,湖北省
 zh,Human Res,人力资源
 zh,Human Resources,人力资源
 zh,HumanResTitle,人力资源
+zh,Hunan,湖南省
 zh,ID Type,ID类型
 zh,ID Value,ID值
 zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Incoming Refund Payments,收入退款
+zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
 zh,Instrument,票据
@@ -453,6 +510,8 @@ zh,Insurance Threshold,保险免赔额
 zh,Internal,内部
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
+zh,Interval Meter,间隔读数
+zh,Interval Quantity,间隔数量
 zh,Inventory,库存
 zh,Inventory Asset,库存资产
 zh,Inventory Asset List,库存列表
@@ -460,30 +519,40 @@ zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
+zh,Invoice Cost Percent,发票成本百分比
+zh,Invoice Count,发票数量
 zh,Invoice Date,开票日期
+zh,Invoice Discount Percent,发票折扣百分比
 zh,Invoice ID,账单ID
 zh,Invoice Item,发票条目
 zh,Invoice Message,账单消息
+zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
-zh,Invoices and Payments,账单与付款单
 zh,Invoices From,账单从
+zh,Invoices Total,发票总额
+zh,Invoices and Payments,账单与付款单
 zh,Is Gift,礼物
 zh,Issuance,发行
 zh,Issued,发货时间
-zh,Issued and Invoiced,成交记录
+zh,Issued Date,发行日
 zh,Issued and Invoiced,成交记录
 zh,Issued and Invoiced Report,已出货与已开票报表
-zh,Issued Date,发行日
-zh,Interval Meter,间隔读数
-zh,Interval Quantity,间隔数量
 zh,Item,条目
 zh,Item Description,描述
+zh,Item Quantity,条目数量
+zh,Item Quantity From,条目数量从
+zh,Item Quantity Thru,条目数量到
 zh,Item Total,条目合计
 zh,Item Type,条目类型
-zh,Item Quantity,条目数量
 zh,Items,条目
+zh,JSON-RPC error with no message, code [${responseMap.error?.code}],JSON-RPC无消息错误, 代码[${responseMap.error?.code}]
+zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]: ${jsonObj},服务[${serviceName ?: method}]的JSON-RPC的返回不是object或者Map: ${jsonObj}
+zh,Jiangsu,江苏省
+zh,Jiangxi,江西省
+zh,Jilin,吉林省
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
+zh,Last,上
 zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
@@ -494,6 +563,10 @@ zh,Lend Return Shipment,借用归还入库单
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
+zh,Liaoning,辽宁省
+zh,Like,Like
+zh,Line Characters,行字符
+zh,Line Wrap?,自动换行？
 zh,Link,链接
 zh,List,列表
 zh,List Price,列表价
@@ -506,14 +579,15 @@ zh,Longitude,经度
 zh,Lookup Asset,查找资产
 zh,Lookup by ID,按ID查找
 zh,Lot,批次
-zh,Lots,批次
 zh,Lot Number,批次
 zh,LotTitle,批次
+zh,Lots,批次
+zh,Macao,澳门特别行政区
 zh,Maintenance,维护
 zh,Manage,管理
-zh,Manufacturer,制造商
 zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
+zh,Manufacturer,制造商
 zh,Manufacturing,制造
 zh,ManufacturingTitle,制造管理
 zh,Marketing,市场
@@ -535,23 +609,27 @@ zh,Milestone,里程碑
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
+zh,Month,月
 zh,Move,移动
-zh,Move Assets,移动资产
 zh,Move Asset,移动资产
+zh,Move Assets,移动资产
 zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
 zh,My Account,个人中心
 zh,MyAccountTitle,个人中心
+zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,Name,名称
 zh,Name Prefix,名称前缀
 zh,Need Qty,需要数量
-zh,New by Location,新内容按位置
 zh,New Category,新分类
 zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
 zh,New Credit Card,添加信用卡
 zh,New Credit Memo,新付款通知
 zh,New Customer,新客户
+zh,New Customer Count,新客户数量
+zh,New Customer Percent,新客户百分比
 zh,New Drop Shipment,新直运出库单
 zh,New Equipment,新建设备
 zh,New Event,新事件
@@ -568,8 +646,9 @@ zh,New Meter Reading,新仪表读数
 zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
 zh,New Outgoing Shipment,新建出库单
-zh,New Payment for Invoice,新付款单
+zh,New Password and New Password Verify do not match,两次录入的新密码不匹配
 zh,New Payment Gateway,新支付网关
+zh,New Payment for Invoice,新付款单
 zh,New Person,新个人
 zh,New Person Customer,新建个人客户
 zh,New Person Supplier,新个人供应商
@@ -593,20 +672,37 @@ zh,New Store,新店铺
 zh,New Store Promotion,新促销
 zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
+zh,New by Location,新内容按位置
+zh,New password is same as current password,新密码不能与当前密码一致
 zh,Next,下一步
+zh,Ningxia,宁夏回族自治区
+zh,No ${storeFolder} folder found,找不到邮件主机上的文件夹${storeFolder}
 zh,No Customer Selected,未选择客户
+zh,No EmailServer found for ID [${emailServerId}],找不到对应ID为${emailServerId}的EmailServer记录
+zh,No EmailServer record found for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate[${emailTemplateId}]中定义的邮件服务器未定义
+zh,No EmailTemplate record found for ID [${emailTemplateId}],邮件模板记录EmailTemplate[${emailTemplateId}]未定义
 zh,No Location,没有位置
+zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
+zh,No account found for username ${username},用户名或者密码错误。${username}
+zh,No find parameters, choose some to save a new find or update existing,没有查找变量，先选择查找变量进行保存或者更新现有的
 zh,No origin shipping address selected,没有选择配送地址
 zh,No results found,没有数据
+zh,No search implementation installed, not indexing DataDocuments (see the moqui-elasticsearch component),搜索模块未安装，无法索引DataDcouments(请先安装moqui-elasticsearch模块)
+zh,No search implementation installed, not indexing Wiki Space Pages (see the moqui-elasticsearch component),搜索模块未安装，无法索引WiKi页面(请先安装moqui-elasticsearch模块)
+zh,No search implementation installed, not putting DataDocument mappings (see the moqui-elasticsearch component),搜索模块未安装，无法映射DataDcouments(请先安装moqui-elasticsearch模块)
+zh,No search implementation installed, not searching DataDocuments (see the moqui-elasticsearch component),搜索模块未安装，无法搜索DataDocuments(请先安装moqui-elasticsearch模块)
+zh,No search implementation installed, not searching DataDocuments by source (see the moqui-elasticsearch component),搜索模块未安装，无法按源数据搜索DataDocuments(请先安装moqui-elasticsearch模块)
 zh,No shipment method selected,没有设置配送方法
 zh,No shipping address selected,没有设置配送地址
-zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
+zh,Not,不
 zh,Not Avail,不可用
 zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
+zh,Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported,因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录
+zh,Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported,因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件
 zh,Note,备注
 zh,Notes,备注
-zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,OR Interval UOM,或间隔UOM
 zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
 zh,On Hand,在手
@@ -622,28 +718,54 @@ zh,Opportunity Name,机会名称
 zh,Opportunity Stage ID,机会阶段
 zh,Order,订单
 zh,Order By,排序
+zh,Order Count,订单数量
 zh,Order Detail,订单详情
+zh,Order Discount Percent,订单折扣百分比
 zh,Order Header,订单头
 zh,Order ID,订单ID
 zh,Order IDs,订单ID
 zh,Order Item,订单条目
 zh,Order Name,订单名称
+zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
+zh,Order PDF,订单PDF
 zh,Order Part,拆单
 zh,Order Parties,订单参与人
-zh,Order PDF,订单PDF
+zh,Order Product Sales,产品销售额
+zh,Order Quantity,产品数量
 zh,Order Sent,订单发送
 zh,Order Ship By,承运人
 zh,Order Type,订单类型
+zh,OrderApproveCurrencyDifferent,付款单的货币${payment.amountUomId}与订单的货币${orderHeader.currencyUomId}不一致
+zh,OrderApproveNearOrder,发现相同的订单${nearOrder.orderId}:${nearOrder.orderPartSeqId}。下单时间：${ec.l10n.format(nearOrder.placedDate, null)} (${ec.l10n.format(diffHours, '0.0')}h ${isFuture ? 'after' : 'before'})，数量： ${ec.l10n.format(nearItem.quantity, '0.##')} 产品 ${nearItem.productId}
+zh,OrderApproveNewCustomer,客户${firstOrderPart.customerPartyId}是新客户
+zh,OrderApprovePartNoCustomer,拆单${orderPart.orderPartSeqId}没有客户
+zh,OrderApprovePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
+zh,OrderApprovePaymentAuthorizedLow,验证金额或后续付款总额${ec.l10n.formatCurrency(totalAuthorized, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}
+zh,OrderApprovePaymentPromisedLow,承诺金额或以后付款总额${ec.l10n.formatCurrency(totalPromised, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}
+zh,OrderApproveShippingAddressTrust,拆单${orderPart.orderPartSeqId} 配送地址 ${postalCm.address1}, ${postalCm.postalCode ?: '-'} 可信度为 ${trustLevelEnum.description}
+zh,OrderApproveStoreManualApprove,==> 店铺设置为需要手动批准
+zh,OrderDetailConfirmCloseOrder,确定关闭订单吗? 如果没有条目被配送了，订单将会被取消。 如果订单条目已经被配送了一部分，那么订单条目数量将被修改为已配送的数量，订单将被设置为完成。
+zh,OrderDetailConfirmClosePart,确定要关闭拆单吗? 如果没有条目被配送了，拆单将会被取消。 如果拆单条目已经被配送了一部分，那么拆单条目数量将被修改为已配送的数量，拆单将被设置为完成。
+zh,OrderDetailItemBilled,已开帐单数量${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.invoiceQuantity, '#,##0.###') : ec.l10n.format(returnableOut.invoiceTotal, '#,##0.00')}
+zh,OrderDetailItemReturnable,可退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnableQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnableTotal, '#,##0.00')}
+zh,OrderDetailItemReturned,已退货数量:${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.returnedQuantity, '#,##0.###') : ec.l10n.format(returnableOut.returnedTotal, '#,##0.00')}
+zh,OrderDetailPartPaymentIncomplete,付款单金额 (${ec.l10n.formatCurrency(orderPartInfo.paymentsTotal ?: 0.0, orderHeader?.currencyUomId)}) 小于拆单总额 (${ec.l10n.formatCurrency(orderPartInfo.orderPart.partTotal ?: 0.0, orderHeader?.currencyUomId)})
+zh,OrderInventoryInsufficient,只有 ${ec.l10n.format(availableToPromiseTotal, '#,##0')} ${product?.productName ?: productId} 可售
+zh,OrderInventoryNotAvailable,${product?.productName ?: productId} 没有库存
+zh,OrderPlaceNoItems,订单没有条目
+zh,OrderPlacePartNoCustomer,拆单${orderPart.orderPartSeqId}没有客户
+zh,OrderPlacePartNoShippingAddress,拆单${orderPart.orderPartSeqId}没有设置配送地址
+zh,OrderPlacePartNoShippingMethod,拆单${orderPart.orderPartSeqId}没有配送方法
+zh,OrderPlacePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
+zh,OrderPlacePartPaymentIncomplete,拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
 zh,Organization,组织
 zh,Organization Name,组织名称
 zh,Orig. ETA,原始预估
 zh,Origin Facility,发货仓
-zh,Origin Facility,发货仓
 zh,Original PDF,原始PDF
-zh,OR Interval UOM,或间隔UOM
 zh,Other,其他
 zh,Other ID,其他ID
 zh,Other IDs,其他ID
@@ -659,6 +781,8 @@ zh,Owned By Org,拥有者
 zh,Owner,拥有者
 zh,Owner Org,拥有者
 zh,Owner Party,拥有者
+zh,PDF,PDF
+zh,POP Commerce Admin,POP Commerce管理
 zh,Pack,打包
 zh,Pack Date,装箱日期
 zh,Pack Item,打包条目
@@ -673,6 +797,9 @@ zh,Packages,包装箱
 zh,Packed,打包时间
 zh,Packed Date,打包日期
 zh,Packed/Issued,装箱/发行
+zh,Page #,页 #
+zh,Page Layout,页面布局
+zh,Paid Percent,已支付发票百分比
 zh,Parent,父
 zh,Parent Categories,父分类
 zh,Parent Facility,父设施
@@ -686,24 +813,32 @@ zh,Part Total,拆单总额
 zh,Parties,参与者
 zh,Party,参与者
 zh,Party ID,参与者ID
+zh,Password incorrect for username ${username},用户名或者密码错误。${username}
+zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
+zh,Password needs ${minOthers} other characters (not letter or digit),密码需要至少${minOthers}位其它字符(非字母或数字)
+zh,Password shorter than ${minLength} characters,密码不能少于${minLength}个字符
+zh,Password updated for user ${userAccount.username},用户账号${userAccount.username}密码已更新
+zh,Password was used in last ${historyLimit} passwords,密码已在前${historyLimit}次使用过
+zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
+zh,Path ${path} is not a directory.,路径${path}必须是个目录
 zh,Payable,应付
+zh,Payable Invoices,应付发票
 zh,Payable Return Invoices,应付退货账单
-zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,Payment,付款单
 zh,Payment Applications,核销
 zh,Payment Gateways,支付网关
 zh,Payment Information,付款信息
 zh,Payment Methods,付款方式
 zh,Payment Terms,付款条件
-zh,Payments,付款单
 zh,Payments,付款
+zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
 zh,People Assigned,指派人员
 zh,Period,周期
 zh,PhI Diff,调差
 zh,PhI Qty,调整
-zh,"Phone, Email, and Other","电话，邮箱等"
 zh,Phone,电话
+zh,Phone, Email, and Other,电话，邮箱等
 zh,Phys. Inv. ID,库存盘点ID
 zh,Physical Diff,库存差异
 zh,Physical Inventory,库存盘点
@@ -729,13 +864,13 @@ zh,Pools,仓库池
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Postal Code,邮编
+zh,Pre-Paid Percent,预付发票百分比
 zh,Pri,优先级
 zh,Price,价格
 zh,Price History,价格历史
 zh,Prices,价格
 zh,Priority,优先级
 zh,Product,产品
-zh,Products,产品
 zh,Product Class,产品分类
 zh,Product Count,产品数
 zh,Product ID,产品ID
@@ -745,13 +880,14 @@ zh,Product Owner,产品拥有人
 zh,Product Store,店铺
 zh,Product Store ID,店铺ID
 zh,Product Type,产品类型
-zh,ProductStoreTitle,店铺管理
 zh,Product*,产品*
+zh,ProductStoreTitle,店铺管理
 zh,ProductTitle,产品
+zh,Products,产品
 zh,Profile Url Path,客户资料URL
 zh,Project,项目
-zh,Projects,项目
 zh,ProjectTitle,项目管理
+zh,Projects,项目
 zh,Promo Code,促销代码
 zh,Promo Codes,促销代码
 zh,Promo Expires,促销过期日
@@ -759,6 +895,11 @@ zh,Promos,计算促销
 zh,Promotion,促销
 zh,Promotions,促销
 zh,Propose Quote,建议报价
+zh,Purchase Invoices,应付发票
+zh,Purchase Orders & Quotes,采购订单与报价
+zh,Purchase Requests,采购请求
+zh,Purchase Requests,采购请求
+zh,Purchase Shipments,采购运单
 zh,Purchase Item Type,采购明细类型
 zh,Purchase Orders,采购订单
 zh,Purchase Requests,采购请求
@@ -767,13 +908,11 @@ zh,Purchase Return Shipment List,采购退货出库单列表
 zh,Purchase Returns,采购退货
 zh,Purchase Shipment,采购入库单
 zh,Purchase Shipment List,采购入库单列表
-zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
-zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
-zh,Purchase <strong>Shipments</strong>,采购<strong>运单</strong>
 zh,PurchaseOrderTitle,采购管理
 zh,Purpose,用途
 zh,QOH,在手
 zh,QOH Diff,QOH变化
+zh,Qinghai,青海省
 zh,Qty,数量
 zh,Quantity,数量
 zh,Quantity Difference,数量差
@@ -789,15 +928,15 @@ zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
-zh,Receive,接收
 zh,Receivable,应收
+zh,Receivable Invoices,应收账单
 zh,Receivable Return Invoices,应收退货账单
-zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
+zh,Receive,接收
 zh,Receive Accepted,接收
+zh,Receive Direct,直接入库
 zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
 zh,Receive Product,接收产品
-zh,Receive Direct,直接入库
 zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Received Date,接收日期
 zh,Received From,入库开始日期
@@ -808,19 +947,19 @@ zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
 zh,Recurring,循环
-zh,Reject Quote Request,拒绝报价请求
 zh,Ref,参考
 zh,Ref/Check,参考
 zh,Registrations,注册
-zh,Rejected,拒绝
+zh,Reject Quote Request,拒绝报价请求
 zh,Rejected,拒收
 zh,Related,关联
 zh,Rem,剩余
 zh,Remaining,剩余
 zh,Remote,远端
+zh,Remove,移除
 zh,Remove All from Category,从分类移除产品
-zh,Remove from Load,移除设备
 zh,Remove Feature from All,移除产品特征
+zh,Remove from Load,移除设备
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
 zh,Rental Sales Return Shipment,借用归还入库单
@@ -829,8 +968,9 @@ zh,Rental Shipment,租赁出库单
 zh,Rental Shipment List,租赁出库单列表
 zh,Reorder Quantity,再订购数量
 zh,Repeat Count,重复次数
-zh,Reports,报表
+zh,Reply,回复
 zh,Report Builder,报表设计器
+zh,Reports,报表
 zh,ReportsTitle,报表
 zh,Request,审批
 zh,Request Date,审批日期
@@ -839,13 +979,14 @@ zh,Request List,审批列表
 zh,Request Name,审批名称
 zh,Request Status,审批状态
 zh,Request Type,审批类型
-zh,Requests,审批
 zh,RequestTitle,审批管理
+zh,Requests,审批
 zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
 zh,Require Password Change,要求修改密码
 zh,Required By Date,要求日期
+zh,Required parameter missing (${pi.name}),必填变量(${pi.name})缺失!
 zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
 zh,Reservation,预占
@@ -854,6 +995,7 @@ zh,Reservations,预留
 zh,Reserve Assets,预约资产
 zh,Reset Password,重置密码
 zh,Reset Pkg,重新装箱
+zh,Reset to Default,重置到默认
 zh,Resolution,解决
 zh,Response Required Date,答复日期
 zh,Ret Amount,退货数量
@@ -869,19 +1011,23 @@ zh,Returns,退货
 zh,Rev,版本
 zh,Revision,版本
 zh,Role,角色
-zh,Role,角色
 zh,Roles,角色
+zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
+zh,Sales Orders & Quotes,销售订单与报价
+zh,Sales Orders & Quotes,销售订单与报价
+zh,Sales Shipments,销售运单
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
 zh,Sales Channel,销售渠道
 zh,Sales Discontinue,下架日期
-zh,Sales Item Type,销售明细类型
 zh,Sales Intro,上架日期
+zh,Sales Item Type,销售明细类型
 zh,Sales Opportunity List,销售机会列表
 zh,Sales Order,销售订单
 zh,Sales Order List,订单列表
+zh,Sales Order Part 01,销售订单拆单01
 zh,Sales Orders,销售订单
 zh,Sales Return Shipment,销售退货入库单
 zh,Sales Return Shipment List,销售退货入库单列表
@@ -892,17 +1038,20 @@ zh,Sales Summary,销售统计
 zh,Sales Summary Charts,销售统计图表
 zh,SalesOpportunityTitle,销售机会
 zh,SalesOrderTitle,销售管理
-zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
-zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Salvage Value,残值
 zh,Save,保存
+zh,Save Columns,保存列
+zh,Save New Find,保存新的查找
+zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
-zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
+zh,Saving,保存中...
+zh,Scan Asset, Container, Location, Product,扫描资产，容器，位置，产品
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
-zh,Search or Lookup by ID,全文检索或查找ID
-zh,Search Results,查找结果
+zh,Search Any Field,检索任意字段
 zh,Search Products,搜索产品
+zh,Search Results,查找结果
+zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
 zh,Select,选择
 zh,Select Email,选择邮箱
@@ -913,10 +1062,9 @@ zh,Selectable Features,可选特征
 zh,Send,发送
 zh,Send Email,发邮件
 zh,Sent Date,发送日期
-zh,Set WH,设定仓库
 zh,Seq,顺序
-zh,Seq Num,顺序
 zh,Seq #,顺序
+zh,Seq Num,顺序
 zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serial Number,序列号
@@ -927,8 +1075,13 @@ zh,Set Picked,已拣货
 zh,Set Scheduled,已安排
 zh,Set Shipped,已发货
 zh,Set Shipping Address and Method,设置配送地址与方法
+zh,Set WH,设定仓库
 zh,Settings,设置
 zh,Settlement Ters,付款条款
+zh,Shaanxi,陕西省
+zh,Shandong,山东省
+zh,Shanghai,上海市
+zh,Shanxi,山西省
 zh,Ship After,指定日期后
 zh,Ship After Date,指定日期之后发货
 zh,Ship Before,指定日期前
@@ -947,20 +1100,22 @@ zh,Shipment Items,运单条目
 zh,Shipment Method,配送方式
 zh,Shipment Origin Address,发货地址
 zh,Shipment To Party,收货人
+zh,ShipmentTitle,出库入库
 zh,Shipments,运输
 zh,Shipments From,运单从
 zh,Shipments To,出库单
-zh,ShipmentTitle,出库入库
 zh,Shipped,已发送
 zh,Shipping,仓库作业
+zh,Shipping - Pick & Pack,运输 - 拣货与打包
+zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,Shipping Address,配送地址
 zh,Shipping Address and Method,配送地址与方法
 zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
-zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,ShippingTitle,拣货管理
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
+zh,Sichuan,四川省
 zh,Sign Req.,签名类型
 zh,Signature Required Type,需要签名类型
 zh,Size UOM,容量单位
@@ -979,35 +1134,46 @@ zh,Store,店铺
 zh,Store Domain,店铺域名
 zh,Stored At,存放
 zh,Stores,店铺
+zh,Subject,主题
 zh,Submit,提交
+zh,Summary Options,销售统计过滤器
 zh,Supplier,供应商
+zh,Supplier Payments,供应商付款单
 zh,Supplier Credit Memos,供应商信用凭证
 zh,Supplier Return Shipments,供应商退货入库单
-zh,Supplier <strong>Payments</strong>,供应商<strong>付款单</strong>
-zh,Suppliers,供应商
 zh,SupplierTitle,供应商管理
+zh,Suppliers,供应商
 zh,Survey,调查问卷
 zh,Surveys,调查问卷
 zh,System Email,系统邮箱
 zh,SystemTitle,系统管理
+zh,TX,账目
+zh,TX Entries,账目
+zh,Taiwan,台湾省
 zh,Task,任务
 zh,Task Name,任务名
 zh,Task Summary,任务概要
-zh,Tasks,任务
 zh,TaskTitle,任务
+zh,Tasks,任务
 zh,Tax Calc,计算税费
 zh,Tax Gateway,税费网关
 zh,Terminate Date,终止日期
+zh,Text,文本
 zh,Text Search,查询
 zh,Their Invoice,对方发票
 zh,Their Order,对方订单
 zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
+zh,This,当
+zh,Thread,线索
+zh,Thru,到
+zh,Thru Date,结束日期
+zh,Tianjin,天津市
 zh,Time,考勤
-zh,TimePeriodTitle,会计期间
 zh,Time Entries,工时记录
 zh,Time Periods,会计期间
 zh,Time Zone,时区
+zh,TimePeriodTitle,会计期间
 zh,Title,标题
 zh,To Address,收件人
 zh,To Addresses,收件人
@@ -1020,39 +1186,47 @@ zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
-zh,Transactions,会计凭证
 zh,Transaction Entries,凭证分录
+zh,Transactions,会计凭证
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
-zh,Thru Date,结束日期
-zh,TX,账目
-zh,TX Entries,账目
+zh,Type,类型
+zh,UOM,单位
+zh,UOM Dimensions,度量
+zh,URL,URL
 zh,Un-approve,撤销批准
 zh,Unapplied,未核销
-zh,Unpaid,未付
 zh,Unapplied Incoming Payments,未核销的收入款
 zh,Unapplied Outgoing Payments,未核销的支出款
 zh,Uncomplete Order,撤销订单完成
+zh,Unit,单位
+zh,Unpaid,未付
 zh,Unpaid Payables,未支付的应付款
 zh,Unpaid Receivables,未支付的应收款
-zh,Unit,单位
-zh,UOM Dimensions,度量
-zh,Update Cost &amp; Owner,更新费用与拥有者
+zh,Update,更新
+zh,Update Cost & Owner,更新费用与拥有者
 zh,Update Header,更新订单头
 zh,Update Order,修改订单
 zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
+zh,Update to Current,更新到当前
 zh,Upload Content,上传内容
-zh,URL,URL
 zh,Use Find Options to search for orders and when you have the set you want use the form to create picklists.,使用查询选项查找订单，然后创建拣货单。
 zh,User,用户
+zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用户${principalCollection.primaryPrincipal}不属于${roleName}角色
+zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
 zh,Username,用户名
+zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Validate,验证
 zh,Validate Address,验证地址
 zh,Value,值
+zh,Value [${pv}] is not a decimal number.,值 [${pv}] 不是一个数字
+zh,Value [${pv}] is not a whole (integer) number.,值 [${pv}] 不是一个整数
+zh,Value entered (${parameterValue}) failed ${valNode.name} validation: ${t.message},${valNode.name} 输入的 ${parameterValue} 有错误：${t.message}
+zh,Value entered ({0}) could not be converted to a {1}{2,choice,0#|1# using format [}{3}{2,choice,0#|1#]},值 ({0}) 不能{2,choice,0#|1# 按照格式 [}{3}{2,choice,0#|1#]}{3}{2,choice,0#|1#]}转化为{1}
 zh,Variance Reason,差异原因
 zh,Vendor,供应商
 zh,Vendor Org,客户
@@ -1060,10 +1234,22 @@ zh,Vendor Warehouse,供应商仓库
 zh,View Old,旧联系方式
 zh,Warehouse,仓库
 zh,Was Stored At,原存放
+zh,Week,周
 zh,Wiki,维基
 zh,Wiki Pages,维基页面
 zh,Wiki Space ID,维基空间ID
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
+zh,Wrote ${curValuesWritten} records to file ${filename},已把${curValuesWritten}记录写进了文件${filename}
+zh,Wrote ${valuesWritten} documents to file ${filename},已把${valuesWritten}文档写进了文件${filename}
+zh,Wrote ${valuesWritten} records to file ${filename},已把${valuesWritten}记录写进了文件${filename}
+zh,Xinjiang,新疆维吾尔自治区
+zh,Xizang,西藏自治区
+zh,Year,年
 zh,Year Begin Depreciation,折旧开始年份
+zh,You must change your password before login.,登录前必须先修改密码
+zh,Yunnan,云南省
 zh,Zero Quantity,零数量
+zh,Zhejiang,浙江省
+zh,at ${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')},时间：${ec.l10n.format(commEvent?.entryDate, 'yyyy-MM-dd HH:mm')}
+zh,to ${ec.resource.expand('PartyNameTemplate','',toParty)},收信人：${ec.resource.expand('PartyNameTemplate','',toParty)}
