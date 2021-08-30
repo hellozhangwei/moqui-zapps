@@ -7,6 +7,7 @@ zh,Account Detail,账号详情
 zh,Accounting,会计
 zh,AccountingDashboardTitle,仪表盘
 zh,AccountingTitle,财务管理
+zh,Active Warehouse,当前仓库
 zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
 zh,Acquired Date,采购日期
@@ -143,6 +144,7 @@ zh,Budgets,预算
 zh,BudgetsTitle,预算
 zh,Bulk Create Picklists,批量新建拣货单
 zh,Bulk Cost Update,批量更新成本
+zh,Calc Price,计算的价格
 zh,Calendar,日历
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Shipment,取消运单
@@ -183,6 +185,7 @@ zh,Closed,关闭
 zh,Clone Product,克隆产品
 zh,Code Expires,代码过期日
 zh,Columns,列
+zh,Column Fields,列字段
 zh,Comments,评论
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
@@ -294,6 +297,7 @@ zh,DashboardWikiContent,Wiki/Content
 zh,DashboardWikiContent,Wiki内容
 zh,Data Source,数据源
 zh,Date,日期
+zh,Date Moved,移动日期
 zh,Days To Ship,发货天数
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
@@ -396,6 +400,7 @@ zh,Find Party,参与者查询
 zh,Find Payment,付款单查询
 zh,Find Physical Inventory,库存盘点查询
 zh,Find Product,产品查询
+zh,Find Product Store,店铺查询
 zh,Find Request,审批查询
 zh,Find Summary,摘要查询
 zh,Find Supplier,供应商查询
@@ -410,11 +415,14 @@ zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
 zh,From,开始
+zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
 zh,Gateway,网关
+zh,Gateways,网关
 zh,Gateway Config,网关配置
+zh,Gateway Type,网关类型
 zh,General Ledger,总账
 zh,Gift Message,礼物留言
 zh,GlAccountTitle,总账会计
@@ -484,6 +492,7 @@ zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
 zh,Link,链接
+zh,List,列表
 zh,List Price,列表价
 zh,Loc Type,位置类型
 zh,Locale,地区
@@ -491,6 +500,7 @@ zh,Location,位置
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Longitude,经度
+zh,Lookup Asset,查找资产
 zh,Lookup by ID,按ID查找
 zh,Lot,批次
 zh,Lots,批次
@@ -556,6 +566,7 @@ zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
 zh,New Outgoing Shipment,新建出库单
 zh,New Payment for Invoice,新付款单
+zh,New Payment Gateway,新支付网关
 zh,New Person,新个人
 zh,New Person Customer,新建个人客户
 zh,New Person Supplier,新个人供应商
@@ -574,6 +585,7 @@ zh,New Sales Opportunity,新销售机会
 zh,New Sales Order,新销售订单
 zh,New Sales Return Shipment,新销售退货入库单
 zh,New Sales Shipment,新销售出库单
+zh,New Shipping Gateway,新运输网关
 zh,New Store,新店铺
 zh,New Store Promotion,新促销
 zh,New Task,新任务
@@ -784,6 +796,8 @@ zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Received Date,接收日期
 zh,Received From,入库开始日期
 zh,Received Thru,入库截止日期
+zh,Recent Asset Moves,最近移动的资产
+zh,Recent Container Moves,最近移动的容器
 zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
@@ -877,11 +891,13 @@ zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Salvage Value,残值
 zh,Save,保存
 zh,Saved Finds,保存的查询
+zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
 zh,Search,查找
 zh,Search Results,查找结果
 zh,Scheduled Maintenance,维护计划
 zh,Search Products,搜索产品
 zh,SearchProductsTitle,批处理
+zh,Select,选择
 zh,Select Email,选择邮箱
 zh,Select Find,选择查询
 zh,Select Phone,选择电话
@@ -890,6 +906,7 @@ zh,Selectable Features,可选特征
 zh,Send,发送
 zh,Send Email,发邮件
 zh,Sent Date,发送日期
+zh,Set WH,设定仓库
 zh,Seq,顺序
 zh,Seq Num,顺序
 zh,Seq #,顺序
@@ -986,6 +1003,8 @@ zh,Time Zone,时区
 zh,Title,标题
 zh,To Address,收件人
 zh,To Addresses,收件人
+zh,To Container,目的容器
+zh,To Location,目的位置
 zh,To Name,收件人
 zh,To Party,到
 zh,Total,合计
@@ -1019,6 +1038,7 @@ zh,Update Quantity,修改数量
 zh,Update User,更新用户
 zh,Upload Content,上传内容
 zh,URL,URL
+zh,Use Find Options to search for orders and when you have the set you want use the form to create picklists.,使用查询选项查找订单，然后创建拣货单。
 zh,User,用户
 zh,User Account,用户账号
 zh,Username,用户名
