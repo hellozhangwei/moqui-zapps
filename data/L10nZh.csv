@@ -126,6 +126,7 @@ zh,Audit Log,审计日志
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Reservation,自动预约
+zh,Auto Res.,自动预约
 zh,Auto Set,自动设置
 zh,Available,可用
 zh,Balance,余额
@@ -359,6 +360,8 @@ zh,Estimated Amount,预估金额
 zh,Estimated Arrival Date,预估到达
 zh,Estimated Hours,评估小时
 zh,Estimated Ready Date,预估备好
+zh,Estimated Delivery,预计送达时间
+zh,Estimated Ship,预计发货时间
 zh,Expected End Of Life,预计报废日期
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
@@ -591,11 +594,13 @@ zh,New Store Promotion,新促销
 zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
 zh,Next,下一步
+zh,No Customer Selected,未选择客户
 zh,No Location,没有位置
 zh,No origin shipping address selected,没有选择配送地址
 zh,No results found,没有数据
 zh,No shipment method selected,没有设置配送方法
 zh,No shipping address selected,没有设置配送地址
+zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
 zh,Not Avail,不可用
 zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
@@ -689,6 +694,7 @@ zh,Payment Applications,核销
 zh,Payment Gateways,支付网关
 zh,Payment Information,付款信息
 zh,Payment Methods,付款方式
+zh,Payment Terms,付款条件
 zh,Payments,付款单
 zh,Payments,付款
 zh,People,人员
@@ -892,9 +898,10 @@ zh,Salvage Value,残值
 zh,Save,保存
 zh,Saved Finds,保存的查询
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
-zh,Search,查找
-zh,Search Results,查找结果
 zh,Scheduled Maintenance,维护计划
+zh,Search,查找
+zh,Search or Lookup by ID,全文检索或查找ID
+zh,Search Results,查找结果
 zh,Search Products,搜索产品
 zh,SearchProductsTitle,批处理
 zh,Select,选择
@@ -993,7 +1000,8 @@ zh,Tax Gateway,税费网关
 zh,Terminate Date,终止日期
 zh,Text Search,查询
 zh,Their Invoice,对方发票
-zh,Their Order,第三方订单
+zh,Their Order,对方订单
+zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
 zh,Time,考勤
 zh,TimePeriodTitle,会计期间
