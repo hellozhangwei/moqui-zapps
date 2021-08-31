@@ -348,6 +348,7 @@ zh,Drop Shipment,直运出库单
 zh,Drop Shipment List,直运出库单列表
 zh,Due,截止日期
 zh,Due Date,截止日期
+zh,"Duplicates found (by ${party.hasDuplicates == 'Y' ? 'address/name, phone/name, ' : ''}identification, email, or birth date and name)","发现重复记录，请检查地址/姓名，电话/姓名，唯一标识，邮件，生日和姓名。"
 zh,Dups,重复
 zh,Edit,编辑
 zh,Edit Asset,编辑资产
