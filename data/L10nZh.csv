@@ -146,6 +146,7 @@ zh,Authenticate failed for user ${newUserAccount.username} because password was 
 zh,Authenticate failed for user [${newUserAccount.username}] because account requires password change [PWDCHG].,账号${newUserAccount.username}需修改密码。
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
+zh,Auto Payments Term,付款条款
 zh,Auto Res.,自动预约
 zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
@@ -731,6 +732,8 @@ zh,Operation,操作
 zh,Opportunity ID,机会ID
 zh,Opportunity Name,机会名称
 zh,Opportunity Stage ID,机会阶段
+zh,OR Customer Account,或客户金融账户
+zh,OR Instrument,或支付工具
 zh,Order,订单
 zh,Order By,排序
 zh,Order Count,订单数量
@@ -844,8 +847,10 @@ zh,Payment Applications,核销
 zh,Payment Gateway,支付网关
 zh,Payment Gateways,支付网关
 zh,Payment Information,付款信息
+zh,Payment Method,付款方式
 zh,Payment Methods,付款方式
 zh,Payment Terms,付款条件
+zh,Payment Type,支付类型
 zh,Payments,付款
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
