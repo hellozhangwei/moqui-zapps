@@ -9,7 +9,10 @@ zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
 zh,Accepted,接收
 zh,Account,账户
+zh,Account #,账户卡号
 zh,Account Detail,账号详情
+zh,Account Name,账户名称
+zh,Account Owner,账户拥有者
 zh,Account with username ${username} does not have an email address,用户名为${username}的账号没有设置电子邮箱
 zh,Accounting,会计
 zh,AccountingDashboardTitle,仪表盘
@@ -63,6 +66,7 @@ zh,Add Planned Maintenance,添加维护计划
 zh,Add Product,添加产品
 zh,Add Product Item,添加产品条目
 zh,Add Promo Code,添加促销代码
+zh,Add Purpose,添加用途
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
@@ -75,6 +79,7 @@ zh,Add to Picklist,添加到拣货单
 zh,Add to Sales Account,添加
 zh,Address 1,地址1
 zh,Address 2,地址2
+zh,Address Purpose,地址用途
 zh,Address Trust,地址信任
 zh,Address1,地址1
 zh,Aging,账龄
@@ -147,6 +152,7 @@ zh,Auto Set,自动设置
 zh,Available,可用
 zh,Balance,余额
 zh,Bank Accounts,银行账户
+zh,Bank Name,银行名称
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
 zh,Begins With,以...开始
 zh,Beijing,北京市
@@ -171,6 +177,7 @@ zh,Can only create initial admin account if there are no UserAccount records,仅
 zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Shipment,取消运单
+zh,Card Number,卡号
 zh,Carrier,承运人
 zh,Carrier Party,承运人
 zh,Carrier Ship Methods,配送方法
@@ -214,6 +221,7 @@ zh,Column,列
 zh,Column Fields,列字段
 zh,Columns,列
 zh,Comments,评论
+zh,Company Name On Account,账户公司名称
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Consumable Shipment,领用出库单
@@ -225,6 +233,8 @@ zh,Containers,容器
 zh,Contains,包含
 zh,Content,内容
 zh,Content List,内容列表
+zh,Content Type,内容类型
+zh,Content File,内容附件
 zh,Content:,内容:
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
@@ -353,6 +363,7 @@ zh,Dups,重复
 zh,Edit,编辑
 zh,Edit Asset,编辑资产
 zh,Edit Attachment,编辑附件
+zh,Edit Content,编辑内容
 zh,Edit Equipment,编辑设备
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
@@ -397,6 +408,7 @@ zh,Expiration,过期时间
 zh,Expire Date,过期时间
 zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
 zh,Export Text,导出文本
+zh,Extension,扩展
 zh,External ID,外部ID
 zh,Facilities,设施
 zh,Facility,设施
@@ -619,8 +631,10 @@ zh,My Account,个人中心
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,Name,名称
+zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
 zh,Need Qty,需要数量
+zh,New Address,新地址
 zh,New Category,新分类
 zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
@@ -652,6 +666,7 @@ zh,New Payment for Invoice,新付款单
 zh,New Person,新个人
 zh,New Person Customer,新建个人客户
 zh,New Person Supplier,新个人供应商
+zh,New Phone,新电话
 zh,New Picklist,新拣货单
 zh,New Price,新价格
 zh,New Product,新建产品
@@ -826,6 +841,7 @@ zh,Payable Invoices,应付发票
 zh,Payable Return Invoices,应付退货账单
 zh,Payment,付款单
 zh,Payment Applications,核销
+zh,Payment Gateway,支付网关
 zh,Payment Gateways,支付网关
 zh,Payment Information,付款信息
 zh,Payment Methods,付款方式
@@ -1012,6 +1028,7 @@ zh,Rev,版本
 zh,Revision,版本
 zh,Role,角色
 zh,Roles,角色
+zh,Routing #,路由号码
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
 zh,Sales Orders & Quotes,销售订单与报价
@@ -1054,6 +1071,7 @@ zh,Search Results,查找结果
 zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
 zh,Select,选择
+zh,Select Address,选择地址
 zh,Select Email,选择邮箱
 zh,Select Find,选择查询
 zh,Select Phone,选择电话
@@ -1211,6 +1229,7 @@ zh,Update Order,修改订单
 zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
 zh,Update Person,更新个人
+zh,Update Purpose,更新用途
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
 zh,Update to Current,更新到当前
