@@ -79,6 +79,8 @@ zh,Add To Product,添加到产品
 zh,Add To Request,添加到审批
 zh,Add UOM Dimension,添加度量
 zh,Add to Category,添加到分类
+zh,Add to Group,添加组
+zh,Add to Organization,添加组织
 zh,Add to Package,装入
 zh,Add to Picklist,添加到拣货单
 zh,Add to Sales Account,添加
@@ -557,6 +559,7 @@ zh,Insurance Threshold,保险免赔额
 zh,Internal,内部
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
+zh,Internal Organization Relationships,内部组织关系
 zh,Interval Meter,间隔读数
 zh,Interval Quantity,间隔数量
 zh,Inventory,库存
@@ -1094,6 +1097,7 @@ zh,Roles,角色
 zh,Routing #,路由号码
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
+zh,Sales Account,客户
 zh,Sales Orders & Quotes,销售订单与报价
 zh,Sales Orders & Quotes,销售订单与报价
 zh,Sales Shipments,销售运单
@@ -1133,6 +1137,7 @@ zh,Search Products,搜索产品
 zh,Search Results,查找结果
 zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
+zh,Security Groups,安全组
 zh,Select,选择
 zh,Select Address,选择地址
 zh,Select Email,选择邮箱
