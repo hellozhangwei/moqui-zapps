@@ -198,6 +198,8 @@ zh,Can only create initial admin account if there are no UserAccount records,仅
 zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Shipment,取消运单
+zh,Capacity,容量
+zh,Capacity UOM,容量单位
 zh,Card Number,卡号
 zh,Carrier,承运人
 zh,Carrier Party,承运人
@@ -615,6 +617,7 @@ zh,Lend Return Shipment,借用归还入库单
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
+zh,Level,层
 zh,Liaoning,辽宁省
 zh,Like,Like
 zh,Line Characters,行字符
@@ -846,6 +849,7 @@ zh,Owner Org,拥有者
 zh,Owner Party,拥有者
 zh,PDF,PDF
 zh,POP Commerce Admin,POP Commerce管理
+zh,Position,位置
 zh,Pack,打包
 zh,Pack Date,装箱日期
 zh,Pack Item,打包条目
@@ -1137,6 +1141,7 @@ zh,Search Products,搜索产品
 zh,Search Results,查找结果
 zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
+zh,Section,截面
 zh,Security Groups,安全组
 zh,Select,选择
 zh,Select Address,选择地址
