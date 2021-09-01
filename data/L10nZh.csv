@@ -2,6 +2,7 @@ moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
+zh,"${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId}","${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}"
 zh,(Asc),(升)
 zh,(Desc),(降)
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
@@ -394,6 +395,7 @@ zh,Edit Content,编辑内容
 zh,Edit Equipment,编辑设备
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
+zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
 zh,Edit Physical Inventory,编辑库存盘点
 zh,Edit Shipment,编辑运单
 zh,Effective Date,生效日
@@ -465,6 +467,7 @@ zh,"File ${filename} already exists, skipping entity ${en}.","文件 ${filename}
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
+zh,"Financial Summary for ${ec.resource.expand('PartyNameTemplate', null, partyDetail)}","财务摘要${ec.resource.expand('PartyNameTemplate', null, partyDetail)}"
 zh,FinancialAccountTitle,金融账户
 zh,Find,查找
 zh,Find Accounts,查找账户
@@ -574,6 +577,7 @@ zh,Invoice Time,工时账单
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
 zh,Invoices From,账单从
+zh,Invoices From (${fromInvoiceCount}),账单从(${fromInvoiceCount})
 zh,Invoices Total,发票总额
 zh,Invoices and Payments,账单与付款单
 zh,Is Gift,礼物
@@ -772,6 +776,7 @@ zh,Opportunity Stage ID,机会阶段
 zh,OR Customer Account,或客户金融账户
 zh,OR Instrument,或支付工具
 zh,Order,订单
+zh,Order #${orderId},订单#${orderId}
 zh,Order By,排序
 zh,Order Count,订单数量
 zh,Order Detail,订单详情
@@ -1051,6 +1056,7 @@ zh,Request Status,审批状态
 zh,Request Type,审批类型
 zh,RequestTitle,审批管理
 zh,Requests,审批
+zh,Requests (${requestCount}),审批(${requestCount})
 zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
@@ -1332,6 +1338,7 @@ zh,Wrote ${valuesWritten} documents to file ${filename},已把${valuesWritten}�
 zh,Wrote ${valuesWritten} records to file ${filename},已把${valuesWritten}记录写进了文件${filename}
 zh,Xinjiang,新疆维吾尔自治区
 zh,Xizang,西藏自治区
+zh,XLS Export,XLS倒出
 zh,Year,年
 zh,Year Begin Depreciation,折旧开始年份
 zh,You must change your password before login.,登录前必须先修改密码
