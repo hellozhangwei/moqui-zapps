@@ -65,13 +65,17 @@ zh,Add Person,添加人员
 zh,Add Planned Maintenance,添加维护计划
 zh,Add Product,添加产品
 zh,Add Product Item,添加产品条目
+zh,Add Project Assignment,添加项目指派
 zh,Add Promo Code,添加促销代码
 zh,Add Purpose,添加用途
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
+zh,Add Task Assignment,添加任务指派
+zh,Add Time Entry,添加工时记录
 zh,Add To Feature Group,添加到特征组
 zh,Add To Product,添加到产品
+zh,Add To Request,添加到审批
 zh,Add UOM Dimension,添加度量
 zh,Add to Category,添加到分类
 zh,Add to Package,装入
@@ -83,10 +87,18 @@ zh,Address Purpose,地址用途
 zh,Address Trust,地址信任
 zh,Address1,地址1
 zh,Aging,账龄
+zh,Agreement Date,合同日期
+zh,Agreement ID,合同ID
 zh,AgreementTitle,合同管理
 zh,Agreements,合同
 zh,Aisle,通道
+zh,All Incoming Payments,全部收入款
+zh,All Outgoing Payments,全部支出款
+zh,All Sales Orders,全部销售订单
 zh,All Parties,全部参与人
+zh,All Payable Invoices,全部应付账单
+zh,All Purchase Orders,全部采购订单
+zh,All Receivable Invoices,全部应收账单
 zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
@@ -150,6 +162,7 @@ zh,Auto Payments Term,付款条款
 zh,Auto Res.,自动预约
 zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
+zh,Auto Update Rates,自动更新单价
 zh,Available,可用
 zh,Balance,余额
 zh,Bank Accounts,银行账户
@@ -164,8 +177,12 @@ zh,Billing Zip,邮编
 zh,Birth Date,预算详情
 zh,Black,黑
 zh,Blogs,博客
+zh,Booked Payable Invoices,登记的应付账单
+zh,Booked Receivable Invoices,登记的应收账单
 zh,Box,箱子
 zh,Box Types,包装箱类型
+zh,Break,休息
+zh,Break Hours,休息小时数
 zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
@@ -208,6 +225,11 @@ zh,Classifications,类型
 zh,Clear Current Find,清空当前查找
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
+zh,Client Hour Calc,客户小时计算
+zh,Client Hour Rate,客户小时单价
+zh,Client Invoice,客户账单
+zh,Client Piece Calc,客户计件计算
+zh,Client Piece Rate,客户计件单价
 zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
@@ -223,6 +245,8 @@ zh,Column Fields,列字段
 zh,Columns,列
 zh,Comments,评论
 zh,Company Name On Account,账户公司名称
+zh,Completed Sales Orders,已完成的销售订单
+zh,Completed Purchase Orders,已完成的采购订单
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Consumable Shipment,领用出库单
@@ -257,6 +281,8 @@ zh,Create Sales Order,创建销售订单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
+zh,Cur Total,当前合计
+zh,Cur Qty,当前数量
 zh,Currency,币种
 zh,Current,当前
 zh,Current PDF,当前PDF
@@ -381,11 +407,13 @@ zh,EmailServer [${emailServerId}] has no storeHost,EmailServer [${emailServerId}
 zh,Emails,邮件
 zh,Employee Rates,员工报价
 zh,Employees,员工
+zh,Employer,员工
 zh,Empty,为空
 zh,Enable Account,启用账号
 zh,Enter Setting,新建
 zh,Entry,登记
 zh,Entry Date,创建日期
+zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
 zh,Equals,等于
 zh,Equipment,设备
 zh,Error parsing JSON-RPC response for service [${serviceName ?: method}]: ${t.toString()},解析服务[${serviceName ?: method}]的JSON-RPC返回结果错误 : ${t.toString()}
@@ -404,9 +432,11 @@ zh,Estimated Ready Date,预估备好
 zh,Estimated Ship,预计发货时间
 zh,Example,样例
 zh,Example Feature,样例特征
+zh,Existing Invoice,存在的账单
 zh,Expected End Of Life,预计报废日期
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
+zh,Expectation,期望
 zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
 zh,Export Text,导出文本
 zh,Extension,扩展
@@ -475,6 +505,7 @@ zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
+zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,Fujian,福建省
 zh,GL Accounts,总账会计
@@ -503,6 +534,7 @@ zh,Heilongjiang,黑龙江省
 zh,Henan,河南省
 zh,Hold,暂停
 zh,HongKong,香港特别行政区
+zh,Hours,小时数
 zh,Hubei,湖北省
 zh,Human Res,人力资源
 zh,Human Resources,人力资源
@@ -538,6 +570,7 @@ zh,Invoice Discount Percent,发票折扣百分比
 zh,Invoice ID,账单ID
 zh,Invoice Item,发票条目
 zh,Invoice Message,账单消息
+zh,Invoice Time,工时账单
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
 zh,Invoices From,账单从
@@ -621,6 +654,7 @@ zh,Milestone,里程碑
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
+zh,Mod,修改
 zh,Month,月
 zh,Move,移动
 zh,Move Asset,移动资产
@@ -631,11 +665,13 @@ zh,Move Qty,移动数量
 zh,My Account,个人中心
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,Notifs?,接收通知？
 zh,Name,名称
 zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
 zh,Need Qty,需要数量
 zh,New Address,新地址
+zh,New Agreement,新合同
 zh,New Category,新分类
 zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
@@ -677,6 +713,7 @@ zh,New Registration,新注册
 zh,New Rental Return Shipment,新租赁归还入库单
 zh,New Rental Shipment,新租赁出库单
 zh,New Request,新审批
+zh,New Relationship,新关系
 zh,New Sales Account,新建客户
 zh,New Sales Contact,新建联系人
 zh,New Sales Opportunity,新销售机会
@@ -830,6 +867,7 @@ zh,Part Status,拆单状态
 zh,Part Total,拆单总额
 zh,Parties,参与者
 zh,Party,参与者
+zh,"Party has no user accounts and no email address, cannot search for email messages",参与者没有账号或者邮件地址，找不到邮件消息。
 zh,Party ID,参与者ID
 zh,Password incorrect for username ${username},用户名或者密码错误。${username}
 zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
@@ -867,6 +905,8 @@ zh,Physical Inventory Date,库存盘点日期
 zh,Physical Inventory Difference,库存差异
 zh,Physical Inventory ID,库存盘点ID
 zh,PhysicalInventoryTitle,盘点记录
+zh,Piece Count,计件
+zh,Piece Rate Type,计件单价类型
 zh,Pick,拣出
 zh,Pick Bin #,拣货箱#
 zh,Pick Container,拣货箱
@@ -882,6 +922,7 @@ zh,Placed,下定时间
 zh,Placed Date,下定日期
 zh,Pool,池
 zh,Pools,仓库池
+zh,Position Class,职位
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Postal Code,邮编
@@ -916,6 +957,7 @@ zh,Promos,计算促销
 zh,Promotion,促销
 zh,Promotions,促销
 zh,Propose Quote,建议报价
+zh,Pseudo ID,伪ID
 zh,Purchase Invoices,应付发票
 zh,Purchase Orders & Quotes,采购订单与报价
 zh,Purchase Requests,采购请求
@@ -931,6 +973,7 @@ zh,Purchase Shipment,采购入库单
 zh,Purchase Shipment List,采购入库单列表
 zh,PurchaseOrderTitle,采购管理
 zh,Purpose,用途
+zh,Purposes,用途
 zh,QOH,在手
 zh,QOH Diff,QOH变化
 zh,Qinghai,青海省
@@ -947,6 +990,9 @@ zh,Quick Add Items,创建账单
 zh,Quick Items,快速条目
 zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
+zh,Rate Type,单价类型
+zh,Rates,单价
+zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
 zh,Receivable,应收
@@ -961,12 +1007,15 @@ zh,Receive Product,接收产品
 zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Received Date,接收日期
 zh,Received From,入库开始日期
+zh,Received Incoming Payments,已收到的收入付款
+zh,Received Outgoing Payments,已收到的支出付款
 zh,Received Thru,入库截止日期
 zh,Recent Asset Moves,最近移动的资产
 zh,Recent Container Moves,最近移动的容器
 zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
+zh,Record Time,记录时间
 zh,Recurring,循环
 zh,Ref,参考
 zh,Ref/Check,参考
@@ -1084,6 +1133,7 @@ zh,Select Setting,选择
 zh,Selectable Features,可选特征
 zh,Send,发送
 zh,Send Email,发邮件
+zh,Send Message,发消息
 zh,Sent Date,发送日期
 zh,Seq,顺序
 zh,Seq #,顺序
@@ -1098,6 +1148,7 @@ zh,Set Picked,已拣货
 zh,Set Scheduled,已安排
 zh,Set Shipped,已发货
 zh,Set Shipping Address and Method,设置配送地址与方法
+zh,Set Quantities,设定数量
 zh,Set WH,设定仓库
 zh,Settings,设置
 zh,Settlement Ters,付款条款
@@ -1198,12 +1249,14 @@ zh,Time Periods,会计期间
 zh,Time Zone,时区
 zh,TimePeriodTitle,会计期间
 zh,Title,标题
+zh,To,到
 zh,To Address,收件人
 zh,To Addresses,收件人
 zh,To Container,目的容器
 zh,To Location,目的位置
 zh,To Name,收件人
 zh,To Party,到
+zh,To Role,到角色
 zh,Total,合计
 zh,Track Status,追踪状态
 zh,Tracking,追踪
@@ -1247,6 +1300,8 @@ zh,User Account,用户账号
 zh,Username,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Validate,验证
+zh,Valid From,生效日期
+zh,Valid Thru,终止日期
 zh,Validate Address,验证地址
 zh,Value,值
 zh,Value [${pv}] is not a decimal number.,值 [${pv}] 不是一个数字
@@ -1266,6 +1321,12 @@ zh,Wiki Pages,维基页面
 zh,Wiki Space ID,维基空间ID
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
+zh,Worker Hour Calc,工人小时计算
+zh,Worker Hour Rate,工人小时单价
+zh,Worker Invoice,工人账单
+zh,Worker Piece Calc,工人计件计算
+zh,Worker Piece Rate,工人计件单价
+zh,Work Type,工作类型
 zh,Wrote ${curValuesWritten} records to file ${filename},已把${curValuesWritten}记录写进了文件${filename}
 zh,Wrote ${valuesWritten} documents to file ${filename},已把${valuesWritten}文档写进了文件${filename}
 zh,Wrote ${valuesWritten} records to file ${filename},已把${valuesWritten}记录写进了文件${filename}
