@@ -191,7 +191,6 @@ zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Child Tasks,子任务
 zh,Children,子
-zh,China,中国
 zh,Chongqing,重庆市
 zh,City,城市
 zh,City/Zip,城市/邮编
@@ -270,6 +269,7 @@ zh,Customer ID,客户ID
 zh,Customer Info,客户信息
 zh,Customer List,客户列表
 zh,Customer Name,客户名称
+zh,Customer Notes,客户备注
 zh,Customer Org,客户
 zh,Customer Payments,客户付款单
 zh,Customer Requests,客户请求
@@ -1203,6 +1203,7 @@ zh,Unpaid,未付
 zh,Unpaid Payables,未支付的应付款
 zh,Unpaid Receivables,未支付的应收款
 zh,Update,更新
+zh,Update Address,更新
 zh,Update Cost & Owner,更新费用与拥有者
 zh,Update Header,更新订单头
 zh,Update Order,修改订单
