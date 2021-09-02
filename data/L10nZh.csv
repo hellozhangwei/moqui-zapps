@@ -515,7 +515,7 @@ zh,From Location,仓位
 zh,From Party,从
 zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
-zh,Full search string: ${queryString?:''},全部查询字符串：${queryString?:''}
+zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryString?:''}"
 zh,Fujian,福建省
 zh,GL Accounts,总账会计
 zh,GL Journals,总账日记账
