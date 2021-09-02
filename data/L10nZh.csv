@@ -505,6 +505,7 @@ zh,Fixed Asset Detail,固定资产详情
 zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,Force Close,强制关闭
+zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction","资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证"
 zh,Found issues with password so not updating,密码有问题，没有更新
 zh,From,开始
 zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},",发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)}
@@ -514,6 +515,7 @@ zh,From Location,仓位
 zh,From Party,从
 zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
+zh,Full search string: ${queryString?:''},全部查询字符串：${queryString?:''}
 zh,Fujian,福建省
 zh,GL Accounts,总账会计
 zh,GL Journals,总账日记账
@@ -666,6 +668,7 @@ zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
 zh,Mod,修改
 zh,Month,月
+zh,More,更多
 zh,Move,移动
 zh,Move Asset,移动资产
 zh,Move Assets,移动资产
@@ -1000,6 +1003,7 @@ zh,Quantity*,数量*
 zh,Quarantine,检疫区
 zh,Quick Add Items,创建账单
 zh,Quick Items,快速条目
+zh,Quick Lookup,快速查找
 zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
 zh,Rate Type,单价类型
@@ -1136,6 +1140,7 @@ zh,Saving,保存中...
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
+zh,Search + Lookup by ID,全文检索+ID查询
 zh,Search Any Field,检索任意字段
 zh,Search Products,搜索产品
 zh,Search Results,查找结果
