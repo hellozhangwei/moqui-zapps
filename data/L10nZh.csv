@@ -302,7 +302,7 @@ zh,Current password incorrect for user ${username},当前用户${username}密码
 zh,Custom Reports,定制报表
 zh,Customer,客户
 zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
-zh,Customer Payments,客户付款单
+zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
 zh,Customer Requests,客户请求
 zh,Customer Requests;,客户<strong>请求</strong>
 zh,Customer Class,客户类型
@@ -898,7 +898,7 @@ zh,Password was used in last ${historyLimit} passwords,密码已在前${historyL
 zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
 zh,Path ${path} is not a directory.,路径${path}必须是个目录
 zh,Payable,应付
-zh,Payable Invoices,应付发票
+zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,Payable Return Invoices,应付退货账单
 zh,Payment,付款单
 zh,Payment Applications,核销
@@ -979,10 +979,10 @@ zh,Promotions,促销
 zh,Propose Quote,建议报价
 zh,Pseudo ID,伪ID
 zh,Purchase Invoices,应付发票
-zh,Purchase Orders & Quotes,采购订单与报价
+zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
 zh,Purchase Requests,采购请求
 zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
-zh,Purchase Shipments,采购运单
+zh,Purchase <strong>Shipments</strong>,采购<strong>运单</strong>
 zh,Purchase Item Type,采购明细类型
 zh,Purchase Orders,采购订单
 zh,Purchase Requests,采购请求
@@ -1017,7 +1017,7 @@ zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
 zh,Receivable,应收
-zh,Receivable Invoices,应收账单
+zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
 zh,Receivable Return Invoices,应收退货账单
 zh,Receive,接收
 zh,Receive Accepted,接收
@@ -1111,9 +1111,9 @@ zh,Routing #,路由号码
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
 zh,Sales Account,客户
+zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
 zh,Sales Orders & Quotes,销售订单与报价
-zh,Sales Orders & Quotes,销售订单与报价
-zh,Sales Shipments,销售运单
+zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
@@ -1242,7 +1242,7 @@ zh,Subject,主题
 zh,Submit,提交
 zh,Summary Options,销售统计过滤器
 zh,Supplier,供应商
-zh,Supplier Payments,供应商付款单
+zh,Supplier <strong>Payments</strong>,供应商<strong>付款单</strong>
 zh,Supplier Credit Memos,供应商信用凭证
 zh,Supplier Return Shipments,供应商退货入库单
 zh,SupplierTitle,供应商管理
