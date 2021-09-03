@@ -31,6 +31,7 @@ zh,Actual Complete,实际完成
 zh,Actual Start,实际开始
 zh,Add,添加
 zh,Add Address,添加邮寄地址
+zh,Add Adjustment Item,添加调整条目
 zh,Add All to Category,添加产品到分类
 zh,Add Asset,添加资产
 zh,Add Assoc,添加关联
@@ -95,6 +96,8 @@ zh,Address 2,地址2
 zh,Address Purpose,地址用途
 zh,Address Trust,地址信任
 zh,Address1,地址1
+zh,Adjust Item,调整条目
+zh,Adjust Invoice,调整账单
 zh,Aging,账龄
 zh,Agreement Date,合同日期
 zh,Agreement ID,合同ID
@@ -1242,7 +1245,7 @@ zh,Set Shipping Address and Method,设置配送地址与方法
 zh,Set Quantities,设定数量
 zh,Set WH,设定仓库
 zh,Settings,设置
-zh,Settlement Ters,付款条款
+zh,Settlement Term,付款条款
 zh,Shaanxi,陕西省
 zh,Shandong,山东省
 zh,Shanghai,上海市
@@ -1367,6 +1370,7 @@ zh,Un-approve,撤销批准
 zh,Unapplied,未核销
 zh,Unapplied Incoming Payments,未核销的收入款
 zh,Unapplied Outgoing Payments,未核销的支出款
+zh,Uncancel,撤销取消
 zh,Uncomplete Order,撤销订单完成
 zh,Unit,单位
 zh,Unpaid,未付
