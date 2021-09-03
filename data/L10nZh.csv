@@ -71,6 +71,7 @@ zh,Add Product Item,添加产品条目
 zh,Add Project Assignment,添加项目指派
 zh,Add Promo Code,添加促销代码
 zh,Add Purpose,添加用途
+zh,Add Rate Amount,添加单价
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
@@ -145,7 +146,9 @@ zh,AssetTitle,资产管理
 zh,Assets,资产
 zh,Assets (Summary),资产(概要)
 zh,Assets (Detail),资产(详情)
+zh,Assets Consumed,消耗资产
 zh,Assets Link,资产链接
+zh,Assets Produced,产出资产
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
 zh,Assigned,指派人
@@ -261,6 +264,8 @@ zh,Completed Sales Orders,已完成的销售订单
 zh,Completed Purchase Orders,已完成的采购订单
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
+zh,Consume,消耗
+zh,Consume Asset,消耗资产
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
 zh,Contact Info,联系方式
@@ -292,6 +297,7 @@ zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Pool,创建池
 zh,Create Purchase Order,创建采购订单
+zh,Create Rate Amount,创建单价
 zh,Create Return,创建退货单
 zh,Create Sales Order,创建销售订单
 zh,Create Supplier Return,创建供应商退货
@@ -436,6 +442,7 @@ zh,Entry Date,创建日期
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
 zh,Equals,等于
 zh,Equipment,设备
+zh,Equipment Assets,设备
 zh,Error parsing JSON-RPC response for service [${serviceName ?: method}]: ${t.toString()},解析服务[${serviceName ?: method}]的JSON-RPC返回结果错误 : ${t.toString()}
 zh,Est,评估
 zh,Est Arrival,预估到达
@@ -444,6 +451,7 @@ zh,Est Ship,预估发货
 zh,Est. Arrival,预估到达
 zh,Est. Hours,预估工作量
 zh,Est. Ready,预估备好
+zh,Est. Quantity,预估数量
 zh,Estimated Amount,预估金额
 zh,Estimated Arrival Date,预估到达
 zh,Estimated Delivery,预计送达时间
@@ -583,6 +591,7 @@ zh,Interval Meter,间隔读数
 zh,Interval Quantity,间隔数量
 zh,Inventory,库存
 zh,Inventory Asset,库存资产
+zh,Inventory Assets,库存资产
 zh,Inventory Asset List,库存列表
 zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
@@ -738,6 +747,7 @@ zh,New Phone,新电话
 zh,New Picklist,新拣货单
 zh,New Price,新价格
 zh,New Product,新建产品
+zh,New Production Run,新建生产运行
 zh,New Purchase Return Shipment,新采购退货出库单
 zh,New Purchase Shipment,新采购入库单
 zh,New Registration,新注册
@@ -901,6 +911,7 @@ zh,Part,拆单
 zh,Part Status,拆单状态
 zh,Part Total,拆单总额
 zh,Parties,参与者
+zh,Parties Assigned,指派人
 zh,Party,参与者
 zh,"Party has no user accounts and no email address, cannot search for email messages",参与者没有账号或者邮件地址，找不到邮件消息。
 zh,Party ID,参与者ID
@@ -929,6 +940,7 @@ zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${party
 zh,People,人员
 zh,People Assigned,指派人员
 zh,Period,周期
+zh,Person,人
 zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,Phone,电话
@@ -968,6 +980,9 @@ zh,Price,价格
 zh,Price History,价格历史
 zh,Prices,价格
 zh,Priority,优先级
+zh,Produce,生产
+zh,Produce Asset,产出资产
+zh,Produced,产出的
 zh,Product,产品
 zh,Product Class,产品分类
 zh,Product Count,产品数
@@ -978,7 +993,11 @@ zh,Product Owner,产品拥有人
 zh,Product Store,店铺
 zh,Product Store ID,店铺ID
 zh,Product Type,产品类型
+zh,Product to Produce,生产产品
 zh,Product*,产品*
+zh,Products to Consume,预计消耗的产品
+zh,Products to Produce,预计产出的产品
+zh,Production Runs,生产运行
 zh,ProductStoreTitle,店铺管理
 zh,ProductTitle,产品
 zh,Products,产品
@@ -1028,6 +1047,7 @@ zh,Quick Lookup,快速查找
 zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
 zh,Rate Type,单价类型
+zh,Rate Amount,单价
 zh,Rates,单价
 zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
@@ -1126,6 +1146,10 @@ zh,Revision,版本
 zh,Role,角色
 zh,Roles,角色
 zh,Routing #,路由号码
+zh,Run Date,运行日期
+zh,Run ID,运行ID
+zh,Run Products,生产产品
+zh,Runs,运行
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
 zh,Sales Account,客户
@@ -1169,6 +1193,7 @@ zh,Search + Lookup by ID,全文检索+ID查询
 zh,Search Any Field,检索任意字段
 zh,Search Products,搜索产品
 zh,Search Results,查找结果
+zh,Search String Reference,搜索字符串参考
 zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
 zh,Section,截面
@@ -1363,6 +1388,7 @@ zh,Vendor,供应商
 zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
 zh,View Old,旧联系方式
+zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Was Stored At,原存放
 zh,Week,周
