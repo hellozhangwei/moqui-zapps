@@ -159,6 +159,7 @@ zh,Authenticate failed for user ${newUserAccount.username} because account is di
 zh,Authenticate failed for user ${newUserAccount.username} because account is disabled and will not be re-enabled until ${reEnableTime} [DISTMP].,账号${newUserAccount.username}已被临时禁用。请在${reEnableTime}之后再试。
 zh,Authenticate failed for user ${newUserAccount.username} because password was changed ${wksSinceChange} weeks ago and must be changed every ${changeWeeks} weeks [PWDTIM].,账号${newUserAccount.username}的密码上次修改已是${wksSinceChange}星期以前，必须每${changeWeeks}星期修改一次。
 zh,Authenticate failed for user [${newUserAccount.username}] because account requires password change [PWDCHG].,账号${newUserAccount.username}需修改密码。
+zh,Authentication Methods,认证方法
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Payments Term,付款条款
@@ -215,6 +216,7 @@ zh,Category Name,分类名称
 zh,Category Type,分类类型
 zh,CategoryTitle,分类
 zh,Categories,分类
+zh,Change Password,检查预留
 zh,Check Reservations,检查预留
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
@@ -256,6 +258,7 @@ zh,Condition failed for transition [${location}],not running actions or redirect
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
+zh,Contact Info,联系方式
 zh,Contact Number,电话
 zh,Contact of Sales Accounts,联系人公司
 zh,Container,容器
@@ -443,6 +446,7 @@ zh,Expected End Of Life,预计报废日期
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
 zh,Expectation,期望
+zh,Expenses,费用
 zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
 zh,Export Text,导出文本
 zh,Extension,扩展
@@ -678,6 +682,7 @@ zh,Move Qty,移动数量
 zh,My Account,个人中心
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,Notifications,通知
 zh,Notifs?,接收通知？
 zh,Name,名称
 zh,Name On Account,账户姓名
@@ -976,7 +981,7 @@ zh,Pseudo ID,伪ID
 zh,Purchase Invoices,应付发票
 zh,Purchase Orders & Quotes,采购订单与报价
 zh,Purchase Requests,采购请求
-zh,Purchase Requests,采购请求
+zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
 zh,Purchase Shipments,采购运单
 zh,Purchase Item Type,采购明细类型
 zh,Purchase Orders,采购订单
@@ -1138,6 +1143,7 @@ zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
 zh,Saving,保存中...
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
+zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
 zh,Search + Lookup by ID,全文检索+ID查询
