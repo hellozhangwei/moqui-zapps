@@ -20,6 +20,7 @@ zh,AccountingDashboardTitle,仪表盘
 zh,AccountingTitle,财务管理
 zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
+zh,Acquired,采购日期
 zh,Acquired Date,采购日期
 zh,Active Saved Find:,当前使用的查找:
 zh,Active Warehouse,当前仓库
@@ -30,6 +31,7 @@ zh,Actual Start,实际开始
 zh,Add,添加
 zh,Add Address,添加邮寄地址
 zh,Add All to Category,添加产品到分类
+zh,Add Asset,添加资产
 zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
 zh,Add Box Type,添加包装箱类型
@@ -72,6 +74,7 @@ zh,Add Purpose,添加用途
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
+zh,Add Store,添加店铺
 zh,Add Task Assignment,添加任务指派
 zh,Add Time Entry,添加工时记录
 zh,Add To Feature Group,添加到特征组
@@ -139,7 +142,9 @@ zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
 zh,AssetTitle,资产管理
-zh,Assets,资产管理
+zh,Assets,资产
+zh,Assets (Summary),资产(概要)
+zh,Assets (Detail),资产(详情)
 zh,Assets Link,资产链接
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
@@ -262,6 +267,7 @@ zh,Contact Info,联系方式
 zh,Contact Number,电话
 zh,Contact of Sales Accounts,联系人公司
 zh,Container,容器
+zh,Container ID,容器ID
 zh,Containers,容器
 zh,Contains,包含
 zh,Content,内容
@@ -278,21 +284,25 @@ zh,Country/State,国家/省
 zh,Create,新建
 zh,Create Account,新账户
 zh,Create Bank Account,新建银行账号
+zh,Create Container,创建容器
 zh,Create Credit Card,新建信用卡
 zh,Create Customer Return,创建客户退货
 zh,Create Invoice,创建账单
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
+zh,Create Pool,创建池
 zh,Create Purchase Order,创建采购订单
 zh,Create Return,创建退货单
 zh,Create Sales Order,创建销售订单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
+zh,Created Date,创建日期
 zh,Cur Total,当前合计
 zh,Cur Qty,当前数量
 zh,Currency,币种
 zh,Current,当前
+zh,Current Location,当前位置
 zh,Current PDF,当前PDF
 zh,Current Purchase Orders,当前采购订单
 zh,Current Sales Orders,当前销售订单
@@ -408,6 +418,7 @@ zh,Edit Shipment,编辑运单
 zh,Effective Date,生效日
 zh,Email,邮箱
 zh,Email Address,邮箱
+zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
 zh,Email Type,邮件类型
 zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServerId}]未定义邮箱密码
@@ -676,6 +687,8 @@ zh,More,更多
 zh,Move,移动
 zh,Move Asset,移动资产
 zh,Move Assets,移动资产
+zh,Move Container,移动容器
+zh,"Move Container ${container?.serialNumber ?: containerId}",移动容器${container?.serialNumber ?: containerId}
 zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
@@ -851,10 +864,12 @@ zh,Other Party Order ID,其他当事人订单ID
 zh,Other Party Product ID,第三方产品ID
 zh,Other Role,其他角色
 zh,Outgoing Refund Payments,支出退款
+zh,Output,输出
 zh,Owned By Org,拥有者
 zh,Owner,拥有者
 zh,Owner Org,拥有者
 zh,Owner Party,拥有者
+zh,Owner Party ID,拥有者ID
 zh,PDF,PDF
 zh,POP Commerce Admin,POP Commerce管理
 zh,Position,位置
@@ -940,6 +955,7 @@ zh,Pickup Date,拣货日期
 zh,Place Warnings,警告下定
 zh,Placed,下定时间
 zh,Placed Date,下定日期
+zh,Please select a Facility,请选择一个设施
 zh,Pool,池
 zh,Pools,仓库池
 zh,Position Class,职位
@@ -1026,6 +1042,7 @@ zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
 zh,Receive Product,接收产品
 zh,Receive Serialized Inventory Direct,序列化产品入库
+zh,Received,接收日期
 zh,Received Date,接收日期
 zh,Received From,入库开始日期
 zh,Received Incoming Payments,已收到的收入付款
@@ -1033,6 +1050,7 @@ zh,Received Outgoing Payments,已收到的支出付款
 zh,Received Thru,入库截止日期
 zh,Recent Asset Moves,最近移动的资产
 zh,Recent Container Moves,最近移动的容器
+zh,Recent Detail History,最近详细历史
 zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
@@ -1143,6 +1161,7 @@ zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
 zh,Saving,保存中...
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
+zh,Scan Location,扫码位置
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
@@ -1218,6 +1237,7 @@ zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
 zh,ShippingTitle,拣货管理
+zh,Show Details,显示详情
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
 zh,Sichuan,四川省
 zh,Sign Req.,签名类型
