@@ -2,6 +2,7 @@ moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
+zh,"${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId}","${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '移库' : 'Unknown Type'))}单#${shipmentId}"
 zh,"${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId}","${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}"
 zh,(Asc),(升)
 zh,(Desc),(降)
@@ -55,6 +56,7 @@ zh,Add Meter,添加仪表
 zh,Add New,添加新
 zh,Add Note,添加
 zh,Add Orders,添加订单
+zh,Add Origin Address,添加原地址
 zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
 zh,Add Other Role,添加其他角色
@@ -123,6 +125,7 @@ zh,Apply Feature,应用特征
 zh,Apply Feature Group,应用特征组
 zh,Apply New Feature,应用新特征
 zh,Appr Order Qty,已批准订单数
+zh,Approve,批准
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
 zh,Area,区
@@ -300,6 +303,7 @@ zh,Create Purchase Order,创建采购订单
 zh,Create Rate Amount,创建单价
 zh,Create Return,创建退货单
 zh,Create Sales Order,创建销售订单
+zh,Create Shipment,创建运单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
@@ -419,6 +423,7 @@ zh,Edit Equipment,编辑设备
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
 zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
+zh,Edit Payment ${partPaymentInfo.partPayment.paymentId},编辑付款单${partPaymentInfo.partPayment.paymentId}
 zh,Edit Physical Inventory,编辑库存盘点
 zh,Edit Shipment,编辑运单
 zh,Effective Date,生效日
@@ -492,6 +497,8 @@ zh,File ${filename} already exists,skipping entity ${en}.
 zh,"File ${filename} already exists, skipping document ${dataDocumentId}.","文件 ${filename}已存在,跳过文档${dataDocumentId}。"
 zh,"File ${filename} already exists, skipping entity ${en}.","文件 ${filename}已存在,跳过实体${en}。"
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
+zh,Filed By,申请人
+zh,Filter,过滤
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
 zh,"Financial Summary for ${ec.resource.expand('PartyNameTemplate', null, partyDetail)}","财务摘要${ec.resource.expand('PartyNameTemplate', null, partyDetail)}"
@@ -545,6 +552,7 @@ zh,GL Journals,总账日记账
 zh,GLJournalsTitle,总账日记账
 zh,Gansu,甘肃省
 zh,Gateway,网关
+zh,Gateway Authorize,网关验证
 zh,Gateway Config,网关配置
 zh,Gateway Type,网关类型
 zh,Gateways,网关
@@ -578,6 +586,7 @@ zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Incoming Refund Payments,收入退款
+zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
@@ -597,6 +606,7 @@ zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
+zh,Invoice ${invoiceId},账单${invoiceId}
 zh,Invoice Cost Percent,发票成本百分比
 zh,Invoice Count,发票数量
 zh,Invoice Date,开票日期
@@ -813,6 +823,7 @@ zh,Opportunity Stage ID,机会阶段
 zh,OR Customer Account,或客户金融账户
 zh,OR Instrument,或支付工具
 zh,Order,订单
+zh,Order ${orderId},订单${orderId}
 zh,Order #${orderId},订单#${orderId}
 zh,Order By,排序
 zh,Order Count,订单数量
@@ -861,6 +872,7 @@ zh,Orders per Pick,每单订单数
 zh,Organization,组织
 zh,Organization Name,组织名称
 zh,Orig. ETA,原始预估
+zh,Origin Address,原地址
 zh,Origin Facility,发货仓
 zh,Original PDF,原始PDF
 zh,Other,其他
@@ -964,6 +976,7 @@ zh,Picked,拣货时间
 zh,Picklist,拣货
 zh,Picklists,拣货
 zh,Pickup Date,拣货日期
+zh,Place,下定
 zh,Place Warnings,警告下定
 zh,Placed,下定时间
 zh,Placed Date,下定日期
@@ -1034,10 +1047,12 @@ zh,QOH Diff,QOH变化
 zh,Qinghai,青海省
 zh,Qty,数量
 zh,Quantity,数量
+zh,Quantity Accepted,接收数量
 zh,Quantity Difference,数量差
 zh,Quantity History,数量历史
 zh,Quantity Not Handled,未处理数量
 zh,Quantity Reason,数量原因
+zh,Quantity Rejected,拒绝数量
 zh,Quantity Total,总数量
 zh,Quantity*,数量*
 zh,Quarantine,检疫区
@@ -1082,6 +1097,7 @@ zh,Registrations,注册
 zh,Reject Quote Request,拒绝报价请求
 zh,Rejected,拒收
 zh,Related,关联
+zh,Rejection Reason,拒收原因
 zh,Rem,剩余
 zh,Remaining,剩余
 zh,Remote,远端
@@ -1102,6 +1118,7 @@ zh,Report Builder,报表设计器
 zh,Reports,报表
 zh,ReportsTitle,报表
 zh,Request,审批
+zh,Request #${requestId},审批#${requestId}
 zh,Request Date,审批日期
 zh,Request ID,审批ID
 zh,Request List,审批列表
@@ -1240,6 +1257,7 @@ zh,Ship Insure Reqd,需要运费险
 zh,Ship Method,配送方式
 zh,Ship Work Effort ID,运送任务
 zh,Shipment,运单
+zh,Shipment ${shipmentId},运单${shipmentId}
 zh,Shipment Destination Address,收货地址
 zh,Shipment From Party,发货人
 zh,Shipment Gateway,运输网关
@@ -1363,6 +1381,7 @@ zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
 zh,Update Person,更新个人
 zh,Update Purpose,更新用途
+zh,Update Shipment,更新运单
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
 zh,Update to Current,更新到当前
