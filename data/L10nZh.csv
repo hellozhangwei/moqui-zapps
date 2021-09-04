@@ -130,6 +130,7 @@ zh,Anhui,安徽省
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any Type,全部类型
+zh,App List,应用列表
 zh,Appl. Type,应用类型
 zh,Applicable Payments,可核销付款单
 zh,Applicable Unpaid Invoices,可核销未付账单
@@ -263,6 +264,7 @@ zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
 zh,Child Tasks,子任务
 zh,Children,子
+zh,Choose an Application,选择应用程序
 zh,Chongqing,重庆市
 zh,City,城市
 zh,City/Zip,城市/邮编
@@ -607,6 +609,7 @@ zh,Group,组
 zh,Guangdong,广东省
 zh,Guangxi,广西壮族自治区
 zh,Guizhou,贵州省
+zh,HH Warehouse,仓库PDA
 zh,Hainan,海南省
 zh,Has Role,角色包括
 zh,Hebei,河北省
@@ -1402,6 +1405,7 @@ zh,SupplierTitle,供应商管理
 zh,Suppliers,供应商
 zh,Survey,调查问卷
 zh,Surveys,调查问卷
+zh,System,系统
 zh,System Email,系统邮箱
 zh,SystemTitle,系统管理
 zh,TX,账目
@@ -1442,6 +1446,7 @@ zh,To Name,收件人
 zh,To Party,到
 zh,To Payment Method,到支付方法
 zh,To Role,到角色
+zh,Tools,工具
 zh,Total,合计
 zh,Track Status,追踪状态
 zh,Tracking,追踪
