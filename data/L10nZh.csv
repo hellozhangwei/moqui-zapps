@@ -99,6 +99,7 @@ zh,Address1,地址1
 zh,Adjust Item,调整条目
 zh,Adjust Invoice,调整账单
 zh,Aging,账龄
+zh,Aging Summary (displayed records only),账龄概要（只显示行）
 zh,Agreement Date,合同日期
 zh,Agreement ID,合同ID
 zh,AgreementTitle,合同管理
@@ -157,6 +158,7 @@ zh,Assets (Detail),资产(详情)
 zh,Assets Consumed,消耗资产
 zh,Assets Link,资产链接
 zh,Assets Produced,产出资产
+zh,Assign Check Numbers,指定检查数量
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
 zh,Assigned,指派人
@@ -207,6 +209,7 @@ zh,Break Hours,休息小时数
 zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
+zh,Bulk Checks,批量检查
 zh,Bulk Cost Update,批量更新成本
 zh,Bulk Create Picklists,批量新建拣货单
 zh,CSV,CSV
@@ -215,6 +218,7 @@ zh,Calendar,日历
 zh,Can only create initial admin account if there are no UserAccount records,仅当没有任何账号时才能创建初始管理员账号
 zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
+zh,Cancel Payment and Invoices,取消付款单与账单
 zh,Cancel Shipment,取消运单
 zh,Capacity,容量
 zh,Capacity UOM,容量单位
@@ -236,6 +240,7 @@ zh,Categories,分类
 zh,Change Password,检查预留
 zh,Check Reservations,检查预留
 zh,Check Num,检查数量
+zh,Checks PDF,检查PDF
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
@@ -330,10 +335,9 @@ zh,Custom Reports,定制报表
 zh,Customer,客户
 zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
 zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
-zh,Customer Requests,客户请求
-zh,Customer Requests;,客户<strong>请求</strong>
 zh,Customer Class,客户类型
-zh,Customer Credit Memos,客户信用凭证
+zh,Customer Credit Memo,客户红字发票
+zh,Customer Credit Memos,客户红字发票
 zh,Customer Data,客户数据
 zh,Customer Details,客户详情
 zh,Customer Email,客户邮箱
@@ -345,9 +349,9 @@ zh,Customer Notes,客户备注
 zh,Customer Org,客户
 zh,Customer Payments,客户付款单
 zh,Customer Requests,客户请求
-zh,Customer Requests;,客户请求
 zh,Customer Return Shipments,客户退货入库单
 zh,Customer Role,客户角色
+zh,Customer Statement PDF,客户对账单PDF
 zh,CustomerTitle,客户管理
 zh,Customers,客户
 zh,Dashboard,仪表盘
@@ -404,6 +408,7 @@ zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
 zh,Detail,详细
 zh,Detail History,详情历史
+zh,Details PDF,详情PDF
 zh,Dimensions,度量
 zh,Disable Account,禁用账号
 zh,Disable Promotions,禁用促销
@@ -558,6 +563,7 @@ zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryStri
 zh,Fujian,福建省
 zh,GL Accounts,总账会计
 zh,GL Journals,总账日记账
+zh,GL Transactions,总账凭证
 zh,GLJournalsTitle,总账日记账
 zh,Gansu,甘肃省
 zh,Gateway,网关
@@ -760,6 +766,8 @@ zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
 zh,New Outgoing Shipment,新建出库单
 zh,New Password and New Password Verify do not match,两次录入的新密码不匹配
+zh,New Receivable,新应收
+zh,New Payable,新应付
 zh,New Payment Gateway,新支付网关
 zh,New Payment for Invoice,新付款单
 zh,New Person,新个人
@@ -901,6 +909,7 @@ zh,Other Party Product ID,第三方产品ID
 zh,Other Role,其他角色
 zh,Outgoing Refund Payments,支出退款
 zh,Output,输出
+zh,Override (Cash) GL Account,覆盖（现金）科目
 zh,Owned By Org,拥有者
 zh,Owner,拥有者
 zh,Owner Org,拥有者
@@ -952,6 +961,8 @@ zh,Path ${path} is not a directory.,路径${path}必须是个目录
 zh,Payable,应付
 zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,Payable Return Invoices,应付退货账单
+zh,Payable by Invoice Date,应付账单按账单日期
+zh,Payable by Due Date,应付账单按过期日期
 zh,Payment,付款单
 zh,Payment Applications,核销
 zh,Payment Gateway,支付网关
@@ -1031,6 +1042,8 @@ zh,ProductTitle,产品
 zh,Products,产品
 zh,Profile Url Path,客户资料URL
 zh,Project,项目
+zh,Project Client Invoice,项目的客户账单
+zh,Project Worker Invoice,项目的工人账单
 zh,ProjectTitle,项目管理
 zh,Projects,项目
 zh,Promo Code,促销代码
@@ -1251,6 +1264,8 @@ zh,Sequence Num,顺序
 zh,Serial Number,序列号
 zh,Service,服务
 zh,Set Assignee,设置指派人
+zh,Set Delivered,设置为已送达
+zh,Set Authorized,设置为已验证
 zh,Set Classification,设置
 zh,Set Picked,已拣货
 zh,Set Scheduled,已安排
@@ -1324,7 +1339,8 @@ zh,Submit,提交
 zh,Summary Options,销售统计过滤器
 zh,Supplier,供应商
 zh,Supplier <strong>Payments</strong>,供应商<strong>付款单</strong>
-zh,Supplier Credit Memos,供应商信用凭证
+zh,Supplier Credit Memos,供应商红字发票
+zh,Supplier Credit Memo,供应商红字发票
 zh,Supplier Return Shipments,供应商退货入库单
 zh,SupplierTitle,供应商管理
 zh,Suppliers,供应商
