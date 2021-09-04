@@ -121,6 +121,8 @@ zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any Type,全部类型
 zh,Appl. Type,应用类型
+zh,Applicable Payments,可核销付款单
+zh,Applicable Unpaid Invoices,可核销未付账单
 zh,Application,程序
 zh,Applied,已应用
 zh,Applied Payments,已核销
@@ -169,6 +171,7 @@ zh,Attachments,附件
 zh,Attention,注意
 zh,Attn Name,经办人名字
 zh,Audit Log,审计日志
+zh,Auth Code,验证码
 zh,Authenticate failed for user ${newUserAccount.username} because account is disabled and is not schedule to be automatically re-enabled [DISPRM].,账号${newUserAccount.username}已被永久禁用。
 zh,Authenticate failed for user ${newUserAccount.username} because account is disabled and will not be re-enabled until ${reEnableTime} [DISTMP].,账号${newUserAccount.username}已被临时禁用。请在${reEnableTime}之后再试。
 zh,Authenticate failed for user ${newUserAccount.username} because password was changed ${wksSinceChange} weeks ago and must be changed every ${changeWeeks} weeks [PWDTIM].,账号${newUserAccount.username}的密码上次修改已是${wksSinceChange}星期以前，必须每${changeWeeks}星期修改一次。
@@ -232,6 +235,7 @@ zh,CategoryTitle,分类
 zh,Categories,分类
 zh,Change Password,检查预留
 zh,Check Reservations,检查预留
+zh,Check Num,检查数量
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
@@ -502,6 +506,7 @@ zh,"File ${filename} already exists, skipping entity ${en}.","文件 ${filename}
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Filed By,申请人
 zh,Filter,过滤
+zh,Financial Account,金融账户
 zh,Financial Accounts,金融账户
 zh,Financial Info,财务
 zh,"Financial Summary for ${ec.resource.expand('PartyNameTemplate', null, partyDetail)}","财务摘要${ec.resource.expand('PartyNameTemplate', null, partyDetail)}"
@@ -546,6 +551,7 @@ zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Location,仓位
 zh,From Party,从
+zh,From Payment Method,从支付方式
 zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryString?:''}"
@@ -557,6 +563,7 @@ zh,Gansu,甘肃省
 zh,Gateway,网关
 zh,Gateway Authorize,网关验证
 zh,Gateway Config,网关配置
+zh,Gateway Responses,网关响应
 zh,Gateway Type,网关类型
 zh,Gateways,网关
 zh,General Ledger,总账
@@ -646,6 +653,7 @@ zh,Jilin,吉林省
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
 zh,Last,上
+zh,Last Check Number,上次检查数量
 zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
@@ -691,6 +699,7 @@ zh,Markup Amt,标记总价
 zh,Markup Order Shipping Price,标记订单运费
 zh,Markup Shipment Ship Labels,标记运单标签
 zh,Matches,匹配
+zh,Memo,备忘录
 zh,Message,消息
 zh,Message Remote,远端消息
 zh,Messages,沟通
@@ -876,6 +885,8 @@ zh,Organization,组织
 zh,Organization Name,组织名称
 zh,Orig. ETA,原始预估
 zh,Origin Address,原地址
+zh,Original Currency,原货币类型
+zh,Original Currency Amount,原货币金额
 zh,Origin Facility,发货仓
 zh,Original PDF,原始PDF
 zh,Other,其他
@@ -945,6 +956,7 @@ zh,Payment,付款单
 zh,Payment Applications,核销
 zh,Payment Gateway,支付网关
 zh,Payment Gateways,支付网关
+zh,Payment ID,付款单ID
 zh,Payment Information,付款信息
 zh,Payment Method,付款方式
 zh,Payment Methods,付款方式
@@ -1096,6 +1108,7 @@ zh,Record Time,记录时间
 zh,Recurring,循环
 zh,Ref,参考
 zh,Ref/Check,参考
+zh,Ref/Check Number,付款参考代码
 zh,Registrations,注册
 zh,Reject Quote Request,拒绝报价请求
 zh,Rejected,拒收
@@ -1225,6 +1238,7 @@ zh,Select Find,选择查询
 zh,Select Phone,选择电话
 zh,Select Setting,选择
 zh,Selectable Features,可选特征
+zh,Selected Method,选择的方法
 zh,Send,发送
 zh,Send Email,发邮件
 zh,Send Message,发消息
@@ -1245,6 +1259,7 @@ zh,Set Shipping Address and Method,设置配送地址与方法
 zh,Set Quantities,设定数量
 zh,Set WH,设定仓库
 zh,Settings,设置
+zh,Settlement Date,结算日期
 zh,Settlement Term,付款条款
 zh,Shaanxi,陕西省
 zh,Shandong,山东省
@@ -1341,6 +1356,7 @@ zh,Thru Date,结束日期
 zh,Tianjin,天津市
 zh,Time,考勤
 zh,Time Entries,工时记录
+zh,Time Period,会计期间
 zh,Time Periods,会计期间
 zh,Time Zone,时区
 zh,TimePeriodTitle,会计期间
@@ -1352,6 +1368,7 @@ zh,To Container,目的容器
 zh,To Location,目的位置
 zh,To Name,收件人
 zh,To Party,到
+zh,To Payment Method,到支付方法
 zh,To Role,到角色
 zh,Total,合计
 zh,Track Status,追踪状态
