@@ -12,11 +12,19 @@ zh,Abbrev,缩写
 zh,Accepted,接收
 zh,Account,账户
 zh,Account #,账户卡号
+zh,Account Code,科目代码
 zh,Account Detail,账号详情
+zh,Account Balance History,科目余额历史
+zh,Account Ledger,分类帐
 zh,Account Name,账户名称
 zh,Account Owner,账户拥有者
+zh,Account Tree,科目树
+zh,Account Type,科目类型
+zh,Account Types,科目类型
 zh,Account with username ${username} does not have an email address,用户名为${username}的账号没有设置电子邮箱
 zh,Accounting,会计
+zh,Accounting Preferences,会计偏好
+zh,Accounting Preferences for ${partyDetail.organizationName} [${partyDetail.pseudoId}],${partyDetail.organizationName}[${partyDetail.pseudoId}]的会计偏好
 zh,AccountingDashboardTitle,仪表盘
 zh,AccountingTitle,财务管理
 zh,Acquire Cost,采购成本
@@ -134,6 +142,7 @@ zh,Appr Order Qty,已批准订单数
 zh,Approve,批准
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
+zh,AR Aging Summary,应收账龄概要
 zh,Area,区
 zh,Area Code,区号
 zh,Asc,升序
@@ -141,6 +150,7 @@ zh,Asset,资产
 zh,Asset Adjustments,资产调整
 zh,Asset Allow Issue Over QOH,允许超QOH
 zh,Asset Allow Other Owner,允许其他拥有者
+zh,Asset and Inventory Reports,资产与库存报表
 zh,Asset Class,资产分类
 zh,Asset Detail,资产详情
 zh,Asset ID,库存流水号
@@ -151,6 +161,7 @@ zh,Asset Reservations,预占资产
 zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
+zh,Asset Types,资产类型
 zh,AssetTitle,资产管理
 zh,Assets,资产
 zh,Assets (Summary),资产(概要)
@@ -188,6 +199,8 @@ zh,Auto Set,自动设置
 zh,Auto Update Rates,自动更新单价
 zh,Available,可用
 zh,Balance,余额
+zh,Balance Sheet,资产负债表
+zh,Balance Sheet History,资产负债表历史
 zh,Bank Accounts,银行账户
 zh,Bank Name,银行名称
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
@@ -206,6 +219,7 @@ zh,Box,箱子
 zh,Box Types,包装箱类型
 zh,Break,休息
 zh,Break Hours,休息小时数
+zh,Budget,预算
 zh,Budget Details,预算详情
 zh,Budgets,预算
 zh,BudgetsTitle,预算
@@ -227,6 +241,7 @@ zh,Carrier,承运人
 zh,Carrier Party,承运人
 zh,Carrier Ship Methods,配送方法
 zh,Carrier Shipment Methods,配送方法
+zh,Cash Flow,现金流
 zh,Catalog,产品目录
 zh,CatalogTitle,品类管理
 zh,Categories,分类
@@ -264,6 +279,7 @@ zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
 zh,Clone Product,克隆产品
+zh,Clone Accounting Settings,克隆会计设置
 zh,Close,关闭
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
@@ -324,6 +340,7 @@ zh,Cur Total,当前合计
 zh,Cur Qty,当前数量
 zh,Currency,币种
 zh,Current,当前
+zh,Current Assets and Liabilities,流动资产和负债
 zh,Current Location,当前位置
 zh,Current PDF,当前PDF
 zh,Current Purchase Orders,当前采购订单
@@ -513,7 +530,11 @@ zh,Filed By,申请人
 zh,Filter,过滤
 zh,Financial Account,金融账户
 zh,Financial Accounts,金融账户
+zh,Financial Acct Reasons,财务会计原因
+zh,Financial Acct Types,财务会计类型
 zh,Financial Info,财务
+zh,Financial Reports,财务报表
+zh,Financial Ratios,财务比率
 zh,"Financial Summary for ${ec.resource.expand('PartyNameTemplate', null, partyDetail)}","财务摘要${ec.resource.expand('PartyNameTemplate', null, partyDetail)}"
 zh,FinancialAccountTitle,金融账户
 zh,Find,查找
@@ -561,6 +582,7 @@ zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryString?:''}"
 zh,Fujian,福建省
+zh,GL Account,总账账户
 zh,GL Accounts,总账会计
 zh,GL Journals,总账日记账
 zh,GL Transactions,总账凭证
@@ -602,6 +624,7 @@ zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Incoming Refund Payments,收入退款
+zh,Income Statement,损益表
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
@@ -620,17 +643,22 @@ zh,Inventory Assets,库存资产
 zh,Inventory Asset List,库存列表
 zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
+zh,Inventory Valuation,库存估值
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
+zh,Invoice Aging Detail,账单账龄明细
 zh,Invoice ${invoiceId},账单${invoiceId}
 zh,Invoice Cost Percent,发票成本百分比
 zh,Invoice Count,发票数量
 zh,Invoice Date,开票日期
 zh,Invoice Discount Percent,发票折扣百分比
 zh,Invoice ID,账单ID
-zh,Invoice Item,发票条目
+zh,Invoice Item,账单条目
+zh,Invoice Item Summary,账单条目概要
 zh,Invoice Message,账单消息
 zh,Invoice Time,工时账单
+zh,Invoice Reconciliation,账单对账
+zh,Invoice Types,账单类型
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
 zh,Invoices From,账单从
@@ -650,6 +678,7 @@ zh,Item Quantity From,条目数量从
 zh,Item Quantity Thru,条目数量到
 zh,Item Total,条目合计
 zh,Item Type,条目类型
+zh,Item Types,条目类型
 zh,Items,条目
 zh,"JSON-RPC error with no message, code [${responseMap.error?.code}]","JSON-RPC无消息错误, 代码[${responseMap.error?.code}]"
 zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]: ${jsonObj},服务[${serviceName ?: method}]的JSON-RPC的返回不是object或者Map: ${jsonObj}
@@ -738,8 +767,11 @@ zh,Name,名称
 zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
 zh,Need Qty,需要数量
+zh,Net Income History,净收入历史
+zh,Net Income Year Over Year,年度净收入
 zh,New Address,新地址
 zh,New Agreement,新合同
+zh,New Budget,新预算
 zh,New Category,新分类
 zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
@@ -755,7 +787,10 @@ zh,New Event,新事件
 zh,New Facility,新设施
 zh,New Feature,新特征
 zh,New Feature Group,新特征组
+zh,New Financial Account,新金融账户
+zh,New GL Account,新总账科目
 zh,New HTML Content,新HTML内容
+zh,New Incoming Payment,新收入付款单
 zh,New Incoming Shipment,新建入库单
 zh,New Lead and Organization,新线索与组织
 zh,New Lend Return Shipment,新借用归还入库单
@@ -764,6 +799,7 @@ zh,New Location,新位置
 zh,New Meter Reading,新仪表读数
 zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
+zh,New Outgoing Payment,新建支出付款单
 zh,New Outgoing Shipment,新建出库单
 zh,New Password and New Password Verify do not match,两次录入的新密码不匹配
 zh,New Receivable,新应收
@@ -831,12 +867,14 @@ zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
 zh,On Hand,在手
 zh,On Hand Report,在手报告
+zh,On Hand Summary,在手概要
 zh,Only Cost Matches PO Amount,只包成本与采购金额相等的
 zh,Only No Cost,只包括无成本
 zh,Only No Location,只包括不在位置
 zh,Opened,开始
 zh,Operate,运营
 zh,Operation,操作
+zh,Operating Revenue and Expense,营业收入和费用
 zh,Opportunity ID,机会ID
 zh,Opportunity Name,机会名称
 zh,Opportunity Stage ID,机会阶段
@@ -852,7 +890,9 @@ zh,Order Discount Percent,订单折扣百分比
 zh,Order Header,订单头
 zh,Order ID,订单ID
 zh,Order IDs,订单ID
+zh,Order Issued and Invoiced,已出货与已开票订单
 zh,Order Item,订单条目
+zh,Order Item Summary,订单条目概要
 zh,Order Name,订单名称
 zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
@@ -889,6 +929,7 @@ zh,OrderPlacePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
 zh,OrderPlacePartPaymentIncomplete,"拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})"
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
+zh,Org Settings,组织设置
 zh,Organization,组织
 zh,Organization Name,组织名称
 zh,Orig. ETA,原始预估
@@ -969,10 +1010,12 @@ zh,Payment Gateway,支付网关
 zh,Payment Gateways,支付网关
 zh,Payment ID,付款单ID
 zh,Payment Information,付款信息
+zh,Payment Instruments,支付方式
 zh,Payment Method,付款方式
 zh,Payment Methods,付款方式
 zh,Payment Terms,付款条件
 zh,Payment Type,支付类型
+zh,Payment Types,付款单类型
 zh,Payments,付款
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
@@ -1013,6 +1056,8 @@ zh,Position Class,职位
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Postal Code,邮编
+zh,Posted Amount Summary,过账金额概要
+zh,Posted Balance Summary,过账余额概要
 zh,Pre-Paid Percent,预付发票百分比
 zh,Pri,优先级
 zh,Price,价格
@@ -1056,7 +1101,6 @@ zh,Propose Quote,建议报价
 zh,Pseudo ID,伪ID
 zh,Purchase Invoices,应付发票
 zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
-zh,Purchase Requests,采购请求
 zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
 zh,Purchase <strong>Shipments</strong>,采购<strong>运单</strong>
 zh,Purchase Item Type,采购明细类型
@@ -1085,6 +1129,7 @@ zh,Quantity Total,总数量
 zh,Quantity*,数量*
 zh,Quarantine,检疫区
 zh,Quick Add Items,创建账单
+zh,Quick Aging,快速账龄
 zh,Quick Items,快速条目
 zh,Quick Lookup,快速查找
 zh,Quick Search,快速查询
@@ -1096,6 +1141,7 @@ zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
 zh,Receivable,应收
+zh,Receipt Transactions,入库凭证
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
 zh,Receivable Return Invoices,应收退货账单
 zh,Receive,接收
@@ -1120,6 +1166,7 @@ zh,Record,记录
 zh,Record Time,记录时间
 zh,Recurring,循环
 zh,Ref,参考
+zh,Ref Num,参考代码
 zh,Ref/Check,参考
 zh,Ref/Check Number,付款参考代码
 zh,Registrations,注册
@@ -1179,6 +1226,7 @@ zh,Ret Label,退货标签
 zh,Ret Message,退货消息
 zh,Ret Status,退货状态
 zh,Ret Tracking,退货追踪
+zh,Retained Earnings,留存收益
 zh,Return ID,退货ID
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Order,返回到订单查询
@@ -1205,11 +1253,14 @@ zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
+zh,Sales and Invoice Reports,销售与账单报告
 zh,Sales Channel,销售渠道
 zh,Sales Discontinue,下架日期
 zh,Sales Intro,上架日期
+zh,Sales Invoice Analysis,销售账单分析
 zh,Sales Item Type,销售明细类型
 zh,Sales Opportunity List,销售机会列表
+zh,Sales Order Analysis,销售订单分析
 zh,Sales Order,销售订单
 zh,Sales Order List,订单列表
 zh,Sales Order Part 01,销售订单拆单01
@@ -1298,6 +1349,7 @@ zh,Shipment Insert,装箱单
 zh,Shipment Items,运单条目
 zh,Shipment Method,配送方式
 zh,Shipment Origin Address,发货地址
+zh,Shipment Package Summary,包裹概要
 zh,Shipment To Party,收货人
 zh,ShipmentTitle,出库入库
 zh,Shipments,运输
@@ -1330,6 +1382,7 @@ zh,Statement PDF,清单PDF
 zh,Status,状态
 zh,Status History,状态历史
 zh,Status ID,状态ID
+zh,Status by Receipt,状态按接收
 zh,Store,店铺
 zh,Store Domain,店铺域名
 zh,Stored At,存放
@@ -1392,6 +1445,7 @@ zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
 zh,Transaction Entries,凭证分录
+zh,Transaction Reports,总帐交易报表
 zh,Transactions,会计凭证
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
@@ -1443,6 +1497,7 @@ zh,Variance Reason,差异原因
 zh,Vendor,供应商
 zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
+zh,View Charts,查看图表
 zh,View Old,旧联系方式
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
