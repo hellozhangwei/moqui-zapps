@@ -137,12 +137,16 @@ zh,Applicable Payments,可核销付款单
 zh,Applicable Unpaid Invoices,可核销未付账单
 zh,Application,程序
 zh,Applied,已应用
+zh,"Applied ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}, Unapplied ${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}","已核销 ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}，未核销${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}"
 zh,Applied Payments,已核销
+zh,"Applied Payments ${ec.l10n.formatCurrency(appliedPaymentsTotal, invoice.currencyUomId)}, Unpaid ${ec.l10n.formatCurrency(unpaidTotal, invoice.currencyUomId)}","已核销${ec.l10n.formatCurrency(appliedPaymentsTotal, invoice.currencyUomId)}，未付${ec.l10n.formatCurrency(unpaidTotal, invoice.currencyUomId)}"
+zh,Apply,应用
 zh,Apply Feature,应用特征
 zh,Apply Feature Group,应用特征组
 zh,Apply New Feature,应用新特征
 zh,Apply to Category,应用到分类
 zh,Appr Order Qty,已批准订单数
+zh,Approval,批准
 zh,Approve,批准
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
@@ -344,6 +348,7 @@ zh,Create Variants,创建变体
 zh,Created Date,创建日期
 zh,Credit Account,退款账户
 zh,Credit Memo Invoice,红字发票
+zh,Credits,贷
 zh,Cur Total,当前合计
 zh,Cur Qty,当前数量
 zh,Currency,币种
@@ -415,6 +420,8 @@ zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
 zh,Days To Ship,发货天数
+zh,Debits,借
+zh,Decline,拒绝
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
 zh,Default Disable Promotions,禁用促销
@@ -485,6 +492,7 @@ zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be se
 zh,Equals,等于
 zh,Equipment,设备
 zh,Equipment Assets,设备
+zh,Error,错误
 zh,Error parsing JSON-RPC response for service [${serviceName ?: method}]: ${t.toString()},解析服务[${serviceName ?: method}]的JSON-RPC返回结果错误 : ${t.toString()}
 zh,Est,评估
 zh,Est Arrival,预估到达
@@ -576,6 +584,8 @@ zh,Fixed Asset,固定资产
 zh,Fixed Asset Detail,固定资产详情
 zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
+zh,For,为
+zh,For This,为此
 zh,Force Close,强制关闭
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction","资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证"
 zh,Found issues with password so not updating,密码有问题，没有更新
@@ -960,6 +970,7 @@ zh,Other Party,其他参与者
 zh,Other Party Order Date,其他当事人订单日期
 zh,Other Party Order ID,其他当事人订单ID
 zh,Other Party Product ID,第三方产品ID
+zh,Other Pmnt,其他付款单
 zh,Other Role,其他角色
 zh,Outgoing Refund Payments,支出退款
 zh,Output,输出
@@ -1069,8 +1080,10 @@ zh,Position Class,职位
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Postal Code,邮编
+zh,Posted,已过账
 zh,Posted Amount Summary,过账金额概要
 zh,Posted Balance Summary,过账余额概要
+zh,Posted Date,过账日期
 zh,Pre-Paid Percent,预付发票百分比
 zh,Pri,优先级
 zh,Price,价格
@@ -1105,6 +1118,7 @@ zh,Project Client Invoice,项目的客户账单
 zh,Project Worker Invoice,项目的工人账单
 zh,ProjectTitle,项目管理
 zh,Projects,项目
+zh,Promised Order Payments,承诺的订单付款单
 zh,Promo Code,促销代码
 zh,Promo Codes,促销代码
 zh,Promo Expires,促销过期日
@@ -1153,6 +1167,7 @@ zh,Rate Amount,单价
 zh,Rates,单价
 zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
+zh,Re-post Invoice,重新过账账单
 zh,Ready Date,准备日期
 zh,Reason,原因
 zh,Receivable,应收
@@ -1242,6 +1257,7 @@ zh,Reset Password,重置密码
 zh,Reset Pkg,重新装箱
 zh,Reset to Default,重置到默认
 zh,Resolution,解决
+zh,Resp Code,响应代码
 zh,Response,响应
 zh,Response Amount,响应数量
 zh,Response Date,响应日期
@@ -1264,6 +1280,8 @@ zh,Return to Product List,返回产品列表
 zh,Return to Sales Order List,返回销售订单列表
 zh,Returns,退货
 zh,Rev,版本
+zh,Rev Of,冲销
+zh,Rev By,被冲销
 zh,Revision,版本
 zh,Role,角色
 zh,Roles,角色
@@ -1332,6 +1350,7 @@ zh,Select Setting,选择
 zh,Selectable Features,可选特征
 zh,Selected Method,选择的方法
 zh,Send,发送
+zh,Send &amp; Apply,发送并核销
 zh,Send Email,发邮件
 zh,Send Message,发消息
 zh,Sent Date,发送日期
@@ -1419,6 +1438,7 @@ zh,Store Domain,店铺域名
 zh,Stored At,存放
 zh,Stores,店铺
 zh,Subject,主题
+zh,Success,成功
 zh,Submit,提交
 zh,Summary Options,销售统计过滤器
 zh,Supplier,供应商
@@ -1434,7 +1454,10 @@ zh,System,系统
 zh,System Email,系统邮箱
 zh,SystemTitle,系统管理
 zh,TX,账目
+zh,TX Date,凭证日期
+zh,TX ID,凭证ID
 zh,TX Entries,账目
+zh,TX Type,凭证类型
 zh,Taiwan,台湾省
 zh,Task,任务
 zh,Task Name,任务名
