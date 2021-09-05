@@ -710,7 +710,7 @@ zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
-zh,Journal,日记账名称
+zh,Journal Name,日记账名称
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
 zh,Last,上
@@ -1372,10 +1372,11 @@ zh,Set Assignee,设置指派人
 zh,Set Delivered,设置为已送达
 zh,Set Authorized,设置为已验证
 zh,Set Classification,设置
-zh,Set Picked,已拣货
+zh,Set Packed (Un-Ship),设置为已打包（未发货）
+zh,Set Picked,设置为已拣货
 zh,Set Requested,设置为已申请
-zh,Set Scheduled,已安排
-zh,Set Shipped,已发货
+zh,Set Scheduled,设置为已安排
+zh,Set Shipped,设置为已发货
 zh,Set Shipping Address and Method,设置配送地址与方法
 zh,Set Quantities,设定数量
 zh,Set WH,设定仓库
