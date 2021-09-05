@@ -1179,6 +1179,8 @@ zh,Reason,原因
 zh,Receivable,应收
 zh,Receipt Transactions,入库凭证
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
+zh,Receivable by Invoice Date,应收按账单日期
+zh,Receivable by Due Date,应收按到期日期
 zh,Receivable Return Invoices,应收退货账单
 zh,Receive,接收
 zh,Receive Accepted,接收
