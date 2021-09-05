@@ -57,6 +57,7 @@ zh,Add Direct Role,添加直接角色
 zh,Add Equipment,添加设备
 zh,Add Feature,添加特征
 zh,Add Feature to All,添加产品特征
+zh,Add From Orders,从订单添加
 zh,Add Identification,添加唯一标识
 zh,Add Item,添加条目
 zh,Add Location,添加位置
@@ -334,12 +335,15 @@ zh,Create Pool,创建池
 zh,Create Purchase Order,创建采购订单
 zh,Create Rate Amount,创建单价
 zh,Create Return,创建退货单
+zh,Create Return Shipment,创建退货运单
 zh,Create Sales Order,创建销售订单
 zh,Create Shipment,创建运单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
 zh,Created Date,创建日期
+zh,Credit Account,退款账户
+zh,Credit Memo Invoice,红字发票
 zh,Cur Total,当前合计
 zh,Cur Qty,当前数量
 zh,Currency,币种
@@ -375,7 +379,7 @@ zh,Customer Role,客户角色
 zh,Customer Statement PDF,客户对账单PDF
 zh,CustomerTitle,客户管理
 zh,Customers,客户
-zh,Dashboard,仪表盘
+zh,Dashboard,首页
 zh,DashboardAccounting,财务
 zh,DashboardApproved,已批准
 zh,DashboardAsset,资产
@@ -629,6 +633,7 @@ zh,ID Value,ID值
 zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
+zh,Immediate?,立即？
 zh,Incoming Refund Payments,收入退款
 zh,Income Statement,损益表
 zh,Initial Status,初始状态
@@ -649,6 +654,7 @@ zh,Inventory Assets,库存资产
 zh,Inventory Asset List,库存列表
 zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
+zh,Inventory Status,库存状态
 zh,Inventory Valuation,库存估值
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
@@ -719,6 +725,7 @@ zh,Location,位置
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Longitude,经度
+zh,Look Back Days,回顾天数
 zh,Lookup Asset,查找资产
 zh,Lookup by ID,按ID查找
 zh,Lot,批次
@@ -1070,6 +1077,7 @@ zh,Price,价格
 zh,Price History,价格历史
 zh,Prices,价格
 zh,Priority,优先级
+zh,Process Item Responses,处理条目响应
 zh,Produce,生产
 zh,Produce Asset,产出资产
 zh,Produced,产出的
@@ -1146,6 +1154,7 @@ zh,Rates,单价
 zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Ready Date,准备日期
+zh,Reason,原因
 zh,Receivable,应收
 zh,Receipt Transactions,入库凭证
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
@@ -1157,11 +1166,13 @@ zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
 zh,Receive Product,接收产品
 zh,Receive Serialized Inventory Direct,序列化产品入库
+zh,Receive without Shipment,无入库单接收
 zh,Received,接收日期
 zh,Received Date,接收日期
 zh,Received From,入库开始日期
 zh,Received Incoming Payments,已收到的收入付款
 zh,Received Outgoing Payments,已收到的支出付款
+zh,Received Quantity,已收到数量
 zh,Received Thru,入库截止日期
 zh,Recent Asset Moves,最近移动的资产
 zh,Recent Container Moves,最近移动的容器
@@ -1172,6 +1183,9 @@ zh,Record,记录
 zh,Record Time,记录时间
 zh,Recurring,循环
 zh,Ref,参考
+zh,Refund Amount,退款金额
+zh,Refund Credit Trans,退款凭证
+zh,Refund Payment,退款账单
 zh,Ref Num,参考代码
 zh,Ref/Check,参考
 zh,Ref/Check Number,付款参考代码
@@ -1195,6 +1209,8 @@ zh,Rental Shipment,租赁出库单
 zh,Rental Shipment List,租赁出库单列表
 zh,Reorder Quantity,再订购数量
 zh,Repeat Count,重复次数
+zh,Replacement Order,换货订单
+zh,Replacement Product,换货
 zh,Reply,回复
 zh,Report Builder,报表设计器
 zh,Reports,报表
@@ -1226,14 +1242,20 @@ zh,Reset Password,重置密码
 zh,Reset Pkg,重新装箱
 zh,Reset to Default,重置到默认
 zh,Resolution,解决
-zh,Response Required Date,答复日期
+zh,Response,响应
+zh,Response Amount,响应数量
+zh,Response Date,响应日期
+zh,Response Required Date,要求答复日期
 zh,Ret Amount,退货数量
 zh,Ret Label,退货标签
 zh,Ret Message,退货消息
 zh,Ret Status,退货状态
 zh,Ret Tracking,退货追踪
 zh,Retained Earnings,留存收益
+zh,Return,退货
 zh,Return ID,退货ID
+zh,Return Price,退货价格
+zh,Return Quantity,退货数量
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Order,返回到订单查询
 zh,Return to Find Party,返回到参与者查询
@@ -1320,11 +1342,13 @@ zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serial Number,序列号
 zh,Service,服务
+zh,Set,设置
 zh,Set Assignee,设置指派人
 zh,Set Delivered,设置为已送达
 zh,Set Authorized,设置为已验证
 zh,Set Classification,设置
 zh,Set Picked,已拣货
+zh,Set Requested,设置为已申请
 zh,Set Scheduled,已安排
 zh,Set Shipped,已发货
 zh,Set Shipping Address and Method,设置配送地址与方法
@@ -1370,6 +1394,7 @@ zh,Shipping Address and Method,配送地址与方法
 zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
+zh,Shipping Phone,电话
 zh,ShippingTitle,拣货管理
 zh,Show Details,显示详情
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
