@@ -348,6 +348,7 @@ zh,Create Variants,创建变体
 zh,Created Date,创建日期
 zh,Credit Account,退款账户
 zh,Credit Memo Invoice,红字发票
+zh,Credit,贷
 zh,Credits,贷
 zh,Cur Total,当前合计
 zh,Cur Qty,当前数量
@@ -420,6 +421,7 @@ zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
 zh,Days To Ship,发货天数
+zh,Debit,借
 zh,Debits,借
 zh,Decline,拒绝
 zh,Default Currency,默认货币
@@ -560,6 +562,7 @@ zh,Find Assets,查找资产
 zh,Find Category,分查询类
 zh,Find Customer,客户查询
 zh,Find Duplicates,查重
+zh,Find Entries,查询分录
 zh,Find Facility,设施查询
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
@@ -600,8 +603,8 @@ zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryString?:''}"
 zh,Fujian,福建省
-zh,GL Account,总账账户
-zh,GL Accounts,总账会计
+zh,GL Account,总账科目
+zh,GL Accounts,总账科目
 zh,GL Journals,总账日记账
 zh,GL Transactions,总账凭证
 zh,GLJournalsTitle,总账日记账
@@ -707,6 +710,7 @@ zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
+zh,Journal,日记账名称
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
 zh,Last,上
@@ -815,6 +819,7 @@ zh,New GL Account,新总账科目
 zh,New HTML Content,新HTML内容
 zh,New Incoming Payment,新收入付款单
 zh,New Incoming Shipment,新建入库单
+zh,New Journal,新日记账
 zh,New Lead and Organization,新线索与组织
 zh,New Lend Return Shipment,新借用归还入库单
 zh,New Lend Shipment,新借用出库单
@@ -855,6 +860,7 @@ zh,New Store,新店铺
 zh,New Store Promotion,新促销
 zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
+zh,New Transaction,新建凭证
 zh,New by Location,新内容按位置
 zh,New password is same as current password,新密码不能与当前密码一致
 zh,Next,下一步
@@ -1500,6 +1506,7 @@ zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
+zh,Transaction Date,交易日期
 zh,Transaction Entries,凭证分录
 zh,Transaction Reports,总帐交易报表
 zh,Transactions,会计凭证
