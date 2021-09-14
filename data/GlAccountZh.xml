@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="seed">
+
+    <!--https://www.bookweb.org/standard-chart-accounts-->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="100000000" locale="zh" localized="资产" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="110000000" locale="zh" localized="现金及约当现金" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111000000" locale="zh" localized="库存现金" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111100000" locale="zh" localized="General Checking Account" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111200000" locale="zh" localized="薪资支出 Payroll Checking Account" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111300000" locale="zh" localized="其他支票账户Other Checking Account" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111400000" locale="zh" localized="货币市场Money Market" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111500000" locale="zh" localized="存款证Certificates of Deposit" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111600000" locale="zh" localized="储蓄账户Savings Accounts" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111700000" locale="zh" localized="收银机中的现金Cash in Registers" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111800000" locale="zh" localized="店外活动现金Cash for Out of Store Events" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="111900000" locale="zh" localized="小额备用金Petty Cash" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="112000000" locale="zh" localized="未存入的收据Undeposited Receipts" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="120000000" locale="zh" localized="当前应收账款Current Receivable" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" pkValue="121000000" locale="zh" localized="应收账款Accounts Receivable" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="应收帐款-贸易 Accounts Receivable - Trade" pkValue="121100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="应收帐款-资金不足退还的支票 Accounts Receivable - Non-Sufficient Funds Returned Checks" pkValue="121200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="应收帐款-应收利息 Accounts Receivable - Interest Receivable" pkValue="121500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="应收账款-应收利息折扣 Accounts Receivable - Discount on Interest Receivable"
+                                      pkValue="121600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="应收帐款-坏帐准备 Accounts Receivable - Allowance for Bad Debts"
+                                      pkValue="121900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="In Transit from Credit Card Processors"
+                                      pkValue="122000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accounts Receivable Credit Cards - Allowance for Bad Debts"
+                                      pkValue="122900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vendor Advertising Allowances Receivable"
+                                      pkValue="123000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loans Receivable" pkValue="124000000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loans Receivable - Employees"
+                                      pkValue="124100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loans Receivable - Owners" pkValue="124200000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loans Receivable - Others" pkValue="124300000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Receivable from Inventory Transferred Out"
+                                      pkValue="125000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Receivable - Unapplied Payments"
+                                      pkValue="126000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Receivable Miscellaneous"
+                                      pkValue="129000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 130000 ASSET - FIXED ASSETS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Fixed Assets"
+                                      pkValue="130000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 131000 ASSET - EQUIPMENT -->
+    <!-- previous version change note (after 1.0.1): 17* to 131* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Equipment" pkValue="131000000" locale="zh"
+                                      entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Office Equipment - Furniture - Fixtures"
+                                      pkValue="131100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Data Processing Equipment" pkValue="131200000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Data Processing Software" pkValue="131300000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vehicles" pkValue="131400000" locale="zh"
+                                      entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Plant Equipment" pkValue="131500000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 132000 ASSET - LAND AND BUILDING -->
+    <!-- previous version change note (after 1.0.1): 16* to 132* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Land and Building" pkValue="132000000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Land" pkValue="132100000" locale="zh"
+                                      entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Building" pkValue="132200000" locale="zh"
+                                      entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Land Improvements" pkValue="132300000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Building Improvements" pkValue="132400000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Leasehold Improvements" pkValue="132500000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Investment Real Estate" pkValue="132800000"
+                                      locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 133000 ASSET - INTANGIBLE -->
+    <!-- previous version change note (after 1.0.1): 191* to 133* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Intangible Assets"
+                                      pkValue="133000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Covenant Not To Compete-Previous Owner"
+                                      pkValue="133100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Goodwill"
+                                      pkValue="133200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Lists"
+                                      pkValue="133300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Intellectual Property Assets"
+                                      pkValue="133400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Intangible Assets"
+                                      pkValue="133800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 134000 ASSET - FIXED OTHER -->
+    <!-- previous version change note (after 1.0.1): 195000000 => 134500000, 195100000 => 134600000, 198000000 => 134900000 -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Fixed Assets"
+                                      pkValue="134000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Cash Surrender Value of Life Insurance"
+                                      pkValue="134100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Biological Assets"
+                                      pkValue="134500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Bearer Biological Assets"
+                                      pkValue="134600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Assets"
+                                      pkValue="134900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 138000 ASSET - ACCUMULATED AMORTIZATION -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Amortization"
+                                      pkValue="138000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Amortization - Intellectual Property"
+                                      pkValue="138400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 139000 ASSET - FIXED ASSETS UNRECEIVED -->
+    <!-- previous version change note (after 1.0.1): 179000000 => 139100000, 169000000 => 139200000, 199000000 => 139300000 -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Fixed Assets Unreceived"
+                                      pkValue="139000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Equipment Unreceived"
+                                      pkValue="139100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Land and Building Unreceived"
+                                      pkValue="139200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Assets Unreceived"
+                                      pkValue="139300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+
+    <!-- 140000 ASSET - INVENTORY -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory"
+                                      pkValue="140000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory on Hand"
+                                      pkValue="141000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Raw Materials Inventory"
+                                      pkValue="141100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Work in Progress Inventory"
+                                      pkValue="141200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Finished Good Inventory"
+                                      pkValue="141300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Packaging Components Inventory"
+                                      pkValue="141400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory in Transit"
+                                      pkValue="142000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Inventory"
+                                      pkValue="147000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory - Average Cost Valuation Adjustment"
+                                      pkValue="148000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Unreceived/Unbilled Inventory"
+                                      pkValue="149000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Raw Material and Sub-Assembly Unreceived/Unbilled"
+                                      pkValue="149100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- needed? WIP from external source or something? <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Work in Progress Unreceived/Unbilled"
+        pkValue="149200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/> -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Finished Good Unreceived/Unbilled"
+                                      pkValue="149300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 150000 ASSET - PREPAID EXPENSES -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Prepaid Expenses, Deposits, Other Current Assets"
+                                      pkValue="150000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Expenses"
+                                      pkValue="151000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Insurance"
+                                      pkValue="151100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Rent"
+                                      pkValue="151200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Interest"
+                                      pkValue="151300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Wages"
+                                      pkValue="151400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prepaid Other"
+                                      pkValue="151900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Deposits"
+                                      pkValue="152000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Deposit - Ups"
+                                      pkValue="152100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Deposit - Utilities"
+                                      pkValue="152200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Deposit - Rent"
+                                      pkValue="152300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Deposits - Other"
+                                      pkValue="152900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Current Assets"
+                                      pkValue="153000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 160000 ASSET - ACCRUED REVENUE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Revenue"
+                                      pkValue="160000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 180000 ASSET - ACCUMULATED DEPRECIATION -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation"
+                                      pkValue="180000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Land and Building"
+                                      pkValue="181000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Land"
+                                      pkValue="181100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Building"
+                                      pkValue="181200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Land Improvements"
+                                      pkValue="181300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Building Improvements"
+                                      pkValue="181400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Leasehold Improvements"
+                                      pkValue="181500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Investment Real Estate"
+                                      pkValue="181800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Equipment"
+                                      pkValue="182000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Office Furniture Fixtures Equipment"
+                                      pkValue="182100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Data Processing Equipment"
+                                      pkValue="182200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accumulated Depreciation - Data Processing Software"
+                                      pkValue="182300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Vehicles"
+                                      pkValue="182400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Plant Equipment"
+                                      pkValue="182500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Other Assets Root"
+                                      pkValue="183000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Biological Assets"
+                                      pkValue="183500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accumulated Depreciation - Other Assets"
+                                      pkValue="183800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- ========== 200000 LIABILITY ========== -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Liability"
+                                      pkValue="200000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 210000 LIABILITY - ACCOUNTS PAYABLE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Current Payable"
+                                      pkValue="210000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Accounts Payable"
+                                      pkValue="211000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Operating"
+                                      pkValue="212000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Payroll"
+                                      pkValue="212100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Commissions"
+                                      pkValue="212200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Tax"
+                                      pkValue="212300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Garnishment"
+                                      pkValue="212400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Loan"
+                                      pkValue="212500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Uninvoiced Item Receipt"
+                                      pkValue="214000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Payable for Inventory Transferred In"
+                                      pkValue="215000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable - Unapplied Payments"
+                                      pkValue="216000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 220000 LIABILITY - ACCRUED EXPENSES -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Expenses"
+                                      pkValue="220000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Payroll"
+                                      pkValue="221000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Commissions Due"
+                                      pkValue="221100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Wages Due"
+                                      pkValue="221200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Employee Medical Premiums"
+                                      pkValue="221300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Payroll Withholding"
+                                      pkValue="222000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Withholding"
+                                      pkValue="222100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Income Tax Employee Withholding"
+                                      pkValue="222110000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Social Security Employee Withholding"
+                                      pkValue="222120000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Medicare Employee Withholding"
+                                      pkValue="222130000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Pension Employee Withholding"
+                                      pkValue="222140000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Federal Unemployment Insurance Employee Withholding"
+                                      pkValue="222150000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Withholding"
+                                      pkValue="222400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Income Tax Employee Withholding"
+                                      pkValue="222410000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="State Disability Insurance Employee Withholding"
+                                      pkValue="222420000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Misc Tax Employee Withholding"
+                                      pkValue="222430000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Pension Employee Withholding"
+                                      pkValue="222440000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="State Unemployment Insurance Employee Withholding"
+                                      pkValue="222450000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Local Withholding"
+                                      pkValue="222500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Local Income Tax Employee Withholding"
+                                      pkValue="222510000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Local Misc Tax Employee Withholding"
+                                      pkValue="222520000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="401k - Pension Withholding"
+                                      pkValue="222600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Garnishment Withholding"
+                                      pkValue="222700000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Employee Benefits Withholding"
+                                      pkValue="222800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Miscellaneous Withholding"
+                                      pkValue="222900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Payroll Taxes"
+                                      pkValue="223000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Payroll Taxes - FICA Employer's Share"
+                                      pkValue="223100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accrued Payroll Taxes - Medicare Employer's Share"
+                                      pkValue="223200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Accrued Payroll Taxes - Federal Unemployment Tax"
+                                      pkValue="223300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Payroll Taxes - State Unemployment Tax"
+                                      pkValue="223400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="401k - Pension Employer Contribution"
+                                      pkValue="223500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- SALES TAX COLLECTED -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Tax Collected"
+                                      pkValue="224000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- better not to have any region or tax authority specific accounts, report on that elsewhere
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Tax Collected Usa" 
+        pkValue="224100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Tax Collected Canada" 
+        pkValue="224200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    -->
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Use Tax"
+                                      pkValue="225000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accrued Retirement Plan Expense"
+                                      pkValue="226000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Accrued Expenses"
+                                      pkValue="229000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 230000 LIABILITY - CURRENT NOTES PAYABLE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Current Notes Payable"
+                                      pkValue="230000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Short Term Obligation"
+                                      pkValue="231000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Current Portion of Long-Term Debt"
+                                      pkValue="239000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 240000 LIABILITY - LONG-TERM NOTES PAYABLE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Long-Term Notes Payable"
+                                      pkValue="240000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Long-Term Obligation"
+                                      pkValue="241000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Mortgage Note Payable"
+                                      pkValue="242000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loan from Owner or Stockholder"
+                                      pkValue="243000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Long Term Obligation"
+                                      pkValue="248000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 250000 LIABILITY - THIRD-PARTY HOLDINGS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third-Party Holdings"
+                                      pkValue="250000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 251000 LIABILITY - CUSTOMER CREDIT AND DEPOSITS -->
+    <!-- previous version change note (after 1.0.1): 213* -> 251*, 217* -> 252*, 218* -> 258* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Credit and Deposits"
+                                      pkValue="251000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Merchandise Credit Unredeemed"
+                                      pkValue="251100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Gift Certificate Unredeemed"
+                                      pkValue="251200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Special Order Deposit"
+                                      pkValue="251300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Mail Order Deposit"
+                                      pkValue="251400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Deposit Account"
+                                      pkValue="251500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 252000 LIABILITY - SUPPLIER DEPOSITS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Supplier Deposits"
+                                      pkValue="252000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 253000 LIABILITY - FIXED ASSETS UNISSUED -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Fixed Assets Unissued"
+                                      pkValue="253000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Equipment Unissued"
+                                      pkValue="253100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Land and Building Unissued"
+                                      pkValue="253200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Assets Unissued"
+                                      pkValue="253300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 254000 LIABILITY - DONATIONS COLLECTED -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Donations Collected"
+                                      pkValue="254000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 258000 LIABILITY - FINANCIAL ACCOUNT IN TRANSIT -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Financial Account in Transit"
+                                      pkValue="258000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Financial Account In Transit Deposits"
+                                      pkValue="258100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Financial Account In Transit Withdrawals"
+                                      pkValue="258200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Financial Account In Transit Transfers"
+                                      pkValue="258300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 260000 LIABILITY - UNEARNED REVENUE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Unearned Revenue"
+                                      pkValue="260000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- ========== 300000 OWNERS EQUITY ========== -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Owners Equity"
+                                      pkValue="300000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 310000 OWNERS EQUITY - SOLE PROPRIETORSHIP AND PARTNERSHIP -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Owners Equity - Sole and Partnership"
+                                      pkValue="310000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Capital - Sole and Partnership"
+                                      pkValue="311000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Drawings - Sole and Partnership"
+                                      pkValue="312000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 330000 OWNERS EQUITY - CORPORATION AND S CORP -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Owners Equity - Corporation"
+                                      pkValue="330000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Stock - Corporation"
+                                      pkValue="331000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Common Stock"
+                                      pkValue="331100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Preferred Stock"
+                                      pkValue="3312000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Treasury Stock"
+                                      pkValue="331300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Paid-in Capital"
+                                      pkValue="332000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Paid-in Capital in Excess of Par on Common Stock"
+                                      pkValue="332100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Paid-in Capital in Excess of Par on Preferred Stock"
+                                      pkValue="332200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Paid-in Capital from Treasury Stock"
+                                      pkValue="332300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Dividends"
+                                      pkValue="333000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Dividends - Common Stock"
+                                      pkValue="333100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Dividends - Preferred Stock"
+                                      pkValue="333200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Drawings - S Corporation"
+                                      pkValue="334000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Retained Earnings"
+                                      pkValue="335000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- ========== 400000 SALES ========== -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales"
+                                      pkValue="400000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 410000 SALES - SALES REVENUE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Revenue"
+                                      pkValue="410000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Product Sales"
+                                      pkValue="411000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Service Sales"
+                                      pkValue="412000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Asset Rental Sales"
+                                      pkValue="413000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Miscellaneous Sales"
+                                      pkValue="419000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 420000 SALES - CUSTOMER RETURNS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Returns"
+                                      pkValue="420000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Returns - Products"
+                                      pkValue="421000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Returns - Promotions"
+                                      pkValue="422000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Returns - Adjustments"
+                                      pkValue="423000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Returns - Work or Time Entry"
+                                      pkValue="424000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 430000 SALES - CUSTOMER SERVICE CREDITS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Service Credits"
+                                      pkValue="430000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 440000 SALES - FEES RECEIVED -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Fees Received"
+                                      pkValue="440000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- NOTE: 721200000 => 441000000 -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Postage and Handling Fees Received"
+                                      pkValue="441000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Late Payment Fees Received"
+                                      pkValue="442000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Sales"
+                                      pkValue="450000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Product Sales"
+                                      pkValue="451000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Shrinkage Credit"
+                                      pkValue="458000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Misc Sales"
+                                      pkValue="459000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- ========== 500000 COST OF SALES ========== -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Cost of Sales"
+                                      pkValue="500000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Cost of Goods Sold"
+                                      pkValue="510000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Merchandise Purchases"
+                                      pkValue="511000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="General Cost of Goods Sold"
+                                      pkValue="512000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Avg Cost Adjustment"
+                                      pkValue="513000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Royalties on Goods"
+                                      pkValue="516000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Late Payment Charges"
+                                      pkValue="517000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other COGS"
+                                      pkValue="518000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Freight"
+                                      pkValue="519000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Freight In"
+                                      pkValue="519100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Freight Out"
+                                      pkValue="519200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="COGS Shipping Supplies"
+                                      pkValue="519300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Discounts and Write Downs"
+                                      pkValue="520000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Prompt Payment Discounts"
+                                      pkValue="521000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Discounts on Sales"
+                                      pkValue="522000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Coupons and Credits"
+                                      pkValue="522100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Promotional Discounts"
+                                      pkValue="522200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Appeasement Discounts"
+                                      pkValue="522300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Supplier Discounts"
+                                      pkValue="522400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Fees on Sales"
+                                      pkValue="523000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Slotting Fees"
+                                      pkValue="523100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Write Downs Below Cost"
+                                      pkValue="525000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Free Fills"
+                                      pkValue="525100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Free Samples"
+                                      pkValue="525200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory Adjustment"
+                                      pkValue="526000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory Shrinkage"
+                                      pkValue="527000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Obsolete Inventory"
+                                      pkValue="527100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Good Returns Cost"
+                                      pkValue="530000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Good Returns Penalties"
+                                      pkValue="531000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Good Returns To Vendors"
+                                      pkValue="532000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Cost of Services Sold"
+                                      pkValue="550000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Cost of Sales"
+                                      pkValue="560000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Sales Commissions Deducted"
+                                      pkValue="561000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Third Party Fulfillment Fee Deducted"
+                                      pkValue="562000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- ========== 600000-700000 OPERATING EXPENSES ========== -->
+    <!-- 600000 GENERAL EXPENSE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="General Expense"
+                                      pkValue="600000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 610000 EXPENSE - FACILITY AND EQUIPMENT -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Facility and Equipment Expense"
+                                      pkValue="610000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 611000 EXPENSE - FACILITY OCCUPANCY -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Facility Occupancy"
+                                      pkValue="611000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Rent Expense"
+                                      pkValue="611100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Basic Rent"
+                                      pkValue="611110000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Percentage Rent"
+                                      pkValue="611120000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Common Area Charges"
+                                      pkValue="611130000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities"
+                                      pkValue="611200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities - Heating"
+                                      pkValue="611210000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities - Electricity"
+                                      pkValue="611220000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities - Water and Sewer"
+                                      pkValue="611230000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities - Trash Removal / Recycling"
+                                      pkValue="611240000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Utilities - Vehicle Fuel"
+                                      pkValue="611250000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Occupancy Costs"
+                                      pkValue="611300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Customer Parking Subsidy"
+                                      pkValue="611310000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Janitorial and Other Contract Services"
+                                      pkValue="611320000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 612000 OTHER EXPENSE - EQUIPMENT RENT -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Equipment and Vehicle Rent"
+                                      pkValue="612000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Office Equipment Rent"
+                                      pkValue="612100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Store Equipment Rent"
+                                      pkValue="612200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vehicle Rent"
+                                      pkValue="612300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Equipment Rent"
+                                      pkValue="612400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 613000 OTHER EXPENSE - REPAIRS AND MAINTENANCE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Repairs and Maintenance"
+                                      pkValue="613000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Repairs and Maintenance - Building"
+                                      pkValue="613100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Repairs and Maintenance - Furniture, Fixtures, and Equipment"
+                                      pkValue="613200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Repairs and Maintenance - Data Processing Equip"
+                                      pkValue="613300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Repairs and Maintenance - Vehicle"
+                                      pkValue="613400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Repairs and Maintenance - Rental Building"
+                                      pkValue="613500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Repairs and Maintenance - Other"
+                                      pkValue="613900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 614000 EXPENSE - COMMUNICATIONS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Communications"
+                                      pkValue="614000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Telephone Company Use Charges"
+                                      pkValue="614100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Telephone Co Charges - Local"
+                                      pkValue="614110000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Telephone Co Charges - Long Distance"
+                                      pkValue="614120000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Telephone Co Charges - Fax"
+                                      pkValue="614130000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Telephone Co Charges - Cell Phone and Pager"
+                                      pkValue="614140000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Network Charges"
+                                      pkValue="614200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 616000 EXPENSE - DATA PROCESSING -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Data Processing"
+                                      pkValue="616000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Data Processing Supplies"
+                                      pkValue="616100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Data Processing Equipment and Software"
+                                      pkValue="616200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Outside Computer Services"
+                                      pkValue="616300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Web Site and Software"
+                                      pkValue="616400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Data Processing Expense"
+                                      pkValue="616900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 620000 EXPENSE - ADVERTISING AND PROMOTION -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Advertising and Promotion"
+                                      pkValue="620000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Advertising"
+                                      pkValue="621000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Special Events"
+                                      pkValue="623000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Joint Advertising"
+                                      pkValue="624000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Advertising / Promotion"
+                                      pkValue="625000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Publisher / Vendor Advertising Allowances"
+                                      pkValue="626000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Promotional Materials"
+                                      pkValue="627000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Promotional Literature"
+                                      pkValue="627100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Promotional Displays"
+                                      pkValue="627200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 630000 EXPENSE - COMPENSATION AND BENEFITS -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Compensation Expense"
+                                      pkValue="630000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Wages and Commissions"
+                                      pkValue="631000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Wages - Employee"
+                                      pkValue="631100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Wages - Owners"
+                                      pkValue="631200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Wages - Officers"
+                                      pkValue="631400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Commissions - Employee"
+                                      pkValue="631600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Commissions - Non-Employee"
+                                      pkValue="631700000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Commission Adjustments"
+                                      pkValue="631800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Bonus"
+                                      pkValue="631900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vacation and Sick Pay"
+                                      pkValue="632000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vacation Pay - Employees"
+                                      pkValue="632100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vacation Pay - Owners"
+                                      pkValue="632200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sick Pay - Employees"
+                                      pkValue="632300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sick Pay - Owners"
+                                      pkValue="632400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="PTO Pay - Employees"
+                                      pkValue="632500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="PTO Pay - Owners"
+                                      pkValue="632600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Holiday Pay - Employees"
+                                      pkValue="632700000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Holiday Pay - Owners"
+                                      pkValue="632800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Employment Tax"
+                                      pkValue="633000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Insurance Contribution Tax - Employer"
+                                      pkValue="633200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Social Security - Employer"
+                                      pkValue="633210000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Medicare - Employer"
+                                      pkValue="633220000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Pension - Employer"
+                                      pkValue="633230000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Disability Insurance - Employer"
+                                      pkValue="633250000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Misc Tax - Employer"
+                                      pkValue="633260000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Pension - Employer"
+                                      pkValue="633270000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Local Misc Tax - Employer"
+                                      pkValue="633290000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Unemployment Insurance - Employer"
+                                      pkValue="633700000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Unemployment Insurance - Employer"
+                                      pkValue="633710000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Unemployment Insurance - Employer"
+                                      pkValue="633720000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Group Health Insurance"
+                                      pkValue="634000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Group Health Insurance - Premiums"
+                                      pkValue="634100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Group Health Insurance - Premiums Owner or Stockholder"
+                                      pkValue="634200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Employee Health Insurance Premium Contributions"
+                                      pkValue="634800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Former Employee Cobra Payments"
+                                      pkValue="634900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Workers Compensation Insurance"
+                                      pkValue="635000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Disability and Life Insurance"
+                                      pkValue="636000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Disability Income Insurance Premiums"
+                                      pkValue="636100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Disability Income Insurance Premiums Owner or Stockholder"
+                                      pkValue="636200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Employee Disability Insurance Co-Payments"
+                                      pkValue="636400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Life Insurance"
+                                      pkValue="636500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Group Life Insurance Premiums"
+                                      pkValue="636600000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Group Life Insurance Premiums Owner or Stockholder"
+                                      pkValue="636700000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Employee Life Insurance Co-Payments"
+                                      pkValue="636900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Retirement (Pension / Profit Sharing / 401k)"
+                                      pkValue="637000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Benefit Expense"
+                                      pkValue="638000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Staff Gifts and Perqs"
+                                      pkValue="638100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Staff Picnic / Party (100% Deductible)"
+                                      pkValue="638200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Staff Meals and Snacks (100% Deductible)"
+                                      pkValue="638300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Payroll Processing Expense"
+                                      pkValue="639000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 640000 EXPENSE - PROFESSIONAL SERVICES -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Professional Services"
+                                      pkValue="640000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Legal Fees"
+                                      pkValue="641000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounting Fees"
+                                      pkValue="642000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory Verification Fees"
+                                      pkValue="643000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Marketing Consulting Fees"
+                                      pkValue="644000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Business Consulting Fees"
+                                      pkValue="645000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Systems Analysis and Development Fees"
+                                      pkValue="646000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Consulting Fees"
+                                      pkValue="649000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 650000 Expense - OFFICE, SUPPLIES, SHIPPING -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Office and Supplies Expenses"
+                                      pkValue="650000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 651000 Expense - Office -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Office Expense"
+                                      pkValue="651000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 652000 Expense - Supplies -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Supplies Expense"
+                                      pkValue="652000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Stationery and Supplies - Office Use"
+                                      pkValue="652100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Wrappings and Bags"
+                                      pkValue="652200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Printed Items - Not Otherwise Allocated"
+                                      pkValue="652300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Janitorial Supplies"
+                                      pkValue="652400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Supplies"
+                                      pkValue="652900000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 653000 Expense - Shipping -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Shipping Expense"
+                                      pkValue="653000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Postage Expense"
+                                      pkValue="653100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Postage Expense"
+                                      pkValue="653200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Shipping Supplies Expense"
+                                      pkValue="653300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 655000 Expense - Recruiting -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Recruiting and Help Wanted"
+                                      pkValue="655000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 660000 Non-Employee Compensation -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Non-Employee Compensation"
+                                      pkValue="660000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Outside Labor and Services"
+                                      pkValue="661000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 670000 Expense - Depreciation -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation"
+                                      pkValue="670000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Land and Building"
+                                      pkValue="671000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Land"
+                                      pkValue="671100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Building"
+                                      pkValue="671200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Land Improvements"
+                                      pkValue="671300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Building Improvements"
+                                      pkValue="671400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Leasehold Improvements"
+                                      pkValue="671500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Investment Real Estate"
+                                      pkValue="671800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Equipment"
+                                      pkValue="672000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Furniture /Fixtures / Equipment"
+                                      pkValue="672100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Data Processing Equipment"
+                                      pkValue="672200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Data Processing Software"
+                                      pkValue="672300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Vehicles"
+                                      pkValue="672400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Other Assets Root"
+                                      pkValue="673000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Biological Assets"
+                                      pkValue="673500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Depreciation - Other Assets"
+                                      pkValue="673800000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 680000 Expense - Travel, Entertainment, Education -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Travel, Entertainment, Education"
+                                      pkValue="680000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 681000 Expense - Travel and Entertainment -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Travel and Entertainment"
+                                      pkValue="681000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Business Travel Expense"
+                                      pkValue="681100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Travel Expense"
+                                      pkValue="681110000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Business Meals and Entertainment (50% Deductible)"
+                                      pkValue="681200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Meals and Entertainment"
+                                      pkValue="681210000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Food - Staff Meetings, etc.  (100% Deductible - de minimis)"
+                                      pkValue="681300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 682000 Expense - Education -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Education"
+                                      pkValue="682000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Education - Course Fees"
+                                      pkValue="682100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Education - Travel"
+                                      pkValue="682200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName"
+                                      localized="Education - Meals and Entertainment (50% Deductible)"
+                                      pkValue="682300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Education - Other"
+                                      pkValue="682400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Education - Product Research"
+                                      pkValue="682500000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 683000 Expense - Dues and Subscriptions -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Dues and Subscriptions"
+                                      pkValue="683000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Association Membership Fees"
+                                      pkValue="683100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Subscription Fees"
+                                      pkValue="683200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Subscription Fees - Professional Publications"
+                                      pkValue="683210000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Subscription Fees - Bound Reference Tools"
+                                      pkValue="683220000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Subscription Fees - Electronic Refer Tools"
+                                      pkValue="683230000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 690000 Expense - Insurance -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Insurance"
+                                      pkValue="690000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Business Insurance"
+                                      pkValue="691000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Real Estate Insurance"
+                                      pkValue="692000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vehicle Insurance"
+                                      pkValue="693000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Insurance"
+                                      pkValue="694000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 700000 OTHER EXPENSE -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Expense"
+                                      pkValue="700000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 710000 OTHER EXPENSE - SERVICE CHARGES -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Banking Service Charges"
+                                      pkValue="710000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Credit Card Charges"
+                                      pkValue="711000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Credit Card Charge Master Card / Visa"
+                                      pkValue="711100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Credit Card Charge Amex"
+                                      pkValue="711200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Credit Card Charge Discover"
+                                      pkValue="711300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Credit Card Charge Debit / Atm Card"
+                                      pkValue="711400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Bank Service Charges"
+                                      pkValue="712000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Service Charges"
+                                      pkValue="719000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 730000 OTHER EXPENSE - INCOME TAX -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Tax Expense - Income"
+                                      pkValue="730000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Federal Income Tax"
+                                      pkValue="731000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="State Income Tax"
+                                      pkValue="732000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Local Income Tax"
+                                      pkValue="733000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 740000 OTHER EXPENSE - NON-INCOME TAX -->
+    <!-- NOTE: separate from INCOME_TAX_EXPENSE, as per definition of EBIT/etc -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Tax Expense - Other"
+                                      pkValue="740000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory and Use Taxes"
+                                      pkValue="741000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Real Estate Taxes"
+                                      pkValue="742000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Business Licenses and Fees"
+                                      pkValue="743000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Business Taxes and Fees"
+                                      pkValue="744000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales and Use Taxes"
+                                      pkValue="745000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 780000 OTHER EXPENSE - OTHER OPERATING EXPENSES -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Operating Expenses"
+                                      pkValue="780000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Bad Debts"
+                                      pkValue="781000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Collection Expense"
+                                      pkValue="781100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Write Off Expense"
+                                      pkValue="782000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Receivable Write Off"
+                                      pkValue="782100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Interest Income Write Off"
+                                      pkValue="782400000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Cash Over / Short"
+                                      pkValue="783000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Financial Account Errors"
+                                      pkValue="784000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Contributions"
+                                      pkValue="785000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Non-COGS Inventory Expense"
+                                      pkValue="786000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Inventory Purchase Adjustments"
+                                      pkValue="786100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Amortization Expense"
+                                      pkValue="787000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Misc Operating Expense"
+                                      pkValue="789000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <!-- 790000 NON-OPERATING EXPENSE -->
+    <!-- NOTE: 82* to 79* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Non-operating Expense"
+                                      pkValue="790000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Interest Expense"
+                                      pkValue="791000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Equipment Interest Expense"
+                                      pkValue="791100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Vehicle Interest Expense"
+                                      pkValue="791200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Real Estate Interest Expense"
+                                      pkValue="791300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Company Owned Life Insurance"
+                                      pkValue="792000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loss on Fixed Assets"
+                                      pkValue="793000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loss on Sale of Fixed Assets"
+                                      pkValue="793100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Loss on Fixed Assets Shrinkage"
+                                      pkValue="793200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Non-COGS Royalties and Franchise Fees"
+                                      pkValue="794000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Uninsured Casualty Loss"
+                                      pkValue="795000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Charitable Donations"
+                                      pkValue="796000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Foreign Exchange Loss"
+                                      pkValue="797000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Non-operating Fees and Penalties"
+                                      pkValue="798000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Non-operating Expenses"
+                                      pkValue="799000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+
+    <!-- 800000 OTHER INCOME -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Income Root"
+                                      pkValue="800000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 810000 INVESTMENT INCOME -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Investment and Gains Income"
+                                      pkValue="810000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Dividend Income"
+                                      pkValue="812000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Capital Gains Income"
+                                      pkValue="813000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Gain on Assets"
+                                      pkValue="814000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Gain on Sale of Fixed Assets"
+                                      pkValue="814100000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Gain on Found Fixed Assets"
+                                      pkValue="814200000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Gain on Found Inventory"
+                                      pkValue="814300000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Foreign Exchange Gain"
+                                      pkValue="817000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Income"
+                                      pkValue="819000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 830000 INCOME / LOSS FROM BUSINESS (NET OF EXPENSES) -->
+    <!-- NOTE: 801-806 to 83* -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Income from Business (Net of Expenses)"
+                                      pkValue="830000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Rental Income"
+                                      pkValue="832000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Sales Tax Commission"
+                                      pkValue="833000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Special Fees Collected"
+                                      pkValue="834000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Fees Collected"
+                                      pkValue="835000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Membership Fees Collected"
+                                      pkValue="836000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Manufacturing Fees Collected"
+                                      pkValue="837000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 840000 INTEREST INCOME -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Interest Income"
+                                      pkValue="840000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Interest Income on Finance Charges"
+                                      pkValue="841000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Interest Income"
+                                      pkValue="842000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 850000 NET INCOME -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Net Income (Period Profit/Loss)"
+                                      pkValue="850000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <!-- 860000 WRITE OFF INCOME -->
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Write Off Income"
+                                      pkValue="860000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Accounts Payable Write Off"
+                                      pkValue="862000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Commissions Payable Write Off"
+                                      pkValue="863000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Payable Prompt Payment Discounts"
+                                      pkValue="864000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Other Purchase Discounts"
+                                      pkValue="865000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Transfer Clearing Accounts"
+                                      pkValue="910000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Transfer Clearing - Asset"
+                                      pkValue="911000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+    <moqui.basic.LocalizedEntityField fieldName="accountName" localized="Transfer Clearing - Liability"
+                                      pkValue="912000000" locale="zh" entityName="mantle.ledger.account.GlAccount"/>
+</entity-facade-xml>
