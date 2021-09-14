@@ -636,6 +636,7 @@ zh,Has Role,角色包括
 zh,Hebei,河北省
 zh,Heilongjiang,黑龙江省
 zh,Henan,河南省
+zh,Hidden,隐藏
 zh,Hold,暂停
 zh,HongKong,香港特别行政区
 zh,Hours,小时数
@@ -1228,6 +1229,7 @@ zh,Remaining,剩余
 zh,Remote,远端
 zh,Remove,移除
 zh,Remove All from Category,从分类移除产品
+zh,Remove Address?,删除地址？
 zh,Remove Feature from All,移除产品特征
 zh,Remove from Load,移除设备
 zh,Rental Return Shipment,租赁归还入库单
@@ -1306,6 +1308,7 @@ zh,Run Products,生产产品
 zh,Runs,运行
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Sales,销售
+zh,Sales/Purchase,销售/采购
 zh,Sales Account,客户
 zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
 zh,Sales Orders & Quotes,销售订单与报价
