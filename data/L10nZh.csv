@@ -12,6 +12,7 @@ zh,Abbrev,缩写
 zh,Accepted,接收
 zh,Account,账户
 zh,Account #,账户卡号
+zh,Account Class,账户类
 zh,Account Code,科目代码
 zh,Account Detail,账号详情
 zh,Account Balance History,科目余额历史
@@ -67,6 +68,7 @@ zh,Add Meter,添加仪表
 zh,Add New,添加新
 zh,Add Note,添加
 zh,Add Orders,添加订单
+zh,Add Organization,添加组织
 zh,Add Origin Address,添加原地址
 zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
@@ -449,6 +451,7 @@ zh,Disable Promotions,禁用促销
 zh,Disable Shipping Calc,禁用运费计算
 zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
+zh,Disallow Posting,禁止过账
 zh,Display ID,显示ID
 zh,Do Find,进行查找
 zh,Do Not Display,不显示
@@ -1008,6 +1011,7 @@ zh,Page #,页 #
 zh,Page Layout,页面布局
 zh,Paid Percent,已支付发票百分比
 zh,Parent,父
+zh,Parent Account,父账户
 zh,Parent Categories,父分类
 zh,Parent Facility,父设施
 zh,Parent Item,父条目
@@ -1079,6 +1083,7 @@ zh,Pickup Date,拣货日期
 zh,Place,下定
 zh,Place Warnings,警告下定
 zh,Placed,下定时间
+zh,Placed by Customer,客户已下定
 zh,Placed Date,下定日期
 zh,Please select a Facility,请选择一个设施
 zh,Pool,池
