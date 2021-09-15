@@ -1,6 +1,7 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
+zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
 zh,"${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId}","${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '移库' : 'Unknown Type'))}单#${shipmentId}"
 zh,"${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId}","${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}"
@@ -150,6 +151,7 @@ zh,Apply to Category,应用到分类
 zh,Appr Order Qty,已批准订单数
 zh,Approval,批准
 zh,Approve,批准
+zh,Approved,已批准
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
 zh,AR Aging Summary,应收账龄概要
@@ -157,6 +159,7 @@ zh,Area,区
 zh,Area Code,区号
 zh,Asc,升序
 zh,Asset,资产
+zh,Asset ${resInfo.existingRes.assetId},资产${resInfo.existingRes.assetId}
 zh,Asset Adjustments,资产调整
 zh,Asset Allow Issue Over QOH,允许超QOH
 zh,Asset Allow Other Owner,允许其他拥有者
@@ -167,7 +170,7 @@ zh,Asset ID,库存流水号
 zh,Asset Name,资产名称
 zh,Asset Owner will default to Facility owner,资产拥有者默认为仓库拥有者
 zh,Asset Pool,资产池
-zh,Asset Reservations,预占资产
+zh,Asset Reservations,预约资产
 zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
@@ -220,6 +223,7 @@ zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Birth,生日
 zh,Birth Date,生日
 zh,Black,黑
 zh,Blogs,博客
@@ -262,7 +266,7 @@ zh,Category Name,分类名称
 zh,Category Type,分类类型
 zh,CategoryTitle,分类
 zh,Categories,分类
-zh,Change Password,检查预留
+zh,Change Password,修改密码
 zh,Check Reservations,检查预留
 zh,Check Num,检查数量
 zh,Checks PDF,检查PDF
@@ -281,6 +285,7 @@ zh,Classifications,类型
 zh,Clear Current Find,清空当前查找
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
+zh,Client,客户
 zh,Client Hour Calc,客户小时计算
 zh,Client Hour Rate,客户小时单价
 zh,Client Invoice,客户账单
@@ -300,13 +305,16 @@ zh,Code Expires,代码过期日
 zh,Column,列
 zh,Column Fields,列字段
 zh,Columns,列
+zh,Comment,评论
 zh,Comments,评论
 zh,Company Name On Account,账户公司名称
+zh,Completed,已完成
 zh,Completed Sales Orders,已完成的销售订单
 zh,Completed Purchase Orders,已完成的采购订单
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Consume,消耗
+zh,Consumer,消费者
 zh,Consume Asset,消耗资产
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
@@ -457,6 +465,7 @@ zh,Do Find,进行查找
 zh,Do Not Display,不显示
 zh,Documentation,文档
 zh,Download,下载
+zh,Draft,草稿
 zh,Drag fields to the desired column or do not display,拖放列调整顺序，或拖到不显示。
 zh,Drop Shipment,直运出库单
 zh,Drop Shipment List,直运出库单列表
@@ -607,6 +616,7 @@ zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,"Full search string: ${queryString?:''}","全部查询字符串：${queryString?:''}"
 zh,Fujian,福建省
+zh,Full Search,全文检索
 zh,GL Account,总账科目
 zh,GL Accounts,总账科目
 zh,GL Journals,总账日记账
@@ -652,8 +662,10 @@ zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Immediate?,立即？
+zh,In Progress,进行中
 zh,Incoming Refund Payments,收入退款
 zh,Income Statement,损益表
+zh,Information,信息
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
@@ -686,8 +698,8 @@ zh,Invoice ID,账单ID
 zh,Invoice Item,账单条目
 zh,Invoice Item Summary,账单条目概要
 zh,Invoice Message,账单消息
-zh,Invoice Time,工时账单
 zh,Invoice Reconciliation,账单对账
+zh,Invoice Time,工时账单
 zh,Invoice Types,账单类型
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
@@ -695,6 +707,7 @@ zh,Invoices From,账单从
 zh,Invoices From (${fromInvoiceCount}),账单从(${fromInvoiceCount})
 zh,Invoices Total,发票总额
 zh,Invoices and Payments,账单与付款单
+zh,Invoices To (${toInvoiceCount}),账单(${toInvoiceCount})
 zh,Is Gift,礼物
 zh,Issuance,发行
 zh,Issued,发货时间
@@ -791,6 +804,10 @@ zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
 zh,My Account,个人中心
+zh,My Open Tasks,我的未完任务
+zh,My Open Requests,我的未完审批
+zh,My Projects,我的项目
+zh,My Milestones,我的里程碑
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,Notifications,通知
@@ -896,6 +913,7 @@ zh,"Not looking for child directory at [${relativePath}] under space root page [
 zh,"Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件"
 zh,Note,备注
 zh,Notes,备注
+zh,Number,号码
 zh,OR Interval UOM,或间隔UOM
 zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
@@ -905,6 +923,7 @@ zh,On Hand Summary,在手概要
 zh,Only Cost Matches PO Amount,只包成本与采购金额相等的
 zh,Only No Cost,只包括无成本
 zh,Only No Location,只包括不在位置
+zh,Open (Tentative),开始（初始）
 zh,Opened,开始
 zh,Operate,运营
 zh,Operation,操作
@@ -1052,6 +1071,7 @@ zh,Payment Methods,付款方式
 zh,Payment Terms,付款条件
 zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
+zh,Payments To (${toPaymentCount}),付款单(${toPaymentCount})
 zh,Payments,付款
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
@@ -1267,7 +1287,7 @@ zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
 zh,Reservation,预占
 zh,Reservation Auto Type,库存锁定类型
-zh,Reservations,预留
+zh,Reservations,预约
 zh,Reserve Assets,预约资产
 zh,Reset Password,重置密码
 zh,Reset Pkg,重新装箱
@@ -1312,6 +1332,7 @@ zh,Sales/Purchase,销售/采购
 zh,Sales Account,客户
 zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
 zh,Sales Orders & Quotes,销售订单与报价
+zh,Sales Orders (${customerOrderPartCount}),销售订单(${customerOrderPartCount})
 zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
@@ -1422,6 +1443,7 @@ zh,ShipmentTitle,出库入库
 zh,Shipments,运输
 zh,Shipments From,运单从
 zh,Shipments To,出库单
+zh,Shipments To (${toShipmentCount}),发货单(${toShipmentCount})
 zh,Shipped,已发送
 zh,Shipping,仓库作业
 zh,Shipping - Pick & Pack,运输 - 拣货与打包
@@ -1538,6 +1560,7 @@ zh,Unit,单位
 zh,Unpaid,未付
 zh,Unpaid Payables,未支付的应付款
 zh,Unpaid Receivables,未支付的应收款
+zh,Unresolved,未解决
 zh,Update,更新
 zh,Update Address,更新
 zh,Update Cost & Owner,更新费用与拥有者
@@ -1582,6 +1605,7 @@ zh,Wiki,维基
 zh,Wiki Page,维基页面
 zh,Wiki Pages,维基页面
 zh,Wiki Space ID,维基空间ID
+zh,Wiki Spaces,维基空间
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
 zh,Worker Hour Calc,工人小时计算
