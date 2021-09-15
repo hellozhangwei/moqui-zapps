@@ -2,9 +2,11 @@ moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
+zh,"${orderPartInfo.customerEmail ?: 'No Order or Primary email found'}","${orderPartInfo.customerEmail ?: '未发现订单邮箱或者主邮箱'}"
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
 zh,"${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId}","${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '移库' : 'Unknown Type'))}单#${shipmentId}"
 zh,"${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId}","${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}"
+zh,- Hold Part,-挂起拆单
 zh,(Asc),(升)
 zh,(Desc),(降)
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
@@ -33,6 +35,8 @@ zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
 zh,Acquired,采购日期
 zh,Acquired Date,采购日期
+zh,Actions,操作
+zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
 zh,Active Saved Find:,当前使用的查找:
 zh,Active Warehouse,当前仓库
 zh,Actual,实际
@@ -286,6 +290,7 @@ zh,Clear Current Find,清空当前查找
 zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
 zh,Client,客户
+zh,Client Billing,客户账单
 zh,Client Hour Calc,客户小时计算
 zh,Client Hour Rate,客户小时单价
 zh,Client Invoice,客户账单
@@ -645,6 +650,7 @@ zh,Hainan,海南省
 zh,Has Role,角色包括
 zh,Hebei,河北省
 zh,Heilongjiang,黑龙江省
+zh,Held,已挂起
 zh,Henan,河南省
 zh,Hidden,隐藏
 zh,Hold,暂停
@@ -831,6 +837,7 @@ zh,New Customer Count,新客户数量
 zh,New Customer Percent,新客户百分比
 zh,New Drop Shipment,新直运出库单
 zh,New Email,新邮箱
+zh,New Employee,新员工
 zh,New Equipment,新建设备
 zh,New Event,新事件
 zh,New Facility,新设施
@@ -888,6 +895,7 @@ zh,New password is same as current password,新密码不能与当前密码一致
 zh,Next,下一步
 zh,Ningxia,宁夏回族自治区
 zh,No ${storeFolder} folder found,找不到邮件主机上的文件夹${storeFolder}
+zh,No Charge,免费
 zh,No Customer Selected,未选择客户
 zh,No EmailServer found for ID [${emailServerId}],找不到对应ID为${emailServerId}的EmailServer记录
 zh,No EmailServer record found for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate[${emailTemplateId}]中定义的邮件服务器未定义
@@ -907,6 +915,7 @@ zh,No shipment method selected,没有设置配送方法
 zh,No shipping address selected,没有设置配送地址
 zh,Not,不
 zh,Not Avail,不可用
+zh,Not Billed,未开票
 zh,Not Issued,未发货
 zh,Not Shipped/Billed,未发送/开票
 zh,"Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录"
@@ -1145,6 +1154,8 @@ zh,Production Runs,生产运行
 zh,ProductStoreTitle,店铺管理
 zh,ProductTitle,产品
 zh,Products,产品
+zh,Programmer,程序员
+zh,Programmer Lead,程序员领导
 zh,Profile Url Path,客户资料URL
 zh,Project,项目
 zh,Project Client Invoice,项目的客户账单
@@ -1179,6 +1190,7 @@ zh,QOH,在手
 zh,QOH Diff,QOH变化
 zh,Qinghai,青海省
 zh,Qty,数量
+zh,Qty Not Shipped,未发货数量
 zh,Quantity,数量
 zh,Quantity Accepted,接收数量
 zh,Quantity Difference,数量差
@@ -1203,6 +1215,7 @@ zh,Re-Calc Prices,重新算价
 zh,Re-post Invoice,重新过账账单
 zh,Ready Date,准备日期
 zh,Reason,原因
+zh,Really hold order part?,确定要挂起拆单吗？
 zh,Receivable,应收
 zh,Receipt Transactions,入库凭证
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
@@ -1464,7 +1477,8 @@ zh,Size UOM,容量单位
 zh,Size/UOM,容量单位
 zh,Soft Identifier,软标识符
 zh,Source,源
-zh,Standard Cost,标准成
+zh,Standard,标准
+zh,Standard Cost,标准成本
 zh,Start Date,开始日期
 zh,State,省
 zh,State/Province,州/省
@@ -1608,6 +1622,7 @@ zh,Wiki Space ID,维基空间ID
 zh,Wiki Spaces,维基空间
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
+zh,Worker/Vendor Payment,工人/供应商付款
 zh,Worker Hour Calc,工人小时计算
 zh,Worker Hour Rate,工人小时单价
 zh,Worker Invoice,工人账单
