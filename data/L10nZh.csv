@@ -301,6 +301,7 @@ zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
 zh,Clone Product,克隆产品
+zh,Clone Run,克隆运行
 zh,Clone Accounting Settings,克隆会计设置
 zh,Close,关闭
 zh,Close Date,关闭日期
@@ -323,6 +324,7 @@ zh,Configurable Good,可配置商品
 zh,Consume,消耗
 zh,Consumer,消费者
 zh,Consume Asset,消耗资产
+zh,Consume By Product,生产消耗
 zh,Consumable Shipment,领用出库单
 zh,Consumable Shipment List,领用出库单列表
 zh,Contact Info,联系方式
@@ -1347,6 +1349,7 @@ zh,Roles,角色
 zh,Routing #,路由号码
 zh,Run Date,运行日期
 zh,Run ID,运行ID
+zh,Run Pick PDF,生产拣货PDF
 zh,Run Products,生产产品
 zh,Runs,运行
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
@@ -1624,6 +1627,7 @@ zh,View Old,旧联系方式
 zh,Virtual (with variants),虚拟（可变）
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
+zh,Warehouse Assets,仓库资产
 zh,Was Stored At,原存放
 zh,Week,周
 zh,Wiki,维基
