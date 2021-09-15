@@ -179,6 +179,7 @@ zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
 zh,Asset Types,资产类型
+zh,Asset Use,资产使用
 zh,AssetTitle,资产管理
 zh,Assets,资产
 zh,Assets (Summary),资产(概要)
@@ -318,6 +319,7 @@ zh,Completed Sales Orders,已完成的销售订单
 zh,Completed Purchase Orders,已完成的采购订单
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
+zh,Configurable Good,可配置商品
 zh,Consume,消耗
 zh,Consumer,消费者
 zh,Consume Asset,消耗资产
@@ -458,6 +460,8 @@ zh,Destination Facility,收货仓
 zh,Detail,详细
 zh,Detail History,详情历史
 zh,Details PDF,详情PDF
+zh,Digital (download),数字（下载）
+zh,Digital and Asset,数字资产
 zh,Dimensions,度量
 zh,Disable Account,禁用账号
 zh,Disable Promotions,禁用促销
@@ -548,6 +552,7 @@ zh,Facility Locations,设施位置
 zh,Facility Name,设施名称
 zh,Facility Size,设置容量
 zh,Facility Type,设施类型
+zh,Facility Use,设施使用
 zh,Facility*,设施*
 zh,FacilityTitle,仓库管理
 zh,Feature,特征
@@ -685,6 +690,10 @@ zh,Internal Organization Relationships,内部组织关系
 zh,Interval Meter,间隔读数
 zh,Interval Quantity,间隔数量
 zh,Inventory,库存
+zh,Inventory - Digital Good,库存-数字商品
+zh,Inventory - Finished Good,库存-制成品
+zh,Inventory - Raw Material,库存-原材料
+zh,Inventory - Sub-assembly,库存-组装商品
 zh,Inventory Asset,库存资产
 zh,Inventory Assets,库存资产
 zh,Inventory Asset List,库存列表
@@ -1101,6 +1110,7 @@ zh,PhysicalInventoryTitle,盘点记录
 zh,Piece Count,计件
 zh,Piece Rate Type,计件单价类型
 zh,Pick,拣出
+zh,Pick Assembly,拣货组装
 zh,Pick Bin #,拣货箱#
 zh,Pick Container,拣货箱
 zh,Pick Loc Qty,拣货库位数量
@@ -1611,6 +1621,7 @@ zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
 zh,View Charts,查看图表
 zh,View Old,旧联系方式
+zh,Virtual (with variants),虚拟（可变）
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Was Stored At,原存放
