@@ -39,6 +39,10 @@ zh,Acquire Order ID,采购订单
 zh,Acquired,采购日期
 zh,Acquired Date,采购日期
 zh,Act,实际
+zh,Act/Bgt %,实际/预算%
+zh,Act+Rem/Bgt %,实际+剩余/预算%
+zh,Act/Est %,实际/评估%
+zh,Act+Rem/Est %,实际+剩余/评估%
 zh,Action,操作
 zh,Actions,操作
 zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
@@ -46,6 +50,8 @@ zh,Active Saved Find:,当前使用的查找:
 zh,Active Tasks,活动任务
 zh,Active Warehouse,当前仓库
 zh,Actual,实际
+zh,Actual (d),实际天数
+zh,Actual (h),实际小时
 zh,Actual Arrival,实际到达
 zh,Actual Complete,实际完成
 zh,"Actual Cost ${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}","实际成本${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}"
@@ -119,8 +125,10 @@ zh,Add To Feature Group,添加到特征组
 zh,Add To Product,添加到产品
 zh,Add To Request,添加到审批
 zh,Add UOM Dimension,添加度量
+zh,Add User Assignment,添加用户
 zh,Add User Group,添加用户组
 zh,Add Vendor,添加供应商
+zh,Add Wiki Page,添加维基页面
 zh,Add to Category,添加到分类
 zh,Add to Group,添加组
 zh,Add to Organization,添加组织
@@ -261,6 +269,8 @@ zh,Box Types PDF,包装箱类型PDF
 zh,Break,休息
 zh,Break Hours,休息小时数
 zh,Budget,预算
+zh,Budget (d),预算天数
+zh,Budget (h),预算小时
 zh,"Budget ${ec.l10n.formatCurrency(project.totalClientCostAllowed, project.costUomId, 2)}","预算${ec.l10n.formatCurrency(project.totalClientCostAllowed, project.costUomId, 2)}"
 zh,Budget Details,预算详情
 zh,Budgets,预算
@@ -327,6 +337,7 @@ zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
 zh,Clone Product,克隆产品
+zh,Clone Project,克隆项目
 zh,Clone Run,克隆运行
 zh,Clone Accounting Settings,克隆会计设置
 zh,Close,关闭
@@ -384,6 +395,7 @@ zh,Create Customer Return,创建客户退货
 zh,Create Expense Invoice,创建费用账单
 zh,Create First Period,创建第一个期间
 zh,Create Invoice,创建账单
+zh,Create Milestone,创建里程碑
 zh,Create Next,创建下一个
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
@@ -551,6 +563,7 @@ zh,Employees,员工
 zh,Employer,员工
 zh,Empty,为空
 zh,Enable Account,启用账号
+zh,End Date,结束日期
 zh,Enter Setting,新建
 zh,Enter Store Setting,新建店铺配置
 zh,Entry,登记
@@ -575,12 +588,15 @@ zh,Est. Quantity,预估数量
 zh,Est. Start,预估开始
 zh,"Estimate ${ec.l10n.format(project.estimatedWorkTime, '#.#')} hrs","评估${ec.l10n.format(project.estimatedWorkTime, '#.#')}小时"
 zh,Estimated,评估
+zh,Estimated (d),评估天数
+zh,Estimated (h),评估小时
 zh,Estimated Amount,预估金额
 zh,Estimated Arrival Date,预估到达
 zh,Estimated Delivery,预计送达时间
 zh,Estimated Hours,评估小时
 zh,Estimated Ready Date,预估备好
 zh,Estimated Ship,预计发货时间
+zh,Estimated Start Date,预计开始日期
 zh,Event,事件
 zh,Example,样例
 zh,Example Feature,样例特征
@@ -722,6 +738,7 @@ zh,Hidden,隐藏
 zh,Hold,暂停
 zh,HongKong,香港特别行政区
 zh,Hours,小时数
+zh,Hours Budget,小时预算
 zh,HR Dashboard,人力仪表盘
 zh,Hrs Est,评估小时
 zh,Hubei,湖北省
@@ -872,6 +889,7 @@ zh,Meters,仪表
 zh,Mfg Date,生产日期
 zh,Middle Name,中名
 zh,Milestone,里程碑
+zh,Milestones,里程碑
 zh,Milestone Summary,里程碑概要
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
@@ -1080,6 +1098,7 @@ zh,OrderPlacePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
 zh,OrderPlacePartPaymentIncomplete,"拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})"
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
+zh,Org,组织
 zh,Org Settings,组织设置
 zh,Organization,组织
 zh,Organization Name,组织名称
@@ -1126,6 +1145,7 @@ zh,Packages,包装箱
 zh,Packed,打包时间
 zh,Packed Date,打包日期
 zh,Packed/Issued,装箱/发行
+zh,Page,页面
 zh,Page #,页 #
 zh,Page Layout,页面布局
 zh,Paid Percent,已支付发票百分比
@@ -1257,11 +1277,14 @@ zh,ProductTitle,产品
 zh,Products,产品
 zh,Programmer,程序员
 zh,Programmer Lead,程序员领导
+zh,Progress,进度
 zh,Profile Url Path,客户资料URL
 zh,"Profit ${ec.l10n.formatCurrency(pstats.actualProfit, project.costUomId, 2)}","利润${ec.l10n.formatCurrency(pstats.actualProfit, project.costUomId, 2)}"
 zh,Project,项目
 zh,Project Client Invoice,项目的客户账单
 zh,Project ID,项目ID
+zh,Project Milestones,项目里程碑
+zh,Project Name,项目名称
 zh,Project Summary,项目概要
 zh,Project Worker Invoice,项目的工人账单
 zh,ProjectTitle,项目管理
@@ -1365,6 +1388,8 @@ zh,Rejection Reason,拒收原因
 zh,Rem,剩余
 zh,"Rem ${ec.l10n.formatCurrency(pstats.clientBudgetRemaining, project.costUomId, 2)}","剩余${ec.l10n.formatCurrency(pstats.clientBudgetRemaining, project.costUomId, 2)}"
 zh,Remaining,剩余
+zh,Remaining (d),剩余天数
+zh,Remaining (h),剩余小时
 zh,Remote,远端
 zh,Remove,移除
 zh,Remove All from Category,从分类移除产品
@@ -1587,6 +1612,7 @@ zh,Shipping Options,配送选项
 zh,Shipping Phone,电话
 zh,ShippingTitle,拣货管理
 zh,Show Details,显示详情
+zh,Show Invoiced,显示已开票的
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
 zh,Sichuan,四川省
 zh,Sign Req.,签名类型
@@ -1595,6 +1621,7 @@ zh,Size UOM,容量单位
 zh,Size/UOM,容量单位
 zh,Soft Identifier,软标识符
 zh,Source,源
+zh,Space,空间
 zh,Standard,标准
 zh,Standard Cost,标准成本
 zh,Start Date,开始日期
@@ -1615,6 +1642,7 @@ zh,Stores,店铺
 zh,Subject,主题
 zh,Success,成功
 zh,Submit,提交
+zh,Summary,概要
 zh,Summary Options,销售统计过滤器
 zh,Summary for Milestone "${milestoneWorkEffort.workEffortName}" - ${milestoneWorkEffortId},里程碑概要 "${milestoneWorkEffort.workEffortName}" - ${milestoneWorkEffortId}
 zh,Supplier,供应商
@@ -1643,6 +1671,7 @@ zh,Task Name,任务名
 zh,Task Summary,任务概要
 zh,TaskTitle,任务
 zh,Tasks,任务
+zh,Tasks by Top Level,按顶级任务
 zh,Tax Calc,计算税费
 zh,Tax Gateway,税费网关
 zh,Teams,团队
@@ -1715,6 +1744,7 @@ zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
 zh,Update Person,更新个人
 zh,Update Purpose,更新用途
+zh,Update Rates,更新单价
 zh,Update Shipment,更新运单
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
@@ -1730,6 +1760,7 @@ zh,User Group ID,用户组ID
 zh,User Groups,用户组
 zh,User ID,用户ID
 zh,Username,用户名
+zh,Usernames,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Validate,验证
 zh,Valid From,生效日期
@@ -1744,6 +1775,8 @@ zh,Variance Reason,差异原因
 zh,Vendor,供应商
 zh,Vendor/Org,供应商
 zh,Vendors,供应商
+zh,Vendor Hour Rate,客户小时单价
+zh,Vendor Invoice,客户账单
 zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
 zh,View Charts,查看图表
@@ -1751,6 +1784,7 @@ zh,View Old,旧联系方式
 zh,View Pages,查看页面
 zh,Viewed,查看
 zh,Virtual (with variants),虚拟（可变）
+zh,Visibility,可见性
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Warehouse Assets,仓库资产
@@ -1769,6 +1803,7 @@ zh,Wiki Spaces,维基空间
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
 zh,"Worked ${ec.l10n.format(project.actualWorkTime, '#.#')} hrs","已工作${ec.l10n.format(project.actualWorkTime, '#.#')}小时"
+zh,Worker,工人
 zh,Worker/Vendor Payment,工人/供应商付款
 zh,Worker Hour Calc,工人小时计算
 zh,Worker Hour Rate,工人小时单价
