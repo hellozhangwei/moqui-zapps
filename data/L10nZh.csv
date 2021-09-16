@@ -108,7 +108,9 @@ zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
 zh,Add Single Use Codes,添加单独用户代码
+zh,Add Survey Field,添加调查字段
 zh,Add Store,添加店铺
+zh,Add Store Category,添加店铺分类
 zh,Add Task Assignment,添加任务指派
 zh,Add Team,添加任务指派
 zh,Add Time Entry,添加工时记录
@@ -116,6 +118,7 @@ zh,Add To Feature Group,添加到特征组
 zh,Add To Product,添加到产品
 zh,Add To Request,添加到审批
 zh,Add UOM Dimension,添加度量
+zh,Add User Group,添加用户组
 zh,Add Vendor,添加供应商
 zh,Add to Category,添加到分类
 zh,Add to Group,添加组
@@ -253,6 +256,7 @@ zh,Booked Payable Invoices,登记的应付账单
 zh,Booked Receivable Invoices,登记的应收账单
 zh,Box,箱子
 zh,Box Types,包装箱类型
+zh,Box Types PDF,包装箱类型PDF
 zh,Break,休息
 zh,Break Hours,休息小时数
 zh,Budget,预算
@@ -365,6 +369,7 @@ zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
 zh,Cost Budget,成本预算
 zh,Could not find account with username ${username},找不到用户名为${username}的账号
+zh,Count,数量
 zh,Country,国
 zh,Country of Origin,源产地
 zh,Country/State,国家/省
@@ -486,9 +491,11 @@ zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
 zh,Detail,详细
 zh,Detail History,详情历史
+zh,Detail Link Path,详情链接路径
 zh,Details PDF,详情PDF
 zh,Digital (download),数字（下载）
 zh,Digital and Asset,数字资产
+zh,Dimension UOM,长度单位
 zh,Dimensions,度量
 zh,Disable Account,禁用账号
 zh,Disable Promotions,禁用促销
@@ -529,6 +536,7 @@ zh,Email Address,邮箱
 zh,Email Addresses,邮箱
 zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
+zh,Email Template,邮件模版
 zh,Email Type,邮件类型
 zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServerId}]未定义邮箱密码
 zh,EmailServer [${emailServerId}] has no mailUsername,EmailServer [${emailServerId}]未定义邮箱用户名
@@ -540,6 +548,7 @@ zh,Employer,员工
 zh,Empty,为空
 zh,Enable Account,启用账号
 zh,Enter Setting,新建
+zh,Enter Store Setting,新建店铺配置
 zh,Entry,登记
 zh,Entry Date,创建日期
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
@@ -600,6 +609,7 @@ zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
+zh,Fields,字段
 zh,Field cannot be empty,输入不能为空
 zh,File ${filename} already exists,skipping entity ${en}.
 zh,"File ${filename} already exists, skipping document ${dataDocumentId}.","文件 ${filename}已存在,跳过文档${dataDocumentId}。"
@@ -651,6 +661,7 @@ zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,For,为
 zh,For This,为此
+zh,Form,表单
 zh,Force Close,强制关闭
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction","资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证"
 zh,Found issues with password so not updating,密码有问题，没有更新
@@ -675,6 +686,7 @@ zh,GLJournalsTitle,总账日记账
 zh,Gansu,甘肃省
 zh,Gateway,网关
 zh,Gateway Authorize,网关验证
+zh,Gateway Box ID,网关箱子ID
 zh,Gateway Config,网关配置
 zh,Gateway Responses,网关响应
 zh,Gateway Type,网关类型
@@ -686,6 +698,7 @@ zh,GlAccountTitle,总账会计
 zh,Go##Page,跳转到
 zh,Grand Total,总额
 zh,Grey,灰
+zh,Gross Weight,毛重
 zh,Group,组
 zh,Guangdong,广东省
 zh,Guangxi,广西壮族自治区
@@ -693,7 +706,9 @@ zh,Guizhou,贵州省
 zh,HH Warehouse,仓库PDA
 zh,Hainan,海南省
 zh,Has Role,角色包括
+zh,Header Image Path,头部图片地址
 zh,Hebei,河北省
+zh,Height,高度
 zh,Heilongjiang,黑龙江省
 zh,Held,已挂起
 zh,Henan,河南省
@@ -802,6 +817,7 @@ zh,Lend Return Shipment,借用归还入库单
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment,借用出库单
 zh,Lend Shipment List,借用出库单列表
+zh,Length,长度
 zh,Level,层
 zh,Liaoning,辽宁省
 zh,Like,Like
@@ -946,7 +962,11 @@ zh,New Sales Shipment,新销售出库单
 zh,New Shipping Gateway,新运输网关
 zh,New Space,新空间
 zh,New Store,新店铺
+zh,New Store Email,新店铺邮件
+zh,New Store Facility,新店铺设施
+zh,New Store Party,新店铺参与者
 zh,New Store Promotion,新促销
+zh,New Survey,新调查
 zh,New Task,新任务
 zh,New Transfer Shipment,新建调拨单
 zh,New Transaction,新建凭证
@@ -1206,6 +1226,7 @@ zh,Produce Asset,产出资产
 zh,Produced,产出的
 zh,Product,产品
 zh,Product Class,产品分类
+zh,Product Category,产品分类
 zh,Product Count,产品数
 zh,Product ID,产品ID
 zh,Product List,产品列表
@@ -1381,9 +1402,11 @@ zh,Reset to Default,重置到默认
 zh,Resolution,解决
 zh,Resp Code,响应代码
 zh,Response,响应
+zh,Responses,响应
 zh,Response Amount,响应数量
 zh,Response Date,响应日期
 zh,Response Required Date,要求答复日期
+zh,Response Stats,响应统计
 zh,Ret Amount,退货数量
 zh,Ret Label,退货标签
 zh,Ret Message,退货消息
@@ -1406,6 +1429,7 @@ zh,Rev Of,冲销
 zh,Rev By,被冲销
 zh,Revision,版本
 zh,Role,角色
+zh,Role Type,角色类型
 zh,Roles,角色
 zh,Routing #,路由号码
 zh,Run Date,运行日期
@@ -1474,6 +1498,7 @@ zh,Select Email,选择邮箱
 zh,Select Find,选择查询
 zh,Select Phone,选择电话
 zh,Select Setting,选择
+zh,Select Store Setting,选择店铺配置
 zh,Select a Report,选择一个报表
 zh,Selectable Features,可选特征
 zh,Selected Method,选择的方法
@@ -1505,6 +1530,7 @@ zh,Set Quantities,设定数量
 zh,Set WH,设定仓库
 zh,Setup,设置
 zh,Settings,设置
+zh,Setting Type,设置类型
 zh,Settlement Date,结算日期
 zh,Settlement Term,付款条款
 zh,Shaanxi,陕西省
@@ -1569,6 +1595,7 @@ zh,Status Flow,状态流
 zh,Status by Receipt,状态按接收
 zh,Store,店铺
 zh,Store Domain,店铺域名
+zh,Store Category Type,店铺分类类型
 zh,Stored At,存放
 zh,Stores,店铺
 zh,Subject,主题
@@ -1584,6 +1611,9 @@ zh,Supplier Return Shipments,供应商退货入库单
 zh,SupplierTitle,供应商管理
 zh,Suppliers,供应商
 zh,Survey,调查问卷
+zh,Survey Form Preview,调查表单预览
+zh,Survey ID,调查ID
+zh,Survey Response ID,调查响应ID
 zh,Surveys,调查问卷
 zh,System,系统
 zh,System Email,系统邮箱
@@ -1602,6 +1632,7 @@ zh,Tasks,任务
 zh,Tax Calc,计算税费
 zh,Tax Gateway,税费网关
 zh,Teams,团队
+zh,Template,模版
 zh,Terminate Date,终止日期
 zh,Text,文本
 zh,Text Search,查询
@@ -1634,6 +1665,7 @@ zh,Tools,工具
 zh,Topic,主题
 zh,Topic Subscriptions,订阅主题
 zh,Total,合计
+zh,Total Survey Response:,调查响应合计:
 zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
@@ -1679,6 +1711,9 @@ zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用�
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
 zh,User Group,用户组
+zh,User Group ID,用户组ID
+zh,User Groups,用户组
+zh,User ID,用户ID
 zh,Username,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Validate,验证
@@ -1705,7 +1740,11 @@ zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Warehouse Assets,仓库资产
 zh,Was Stored At,原存放
+zh,Web Order BCC,Web订单密送
 zh,Week,周
+zh,Weight,重量
+zh,Weight UOM,重量单位
+zh,Width,宽度
 zh,Wiki,维基
 zh,Wiki Page,维基页面
 zh,Wiki Pages,维基页面
