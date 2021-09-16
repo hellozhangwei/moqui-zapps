@@ -16,6 +16,7 @@ zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
 zh,Accepted,接收
 zh,Account,账户
+zh,Accounts,账户
 zh,Account #,账户卡号
 zh,Account Class,账户类
 zh,Account Code,科目代码
@@ -381,7 +382,9 @@ zh,Create Container,创建容器
 zh,Create Credit Card,新建信用卡
 zh,Create Customer Return,创建客户退货
 zh,Create Expense Invoice,创建费用账单
+zh,Create First Period,创建第一个期间
 zh,Create Invoice,创建账单
+zh,Create Next,创建下一个
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Pool,创建池
@@ -1173,6 +1176,8 @@ zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${party
 zh,People,人员
 zh,People Assigned,指派人员
 zh,Period,周期
+zh,Period Name,期间名称
+zh,Period Num,期间编号
 zh,Person,人
 zh,PhI Diff,调差
 zh,PhI Qty,调整
@@ -1220,6 +1225,7 @@ zh,Posted Amount Summary,过账金额概要
 zh,Posted Balance Summary,过账余额概要
 zh,Posted Date,过账日期
 zh,Pre-Paid Percent,预付发票百分比
+zh,Previous,前
 zh,Pri,优先级
 zh,Price,价格
 zh,Price History,价格历史
