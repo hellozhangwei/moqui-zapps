@@ -336,10 +336,11 @@ zh,Client Piece Rate,客户计件单价
 zh,Clock In,开始计时
 zh,Clock Out,结束计时
 zh,Clone,克隆
+zh,Clone Accounting Settings,克隆会计设置
 zh,Clone Product,克隆产品
 zh,Clone Project,克隆项目
 zh,Clone Run,克隆运行
-zh,Clone Accounting Settings,克隆会计设置
+zh,Clone Task,克隆任务
 zh,Close,关闭
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
@@ -944,6 +945,7 @@ zh,New Feature Group,新特征组
 zh,New Financial Account,新金融账户
 zh,New GL Account,新总账科目
 zh,New HTML Content,新HTML内容
+zh,New ID,新ID
 zh,New Incoming Payment,新收入付款单
 zh,New Incoming Shipment,新建入库单
 zh,New Journal,新日记账
@@ -952,6 +954,7 @@ zh,New Lend Return Shipment,新借用归还入库单
 zh,New Lend Shipment,新借用出库单
 zh,New Location,新位置
 zh,New Meter Reading,新仪表读数
+zh,New Name,新名字
 zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
 zh,New Outgoing Payment,新建支出付款单
@@ -1221,6 +1224,7 @@ zh,Pick Container,拣货箱
 zh,Pick Loc Qty,拣货库位数量
 zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
+zh,Pick Moves Needed,移位拣货
 zh,Picked,拣货时间
 zh,Picklist,拣货
 zh,Picklist PDF,拣货PDF
@@ -1390,6 +1394,7 @@ zh,"Rem ${ec.l10n.formatCurrency(pstats.clientBudgetRemaining, project.costUomId
 zh,Remaining,剩余
 zh,Remaining (d),剩余天数
 zh,Remaining (h),剩余小时
+zh,Remaining Hours,剩余小时
 zh,Remote,远端
 zh,Remove,移除
 zh,Remove All from Category,从分类移除产品
@@ -1515,7 +1520,10 @@ zh,Saved Finds,保存的查询
 zh,Saving,保存中...
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
 zh,SCA Code,SCA代码
+zh,"Scan Asset, Cont, Loc, or Prod","扫描资产、容器、位置、产品"
+zh,"Scan Asset, Cont, Loc, Prod","扫描资产、容器、位置、产品"
 zh,Scan Location,扫码位置
+zh,Scan Shipment ID,扫码运单ID
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
@@ -1534,6 +1542,7 @@ zh,Select,选择
 zh,Select Address,选择地址
 zh,Select Email,选择邮箱
 zh,Select Find,选择查询
+zh,Select Move,选择移动
 zh,Select Phone,选择电话
 zh,Select Setting,选择
 zh,Select Store Setting,选择店铺配置
@@ -1667,6 +1676,7 @@ zh,TX Entries,账目
 zh,TX Type,凭证类型
 zh,Taiwan,台湾省
 zh,Task,任务
+zh,Task Time Entries,任务工时记录
 zh,Task Name,任务名
 zh,Task Summary,任务概要
 zh,TaskTitle,任务
@@ -1746,6 +1756,7 @@ zh,Update Person,更新个人
 zh,Update Purpose,更新用途
 zh,Update Rates,更新单价
 zh,Update Shipment,更新运单
+zh,Update Time Entry,更新工时记录
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
 zh,Update to Current,更新到当前
