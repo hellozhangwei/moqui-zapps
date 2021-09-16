@@ -37,6 +37,8 @@ zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
 zh,Acquired,采购日期
 zh,Acquired Date,采购日期
+zh,Act,实际
+zh,Action,操作
 zh,Actions,操作
 zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
 zh,Active Saved Find:,当前使用的查找:
@@ -55,6 +57,7 @@ zh,Add All to Category,添加产品到分类
 zh,Add Asset,添加资产
 zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
+zh,Add Authenticator App,添加认证App
 zh,Add Box Type,添加包装箱类型
 zh,Add Carrier Shipment Method,添加配送方法
 zh,Add Child Account,添加
@@ -66,6 +69,8 @@ zh,Add Content,添加
 zh,Add Dest. Address,添加目的地址
 zh,Add Dimension,添加度量
 zh,Add Direct Role,添加直接角色
+zh,Add Email Factor,添加邮箱因子
+zh,Add Mail,添加邮箱
 zh,Add Equipment,添加设备
 zh,Add Feature,添加特征
 zh,Add Feature to All,添加产品特征
@@ -85,6 +90,7 @@ zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
 zh,Add Other Role,添加其他角色
 zh,Add Package,添加包装箱
+zh,Add Phone,添加电话
 zh,Add Parent Account,添加
 zh,Add Part,添加拆单
 zh,Add Party,添加当事人
@@ -101,6 +107,7 @@ zh,Add Rate Amount,添加单价
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
+zh,Add Single Use Codes,添加单独用户代码
 zh,Add Store,添加店铺
 zh,Add Task Assignment,添加任务指派
 zh,Add Team,添加任务指派
@@ -367,6 +374,7 @@ zh,Create Bank Account,新建银行账号
 zh,Create Container,创建容器
 zh,Create Credit Card,新建信用卡
 zh,Create Customer Return,创建客户退货
+zh,Create Expense Invoice,创建费用账单
 zh,Create Invoice,创建账单
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
@@ -518,6 +526,7 @@ zh,Edit Vendor,编辑供应商
 zh,Effective Date,生效日
 zh,Email,邮箱
 zh,Email Address,邮箱
+zh,Email Addresses,邮箱
 zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
 zh,Email Type,邮件类型
@@ -582,6 +591,8 @@ zh,Facility Type,设施类型
 zh,Facility Use,设施使用
 zh,Facility*,设施*
 zh,FacilityTitle,仓库管理
+zh,Factor ID,因子ID
+zh,Factor Type,因子类型
 zh,Feature,特征
 zh,Feature 2,特征2
 zh,Feature Group ID,特征组ID
@@ -647,6 +658,7 @@ zh,From,开始
 zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},",发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)}
 zh,From Container,原容器
 zh,From Date,开始日期
+zh,From Factor ID,开始因子ID
 zh,From Location,仓位
 zh,From Party,从
 zh,From Payment Method,从支付方式
@@ -812,6 +824,7 @@ zh,Lot Number,批次
 zh,LotTitle,批次
 zh,Lots,批次
 zh,Macao,澳门特别行政区
+zh,Mailing Addresses,邮寄地址
 zh,Maintenance,维护
 zh,Manage,管理
 zh,Manufactured,制造日期
@@ -859,11 +872,13 @@ zh,My Milestones,我的里程碑
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,Notifications,通知
+zh,Notified,通知
 zh,Notifs?,接收通知？
 zh,Name,名称
 zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
 zh,Need Qty,需要数量
+zh,Needs Validation,需要校验
 zh,Net Income History,净收入历史
 zh,Net Income Year Over Year,年度净收入
 zh,New Address,新地址
@@ -900,6 +915,8 @@ zh,New Organization,新组织
 zh,New Organization Supplier,新组织供应商
 zh,New Outgoing Payment,新建支出付款单
 zh,New Outgoing Shipment,新建出库单
+zh,New Password,新密码
+zh,New Password Verify,重复新密码
 zh,New Password and New Password Verify do not match,两次录入的新密码不匹配
 zh,New Receivable,新应收
 zh,New Payable,新应付
@@ -969,6 +986,7 @@ zh,Number,号码
 zh,OR Interval UOM,或间隔UOM
 zh,Offset,偏离
 zh,Old Addresses,旧邮寄地址
+zh,Old Password,旧邮寄地址
 zh,On Hand,在手
 zh,On Hand Report,在手报告
 zh,On Hand Summary,在手概要
@@ -1135,6 +1153,8 @@ zh,Person,人
 zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,Phone,电话
+zh,Phone Numbers,电话
+zh,Phone Purpose,电话用途
 zh,"Phone, Email, and Other","电话，邮箱等"
 zh,Phys. Inv. ID,库存盘点ID
 zh,Physical Diff,库存差异
@@ -1461,6 +1481,7 @@ zh,Send,发送
 zh,Send &amp; Apply,发送并核销
 zh,Send Email,发邮件
 zh,Send Message,发消息
+zh,Sent,发送
 zh,Sent Date,发送日期
 zh,Seq,顺序
 zh,Seq #,顺序
@@ -1610,6 +1631,8 @@ zh,To Party,到
 zh,To Payment Method,到支付方法
 zh,To Role,到角色
 zh,Tools,工具
+zh,Topic,主题
+zh,Topic Subscriptions,订阅主题
 zh,Total,合计
 zh,Track Status,追踪状态
 zh,Tracking,追踪
@@ -1676,6 +1699,7 @@ zh,Vendor Warehouse,供应商仓库
 zh,View Charts,查看图表
 zh,View Old,旧联系方式
 zh,View Pages,查看页面
+zh,Viewed,查看
 zh,Virtual (with variants),虚拟（可变）
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
