@@ -280,6 +280,7 @@ zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Card Number,卡号
 zh,Carrier,承运人
+zh,Carrier Code,承运人代码
 zh,Carrier Party,承运人
 zh,Carrier Ship Methods,配送方法
 zh,Carrier Shipment Methods,配送方法
@@ -568,6 +569,7 @@ zh,Est. Arrival,预估到达
 zh,Est. Hours,预估工作量
 zh,Est. Ready,预估备好
 zh,Est. Quantity,预估数量
+zh,Est. Start,预估开始
 zh,"Estimate ${ec.l10n.format(project.estimatedWorkTime, '#.#')} hrs","评估${ec.l10n.format(project.estimatedWorkTime, '#.#')}小时"
 zh,Estimated,评估
 zh,Estimated Amount,预估金额
@@ -687,6 +689,7 @@ zh,Gansu,甘肃省
 zh,Gateway,网关
 zh,Gateway Authorize,网关验证
 zh,Gateway Box ID,网关箱子ID
+zh,Gateway Code,网关代码
 zh,Gateway Config,网关配置
 zh,Gateway Responses,网关响应
 zh,Gateway Type,网关类型
@@ -729,6 +732,7 @@ zh,Identification,唯一标识
 zh,Ignore Case,忽略大小写
 zh,Image,图片
 zh,Immediate?,立即？
+zh,In Planning,计划中
 zh,In Planning - ${pstats.taskCountByStatusMap.WeInPlanning?:0},计划中 - ${pstats.taskCountByStatusMap.WeInPlanning?:0}
 zh,In Progress,进行中
 zh,In Progress - ${pstats.taskCountByStatusMap.WeInProgress?:0},进行中 - ${pstats.taskCountByStatusMap.WeInProgress?:0}
@@ -1194,6 +1198,8 @@ zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
 zh,Picked,拣货时间
 zh,Picklist,拣货
+zh,Picklist PDF,拣货PDF
+zh,Picklist and Pack PDF,拣货与打包PDF
 zh,Picklists,拣货
 zh,Pickup Date,拣货日期
 zh,Place,下定
@@ -1477,6 +1483,7 @@ zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
 zh,Saving,保存中...
 zh,"Scan Asset, Container, Location, Product","扫描资产，容器，位置，产品"
+zh,SCA Code,SCA代码
 zh,Scan Location,扫码位置
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
@@ -1589,6 +1596,7 @@ zh,State,省
 zh,State/Province,州/省
 zh,Statement PDF,清单PDF
 zh,Status,状态
+zh,Status: ${workEffort.status?.description ?: statusId},状态: ${workEffort.status?.description ?: statusId}
 zh,Status History,状态历史
 zh,Status ID,状态ID
 zh,Status Flow,状态流
@@ -1676,6 +1684,7 @@ zh,Transaction Reports,总帐交易报表
 zh,Transactions,会计凭证
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
+zh,Truck / Equipment,卡车/设备
 zh,Type,类型
 zh,UOM,单位
 zh,UOM Dimensions,度量
