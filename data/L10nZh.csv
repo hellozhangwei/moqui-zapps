@@ -7,6 +7,7 @@ zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.forma
 zh,"${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId}","${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '移库' : 'Unknown Type'))}单#${shipmentId}"
 zh,"${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId}","${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}"
 zh,${pstats.taskCount} Tasks,${pstats.taskCount}任务
+zh,${timeEntryId ? 'Update' : 'Add'} Time Entry,${timeEntryId ? '更新' : '添加'}工时记录
 zh,${pstats.projectDanger ? 'Danger' : (pstats.projectWarning ? 'Warning' : 'On Track')},${pstats.projectDanger ? '危险' : (pstats.projectWarning ? '警告' : '在轨')}
 zh,- Hold Part,-挂起拆单
 zh,(Asc),(升)
