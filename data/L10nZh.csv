@@ -146,6 +146,7 @@ zh,Address Trust,地址信任
 zh,Address1,地址1
 zh,Adjust Item,调整条目
 zh,Adjust Invoice,调整账单
+zh,Affiliate,分支机构
 zh,Aging,账龄
 zh,Aging Summary (displayed records only),账龄概要（只显示行）
 zh,Agreement Date,合同日期
@@ -153,6 +154,7 @@ zh,Agreement ID,合同ID
 zh,AgreementTitle,合同管理
 zh,Agreements,合同
 zh,Aisle,通道
+zh,All,全部
 zh,All Incoming Payments,全部收入款
 zh,All Outgoing Payments,全部支出款
 zh,All Sales Orders,全部销售订单
@@ -161,12 +163,14 @@ zh,All Payable Invoices,全部应付账单
 zh,All Purchase Orders,全部采购订单
 zh,All Receivable Invoices,全部应收账单
 zh,Allow Any HTML,允许任意HTML
+zh,Amazon,亚马逊
 zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
 zh,Amount UOM,数量 单位
 zh,Amount/UOM,总金额/单位
 zh,Anhui,安徽省
+zh,Any,任意
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any HTML,任意HTML
@@ -248,6 +252,7 @@ zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Payments Term,付款条款
 zh,Auto Res.,自动预约
+zh,Auto Reorder,自动订购
 zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
 zh,Auto Update Rates,自动更新单价
@@ -261,6 +266,7 @@ zh,Bank Accounts,银行账户
 zh,Bank Name,银行名称
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
 zh,Begins With,以...开始
+zh,Being Changed,修改中
 zh,Beijing,北京市
 zh,Billing Account,账号
 zh,Billing Country,国家
@@ -296,6 +302,7 @@ zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Payment and Invoices,取消付款单与账单
 zh,Cancel Shipment,取消运单
+zh,Cancelled by Customer,已被客户取消
 zh,Cancelled - ${pstats.taskCountByStatusMap.WeCancelled?:0},取消 - ${pstats.taskCountByStatusMap.WeCancelled?:0}
 zh,Capacity,容量
 zh,Capacity UOM,容量单位
@@ -732,6 +739,7 @@ zh,Gateways,网关
 zh,General Ledger,总账
 zh,Generate PDF,生成PDF文件
 zh,Gift Message,礼物留言
+zh,Gift Registry,礼物登记
 zh,GlAccountTitle,总账会计
 zh,Go##Page,跳转到
 zh,Grand Total,总额
@@ -933,6 +941,7 @@ zh,My Projects,我的项目
 zh,My Milestones,我的里程碑
 zh,MyAccountTitle,个人中心
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,None,无
 zh,Notifications,通知
 zh,Notified,通知
 zh,Notifs?,接收通知？
@@ -1060,9 +1069,12 @@ zh,On Hand,在手
 zh,On Hand Report,在手报告
 zh,On Hand Summary,在手概要
 zh,On Hold - ${pstats.taskCountByStatusMap.WeOnHold?:0},暂停 - ${pstats.taskCountByStatusMap.WeOnHold?:0}
-zh,Only Cost Matches PO Amount,只包成本与采购金额相等的
-zh,Only No Cost,只包括无成本
-zh,Only No Location,只包括不在位置
+zh,Only Cost Matches PO Amount,只看成本与采购金额相等的
+zh,Only No Cost,只看无成本
+zh,Only No Location,只看无库位
+zh,Only Recurring,只看循环订单
+zh,Only Partly Shipped,只看部分发货
+zh,Only count Product,只看产品订单
 zh,Open (Tentative),开始（初始）
 zh,Opened,开始
 zh,Operate,运营
@@ -1188,6 +1200,8 @@ zh,Parent Task,父任务
 zh,Part,拆单
 zh,Part Status,拆单状态
 zh,Part Total,拆单总额
+zh,Partial,部分
+zh,Partial/None,部分/无
 zh,Parties,参与者
 zh,Parties Assigned,指派人
 zh,Party,参与者
@@ -1266,6 +1280,7 @@ zh,Please select a report,请选择一个报表
 zh,Pool,池
 zh,Pools,仓库池
 zh,Position Class,职位
+zh,Postal Mail,邮件
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Postal Code,邮编
@@ -1282,6 +1297,7 @@ zh,Prices,价格
 zh,Primary Entity,主实体
 zh,Priority,优先级
 zh,Process Item Responses,处理条目响应
+zh,Processing,处理中
 zh,Produce,生产
 zh,Produce Asset,产出资产
 zh,Produced,产出的
@@ -1336,6 +1352,7 @@ zh,Public Page,公共页面
 zh,Public Page Url,公共页面URL
 zh,Publish Date,发布日期
 zh,Publish Version ${versionName.take(12)},发布版本${versionName.take(12)}
+zh,Purchase,采购
 zh,Purchase Invoices,应付发票
 zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
 zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
@@ -1355,7 +1372,9 @@ zh,QOH,在手
 zh,QOH Diff,QOH变化
 zh,Qinghai,青海省
 zh,Qty,数量
+zh,Qty Not Avail,数量不足
 zh,Qty Not Shipped,未发货数量
+zh,Qty Shipped,已发货数量
 zh,Quantity,数量
 zh,Quantity Accepted,接收数量
 zh,Quantity Difference,数量差
@@ -1372,6 +1391,8 @@ zh,Quick Items,快速条目
 zh,Quick Lookup,快速查找
 zh,Quick Search,快速查询
 zh,Quote Requested,报价请求
+zh,Quote Requested by Customer,客户询价
+zh,Quote Proposed by Vendor,供应商报价
 zh,Rate Type,单价类型
 zh,Rate Amount,单价
 zh,Rates,单价
@@ -1420,6 +1441,7 @@ zh,Ref/Check Number,付款参考代码
 zh,Registrations,注册
 zh,Reject Quote Request,拒绝报价请求
 zh,Rejected,拒收
+zh,Rejected by Vendor,已被供应商拒绝
 zh,Related,关联
 zh,Rejection Reason,拒收原因
 zh,Rem,剩余
@@ -1434,6 +1456,7 @@ zh,Remove All from Category,从分类移除产品
 zh,Remove Address?,删除地址？
 zh,Remove Feature from All,移除产品特征
 zh,Remove from Load,移除设备
+zh,Rental Asset,租赁资产
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
 zh,Rental Sales Return Shipment,借用归还入库单
@@ -1442,6 +1465,7 @@ zh,Rental Shipment,租赁出库单
 zh,Rental Shipment List,租赁出库单列表
 zh,Reorder Quantity,再订购数量
 zh,Repeat Count,重复次数
+zh,Replacement,替换
 zh,Replacement Order,换货订单
 zh,Replacement Product,换货
 zh,Reply,回复
@@ -1726,6 +1750,7 @@ zh,Tax Gateway,税费网关
 zh,Teams,团队
 zh,Template,模版
 zh,Terminate Date,终止日期
+zh,Test Order,测试订单
 zh,Text,文本
 zh,Text Search,查询
 zh,Their Invoice,对方发票
@@ -1781,6 +1806,7 @@ zh,Unapplied Incoming Payments,未核销的收入款
 zh,Unapplied Outgoing Payments,未核销的支出款
 zh,Uncancel,撤销取消
 zh,Uncomplete Order,撤销订单完成
+zh,Unknown,未知
 zh,Unit,单位
 zh,Unpaid,未付
 zh,Unpaid Payables,未支付的应付款
@@ -1847,6 +1873,8 @@ zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Warehouse Assets,仓库资产
 zh,Was Stored At,原存放
+zh,Web,网络
+zh,Web External,网络外
 zh,Web Order BCC,Web订单密送
 zh,Week,周
 zh,Weight,重量
@@ -1862,6 +1890,7 @@ zh,Wiki Spaces,维基空间
 zh,Wiki Type,维基类型
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
+zh,Wish List,愿望清单
 zh,"Worked ${ec.l10n.format(project.actualWorkTime, '#.#')} hrs","已工作${ec.l10n.format(project.actualWorkTime, '#.#')}小时"
 zh,Worker,工人
 zh,Worker/Vendor Payment,工人/供应商付款
