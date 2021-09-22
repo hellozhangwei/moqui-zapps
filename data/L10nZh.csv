@@ -868,6 +868,7 @@ zh,Lots,批次
 zh,Macao,澳门特别行政区
 zh,Mailing Addresses,邮寄地址
 zh,Maintenance,维护
+zh,Make Default,设置未默认
 zh,Manage,管理
 zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
@@ -882,6 +883,7 @@ zh,Markup Order Shipping Price,标记订单运费
 zh,Markup Shipment Ship Labels,标记运单标签
 zh,Matches,匹配
 zh,Memo,备忘录
+zh,Merge From ${partyId},从${partyId}合并
 zh,Message,消息
 zh,Message Remote,远端消息
 zh,Messages,沟通
@@ -1009,6 +1011,7 @@ zh,No Customer Selected,未选择客户
 zh,No EmailServer found for ID [${emailServerId}],找不到对应ID为${emailServerId}的EmailServer记录
 zh,No EmailServer record found for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate[${emailTemplateId}]中定义的邮件服务器未定义
 zh,No EmailTemplate record found for ID [${emailTemplateId}],邮件模板记录EmailTemplate[${emailTemplateId}]未定义
+zh,"No find parameters (or default), choose some in Find Options to save a new find or update existing",没有查询参数或者默认查询，点击查询选项并保存一个新的查询，或者跟新一个存在的查处。
 zh,No Location,没有位置
 zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
 zh,No account found for username ${username},用户名或者密码错误。${username}
@@ -1515,7 +1518,7 @@ zh,SalesOrderTitle,销售管理
 zh,Salvage Value,残值
 zh,Save,保存
 zh,Save Columns,保存列
-zh,Save New Find,保存新的查找
+zh,Save New Find,保存为新的查找
 zh,Save to Filename,保存文件名
 zh,Saved Finds,保存的查询
 zh,Saving,保存中...
@@ -1525,6 +1528,7 @@ zh,"Scan Asset, Cont, Loc, or Prod","扫描资产、容器、位置、产品"
 zh,"Scan Asset, Cont, Loc, Prod","扫描资产、容器、位置、产品"
 zh,Scan Location,扫码位置
 zh,Scan Shipment ID,扫码运单ID
+zh,Schedule,计划
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
@@ -1695,6 +1699,8 @@ zh,Their Order,对方订单
 zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
 zh,This,当
+zh,This party has data merged from parties:,此参与者已合并自${party.mergedToPartyId}
+zh,This party was merged into ${party.mergedToPartyId},此参与者已被合并到${party.mergedToPartyId}
 zh,Thread,线索
 zh,Thru,到
 zh,Thru Date,结束日期
