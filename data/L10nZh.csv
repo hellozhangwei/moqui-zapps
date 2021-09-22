@@ -66,6 +66,8 @@ zh,Add Asset,添加资产
 zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
 zh,Add Authenticator App,添加认证App
+zh,Add Blog Post from Page,从页面添加博客文章
+zh,Add Blog Post with Text,用文本添加博客文章
 zh,Add Box Type,添加包装箱类型
 zh,Add Carrier Shipment Method,添加配送方法
 zh,Add Child Account,添加
@@ -98,6 +100,7 @@ zh,Add Other Item,添加其他条目
 zh,Add Other Maintenance,添加维护记录
 zh,Add Other Role,添加其他角色
 zh,Add Package,添加包装箱
+zh,Add Page,添加页面
 zh,Add Phone,添加电话
 zh,Add Parent Account,添加
 zh,Add Part,添加拆单
@@ -124,7 +127,7 @@ zh,Add Team,添加任务指派
 zh,Add Time Entry,添加工时记录
 zh,Add To Feature Group,添加到特征组
 zh,Add To Product,添加到产品
-zh,Add To Request,添加到审批
+zh,Add to Request,添加到审批
 zh,Add UOM Dimension,添加度量
 zh,Add User Assignment,添加用户
 zh,Add User Group,添加用户组
@@ -157,6 +160,7 @@ zh,All Parties,全部参与人
 zh,All Payable Invoices,全部应付账单
 zh,All Purchase Orders,全部采购订单
 zh,All Receivable Invoices,全部应收账单
+zh,Allow Any HTML,允许任意HTML
 zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
@@ -165,6 +169,7 @@ zh,Amount/UOM,总金额/单位
 zh,Anhui,安徽省
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
+zh,Any HTML,任意HTML
 zh,Any Type,全部类型
 zh,App List,应用列表
 zh,Appl. Type,应用类型
@@ -228,6 +233,7 @@ zh,Assoc. Type,关联类型
 zh,Associated,关联
 zh,Associated From,关联从
 zh,Attachments,附件
+zh,Attachment File,附件文件
 zh,Attention,注意
 zh,Attn Name,经办人名字
 zh,Audit Log,审计日志
@@ -237,6 +243,7 @@ zh,Authenticate failed for user ${newUserAccount.username} because account is di
 zh,Authenticate failed for user ${newUserAccount.username} because password was changed ${wksSinceChange} weeks ago and must be changed every ${changeWeeks} weeks [PWDTIM].,账号${newUserAccount.username}的密码上次修改已是${wksSinceChange}星期以前，必须每${changeWeeks}星期修改一次。
 zh,Authenticate failed for user [${newUserAccount.username}] because account requires password change [PWDCHG].,账号${newUserAccount.username}需修改密码。
 zh,Authentication Methods,认证方法
+zh,Author,作者
 zh,Authorize,验证
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Payments Term,付款条款
@@ -246,6 +253,7 @@ zh,Auto Set,自动设置
 zh,Auto Update Rates,自动更新单价
 zh,Available,可用
 zh,"Avg Rate ${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}","平均单价${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}"
+zh,Back to Find Blog Post,返回到博客文章查询
 zh,Balance,余额
 zh,Balance Sheet,资产负债表
 zh,Balance Sheet History,资产负债表历史
@@ -261,6 +269,7 @@ zh,Billing Zip,邮编
 zh,Birth,生日
 zh,Birth Date,生日
 zh,Black,黑
+zh,Blog Posts,博客文章
 zh,Blogs,博客
 zh,Booked Payable Invoices,登记的应付账单
 zh,Booked Receivable Invoices,登记的应收账单
@@ -341,6 +350,7 @@ zh,Clone Accounting Settings,克隆会计设置
 zh,Clone Product,克隆产品
 zh,Clone Project,克隆项目
 zh,Clone Run,克隆运行
+zh,Clone Space,克隆空间
 zh,Clone Task,克隆任务
 zh,Close,关闭
 zh,Close Date,关闭日期
@@ -382,6 +392,7 @@ zh,Content File,内容附件
 zh,Content:,内容:
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
+zh,Copy,拷贝
 zh,Cost Budget,成本预算
 zh,Could not find account with username ${username},找不到用户名为${username}的账号
 zh,Count,数量
@@ -399,6 +410,7 @@ zh,Create First Period,创建第一个期间
 zh,Create Invoice,创建账单
 zh,Create Milestone,创建里程碑
 zh,Create Next,创建下一个
+zh,Create Page,创建页面
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Pool,创建池
@@ -538,6 +550,7 @@ zh,Dups,重复
 zh,Edit,编辑
 zh,Edit Asset,编辑资产
 zh,Edit Attachment,编辑附件
+zh,Edit Blog Post,编辑博客文章
 zh,Edit Client,编辑客户
 zh,Edit Content,编辑内容
 zh,Edit Equipment,编辑设备
@@ -548,6 +561,7 @@ zh,Edit Payment ${partPaymentInfo.partPayment.paymentId},编辑付款单${partPa
 zh,Edit Physical Inventory,编辑库存盘点
 zh,Edit Shipment,编辑运单
 zh,Edit Vendor,编辑供应商
+zh,Edit Wiki Page,编辑维基页面
 zh,Effective Date,生效日
 zh,Email,邮箱
 zh,Email Address,邮箱
@@ -761,6 +775,7 @@ zh,In Progress - ${pstats.taskCountByStatusMap.WeInProgress?:0},进行中 - ${ps
 zh,Inactive Tasks,非活动任务
 zh,Incoming Refund Payments,收入退款
 zh,Income Statement,损益表
+zh,Index Space Pages,索引空间页面
 zh,Information,信息
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
@@ -887,6 +902,8 @@ zh,Merge From ${partyId},从${partyId}合并
 zh,Message,消息
 zh,Message Remote,远端消息
 zh,Messages,沟通
+zh,Meta Keywords,Meta关键字
+zh,Meta Description,Meta描述
 zh,Meter Name,仪表名称
 zh,Meter Readings,仪表读数
 zh,Meters,仪表
@@ -1154,7 +1171,10 @@ zh,Packed Date,打包日期
 zh,Packed/Issued,装箱/发行
 zh,Page,页面
 zh,Page #,页 #
+zh,Page History,页面历史
 zh,Page Layout,页面布局
+zh,Page Name,页面名称
+zh,Page Tree,页面树
 zh,Paid Percent,已支付发票百分比
 zh,Parent,父
 zh,Parent Account,父账户
@@ -1162,6 +1182,7 @@ zh,Parent Categories,父分类
 zh,Parent Facility,父设施
 zh,Parent Item,父条目
 zh,Parent Order,父订单
+zh,Parent Path,父路径
 zh,Parent Sales Account,父公司
 zh,Parent Task,父任务
 zh,Part,拆单
@@ -1307,6 +1328,14 @@ zh,Promotions,促销
 zh,Propose Quote,建议报价
 zh,"Provider Cost ${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}","供应商报价${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}"
 zh,Pseudo ID,伪ID
+zh,Public Attachment,公共附件
+zh,Public Attachment Url,公共附件URL
+zh,Public Blog,公共博客
+zh,Public Blog Url,公共博客URL
+zh,Public Page,公共页面
+zh,Public Page Url,公共页面URL
+zh,Publish Date,发布日期
+zh,Publish Version ${versionName.take(12)},发布版本${versionName.take(12)}
 zh,Purchase Invoices,应付发票
 zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
 zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
@@ -1453,6 +1482,8 @@ zh,Response Amount,响应数量
 zh,Response Date,响应日期
 zh,Response Required Date,要求答复日期
 zh,Response Stats,响应统计
+zh,Restrict View,限制查看
+zh,Restrict Update,限制修改
 zh,Ret Amount,退货数量
 zh,Ret Label,退货标签
 zh,Ret Message,退货消息
@@ -1477,6 +1508,7 @@ zh,Revision,版本
 zh,Role,角色
 zh,Role Type,角色类型
 zh,Roles,角色
+zh,Root Page Location,根页面位置
 zh,Routing #,路由号码
 zh,Run Date,运行日期
 zh,Run ID,运行ID
@@ -1634,8 +1666,10 @@ zh,Signature Required Type,需要签名类型
 zh,Size UOM,容量单位
 zh,Size/UOM,容量单位
 zh,Soft Identifier,软标识符
+zh,Small Image,小图片
 zh,Source,源
 zh,Space,空间
+zh,Space ID,空间ID
 zh,Standard,标准
 zh,Standard Cost,标准成本
 zh,Start Date,开始日期
@@ -1758,6 +1792,7 @@ zh,Update Cost & Owner,更新费用与拥有者
 zh,Update Header,更新订单头
 zh,Update Order,修改订单
 zh,Update Organization,更新组织
+zh,Update Page,更新页面
 zh,Update Package,修改包装箱
 zh,Update Person,更新个人
 zh,Update Purpose,更新用途
@@ -1767,6 +1802,7 @@ zh,Update Time Entry,更新工时记录
 zh,Update Quantity,修改数量
 zh,Update User,更新用户
 zh,Update to Current,更新到当前
+zh,Upload,上传
 zh,Upload Content,上传内容
 zh,Use Find Options to search for orders and when you have the set you want use the form to create picklists.,使用查询选项查找订单，然后创建拣货单。
 zh,User,用户
@@ -1797,9 +1833,13 @@ zh,Vendor Hour Rate,客户小时单价
 zh,Vendor Invoice,客户账单
 zh,Vendor Org,客户
 zh,Vendor Warehouse,供应商仓库
+zh,View/Edit Wiki Page,查看/编辑维基页面
+zh,View/Print,查看/打印
 zh,View Charts,查看图表
 zh,View Old,旧联系方式
 zh,View Pages,查看页面
+zh,View Space,查看空间
+zh,View Wiki Page,查看维基页面
 zh,Viewed,查看
 zh,Virtual (with variants),虚拟（可变）
 zh,Visibility,可见性
@@ -1813,11 +1853,13 @@ zh,Weight,重量
 zh,Weight UOM,重量单位
 zh,Width,宽度
 zh,Wiki,维基
+zh,Wiki Blog Posts,维基博客文章
 zh,Wiki Page,维基页面
 zh,Wiki Pages,维基页面
 zh,Wiki Space ID,维基空间ID
 zh,Wiki Space,维基空间
 zh,Wiki Spaces,维基空间
+zh,Wiki Type,维基类型
 zh,Wiki/Content,维基/内容
 zh,With Children,带子条目
 zh,"Worked ${ec.l10n.format(project.actualWorkTime, '#.#')} hrs","已工作${ec.l10n.format(project.actualWorkTime, '#.#')}小时"
