@@ -1,6 +1,7 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
+zh,% of Sales,%占总销售额
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh,"${orderPartInfo.customerEmail ?: 'No Order or Primary email found'}","${orderPartInfo.customerEmail ?: '未发现订单邮箱或者主邮箱'}"
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
@@ -261,6 +262,7 @@ zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
 zh,Auto Update Rates,自动更新单价
 zh,Available,可用
+zh,Avg,平均
 zh,"Avg Rate ${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}","平均单价${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}"
 zh,Back to Find Blog Post,返回到博客文章查询
 zh,Balance,余额
@@ -272,6 +274,8 @@ zh,Because of password errors not creating account with username ${username},因
 zh,Begins With,以...开始
 zh,Being Changed,修改中
 zh,Beijing,北京市
+zh,Billed,已开票
+zh,Billed Total,开票总额
 zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
@@ -343,6 +347,7 @@ zh,City,城市
 zh,City/Zip,城市/邮编
 zh,Class,类
 zh,Class Type,分类
+zh,Classification,类型
 zh,Classifications,类型
 zh,Clear Current Find,清空当前查找
 zh,Clear Find,重置条件
@@ -406,6 +411,8 @@ zh,Content:,内容:
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
 zh,Copy,拷贝
+zh,Cost,成本
+zh,Cost %,成本%
 zh,Cost Budget,成本预算
 zh,Could not find account with username ${username},找不到用户名为${username}的账号
 zh,Count,数量
@@ -460,6 +467,7 @@ zh,Customer,客户
 zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
 zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
 zh,Customer Class,客户类型
+zh,Customer Classes,客户类型
 zh,Customer Credit Memo,客户红字发票
 zh,Customer Credit Memos,客户红字发票
 zh,Customer Data,客户数据
@@ -549,9 +557,11 @@ zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
 zh,Disabled?,禁用?
 zh,Disallow Posting,禁止过账
+zh,Disc %,折扣%
 zh,Discount - Appeasement,折扣 - 绥靖
 zh,Discount - Promotional,折扣 - 促销
 zh,Discount - Supplier,折扣 - 供应商
+zh,Discounts,折扣
 zh,Display ID,显示ID
 zh,Do Find,进行查找
 zh,Do Not Display,不显示
@@ -809,6 +819,7 @@ zh,Internal,内部
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
 zh,Internal Organization Relationships,内部组织关系
+zh,Interval,间隔
 zh,Interval Meter,间隔读数
 zh,Interval Quantity,间隔数量
 zh,Inventory,库存
@@ -838,6 +849,7 @@ zh,Invoice Message,账单消息
 zh,Invoice Reconciliation,账单对账
 zh,Invoice Time,工时账单
 zh,Invoice Types,账单类型
+#zh,"Invoices by Customer Classification (${[d:'Day', w:'Week', M:'Month', q:'Quarter', y:'Year'].get(interval?:'w')} from ${ec.l10n.format(topCustomerClassStart, 'dd MMM yyyy')} to ${ec.l10n.format((topCustomerClassEnd ? topCustomerClassEnd - 1 : null), 'dd MMM yyyy')})","发票按客户分类(${[d:'Day', w:'Week', M:'Month', q:'Quarter', y:'Year'].get(interval?:'w')} from ${ec.l10n.format(topCustomerClassStart, 'dd MMM yyyy')} to ${ec.l10n.format((topCustomerClassEnd ? topCustomerClassEnd - 1 : null), 'dd MMM yyyy')})"
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
 zh,Invoices From,账单从
@@ -849,6 +861,8 @@ zh,Is Gift,礼物
 zh,Issuance,发行
 zh,Issued,发货时间
 zh,Issued Date,发行日
+zh,Issued Quantity,发货数量
+zh,Issued Total,发货总额
 zh,Issued and Invoiced,成交记录
 zh,Issued and Invoiced Report,已出货与已开票报表
 zh,Item,条目
@@ -904,6 +918,7 @@ zh,Lot,批次
 zh,Lot Number,批次
 zh,LotTitle,批次
 zh,Lots,批次
+zh,MA Periods,移动平均线回顾期
 zh,Macao,澳门特别行政区
 zh,Mailing Addresses,邮寄地址
 zh,Maintenance,维护
@@ -914,6 +929,9 @@ zh,Manufactured Date,制造日期
 zh,Manufacturer,制造商
 zh,Manufacturing,制造
 zh,ManufacturingTitle,制造管理
+zh,Margin %,边际%
+zh,Margin Amount,边际收益
+zh,Margin Percent,边际收益百分比
 zh,Marketing,市场
 zh,Marketing Package Adjustment,营销套餐调整
 zh,MarketingCampaignTitle,市场营销
@@ -938,6 +956,8 @@ zh,Milestone,里程碑
 zh,Milestones,里程碑
 zh,Milestone Summary,里程碑概要
 zh,Miscellaneous Charge,杂费
+zh,Max,最大
+zh,Min,最小
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
@@ -958,6 +978,7 @@ zh,My Open Requests,我的未完审批
 zh,My Projects,我的项目
 zh,My Milestones,我的里程碑
 zh,MyAccountTitle,个人中心
+zh,"NOTE: Invoice level stats (total, pre-paid, paid, etc) are not available by Product and will show as having no data",注意：发票级别统计数据（总计、预付、已付等）不适用于产品，将显示为无数据.
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,None,无
 zh,Notifications,通知
@@ -970,6 +991,8 @@ zh,Need Qty,需要数量
 zh,Needs Validation,需要校验
 zh,Net Income History,净收入历史
 zh,Net Income Year Over Year,年度净收入
+zh,Net Product,净产品
+zh,New %,新%
 zh,New Address,新地址
 zh,New Agreement,新合同
 zh,New Budget,新预算
@@ -978,6 +1001,7 @@ zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
 zh,New Credit Card,添加信用卡
 zh,New Credit Memo,新付款通知
+zh,New Cust,新客户
 zh,New Customer,新客户
 zh,New Customer Count,新客户数量
 zh,New Customer Percent,新客户百分比
@@ -1205,6 +1229,8 @@ zh,Page History,页面历史
 zh,Page Layout,页面布局
 zh,Page Name,页面名称
 zh,Page Tree,页面树
+zh,Paid %,已付%
+zh,Paid Amount,已付金额
 zh,Paid Percent,已支付发票百分比
 zh,Parent,父
 zh,Parent Account,父账户
@@ -1256,6 +1282,7 @@ zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${party
 zh,People,人员
 zh,People Assigned,指派人员
 zh,Period,周期
+zh,Periods,周期
 zh,Period Name,期间名称
 zh,Period Num,期间编号
 zh,Person,人
@@ -1316,6 +1343,7 @@ zh,Primary Entity,主实体
 zh,Priority,优先级
 zh,Process Item Responses,处理条目响应
 zh,Processing,处理中
+zh,Prod ID,产品ID
 zh,Produce,生产
 zh,Produce Asset,产出资产
 zh,Produced,产出的
@@ -1324,9 +1352,12 @@ zh,Product Class,产品分类
 zh,Product Category,产品分类
 zh,Product Count,产品数
 zh,Product ID,产品ID
+zh,Product Issued,产品出货数量
 zh,Product List,产品列表
 zh,Product Name,产品名称
 zh,Product Owner,产品拥有人
+zh,Product Quantity,产品数量
+zh,Product Sold,产品已售数量
 zh,Product Store,店铺
 zh,Product Store ID,店铺ID
 zh,Product Type,产品类型
@@ -1404,6 +1435,7 @@ zh,Quantity Reason,数量原因
 zh,Quantity Rejected,拒绝数量
 zh,Quantity Total,总数量
 zh,Quantity*,数量*
+zh,Quarter,季度
 zh,Quarantine,检疫区
 zh,Quick Add Items,创建账单
 zh,Quick Aging,快速账龄
@@ -1566,8 +1598,10 @@ zh,Sales,销售
 zh,Sales/Purchase,销售/采购
 zh,Sales Account,客户
 zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
+zh,Sales Invoices by Invoice Date,销售订单按账单日期
 zh,Sales Orders & Quotes,销售订单与报价
 zh,Sales Orders (${customerOrderPartCount}),销售订单(${customerOrderPartCount})
+zh,Sales Orders by Placed Date,销售订单按订购日期
 zh,Sales Tax,销售税
 zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account Contacts,客户联系人
@@ -1592,6 +1626,7 @@ zh,Sales Shipment,销售出库单
 zh,Sales Shipment List,销售出库单列表
 zh,Sales Summary,销售统计
 zh,Sales Summary Charts,销售统计图表
+zh,"Sales Summary for ${intervalCount?:13} ${[d:'Days', w:'Weeks', M:'Months', q:'Quarters', y:'Years'].get(interval?:'w')}${thruDate ? ' thru ' + ec.l10n.format(thruDate, 'dd MMM yyyy') : ''}${maPeriods ? ' with ' + maPeriods + ' Period MA' : ''}","销售统计${intervalCount?:13} ${[d:'天', w:'周', M:'月', q:'季度', y:'年'].get(interval?:'w')}${thruDate ? ' thru ' + ec.l10n.format(thruDate, 'dd MMM yyyy') : ''}${maPeriods ? ' with ' + maPeriods + ' Period MA' : ''}"
 zh,SalesOpportunityTitle,销售机会
 zh,SalesOrderTitle,销售管理
 zh,Salvage Value,残值
@@ -1811,9 +1846,13 @@ zh,To Party,到
 zh,To Payment Method,到支付方法
 zh,To Role,到角色
 zh,Tools,工具
+zh,"Top Products Ordered (${[d:'Day', w:'Week', M:'Month', q:'Quarter', y:'Year'].get(interval?:'w')} from ${ec.l10n.format(topProductStart, 'dd MMM yyyy')} to ${ec.l10n.format((topProductEnd ? topProductEnd - 1 : null), 'dd MMM yyyy')})","热销产品(${[d:'天', w:'周', M:'月', q:'季度', y:'年'].get(interval?:'w')} from ${ec.l10n.format(topProductStart, 'dd MMM yyyy')} to ${ec.l10n.format((topProductEnd ? topProductEnd - 1 : null), 'dd MMM yyyy')})"
 zh,Topic,主题
 zh,Topic Subscriptions,订阅主题
 zh,Total,合计
+zh,Total Cost,总销成本
+zh,Total Issued,出货总额
+zh,Total Sales,总销售额
 zh,Total Survey Response:,调查响应合计:
 zh,Track Status,追踪状态
 zh,Tracking,追踪
