@@ -73,6 +73,7 @@ zh,Add Carrier Shipment Method,添加配送方法
 zh,Add Child Account,添加
 zh,Add Child Category,添加子分类
 zh,Add Client,添加客户
+zh,Add Code,添加代码
 zh,Add Comment,添加评论
 zh,Add Contact,添加
 zh,Add Content,添加
@@ -139,6 +140,7 @@ zh,Add to Organization,添加组织
 zh,Add to Package,装入
 zh,Add to Picklist,添加到拣货单
 zh,Add to Sales Account,添加
+zh,Additional Feature,附加功能
 zh,Address 1,地址1
 zh,Address 2,地址2
 zh,Address Purpose,地址用途
@@ -146,6 +148,7 @@ zh,Address Trust,地址信任
 zh,Address1,地址1
 zh,Adjust Item,调整条目
 zh,Adjust Invoice,调整账单
+zh,Advertising,广告
 zh,Affiliate,分支机构
 zh,Aging,账龄
 zh,Aging Summary (displayed records only),账龄概要（只显示行）
@@ -174,6 +177,7 @@ zh,Any,任意
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any HTML,任意HTML
+zh,Any Promo Code,任意促销代码
 zh,Any Type,全部类型
 zh,App List,应用列表
 zh,Appl. Type,应用类型
@@ -324,6 +328,7 @@ zh,Category Type,分类类型
 zh,CategoryTitle,分类
 zh,Categories,分类
 zh,Change Password,修改密码
+zh,Chargeback,退款
 zh,Check Reservations,检查预留
 zh,Check Num,检查数量
 zh,Checks PDF,检查PDF
@@ -376,6 +381,7 @@ zh,Completed,已完成
 zh,Completed Sales Orders,已完成的销售订单
 zh,Completed Purchase Orders,已完成的采购订单
 zh,Completed Tasks,完成的任务
+zh,Compliance Fee,合规费
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Configurable Good,可配置商品
@@ -406,6 +412,7 @@ zh,Count,数量
 zh,Country,国
 zh,Country of Origin,源产地
 zh,Country/State,国家/省
+zh,Coupons and Credits,优惠券和积分
 zh,Create,新建
 zh,Create Account,新账户
 zh,Create Bank Account,新建银行账号
@@ -465,6 +472,7 @@ zh,Customer Name,客户名称
 zh,Customer Notes,客户备注
 zh,Customer Org,客户
 zh,Customer Payments,客户付款单
+zh,Customer Promo Code,客户促销代码
 zh,Customer Requests,客户请求
 zh,Customer Return Shipments,客户退货入库单
 zh,Customer Role,客户角色
@@ -541,10 +549,14 @@ zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
 zh,Disabled?,禁用?
 zh,Disallow Posting,禁止过账
+zh,Discount - Appeasement,折扣 - 绥靖
+zh,Discount - Promotional,折扣 - 促销
+zh,Discount - Supplier,折扣 - 供应商
 zh,Display ID,显示ID
 zh,Do Find,进行查找
 zh,Do Not Display,不显示
 zh,Documentation,文档
+zh,Donation,捐款
 zh,Download,下载
 zh,Draft,草稿
 zh,Drag fields to the desired column or do not display,拖放列调整顺序，或拖到不显示。
@@ -653,6 +665,8 @@ zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
+zh,Fee,费用
+zh,Fee Fills,费用填写
 zh,Fields,字段
 zh,Field cannot be empty,输入不能为空
 zh,File ${filename} already exists,skipping entity ${en}.
@@ -851,6 +865,7 @@ zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
+zh,Joint Advertising,联合广告
 zh,Journal Name,日记账名称
 zh,Label ID,标签ID
 zh,Labor Rates,工时费
@@ -859,6 +874,7 @@ zh,Last Check Number,上次检查数量
 zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
+zh,Late Payment Charge,滞纳金
 zh,Latitude,维度
 zh,Latitude / Longitude,维度/经度
 zh,Lead/Account,线索/客户
@@ -899,6 +915,7 @@ zh,Manufacturer,制造商
 zh,Manufacturing,制造
 zh,ManufacturingTitle,制造管理
 zh,Marketing,市场
+zh,Marketing Package Adjustment,营销套餐调整
 zh,MarketingCampaignTitle,市场营销
 zh,Markup %,标记%
 zh,Markup Amt,标记总价
@@ -920,6 +937,7 @@ zh,Middle Name,中名
 zh,Milestone,里程碑
 zh,Milestones,里程碑
 zh,Milestone Summary,里程碑概要
+zh,Miscellaneous Charge,杂费
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
@@ -1340,7 +1358,9 @@ zh,Promo Codes,促销代码
 zh,Promo Expires,促销过期日
 zh,Promos,计算促销
 zh,Promotion,促销
+zh,Promotional Discounts,促销折扣
 zh,Promotions,促销
+zh,Prompt Payment Discount,即时付款折扣
 zh,Propose Quote,建议报价
 zh,"Provider Cost ${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}","供应商报价${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}"
 zh,Pseudo ID,伪ID
@@ -1456,7 +1476,9 @@ zh,Remove All from Category,从分类移除产品
 zh,Remove Address?,删除地址？
 zh,Remove Feature from All,移除产品特征
 zh,Remove from Load,移除设备
+zh,Rental,出租
 zh,Rental Asset,租赁资产
+zh,Rental Deposit,租金押金
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
 zh,Rental Sales Return Shipment,借用归还入库单
@@ -1546,6 +1568,7 @@ zh,Sales Account,客户
 zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与报价
 zh,Sales Orders & Quotes,销售订单与报价
 zh,Sales Orders (${customerOrderPartCount}),销售订单(${customerOrderPartCount})
+zh,Sales Tax,销售税
 zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account Contacts,客户联系人
 zh,Sales Analysis,销售分析
@@ -1623,6 +1646,7 @@ zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serial Number,序列号
 zh,Service,服务
+zh,Service Product,服务型产品
 zh,Set,设置
 zh,Set Assignee,设置指派人
 zh,Set Delivered,设置为已送达
@@ -1680,16 +1704,19 @@ zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项
 zh,Shipping Phone,电话
+zh,Shipping and Handling,电话
 zh,ShippingTitle,拣货管理
 zh,Show Details,显示详情
 zh,Show Invoiced,显示已开票的
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
+zh,Shrinkage,收缩
 zh,Sichuan,四川省
 zh,Sign Req.,签名类型
 zh,Signature Required Type,需要签名类型
 zh,Size UOM,容量单位
 zh,Size/UOM,容量单位
 zh,Soft Identifier,软标识符
+zh,Slotting Fees,货位费
 zh,Small Image,小图片
 zh,Source,源
 zh,Space,空间
@@ -1724,6 +1751,7 @@ zh,Supplier Credit Memo,供应商红字发票
 zh,Supplier Return Shipments,供应商退货入库单
 zh,SupplierTitle,供应商管理
 zh,Suppliers,供应商
+zh,Surcharge,额外费用
 zh,Survey,调查问卷
 zh,Survey Form Preview,调查表单预览
 zh,Survey ID,调查ID
@@ -1757,6 +1785,7 @@ zh,Their Invoice,对方发票
 zh,Their Order,对方订单
 zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
+zh,Third Party,第三方
 zh,This,当
 zh,This party has data merged from parties:,此参与者已合并自${party.mergedToPartyId}
 zh,This party was merged into ${party.mergedToPartyId},此参与者已被合并到${party.mergedToPartyId}
@@ -1765,6 +1794,7 @@ zh,Thru,到
 zh,Thru Date,结束日期
 zh,Tianjin,天津市
 zh,Time,考勤
+zh,Time Entry,工时记录
 zh,Time Entries,工时记录
 zh,Time Period,会计期间
 zh,Time Periods,会计期间
@@ -1842,6 +1872,7 @@ zh,User ID,用户ID
 zh,Username,用户名
 zh,Usernames,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
+zh,VAT Tax (not added to totals),VAT税（不计入总价）
 zh,Validate,验证
 zh,Valid From,生效日期
 zh,Valid Thru,终止日期
@@ -1872,6 +1903,7 @@ zh,Visibility,可见性
 zh,WH/Line,仓库/产线
 zh,Warehouse,仓库
 zh,Warehouse Assets,仓库资产
+zh,Warranty,保修
 zh,Was Stored At,原存放
 zh,Web,网络
 zh,Web External,网络外
@@ -1899,7 +1931,9 @@ zh,Worker Hour Rate,工人小时单价
 zh,Worker Invoice,工人账单
 zh,Worker Piece Calc,工人计件计算
 zh,Worker Piece Rate,工人计件单价
+zh,Work Effort,工作投入
 zh,Work Type,工作类型
+zh,Write-off,冲销
 zh,Wrote ${curValuesWritten} records to file ${filename},已把${curValuesWritten}记录写进了文件${filename}
 zh,Wrote ${valuesWritten} documents to file ${filename},已把${valuesWritten}文档写进了文件${filename}
 zh,Wrote ${valuesWritten} records to file ${filename},已把${valuesWritten}记录写进了文件${filename}
