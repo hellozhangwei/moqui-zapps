@@ -123,6 +123,9 @@ zh,Add Project Assignment,添加项目指派
 zh,Add Promo Code,添加促销代码
 zh,Add Purpose,添加用途
 zh,Add Rate Amount,添加单价
+zh,Add Related To,添加到关联
+zh,Add Related From,添加被关联
+zh,Add Request,添加审批
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
@@ -272,6 +275,7 @@ zh,Assoc From,关联从
 zh,Assoc. Type,关联类型
 zh,Associated,关联
 zh,Associated From,关联从
+zh,At,在
 zh,Attachment File,附件文件
 zh,Attachments,附件
 zh,Attention,注意
@@ -361,6 +365,7 @@ zh,Calc Price,计算的价格
 zh,Calendar,日历
 zh,Cambodia,柬埔寨
 zh,Cameroon,喀麦隆
+zh,Can be Location ID or Container ID or Serial Number (Plate ID),可以是库位ID或者容器（托盘）的ID或序列号
 zh,Can only create initial admin account if there are no UserAccount records,仅当没有任何账号时才能创建初始管理员账号
 zh,Canada,加拿大
 zh,Cancel,取消
@@ -885,6 +890,7 @@ zh,Gibraltar,直布罗陀
 zh,Gift Message,礼物留言
 zh,Gift Registry,礼物登记
 zh,GlAccountTitle,总账会计
+zh,Go,去
 zh,Go##Page,跳转到
 zh,Grand Total,总额
 zh,Greece,希腊
@@ -1899,7 +1905,9 @@ zh,"Scan Asset, Cont, Loc, Prod",扫描资产、容器、位置、产品
 zh,"Scan Asset, Cont, Loc, or Prod",扫描资产、容器、位置、产品
 zh,"Scan Asset, Container, Location, Product",扫描资产，容器，位置，产品
 zh,Scan Location,扫码位置
+zh,"Scan Prod, Loc, Cont",扫码产品、库位、容器
 zh,Scan Shipment ID,扫码运单ID
+zh,Scan To Location,扫码目的库位
 zh,Schedule,计划
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
@@ -2091,6 +2099,7 @@ zh,Taiwan,台湾省
 zh,Tajikistan,塔吉克斯坦
 zh,"Tanzania, United Republic Of",坦桑尼亚联合共和国
 zh,Task,任务
+zh,Task ID,任务ID
 zh,Task Name,任务名
 zh,Task Summary,任务概要
 zh,Task Time Entries,任务工时记录
