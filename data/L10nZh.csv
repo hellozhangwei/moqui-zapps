@@ -178,6 +178,7 @@ zh,All Incoming Payments,全部收入款
 zh,All Incoming Shipments except Return Shipments,除退货外的所有进货货件
 zh,All Issuances,全部出库
 zh,All Issuances except Outgoing Shipments and Production Runs,全部的出库出了出库运单与生产
+zh,All Location Assets,库位中全部资产
 zh,All Outgoing Payments,全部支出款
 zh,All Outgoing Shipments,全部出库运单
 zh,All Parties,全部参与人
@@ -1083,6 +1084,7 @@ zh,Lithuania,立陶宛
 zh,Loc Type,位置类型
 zh,Locale,地区
 zh,Location,位置
+zh,Location Asset,库位资产
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Longitude,经度
