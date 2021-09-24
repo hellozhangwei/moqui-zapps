@@ -291,6 +291,7 @@ zh,Authenticate failed for user [${newUserAccount.username}] because account req
 zh,Authentication Methods,认证方法
 zh,Author,作者
 zh,Authorize,验证
+zh,Authorized,已验证
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Payments Term,付款条款
 zh,Auto Reorder,自动订购
@@ -464,6 +465,7 @@ zh,Compliance Fee,合规费
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Configurable Good,可配置商品
+zh,Confirmed Paid,已确认支付
 zh,Congo,刚果
 zh,"Congo, The Democratic Republic Of The",刚果民主共和国
 zh,Consumable Shipment,领用出库单
@@ -528,6 +530,7 @@ zh,Create Shipment,创建运单
 zh,Create Supplier Return,创建供应商退货
 zh,Create User,创建用户
 zh,Create Variants,创建变体
+zh,Created,已创建
 zh,Created Date,创建日期
 zh,Credit,贷
 zh,Credit Account,退款账户
@@ -613,6 +616,7 @@ zh,Days To Ship,发货天数
 zh,Debit,借
 zh,Debits,借
 zh,Decline,拒绝
+zh,Declined,已拒绝
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
 zh,Default Disable Promotions,禁用促销
@@ -961,6 +965,7 @@ zh,In Progress,进行中
 zh,In Progress - ${pstats.taskCountByStatusMap.WeInProgress?:0},进行中 - ${pstats.taskCountByStatusMap.WeInProgress?:0}
 zh,Inactive Tasks,非活动任务
 zh,Income Statement,损益表
+zh,Incoming,进来的
 zh,Incoming Refund Payments,收入退款
 zh,Index Space Pages,索引空间页面
 zh,India,印度
@@ -1009,6 +1014,7 @@ zh,Invoice Item Summary,账单条目概要
 zh,Invoice Message,账单消息
 zh,Invoice Reconciliation,账单对账
 zh,Invoice Time,工时账单
+zh,Invoice Type,账单类型
 zh,Invoice Types,账单类型
 zh,Invoiced Quantity,发票中产品数量
 zh,Invoices,账单
@@ -1119,6 +1125,7 @@ zh,Maldives,马尔代夫
 zh,Mali,马里
 zh,Malta,马耳他
 zh,Manage,管理
+zh,Manual Response Required,需要人工响应
 zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
 zh,Manufacturer,制造商
@@ -1260,6 +1267,7 @@ zh,New Picklist,新拣货单
 zh,New Price,新价格
 zh,New Product,新建产品
 zh,New Production Run,新建生产运行
+zh,New Project,新项目
 zh,New Purchase Return Shipment,新采购退货出库单
 zh,New Purchase Shipment,新采购入库单
 zh,New Receivable,新应收
@@ -1348,6 +1356,7 @@ zh,Online Access,在线访问
 zh,Only Cost Matches PO Amount,只看成本与采购金额相等的
 zh,Only No Cost,只看无成本
 zh,Only No Location,只看无库位
+zh,Only Not Rec,只看未对账
 zh,Only Partly Shipped,只看部分发货
 zh,Only Recurring,只看循环订单
 zh,Only count Product,只看产品订单
@@ -1366,6 +1375,7 @@ zh,Order By,排序
 zh,Order Count,订单数量
 zh,Order Detail,订单详情
 zh,Order Discount Percent,订单折扣百分比
+zh,Order Display ID,订单显示ID
 zh,Order Header,订单头
 zh,Order ID,订单ID
 zh,Order IDs,订单ID
@@ -1434,6 +1444,7 @@ zh,Other Party Product ID,第三方产品ID
 zh,Other Pmnt,其他付款单
 zh,Other Receipts,其他入库
 zh,Other Role,其他角色
+zh,Outgoing,出去的
 zh,Outgoing Refund Payments,支出退款
 zh,Output,输出
 zh,Override (Cash) GL Account,覆盖（现金）科目
@@ -1637,6 +1648,7 @@ zh,Project Summary,项目概要
 zh,Project Worker Invoice,项目的工人账单
 zh,ProjectTitle,项目管理
 zh,Projects,项目
+zh,Promised,已承诺
 zh,Promised Order Payments,承诺的订单付款单
 zh,Promo Code,促销代码
 zh,Promo Codes,促销代码
@@ -1647,6 +1659,7 @@ zh,Promotional Discounts,促销折扣
 zh,Promotions,促销
 zh,Prompt Payment Discount,即时付款折扣
 zh,Propose Quote,建议报价
+zh,Proposed,已建议
 zh,"Provider Cost ${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}","供应商报价${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}"
 zh,Pseudo ID,伪ID
 zh,Public Attachment,公共附件
@@ -1792,6 +1805,7 @@ zh,Request Name,审批名称
 zh,Request Status,审批状态
 zh,Request Type,审批类型
 zh,RequestTitle,审批管理
+zh,Requested,已申请
 zh,Requests,审批
 zh,Requests (${requestCount}),审批(${requestCount})
 zh,Require Customer Role,需要客户角色
@@ -1832,6 +1846,7 @@ zh,Return Price,退货价格
 zh,Return Quantity,退货数量
 zh,Return Shipments,退货运单
 zh,Return Tracking,退货跟踪
+zh,Return Type,退货类型
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Order,返回到订单查询
 zh,Return to Find Party,返回到参与者查询
@@ -2273,6 +2288,7 @@ zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Virtual (with variants),虚拟（可变）
 zh,Visibility,可见性
+zh,Void,无效的
 zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse,仓库
