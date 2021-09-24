@@ -372,6 +372,7 @@ zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Payment and Invoices,取消付款单与账单
 zh,Cancel Shipment,取消运单
+zh,Cancelled,已取消
 zh,Cancelled - ${pstats.taskCountByStatusMap.WeCancelled?:0},取消 - ${pstats.taskCountByStatusMap.WeCancelled?:0}
 zh,Cancelled by Customer,已被客户取消
 zh,Capacity,容量
@@ -620,6 +621,7 @@ zh,Default Disable Tax Calc,禁用税费计算
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
 zh,Delete,删除
+zh,Delivered,已送达
 zh,Delivery Date,送达日期
 zh,Delivery Info,送达信息
 zh,Denmark,丹麦
@@ -968,6 +970,7 @@ zh,Ingredients,主要成分
 zh,Ingredients - Unique,主要成分-唯一
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
+zh,Input,输入
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
 zh,Installation,安装说明
@@ -1374,11 +1377,14 @@ zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
 zh,Order PDF,订单PDF
 zh,Order Part,拆单
+zh,Order Party ID,订单参与人ID
 zh,Order Parties,订单参与人
 zh,Order Product Sales,产品销售额
+zh,Order Role Type ID,订单角色类型ID
 zh,Order Quantity,产品数量
 zh,Order Sent,订单发送
 zh,Order Ship By,承运人
+zh,Order Source,订单渠道来源
 zh,Order Type,订单类型
 zh,OrderApproveCurrencyDifferent,付款单的货币${payment.amountUomId}与订单的货币${orderHeader.currencyUomId}不一致
 zh,OrderApproveNearOrder,"发现相同的订单${nearOrder.orderId}:${nearOrder.orderPartSeqId}。下单时间：${ec.l10n.format(nearOrder.placedDate, null)} (${ec.l10n.format(diffHours, '0.0')}h ${isFuture ? 'after' : 'before'})，数量： ${ec.l10n.format(nearItem.quantity, '0.##')} 产品 ${nearItem.productId}"
@@ -1548,7 +1554,7 @@ zh,Pick Loc Qty,拣货库位数量
 zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
 zh,Pick Moves Needed,移位拣货
-zh,Picked,拣货时间
+zh,Picked,已拣货
 zh,Picklist,拣货
 zh,Picklist PDF,拣货PDF
 zh,Picklist and Pack PDF,拣货与打包PDF
@@ -1825,6 +1831,7 @@ zh,Return ID,退货ID
 zh,Return Price,退货价格
 zh,Return Quantity,退货数量
 zh,Return Shipments,退货运单
+zh,Return Tracking,退货跟踪
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Order,返回到订单查询
 zh,Return to Find Party,返回到参与者查询
@@ -1909,6 +1916,7 @@ zh,"Scan Prod, Loc, Cont",扫码产品、库位、容器
 zh,Scan Shipment ID,扫码运单ID
 zh,Scan To Location,扫码目的库位
 zh,Schedule,计划
+zh,Scheduled,已计划
 zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search,查找
