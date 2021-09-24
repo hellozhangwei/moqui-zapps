@@ -1,6 +1,10 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
 #select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
+zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
+zh,"NOTE: for accounting and other traceability record equipment purchase using a purchase order, incoming shipment, and payable invoice; this form is for existing or third party equipment",注意：如果需要进行财务核算或设备采购的追溯，请使用采购订单、进货和应付发票。 此功能仅用于现有或第三方设备
+zh,NOTE: this should only be used to correct data as it rewrites the accounting history for this asset. Do not use to change ownership for a business transaction like a sale.,注意：这应该仅用于更正数据，因为它会重写此资产的会计历史记录。 不要用于更改销售等商业交易的所有权。
+zh,Use the Asset screen after create for depreciation and other settings.,创建后使用资产详情页面进行折旧和其他设置。
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction",资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
@@ -1151,6 +1155,7 @@ zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
 zh,Miscellaneous Charge,杂费
 zh,Mod,修改
+zh,Model Product,产品型号
 zh,"Moldova, Republic Of",摩尔多瓦共和国
 zh,Monaco,摩纳哥
 zh,Mongolia,蒙古
