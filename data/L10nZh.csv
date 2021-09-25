@@ -1,10 +1,5 @@
 moqui.basic.LocalizedMessage,demo
 locale,original,localized
-#select locale || ',' || ORIGINAL||','|| LOCALIZED from Localized_Message  where locale='zh' order by original
-zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
-zh,"NOTE: for accounting and other traceability record equipment purchase using a purchase order, incoming shipment, and payable invoice; this form is for existing or third party equipment",注意：如果需要进行财务核算或设备采购的追溯，请使用采购订单、进货和应付发票。 此功能仅用于现有或第三方设备
-zh,NOTE: this should only be used to correct data as it rewrites the accounting history for this asset. Do not use to change ownership for a business transaction like a sale.,注意：这应该仅用于更正数据，因为它会重写此资产的会计历史记录。 不要用于更改销售等商业交易的所有权。
-zh,Use the Asset screen after create for depreciation and other settings.,创建后使用资产详情页面进行折旧和其他设置。
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction",资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
@@ -19,6 +14,7 @@ zh,(Asc),(升)
 zh,(Desc),(降)
 zh,- Hold Part,-挂起拆单
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
+zh,ACH Direct,直通车
 zh,AR Aging Summary,应收账龄概要
 zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
@@ -36,12 +32,14 @@ zh,Account Tree,科目树
 zh,Account Type,科目类型
 zh,Account Types,科目类型
 zh,Account with username ${username} does not have an email address,用户名为${username}的账号没有设置电子邮箱
+zh,Accountant,会计
 zh,Accounting,会计
 zh,Accounting Preferences,会计偏好
 zh,Accounting Preferences for ${partyDetail.organizationName} [${partyDetail.pseudoId}],${partyDetail.organizationName}[${partyDetail.pseudoId}]的会计偏好
 zh,AccountingDashboardTitle,仪表盘
 zh,AccountingTitle,财务管理
 zh,Accounts,账户
+zh,Acknowledged,已被认可
 zh,Acquire Cost,采购成本
 zh,Acquire Order ID,采购订单
 zh,Acquired,采购日期
@@ -85,7 +83,7 @@ zh,Add Comment,添加评论
 zh,Add Contact,添加
 zh,Add Content,添加
 zh,Add Dest. Address,添加目的地址
-zh,Add Dimension,添加度量
+zh,Add Dimension,添加尺寸
 zh,Add Direct Role,添加直接角色
 zh,Add Email Factor,添加邮箱因子
 zh,Add Equipment,添加设备
@@ -123,8 +121,8 @@ zh,Add Project Assignment,添加项目指派
 zh,Add Promo Code,添加促销代码
 zh,Add Purpose,添加用途
 zh,Add Rate Amount,添加单价
-zh,Add Related To,添加到关联
 zh,Add Related From,添加被关联
+zh,Add Related To,添加到关联
 zh,Add Request,添加审批
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
@@ -162,9 +160,11 @@ zh,Address1,地址1
 zh,Adjust Invoice,调整账单
 zh,Adjust Item,调整条目
 zh,Adjustments,调整
+zh,Administrator,行政人员
 zh,Advertising,广告
 zh,Affiliate,分支机构
 zh,Afghanistan,阿富汗
+zh,Agent,代理人
 zh,Aging,账龄
 zh,Aging Summary (displayed records only),账龄概要（只显示行）
 zh,Agreement Date,合同日期
@@ -194,12 +194,13 @@ zh,All Sales Orders,全部销售订单
 zh,Allow Any HTML,允许任意HTML
 zh,Allow Any Html,允许任意HTML
 zh,Amazon,亚马逊
+zh,Amazon Pay,亚马逊支付
 zh,American Samoa,美属萨摩亚
 zh,Amount,数量
 zh,Amount Included,包含数量
 zh,Amount Total,总金额
 zh,Amount UOM,数量 单位
-zh,Amount/UOM,总金额/单位
+zh,Amount/UOM,数量/单位
 zh,Andorra,安道尔
 zh,Angola,安哥拉
 zh,Anguilla,安圭拉
@@ -217,6 +218,7 @@ zh,Appl. Type,应用类型
 zh,Applicable Payments,可核销付款单
 zh,Applicable Unpaid Invoices,可核销未付账单
 zh,Application,程序
+zh,Application Software,应用程序软件
 zh,Applied,已应用
 zh,"Applied ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}, Unapplied ${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}","已核销 ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}，未核销${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}"
 zh,Applied Payments,已核销
@@ -248,6 +250,7 @@ zh,Asset Class,资产分类
 zh,Asset Detail,资产详情
 zh,Asset ID,库存流水号
 zh,Asset Name,资产名称
+zh,Asset Owner,资产所有者
 zh,Asset Owner will default to Facility owner,资产拥有者默认为仓库拥有者
 zh,Asset Pool,资产池
 zh,Asset Reservations,预约资产
@@ -272,12 +275,15 @@ zh,Assigned To,指派人
 zh,Assignee,指派人
 zh,Assignments,指派人
 zh,Assoc From,关联从
+zh,"Assoc From (Virtual, BOM)",被关联(虚拟、 BOM)
 zh,Assoc. Type,关联类型
 zh,Associated,关联
 zh,Associated From,关联从
+zh,Association,协会
 zh,At,在
 zh,Attachment File,附件文件
 zh,Attachments,附件
+zh,Attendee,参加者
 zh,Attention,注意
 zh,Attn Name,经办人名字
 zh,Audit Log,审计日志
@@ -304,6 +310,7 @@ zh,Avg,平均
 zh,"Avg Rate ${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}","平均单价${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}"
 zh,Azerbaijan,阿塞拜疆
 zh,Back to Find Blog Post,返回到博客文章查询
+zh,Bad Actor (Banned),坏演员（被禁）
 zh,Bahamas,巴哈马
 zh,Bahrain,巴林
 zh,Balance,余额
@@ -313,6 +320,7 @@ zh,Bangladesh,孟加拉国
 zh,Bank Accounts,银行账户
 zh,Bank Name,银行名称
 zh,Barbados,巴巴多斯
+zh,Bearer Biological,生产性生物
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
 zh,Begins With,以...开始
 zh,Beijing,北京市
@@ -324,16 +332,20 @@ zh,Benin,贝宁
 zh,Bermuda,百慕大
 zh,Bhutan,不丹
 zh,Billed,已开票
+zh,Billed Through,通过计费
 zh,Billed Total,开票总额
 zh,Billing Account,账号
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Biological,生物
 zh,Birth,生日
 zh,Birth Date,生日
+zh,Bitcoin,比特币
 zh,Black,黑
 zh,Blog Posts,博客文章
 zh,Blogs,博客
+zh,Boat,船
 zh,Bolivia,玻利维亚
 zh,Booked Payable Invoices,登记的应付账单
 zh,Booked Receivable Invoices,登记的应收账单
@@ -347,6 +359,7 @@ zh,Brazil,巴西
 zh,Break,休息
 zh,Break Hours,休息小时数
 zh,British Indian Ocean Territory,英属印度洋领地
+zh,Broker,经纪人
 zh,Brunei Darussalam,文莱达鲁萨兰国
 zh,Budget,预算
 zh,"Budget ${ec.l10n.formatCurrency(project.totalClientCostAllowed, project.costUomId, 2)}","预算${ec.l10n.formatCurrency(project.totalClientCostAllowed, project.costUomId, 2)}"
@@ -361,6 +374,8 @@ zh,Bulk Cost Update,批量更新成本
 zh,Bulk Create Picklists,批量新建拣货单
 zh,Burkina Faso,布基纳法索
 zh,Burundi,布隆迪
+zh,Business Analyst,业务分析师
+zh,Buyer,买方
 zh,CSV,CSV
 zh,Calc Price,计算的价格
 zh,Calendar,日历
@@ -380,12 +395,16 @@ zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Cape Verde,佛得角
 zh,Card Number,卡号
+zh,Cargo Vehicle,货车
 zh,Carrier,承运人
 zh,Carrier Code,承运人代码
 zh,Carrier Party,承运人
 zh,Carrier Ship Methods,配送方法
 zh,Carrier Shipment Methods,配送方法
+zh,Cash,现金
 zh,Cash Flow,现金流
+zh,Cash On Delivery,货到付款
+zh,Cashier,出纳员
 zh,Catalog,产品目录
 zh,CatalogTitle,品类管理
 zh,Categories,分类
@@ -398,6 +417,7 @@ zh,CategoryTitle,分类
 zh,Catgories,分类
 zh,Cayman Islands,开曼群岛
 zh,Central African Republic,中非共和国
+zh,Certified Check,认证支票
 zh,Chad,乍得
 zh,Change,改变
 zh,Change Password,修改密码
@@ -426,9 +446,11 @@ zh,Clear Find,重置条件
 zh,Clear Parameters,清空参数
 zh,Client,客户
 zh,Client Billing,客户账单
+zh,Client Billing Rep,客户计费代表
 zh,Client Hour Calc,客户小时计算
 zh,Client Hour Rate,客户小时单价
 zh,Client Invoice,客户账单
+zh,Client Manager,客户经理
 zh,Client Piece Calc,客户计件计算
 zh,Client Piece Rate,客户计件单价
 zh,Clients,客户
@@ -454,14 +476,23 @@ zh,Column Fields,列字段
 zh,Columns,列
 zh,Comment,评论
 zh,Comments,评论
+zh,Commission,佣金
 zh,Comoros,科摩罗
+zh,Company Account,公司账户
+zh,Company Check,公司支票
 zh,Company Name On Account,账户公司名称
+zh,Competitor,竞争者
 zh,Complete/Closed - ${((pstats.taskCountByStatusMap.WeComplete?:0) as BigDecimal) + ((pstats.taskCountByStatusMap.WeClosed?:0) as BigDecimal)},完成/关闭 - ${((pstats.taskCountByStatusMap.WeComplete?:0) as BigDecimal) + ((pstats.taskCountByStatusMap.WeClosed?:0) as BigDecimal)}
 zh,Completed,已完成
 zh,Completed Purchase Orders,已完成的采购订单
 zh,Completed Sales Orders,已完成的销售订单
 zh,Completed Tasks,完成的任务
 zh,Compliance Fee,合规费
+zh,Compressor,压缩机
+zh,Computer Hardware,计算机硬件
+zh,Computer Software,计算机软件
+zh,Computer Systems Design Services,计算机系统设计服务
+zh,Computer Training,电脑培训
 zh,Condition failed for transition [${location}],not running actions or redirecting
 zh,"Condition failed for transition [${location}], not running actions or redirecting","transition [${location}]中条件未通过, 不能运行actions处理或者redirecting跳转"
 zh,Configurable Good,可配置商品
@@ -488,10 +519,12 @@ zh,Content File,内容附件
 zh,Content List,内容列表
 zh,Content Type,内容类型
 zh,Content:,内容:
+zh,Contractor,承包商
 zh,Convert To Organization,转化为组织
 zh,Convert To Person,转化为个人
 zh,Cook Islands,库克群岛
 zh,Copy,拷贝
+zh,Corporation,公司
 zh,Cost,成本
 zh,Cost %,成本%
 zh,Cost Budget,成本预算
@@ -534,6 +567,8 @@ zh,Created,已创建
 zh,Created Date,创建日期
 zh,Credit,贷
 zh,Credit Account,退款账户
+zh,Credit Card,信用卡
+zh,Credit Memo,红字
 zh,Credit Memo Invoice,红字发票
 zh,Credits,贷
 zh,Croatia (local Name: Hrvatska),克罗地亚（当地名称：Hrvatska）
@@ -550,8 +585,13 @@ zh,Current Sales Orders,当前销售订单
 zh,Current Search Conditions,当前查找条件
 zh,Current Search String,当前检索条件
 zh,Current password incorrect for user ${username},当前用户${username}密码错误
+zh,Custom Computer Programming Services,定制计算机编程服务
 zh,Custom Reports,定制报表
 zh,Customer,客户
+zh,Customer - Bill To,客户 - 收款人
+zh,Customer - End User,客户 - 最终用户
+zh,Customer - Placing,客户 - 配售
+zh,Customer - Ship To,客户 - 运送至
 zh,Customer <strong>Payments</strong>,客户<strong>付款单</strong>
 zh,Customer <strong>Requests</strong>,客户<strong>请求</strong>
 zh,Customer Class,客户类型
@@ -614,9 +654,11 @@ zh,Date Moved,移动日期
 zh,Day,天
 zh,Days To Ship,发货天数
 zh,Debit,借
+zh,Debit Card,借记卡
 zh,Debits,借
 zh,Decline,拒绝
 zh,Declined,已拒绝
+zh,Default Assignee,默认受让人
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
 zh,Default Disable Promotions,禁用促销
@@ -624,16 +666,19 @@ zh,Default Disable Shipping Calc,禁用运费计算
 zh,Default Disable Tax Calc,禁用税费计算
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
+zh,Delegate,代表
 zh,Delete,删除
 zh,Delivered,已送达
 zh,Delivery Date,送达日期
 zh,Delivery Info,送达信息
 zh,Denmark,丹麦
+zh,Department,部门
 zh,Departments,部门
 zh,Depreciation,折旧
 zh,Desc,降序
 zh,Description,描述
 zh,Description - Long,描述-长
+zh,Desktop,桌面
 zh,Dest. Facility,收货仓
 zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
@@ -641,11 +686,12 @@ zh,Detail,详细
 zh,Detail History,详情历史
 zh,Detail Link Path,详情链接路径
 zh,Details PDF,详情PDF
+zh,Digger,挖掘机
 zh,Digital (download),数字（下载）
 zh,Digital Download,数字下载
 zh,Digital and Asset,数字资产
 zh,Dimension UOM,长度单位
-zh,Dimensions,度量
+zh,Dimensions,尺寸
 zh,Directions,用法说明书
 zh,Disable Account,禁用账号
 zh,Disable Promotions,禁用促销
@@ -654,12 +700,16 @@ zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
 zh,Disabled?,禁用?
 zh,Disallow Posting,禁止过账
+zh,Disbursement,支出
 zh,Disc %,折扣%
 zh,Discount - Appeasement,折扣 - 绥靖
 zh,Discount - Promotional,折扣 - 促销
 zh,Discount - Supplier,折扣 - 供应商
 zh,Discounts,折扣
 zh,Display ID,显示ID
+zh,Distributor,经销商
+zh,Distributor Preferred,经销商首选
+zh,Division,分配
 zh,Djibouti,吉布提
 zh,Do Find,进行查找
 zh,Do Not Display,不显示
@@ -676,6 +726,7 @@ zh,Due,截止日期
 zh,Due Date,截止日期
 zh,"Duplicates found (by ${party.hasDuplicates == 'Y' ? 'address/name, phone/name, ' : ''}identification, email, or birth date and name)",发现重复记录，请检查地址/姓名，电话/姓名，唯一标识，邮件，生日和姓名。
 zh,Dups,重复
+zh,EEOC (Equal Opportunity),EEOC（平等机会）
 zh,East Timor,东帝汶
 zh,Ecuador,厄瓜多尔
 zh,Edit,编辑
@@ -700,6 +751,7 @@ zh,El Salvador,萨尔瓦多
 zh,Email,邮箱
 zh,Email Address,邮箱
 zh,Email Addresses,邮箱
+zh,Email Administrator,电子邮件管理员
 zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
 zh,Email Template,邮件模版
@@ -708,6 +760,7 @@ zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServer
 zh,EmailServer [${emailServerId}] has no mailUsername,EmailServer [${emailServerId}]未定义邮箱用户名
 zh,EmailServer [${emailServerId}] has no storeHost,EmailServer [${emailServerId}]未定义邮箱主机地址
 zh,Emails,邮件
+zh,Employee,员工
 zh,Employee Rates,员工报价
 zh,Employees,员工
 zh,Employer,员工
@@ -718,6 +771,7 @@ zh,Ending,结束
 zh,Enter Setting,新建
 zh,Enter Store Setting,新建店铺配置
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
+zh,Enterprise,企业
 zh,Entry,登记
 zh,Entry Date,创建日期
 zh,Equals,等于
@@ -755,10 +809,12 @@ zh,Ethiopia,埃塞俄比亚
 zh,Event,事件
 zh,Example,样例
 zh,Example Feature,样例特征
+zh,Executive,管理人员
 zh,Existing Invoice,存在的账单
 zh,Expectation,期望
 zh,Expected End Of Life,预计报废日期
 zh,Expenses,费用
+zh,Expert User,专家用户
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
 zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
@@ -779,6 +835,8 @@ zh,FacilityTitle,仓库管理
 zh,Factor ID,因子ID
 zh,Factor Type,因子类型
 zh,Falkland Islands (malvinas),福克兰群岛（马尔维纳斯）
+zh,Family,家庭
+zh,Family Member,家庭成员
 zh,Faroe Islands,法罗群岛
 zh,Feature,特征
 zh,Feature 2,特征2
@@ -795,12 +853,14 @@ zh,Field cannot be empty,输入不能为空
 zh,Fields,字段
 zh,Fiji,斐济
 zh,File ${filename} already exists,skipping entity ${en}.
-zh,"File ${filename} already exists, skipping document ${dataDocumentId}.","文件 ${filename}已存在,跳过文档${dataDocumentId}。"
-zh,"File ${filename} already exists, skipping entity ${en}.","文件 ${filename}已存在,跳过实体${en}。"
+zh,"File ${filename} already exists, skipping document ${dataDocumentId}.",文件 ${filename}已存在，跳过文档${dataDocumentId}。
+zh,"File ${filename} already exists, skipping entity ${en}.",文件 ${filename}已存在，跳过实体${en}。
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Filed By,申请人
 zh,Filter,过滤
+zh,Finalized,最终确定
 zh,Financial Account,金融账户
+zh,Financial Account Transaction,金融账户交易
 zh,Financial Accounts,金融账户
 zh,Financial Acct Reasons,财务会计原因
 zh,Financial Acct Types,财务会计类型
@@ -821,8 +881,8 @@ zh,Find Facility,设施查询
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
 zh,Find Individual Assets,单独资产查询
-zh,Find Options,查询条件
-zh,Find Options required to view results,请输入条件以查看结果
+zh,Find Options,查找选项
+zh,Find Options required to view results,必须输入查询条件进行查找
 zh,Find Order,订单查询
 zh,Find Parameters,查找变量
 zh,Find Party,参与者查询
@@ -847,6 +907,7 @@ zh,For,为
 zh,For This,为此
 zh,"For physical inventory assets are grouped by Product, Facility, Location, Lot, Owner, Pool, and Status.",对于实物库存，资产按产品、设施、位置、批次、所有者、池和状态分组。
 zh,Force Close,强制关闭
+zh,Forklift,叉车
 zh,Form,表单
 zh,Found issues with password so not updating,密码有问题，没有更新
 zh,France,法国
@@ -855,8 +916,8 @@ zh,French Guiana,法属圭亚那
 zh,French Polynesia,法属波利尼西亚
 zh,French Southern Territories,法属南部领地
 zh,Frequently Asked Questions,常见问题
-zh,From,开始
-zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},",发信人：${ec.resource.expand('PartyNameTemplate'
+zh,From,从
+zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},","发信人：${ec.resource.expand('PartyNameTemplate','',fromParty)} "
 zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Factor ID,开始因子ID
@@ -878,6 +939,8 @@ zh,GLJournalsTitle,总账日记账
 zh,Gabon,加蓬
 zh,Gambia,冈比亚
 zh,Gansu,甘肃省
+zh,Garnishment,工资扣发
+zh,Garnishment Payee,扣押收款人
 zh,Gateway,网关
 zh,Gateway Authorize,网关验证
 zh,Gateway Box ID,网关箱子ID
@@ -893,11 +956,16 @@ zh,Georgia,乔治亚州
 zh,Germany,德国
 zh,Ghana,加纳
 zh,Gibraltar,直布罗陀
+zh,Gift Card,礼品卡
+zh,Gift Card or Certificate,礼品卡或证书
+zh,Gift Certificate,礼券
 zh,Gift Message,礼物留言
 zh,Gift Registry,礼物登记
 zh,GlAccountTitle,总账会计
 zh,Go,去
 zh,Go##Page,跳转到
+zh,Government,政府
+zh,Government Agency,政府机关
 zh,Grand Total,总额
 zh,Greece,希腊
 zh,Greenland,格陵兰
@@ -932,12 +1000,16 @@ zh,Holy See (vatican City State),罗马教廷（梵蒂冈城国）
 zh,Honduras,洪都拉斯
 zh,Hong Kong,香港
 zh,HongKong,香港特别行政区
+zh,Host,主持人
+zh,Hosting Provider,托管服务提供商
 zh,Hours,小时数
 zh,Hours Budget,小时预算
+zh,Household,家庭
 zh,Hrs Est,评估小时
 zh,Hubei,湖北省
 zh,Human Res,人力资源
 zh,Human Resources,人力资源
+zh,Human Resources Manager,人力资源经理
 zh,HumanResTitle,人力资源
 zh,Hunan,湖南省
 zh,Hungary,匈牙利
@@ -963,13 +1035,18 @@ zh,In Planning,计划中
 zh,In Planning - ${pstats.taskCountByStatusMap.WeInPlanning?:0},计划中 - ${pstats.taskCountByStatusMap.WeInPlanning?:0}
 zh,In Progress,进行中
 zh,In Progress - ${pstats.taskCountByStatusMap.WeInProgress?:0},进行中 - ${pstats.taskCountByStatusMap.WeInProgress?:0}
+zh,In-Process,处理中
+zh,"In-Process, Finalized, Sent, Acknowledged, Payment Received",处理中、已完成、已发送、已确认、已到款
 zh,Inactive Tasks,非活动任务
+zh,Income,收入
 zh,Income Statement,损益表
 zh,Incoming,进来的
 zh,Incoming Refund Payments,收入退款
+zh,"Incoming, Received, Approved, Payment Sent",收到、已收到、已批准、已付款
 zh,Index Space Pages,索引空间页面
 zh,India,印度
 zh,Indonesia,印度尼西亚
+zh,Industry,行业
 zh,Information,信息
 zh,Ingredients,主要成分
 zh,Ingredients - Unique,主要成分-唯一
@@ -981,10 +1058,12 @@ zh,Insert,插入
 zh,Installation,安装说明
 zh,Instrument,票据
 zh,Insurance Threshold,保险免赔额
+zh,Intangible,无形的
 zh,Internal,内部
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
 zh,Internal Organization Relationships,内部组织关系
+zh,Internet Service Provider,互联网服务提供商
 zh,Interval,间隔
 zh,Interval Meter,间隔读数
 zh,Interval Quantity,间隔数量
@@ -998,9 +1077,11 @@ zh,Inventory Asset List,库存列表
 zh,Inventory Assets,库存资产
 zh,Inventory Available,库存情况
 zh,Inventory Date,库存日期
+zh,Inventory Manager,库存经理
 zh,Inventory Status,库存状态
 zh,Inventory Valuation,库存估值
 zh,InventoryCheckTitle,盘点任务
+zh,Investment Real Estate,投资房地产
 zh,Invoice,账单
 zh,Invoice ${invoiceId},账单${invoiceId}
 zh,Invoice Aging Detail,账单账龄明细
@@ -1012,6 +1093,7 @@ zh,Invoice ID,账单ID
 zh,Invoice Item,账单条目
 zh,Invoice Item Summary,账单条目概要
 zh,Invoice Message,账单消息
+zh,Invoice Payment,发票支付
 zh,Invoice Reconciliation,账单对账
 zh,Invoice Time,工时账单
 zh,Invoice Type,账单类型
@@ -1067,6 +1149,7 @@ zh,Label Image,标签图片
 zh,Label Text,标签文字
 zh,Labor Rates,工时费
 zh,Lao People's Democratic Republic,老挝人民民主共和国
+zh,Laptop,笔记本电脑
 zh,Last,上
 zh,Last Check Number,上次检查数量
 zh,Last Name,名
@@ -1125,11 +1208,14 @@ zh,Maldives,马尔代夫
 zh,Mali,马里
 zh,Malta,马耳他
 zh,Manage,管理
+zh,Manager,经理
+zh,Manlift,载人电梯
 zh,Manual Response Required,需要人工响应
 zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
 zh,Manufacturer,制造商
 zh,Manufacturing,制造
+zh,Manufacturing Equipment,制造设备
 zh,ManufacturingTitle,制造管理
 zh,Margin %,边际%
 zh,Margin Amount,边际收益
@@ -1171,12 +1257,15 @@ zh,Min,最小
 zh,Min Quantity,最少数量
 zh,Min Stock,最小库存
 zh,Minimum Stock,最小库存
+zh,Minority,少数民族
 zh,Miscellaneous Charge,杂费
 zh,Mod,修改
 zh,Model Product,产品型号
 zh,"Moldova, Republic Of",摩尔多瓦共和国
 zh,Monaco,摩纳哥
+zh,Money Order,汇票
 zh,Mongolia,蒙古
+zh,Monitor,监视器
 zh,Montenegro,黑山
 zh,Month,月
 zh,Montserrat,蒙特塞拉特
@@ -1199,8 +1288,11 @@ zh,My Open Tasks,我的未完任务
 zh,My Projects,我的项目
 zh,MyAccountTitle,个人中心
 zh,Myanmar,缅甸
+zh,NAICS Code,北美证券交易委员会代码
 zh,"NOTE: Invoice level stats (total, pre-paid, paid, etc) are not available by Product and will show as having no data",注意：发票级别统计数据（总计、预付、已付等）不适用于产品，将显示为无数据.
+zh,"NOTE: for accounting and other traceability record equipment purchase using a purchase order, incoming shipment, and payable invoice; this form is for existing or third party equipment",注意：如果需要进行财务核算或设备采购的追溯，请使用采购订单、进货和应付发票。 此功能仅用于现有或第三方设备
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
+zh,NOTE: this should only be used to correct data as it rewrites the accounting history for this asset. Do not use to change ownership for a business transaction like a sale.,注意：这应该仅用于更正数据，因为它会重写此资产的会计历史记录。 不要用于更改销售等商业交易的所有权。
 zh,Name,名称
 zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
@@ -1316,7 +1408,7 @@ zh,No find parameters,choose some to save a new find or update existing
 zh,"No find parameters (or default), choose some in Find Options to save a new find or update existing",没有查询参数或者默认查询，点击查询选项并保存一个新的查询，或者跟新一个存在的查处。
 zh,"No find parameters, choose some to save a new find or update existing",没有查找变量，先选择查找变量进行保存或者更新现有的
 zh,No origin shipping address selected,没有选择配送地址
-zh,No results found,没有数据
+zh,No results found,未找到记录
 zh,"No search implementation installed, not indexing DataDocuments (see the moqui-elasticsearch component)",搜索模块未安装，无法索引DataDcouments(请先安装moqui-elasticsearch模块)
 zh,"No search implementation installed, not indexing Wiki Space Pages (see the moqui-elasticsearch component)",搜索模块未安装，无法索引WiKi页面(请先安装moqui-elasticsearch模块)
 zh,"No search implementation installed, not putting DataDocument mappings (see the moqui-elasticsearch component)",搜索模块未安装，无法映射DataDcouments(请先安装moqui-elasticsearch模块)
@@ -1329,6 +1421,7 @@ zh,Norfolk Island,诺福克岛
 zh,Northern Mariana Islands,北马里亚纳群岛
 zh,Norway,挪威
 zh,Not,不
+zh,Not Applicable,不适用
 zh,Not Avail,不可用
 zh,Not Billed,未开票
 zh,Not Issued,未发货
@@ -1341,6 +1434,7 @@ zh,Notifications,通知
 zh,Notified,通知
 zh,Notifs?,接收通知？
 zh,Number,号码
+zh,Number of Employees,在职员工人数
 zh,OR Customer Account,或客户金融账户
 zh,OR Instrument,或支付工具
 zh,OR Interval UOM,或间隔UOM
@@ -1365,13 +1459,15 @@ zh,Opened,开始
 zh,Operate,运营
 zh,Operating Revenue and Expense,营业收入和费用
 zh,Operation,操作
+zh,Operator,操作员
 zh,Opportunity ID,机会ID
 zh,Opportunity Name,机会名称
 zh,Opportunity Stage ID,机会阶段
 zh,Order,订单
 zh,Order #${orderId},订单#${orderId}
 zh,Order ${orderId},订单${orderId}
-zh,Order By,排序
+zh,Order By,排序次序
+zh,Order Clerk,订单文员
 zh,Order Count,订单数量
 zh,Order Detail,订单详情
 zh,Order Discount Percent,订单折扣百分比
@@ -1387,11 +1483,12 @@ zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
 zh,Order PDF,订单PDF
 zh,Order Part,拆单
-zh,Order Party ID,订单参与人ID
 zh,Order Parties,订单参与人
+zh,Order Party ID,订单参与人ID
+zh,Order Payment Preference,订单支付偏好
 zh,Order Product Sales,产品销售额
-zh,Order Role Type ID,订单角色类型ID
 zh,Order Quantity,产品数量
+zh,Order Role Type ID,订单角色类型ID
 zh,Order Sent,订单发送
 zh,Order Ship By,承运人
 zh,Order Source,订单渠道来源
@@ -1425,6 +1522,7 @@ zh,Org,组织
 zh,Org Settings,组织设置
 zh,Organization,组织
 zh,Organization Name,组织名称
+zh,Organizer,组织者
 zh,Orig. ETA,原始预估
 zh,Origin Address,原地址
 zh,Origin Facility,发货仓
@@ -1432,6 +1530,7 @@ zh,Original Currency,原货币类型
 zh,Original Currency Amount,原货币金额
 zh,Original PDF,原始PDF
 zh,Other,其他
+zh,Other Computer Related Services,其他计算机相关服务
 zh,Other ID,其他ID
 zh,Other IDs,其他ID
 zh,Other Invc,其他账单
@@ -1453,6 +1552,7 @@ zh,Owner,拥有者
 zh,Owner Org,拥有者
 zh,Owner Party,拥有者
 zh,Owner Party ID,拥有者ID
+zh,Ownership,所有权
 zh,P-CB Gap,P-CB差距
 zh,PDF,PDF
 zh,POP Commerce Admin,POP Commerce管理
@@ -1470,6 +1570,7 @@ zh,Packages,包装箱
 zh,Packed,打包时间
 zh,Packed Date,打包日期
 zh,Packed/Issued,装箱/发行
+zh,Packer,封隔器
 zh,Page,页面
 zh,Page #,页 #
 zh,Page History,页面历史
@@ -1501,9 +1602,11 @@ zh,Partial,部分
 zh,Partial/None,部分/无
 zh,Parties,参与者
 zh,Parties Assigned,指派人
+zh,Partner,伙伴
 zh,Party,参与者
 zh,Party ID,参与者ID
 zh,"Party has no user accounts and no email address, cannot search for email messages",参与者没有账号或者邮件地址，找不到邮件消息。
+zh,Passenger Vehicle,乘用车
 zh,Password incorrect for username ${username},用户名或者密码错误。${username}
 zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
 zh,Password needs ${minOthers} other characters (not letter or digit),密码需要至少${minOthers}位其它字符(非字母或数字)
@@ -1512,6 +1615,7 @@ zh,Password updated for user ${userAccount.username},用户账号${userAccount.u
 zh,Password was used in last ${historyLimit} passwords,密码已在前${historyLimit}次使用过
 zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
 zh,Path ${path} is not a directory.,路径${path}必须是个目录
+zh,PayPal Account,贝宝账户
 zh,Payable,应付
 zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,Payable Return Invoices,应付退货账单
@@ -1526,11 +1630,19 @@ zh,Payment Information,付款信息
 zh,Payment Instruments,支付方式
 zh,Payment Method,付款方式
 zh,Payment Methods,付款方式
+zh,Payment Received,已到款
+zh,Payment Sent,已付款
 zh,Payment Terms,付款条件
 zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
 zh,Payments,付款
 zh,Payments To (${toPaymentCount}),付款单(${toPaymentCount})
+zh,Payroll,工资单
+zh,Payroll Employee,员工工资
+zh,Payroll Employee Payment,工资员工付款
+zh,Payroll Other,其他工资
+zh,Payroll Other Payee,工资单 其他收款人
+zh,Payroll Other Payment,工资单其他付款
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
 zh,People Assigned,指派人员
@@ -1539,6 +1651,7 @@ zh,Period Name,期间名称
 zh,Period Num,期间编号
 zh,Periods,周期
 zh,Person,人
+zh,Personal Check,私人支票
 zh,Peru,秘鲁
 zh,PhI Diff,调差
 zh,PhI Qty,调整
@@ -1566,6 +1679,7 @@ zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
 zh,Pick Moves Needed,移位拣货
 zh,Picked,已拣货
+zh,Picker,选择器
 zh,Picklist,拣货
 zh,Picklist PDF,拣货PDF
 zh,Picklist and Pack PDF,拣货与打包PDF
@@ -1595,6 +1709,8 @@ zh,Posted,已过账
 zh,Posted Amount Summary,过账金额概要
 zh,Posted Balance Summary,过账余额概要
 zh,Posted Date,过账日期
+zh,Pre Payment - Expense,预付款 - 费用
+zh,Pre Payment - Inventory,预付款 - 库存
 zh,Pre-Paid Percent,预付发票百分比
 zh,Previous,前
 zh,Pri,优先级
@@ -1630,7 +1746,9 @@ zh,Product to Produce,生产产品
 zh,Product*,产品*
 zh,ProductStoreTitle,店铺管理
 zh,ProductTitle,产品
+zh,Production Manager,产品经理
 zh,Production Runs,生产运行
+zh,Production Worker,生产工人
 zh,Products,产品
 zh,Products to Consume,预计消耗的产品
 zh,Products to Produce,预计产出的产品
@@ -1638,10 +1756,12 @@ zh,Profile Url Path,客户资料URL
 zh,"Profit ${ec.l10n.formatCurrency(pstats.actualProfit, project.costUomId, 2)}","利润${ec.l10n.formatCurrency(pstats.actualProfit, project.costUomId, 2)}"
 zh,Programmer,程序员
 zh,Programmer Lead,程序员领导
+zh,Programming Software,编程软件
 zh,Progress,进度
 zh,Project,项目
 zh,Project Client Invoice,项目的客户账单
 zh,Project ID,项目ID
+zh,Project Manager,专案经理
 zh,Project Milestones,项目里程碑
 zh,Project Name,项目名称
 zh,Project Summary,项目概要
@@ -1660,6 +1780,7 @@ zh,Promotions,促销
 zh,Prompt Payment Discount,即时付款折扣
 zh,Propose Quote,建议报价
 zh,Proposed,已建议
+zh,Prospect,展望
 zh,"Provider Cost ${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}","供应商报价${ec.l10n.formatCurrency(project.actualCost, project.costUomId, 2)}"
 zh,Pseudo ID,伪ID
 zh,Public Attachment,公共附件
@@ -1671,6 +1792,7 @@ zh,Public Page Url,公共页面URL
 zh,Publish Date,发布日期
 zh,Publish Version ${versionName.take(12)},发布版本${versionName.take(12)}
 zh,Puerto Rico,波多黎各
+zh,Puller,拉拔器
 zh,Purchase,采购
 zh,Purchase <strong>Orders</strong> &amp; Quotes,采购<strong>订单</strong>与报价
 zh,Purchase <strong>Requests</strong>,采购<strong>请求</strong>
@@ -1695,6 +1817,8 @@ zh,Qty,数量
 zh,Qty Not Avail,数量不足
 zh,Qty Not Shipped,未发货数量
 zh,Qty Shipped,已发货数量
+zh,Quality Analyst,质量分析师
+zh,Quality Lead,质量领先
 zh,Quantity,数量
 zh,Quantity Accepted,接收数量
 zh,Quantity Difference,数量差
@@ -1722,6 +1846,7 @@ zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Re-post Invoice,重新过账账单
 zh,Ready Date,准备日期
+zh,Real Estate,房地产
 zh,Really hold order part?,确定要挂起拆单吗？
 zh,Reason,原因
 zh,Receipt Transactions,入库凭证
@@ -1745,6 +1870,7 @@ zh,Received Incoming Payments,已收到的收入付款
 zh,Received Outgoing Payments,已收到的支出付款
 zh,Received Quantity,已收到数量
 zh,Received Thru,入库截止日期
+zh,Receiver,接收者
 zh,Recent Asset Moves,最近移动的资产
 zh,Recent Container Moves,最近移动的容器
 zh,Recent Detail History,最近详细历史
@@ -1753,14 +1879,18 @@ zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
 zh,Record Time,记录时间
 zh,Recurring,循环
+zh,Reel Stand,卷轴支架
 zh,Ref,参考
 zh,Ref Num,参考代码
 zh,Ref/Check,参考
 zh,Ref/Check Number,付款参考代码
+zh,Referrer,推荐人
+zh,Refund,退款
 zh,Refund Amount,退款金额
 zh,Refund Credit Trans,退款凭证
 zh,Refund Payment,退款账单
 zh,Registrations,注册
+zh,Regulatory Agency,监管机构
 zh,Reject Quote Request,拒绝报价请求
 zh,Rejected,拒收
 zh,Rejected by Vendor,已被供应商拒绝
@@ -1781,6 +1911,7 @@ zh,Remove from Load,移除设备
 zh,Rental,出租
 zh,Rental Asset,租赁资产
 zh,Rental Deposit,租金押金
+zh,Rental Equipment Asset,租赁设备资产
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
 zh,Rental Sales Return Shipment,借用归还入库单
@@ -1794,6 +1925,7 @@ zh,Replacement Order,换货订单
 zh,Replacement Product,换货
 zh,Reply,回复
 zh,Report Builder,报表设计器
+zh,Reporter,记者
 zh,Reports,报表
 zh,ReportsTitle,报表
 zh,Request,审批
@@ -1858,6 +1990,7 @@ zh,Reunion,团圆
 zh,Rev,版本
 zh,Rev By,被冲销
 zh,Rev Of,冲销
+zh,Revenue,收入
 zh,Revision,版本
 zh,Role,角色
 zh,Role Type,角色类型
@@ -1873,6 +2006,7 @@ zh,Runs,运行
 zh,Russian Federation,俄罗斯联邦
 zh,Rwanda,卢旺达
 zh,SCA Code,SCA代码
+zh,SIC Code,代码
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
 zh,Saint Kitts And Nevis,圣基茨和尼维斯
 zh,Saint Lucia,圣卢西亚
@@ -1882,9 +2016,11 @@ zh,Sales <strong>Orders</strong> &amp; Quotes,销售<strong>订单</strong>与�
 zh,Sales <strong>Shipments</strong>,销售<strong>运单</strong>
 zh,Sales Account,客户
 zh,Sales Account Contacts,客户联系人
+zh,Sales Account Lead,销售客户主管
 zh,Sales Analysis,销售分析
 zh,Sales Analysis Report,销售分析报告
 zh,Sales Channel,销售渠道
+zh,Sales Contact,销售联系人
 zh,Sales Discontinue,下架日期
 zh,Sales Intro,上架日期
 zh,Sales Invoice Analysis,销售账单分析
@@ -1899,6 +2035,7 @@ zh,Sales Orders,销售订单
 zh,Sales Orders & Quotes,销售订单与报价
 zh,Sales Orders (${customerOrderPartCount}),销售订单(${customerOrderPartCount})
 zh,Sales Orders by Placed Date,销售订单按订购日期
+zh,Sales Representative,销售代表
 zh,Sales Return Shipment,销售退货入库单
 zh,Sales Return Shipment List,销售退货入库单列表
 zh,Sales Returns & RMA,销售退货
@@ -1919,9 +2056,9 @@ zh,Sao Tome And Principe,圣多美和普林西比
 zh,Saudi Arabia,沙特阿拉伯
 zh,Save,保存
 zh,Save Columns,保存列
-zh,Save New Find,保存为新的查找
+zh,Save New Find,保存新的查找
 zh,Save to Filename,保存文件名
-zh,Saved Finds,保存的查询
+zh,Saved Finds,已保存查找
 zh,Saving,保存中...
 zh,"Scan Asset, Cont, Loc, Prod",扫描资产、容器、位置、产品
 zh,"Scan Asset, Cont, Loc, or Prod",扫描资产、容器、位置、产品
@@ -1937,7 +2074,7 @@ zh,Scheduled Maintenance,维护计划
 zh,Search,查找
 zh,Search + Lookup by ID,全文检索+ID查询
 zh,Search Any Field,检索任意字段
-zh,Search Products,搜索产品
+zh,Search Products,产品查询
 zh,Search Projects,搜索项目
 zh,Search Results,查找结果
 zh,Search String Reference,搜索字符串参考
@@ -1972,6 +2109,7 @@ zh,Sequence Num,顺序
 zh,Serbia,塞尔维亚
 zh,Serial Number,序列号
 zh,Service,服务
+zh,Service Body,服务机构
 zh,Service Product,服务型产品
 zh,Set,设置
 zh,Set Assignee,设置指派人
@@ -1996,6 +2134,7 @@ zh,Shaanxi,陕西省
 zh,Shandong,山东省
 zh,Shanghai,上海市
 zh,Shanxi,山西省
+zh,Shareholder,股东
 zh,Ship After,指定日期后
 zh,Ship After Date,指定日期之后发货
 zh,Ship Before,指定日期前
@@ -2007,6 +2146,7 @@ zh,Ship Method,配送方式
 zh,Ship Work Effort ID,运送任务
 zh,Shipment,运单
 zh,Shipment ${shipmentId},运单${shipmentId}
+zh,Shipment Clerk,装运文员
 zh,Shipment Destination Address,收货地址
 zh,Shipment From Party,发货人
 zh,Shipment Gateway,运输网关
@@ -2051,6 +2191,7 @@ zh,Slovakia (slovak Republic),斯洛伐克（斯洛伐克共和国）
 zh,Slovenia,斯洛文尼亚
 zh,Small Image,小图片
 zh,Soft Identifier,软标识符
+zh,Software Publishers,软件出版商
 zh,Solomon Islands,所罗门群岛
 zh,Somalia,索马里
 zh,Source,源
@@ -2061,6 +2202,8 @@ zh,Space ID,空间ID
 zh,Spain,西班牙
 zh,Special Instructions,特殊说明
 zh,Specification,说明书
+zh,Sponsor,赞助
+zh,Spouse,伴侣
 zh,Sri Lanka,斯里兰卡
 zh,St. Helena,圣赫勒拿
 zh,St. Pierre And Miquelon,圣皮埃尔和密克隆
@@ -2078,6 +2221,7 @@ zh,Status ID,状态ID
 zh,Status by Receipt,状态按接收
 zh,Status:,状态:
 zh,Status: ${workEffort.status?.description ?: statusId},状态: ${workEffort.status?.description ?: statusId}
+zh,Stocker,装料工
 zh,Store,店铺
 zh,Store Category Type,店铺分类类型
 zh,Store Domain,店铺域名
@@ -2085,6 +2229,8 @@ zh,Stored At,存放
 zh,Stores,店铺
 zh,Subject,主题
 zh,Submit,提交
+zh,Subscriber,订户
+zh,Subsidiary,子公司
 zh,Success,成功
 zh,Sudan,苏丹
 zh,Summary,概要
@@ -2093,11 +2239,13 @@ zh,"Summary for Milestone ""${milestoneWorkEffort.workEffortName}"" - ${mileston
 zh,Summary for Milestone &quot;${milestoneWorkEffort.workEffortName}&quot; - ${milestoneWorkEffortId},里程碑概要 &quot;${milestoneWorkEffort.workEffortName}&quot; - ${milestoneWorkEffortId}
 zh,Supplier,供应商
 zh,Supplier <strong>Payments</strong>,供应商<strong>付款单</strong>
+zh,Supplier Agent,供应商代理
 zh,Supplier Credit Memo,供应商红字发票
 zh,Supplier Credit Memos,供应商红字发票
 zh,Supplier Return Shipments,供应商退货入库单
 zh,SupplierTitle,供应商管理
 zh,Suppliers,供应商
+zh,Supplies,补给品
 zh,Surcharge,额外费用
 zh,Suriname,苏里南
 zh,Survey,调查问卷
@@ -2111,15 +2259,20 @@ zh,Sweden,瑞典
 zh,Switzerland,瑞士
 zh,Syrian Arab Republic,阿拉伯叙利亚共和国
 zh,System,系统
+zh,System Administrator,系统管理员
+zh,System Architect,系统架构师
 zh,System Email,系统邮箱
+zh,System Software,系统软件
 zh,SystemTitle,系统管理
 zh,TX,账目
 zh,TX Date,凭证日期
 zh,TX Entries,账目
 zh,TX ID,凭证ID
 zh,TX Type,凭证类型
+zh,Tablet,药片
 zh,Taiwan,台湾省
 zh,Tajikistan,塔吉克斯坦
+zh,Tanker,油船
 zh,"Tanzania, United Republic Of",坦桑尼亚联合共和国
 zh,Task,任务
 zh,Task ID,任务ID
@@ -2129,8 +2282,11 @@ zh,Task Time Entries,任务工时记录
 zh,TaskTitle,任务
 zh,Tasks,任务
 zh,Tasks by Top Level,按顶级任务
+zh,Tax,税
+zh,Tax Authority,税务机关
 zh,Tax Calc,计算税费
 zh,Tax Gateway,税费网关
+zh,Team,团队
 zh,Teams,团队
 zh,Template,模版
 zh,Terminate Date,终止日期
@@ -2148,9 +2304,10 @@ zh,Third Party,第三方
 zh,This,当
 zh,This party has data merged from parties:,此参与者已合并自${party.mergedToPartyId}
 zh,This party was merged into ${party.mergedToPartyId},此参与者已被合并到${party.mergedToPartyId}
+zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
 zh,Thread,线索
 zh,Thru,到
-zh,Thru Date,结束日期
+zh,Thru Date,终了日
 zh,Tianjin,天津市
 zh,Time,考勤
 zh,Time Entries,工时记录
@@ -2187,13 +2344,17 @@ zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
+zh,Tractor,拖拉机
+zh,Trailer,预告片
 zh,Transaction Date,交易日期
 zh,Transaction Entries,凭证分录
 zh,Transaction Reports,总帐交易报表
 zh,Transactions,会计凭证
 zh,Transfer Shipment,调拨出库单
 zh,Transfer Shipment List,调拨单列表
+zh,Trencher,挖沟机
 zh,Trinidad And Tobago,特立尼达和多巴哥
+zh,Truck,卡车
 zh,Truck / Equipment,卡车/设备
 zh,Tunisia,突尼斯
 zh,Turkey,火鸡
@@ -2201,6 +2362,7 @@ zh,Turkmenistan,土库曼斯坦
 zh,Turks And Caicos Islands,特克斯和凯科斯群岛
 zh,Tuvalu,图瓦卢
 zh,Type,类型
+zh,UI Designer,界面设计师
 zh,UOM,单位
 zh,UOM Dimensions,度量
 zh,URL,URL
@@ -2212,6 +2374,7 @@ zh,Unapplied Incoming Payments,未核销的收入款
 zh,Unapplied Outgoing Payments,未核销的支出款
 zh,Uncancel,撤销取消
 zh,Uncomplete Order,撤销订单完成
+zh,Union,联盟
 zh,Unit,单位
 zh,United Arab Emirates,阿拉伯联合酋长国
 zh,United Kingdom,英国
@@ -2242,6 +2405,7 @@ zh,Upload,上传
 zh,Upload Content,上传内容
 zh,Uruguay,乌拉圭
 zh,Use Find Options to search for orders and when you have the set you want use the form to create picklists.,使用查询选项查找订单，然后创建拣货单。
+zh,Use the Asset screen after create for depreciation and other settings.,创建后使用资产详情页面进行折旧和其他设置。
 zh,User,用户
 zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用户${principalCollection.primaryPrincipal}不属于${roleName}角色
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
@@ -2253,6 +2417,7 @@ zh,User ID,用户ID
 zh,Username,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Usernames,用户名
+zh,Utility Software,实用软件
 zh,Uzbekistan,乌兹别克斯坦
 zh,VAT Tax (not added to totals),VAT税（不计入总价）
 zh,Valid From,生效日期
@@ -2268,6 +2433,9 @@ zh,"Value entered ({0}) could not be converted to a {1}{2,choice,0#|1# using for
 zh,Vanuatu,瓦努阿图
 zh,Variance Reason,差异原因
 zh,Vendor,供应商
+zh,Vendor - Bill From,供应商 - 账单来自
+zh,Vendor - Pick Up From,供应商 - 自提
+zh,Vendor - Ship From,供应商 - 发货地
 zh,Vendor Hour Rate,客户小时单价
 zh,Vendor Invoice,客户账单
 zh,Vendor Org,客户
@@ -2288,21 +2456,28 @@ zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Virtual (with variants),虚拟（可变）
 zh,Visibility,可见性
+zh,Visitor,游客
 zh,Void,无效的
 zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse,仓库
 zh,Warehouse Assets,仓库资产
+zh,Warehouse Equipment,仓库设备
 zh,Warnings,警告
 zh,Warranty,保修
 zh,Was Stored At,原存放
+zh,Watcher,守望者
 zh,Web,网络
 zh,Web External,网络外
+zh,Web Master,网站管理员
 zh,Web Order BCC,Web订单密送
 zh,Week,周
 zh,Weight,重量
 zh,Weight UOM,重量单位
 zh,Western Sahara,西撒哈拉
+zh,Wholesale,批发商
+zh,Wholesale - Professional,批发 - 专业
+zh,Wholesale - Retail Store,批发 - 零售店
 zh,Width,宽度
 zh,Wiki,维基
 zh,Wiki Blog Posts,维基博客文章
@@ -2313,6 +2488,7 @@ zh,Wiki Space ID,维基空间ID
 zh,Wiki Spaces,维基空间
 zh,Wiki Type,维基类型
 zh,Wiki/Content,维基/内容
+zh,Wire Transfer,电汇
 zh,Wish List,愿望清单
 zh,With Children,带子条目
 zh,Work Effort,工作投入
