@@ -1,0 +1,1677 @@
+moqui.basic.LocalizedMessage,demo
+locale,original,localized
+zh,01 Damaged in Shipping,01 运输损坏
+zh,02 Defective,02 有缺陷
+zh,03 Wrong Item Shipped,03 发错货
+zh,04 Not as Expected,04 不如预期
+zh,05 Did not Fit/Wrong Size,05 不合适/尺寸错误
+zh,06 Duplicate Shipment,06 重复发货
+zh,"07 Gift, Not Wanted",《07 礼物，不想要》
+zh,08 Arrived Too Late,08 来得太晚
+zh,09 Did not Want/Like,09 不想要/喜欢
+zh,10 Found Better Price,10 发现更好的价格
+zh,11 Poor Customer Service,11 糟糕的客户服务
+zh,12 Unlike Photo/Description,12 不同于照片/描述
+zh,125*Compy. Contr Other Premium,125*公司。对照其他溢价
+zh,125*HSA Contribution,125*HSA 贡献
+zh,125*HSA Contribution (pre tax),125*HSA 贡献（税前）
+zh,125*PPO,125*PPO
+zh,125*PPO (pre tax),125*PPO（税前）
+zh,13 COD Payment Rejected,13 COD 付款被拒绝
+zh,401K Employer,401K 雇主
+zh,ACH Direct,直通车
+zh,API Token,API 令牌
+zh,ATM debit or credit,ATM 借记或贷记
+zh,Abandon,放弃
+zh,Acc TX Types Invoice,Acc TX 类型发票
+zh,Acc TX Types Payable,应付账款 TX 类型
+zh,Acc TX Types Receivable,Acc TX 类型应收账款
+zh,Access,使用权
+zh,Access Code,访问代码
+zh,Accessory,配饰
+zh,Account Closed,帐户已关闭
+zh,Account Contact Roles,帐户联系人角色
+zh,Account Create Template - Client,帐户创建模板 - 客户端
+zh,Account Frozen,账户冻结
+zh,Account Invitation,开户邀请
+zh,Account Sold to Another DFI,账户出售给另一个 DFI
+zh,Account Template - Client,账户模板 - 客户端
+zh,Account Transfer,账户转账
+zh,Accounts Payable,应付账款
+zh,Accounts Payable - Unapplied Payments,应付帐款 - 未应用的付款
+zh,Accounts Payables Write Off,应付账款核销
+zh,Accounts Receivable,应收账款
+zh,Accounts Receivable - Unapplied Payments,应收账款 - 未应用的付款
+zh,Accounts Receivables Write Off,应收账款核销
+zh,Accrued Expenses,预提费用
+zh,Accrued Revenue,应计收益
+zh,Accumulated Amortization,累计摊销
+zh,Accumulated Depreciation,累计折旧
+zh,Activity Request,活动请求
+zh,Actual,实际的
+zh,Actual Product Component,实际产品组件
+zh,Add On For,添加到
+zh,Add To Cart Image,添加到购物车图片
+zh,Add To Cart Label,添加到购物车标签
+zh,Added Email Authentication Type,添加电子邮件身份验证类型
+zh,Addenda Error,附录错误
+zh,Addenda Format Error,附录格式错误
+zh,Addendum,附录
+zh,Additional Feature,附加功能
+zh,Additional Medicare Employee,额外的医疗保险员工
+zh,Address Validate Gateway Config ID,地址验证网关配置 ID
+zh,Adjustment,调整
+zh,Admin Allow (One),管理员允许（一）
+zh,Administrative City,行政城市
+zh,Adult,成人
+zh,Advance Pay,预付款
+zh,Advance Repayment,提前还款
+zh,Advertisement,广告
+zh,Advertising,广告
+zh,Affiliate,附属公司
+zh,Agent,代理人
+zh,Agreement Document,协议文件
+zh,Agreement Roles,协议角色
+zh,Agreement Termination,协议终止
+zh,Air Filter Replace,空气过滤器更换
+zh,Alien Registration Number,外国人注册号码
+zh,Alien Registration Receipt Card,外国人登录收据卡
+zh,All,全部
+zh,All Product Stores Markup Order Shipping (set to 'true'),所有产品商店标记订单发货（设置为“true”）
+zh,All Product Stores Markup Shipment Labels (set to 'true'),所有产品商店标记发货标签（设置为“true”）
+zh,All Users,全部用户
+zh,Allow,允许
+zh,Allowance For Bad Debts,坏账准备金
+zh,Allowance for Bad Receivables,坏账准备
+zh,Also Bought,还买了
+zh,Also Used,也用过
+zh,Alternate,备用
+zh,Alternate Supplier,替代供应商
+zh,Alternative Packaging,替代包装
+zh,Always Allow (overrides Deny),始终允许（覆盖拒绝）
+zh,Always Include,始终包括
+zh,Amazon,亚马逊
+zh,Amazon Pay,亚马逊支付
+zh,Amazon Pay Account,亚马逊支付账户
+zh,American Express,美国运通
+zh,Amortization,摊销
+zh,Amount,数量
+zh,Amount Field Error,金额字段错误
+zh,Announcement,公告
+zh,Application Software,应用程序软件
+zh,Area,区域
+zh,Artist,艺术家
+zh,Assembling,组装
+zh,Asset (Good),资产（好）
+zh,Asset - Fixed Asset,资产 - 固定资产
+zh,Asset - Inventory,资产 - 库存
+zh,Asset Issuance,资产发行
+zh,Asset Receipt,资产收据
+zh,Asset Usage (Rental),资产使用（出租）
+zh,Asset Use,资产用途
+zh,Asset Variance,资产差异
+zh,Assets,资产
+zh,Attachment,依恋
+zh,Authenticator App (TOTP),身份验证器应用程序 (TOTP)
+zh,Authorization Revoked by Customer,客户撤销授权
+zh,Authorize,授权
+zh,Authorize and Capture,授权和捕获
+zh,Auto Reorder (needs recurrenceInfoId),自动重新排序（需要regressionInfoId）
+zh,Automated Agent,自动化代理
+zh,Automatic Replenish,自动补货
+zh,Available,可用的
+zh,Average Cost,平均成本
+zh,Away,离开
+zh,BAI 2,白2
+zh,Back-Order Notice,缺货通知
+zh,Bad Debt Expense,坏账费用
+zh,Bank Account,银行账户
+zh,Bank of America AR PNV,美国银行 AR PNV
+zh,Banking Service Charges,银行服务收费
+zh,Base path for store application,商店应用程序的基本路径
+zh,Base path for store's product list,商店产品列表的基本路径
+zh,Based On,基于
+zh,Battery Check,电池检查
+zh,Battery Replace,更换电池
+zh,Bearer Biological,承载生物
+zh,Belt Replacement,皮带更换
+zh,Beneficiary or Account Holder Deceased,受益人或账户持有人已故
+zh,Best Selling,最畅销
+zh,Bill Through,账单通过
+zh,Billing,计费
+zh,Billing Account,结算帐号
+zh,Bin - Shelf Std,Bin - 货架标准
+zh,Biological,生物
+zh,Birth Certificate,出生证明
+zh,Bitcoin,比特币
+zh,Bitcoin Wallet,比特币钱包
+zh,Blacklisted,列入黑名单
+zh,Block,堵塞
+zh,Block Group,块组
+zh,Boat,船
+zh,Bonus (Discretionary),奖金（酌情）
+zh,Bonus (Non-Discretionary),奖金（非全权决定）
+zh,Brand,牌
+zh,"Break Adjust (piece, etc)",“中断调整（件等）”
+zh,Break Hourly Earnings,休息时薪
+zh,Break RRP Earnings,打破 RRP 收益
+zh,Browse Root (One),浏览根（一）
+zh,Budget,预算
+zh,Bug Fix,错误修复
+zh,Building,建筑
+zh,Bulk,大部分
+zh,Business Travel,商务旅行
+zh,Busy,忙碌的
+zh,COGS - Average Cost Adjustment,COGS - 平均成本调整
+zh,Calendar Roles,日历角色
+zh,Call Center,呼叫中心
+zh,Campaign,活动
+zh,Can't Reproduce,无法重现
+zh,Cannot Reproduce,无法重现
+zh,Capital,首都
+zh,Capitalization,大写
+zh,Capture,捕获
+zh,Care,关心
+zh,Cargo Vehicle,货车
+zh,Cash,现金
+zh,Cash Income,现金收入
+zh,Cash On Delivery,货到付款
+zh,Cash and Equivalent,现金和等价物
+zh,Cash withdrawal,取现金
+zh,Catalog,目录
+zh,Category Image Alt Text,类别图像替代文本
+zh,Category Image URL,类别图片网址
+zh,Category Name,分类名称
+zh,Category Template - Client,类别模板 - 客户端
+zh,Category Template - Server,类别模板 - 服务器
+zh,Caused By,造成的
+zh,Certificate of Deposit,存款证
+zh,Certification of Birth Abroad,国外出生证明
+zh,Certification of Report of Birth,出生报告证明
+zh,Certified (USPS),认证 (USPS)
+zh,Certified Check,认证支票
+zh,Chargeback,退款
+zh,Charitable Contribution,慈善捐助
+zh,Charity Donation,慈善捐赠
+zh,Check,查看
+zh,Check Image,检查图像
+zh,Check Truncation Entry Return,检查截断输入返回
+zh,Checking,检查
+zh,Checkout Header Template - Client,结帐标题模板 - 客户端
+zh,Checkout Success Template - Client,结帐成功模板 - 客户端
+zh,Checkout Template - Client,结帐模板 - 客户端
+zh,Child,孩子
+zh,Child Support Garnishment,儿童抚养费扣押
+zh,Citizen ID Card,公民身份证
+zh,City,城市
+zh,City Bank CNB,城市银行 CNB
+zh,Clause For Renewal,续期条款
+zh,Cleaning,打扫
+zh,Client Billing,客户计费
+zh,Clock In,打卡
+zh,Clock Out,打卡
+zh,Clones,克隆人
+zh,Cold Call,冷呼叫
+zh,Collection Agent,催收代理
+zh,Color,颜色
+zh,Comment,评论
+zh,Commission,委员会
+zh,Commission Adjustment,佣金调整
+zh,Commission Expense,佣金费用
+zh,Commission Invoice,佣金发票
+zh,Commission Line Item,佣金行项目
+zh,Commission Rate,佣金率
+zh,Commission Term Fixed Per Unit,每单位固定佣金期限
+zh,Commission Term Maximum Per Unit,每单位佣金期限上限
+zh,Commission Term Minimum Per Unit,每单位最低佣金期限
+zh,Commission Term Variable,佣金期限变量
+zh,Commission/Fee,佣金/费用
+zh,Commissions Accrued,应计佣金
+zh,Commissions Payables Write Off,应付佣金核销
+zh,Common Configuration Rate Types,常用配置速率类型
+zh,Common Manual TimeEntry Rate Types,常见的手动 TimeEntry 费率类型
+zh,Communication,沟通
+zh,Communication Cellular,通信蜂窝
+zh,Communication Network,通讯网络
+zh,Communication Telephone,通讯电话
+zh,Company Account,公司账户
+zh,Company Check,公司检查
+zh,Company Owned Life Insurance,公司拥有的人寿保险
+zh,Compatible,兼容的
+zh,Competitive Price,有竞争力的价格
+zh,Completed,完全的
+zh,Completely Finished,完全完成
+zh,Compliance Fee,合规费
+zh,Component,成分
+zh,Component Price,组件价格
+zh,Composition,作品
+zh,Compressor,压缩机
+zh,Computer Hardware,电脑硬件
+zh,Computer Server Hosting,计算机服务器托管
+zh,Computer Software,计算机软件
+zh,Conference,会议
+zh,Configurable Good,可配置的好
+zh,Configurable Product Instance,可配置的产品实例
+zh,Consumable Shipment,消耗品运输
+zh,Consume,消耗
+zh,Contact,接触
+zh,Contact Us,联系我们
+zh,Container,容器
+zh,Container ISO 20ft,集装箱 ISO 20 英尺
+zh,Container ISO 40ft,集装箱 ISO 40 英尺
+zh,Container Label,容器标签
+zh,Content - Blog Posts,内容 - 博客文章
+zh,Content - Full Page,内容 - 整页
+zh,Content - Snippet,内容 - 片段
+zh,Content Attachment Location,内容附件位置
+zh,Content Location,内容位置
+zh,Contract (1099 only),合同（仅限 1099）
+zh,Contributions,贡献
+zh,Contrived,做作
+zh,Cookie,曲奇饼
+zh,Corporate Customer Advises Not Authorized,未经授权的公司客户建议
+zh,Corrected Return,修正回报
+zh,Cost Center Category,成本中心类别
+zh,Cost of Goods Sold,销售成本
+zh,Cost of Sales,销售成本
+zh,Cost of Services Sold,销售服务成本
+zh,Country,国家
+zh,Country Code to use as default in forms for phone numbers,在电话号码表单中用作默认值的国家/地区代码
+zh,Country to use as default in forms for postal addresses,邮政地址表单中默认使用的国家/地区
+zh,County,县
+zh,County-City,县城
+zh,County/Parish/Borough,县/教区/自治市镇
+zh,Coupons and Credits,优惠券和积分
+zh,Create,创建
+zh,Created Media,创建媒体
+zh,Credit,信用
+zh,Credit Card,信用卡
+zh,Credit Entry Refused by Receiver,接收方拒绝信用输入
+zh,Credit Installment,信用分期
+zh,Credit Line,信用额度
+zh,Credit Memo,贷项通知单
+zh,Credit Open,信用公开
+zh,Credit Revolving,信用循环
+zh,Credit Secured,信用担保
+zh,Cross Sell,交叉销售
+zh,Cross-Sell (Complementary),交叉销售（补充）
+zh,Currency,货币
+zh,Currency Default,货币默认
+zh,Current Asset,流动资产
+zh,Current Assets,当前资产
+zh,Current Liabilities,流动负债
+zh,Current Liability,流动负债
+zh,Current Price,目前的价格
+zh,Customer,顾客
+zh,"Customer Advises Not Authorized, Improper, or Ineligible",“客户建议未经授权、不当或不合格”
+zh,Customer Assigned,客户分配
+zh,Customer Credit Memo,客户信用凭证
+zh,Customer Credits,客户信用
+zh,Customer Data Entry,客户数据输入
+zh,Customer Deposits,客户存款
+zh,Customer Pick Up,客户领取
+zh,Customer Request,顾客要求
+zh,Customer Return Invoice,客户退货发票
+zh,Customer Returns,客户退货
+zh,Customer Service,客户服务
+zh,Customer Service Credit,客户服务信用
+zh,Customer Support,客户支持
+zh,DFI Account Number Not From Original Entry Detail Record,非原始分录明细记录的 DFI 帐号
+zh,Damaged,损坏的
+zh,Data Center,数据中心
+zh,Data Processing,数据处理
+zh,Data Size,数据大小
+zh,Data Speed,数据速度
+zh,Daycare Record,日托记录
+zh,Debit,借方
+zh,Debit Card,借记卡
+zh,"Deductible, Discretionary Bonus",“免赔额，酌情奖金”
+zh,Deduction,扣除
+zh,Default Search (One),默认搜索（一）
+zh,Delete,删除
+zh,Delivered,发表
+zh,Delivered Good,交付良好
+zh,Delivers,提供
+zh,Delivery Info,送货信息
+zh,Density,密度
+zh,Deny (overrides Allow),拒绝（覆盖允许）
+zh,Dependency,依赖
+zh,Depends On (Blocked By),取决于（被阻止）
+zh,Deployment,部署
+zh,Deploys,部署
+zh,Deposit,订金
+zh,Depreciation,折旧
+zh,Description,描述
+zh,Description - Long,描述 - 长
+zh,Design,设计
+zh,Desired,想要的
+zh,Desktop,桌面
+zh,Development,发展
+zh,Digger,挖掘机
+zh,Digital (download),数字（下载）
+zh,Digital Download,数字下载
+zh,Digital and Asset,数字资产
+zh,Dimension,尺寸
+zh,Direct Mail,直邮
+zh,Direct deposit,直接存款
+zh,Directions,路线
+zh,Directly Applied Roles,直接应用的角色
+zh,Disbursement,支出
+zh,Discount - Appeasement,折扣 - 绥靖
+zh,Discount - Promotional,折扣 - 促销
+zh,Discount - Supplier,折扣 - 供应商
+zh,Discounted,打折
+zh,Discounts,折扣
+zh,Discounts and Write-downs,折扣和减记
+zh,Discover,发现
+zh,Discretionary,全权委托
+zh,Discussion,讨论
+zh,Distinguishing,区分
+zh,Dividend,股利
+zh,Dividends,股息
+zh,Divorced,离婚
+zh,Do Not Withhold,不要扣留
+zh,Dock,码头
+zh,Document,文档
+zh,Documentation,文档
+zh,Documents,文件
+zh,Donation,捐款
+zh,Double Declining Balance,双倍余额递减
+zh,Double Time,双倍时间
+zh,Double Time Premium,双倍保费
+zh,Down-Sell (Downgrade),向下销售（降级）
+zh,Driver License Number,驾驶执照号码
+zh,Drop Shipment,直接发货
+zh,Dry Volume,干体积
+zh,Dues and Subscriptions,会费和订阅
+zh,Dun and Bradstreet DUNS,邓白氏 DUNS
+zh,Dun and Bradstreet DUNS+4,邓白氏 DUNS+4
+zh,Duplicate,复制
+zh,Duplicate Enrollment,重复注册
+zh,Duplicate Entry,双重输入
+zh,Duplicate Return,重复返回
+zh,Duplicates,重复
+zh,E-Mail,电子邮件
+zh,EAN,EAN
+zh,EDI,电子数据交换
+zh,EEOC (Equal Opportunity),EEOC（平等机会）
+zh,Earned Leave,带薪休假
+zh,East (90°),东 (90°)
+zh,East Northeast (67.5°),东北 (67.5°)
+zh,East Southeast (112.5°),东东南 (112.5°)
+zh,Education Expense,教育费用
+zh,Electronic Address,电子地址
+zh,Electronic payment,电子支付
+zh,Email,电子邮件
+zh,Email Address,电子邮件地址
+zh,Email Address Verification,电子邮件地址验证
+zh,Email Authentication Code Sent,已发送电子邮件验证码
+zh,Email Code (OTP),电子邮件代码 (OTP)
+zh,Employee,员工
+zh,Employee - Executive,员工 - 行政人员
+zh,Employee - Labor,雇员 - 劳工
+zh,Employee - Regular,员工 - 普通
+zh,Employee 401k Types,员工 401k 类型
+zh,Employee Compensation,员工薪酬
+zh,Employee Section 125 Types,雇员第 125 条类型
+zh,Employer 401k Types,雇主 401k 类型
+zh,Employer Section 125 Types,雇主第 125 条类型
+zh,Employment,就业
+zh,Employment Authorization Document,就业授权文件
+zh,End User License Agreement,终止用户许可协议
+zh,Energy,活力
+zh,"Enforced Sequence (no gaps, per organization)",“强制序列（无间隙，每个组织）”
+zh,"Enforced and Restart on Fiscal Year (no gaps, per org, reset to 1 each year)",“在财政年度强制执行并重新启动（无间隙，每个组织，每年重置为 1）”
+zh,Engineering Bill of Materials,工程物料清单
+zh,Entity,实体
+zh,Entry Not Processed by Gateway,条目未由网关处理
+zh,Equipment,设备
+zh,Equipment Class,设备类
+zh,Equity,公平
+zh,Equity Distribution,股权分配
+zh,Equivalent or Substitute,等效或替代
+zh,Error Adjustment,误差调整
+zh,Error Journal,错误日志
+zh,Error Screens,错误屏幕
+zh,Event,事件
+zh,Exclude,排除
+zh,Exclusive Relationship,专属关系
+zh,Exemption,豁免
+zh,Exemption Inheritance,豁免继承
+zh,Exhibit,展示
+zh,Existing Customer,现有客户
+zh,Expense,费用
+zh,"Expenses, Reimbursement",《费用、报销》
+zh,Expired,已到期
+zh,External,外部的
+zh,FI fee,FI费
+zh,FIFO,先进先出
+zh,FIFO Expire,FIFO 过期
+zh,FIFO Receive,先进先出接收
+zh,Fabric,织物
+zh,Face Image,人脸图像
+zh,Facility,设施
+zh,Facility Active ID (for individual user),设施活动 ID（个人用户）
+zh,Facility Expense,设施费用
+zh,Facility General Default ID,设施一般默认 ID
+zh,Facility Owner,设施所有者
+zh,Facility Use,设施使用
+zh,Failure,失败
+zh,Fax,传真
+zh,Feature Enhancement,功能增强
+zh,Feature Test,功能测试
+zh,Featured (One),精选（一）
+zh,Federal Agent Indicator Code,联邦代理指标代码
+zh,Federal EIN,联邦EIN
+zh,Federal Income Withholding,联邦收入预扣
+zh,Federal Pension Employer,联邦养老金雇主
+zh,Federal Unemployment Insurance (FUTA) Employee,联邦失业保险 (FUTA) 雇员
+zh,Federal Unemployment Insurance (FUTA) Employer,联邦失业保险 (FUTA) 雇主
+zh,Federal User ID,联邦用户 ID
+zh,Federal/Country,联邦/国家
+zh,Fee,费用
+zh,Field Error(s),字段错误
+zh,File Record Edit Criteria,文件记录编辑标准
+zh,Fin. Account Adjustment,鳍。账户调整
+zh,Fin. Account Deposit,鳍。账户存款
+zh,Fin. Account Withdrawal,鳍。账户提现
+zh,Finance Management,财务管理
+zh,Financial,金融
+zh,Financial Account,财务账户
+zh,Financial Account Transaction,金融账户交易
+zh,Finished Good,成品好
+zh,Fired,被解雇
+zh,Fiscal,财
+zh,Fixed,固定的
+zh,Fixed Asset,固定资产
+zh,Fixed Asset Accumulated Depreciation,固定资产累计折旧
+zh,Fixed Asset Depreciation,固定资产折旧
+zh,Fixed Asset Found,找到固定资产
+zh,Fixed Asset Maintenance,固定资产维护
+zh,Fixed Asset Shrinkage,固定资产收缩
+zh,Fixes,修复
+zh,Floor,地面
+zh,Footer,页脚
+zh,Footer Item,页脚项目
+zh,Footer Template - Client,页脚模板 - 客户端
+zh,Footer Template - Server,页脚模板 - 服务器
+zh,For Your Information,供您参考
+zh,Forecast,预报
+zh,Foreign Agriculture (H-2A),外国农业（H-2A）
+zh,Foreign Driver License,外国驾照
+zh,Foreign Exchange Gain,外汇收益
+zh,Foreign Exchange Gain/Loss,外汇损益
+zh,Foreign Exchange Loss,外汇损失
+zh,Foreign General (H-2B),外国将军（H-2B）
+zh,Foreign Passport,外国护照
+zh,Foreign Passport plus Visa,外国护照加签证
+zh,Foreign Receiving DFI Unable to Settle,国外收款DFI无法结算
+zh,Foreign Specialty (H-1B),外国专业（H-1B）
+zh,Forklift,叉车
+zh,Found,成立
+zh,Fraud,欺诈罪
+zh,Free Fills,免费填充
+zh,Frequently Asked Questions,经常问的问题
+zh,Friday,星期五
+zh,Friend,朋友
+zh,Fulfillment Email,履行电子邮件
+zh,Full-time Employed,全职工作
+zh,GL Account Class Groups,GL 帐户类组
+zh,GL Account Code Mask (like ###-###),GL 帐户代码掩码（如###-###）
+zh,GTIN,全球贸易代码
+zh,Garnish,装饰
+zh,Garnishment,装饰品
+zh,Garnishment Invoice,扣押发票
+zh,Gas Card Number,加油卡号码
+zh,General,一般的
+zh,General (public access),一般（公共访问）
+zh,General Labor,一般劳工
+zh,General Office,办公厅
+zh,General User,一般用户
+zh,General and Administrative Expense,一般和行政费用
+zh,Generic credit,一般信用
+zh,Generic debit,通用借记卡
+zh,Genre,类型
+zh,Geo Group Member,地理组成员
+zh,Get Return Labels (true/false),获取返回标签（真/假）
+zh,Gift,礼物
+zh,Gift Card,礼物卡
+zh,Gift Card Purchase,礼品卡购买
+zh,Gift Card Reload,礼品卡充值
+zh,Gift Card or Certificate,礼品卡或证书
+zh,Gift Certificate,礼券
+zh,Global Location Number,全球位置编号
+zh,Good Freight Cost,良好的运费成本
+zh,Good Royalties Cost,良好的版税成本
+zh,Good and Material Cost,货物和材料成本
+zh,Goods Revenue,商品收入
+zh,Government ID Card,政府身份证
+zh,Greatest Unit Cost,最大单位成本
+zh,Greylisted,灰名单
+zh,Gross,总的
+zh,Gross Profit,毛利
+zh,Ground Commercial,地面商业
+zh,Ground Parcel,地面包裹
+zh,Group,团体
+zh,HMAC SHA-256,HMAC SHA-256
+zh,HTML Body CSS Class,HTML 正文 CSS 类
+zh,HTML Text,HTML 文本
+zh,HTS (Tariff),HTS（关税）
+zh,HVAC Maintenance,暖通空调维护
+zh,Hardware,硬件
+zh,Head Employer,总雇主
+zh,Header Account Component,标题帐户组件
+zh,Header Logo URL,标题徽标网址
+zh,Header Navbar Component,标题导航栏组件
+zh,Header Navbar Item,标题导航栏项目
+zh,Header Template - Client,标题模板 - 客户端
+zh,Header Template - Server,标题模板 - 服务器
+zh,Header Title,标题标题
+zh,Health Insurance,健康保险
+zh,Holiday,假期
+zh,Holiday Hourly,每小时假期
+zh,Holiday Salary,假期工资
+zh,Home Page (One),首页（一）
+zh,Home Template - Client,主页模板 - 客户端
+zh,Home Template - Server,主页模板 - 服务器
+zh,Hourly Earnings,时薪
+zh,Hourly Rate Type,小时费率类型
+zh,Hours Worked,工作时间
+zh,House-Person,房客
+zh,Humanitarian Donation,人道主义捐赠
+zh,I-551,I-551
+zh,I-766,I-766
+zh,I-94,I-94
+zh,I-94A,I-94A
+zh,IAS,国际会计准则
+zh,IAT Entry Coding Error,IAT 条目编码错误
+zh,ISBN,国际标准书号
+zh,IT Security,信息安全
+zh,Identity Document,身份证件
+zh,Image,图片
+zh,Image - Detail,图像 - 细节
+zh,Image - Large,图像 - 大
+zh,Image - Medium,图像 - 中
+zh,Image - Original,图像 - 原始
+zh,Image - Small,图像 - 小
+zh,Image URL,图片网址
+zh,Image URL - Detail,图像 URL - 详细信息
+zh,Image URL - Large,图片网址 - 大
+zh,Image URL - Medium,图片网址 - 中
+zh,Image URL - Original,图片网址 - 原始
+zh,Image URL - Small,图片网址 - 小
+zh,Immediate Response Requested,要求立即响应
+zh,Immigrant Admission Number,移民准入号码
+zh,Implements,工具
+zh,Improper Effective Entry Date,不正确的生效进入日期
+zh,Improper Source Document/Source Document Presented for Payment,为付款而提交的源单据/源单据不正确
+zh,In Transit,在途中
+zh,Incentive,激励
+zh,Incentive Bonus,奖励奖金
+zh,Include,包括
+zh,Income,收入
+zh,Income Taxable,应纳税所得额
+zh,Incoming Payment,收款
+zh,Incoming Payment Application,收款申请
+zh,Incoming Shipment,来货
+zh,Incoming/Payable/Purchase Items,收货/应付/采购项目
+zh,Incompatible,不相容
+zh,Incomplete,不完整
+zh,Incorrect Company Identification Number,公司识别号不正确
+zh,Incorrect DFI Account Number,DFI 帐号不正确
+zh,Incorrect DFI Account Number and Incorrect Transaction Code,错误的 DFI 帐号和错误的交易代码
+zh,Incorrect Discretionary Data,不正确的自由裁量数据
+zh,Incorrect Individual Identification Number,错误的个人识别号码
+zh,Incorrect Individual Identification Number/Identification Number,错误的个人识别号码/识别号码
+zh,Incorrect Individual Name/Receiving Company Name,个人姓名/接收公司名称不正确
+zh,Incorrect Receiving DFI Identification,接收 DFI 识别错误
+zh,Incorrect Routing Number,路由号码不正确
+zh,Incorrect Routing Number and Incorrect DFI Account Number,错误的路由号码和错误的 DFI 帐号
+zh,"Incorrect Routing Number, Incorrect DFI Account Number, and Incorrect Transaction Code",“错误的路由号码、错误的 DFI 帐号和错误的交易代码”
+zh,Incorrect SEC Code for Outbound International Payment,出站国际支付的 SEC 代码不正确
+zh,Incorrect Trace Number,不正确的跟踪号
+zh,Incorrect Transaction Code,错误的交易代码
+zh,Incorrectly Coded Outbound International Payment,错误编码的出境国际支付
+zh,Incorrectly Formatted Corrected Data,格式不正确的更正数据
+zh,Incoterm,国际贸易术语
+zh,Incoterm Carriage Paid To,Incoterm 运费付至
+zh,Incoterm Carriage and Insurance Paid to,Incoterm 运费和保险费支付至
+zh,Incoterm Cost and Freight,国际贸易术语成本加运费
+zh,"Incoterm Cost, Insurance and Freight",“Incoterm 成本、保险和运费”
+zh,Incoterm Delivered At Frontier,在边境交付的国际贸易术语
+zh,Incoterm Delivered Duty Paid,Incoterm 已完税交货
+zh,Incoterm Delivered Duty Unpaid,Incoterm 未完税交货
+zh,Incoterm Delivered Ex Quay,Incoterm 从码头交货
+zh,Incoterm Delivered Ex Ship,Incoterm 交货交货
+zh,Incoterm Delivered at Place,Incoterm 就地交付
+zh,Incoterm Delivered at Terminal,Incoterm 在码头交付
+zh,Incoterm Ex Works,Incoterm 出厂价
+zh,Incoterm Free Alongside Ship,Incoterm 免费随船
+zh,Incoterm Free Carrier,国际贸易术语自由承运人
+zh,Incoterm Free On Board,Incoterm 船上免费
+zh,Indemnification,保障
+zh,Independent Of (Concurrent),独立于（并发）
+zh,Indirect (FedEx),间接（联邦快递）
+zh,Industry,行业
+zh,Information,信息
+zh,Ingredients,原料
+zh,Ingredients - Unique,成分 - 独特
+zh,Initial Deposit,初始保证金
+zh,Inspired,启发
+zh,Installation,安装
+zh,Insufficient Funds,不充足的资金
+zh,Insufficient Information,信息不足
+zh,Insufficient Inventory,库存不足
+zh,Insurance Business,保险业务
+zh,Insurance Equipment,保险设备
+zh,Insurance Expense,保险费用
+zh,Insurance Health,保险健康
+zh,Insurance Other,保险 其他
+zh,Insurance Real Estate,保险房地产
+zh,Insurance Vehicle,保险车辆
+zh,Intangible,无形的
+zh,Intangible Assets,无形资产
+zh,Integration,一体化
+zh,Interest Equipment,兴趣设备
+zh,Interest Expense,利息花费
+zh,Interest Income,利息收入
+zh,Interest Income Receivables,应收利息收入
+zh,Interest Income Write Off,利息收入核销
+zh,Interest Other,兴趣 其他
+zh,Interest Real Estate,利息房地产
+zh,Interest Vehicle,兴趣载体
+zh,Interest earned or paid,赚取或支付的利息
+zh,Internal,内部的
+zh,Internal Applications,内部应用
+zh,Internal Applications - Quasar,内部应用 - Quasar
+zh,Internal Applications - XAPPS,内部应用程序 - XAPPS
+zh,Internal Applications - ZAPPS,内部应用程序 - ZAPPS
+zh,Internal Content,内部内容
+zh,"Internal Data Entry (employees, etc)",“内部数据输入（员工等）”
+zh,Internet,互联网
+zh,Internet Domain Name,互联网域名
+zh,Internet IP Address,互联网IP地址
+zh,Invalid,无效的
+zh,Invalid ACH Routing Number,无效的 ACH 路由号码
+zh,Invalid Account Number Structure,无效的帐号结构
+zh,Invalid Company Identification,无效的公司标识
+zh,Invalid DFI Account Number,无效的 DFI 帐号
+zh,Invalid Foreign Receiving DFI Identification,外国接收 DFI 标识无效
+zh,Invalid Individual ID Number,个人身份证号码无效
+zh,Invalid Individual Name/Company Name,个人名称/公司名称无效
+zh,Invalid Representative Payee Indicator,无效的代表收款人指标
+zh,Invalid Transaction Code,无效的交易代码
+zh,Inventory,存货
+zh,Inventory - Digital Good,库存 - 数字商品
+zh,Inventory - Finished Good,库存 - 成品
+zh,Inventory - Raw Material,库存 - 原材料
+zh,Inventory - Sub-assembly,库存 - 子装配
+zh,Inventory Actual Cost,库存实际成本
+zh,Inventory Adjustment from Average Cost,平均成本的库存调整
+zh,Inventory Assets,库存资产
+zh,Inventory Found,找到库存
+zh,Inventory Group,库存组
+zh,Inventory Issuance,库存发放
+zh,Inventory Management,库存管理
+zh,Inventory Origin,库存来源
+zh,Inventory Receipt,库存收据
+zh,Inventory Shrinkage,库存收缩
+zh,Inventory Value Adjustment,库存价值调整
+zh,Inventory Variance,库存差异
+zh,Investment Real Estate,投资房地产
+zh,Invoice AR/AP Application,发票 AR/AP 应用程序
+zh,Invoice Adjust Items,发票调整项目
+zh,Invoice Adjustment,发票调整
+zh,Invoice Document,发票文件
+zh,Invoice Finalized,发票完成
+zh,Invoice Payment,发票支付
+zh,Invoices Past Due,逾期发票
+zh,Involvement Requested,要求参与
+zh,Involvement Required,需要参与
+zh,Item Image,物品图片
+zh,Item and RCK Entry Presented for Payment,为付款而提交的物品和 RCK 条目
+zh,Item related to RCK Entry is Ineligible or RCK Entry is Improper,与 RCK 条目相关的项目不合格或 RCK 条目不正确
+zh,Joint Advertising,联合广告
+zh,LIFO,后进先出
+zh,LIFO Expire,LIFO 过期
+zh,LIFO Receive,后进先出接收
+zh,Label Image,标签图像
+zh,Label Text,标签文字
+zh,Label Type,标签类型
+zh,Labor,劳工
+zh,Land,土地
+zh,Land and Building,土地和建筑
+zh,Laptop,笔记本电脑
+zh,Late Fee (percent),滞纳金（百分比）
+zh,Late Payment Charge,滞纳金
+zh,Layoff,遣散
+zh,Lead Source,铅源
+zh,Lease/Rent Equipment,租赁/出租设备
+zh,Lease/Rent Other,租赁/出租 其他
+zh,Lease/Rent Real Estate,租赁/出租房地产
+zh,Lease/Rent Vehicle,租赁/租赁车辆
+zh,Legal,合法的
+zh,Lend Return Shipment,借回货件
+zh,Lend Shipment,借货
+zh,Length,长度
+zh,Level 2/3 Data,2/3 级数据
+zh,Liabilities,负债
+zh,Library of Congress,国会图书馆
+zh,License,执照
+zh,License Plate Number,车牌号
+zh,Limited Participation DFI,有限参与 DFI
+zh,Liquid Volume,液体体积
+zh,List Price,价格表
+zh,Loans Payable,应付贷款
+zh,Loans Receivable,应收贷款
+zh,Local Driver License,本地驾驶执照
+zh,Local Passport,当地护照
+zh,Local Shipping Gateway,本地运输网关
+zh,Local Tax Gateway,地税网关
+zh,Login Template - Client,登录模板 - 客户端
+zh,Logo Image,形象标识
+zh,Long Term Assets,长期资产
+zh,Long Term Liabilities,长期负债
+zh,Long Term Liability,长期责任
+zh,Loss of Pay,工资损失
+zh,Lost,丢失
+zh,Lost in Transit,运输途中丢失
+zh,Lowest Unit Cost,最低单位成本
+zh,Lubricate Chassis,润滑底盘
+zh,MACRS GDS 5 Year,MACRS GDS 5 年
+zh,MACRS GDS 7 Year,MACRS GDS 7 年
+zh,Made Up,捏造
+zh,Mailing List Sign-up,邮寄名单注册
+zh,Main Supplier,主要供应商
+zh,Maintenance,维护
+zh,Maintenance/Repair Equipment,保养/维修设备
+zh,Maintenance/Repair Other,保养/维修 其他
+zh,Maintenance/Repair Real Estate,维护/修理房地产
+zh,Maintenance/Repair Vehicle,保养/维修车辆
+zh,Management,管理
+zh,Management Structure,管理架构
+zh,Manager,经理
+zh,Mandatory Field Error,必填字段错误
+zh,Manlift,载人电梯
+zh,"Mantle Content Large Root Loc - binary, etc files",“地幔内容大根位置 - 二进制等文件”
+zh,Mantle Content Root Loc,地幔内容根位置
+zh,Manual,手动的
+zh,Manual Pull (through API),手动拉取（通过 API）
+zh,Manual Replenish,手动补货
+zh,Manual Transactions Journal,手工交易日志
+zh,Manually Cancelled,手动取消
+zh,Manufacturer Serial Number,制造商序列号
+zh,Manufacturing,制造业
+zh,Manufacturing Bill of Materials,制造物料清单
+zh,Manufacturing Equipment,制造设备
+zh,Marble ERP App,大理石 ERP 应用程序
+zh,Market Segment,细分市场
+zh,Marketing,营销
+zh,Marketing Package Adjustment,营销套餐调整
+zh,Married,已婚
+zh,Married File Joint,已婚档案联合
+zh,Married File Joint 1 Income,已婚档案联合 1 收入
+zh,Married File Joint 2+ Incomes,已婚档案联合 2+ 收入
+zh,Married File Separate,已婚档案分开
+zh,Master Card,万事达卡
+zh,Materials,材料
+zh,Matricula Consular ID,Matricula 领事 ID
+zh,Maximum Price,最高价格
+zh,Media Access Control (MAC) Address,媒体访问控制 (MAC) 地址
+zh,Medical,医疗的
+zh,Medical Record,医疗记录
+zh,Medical Taxable,医疗应税
+zh,Medical and Health Care,医疗保健
+zh,Medicare Employee,医疗保险员工
+zh,Medicare Employer,医疗保险雇主
+zh,Meeting,会议
+zh,Merchandise,商品
+zh,Merchant Account Settlement,商户结算
+zh,Merchant Mariner Card,商船海员卡
+zh,Merchant initiated debit,商家发起的扣款
+zh,Meta-Description,元描述
+zh,Meta-Keywords,元关键字
+zh,Mfg Model Number,制造型号
+zh,Milestone,里程碑
+zh,Military Dependent ID,军人家属身份证
+zh,Military ID,军人身份证
+zh,Min Wage Adj,最低工资调整
+zh,Minimum Price,最低价格
+zh,Minority,少数民族
+zh,Mis-shipped Item Ordered (+),订购的错误发货的商品 (+)
+zh,Mis-shipped Item Shipped (-),错误运送的物品运送 (-)
+zh,Miscellaneous Charge,杂费
+zh,Miscellaneous Deduction,杂项扣除
+zh,Miscellaneous Expense,杂费
+zh,Misrouted Dishonored Return,误入歧途 耻辱归来
+zh,Misrouted Notification of Change,错误路由的变更通知
+zh,Misrouted Return,错误的返回
+zh,Mix and Match,连连看
+zh,Mobile,移动的
+zh,Model Year,车型年份
+zh,Monday,周一
+zh,Money,钱
+zh,Money Market,货币市场
+zh,Money Order,汇票
+zh,Monitor,监视器
+zh,Moqui Administrators,Moqui 管理员
+zh,Morgue,停尸房
+zh,Motor (Common Carrier),电机（公共载体）
+zh,Move,移动
+zh,Municipality,市政府
+zh,My Account App,我的帐户应用程序
+zh,My Part Finished,我的部分完成
+zh,NACHA,纳卡
+zh,NAICS Code,北美证券交易委员会代码
+zh,NPT - RRP,不扩散条约 - RRP
+zh,NPT - STD,不扩散条约 - 性病
+zh,Native Tribal Document,土著部落文件
+zh,Need Support or Help,需要支持或帮助
+zh,Net Assets,净资产
+zh,Net Equity,净资产
+zh,Net Income,净利
+zh,Net Income Period Closing,净收入期末
+zh,Net Operating Income,净营业收入
+zh,Net Revenue,净收入
+zh,Net Weight,净重
+zh,New Data,新数据
+zh,New Feature,新功能
+zh,New Products (One),新产品（一）
+zh,"New Version, Replacement",“新版本，替换”
+zh,Newsletter,通讯
+zh,Newspaper,报纸
+zh,Next Day Priority,次日优先
+zh,Next Day Standard,次日标准
+zh,No,不
+zh,No Account/Unable to Locate Accountt,没有帐户/无法找到帐户
+zh,No Accounting Preference,无会计偏好
+zh,No Acquire Cost,无获取成本
+zh,No Auth,无认证
+zh,No Auto Reserve,没有自动保留
+zh,No Charge,免费
+zh,No Errors Found,未发现错误
+zh,No Replenish,不补货
+zh,No Reservation,无需预订
+zh,No Transaction Reason,无交易原因
+zh,Non-Cash Expense,非现金费用
+zh,Non-Cash Income,非现金收入
+zh,Non-Compete,竞业禁止
+zh,Non-Employee Compensation,非雇员补偿
+zh,Non-Participant in IAT Program,未参加 IAT 计划
+zh,Non-Posting,非张贴
+zh,Non-Returnable Sales Item,不可退货的销售项目
+zh,Non-Transaction Account,非交易账户
+zh,Non-operating Expense,营业外费用
+zh,Non-operating Income,营业外收入
+zh,None,没有任何
+zh,Nonproductive Earnings,非生产性收益
+zh,North (0°),北 (0°)
+zh,North Northeast (22.5°),东北东北 (22.5°)
+zh,North Northwest (337.5°),西北西北 (337.5°)
+zh,Northeast (45°),东北 (45°)
+zh,Northwest (315°),西北 (315°)
+zh,Not Allowed,不允许
+zh,Not Applicable,不适用
+zh,Not Ordered,未订购
+zh,Not Yet Valid,尚未生效
+zh,Not to Specification,不符合规格
+zh,Note,笔记
+zh,Notification,通知
+zh,Number of Employees,在职员工人数
+zh,OAGIS,OAGIS
+zh,OFX/QFX,OFX/QFX
+zh,Obligation,义务
+zh,Occupational Privilege Employer,职业特权雇主
+zh,Office,办公室
+zh,Office Postage,办公室邮资
+zh,Office Supplies,办公用品
+zh,Office and Supplies,办公用品
+zh,Oil Change,换油
+zh,On Order Approved,订单批准
+zh,On Order Placed,下订单时
+zh,On-site,现场
+zh,Online Access,在线访问
+zh,Operating,操作
+zh,Operating Expense,运营开支
+zh,Order (Sales) Default Store ID,订单（销售）默认商店 ID
+zh,Order Approve Validate,订单批准验证
+zh,Order Approve Warn Address Missing (false to disable),订单批准警告地址丢失（false 禁用）
+zh,Order Approve Warn Address not Valid (false to disable),订单批准警告地址无效（false 禁用）
+zh,Order Approve Warn Billing and Shipping Addresses Differ (false to disable),订单批准警告帐单和送货地址不同（假禁用）
+zh,Order Approve Warn Contact Mech Grey/Blacklisted (false to disable),Order Approve Warn Contact Mech Grey/Blacklisted (false to disable)
+zh,Order Approve Warn Inventory Not Available (false to disable),订单批准警告库存不可用（false 禁用）
+zh,"Order Approve Warn Large Order - Total Above (default 0, 0 to disable)",“订单批准警告大订单 - 总计高于（默认为 0，0 禁用）”
+zh,"Order Approve Warn Large Web Order - Total Above (default 0, 0 to disable)",“订单批准警告大型网络订单 - 总计高于（默认为 0，0 禁用）”
+zh,Order Approve Warn New Customer (false to disable),订单批准警告新客户（false 禁用）
+zh,Order Approve Warn Payment Method Name Differs (false to disable),订单批准警告付款方式名称不同（假禁用）
+zh,"Order Approve Warn Percent Available Inventory (default 20, 0 to disable)",“订单批准警告可用库存百分比（默认为 20，0 禁用）”
+zh,Order Approve Warn Price Min/Max (false to disable),订单批准警告价格最小/最大（false 禁用）
+zh,Order Approve Warn Similar within 24hrs (false to disable),订单批准在 24 小时内发出类似警告（false 禁用）
+zh,"Order Approve Warn Std Devs Over Avg Product Qty (default 3.0, 0 to disable)",“订单批准警告标准开发人员超过平均产品数量（默认 3.0，0 禁用）”
+zh,"Order Approve Warn Std Devs Over Avg Total (default 3.0, 0 to disable)",“订单批准警告 Std Devs Over Avg Total（默认 3.0，0 禁用）”
+zh,Order Approved,订单已获批准
+zh,Order Approved Reasons,订单批准原因
+zh,Order Change,订单变更
+zh,Order Complete,订单完成
+zh,Order Detail Template - Client,订单详细信息模板 - 客户端
+zh,Order History Template - Client,订单历史模板 - 客户端
+zh,Order Payment Preference,订单支付偏好
+zh,Order Placed,订单已下
+zh,Order Quote Proposed,订单报价建议
+zh,Order Quote Requested,请求的订单报价
+zh,Order Rejected Reasons,订单被拒绝原因
+zh,Order Roles,订单角色
+zh,Organization,组织
+zh,Organization Management,组织管理
+zh,Organization Member,组织成员
+zh,Organization Roles,组织角色
+zh,Organization Rollup (Child),组织汇总（子）
+zh,Origin,起源
+zh,Other,其他
+zh,Other Assets,其他资产
+zh,Other Cost of Sales,其他销售成本
+zh,Other Expense,其他费用
+zh,Other Income,其他的收入
+zh,Other Obligation,其他义务
+zh,Other Revenue,其他收入
+zh,Other Shipping (Non-Inventory),其他运输（非库存）
+zh,Other Type (no detail record),其他类型（无详细记录）
+zh,Outgoing Email,外发电子邮件
+zh,Outgoing Payment,付款
+zh,Outgoing Payment Application,付款申请
+zh,Outgoing Shipment,发货
+zh,Outgoing/Receivable/Sales Items,发货/应收/销售项目
+zh,Over Shipped,超载
+zh,Overtime,随着时间的推移
+zh,Overtime Premium,加班费
+zh,Own Home,自己的家
+zh,Owner's Equity,所有者权益
+zh,Owners Equity,所有者权益
+zh,Ownership,所有权
+zh,POP Commerce Theme Type,POP Commerce 主题类型
+zh,POPC ERP App,POPC ERP 应用程序
+zh,POS,销售点
+zh,PTO - Holiday,PTO - 假期
+zh,PTO - Other,取力器 - 其他
+zh,PTO - Sick,PTO - 生病
+zh,PTO - Vacation,PTO - 假期
+zh,PTO Hourly,每小时 PTO
+zh,PTO Request,取力器请求
+zh,PTO Request Approved,PTO 请求已获批准
+zh,PTO Request Denied,PTO 请求被拒绝
+zh,PTO Request Under Review,PTO 请求正在审查中
+zh,PTO Salary,PTO 薪水
+zh,Package Label,包装标签
+zh,Packaging Component,包装组件
+zh,Packaging For,包装为
+zh,Packaging Type,包装类型
+zh,Packing Documents,包装文件
+zh,Paid Break,带薪休假
+zh,Paid Break RRP,带薪休息 RRP
+zh,Paid Break STD,带薪休息性病
+zh,Paid Non-productive Time,带薪非生产时间
+zh,Pallet EUR3 1.0x1.2m,托盘 EUR3 1.0x1.2m
+zh,Pallet ISO0/EUR6 0.8x0.6m,托盘 ISO0/EUR6 0.8x0.6m
+zh,Pallet ISO1/EUR1 0.8x1.2m,托盘 ISO1/EUR1 0.8x1.2m
+zh,Pallet ISO2/EUR2 1.2x1.0m,托盘 ISO2/EUR2 1.2x1.0m
+zh,Pallet US 40x40in,托盘美国 40x40 英寸
+zh,Pallet US 40x48in,托盘美国 40x48 英寸
+zh,Pallet US 42x42in,托盘美国 42x42 英寸
+zh,Pallet US 48x40in,托盘美国 48x40 英寸
+zh,Pallet US 48x48in,托盘美国 48x48 英寸
+zh,Part-time Employed,兼职工作
+zh,Partner,伙伴
+zh,Partner Managed,合作伙伴管理
+zh,Party,聚会
+zh,Passenger Vehicle,乘用车
+zh,Passport Number,护照号
+zh,Password Reset,重设密码
+zh,Pay Period,薪水期
+zh,Pay Period Adjustment - Overpay,支付期调整 - 多付
+zh,Pay Period Adjustment - Pay,支付期调整 - 支付
+zh,Pay Rate Modifier Type,工资率修饰符类型
+zh,PayPal Account,贝宝账户
+zh,Payable from Inventory Transferred In,从存货转入应付
+zh,Payment,支付
+zh,Payment (discounted if paid within specified days),付款（在指定日期内付款可享受折扣）
+zh,Payment (due on specified day of current month),付款（在当月的指定日期到期）
+zh,Payment (due on specified day of next month),付款（在下个月的指定日期到期）
+zh,Payment (net days),付款（净天数）
+zh,Payment Adjustment,付款调整
+zh,Payment Application,支付申请
+zh,Payment Document,付款文件
+zh,Payment In/Out Application,付款输入/输出应用程序
+zh,Payment Not Posted,付款未过帐
+zh,Payment Not Received,未收到付款
+zh,Payment Retry,付款重试
+zh,Payment Signature Primary,付款签名主要
+zh,Payment Signature Secondary,付款签名二级
+zh,Payment Stopped,付款已停止
+zh,Payment Term Types,付款期限类型
+zh,"Payment net days, part 1",“付款净天数，第 1 部分”
+zh,"Payment net days, part 2",“付款净天数，第 2 部分”
+zh,"Payment net days, part 3",“付款净天数，第 3 部分”
+zh,Payroll,工资单
+zh,Payroll Adjustment Calculation,工资调整计算
+zh,Payroll Deduction,工资扣除
+zh,Payroll Employee,工资员工
+zh,Payroll Employee Payment,工资员工付款
+zh,Payroll Expense,工资支出
+zh,Payroll Income,工资收入
+zh,Payroll Invoice,工资单
+zh,Payroll Other,工资单 其他
+zh,Payroll Other Payment,工资单其他付款
+zh,Payroll Taxes,工资税
+zh,Penalty For Collection Agency,对催收机构的处罚
+zh,Period Closing Adjustment,期末调整
+zh,Permanent Resident,永久居民
+zh,Permanent Resident Card,永久居民卡
+zh,Permissible Return Entry,允许返回条目
+zh,Permissible Return Entry Not Accepted/Return Not Requested by ODFI,ODFI 不接受允许的退货条目/不要求退货
+zh,Person,人
+zh,Person Roles,人员角色
+zh,Personal,个人的
+zh,Personal Check,私人支票
+zh,Personal Referral,个人推荐
+zh,Phone,电话
+zh,Phone Call,电话
+zh,Phone Number,电话号码
+zh,Pick,挑选
+zh,Pick Assembly,拾取装配
+zh,Picking Documents,挑选文件
+zh,Piece,片
+zh,Piece Min Wage Adjustment,件最低工资调整
+zh,Piece Or Hourly Earnings,计件或每小时收入
+zh,Piece Plus Hourly Earnings,件加小时收入
+zh,Piece Rate Type,计件价格类型
+zh,Piece or Hourly,件或每小时
+zh,Piece plus Hourly,件加每小时
+zh,Piecework Earnings,计件收益
+zh,Placeholder,占位符
+zh,Plain Text,纯文本
+zh,Plan,计划
+zh,Plant,植物
+zh,Point of sale debit or credit,销售点借记或贷记
+zh,Positive Pay File,正支付文件
+zh,Post Sale Survey,售后调查
+zh,Postal Address,邮寄地址
+zh,Postal Code,邮政编码
+zh,Postal Mail,邮政邮件
+zh,Power,力量
+zh,Pre Payment - Expense,预付款 - 费用
+zh,Pre Payment - Inventory,预付款 - 库存
+zh,Preferred Freight,首选运费
+zh,Prepaid Expense,预付费用
+zh,Prepaid Expenses,预付的费用
+zh,Prepaid Inventory,预付库存
+zh,Pressure,压力
+zh,Price Detail Text,价格详情文本
+zh,Price Sheet,价格表
+zh,Pricing,价钱
+zh,Pricing Group,定价组
+zh,Primary Image,主图像
+zh,Private Tenant,私人房客
+zh,Produce,生产
+zh,Product,产品
+zh,Product Detail URL GString,产品详细信息 URL GString
+zh,Product Development,产品开发
+zh,Product Fulfillment,产品履行
+zh,Product Image Location,产品图片位置
+zh,Product Image URL GString,产品图片网址 GString
+zh,Product Items,产品项目
+zh,Product Manufactured As,产品制造为
+zh,Product Name,产品名称
+zh,Product Price Modify,产品价格修改
+zh,Product Quality,产品质量
+zh,Product Store ID From Hostname,来自主机名的产品商店 ID
+zh,Product Store Promotion,产品商店促销
+zh,Product Template - Client,产品模板 - 客户端
+zh,Product Template - Server,产品模板 - 服务器
+zh,Product Variant,产品变体
+zh,Production Line,生产线
+zh,Production Management,生产管理
+zh,Production Run,生产运行
+zh,Professional Services,专业的服务
+zh,Profit Loss,利润损失
+zh,Programming,编程
+zh,Programming Software,编程软件
+zh,Project,项目
+zh,Project Client,项目客户
+zh,Project Update,项目更新
+zh,Project Vendor,项目供应商
+zh,Promotional Discounts,促销折扣
+zh,Promotional Materials,宣传资料
+zh,Promotional Price,促销价
+zh,Promotions (One),促销（一）
+zh,Prompt Payment Discount,即时付款折扣
+zh,Proposal,提议
+zh,Province,省
+zh,Public Relations,公共关系
+zh,Public Tenant,公共租户
+zh,Public Web Site/etc,公共网站/等
+zh,Puller,拉拔器
+zh,Purchase,购买
+zh,Purchase Allow (One),购买许可（一）
+zh,Purchase Exclude,购买排除
+zh,Purchase Include,购买包含
+zh,Purchase Invoice,采购发票
+zh,Purchase Management,采购管理
+zh,Purchase Return Shipment,购买退货货件
+zh,Purchase Shipment,购买发货
+zh,Purchase/Initial,购买/初始
+zh,Purchased Data,购买的数据
+zh,Purchasing,购买
+zh,QZ Active Label Printer Name,QZ 有源标签打印机名称
+zh,QZ Active Main Printer Name,QZ Active 主打印机名称
+zh,QZ Print Enabled (true/false),启用 QZ 打印（真/假）
+zh,Quarantine,隔离
+zh,Quick Add,快速添加
+zh,Quick Add (Many),快速添加（许多）
+zh,Quick Add Internal (Many),快速添加内部（许多）
+zh,Quote,引用
+zh,RDFI Non-Settlement,RDFI 非结算
+zh,RDFI Not Participant in Check Truncation Program,RDFI 未参与检查截断计划
+zh,REST API Location,REST API 位置
+zh,REST API Path,REST API 路径
+zh,Raw Material,原料
+zh,Re-Fuel,加油
+zh,Real Estate,房地产
+zh,Real World,真实世界
+zh,Real-time Service Push,实时服务推送
+zh,Receipt,收据
+zh,Receivable from Inventory Transferred Out,转出存货应收账款
+zh,Receiving,接收
+zh,Recurring Charge,经常性费用
+zh,Reel Stand,卷轴支架
+zh,Refrigerant Check/Recharge,制冷剂检查/充电
+zh,Refund,退款
+zh,Refurbished Equivalent,翻新等价物
+zh,Region,地区
+zh,Region of a Larger Geo,较大地理区域
+zh,Registration,登记
+zh,Registration Confirmation,注册确认
+zh,Regular,常规的
+zh,Reimbursement,报销
+zh,Rejected,拒绝了
+zh,Related,有关的
+zh,Relates To,涉及到
+zh,Release,释放
+zh,Remote Systems,远程系统
+zh,Rental,出租
+zh,Rental Deposit,租金押金
+zh,Rental Equipment Asset,租赁设备资产
+zh,Rental Sales Return Shipment,租赁销售退货装运
+zh,Rental Sales Shipment,出租销售装运
+zh,Repair Service,维修服务
+zh,Repeating payment/standing order,重复付款/长期订单
+zh,Replace,代替
+zh,Replacement,替代品
+zh,Replenish-level,补货级别
+zh,Replenishment,补货
+zh,Representative,代表
+zh,Representative Payee Deceased or Unable to Continue in That Capacity,代表收款人已故或无法继续担任该身份
+zh,Request,要求
+zh,Required,必需的
+zh,Requirement,要求
+zh,Requirements Gathering,需求收集
+zh,Requires,需要
+zh,Research,研究
+zh,Reset Password,重设密码
+zh,Reset Password Template - Client,重置密码模板 - 客户端
+zh,Resident Citizen ID Card,居民身份证
+zh,Resident Regular,常住居民
+zh,Resigned,已辞职
+zh,Resource,资源
+zh,Resource Management,资源管理
+zh,Restricted (private access),受限（私人访问）
+zh,Retail Store,零售店
+zh,Retained Earnings,留存收益
+zh,Retired,退休
+zh,Retirement,退休
+zh,Return,返回
+zh,Return Accepted,接受退货
+zh,Return Cancelled,退货取消
+zh,Return Completed,退货完成
+zh,Return Inventory,退货库存
+zh,Return Merchandise,退货商品
+zh,Return Not a Duplicate,返回不重复
+zh,Return Refund,退货退款
+zh,Return of Capital,资本回报
+zh,Return of ENR Entry by Federal Government Agency,联邦政府机构返回 ENR 条目
+zh,Return of Improper Credit Entry,返还不正确的信用分录
+zh,Return of Improper Debit Entry,退回不正确的借记分录
+zh,Return of XCK Entry,XCK 条目的返回
+zh,Return per ODFI's Request,根据 ODFI 的请求返回
+zh,Returned,回来
+zh,Revenue,收入
+zh,Revision,修订
+zh,Room,房间
+zh,Root Template - Server,根模板 - 服务器
+zh,Roth 401k Employee,罗斯 401k 员工
+zh,Roth IRA Employee,罗斯爱尔兰共和军雇员
+zh,Roth IRA Employer,罗斯爱尔兰共和军雇主
+zh,Routing,路由
+zh,Routing Component,路由组件
+zh,Routing Number Check Digit Error,路由号码校验位错误
+zh,Routing Number Not From Original Entry Detail Record,路由号码不是来自原始条目详细记录
+zh,Routing Number/Check Digit Error,路由号码/校验位错误
+zh,Routing Task,路由任务
+zh,Royalties,版税
+zh,Royalties Expense - Non-COGS,版税费用 - 非 COGS
+zh,SIC Code,代码
+zh,SKU,单品
+zh,Salary,薪水
+zh,Sales,销售量
+zh,Sales Affiliate,销售伙伴
+zh,Sales Compensation,销售报酬
+zh,Sales Follow-Up,销售跟进
+zh,Sales Inquiry,销售查询
+zh,Sales Inventory,销售库存
+zh,Sales Invoice,销售发票
+zh,Sales Management,销售管理
+zh,Sales Optional Info,销售可选信息
+zh,Sales Region,销售区域
+zh,Sales Required Info,销售所需信息
+zh,Sales Return Shipment,销售退货装运
+zh,Sales Revenue,销售额
+zh,Sales Segment,销售部门
+zh,Sales Shipment,销售发货
+zh,Sales Tax,销售税
+zh,Sales Travel,销售旅行
+zh,Sales and Marketing Expense,销售和营销费用
+zh,Sales/Purchase,销售/采购
+zh,Sample,样本
+zh,Sample (Giveaway),样品（赠品）
+zh,Saturday,周六
+zh,Savings,储蓄
+zh,Savings/Checking Selection is Wrong,储蓄/检查选择错误
+zh,Scenario,设想
+zh,School District Employer,学区雇主
+zh,School ID Card,学校身份证
+zh,School Record,学校记录
+zh,Screen,屏幕
+zh,Screen Content,画面内容
+zh,Screen Render,屏幕渲染
+zh,Screen Transition,画面过渡
+zh,Script URL,脚本网址
+zh,Search,搜索
+zh,Search Template - Client,搜索模板 - 客户端
+zh,Second Day,第二天
+zh,Section,部分
+zh,Secured Loan,抵押贷款
+zh,Selectable,可选择
+zh,Self Employed,自雇人士
+zh,Self Generated,自产
+zh,Seminar,研讨会
+zh,Service,服务
+zh,Service Body,服务机构
+zh,Service Product,服务产品
+zh,Service Region,服务区域
+zh,Service charge,服务费
+zh,Services Accounting,服务会计
+zh,Services Labor,服务劳工
+zh,Services Legal,法律服务
+zh,Services Revenue,服务收入
+zh,Settlement Term - Generate Order Payments,结算期限 - 生成订单付款
+zh,Shift - Evening,轮班 - 晚上
+zh,Shift - Holiday,轮班 - 假期
+zh,Shift - Night,Shift - 夜间
+zh,Shift - Weekend,轮班 - 周末
+zh,Shift Premium Earnings,转移保费收入
+zh,Ship Label From Company,公司发货标签
+zh,Ship Label From Name,从名称发货标签
+zh,Ship Restrict Carriers (true/false),船舶限制承运人（真/假）
+zh,Shipment Default Gateway Config ID,货件默认网关配置 ID
+zh,Shipment Delivered,装运交付
+zh,Shipment Documents,装运文件
+zh,Shipment Exclude,发货排除
+zh,Shipment Include,装运包括
+zh,Shipment Pick/Load/Ship,提货/装载/发货
+zh,Shipment Receive,收货
+zh,Shipment Roles,货件角色
+zh,Shipment Shipped,发货发货
+zh,Shipments,出货量
+zh,Shipping Label Cost Markup Percent,运输标签成本加价百分比
+zh,Shipping Order Charge Markup Percent,运输订单费用加价百分比
+zh,Shipping and Handling,运费和手续费
+zh,Short Sales Pitch,短期推销
+zh,Shortcut Icon URL,快捷方式图标 URL
+zh,Shrinkage,收缩率
+zh,Sick Hourly,每小时生病
+zh,Sick Salary,病假工资
+zh,Signature Primary,签名小学
+zh,Signature Secondary,签名中学
+zh,Simple IRA Employee,简单的 IRA 员工
+zh,Simple IRA Employer,简单的 IRA 雇主
+zh,Single,单身的
+zh,Single Lot Unavailable,单批不可用
+zh,Single Use Code,一次性使用的代码
+zh,Single or Married File Separate,单身或已婚文件分开
+zh,Size,尺寸
+zh,Sketch,草图
+zh,Slotting Fees,进场费
+zh,Social Security Card,社会保障卡
+zh,Social Security Employee,社会保障雇员
+zh,Social Security Employer,社会保障雇主
+zh,Social Security Number,社会安全号码
+zh,Social Taxable,社会应税
+zh,Software,软件
+zh,Source Document Presented for Payment,为付款而提交的原始单据
+zh,South (180°),南 (180°)
+zh,South Southeast (157.5°),东南东南 (157.5°)
+zh,South Southwest (202.5°),西南西南 (202.5°)
+zh,Southeast (135°),东南 (135°)
+zh,Southwest (225°),西南 (225°)
+zh,Special Day Off,特别休息日
+zh,Special Instructions,特殊说明
+zh,Special Promo Price,特别促销价
+zh,Specification,规格
+zh,Spouse,伴侣
+zh,Staging,分期
+zh,Standard,标准
+zh,"Standard (faster, may have gaps, per system)",“标准（更快，可能有差距，每个系统）”
+zh,State,状态
+zh,State Disability Insurance Employer,国家残疾保险雇主
+zh,State Law Affecting RCK Acceptance,影响 RCK 验收的州法律
+zh,State Miscellaneous Employer,国家杂项雇主
+zh,State Pension Employer,国家养老金雇主
+zh,State Unemployment Insurance Employer,国家失业保险雇主
+zh,State Workers' Comp Insurance Employer,国家工人补偿保险雇主
+zh,State/Province,州/省
+zh,Stolen,被盗
+zh,Stop Payment on Item Related to RCK Entry,停止支付与 RCK 条目相关的项目
+zh,Stop Payment on Source Document,停止对源单据付款
+zh,Store CIM Profile,存储 CIM 配置文件
+zh,Story,故事
+zh,Straight Line,直线
+zh,Straight Time Gross,直线时间总收入
+zh,Student,学生
+zh,Style,风格
+zh,Style Sheet (CSS) URL,样式表 (CSS) URL
+zh,Sub-Agreement,子协议
+zh,Sub-contracting,分包
+zh,Subscribe Notification,订阅通知
+zh,Success,成功
+zh,Sum of Years Digits,年数总和
+zh,SunTrust CPR,SunTrust 心肺复苏术
+zh,Sunday,星期日
+zh,Supplier,供应商
+zh,Supplier - General,供应商 - 一般
+zh,Supplier Credit Memo,供应商贷项凭证
+zh,Supplier Deposits,供应商存款
+zh,Supplier Return Invoice,供应商退货发票
+zh,Supplies,补给品
+zh,Support,支持
+zh,Supporting Document,证明文件
+zh,Supporting Media,支持媒体
+zh,Surcharge,附加费
+zh,Surtax Employer,附加税雇主
+zh,Survey,民意调查
+zh,Symptom,症状
+zh,System,系统
+zh,System Design,系统设计
+zh,System Software,系统软件
+zh,Tablet,药片
+zh,Tanker,油船
+zh,Task,任务
+zh,Tax,税
+zh,"Tax - City, Borough, and Township Withholding",“税收 - 市、区和乡镇预扣税”
+zh,Tax - County Income Withholding,税收 - 县收入预扣
+zh,Tax - Federal Pension Employee,税收 - 联邦养老金雇员
+zh,Tax - Head Employee,税务 - 主管员工
+zh,Tax - Occupational Privilege Employee,税务 - 职业特权雇员
+zh,Tax - School District Employee,税务 - 学区雇员
+zh,Tax - State Disability Insurance Employee,税务 - 州残障保险雇员
+zh,Tax - State Income Withholding,税收 - 州收入预扣
+zh,Tax - State Miscellaneous Employee,税务 - 国家杂项雇员
+zh,Tax - State Pension Employee,税收 - 国家养老金雇员
+zh,Tax - State Unemployment Insurance Employee,税收 - 国家失业保险雇员
+zh,Tax - State Workers' Comp Insurance Employee,税收 - 国家工人补偿保险雇员
+zh,Tax - Surtax Employee,税 - 附加税雇员
+zh,Tax Due,应缴税款
+zh,Tax Expense - Income,税费 - 收入
+zh,Tax Expense - Other,税费 - 其他
+zh,Tax Invoice,税务发票
+zh,Tax Statement,税单
+zh,Taxes and Licenses,税收和执照
+zh,"Taxes, WC, etc",“税收、厕所等”
+zh,Tell-A-Friend,告诉一个朋友
+zh,Temperature,温度
+zh,Template,模板
+zh,"Template - Information (home, product, etc)",“模板 - 信息（家庭、产品等）”
+zh,"Template - Interactive (checkout, profile, etc)",“模板 - 交互式（结帐、个人资料等）”
+zh,Template Client Account Create,模板客户账户创建
+zh,Template Client Account Page,模板客户账户页面
+zh,Template Client Add Address,模板客户端添加地址
+zh,Template Client Checkout,模板客户端结帐
+zh,Template Client Checkout Header,模板客户端结帐标题
+zh,Template Client Checkout Messages,模板客户端结帐消息
+zh,Template Client Checkout Success,模板客户端结帐成功
+zh,Template Client Contact Info,模板客户联系信息
+zh,Template Client Login Page,模板客户端登录页面
+zh,Template Client Menu Page,模板客户端菜单页面
+zh,Template Client Order Detail,模板客户订单详情
+zh,Template Client Order History,模板客户订单历史
+zh,Template Client Product Image,模板客户产品图片
+zh,Template Client Reset Password,模板客户端重置密码
+zh,Template Location Invoice Print,模板位置发票打印
+zh,Template Location Order Print,模板位置订单打印
+zh,Template Location Shipment By Package,模板位置按包裹发货
+zh,Template Location Shipment Insert,模板位置货件插入
+zh,Template Location Shipment Pack Sheet,模板位置装运包表
+zh,Template Location Shipment Pick Sheet,模板位置发货拣选表
+zh,Template Server Category,模板服务器类别
+zh,Template Server Content,模板服务器内容
+zh,Template Server Error,模板服务器错误
+zh,Template Server Footer,模板服务器页脚
+zh,Template Server Header,模板服务器头
+zh,Template Server Home,模板服务器主页
+zh,Template Server Product,模板服务器产品
+zh,Template Server Root,模板服务器根
+zh,Template Server Search,模板服务器搜索
+zh,Terms and Conditions,条款和条件
+zh,Territory,领土
+zh,Test,测试
+zh,Test Order,测试订单
+zh,Testimonials,感言
+zh,Testing,测试
+zh,Tests,测试
+zh,Theme Preview Screenshot,主题预览截图
+zh,Third Day,第三天
+zh,Third Party,第三者
+zh,Third-Party Holdings,第三方控股
+zh,Threshold,临界点
+zh,Thursday,周四
+zh,Time Entry,时间输入
+zh,Time Off,休息时间
+zh,Time/Frequency,时间/频率
+zh,Timely Original Return,及时原件退货
+zh,Timesheet,时间表
+zh,Tire Replacement,轮胎更换
+zh,Tires Rotate,轮胎转动
+zh,To Do,去做
+zh,Top Secret (confidential access),绝密（机密访问）
+zh,Top-off,充值
+zh,Topic,话题
+zh,Trace Number Error,跟踪号错误
+zh,Tracking Label Number,跟踪标签编号
+zh,Tractor,拖拉机
+zh,Trade Show,贸易展览会
+zh,Traditional 401K Employee,传统的 401K 员工
+zh,Trailer,预告片
+zh,Training,训练
+zh,Transaction Details,交易明细
+zh,Transfer,转移
+zh,Transfer Shipment,转运货件
+zh,Travel Air,旅行航空
+zh,Travel Car Rental,旅游租车
+zh,Travel Local/Parking/Tolls,当地旅游/停车/通行费
+zh,Travel Lodging,旅游住宿
+zh,Travel Meals/Entertainment,旅游餐饮/娱乐
+zh,Travel Other,旅游 其他
+zh,Travel and Entertainment,旅游和娱乐
+zh,Treasury Stock,库存股票
+zh,Trencher,挖沟机
+zh,Truck,卡车
+zh,Tuesday,周二
+zh,Tune Up,调高
+zh,Type,类型
+zh,UPC-A,UPC-A
+zh,UPC-E,UPC-E
+zh,URL Parameter,网址参数
+zh,US GAAP,美国公认会计准则
+zh,US IRS Agriculture (943),美国国税局农业 (943)
+zh,US IRS CT-1,美国国税局 CT-1
+zh,US IRS Form 1040,美国国税局 1040 表格
+zh,US IRS Form 1065,美国国税局 1065 表格
+zh,US IRS Form 1120,美国国税局 1120 表格
+zh,US IRS Form 1120S,美国国税局 1120S 表格
+zh,US IRS Form 941,美国国税局 941 表格
+zh,US IRS Form 943,美国国税局 943 表格
+zh,US IRS Form 944,美国国税局 944 表格
+zh,US IRS Form 990,美国国税局 990 表格
+zh,US IRS Form 990-PF,美国国税局 990-PF 表格
+zh,US IRS Form 990-T,美国国税局 990-T 表格
+zh,US IRS Household (Sch H),美国 IRS 家庭 (Sch H)
+zh,US IRS Medicare Qualified Government (941),美国 IRS 医疗保险合格政府 (941)
+zh,US IRS Military (941),美国国税局军事 (941)
+zh,US IRS Railroad (CT-1),美国国税局铁路 (CT-1)
+zh,US IRS Regular (944),美国国税局常规 (944)
+zh,US IRS Regular (all others) (941),美国国税局常规（所有其他） (941)
+zh,US IRS Schedule H,美国国税局附表 H
+zh,USA - C Corporation,美国 - C 公司
+zh,"USA - Individual, Sole Proprietor, Single-member LLC",“美国 - 个人、独资经营者、单一成员有限责任公司”
+zh,USA - LLC as C Corp,美国 - LLC 作为 C Corp
+zh,USA - LLC as Partnership,美国 - LLC 作为合伙企业
+zh,USA - LLC as S Corp,美国 - LLC 作为 S Corp
+zh,USA - Partnership,美国 - 伙伴关系
+zh,USA - S Corporation,美国 - S 公司
+zh,USA - Trust/Estate,美国 - 信托/遗产
+zh,Unauthorized Debit to Consumer Account Using Corporate SEC Code,使用公司 SEC 代码未经授权从消费者账户扣款
+zh,Uncollected Funds,未收回的资金
+zh,Undeposited Receipts,未存款收据
+zh,Unearned Revenue,非劳动收入
+zh,Unemployed,失业
+zh,Uninvoiced Shipment Receipts,未开具发票的装运收据
+zh,Union Dues,工会会费
+zh,Unique Item,独特物品
+zh,Unissued Fixed Asset,未发行固定资产
+zh,Unknown,未知
+zh,Unmarried Head of Household,未婚户主
+zh,Unpaid,未付
+zh,Unpaid Salary Time Off,无薪休假
+zh,Unreceived Fixed Asset,未收到的固定资产
+zh,Unreceived Inventory,未收到库存
+zh,Unresolved,未解决
+zh,Unsubscribe Notification,退订通知
+zh,Unsubscribe Verify,取消订阅 验证
+zh,Untimely Dishonored Return,不合时宜的耻辱回归
+zh,Untimely Return,不合时宜的退货
+zh,Up-Sell (Upgrade),追加销售（升级）
+zh,Update,更新
+zh,Update Personal Info Confirmation,更新个人信息确认
+zh,Usage,用法
+zh,Usage Charge,使用费
+zh,Used to Produce,用于生产
+zh,User Defined,用户自定义
+zh,User Defined Content,用户定义的内容
+zh,"User Login (basic, api_key, etc)",“用户登录（基本、api_key 等）”
+zh,Utilities Electricity,公用事业电力
+zh,Utilities Expense,公用事业费用
+zh,Utilities Heating,公用事业供暖
+zh,Utilities Trash/Recycle,公用事业垃圾/回收
+zh,Utilities Vehicle Fuel,公用事业车辆燃料
+zh,Utilities Water/Sewer,公用事业水/下水道
+zh,Utility Software,实用软件
+zh,VAT Tax (not added to totals),增值税（不添加到总数中）
+zh,Vacation Hourly,每小时休假
+zh,Vacation Salary,假期工资
+zh,Valid/Complete,有效/完成
+zh,Validate Authorize,验证授权
+zh,Vehicle Expense,车辆费用
+zh,Vehicle Identification Number (VIN),车辆识别号 (VIN)
+zh,Vehicle Maintenance,机动车保养
+zh,Velocity,速度
+zh,Vendor Assigned,供应商分配
+zh,Vendor Inventory/Tracking,供应商库存/跟踪
+zh,Vendor Shipping Info,供应商运输信息
+zh,Verified,已验证
+zh,View,看法
+zh,View Allow (One),查看允许（一）
+zh,Virtual (with variants),虚拟（带有变体）
+zh,Visa,签证
+zh,Voter Registration,选民登记
+zh,WE SYS APP,我们系统应用程序
+zh,WIP Inventory,在制品库存
+zh,Wachovia AR,美联银行
+zh,Wage Garnishment,工资扣押
+zh,Warehouse,仓库
+zh,Warehouse Equipment,仓库设备
+zh,Warnings,警告
+zh,Warranty,保修单
+zh,Web,网络
+zh,Web External,网络外部
+zh,Web Form,网页表格
+zh,Web Site,网站
+zh,Web URL/Address,网址/地址
+zh,Wednesday,周三
+zh,Weight,重量
+zh,Wells Fargo ARP,富国银行 ARP
+zh,West (270°),西 (270°)
+zh,West Northwest (292.5°),西西北 (292.5°)
+zh,West Southwest (247.5°),西西南 (247.5°)
+zh,Wholesale Price,批发价
+zh,Widowed/Widower,丧偶/鳏夫
+zh,Wire Transfer,电汇
+zh,With Parents,与家长
+zh,Withdraw,提取
+zh,Won't Complete,不会完成
+zh,Won't Fix,不会修复
+zh,Word of Mouth,口耳相传
+zh,Work,工作
+zh,Work Effort,工作努力
+zh,Work Group (group only access),工作组（仅限组访问）
+zh,Worker/Vendor Payment,工人/供应商付款
+zh,Workweek,工作周
+zh,Write Off,注销
+zh,Write-off,注销
+zh,Year Made,制造年份
+zh,Yes,是的
+zh,ZBA Credit Transfer,ZBA 学分转移
+zh,ZBA Debit Transfer,ZBA 借记转账
+zh,Zions Bank CSV,锡安银行 CSV
+zh,between,之间
+zh,check,查看
+zh,date-find,日期查找
+zh,date-time,约会时间
+zh,display,展示
+zh,display-entity,显示实体
+zh,drop-down,落下
+zh,eBay,易趣
+zh,equals,等于
+zh,file,文件
+zh,greater,更大
+zh,greater-equals,更大等于
+zh,hidden,隐
+zh,ignored,忽略
+zh,image,图片
+zh,in,在
+zh,is-not-null,非空
+zh,is-null,一片空白
+zh,label,标签
+zh,less,较少的
+zh,less-equals,小于等于
+zh,like,喜欢
+zh,link,关联
+zh,not-between,不介于
+zh,not-equals,不等于
+zh,not-in,不在
+zh,not-like,不喜欢
+zh,password,密码
+zh,radio,收音机
+zh,range-find,范围查找
+zh,reset,重启
+zh,submit,提交
+zh,text-area,文本区域
+zh,text-find,文本查找
+zh,text-line,文本行
