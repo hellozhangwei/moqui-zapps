@@ -1,0 +1,142 @@
+moqui.basic.LocalizedMessage,demo
+locale,original,localized
+#不包括在StatusItem已经存在的词
+zh,Abort,中止
+zh,Accept,接受
+zh,Accept Assignment,接受分配
+zh,Acknowledge,承认
+zh,Activate,启用
+zh,Approve,批准
+zh,Approve (un-complete),批准（未完成）
+zh,Approve (un-send),批准（取消发送）
+zh,Approve Marketing Campaign,批准营销活动
+zh,Arrive,到达
+zh,Assign,分配
+zh,Authorize,授权
+zh,Back to Produced,返回生产
+zh,Back to Received,返回已收到
+zh,Begin,开始
+zh,Begin Changes,开始改变
+zh,Bill Through,账单通过
+zh,Bounce,弹跳
+zh,Cancel,取消
+zh,Cancel Example,取消示例
+zh,Cancel Marketing Campaign,取消营销活动
+zh,Cancel Promise,取消承诺
+zh,Cancel Quote,取消报价
+zh,Close,关闭
+zh,Complete Marketing Campaign,完整的营销活动
+zh,Confirm,确认
+zh,Confirm complete,确认完成
+zh,Consume,消耗
+zh,Converstion,转换
+zh,Correct (Ready),正确（准备好）
+zh,DISQUALIFIED,不合格
+zh,Deactivate,停用
+zh,Decline,衰退
+zh,Decline Assignment,拒绝分配
+zh,Definition Complete,定义完成
+zh,Deliver,递送
+zh,Deny Request,拒绝请求
+zh,Depart,离开
+zh,Entered,进入
+zh,Example Completed,示例完成
+zh,Failed,失败的
+zh,Finalize,敲定
+zh,Hold,抓住
+zh,Hold##Order,保持##订单
+zh,Implementation Complete,实施完成
+zh,Locked - In Use,锁定 - 使用中
+zh,Make Available,使有效
+zh,Make Open/Tentative,开放/暂定
+zh,Make Return Available,提供退货服务
+zh,Manual Response,手动响应
+zh,Manually Freeze,手动冻结
+zh,Mark As Defective,标记为有缺陷
+zh,Marketing Campaign In Progress,营销活动进行中
+zh,Not Defective,无缺陷
+zh,Offer,提供
+zh,Order,命令
+zh,Pack,盒
+zh,Partly Reconcile,部分和解
+zh,Payment Already Sent,付款已发送
+zh,Pending Accept,等待接受
+zh,Pick,挑选
+zh,Place,地方
+zh,Place (un-approve),地点（未批准）
+zh,Place from Quote,引用位置
+zh,Place##Order,下订单
+zh,Process,过程
+zh,Process (un-approve),处理（未批准）
+zh,Promise,承诺
+zh,Propose Quote,建议报价
+zh,QUALIFIED,合格的
+zh,Re-activate,重新激活
+zh,Re-open,重新开放
+zh,Receive,收到
+zh,Receive Payment,收款
+zh,Reconcile,调和
+zh,Refer,参考
+zh,Reject,拒绝
+zh,Reject Request,拒绝请求
+zh,Release,释放
+zh,Release Available,发布可用
+zh,Release Hold,释放保持
+zh,Request,要求
+zh,Request Quote,请求报价
+zh,Reset Not Started,重置未开始
+zh,Resolve,解决
+zh,Resume,恢复
+zh,Resume Changes,恢复更改
+zh,Return,返回
+zh,Return Status Pending,退货状态待定
+zh,Reverse to Payable,逆向应付
+zh,Reverse to Receivable,应收账款冲销
+zh,Review Approved,审核通过
+zh,Review Deleted,评论已删除
+zh,Schedule,日程
+zh,Send,发送
+zh,Send##Order,发送##订单
+zh,Set Created to Reconciled,设置创建到已协调
+zh,Set Manually Frozen,设置手动冻结
+zh,Set Negative Pending Replenishment,设置负待补货
+zh,Ship,船
+zh,Start Progress,开始进度
+zh,Start Transfer,开始转移
+zh,Start Transfer (Promised),开始转移（承诺）
+zh,Stop,停止
+zh,Stop Progress (to Submitted),停止进度（已提交）
+zh,Store,店铺
+zh,Submit,提交
+zh,Subscription Accepted - Unsubscribed,接受订阅 - 取消订阅
+zh,Subscription Accepted - Unsubscription Pending,接受订阅 - 取消订阅待定
+zh,Subscription In Use - Unsubscribed,使用中的订阅 - 取消订阅
+zh,Subscription In Use - Unsubscription Pending,订阅正在使用 - 取消订阅待定
+zh,Subscription Invalid - Unsubscribed,订阅无效 - 取消订阅
+zh,Subscription Invalid - Unsubscription Pending,订阅无效 - 取消订阅待定
+zh,Subscription Pending - Unsubscription Pending,订阅待定 - 取消订阅待定
+zh,Testing Complete,测试完成
+zh,Transfer Complete,转移完成
+zh,Transfer Complete (Promised),转移完成（承诺）
+zh,Transfer Complete (Store),转移完成（商店）
+zh,Transfer Complete (Use),转移完成（使用）
+zh,Un-Deliver (Available),取消交付（可用）
+zh,Un-Deliver (In Storage),取消交付（存储中）
+zh,Un-acknowledge,取消确认
+zh,Un-deliver,取消交付
+zh,Un-pack,开箱
+zh,Un-pick,拆开
+zh,Un-ship,下船
+zh,Un-view,取消查看
+zh,Unassign,取消分配
+zh,Unauthorize,取消授权
+zh,Uncancel Payable,取消应付
+zh,Uncancel Receivable,取消应收账款
+zh,Unconfirm,取消确认
+zh,Undeliver,取消投递
+zh,Undeliver and Unauthorize,取消交付和取消授权
+zh,Unpack,打开包装
+zh,Unpay,未付
+zh,Unreconcile,不和
+zh,Use,用
+zh,View,看法

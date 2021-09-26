@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="seed-install">
+    <moqui.basic.LocalizedMessage locale="default" original="EnumerationNameTemplate" localized="${ec.l10n.localize(description)}"/>
+    <moqui.basic.LocalizedMessage locale="default" original="StatusItemNameTemplate" localized="${ec.l10n.localize(description)}"/>
+    <moqui.basic.LocalizedMessage locale="default" original="StatusTransitionNameTemplate" localized="${ec.l10n.localize(transitionName)}${description == transitionName ? '' : ' (' + ec.l10n.localize(description) + ')'}"/>
+    <moqui.basic.LocalizedMessage locale="zh" original="StatusFlowTransitionNotFoundTemplate"
+                                  localized="不允许将状态从${lookedUpStatusName?:lookedUpStatusId}修改为${parameterStatusName?:parameterStatusId}"/>
+</entity-facade-xml>
