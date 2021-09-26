@@ -1,4 +1,4 @@
-moqui.basic.LocalizedMessage,demo
+moqui.basic.LocalizedMessage,seed
 locale,original,localized
 zh,"Half Due In Advance, Half Due 30 Days after Invoice",提前一半到期，发票后 30 天一半到期
 zh,Immediate (Due on Delivery),立即（交货时到期）

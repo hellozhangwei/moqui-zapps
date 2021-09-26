@@ -65,6 +65,7 @@ zh,Add Address,添加邮寄地址
 zh,Add Adjustment Item,添加调整条目
 zh,Add All to Category,添加产品到分类
 zh,Add Asset,添加资产
+zh,Add Assignment,添加指派
 zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
 zh,Add Authenticator App,添加认证App
@@ -503,6 +504,7 @@ zh,Create Return Shipment,创建退货运单
 zh,Create Sales Order,创建销售订单
 zh,Create Shipment,创建运单
 zh,Create Supplier Return,创建供应商退货
+zh,Create Team,创建团队
 zh,Create User,创建用户
 zh,Create Variants,创建变体
 zh,Created Date,创建日期
@@ -1110,6 +1112,7 @@ zh,More,更多
 zh,Morocco,摩洛哥
 zh,Move Asset,移动资产
 zh,Move Asset(s),移动资产
+zh,Move Asset ${assetId},移动资产${assetId}
 zh,Move Assets,移动资产
 zh,Move Container,移动容器
 zh,Move Container ${container?.serialNumber ?: containerId},移动容器${container?.serialNumber ?: containerId}
@@ -2132,6 +2135,7 @@ zh,User ID,用户ID
 zh,Username,用户名
 zh,Username ${username} and/or password incorrect,用户名${username} 和/或者 密码错误
 zh,Usernames,用户名
+zh,Users,用户
 zh,Uzbekistan,乌兹别克斯坦
 zh,Valid From,生效日期
 zh,Valid Thru,终止日期
