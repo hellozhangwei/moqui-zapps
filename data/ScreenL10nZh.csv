@@ -329,6 +329,7 @@ zh,Booked Payable Invoices,登记的应付账单
 zh,Booked Receivable Invoices,登记的应收账单
 zh,Bosnia And Herzegowina,波斯尼亚和黑塞哥维那
 zh,Botswana,博茨瓦纳
+zh,Both,都
 zh,Bouvet Island,布韦岛
 zh,Box,箱子
 zh,Box Types,包装箱类型
@@ -598,6 +599,7 @@ zh,Day,天
 zh,Days To Ship,发货天数
 zh,Debits,借
 zh,Decline,拒绝
+zh,Default Amount,默认数量
 zh,Default Assignee,默认受让人
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
@@ -607,6 +609,7 @@ zh,Default Disable Tax Calc,禁用税费计算
 zh,Default GL Account,默认GL科目
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
+zh,Default Seq #,默认顺序
 zh,Delegate,代表
 zh,Delivery Date,送达日期
 zh,Denmark,丹麦
@@ -753,6 +756,7 @@ zh,Family Member,家庭成员
 zh,Faroe Islands,法罗群岛
 zh,Feature,特征
 zh,Feature 2,特征2
+zh,Feature Group,特征组
 zh,Feature Group ID,特征组ID
 zh,Feature Groups,特征组列表
 zh,Feature ID,特征ID
@@ -770,6 +774,7 @@ zh,"File ${filename} already exists, skipping entity ${en}.",文件 ${filename}�
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Filed By,申请人
 zh,Filter,过滤
+zh,Filter By,过滤
 zh,Financial Accounts,金融账户
 zh,Financial Acct Reasons,财务会计原因
 zh,Financial Acct Types,财务会计类型
@@ -789,7 +794,7 @@ zh,Find Entries,查询分录
 zh,Find Facility,设施查询
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
-zh,Find Individual Assets,单独资产查询
+zh,Find Individual Assets,资产明细查询
 zh,Find Options,查找选项
 zh,Find Options required to view results,必须输入查询条件进行查找
 zh,Find Order,订单查询
@@ -928,6 +933,7 @@ zh,Incoming Refund Payments,收入退款
 zh,"Incoming, Received, Approved, Payment Sent",收到、已收到、已批准、已付款
 zh,Index Space Pages,索引空间页面
 zh,India,印度
+zh,Individual Assets,资产明细
 zh,Indonesia,印度尼西亚
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
@@ -1275,6 +1281,7 @@ zh,Not,不
 zh,Not Avail,不可用
 zh,Not Billed,未开票
 zh,Not Issued,未发货
+zh,Not Invoiced,未开票
 zh,Not Shipped/Billed,未发送/开票
 zh,"Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录"
 zh,"Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件"
@@ -1283,6 +1290,7 @@ zh,Notifications,通知
 zh,Notified,通知
 zh,Notifs?,接收通知？
 zh,Number,号码
+zh,Number Specified,指定数字
 zh,OR Customer Account,或客户金融账户
 zh,OR Instrument,或支付工具
 zh,OR Interval UOM,或间隔UOM
