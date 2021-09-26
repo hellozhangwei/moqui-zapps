@@ -1,0 +1,11 @@
+moqui.basic.LocalizedMessage,seed
+locale,original,localized
+zh,Gift Card,礼品卡
+zh,Gift Certificate,礼券
+zh,Deposit,订金
+zh,Customer Credit,客户信用
+zh,Deposit Replenish,存款补充
+zh,Service Credit,服务信用
+zh,Loan,贷款
+zh,Employee Advance,员工预付款
+zh,Supplier Deposit,供应商保证金
