@@ -46,8 +46,10 @@ zh,Acquired Date,采购日期
 zh,Act,实际
 zh,Act+Rem/Bgt %,实际+剩余/预算%
 zh,Act+Rem/Est %,实际+剩余/评估%
+zh,Act+Rem/Est:,实际+剩余/评估:
 zh,Act/Bgt %,实际/预算%
 zh,Act/Est %,实际/评估%
+zh,Act/Est:,实际/评估:
 zh,Action,操作
 zh,Actions,操作
 zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
@@ -60,6 +62,7 @@ zh,Actual Arrival,实际到达
 zh,Actual Complete,实际完成
 zh,"Actual Cost ${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}","实际成本${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}"
 zh,Actual Hours,实际小时数
+zh,Actual Hours:,实际小时数:
 zh,Actual Start,实际开始
 zh,Add,添加
 zh,Add Address,添加邮寄地址
@@ -641,6 +644,7 @@ zh,Drag fields to the desired column or do not display,拖放列调整顺序，�
 zh,Drop Shipment List,直运出库单列表
 zh,Due,截止日期
 zh,Due Date,截止日期
+zh,Due Date:,截止日期:
 zh,"Duplicates found (by ${party.hasDuplicates == 'Y' ? 'address/name, phone/name, ' : ''}identification, email, or birth date and name)",发现重复记录，请检查地址/姓名，电话/姓名，唯一标识，邮件，生日和姓名。
 zh,Dups,重复
 zh,East Timor,东帝汶
@@ -712,6 +716,7 @@ zh,Estimated Amount,预估金额
 zh,Estimated Arrival Date,预估到达
 zh,Estimated Delivery,预计送达时间
 zh,Estimated Hours,评估小时
+zh,Estimated Hours:,评估小时:
 zh,Estimated Ready Date,预估备好
 zh,Estimated Ship,预计发货时间
 zh,Estimated Start Date,预计开始日期
@@ -1014,6 +1019,7 @@ zh,Last Check Number,上次检查数量
 zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
+zh,Last Updated:,最近更新:
 zh,Latitude,维度
 zh,Latitude / Longitude,维度/经度
 zh,Latvia,拉脱维亚
@@ -1098,6 +1104,7 @@ zh,Mexico,墨西哥
 zh,Mfg Date,生产日期
 zh,"Micronesia, Federated States Of",密克罗尼西亚联邦
 zh,Middle Name,中名
+zh,Milestone:,里程碑:
 zh,Milestone Summary,里程碑概要
 zh,Milestones,里程碑
 zh,Min,最小
@@ -1534,6 +1541,7 @@ zh,Price History,价格历史
 zh,Prices,价格
 zh,Primary Entity,主实体
 zh,Priority,优先级
+zh,Priority:,优先级:
 zh,Process Item Responses,处理条目响应
 zh,Prod ID,产品ID
 zh,Produce Asset,产出资产
@@ -1566,6 +1574,7 @@ zh,"Profit ${ec.l10n.formatCurrency(pstats.actualProfit, project.costUomId, 2)}"
 zh,Programmer,程序员
 zh,Programmer Lead,程序员领导
 zh,Progress,进度
+zh,Project:,项目:
 zh,Project Client Invoice,项目的客户账单
 zh,Project ID,项目ID
 zh,Project Manager,专案经理
@@ -1607,6 +1616,7 @@ zh,Purchase Returns,采购退货
 zh,Purchase Shipment List,采购入库单列表
 zh,PurchaseOrderTitle,采购管理
 zh,Purpose,用途
+zh,Purpose:,用途:
 zh,Purposes,用途
 zh,QOH,在手
 zh,QOH Diff,QOH变化
@@ -1692,6 +1702,7 @@ zh,Remaining,剩余
 zh,Remaining (d),剩余天数
 zh,Remaining (h),剩余小时
 zh,Remaining Hours,剩余小时
+zh,Remaining Hours:,剩余小时:
 zh,Remote,远端
 zh,Remove,移除
 zh,Remove Address?,删除地址？
@@ -1739,6 +1750,7 @@ zh,Reset Pkg,重新装箱
 zh,Reset Selections,重置选择
 zh,Reset to Default,重置到默认
 zh,Resolution,解决
+zh,Resolution:,解决:
 zh,Resp Code,响应代码
 zh,Response,响应
 zh,Response Amount,响应数量
@@ -1971,6 +1983,7 @@ zh,Start Date,开始日期
 zh,Starting,开始
 zh,Statement PDF,清单PDF
 zh,Status,状态
+zh,Status:,状态:
 zh,Status Flow,状态流
 zh,Status History,状态历史
 zh,Status ID,状态ID
