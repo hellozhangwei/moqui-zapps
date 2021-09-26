@@ -17,6 +17,7 @@ zh,A reset password was sent by email to ${userAccount.emailAddress}. This passw
 zh,AR Aging Summary,应收账龄概要
 zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
+zh,Abbreviation,缩写
 zh,Account,账户
 zh,Account #,账户卡号
 zh,Account Balance History,科目余额历史
@@ -489,6 +490,7 @@ zh,Create Milestone,创建里程碑
 zh,Create Nest,创建下一个
 zh,Create Next,创建下一个
 zh,Create Page,创建页面
+zh,Create Payment,创建付款单
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Pool,创建池
@@ -593,6 +595,7 @@ zh,Default Days to Ship,默认发货天数
 zh,Default Disable Promotions,禁用促销
 zh,Default Disable Shipping Calc,禁用运费计算
 zh,Default Disable Tax Calc,禁用税费计算
+zh,Default GL Account,默认GL科目
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
 zh,Delegate,代表
@@ -1110,6 +1113,7 @@ zh,Move Container ${container?.serialNumber ?: containerId},移动容器${contai
 zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
+zh,Move Quantity,移动数量
 zh,Mozambique,莫桑比克
 zh,My Account,个人中心
 zh,My Milestones,我的里程碑
@@ -1347,6 +1351,7 @@ zh,Origin Address,原地址
 zh,Origin Facility,发货仓
 zh,Original Currency,原货币类型
 zh,Original Currency Amount,原货币金额
+zh,Original Invoice ID,原始账单ID
 zh,Original PDF,原始PDF
 zh,Other Computer Related Services,其他计算机相关服务
 zh,Other ID,其他ID
@@ -1365,6 +1370,7 @@ zh,Outgoing,出去的
 zh,Outgoing Refund Payments,支出退款
 zh,Output,输出
 zh,Override (Cash) GL Account,覆盖（现金）科目
+zh,Override GL Account,覆盖GL科目
 zh,Owned By Org,拥有者
 zh,Owner,拥有者
 zh,Owner Org,拥有者
@@ -1438,9 +1444,11 @@ zh,Payment Gateway,支付网关
 zh,Payment Gateways,支付网关
 zh,Payment ID,付款单ID
 zh,Payment Information,付款信息
+zh,Payment Instrument,支付方式
 zh,Payment Instruments,支付方式
 zh,Payment Method,付款方式
 zh,Payment Methods,付款方式
+zh,Payment Status,付款状态
 zh,Payment Terms,付款条件
 zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
@@ -1648,6 +1656,7 @@ zh,Recent Detail History,最近详细历史
 zh,Recent Paid Payables,最近到账应付款
 zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
+zh,Record Credit Memo,记录贷项凭证
 zh,Record Time,记录时间
 zh,Recurring,循环
 zh,Ref,参考
