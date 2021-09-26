@@ -1,0 +1,50 @@
+moqui.basic.LocalizedMessage,demo
+locale,original,localized
+zh,Postal - Primary,邮政 - 初级
+zh,Postal - Shipping Destination,邮政 - 运送目的地
+zh,Postal - Shipping Origin,邮政 - 发货地
+zh,Postal - Billing (AP),邮政 - 计费 (AP)
+zh,Postal - Payment (AR),邮政 - 付款 (AR)
+zh,Postal - Tax,邮政 - 税
+zh,Postal - General Correspondence,邮政 - 一般信函
+zh,Postal - Purchase Return,邮政 - 购买退货
+zh,Postal - Previous,邮政 - 以前的
+zh,Postal - Home,邮政 - 首页
+zh,Postal - Work,邮政 - 工作
+zh,Postal - Retail Store,邮政 - 零售店
+zh,Phone - Primary,电话 - 主要
+zh,Phone - Shipping Destination,电话 - 送货目的地
+zh,Phone - Shipping Origin,电话 - 发货地
+zh,Phone - Shipping Fax,电话 - 送货传真
+zh,Phone - Billing (AP),电话 - 帐单 (AP)
+zh,Phone - Billing Fax (AP),电话 - 计费传真 (AP)
+zh,Phone - Payment (AR),电话 - 付款 (AR)
+zh,Phone - Payment Fax (AR),电话 - 付款传真 (AR)
+zh,Phone - Tax,电话 - 税
+zh,Phone - Direct Inward Dialing,电话 - 直接拨入
+zh,Phone - Home,电话 - 家
+zh,Phone - Work,电话 - 工作
+zh,Phone - Fax,电话 - 传真
+zh,Phone - Mobile,电话 - 手机
+zh,Phone - Assistant,电话 - 助理
+zh,Phone - Quick Calls,电话 - 快速呼叫
+zh,Phone - Retail Store,电话 - 零售店
+zh,Email - Primary Address,电子邮件 - 主要地址
+zh,Email - Shipping Destination,电子邮件 - 送货目的地
+zh,Email - Shipping Origin,电子邮件 - 发货地
+zh,Email - Billing (AP),电子邮件 - 帐单 (AP)
+zh,Email - Payment (AR),电子邮件 - 付款 (AR)
+zh,Email - Other,电子邮件 - 其他
+zh,Email - Support,电子邮件 - 支持
+zh,Email - Order Notification,电子邮件 - 订单通知
+zh,Email - Marketing,电子邮件营销
+zh,Email - Retail Store,电子邮件 - 零售店
+zh,Website URL - Primary,网站 URL - 主要
+zh,Website URL - Payment (AR),网站 URL - 付款 (AR)
+zh,Website URL - Facebook,网站网址 - Facebook
+zh,Website URL - iCal,网站网址 - iCal
+zh,Website URL - LinkedIn,网站网址 - LinkedIn
+zh,Website URL - Twitter,网站网址 - 推特
+zh,Website URL - Retail Store,网站 URL - 零售店
+zh,Other,其他
+zh,IP Address - Client,IP 地址 - 客户端
