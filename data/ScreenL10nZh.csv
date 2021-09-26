@@ -252,6 +252,7 @@ zh,Assign Check Numbers,指定检查数量
 zh,Assign Party,添加指派人
 zh,Assign To,指派人
 zh,Assigned To,指派人
+zh,Assigned To Team,指派的团队
 zh,Assignee,指派人
 zh,Assignments,指派人
 zh,Assoc From,关联从
@@ -384,6 +385,7 @@ zh,Change Password,修改密码
 zh,Check Num,检查数量
 zh,Check Reservations,检查预留
 zh,Checks PDF,检查PDF
+zh,Child Account,子客户
 zh,Child Categories,子分类
 zh,Child Facilities,子类型
 zh,Child Sales Accounts,子公司
@@ -429,6 +431,7 @@ zh,Column,列
 zh,Column Fields,列字段
 zh,Columns,列
 zh,Comments,评论
+zh,Communication Event,沟通事件
 zh,Comoros,科摩罗
 zh,Company Name On Account,账户公司名称
 zh,Competitor,竞争者
@@ -787,6 +790,7 @@ zh,Find Request,审批查询
 zh,Find Summary,摘要查询
 zh,Find Supplier,供应商查询
 zh,Find Task,任务查询
+zh,Find Tasks,查询任务
 zh,FindSalesOrdersLink,销售订单
 zh,Finland,芬兰
 zh,First Name,姓
