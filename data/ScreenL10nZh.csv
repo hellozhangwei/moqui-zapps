@@ -14,6 +14,7 @@ zh,(Asc),(升)
 zh,(Desc),(降)
 zh,- Hold Part,-挂起拆单
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
+zh,AR/AP,应收/应付
 zh,AR Aging Summary,应收账龄概要
 zh,ATP Diff,ATP变化
 zh,Abbrev,缩写
@@ -158,6 +159,7 @@ zh,Adjust Item,调整条目
 zh,Adjustments,调整
 zh,Administrator,行政人员
 zh,Afghanistan,阿富汗
+zh,Age By,账龄按
 zh,Aging,账龄
 zh,Aging Summary (displayed records only),账龄概要（只显示行）
 zh,Agreement Date,合同日期
@@ -503,6 +505,7 @@ zh,Create Return,创建退货单
 zh,Create Return Shipment,创建退货运单
 zh,Create Sales Order,创建销售订单
 zh,Create Shipment,创建运单
+zh,Create Space,创建空间
 zh,Create Supplier Return,创建供应商退货
 zh,Create Team,创建团队
 zh,Create User,创建用户
@@ -994,6 +997,7 @@ zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
 zh,Jordan,约旦
+zh,Journal,日记
 zh,Journal Name,日记账名称
 zh,Kazakhstan,哈萨克斯坦
 zh,Kenya,肯尼亚
@@ -1130,6 +1134,7 @@ zh,MyAccountTitle,个人中心
 zh,Myanmar,缅甸
 zh,"NOTE: Invoice level stats (total, pre-paid, paid, etc) are not available by Product and will show as having no data",注意：发票级别统计数据（总计、预付、已付等）不适用于产品，将显示为无数据.
 zh,"NOTE: for accounting and other traceability record equipment purchase using a purchase order, incoming shipment, and payable invoice; this form is for existing or third party equipment",注意：如果需要进行财务核算或设备采购的追溯，请使用采购订单、进货和应付发票。 此功能仅用于现有或第三方设备
+zh,NOTE: For invoices with no Due Date specified try running the report by Invoice Date.,注意：对于未指定到期日的发票，请尝试按发票日期运行报告。
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,NOTE: this should only be used to correct data as it rewrites the accounting history for this asset. Do not use to change ownership for a business transaction like a sale.,注意：这应该仅用于更正数据，因为它会重写此资产的会计历史记录。 不要用于更改销售等商业交易的所有权。
 zh,Name,名称
@@ -1468,6 +1473,7 @@ zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${party
 zh,People,人员
 zh,People Assigned,指派人员
 zh,Period,周期
+zh,Period Days,期间天数
 zh,Period Name,期间名称
 zh,Period Num,期间编号
 zh,Periods,周期
@@ -1768,12 +1774,15 @@ zh,Role,角色
 zh,Role Type,角色类型
 zh,Roles,角色
 zh,Romania,罗马尼亚
+zh,Root Page Directory,根页面目录
 zh,Root Page Location,根页面位置
+zh,Root Page Override,根页面覆盖
 zh,Routing #,路由号码
 zh,Run Date,运行日期
 zh,Run ID,运行ID
 zh,Run Pick PDF,生产拣货PDF
 zh,Run Products,生产产品
+zh,Run Report,运行报表
 zh,Runs,运行
 zh,Russian Federation,俄罗斯联邦
 zh,Rwanda,卢旺达
@@ -2049,6 +2058,7 @@ zh,Title,标题
 zh,To,到
 zh,To Address,收件人
 zh,To Addresses,收件人
+zh,To assign check numbers select a bank account in From Payment Method (in Find Options).,要分配支票编号，请在“从付款方式”（在“查找选项”中）中选择一个银行帐户。
 zh,To Container,目的容器
 zh,To Location,目的位置
 zh,To Name,收件人
