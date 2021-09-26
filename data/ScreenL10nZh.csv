@@ -128,6 +128,7 @@ zh,Add Single Use Codes,添加单独用户代码
 zh,Add Store,添加店铺
 zh,Add Store Category,添加店铺分类
 zh,Add Survey Field,添加调查字段
+zh,Add Task,添加任务
 zh,Add Task Assignment,添加任务指派
 zh,Add Team,添加任务指派
 zh,Add Time Entry,添加工时记录
@@ -1073,6 +1074,8 @@ zh,"Matches whole words, use the asterisk (*) wildcard to match partial words; u
 zh,Mauritania,毛里塔尼亚
 zh,Mauritius,毛里求斯
 zh,Max,最大
+zh,Max Amt,最大数量
+zh,Maximum Amount,最大数量
 zh,Mayotte,马约特岛
 zh,Memo,备忘录
 zh,Merge From ${partyId},从${partyId}合并
@@ -1145,6 +1148,7 @@ zh,New Agreement,新合同
 zh,New Budget,新预算
 zh,New Caledonia,新喀里多尼亚
 zh,New Category,新分类
+zh,New Child Task,新子任务
 zh,New Consumable Shipment,新领用出库单
 zh,New Contact,新建
 zh,New Credit Card,添加信用卡
@@ -1200,6 +1204,7 @@ zh,New Relationship,新关系
 zh,New Rental Return Shipment,新租赁归还入库单
 zh,New Rental Shipment,新租赁出库单
 zh,New Request,新审批
+zh,New Request Item,新审批条目
 zh,New Sales Account,新建客户
 zh,New Sales Contact,新建联系人
 zh,New Sales Opportunity,新销售机会
@@ -1215,6 +1220,7 @@ zh,New Store Party,新店铺参与者
 zh,New Store Promotion,新促销
 zh,New Survey,新调查
 zh,New Task,新任务
+zh,New Task for Request,新任务为审批
 zh,New Transaction,新建凭证
 zh,New Transfer Shipment,新建调拨单
 zh,New Zealand,新西兰
@@ -1711,6 +1717,7 @@ zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
 zh,Require Password Change,要求修改密码
+zh,Required By,要求日期
 zh,Required By Date,要求日期
 zh,Required parameter missing (${pi.name}),必填变量(${pi.name})缺失!
 zh,Res Cnt,预约次数
