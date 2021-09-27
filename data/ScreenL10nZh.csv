@@ -333,6 +333,7 @@ zh,Botswana,博茨瓦纳
 zh,Both,都
 zh,Bouvet Island,布韦岛
 zh,Box,箱子
+zh,Box Type,包装箱类型
 zh,Box Types,包装箱类型
 zh,Box Types PDF,包装箱类型PDF
 zh,Brazil,巴西
@@ -599,6 +600,8 @@ zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
 zh,Days To Ship,发货天数
+zh,Days Since Last Track,自上一次追踪的天数
+zh,Days Since Packed,自打包以来的天数
 zh,Debits,借
 zh,Decline,拒绝
 zh,Default Amount,默认数量
@@ -612,6 +615,9 @@ zh,Default GL Account,默认GL科目
 zh,Default Locale,默认地区
 zh,Default Order Source,默认订单渠道
 zh,Default Seq #,默认顺序
+zh,"Defaults to 12, set to 0 to ignore",默认为12，0表示忽略
+zh,"Defaults to 5, set to 0 to ignore",默认为5，0表示忽略
+zh,Defaults to 0 (ignored),默认为0，表示忽略
 zh,Delegate,代表
 zh,Delivery Date,送达日期
 zh,Denmark,丹麦
@@ -710,6 +716,7 @@ zh,Est Ready,预估备好
 zh,"Est Rem ${ec.l10n.format(project.remainingWorkTime, '#.#')} hrs","评估剩余${ec.l10n.format(project.remainingWorkTime, '#.#')}小时"
 zh,Est Ship,预估发货
 zh,Est. Arrival,预估到达
+zh,Est. Cost,预估费用
 zh,Est. Hours,预估工作量
 zh,Est. Quantity,预估数量
 zh,Est. Ready,预估备好
@@ -809,6 +816,7 @@ zh,Find Product,产品查询
 zh,Find Product Store,店铺查询
 zh,Find Project,项目查询
 zh,Find Request,审批查询
+zh,Find Shipment,运单查询
 zh,Find Summary,摘要查询
 zh,Find Supplier,供应商查询
 zh,Find Task,任务查询
@@ -911,6 +919,7 @@ zh,Host,主持人
 zh,Hosting Provider,托管服务提供商
 zh,Hours,小时数
 zh,Hours Budget,小时预算
+zh,Hours Past ETA,ETA过去的小时数
 zh,Household,家庭
 zh,Hrs Est,评估小时
 zh,Hubei,湖北省
@@ -987,6 +996,7 @@ zh,Ireland,爱尔兰
 zh,Is Gift,礼物
 zh,Israel,以色列
 zh,Issuance,发行
+zh,Issue & Pack,发货与打包
 zh,Issued,发货时间
 zh,Issued Date,发行日
 zh,Issued Quantity,发货数量
@@ -1311,6 +1321,7 @@ zh,Only No Location,只看无库位
 zh,Only Not Rec,只看未对账
 zh,Only Partly Shipped,只看部分发货
 zh,Only Recurring,只看循环订单
+zh,Only Remaining,只看剩余
 zh,Only count Product,只看产品订单
 zh,Opened,开始
 zh,Operate,运营
@@ -1514,6 +1525,7 @@ zh,Physical Inventory ID,库存盘点ID
 zh,Physical Inventory Quantity,库存调整
 zh,Physical Quantity,实际数量
 zh,PhysicalInventoryTitle,盘点记录
+zh,Pick,拣货
 zh,Pick Bin #,拣货箱#
 zh,Pick Container,拣货箱
 zh,Pick Loc Qty,拣货库位数量
@@ -1529,6 +1541,7 @@ zh,Pickup Date,拣货日期
 zh,Piece Count,计件
 zh,Pitcairn,皮特凯恩
 zh,Place,下定
+zh,Place Order Anyway,仍然下定
 zh,Place Warnings,警告下定
 zh,Placed,下定时间
 zh,Placed Date,下定日期
@@ -1755,11 +1768,13 @@ zh,Required By Date,要求日期
 zh,Required parameter missing (${pi.name}),必填变量(${pi.name})缺失!
 zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
-zh,Reservation,预占
-zh,Reservation Auto Type,库存锁定类型
+zh,Reserve,预约
+zh,Reservation,预约
+zh,Reservation Auto Type,库存预约类型
 zh,Reservations,预约
 zh,Reserve Assets,预约资产
 zh,Reset Pkg,重新装箱
+zh,Reset Reservations,重置预约
 zh,Reset Selections,重置选择
 zh,Reset to Default,重置到默认
 zh,Resolution,解决
@@ -1773,6 +1788,7 @@ zh,Response Stats,响应统计
 zh,Responses,响应
 zh,Restrict Update,限制修改
 zh,Restrict View,限制查看
+zh,"Results match any of Hours Past ETA, Days Since Packed, and Days Since Last Track (OR) and must match all other options selected (AND)",结果与 ETA 过去的小时数、打包后的天数和上次跟踪后的天数 (OR) 中的任何一个匹配，并且必须匹配所选的所有其他选项 (AND)
 zh,Ret Amount,退货数量
 zh,Ret Label,退货标签
 zh,Ret Message,退货消息
@@ -1789,7 +1805,8 @@ zh,Return to Find Invoice,返回账单查询
 zh,Return to Find Order,返回订单查询
 zh,Return to Find Party,返回参与者查询
 zh,Return to Find Product,返回产品查询
-zh,Return to Find Supplier,返回供应处查询
+zh,Return to Find Shipment,返回运单查询
+zh,Return to Find Supplier,返回供应商查询
 zh,Return to Product List,返回产品列表
 zh,Return to Sales Order List,返回销售订单列表
 zh,Returns,退货
@@ -1885,6 +1902,7 @@ zh,SearchProductsTitle,批处理
 zh,Security Groups,安全组
 zh,Select,选择
 zh,Select Address,选择地址
+zh,Select Asset,选择资产
 zh,Select Email,选择邮箱
 zh,Select Find,选择查询
 zh,Select Move,选择移动
@@ -1912,6 +1930,7 @@ zh,Set Assignee,设置指派人
 zh,Set Authorized,设置为已验证
 zh,Set Classification,设置
 zh,Set Delivered,设置为已送达
+zh,Set Packed,设置为已打包
 zh,Set Packed (Un-Ship),设置为已打包（未发货）
 zh,Set Picked,设置为已拣货
 zh,Set Quantities,设定数量
@@ -1946,6 +1965,7 @@ zh,Shipment Clerk,装运文员
 zh,Shipment Destination Address,收货地址
 zh,Shipment From Party,发货人
 zh,Shipment Gateway,运输网关
+zh,Shipment ID,运单ID
 zh,Shipment Insert,装箱单
 zh,Shipment Items,运单条目
 zh,Shipment Method,配送方式
