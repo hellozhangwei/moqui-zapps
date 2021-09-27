@@ -228,6 +228,7 @@ zh,Approve,批准
 zh,Approve Order Anyway,仍然批准
 zh,Approve Warnings,批准警告
 zh,Approved - ${pstats.taskCountByStatusMap.WeApproved?:0},已批准 - ${pstats.taskCountByStatusMap.WeApproved?:0}
+zh,Are you sure you want to cancel this shipment?,确定要取消这个运单吗？
 zh,Area Code,区号
 zh,Argentina,阿根廷
 zh,Armenia,亚美尼亚
@@ -690,6 +691,7 @@ zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServer
 zh,EmailServer [${emailServerId}] has no mailUsername,EmailServer [${emailServerId}]未定义邮箱用户名
 zh,EmailServer [${emailServerId}] has no storeHost,EmailServer [${emailServerId}]未定义邮箱主机地址
 zh,Emails,邮件
+zh,"Emails have been sent, these cannot be unsent",邮件已被发送，不能被撤回。
 zh,Employee Rates,员工报价
 zh,Employees,员工
 zh,Employer,员工
@@ -993,7 +995,9 @@ zh,Invoices From,账单从
 zh,Invoices From (${fromInvoiceCount}),账单从(${fromInvoiceCount})
 zh,Invoices To (${toInvoiceCount}),账单(${toInvoiceCount})
 zh,Invoices Total,发票总额
+zh,"Invoices (found ${invoiceIdSet.size()} associated with this shipment) will not be changed, must be cancelled manually",与此运单相关的${invoiceIdSet.size()}个账单不会被修改，需要手动取消。
 zh,Invoices and Payments,账单与付款单
+zh,"Invoices associated with this shipment will be CANCELLED: ${invoiceIdSet.join(', ')}","相关联的账单（${invoiceIdSet.join(', ')}）将被取消！！！"
 zh,Iran (islamic Republic Of),伊朗（伊斯兰共和国）
 zh,Iraq,伊拉克
 zh,Ireland,爱尔兰
@@ -1017,6 +1021,8 @@ zh,Item Total,条目合计
 zh,Item Type,条目类型
 zh,Item Types,条目类型
 zh,Items,条目
+zh,"Items have been packed/issued, these will be un-packed and returned to inventory",条目已被打包或发出，这些将被拆包并退回库存
+zh,"Items have been received, all receipt quantities will be set to zero",条目已收到，收到的数量将被设置为0
 zh,"JSON-RPC error with no message, code [${responseMap.error?.code}]","JSON-RPC无消息错误, 代码[${responseMap.error?.code}]"
 zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]: ${jsonObj},服务[${serviceName ?: method}]的JSON-RPC的返回不是object或者Map: ${jsonObj}
 zh,Jamaica,牙买加
@@ -1035,6 +1041,7 @@ zh,"Korea, Republic Of",大韩民国
 zh,Kuwait,科威特
 zh,Kyrgyzstan,吉尔吉斯斯坦
 zh,Label ID,标签ID
+zh,"Labels will not be refunded automatically, refund manually if needed",标签不会自动退款，需要时手动退款
 zh,Labor Rates,工时费
 zh,Lao People's Democratic Republic,老挝人民民主共和国
 zh,Last,上
@@ -1300,6 +1307,9 @@ zh,Not Billed,未开票
 zh,Not Issued,未发货
 zh,Not Invoiced,未开票
 zh,Not Shipped/Billed,未发送/开票
+zh,"Not all items are received, item quantities will be reduced to received quantities.",不是所有的条目都已收到，条目数量将被减少到已收到的数量。
+zh,Not all packages have Labels,不是所有的包裹都有标签
+zh,Not all packages have Tracking Codes,不是所有的包裹都有追踪码
 zh,"Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录"
 zh,"Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件"
 zh,Notes,备注
@@ -1503,6 +1513,7 @@ zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
 zh,Payments,付款
 zh,Payments To (${toPaymentCount}),付款单(${toPaymentCount})
+zh,Payments associated with this shipment through order or invoice will not be changed,通过订单或发票与此货件相关的付款将不会更改
 zh,Payroll Other Payee,工资单 其他收款人
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
@@ -1943,6 +1954,10 @@ zh,Set Scheduled,设置为已安排
 zh,Set Shipped,设置为已发货
 zh,Set Shipping Address and Method,设置配送地址与方法
 zh,Set WH,设定仓库
+zh,Set as Delivered?,确定设置为已送达吗？
+zh,Set as Delivered and generate invoice for order items if needed?,确定设置为已送达并同时为订单生产账单吗？
+zh,Set to Delivered? No additional items may be received once Delivered.,确定设置为已送达吗？不会有额外的条目被接收或发送。
+zh,Set as Shipped? If a Shipment Shipped email is configured it will be sent to the Customer.,确定设置为已发送吗？如果运单邮箱被设置怎会给客户发送邮件？
 zh,Setting Type,设置类型
 zh,Settings,设置
 zh,Settlement Date,结算日期
