@@ -511,6 +511,8 @@ zh,Create Pool,创建池
 zh,Create Purchase Order,创建采购订单
 zh,Create Rate Amount,创建单价
 zh,Create Report,创建报表
+zh,Create Refund,创建退款
+zh,Create Refund Payment,创建退款单
 zh,Create Return,创建退货单
 zh,Create Return Shipment,创建退货运单
 zh,Create Sales Order,创建销售订单
@@ -536,6 +538,7 @@ zh,Current Purchase Orders,当前采购订单
 zh,Current Sales Orders,当前销售订单
 zh,Current Search Conditions,当前查找条件
 zh,Current Search String,当前检索条件
+zh,Current Status:${statusItem?.description ?: ''},当前状态:${statusItem?.description ?: ''}
 zh,Current password incorrect for user ${username},当前用户${username}密码错误
 zh,Custom Computer Programming Services,定制计算机编程服务
 zh,Custom Reports,定制报表
@@ -1412,6 +1415,7 @@ zh,Origin Facility,发货仓
 zh,Original Currency,原货币类型
 zh,Original Currency Amount,原货币金额
 zh,Original Invoice ID,原始账单ID
+zh,Original Payment,原始付款单
 zh,Original PDF,原始PDF
 zh,Other Computer Related Services,其他计算机相关服务
 zh,Other ID,其他ID
@@ -1587,6 +1591,7 @@ zh,Primary Entity,主实体
 zh,Priority,优先级
 zh,Priority:,优先级:
 zh,Process Item Responses,处理条目响应
+zh,Process Gateway Refund,处理网关退款
 zh,Prod ID,产品ID
 zh,Produce Asset,产出资产
 zh,Produced by Production Run,生产计划产量
@@ -1695,6 +1700,7 @@ zh,Rates,单价
 zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Re-post Invoice,重新过账账单
+zh,Re-post Payment and Applications,重新过账付款单应用
 zh,Ready Date,准备日期
 zh,Really hold order part?,确定要挂起拆单吗？
 zh,Reason,原因
@@ -1735,7 +1741,9 @@ zh,Ref/Check Number,付款参考代码
 zh,Referrer,推荐人
 zh,Refund Amount,退款金额
 zh,Refund Credit Trans,退款凭证
-zh,Refund Payment,退款账单
+zh,Refund For Payment ${payment.refundForPaymentId},账单${payment.refundForPaymentId}的退款单
+zh,Refund Payment,退款付款单
+zh,Refund Payments,退款付款单
 zh,Registrations,注册
 zh,Regulatory Agency,监管机构
 zh,Reject Quote Request,拒绝报价请求
@@ -1826,6 +1834,7 @@ zh,Return to Find Party,返回参与者查询
 zh,Return to Find Product,返回产品查询
 zh,Return to Find Shipment,返回运单查询
 zh,Return to Find Supplier,返回供应商查询
+zh,Return to Find Payment,返回付款单查询
 zh,Return to Product List,返回产品列表
 zh,Return to Sales Order List,返回销售订单列表
 zh,Returns,退货
@@ -2175,6 +2184,7 @@ zh,UOM Dimensions,度量
 zh,URL,URL
 zh,Uganda,乌干达
 zh,Ukraine,乌克兰
+zh,Un-apply,撤销应用
 zh,Un-approve,撤销批准
 zh,Unapplied,未核销
 zh,Unapplied Incoming Payments,未核销的收入款
