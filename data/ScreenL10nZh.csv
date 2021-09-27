@@ -875,6 +875,10 @@ zh,General Ledger,总账
 zh,Generate PDF,生成PDF文件
 zh,Georgia,乔治亚州
 zh,Germany,德国
+zh,Get Label,获取标签
+zh,Get Label Anyway,仍然获取标签
+zh,Get Labels,获取标签
+zh,Get Labels Anyway,仍然获取标签
 zh,Ghana,加纳
 zh,Gibraltar,直布罗陀
 zh,Gift Message,礼物留言
@@ -2236,6 +2240,7 @@ zh,Visitor,游客
 zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse Assets,仓库资产
+zh,Warning: destination address is incomplete or invalid according to address validation.,警告：目的地址不完整或这无效。
 zh,Was Stored At,原存放
 zh,Watcher,守望者
 zh,Web Master,网站管理员
