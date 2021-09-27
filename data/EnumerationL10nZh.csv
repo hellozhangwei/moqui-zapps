@@ -114,8 +114,8 @@ zh,Assets,资产
 zh,Attachment,依恋
 zh,Authenticator App (TOTP),身份验证器应用程序 (TOTP)
 zh,Authorization Revoked by Customer,客户撤销授权
-zh,Authorize,授权
-zh,Authorize and Capture,授权和捕获
+zh,Authorize,验证
+zh,Authorize and Capture,验证和捕获
 zh,Auto Reorder (needs recurrenceInfoId),自动重新排序（需要regressionInfoId）
 zh,Automated Agent,自动化代理
 zh,Automatic Replenish,自动补货

@@ -12,7 +12,7 @@ zh,Approve (un-send),批准（取消发送）
 zh,Approve Marketing Campaign,批准营销活动
 zh,Arrive,到达
 zh,Assign,分配
-zh,Authorize,授权
+zh,Authorize,验证
 zh,Back to Produced,返回生产
 zh,Back to Received,返回已收到
 zh,Begin,开始
@@ -43,7 +43,7 @@ zh,Entered,进入
 zh,Example Completed,示例完成
 zh,Failed,失败的
 zh,Finalize,敲定
-zh,Hold,抓住
+zh,Hold,暂停
 zh,Hold##Order,保持##订单
 zh,Implementation Complete,实施完成
 zh,Locked - In Use,锁定 - 使用中

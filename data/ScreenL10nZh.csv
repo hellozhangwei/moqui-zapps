@@ -151,6 +151,7 @@ zh,Add to Organization,添加组织
 zh,Add to Package,装入
 zh,Add to Picklist,添加到拣货单
 zh,Add to Request,添加到审批
+zh,Add to Return,添加到退货单
 zh,Add to Sales Account,添加
 zh,Address 1,地址1
 zh,Address 2,地址2
@@ -395,6 +396,7 @@ zh,Chad,乍得
 zh,Change,改变
 zh,Change Password,修改密码
 zh,Check Num,检查数量
+zh,Check PDF,支票PDF
 zh,Check Reservations,检查预留
 zh,Checks PDF,检查PDF
 zh,Child Account,子客户
@@ -631,6 +633,7 @@ zh,Destination Facility,收货仓
 zh,Detail,详细
 zh,Detail History,详情历史
 zh,Detail Link Path,详情链接路径
+zh,Detail PDF,详情PDF
 zh,Details PDF,详情PDF
 zh,Dimension UOM,长度单位
 zh,Dimensions,尺寸
@@ -1809,6 +1812,7 @@ zh,Ret Label,退货标签
 zh,Ret Message,退货消息
 zh,Ret Status,退货状态
 zh,Ret Tracking,退货追踪
+zh,Return ${returnId},退货单${returnId}
 zh,Return ID,退货ID
 zh,Return Price,退货价格
 zh,Return Quantity,退货数量
@@ -1930,7 +1934,9 @@ zh,Selected Method,选择的方法
 zh,Send,发送
 zh,Send &amp; Apply,发送并核销
 zh,Send Email,发邮件
+zh,Send Invoice Email,发账单邮件
 zh,Send Message,发消息
+zh,Send Past Due Email,发过期邮件
 zh,Senegal,塞内加尔
 zh,Sent Date,发送日期
 zh,Seq,顺序
@@ -2252,6 +2258,7 @@ zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Visibility,可见性
 zh,Visitor,游客
+zh,Void Payment and Invoices,取消付款与账单应用
 zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse Assets,仓库资产
