@@ -205,6 +205,7 @@ zh,Any,任意
 zh,Any Carrier Method,全部配送方法
 zh,Any Field,任意字段
 zh,Any HTML,任意HTML
+zh,"Any Role may be added here to organize parties for searching, etc but many are used to describe a Party's relationship to, or involvement with, other things in the system and have no effect when applied directly.",此处的角色可以用在搜索参与者，也可以用来定义参与者之间的关系，参与其他活动的角色。不会对系统流程阐述影响。
 zh,Any Promo Code,任意促销代码
 zh,Any Type,全部类型
 zh,App List,应用列表
@@ -494,6 +495,7 @@ zh,Create Customer Return,创建客户退货
 zh,Create Expense Invoice,创建费用账单
 zh,Create First Period,创建第一个期间
 zh,Create Invoice,创建账单
+zh,Create Lot,创建批次
 zh,Create Milestone,创建里程碑
 zh,Create Nest,创建下一个
 zh,Create Next,创建下一个
@@ -660,6 +662,7 @@ zh,Edit Blog Posts,编辑博客文章
 zh,Edit Client,编辑客户
 zh,Edit Content,编辑内容
 zh,Edit Equipment,编辑设备
+zh,Edit Lots,编辑批次
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
 zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
@@ -1455,11 +1458,13 @@ zh,Parties,参与者
 zh,Parties Assigned,指派人
 zh,Party ID,参与者ID
 zh,"Party has no user accounts and no email address, cannot search for email messages",参与者没有账号或者邮件地址，找不到邮件消息。
+zh,Password,密码
 zh,Password incorrect for username ${username},用户名或者密码错误。${username}
 zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
 zh,Password needs ${minOthers} other characters (not letter or digit),密码需要至少${minOthers}位其它字符(非字母或数字)
 zh,Password shorter than ${minLength} characters,密码不能少于${minLength}个字符
 zh,Password updated for user ${userAccount.username},用户账号${userAccount.username}密码已更新
+zh,Password Verify,重复密码
 zh,Password was used in last ${historyLimit} passwords,密码已在前${historyLimit}次使用过
 zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
 zh,Path ${path} is not a directory.,路径${path}必须是个目录
@@ -1780,9 +1785,11 @@ zh,Return Shipments,退货运单
 zh,Return Tracking,退货跟踪
 zh,Return Type,退货类型
 zh,Return to Customer List,返回客户列表
-zh,Return to Find Order,返回到订单查询
-zh,Return to Find Party,返回到参与者查询
-zh,Return to Find Product,返回到产品查询
+zh,Return to Find Invoice,返回账单查询
+zh,Return to Find Order,返回订单查询
+zh,Return to Find Party,返回参与者查询
+zh,Return to Find Product,返回产品查询
+zh,Return to Find Supplier,返回供应处查询
 zh,Return to Product List,返回产品列表
 zh,Return to Sales Order List,返回销售订单列表
 zh,Returns,退货
@@ -1793,6 +1800,7 @@ zh,Rev Of,冲销
 zh,Role,角色
 zh,Role Type,角色类型
 zh,Roles,角色
+zh,"Roles applied directly describe how the system should treat the Party, or what the Party is to users of the system.",应用直接角色会影响系统应该如何对待当事人，或者当事人在系统中是什么样的用户。
 zh,Romania,罗马尼亚
 zh,Root Page Directory,根页面目录
 zh,Root Page Location,根页面位置
@@ -2061,6 +2069,7 @@ zh,Their Invoice,对方发票
 zh,Their Order,对方订单
 zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
+zh,These Roles enable system functionality when directly applied to a Party.,这些直接角色会触发系统的某些功能
 zh,This,当
 zh,This party has data merged from parties:,此参与者已合并自${party.mergedToPartyId}
 zh,This party was merged into ${party.mergedToPartyId},此参与者已被合并到${party.mergedToPartyId}
@@ -2159,6 +2168,7 @@ zh,User,用户
 zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用户${principalCollection.primaryPrincipal}不属于${roleName}角色
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
+zh,"User must change password before first login, even if password is set here.",用户在第一次登录是需要修改密码，即使密码已在此处已设置。
 zh,User Group,用户组
 zh,User Group ID,用户组ID
 zh,User Groups,用户组
