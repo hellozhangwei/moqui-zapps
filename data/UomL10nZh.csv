@@ -1,0 +1,352 @@
+moqui.basic.LocalizedMessage,seed
+locale,original,localized
+zh,Acre,英亩
+zh,Afghani,阿富汗尼
+zh,Albanian Lek,阿尔巴尼亚列克
+zh,Algerian Dinar,阿尔及利亚第纳尔
+zh,Ampere - Electric current,安培 - 电流
+zh,Andoran peseta,安多兰比塞塔
+zh,Angolan Kwanza,安哥拉宽扎
+zh,Angstrom,埃
+zh,Are,是
+zh,Argentina Peso,阿根廷比索
+zh,Argentinian Austral,阿根廷南部
+zh,Armenian Dram,亚美尼亚德拉姆
+zh,Aruban Guilder,阿鲁巴盾
+zh,Atmosphere,大气层
+zh,Atmosphere (Technical),气氛（技术）
+zh,Australian Dollar,澳元
+zh,Azerbaijan Manat,阿塞拜疆马纳特
+zh,BTU per hour,每小时 BTU
+zh,Bahaman Dollar,巴哈曼元
+zh,Bahrain Dinar,巴林第纳尔
+zh,Bangladesh Taka,孟加拉国塔卡
+zh,Bar,酒吧
+zh,Barbados Dollar,巴巴多斯元
+zh,Barrel (US),桶（美国）
+zh,Belize Dollar,伯利兹元
+zh,Belorussian Ruble,白俄罗斯卢布
+zh,Benin C.f.A. Franc,贝宁 C.f.A.法郎
+zh,Bermudan Dollar,百慕大元
+zh,Bit,少量
+zh,Bit-per-second,每秒位数
+zh,Bitcoin,比特币
+zh,Boiler horsepower,锅炉马力
+zh,Bolivian Boliviano,玻利维亚
+zh,Bosnia-Herzogovinian Dinar,波斯尼亚-黑索哥维那第纳尔
+zh,Botswana Pula,博茨瓦纳普拉
+zh,Brazil,巴西
+zh,Brazilian Real,巴西雷亚尔
+zh,British Pound,英镑
+zh,British Thermal Unit,英国热量单位
+zh,Brunei Dollar,文莱元
+zh,Bulgarian Lev,保加利亚列弗
+zh,Burundi Franc,布隆迪法郎
+zh,Byte,字节
+zh,Cable,电缆
+zh,Calorie IT,卡路里信息技术
+zh,Calorie per second,每秒卡路里
+zh,Cambodian Riel,柬埔寨瑞尔
+zh,Canadian Dollar,加元
+zh,Candela - Luminosity (intensity of light),坎德拉 - 光度（光的强度）
+zh,Cape Verde Escudo,佛得角埃斯库多
+zh,Cayman Dollar,开曼元
+zh,Centimeter,厘米
+zh,Century,世纪
+zh,Chain (Gunter's/surveyor's),链条（Gunter 的/测量员的）
+zh,Chain (Ramden's/engineer's),链条（Ramden 的/工程师的）
+zh,Chilean Peso,智利比索
+zh,Chinese Yuan Renminbi,中国人民币
+zh,Colombian Peso,哥伦比亚比索
+zh,Comoros Franc,科摩罗法郎
+zh,Costa Rica Colon,哥斯达黎加科朗
+zh,Count,数数
+zh,Croatian Dinar,克罗地亚第纳尔
+zh,Cuban Peso,古巴比索
+zh,Cubic centimeter,立方厘米
+zh,Cubic foot,立方英尺
+zh,Cubic inch,立方英寸
+zh,Cubic meter,立方米
+zh,Cubic millimeter,立方毫米
+zh,Cubic yard,立方码
+zh,Cup,杯子
+zh,Cyprus Pound,塞浦路斯镑
+zh,Czech Krona,捷克克朗
+zh,Danish Krone,丹麦克朗
+zh,Day,日
+zh,Decade,十年
+zh,Decimeter,分米
+zh,Degrees Celsius,摄氏度
+zh,Degrees Fahrenheit,华氏度
+zh,Dekameter,十米
+zh,Djibouti Franc,吉布提法郎
+zh,Dominican Peso,多米尼加比索
+zh,Dominican Republic Peso,多米尼加共和国比索
+zh,Dram (US),德拉姆（美国）
+zh,Dram (avdp),德拉姆 (avdp)
+zh,Each/Piece,每件/件
+zh,East Carribean Dollar,东加勒比元
+zh,Ecuador Sucre,厄瓜多尔苏克雷
+zh,Egyptian Pound,埃及镑
+zh,El Salvador Colon,萨尔瓦多科隆
+zh,Estonian Krone,爱沙尼亚克朗
+zh,Ethiopian Birr,埃塞俄比亚比尔
+zh,Euro,欧元
+zh,Falkland Pound,福克兰镑
+zh,Fathom,捉摸
+zh,Feet per hour,每小时英尺
+zh,Feet per minute,每分钟英尺
+zh,Feet per second,英尺每秒
+zh,Fiji Dollar,斐济元
+zh,Foot,脚
+zh,Foot-pound(force),英尺磅（力）
+zh,Furlong,弗隆
+zh,Furlongs per hour,每小时弗隆
+zh,Furlongs per minute,每分钟弗隆
+zh,Furlongs per second,每秒弗隆
+zh,Gabon C.f.A Franc,加蓬 C.f.A 法郎
+zh,Gallon (UK),加仑（英国）
+zh,Gallon (US),加仑（美国）
+zh,Gambian Dalasi,冈比亚达拉西
+zh,Georgian Kupon,格鲁吉亚库彭
+zh,Ghanian Cedi,加纳塞地
+zh,Gibibyte,技比字节
+zh,Gibit,吉比特
+zh,Gibraltar Pound,直布罗陀镑
+zh,Gigabit,千兆
+zh,Gigabit-per-second,千兆每秒
+zh,Gigabyte,技嘉
+zh,Gill (1/4 UK pint),吉尔（1/4 英国品脱）
+zh,Grain,粮食
+zh,Gram,公克
+zh,Gram per cubic centimeter ,每立方厘米克
+zh,Guatemalan Quedzal,危地马拉格扎尔
+zh,Guinea Franc,几内亚法郎
+zh,Guinea Peso,几内亚比索
+zh,Guyanese Dollar,圭亚那元
+zh,Haitian Gourde,海天古德
+zh,Hand (horse's height),手（马的高度）
+zh,Hectare,公顷
+zh,Hectopascal,百帕斯卡
+zh,Honduran Lempira,洪都拉斯伦皮拉
+zh,Hong Kong Dollar,港元
+zh,Horsepower (mechanical),马力（机械）
+zh,Horsepower-hour,马力小时
+zh,Hour,小时
+zh,Hungarian forint,匈牙利福林
+zh,Iceland Krona,冰岛克朗
+zh,Inch,英寸
+zh,Inch of mercury,英寸汞柱
+zh,Inches per hour,每小时英寸
+zh,Inches per minute,每分钟英寸
+zh,Inches per second,英寸每秒
+zh,Indian Rupee,印度卢比
+zh,Indonesian Rupiah,印尼盾
+zh,Iranian Rial,伊朗里亚尔
+zh,Iraqui Dinar,伊拉克第纳尔
+zh,Israeli Scheckel,以色列方格
+zh,Jamaican Dollar,牙买加元
+zh,Japanese Yen,日圆
+zh,Jordanian Dinar,约旦第纳尔
+zh,Joule (absolute),焦耳（绝对值）
+zh,Kazakhstani Tenge,哈萨克斯坦坚戈
+zh,Kelvin,开尔文
+zh,Kenyan Shilling,肯尼亚先令
+zh,Kibibyte,吉比字节
+zh,Kibit,基比特
+zh,Kilobit,千位
+zh,Kilobit-per-second,每秒千位
+zh,Kilobyte,千字节
+zh,Kilocalorie,千卡
+zh,Kilogram,公斤
+zh,Kilogram per cubic meter,千克每立方米
+zh,Kilogram per square centimeter,每平方厘米公斤
+zh,Kilogram per square meter,每平方米公斤
+zh,Kilometer,公里
+zh,Kilometers per hour,公里每小时
+zh,Kilometers per minute,每分钟公里数
+zh,Kilometers per second,千米每秒
+zh,Kilopascal,千帕
+zh,Kilowatt,千瓦
+zh,Kilowatt-hour,千瓦时
+zh,Kirghizstan Som,吉尔吉斯斯坦索姆
+zh,Knots,结
+zh,Kuwaiti Dinar,科威特第纳尔
+zh,Laotian Kip,老挝基普
+zh,Latvian Lat,拉脱维亚拉特
+zh,League,联盟
+zh,Lebanese Pound,黎巴嫩镑
+zh,Leone,莱昂内
+zh,Lesotho Loti,莱索托洛蒂
+zh,Liberian Dollar,利比里亚元
+zh,Libyan Dinar,利比亚第纳尔
+zh,Link (Gunter's),链接（甘特的）
+zh,Link (Ramden's),链接（拉登的）
+zh,Liter,升
+zh,Lithuanian Lita,立陶宛利塔
+zh,Macao Pataca,澳门元
+zh,Mach,马赫
+zh,Madagascan Franc,马达加斯加法郎
+zh,Malawi Kwacha,马拉维客瓦查
+zh,Malaysian Ringgit,马来西亚令吉
+zh,Maldive Rufiyaa,马尔代夫拉菲亚
+zh,Maltese Lira,马耳他里拉
+zh,Mauritanian Ouguiya,毛里塔尼亚乌吉亚
+zh,Mauritius Rupee,毛里求斯卢比
+zh,Mebibyte,字节
+zh,Megabit,兆位
+zh,Megabit-per-second,每秒兆位
+zh,Megabyte,兆字节
+zh,Meter,仪表
+zh,Meters per hour,米每小时
+zh,Meters per minute,每分钟米数
+zh,Meters per second,米每秒
+zh,Mexican Peso (new),墨西哥比索（新）
+zh,Mexican Peso (old),墨西哥比索（旧）
+zh,Mibit,米比特
+zh,Micrometer (Micron),千分尺（微米）
+zh,Mil (Milli-inch),Mil（毫英寸）
+zh,Mile (nautical/sea),英里（航海/海）
+zh,Mile (statute/land),英里（法规/土地）
+zh,Miles per hour,英里每小时
+zh,Miles per minute,每分钟英里数
+zh,Miles per second,英里每秒
+zh,Millenium,千禧年
+zh,Milli-Second,毫秒
+zh,Millibar,毫巴
+zh,Milligram,毫克
+zh,Milliliter,毫升
+zh,Millimeter,毫米
+zh,Millimeter of mercury,毫米汞柱
+zh,Minute,分钟
+zh,Moldavian Lei,摩尔多瓦雷
+zh,Mole - Substance (molecule),痣 - 物质（分子）
+zh,Mongolian Tugrik,蒙古图格里克
+zh,Month,月
+zh,Moroccan Dirham,摩洛哥迪拉姆
+zh,Mozambique Metical,莫桑比克梅蒂卡尔
+zh,Nepalese Rupee,尼泊尔卢比
+zh,New Israeli Shekel,以色列新谢克尔
+zh,New Taiwan Dollar,新台币
+zh,New Zealand Dollar,新西兰元
+zh,Nicaragua,尼加拉瓜
+zh,Nicaraguan Cordoba,尼加拉瓜科尔多瓦
+zh,Nigerian Naira,尼日利亚奈拉
+zh,North Korean Won,朝鲜元
+zh,Norwegian Krone,挪威克朗
+zh,Omani Rial,阿曼里亚尔
+zh,Ounce (avdp),盎司 (avdp)
+zh,Ounce (troy),盎司（金衡制）
+zh,Ounce per cubic inch ,每立方英寸盎司
+zh,Ounce per gallon (UK),盎司每加仑（英国）
+zh,Ounce per gallon (US),盎司每加仑（美国）
+zh,"Ounce, fluid (UK)",“盎司，流体（英国）”
+zh,"Ounce, fluid (US)",“盎司，流体（美国）”
+zh,Pakistan Rupee,巴基斯坦卢比
+zh,Panamanian Balboa,巴拿马巴波亚
+zh,Papua New Guinea Kina,巴布亚新几内亚基那
+zh,Paraguayan Guarani,巴拉圭瓜拉尼语
+zh,Pascal,帕斯卡
+zh,Pebibyte,派比字节
+zh,Pennyweight,便士
+zh,Per Person,每人
+zh,Percent,百分
+zh,Peru,秘鲁
+zh,Peruvian Inti,秘鲁因蒂
+zh,Peruvian Sol,秘鲁索尔
+zh,Peruvian Sol - New,秘鲁索尔 - 新
+zh,Petabyte,拍字节
+zh,Philippino Peso,菲律宾比索
+zh,Pibit,皮比特
+zh,Pica (type size),异食癖（字体大小）
+zh,Pint (UK),品脱（英国）
+zh,Pint (US),品脱（美国）
+zh,Point (type size),点数（字号）
+zh,Poland,波兰
+zh,Polish Zloty,波兰兹罗提
+zh,Pound (avdp),英镑 (avdp)
+zh,Pound per cubic foot,每立方英尺磅
+zh,Pound per cubic inch,磅每立方英寸
+zh,Pound per cubic yard,每立方码磅
+zh,Pound per gallon (UK),磅每加仑（英国）
+zh,Pound per gallon (US),磅每加仑（美国）
+zh,Pound per square foot,磅每平方英尺
+zh,Pound per square inch,磅每平方英寸
+zh,Qatar Riyal,卡塔尔里亚尔
+zh,Quart,夸脱
+zh,Revolutions Per Minute,每分钟转数
+zh,Rod,杆
+zh,Romanian Leu,罗马尼亚列伊
+zh,Russian Rouble,俄罗斯卢布
+zh,Russian Ruble (old),俄罗斯卢布（旧）
+zh,Rwanda Franc,卢旺达法郎
+zh,Samoan Tala,萨摩亚塔拉
+zh,Santo Domiongo,圣多明哥
+zh,Sao Tome / Principe Dobra,圣多美/普林西比多布拉
+zh,Saudi Riyal,沙特里亚尔
+zh,Score,分数
+zh,Second,第二
+zh,Seychelles Rupee,塞舌尔卢比
+zh,Singapore Dollar,新加坡元
+zh,Solomon Islands Dollar,所罗门群岛元
+zh,Somalian Shilling,索马里先令
+zh,South African Rand,南非兰特
+zh,South Korean Won,韩元
+zh,Square Centimeter,平方厘米
+zh,Square Foot,平方英尺
+zh,Square Inch,平方英寸
+zh,Square Kilometer,平方千米
+zh,Square Meter,平方米
+zh,Square Mile,平方英里
+zh,Square Millimeter,平方毫米
+zh,Square Rod,方杆
+zh,Square Yard,平方码
+zh,Sri Lankan Rupee,斯里兰卡卢比
+zh,St.Helena Pound,圣赫勒拿镑
+zh,Stere (cubic meter),立体（立方米）
+zh,Stone,石头
+zh,Sudanese Pound,苏丹镑
+zh,Surinam Guilder,苏里南荷兰盾
+zh,Swaziland Lilangeni,斯威士兰里兰吉尼
+zh,Swedish Krona,瑞典克朗
+zh,Swiss Franc,瑞士法郎
+zh,Syrian Pound,叙利亚镑
+zh,Tablespoon,汤匙
+zh,Tadzhikistani Ruble,塔吉克斯坦卢布
+zh,Tanzanian Shilling,坦桑尼亚先令
+zh,Teaspoon,茶匙
+zh,Tebibyte,泰比字节
+zh,Terabit,太比特
+zh,Terabit-per-second,每秒太比特
+zh,Terabyte,太字节
+zh,Thailand Baht,泰铢
+zh,Tibit,蒂比特
+zh,Timor Escudo,帝汶埃斯库多
+zh,Ton (long or British),吨（长或英式）
+zh,Ton (metric),吨（公制）
+zh,Ton (short),吨（短）
+zh,"Ton, long, per cubic yard",“吨，长，每立方码”
+zh,Tongan Pa'anga,汤加潘加
+zh,Torr,托
+zh,Trinidad and Tobago Dollar,特立尼达和多巴哥元
+zh,Tunisian Dinar,突尼斯第纳尔
+zh,Turkish Lira,土耳其里拉
+zh,Turkmenistani Manat,土库曼斯坦马纳特
+zh,Ugandan Shilling,乌干达先令
+zh,Ukrainian Hryvnia,乌克兰格里夫纳
+zh,United Arab Emirates Dirham,阿联酋迪拉姆
+zh,United States Dollar,美国美元
+zh,Uruguay,乌拉圭
+zh,Uruguayan New Peso,乌拉圭新比索
+zh,Vanuatu Vatu,瓦努阿图瓦图
+zh,Venezuelan Bolivar,委内瑞拉玻利瓦尔
+zh,Vietnamese Dong,越南盾
+zh,Watt,瓦
+zh,Week,星期
+zh,West Indian Guilder,西印度盾
+zh,Yard,院子
+zh,Year,年
+zh,Yemeni Ryal,也门里亚尔
+zh,Zaire,扎伊尔
+zh,Zambian Kwacha,赞比亚克瓦查
+zh,Zimbabwean Dollar,津巴布韦元
