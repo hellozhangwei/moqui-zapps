@@ -647,7 +647,7 @@ zh,Incoterm Delivered at Place,Incoterm 就地交付
 zh,Incoterm Delivered at Terminal,Incoterm 在码头交付
 zh,Incoterm Ex Works,Incoterm 出厂价
 zh,Incoterm Free Alongside Ship,Incoterm 免费随船
-zh,Incoterm Free Carrier,国际贸易术语自由承运人
+zh,Incoterm Free Carrier,国际贸易术语自由承运方
 zh,Incoterm Free On Board,Incoterm 船上免费
 zh,Indemnification,保障
 zh,Independent Of (Concurrent),独立于（并发）
@@ -1320,7 +1320,7 @@ zh,Shift - Weekend,轮班 - 周末
 zh,Shift Premium Earnings,转移保费收入
 zh,Ship Label From Company,公司发货标签
 zh,Ship Label From Name,从名称发货标签
-zh,Ship Restrict Carriers (true/false),船舶限制承运人（真/假）
+zh,Ship Restrict Carriers (true/false),限制承运方（真/假）
 zh,Shipment Default Gateway Config ID,货件默认网关配置 ID
 zh,Shipment Delivered,装运交付
 zh,Shipment Documents,装运文件
@@ -1406,7 +1406,7 @@ zh,Supporting Document,证明文件
 zh,Supporting Media,支持媒体
 zh,Surcharge,附加费
 zh,Surtax Employer,附加税雇主
-zh,Survey,民意调查
+zh,Survey,调查
 zh,Symptom,症状
 zh,System,系统
 zh,System Design,系统设计

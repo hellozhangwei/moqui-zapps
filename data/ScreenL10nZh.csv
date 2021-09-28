@@ -129,6 +129,7 @@ zh,Add Request,添加审批
 zh,Add Shipments,添加运单
 zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
+zh,Add Shipping Option,添加配送方法
 zh,Add Single Use Codes,添加单独用户代码
 zh,Add Store,添加店铺
 zh,Add Store Category,添加店铺分类
@@ -236,6 +237,7 @@ zh,Armenia,亚美尼亚
 zh,Aruba,阿鲁巴岛
 zh,Asc,升序
 zh,Asset,资产
+zh,Asset ${existingRes.assetId},资产${existingRes.assetId}
 zh,Asset ${resInfo.existingRes.assetId},资产${resInfo.existingRes.assetId}
 zh,Asset Adjustments,资产调整
 zh,Asset Allow Issue Over QOH,允许超QOH
@@ -375,9 +377,9 @@ zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Cape Verde,佛得角
 zh,Card Number,卡号
-zh,Carrier,承运人
-zh,Carrier Code,承运人代码
-zh,Carrier Party,承运人
+zh,Carrier,承运方
+zh,Carrier Code,承运方代码
+zh,Carrier Party,承运方
 zh,Carrier Ship Methods,配送方法
 zh,Carrier Shipment Methods,配送方法
 zh,Cash Flow,现金流
@@ -911,6 +913,7 @@ zh,Guinea-bissau,几内亚比绍
 zh,Guizhou,贵州省
 zh,Guyana,圭亚那
 zh,HH Warehouse,仓库PDA
+zh,HR,人力
 zh,HR Dashboard,人力仪表盘
 zh,Hainan,海南省
 zh,Haiti,海地
@@ -964,6 +967,7 @@ zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
 zh,Instrument,票据
+zh,Insurance Percent,保险百分比
 zh,Insurance Threshold,保险免赔额
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
@@ -1091,6 +1095,7 @@ zh,LotTitle,批次
 zh,Lots,批次
 zh,Luxembourg,卢森堡
 zh,MA Periods,移动平均线回顾期
+zh,MRP,制造
 zh,Macao,澳门特别行政区
 zh,Macau,澳门
 zh,"Macedonia, The Former Yugoslav Republic Of",马其顿，前南斯拉夫共和国
@@ -1377,7 +1382,7 @@ zh,Order Product Sales,产品销售额
 zh,Order Quantity,产品数量
 zh,Order Role Type ID,订单角色类型ID
 zh,Order Sent,订单发送
-zh,Order Ship By,承运人
+zh,Order Ship By,承运方
 zh,Order Source,订单渠道来源
 zh,Order Type,订单类型
 zh,OrderApproveCurrencyDifferent,付款单的货币${payment.amountUomId}与订单的货币${orderHeader.currencyUomId}不一致
@@ -1455,7 +1460,8 @@ zh,Package,包装箱
 zh,Package Tracking,包裹追踪
 zh,Packages,包装箱
 zh,Packed Date,打包日期
-zh,Packed/Issued,装箱/发行
+zh,Packed/Issued,已装箱/已发货
+zh,"Packed/Issued: ${ec.l10n.format(sid.quantityTotal ?: 0, '#.##')}, Remaining: ${ec.l10n.format(quantityPackRemaining, '#.##')}  (Unit: ${productUom?.description ?: 'N/A'})","已装箱/已发货: ${ec.l10n.format(sid.quantityTotal ?: 0, '#.##')}, 剩余: ${ec.l10n.format(quantityPackRemaining, '#.##')}  (单位: ${productUom?.description ?: 'N/A'})"
 zh,Packer,封隔器
 zh,Page,页面
 zh,Page #,页 #
@@ -1486,10 +1492,10 @@ zh,Part Status,拆单状态
 zh,Part Total,拆单总额
 zh,Partial,部分
 zh,Partial/None,部分/无
-zh,Parties,参与者
+zh,Parties,参与方
 zh,Parties Assigned,指派人
-zh,Party ID,参与者ID
-zh,"Party has no user accounts and no email address, cannot search for email messages",参与者没有账号或者邮件地址，找不到邮件消息。
+zh,Party ID,参与方ID
+zh,"Party has no user accounts and no email address, cannot search for email messages",参与方没有账号或者邮件地址，找不到邮件消息。
 zh,Password,密码
 zh,Password incorrect for username ${username},用户名或者密码错误。${username}
 zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
@@ -1792,6 +1798,7 @@ zh,Require Password Change,要求修改密码
 zh,Required By,要求日期
 zh,Required By Date,要求日期
 zh,Required parameter missing (${pi.name}),必填变量(${pi.name})缺失!
+zh,"Res: ${ec.l10n.format(existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(existingRes.quantityNotIssued, null)}","预约: ${ec.l10n.format(existingRes.quantity, null)}, 不可用: ${ec.l10n.format(existingRes.quantityNotAvailable, null)}, 未发货: ${ec.l10n.format(existingRes.quantityNotIssued, null)}"
 zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
 zh,Reserve,预约
@@ -1830,7 +1837,7 @@ zh,Return Type,退货类型
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Invoice,返回账单查询
 zh,Return to Find Order,返回订单查询
-zh,Return to Find Party,返回参与者查询
+zh,Return to Find Party,返回参与方查询
 zh,Return to Find Product,返回产品查询
 zh,Return to Find Shipment,返回运单查询
 zh,Return to Find Supplier,返回供应商查询
@@ -1988,7 +1995,7 @@ zh,Ship After,指定日期后
 zh,Ship After Date,指定日期之后发货
 zh,Ship Before,指定日期前
 zh,Ship Before Date,指定日期之后发货
-zh,Ship By,承运人
+zh,Ship By,承运方
 zh,Ship Calc,计算运费
 zh,Ship Insure Reqd,需要运费险
 zh,Ship Method,配送方式
@@ -2012,7 +2019,7 @@ zh,Shipments In,进货量
 zh,Shipments Out,出货量
 zh,Shipments To,出库单
 zh,Shipments To (${toShipmentCount}),发货单(${toShipmentCount})
-zh,Shipping,仓库作业
+zh,Shipping,配送
 zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,Shipping Address,配送地址
 zh,Shipping Address and Method,配送地址与方法
@@ -2125,8 +2132,8 @@ zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
 zh,These Roles enable system functionality when directly applied to a Party.,这些直接角色会触发系统的某些功能
 zh,This,当
-zh,This party has data merged from parties:,此参与者已合并自${party.mergedToPartyId}
-zh,This party was merged into ${party.mergedToPartyId},此参与者已被合并到${party.mergedToPartyId}
+zh,This party has data merged from parties:,此参与方已合并自${party.mergedToPartyId}
+zh,This party was merged into ${party.mergedToPartyId},此参与方已被合并到${party.mergedToPartyId}
 zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
 zh,Thread,线索
 zh,Thru,到
