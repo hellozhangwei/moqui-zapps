@@ -1376,6 +1376,7 @@ zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
 zh,Order PDF,订单PDF
 zh,Order Part,拆单
+zh,"Order Part ${orderPartInfo.orderPart.orderPartSeqId} Facility ${ec.resource.expand('FacilityNameTemplate', null, orderPartInfo.facility)}","拆单 ${orderPartInfo.orderPart.orderPartSeqId} 仓库 ${ec.resource.expand('FacilityNameTemplate', null, orderPartInfo.facility)}"
 zh,Order Parties,订单参与人
 zh,Order Party ID,订单参与人ID
 zh,Order Product Sales,产品销售额
@@ -2150,6 +2151,7 @@ zh,To,到
 zh,To Address,收件人
 zh,To Addresses,收件人
 zh,To assign check numbers select a bank account in From Payment Method (in Find Options).,要分配支票编号，请在“从付款方式”（在“查找选项”中）中选择一个银行帐户。
+zh,To Cancel,将取消
 zh,To Container,目的容器
 zh,To Location,目的位置
 zh,To Name,收件人
