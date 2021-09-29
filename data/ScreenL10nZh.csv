@@ -785,6 +785,7 @@ zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
 zh,Fee Fills,费用填写
+zh,Field,字段
 zh,Field Descriptions,字段描述
 zh,Field Name,字段名称
 zh,Field cannot be empty,输入不能为空
@@ -1389,6 +1390,7 @@ zh,Order Sent,订单发送
 zh,Order Ship By,承运方
 zh,Order Source,订单渠道来源
 zh,Order Type,订单类型
+zh,Order is not in Approved status,订单未被批准
 zh,OrderApproveCurrencyDifferent,付款单的货币${payment.amountUomId}与订单的货币${orderHeader.currencyUomId}不一致
 zh,OrderApproveNearOrder,"发现相同的订单${nearOrder.orderId}:${nearOrder.orderPartSeqId}。下单时间：${ec.l10n.format(nearOrder.placedDate, null)} (${ec.l10n.format(diffHours, '0.0')}h ${isFuture ? 'after' : 'before'})，数量： ${ec.l10n.format(nearItem.quantity, '0.##')} 产品 ${nearItem.productId}"
 zh,OrderApproveNewCustomer,客户${firstOrderPart.customerPartyId}是新客户
@@ -1492,6 +1494,7 @@ zh,Parent Path,父路径
 zh,Parent Sales Account,父公司
 zh,Parent Task,父任务
 zh,Part,拆单
+zh,Part/Item,拆单/条目
 zh,Part Status,拆单状态
 zh,Part Total,拆单总额
 zh,Partial,部分
@@ -1745,7 +1748,14 @@ zh,Recent Paid Receivables,最近到账应收款
 zh,Record,记录
 zh,Record Credit Memo,记录贷项凭证
 zh,Record Time,记录时间
+zh,Recur Schedule,循环周期
 zh,Recurring,循环
+zh,Last Ordered Date,上一次订购日期
+zh,Auto Invoice,自动创建发票
+zh,Last Ordered Date will be updated over time as recurring Order Clones are created.,随着重复克隆订单的创建，上次订购日期将随着时间的推移而更新。
+zh,If Last Ordered Date is empty the next Order Clone will be created with the next batch.,如果上次订购日期为空，则将使用下一批创建下一个订单克隆。
+zh,"To not create the next Order Clone until the scheduled time, set this to now or any time since the last scheduled time.",要在预定时间之前不创建下一个订单克隆，请将其设置为现在或自上次预定时间以来的任何时间。
+#zh,Recurring orders in the Approved status will be automatically cloned according to the schedule and the clone will be automatically Placed. If there are no Approve Warnings the cloned order will be automatically Approved. If Auto Invoice is set to Y then if Approved will also create an Invoice for the Order.,处于已批准状态的重复订单将根据时间表自动克隆，并且克隆将自动放置。 如果没有批准警告，克隆的订单将自动获得批准。 如果 Auto Invoice 设置为 Y，则如果 Approved 也会为订单创建发票。
 zh,Ref,参考
 zh,Ref Num,参考代码
 zh,Ref/Check,参考
@@ -2266,7 +2276,7 @@ zh,Vendor - Pick Up From,供应商 - 自提
 zh,Vendor - Ship From,供应商 - 发货地
 zh,Vendor Hour Rate,客户小时单价
 zh,Vendor Invoice,客户账单
-zh,Vendor Org,客户
+zh,Vendor Org,供应商
 zh,Vendor Warehouse,供应商仓库
 zh,Vendor/Org,供应商
 zh,Vendors,供应商
