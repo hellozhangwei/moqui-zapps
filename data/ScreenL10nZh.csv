@@ -1141,6 +1141,7 @@ zh,Meta Description,Meta描述
 zh,Meta Keywords,Meta关键字
 zh,Meta-Descriptionzh,Meta说明
 zh,Meter Name,仪表名称
+zh,Meter Value,仪表读数
 zh,Meter Readings,仪表读数
 zh,Meters,仪表
 zh,Mexico,墨西哥
@@ -1710,6 +1711,8 @@ zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
 zh,Re-post Invoice,重新过账账单
 zh,Re-post Payment and Applications,重新过账付款单应用
+zh,Read By,读表人
+zh,Reading Date,读日期
 zh,Ready Date,准备日期
 zh,Really hold order part?,确定要挂起拆单吗？
 zh,Reason,原因
