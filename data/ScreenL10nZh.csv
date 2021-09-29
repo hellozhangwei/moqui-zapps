@@ -493,6 +493,7 @@ zh,Count,数量
 zh,Country of Origin,源产地
 zh,Country/State,国家/省
 zh,Create Account,新账户
+zh,Create All Variants,创建全部变体
 zh,Create Bank Account,新建银行账号
 zh,Create Container,创建容器
 zh,Create Container ID,创建容器ID
@@ -635,7 +636,7 @@ zh,Desc,降序
 zh,Dest. Facility,收货仓
 zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
-zh,Detail,详细
+zh,Detail,详情
 zh,Detail History,详情历史
 zh,Detail Link Path,详情链接路径
 zh,Detail PDF,详情PDF
@@ -778,7 +779,8 @@ zh,Feature,特征
 zh,Feature 2,特征2
 zh,Feature Group,特征组
 zh,Feature Group ID,特征组ID
-zh,Feature Groups,特征组列表
+zh,Feature Group(s),特征组
+zh,Feature Groups,特征组
 zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
@@ -1080,7 +1082,7 @@ zh,Link,链接
 zh,List,列表
 zh,Lithuania,立陶宛
 zh,Loc Type,位置类型
-zh,Locale,地区
+zh,Locale,区域
 zh,Location,位置
 zh,Location Asset,库位资产
 zh,Location Types,位置类型
@@ -2254,6 +2256,7 @@ zh,Value entered ({0}) could not be converted to a {1}{2,choice
 zh,"Value entered ({0}) could not be converted to a {1}{2,choice,0#|1# using format [}{3}{2,choice,0#|1#]}","值 ({0}) 不能{2,choice,0#|1# 按照格式 [}{3}{2,choice,0#|1#]}{3}{2,choice,0#|1#]}转化为{1}"
 zh,Vanuatu,瓦努阿图
 zh,Variance Reason,差异原因
+zh,Variant Type,变体类型
 zh,Vendor,供应商
 zh,Vendor - Bill From,供应商 - 账单来自
 zh,Vendor - Pick Up From,供应商 - 自提
