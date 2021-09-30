@@ -197,6 +197,7 @@ zh,Amount Included,包含数量
 zh,Amount Total,总金额
 zh,Amount UOM,数量 单位
 zh,Amount/UOM,数量/单位
+zh,An Invoice will be generated for this Shipment when it is Packed and the Invoice Date will be set to the Packed Date.,此货件在包装时将生成发票，发票日期将设置为包装日期。
 zh,Andorra,安道尔
 zh,Angola,安哥拉
 zh,Anguilla,安圭拉
@@ -389,6 +390,7 @@ zh,Categories,分类
 zh,Category,分类
 zh,Category ID,分类ID
 zh,Category List,分类列表
+zh,Category Tree,分类树
 zh,Category Type,分类类型
 zh,CategoryTitle,分类
 zh,Catgories,分类
@@ -614,6 +616,7 @@ zh,Days Since Packed,自打包以来的天数
 zh,Debits,借
 zh,Decline,拒绝
 zh,Default Amount,默认数量
+zh,"Default Asset Owner (${ownerPartyId}) different from Facility owner (${destinationFacility.ownerPartyId}), if not consignment inventory change now",默认资产所有者 (${ownerPartyId}) 不同于设施所有者 (${destinationFacility.ownerPartyId})，如果不是寄售，库存会立即更改。
 zh,Default Assignee,默认受让人
 zh,Default Currency,默认货币
 zh,Default Days to Ship,默认发货天数
@@ -1867,6 +1870,7 @@ zh,Rev By,被冲销
 zh,Rev Of,冲销
 zh,Role,角色
 zh,Role Type,角色类型
+zh,Role Type ID,角色类型ID
 zh,Roles,角色
 zh,"Roles applied directly describe how the system should treat the Party, or what the Party is to users of the system.",应用直接角色会影响系统应该如何对待当事人，或者当事人在系统中是什么样的用户。
 zh,Romania,罗马尼亚
@@ -2153,7 +2157,7 @@ zh,This party was merged into ${party.mergedToPartyId},此参与方已被合并�
 zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
 zh,Thread,线索
 zh,Thru,到
-zh,Thru Date,终了日
+zh,Thru Date,终止日期
 zh,Tianjin,天津市
 zh,Time,考勤
 zh,Time Entries,工时记录
@@ -2298,6 +2302,7 @@ zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse Assets,仓库资产
 zh,Warning: destination address is incomplete or invalid according to address validation.,警告：目的地址不完整或这无效。
+zh,WARNING: items added this way will not be associated with an order and will not count toward order item shipped quantity.,警告：以这种方式添加的商品不会与订单关联，也不会计入订单商品的发货数量。
 zh,Was Stored At,原存放
 zh,Watcher,守望者
 zh,Web Master,网站管理员
