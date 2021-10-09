@@ -2036,15 +2036,16 @@ Vue.component('m-subscreens-active', {
 
 Vue.component('m-menu-tree', {
     name: "mMenuTree",
-    data: function() { return { menuTreeData: {}, showSpinner:true } },
+    //data: function() { return { menuTreeData: {}, showSpinner:true } },
+    props: { menuTreeData: {}, showSpinner:true},
     template:'<div><q-spinner v-if="showSpinner" color="primary" size="3em"/><m-menu-tree-item :menuItems="menuTreeData.subscreens"></m-menu-tree-item></div>' ,
     beforeCreate: function() {
-        var vm = this;
+        /*var vm = this;
         $.ajax({ type:"GET", url:"/zapps/menuTreeData", dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
             //console.log("menuTreeData= " + outerListText);
             vm.menuTreeData = outerListText
             vm.showSpinner = false;
-        }});
+        }});*/
     }
 });
 
@@ -2150,7 +2151,7 @@ Vue.component('m-menu-item-content', {
 moqui.webrootVue = new Vue({
     el: '#apps-root',
     data: { basePath:"", linkBasePath:"", currentPathList:[], extraPathList:[], currentParameters:{}, bodyParameters:null,
-        activeSubscreens:[], navMenuList:[], navHistoryList:[], navPlugins:[], accountPlugins:[], notifyHistoryList:[],
+        activeSubscreens:[], navMenuList:[], menuTreeData:[], navHistoryList:[], navPlugins:[], accountPlugins:[], notifyHistoryList:[],
         lastNavTime:Date.now(), loading:0, currentLoadRequest:null, activeContainers:{},
         moquiSessionToken:"", appHost:"", appRootPath:"", userId:"", locale:"en",
         notificationClient:null, qzVue:null, leftOpen:false, moqui:moqui, miniState:false },
@@ -2200,6 +2201,12 @@ moqui.webrootVue = new Vue({
                         if (onComplete) vm.callOnComplete(onComplete, redirectedFrom);
                         /* console.info('navMenuList ' + JSON.stringify(outerList)); */
                     }
+                }});
+
+                //console.log("=============appMenuDataUrl==========" + screenUrl.slice(this.appRootPath.length))
+                $.ajax({ type:"GET", url:"/zapps/menuTreeData" + screenUrl.slice(this.appRootPath.length), dataType:"JSON", error:moqui.handleAjaxError, success: function(outerListText) {
+                    vm.menuTreeData = outerListText
+                    //vm.showSpinner = false;
                 }});
 
                 // set the window URL

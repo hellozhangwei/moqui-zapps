@@ -15,8 +15,8 @@ along with this software (see the LICENSE.md file). If not, see
     <input type="hidden" id="confMoquiSessionToken" value="${ec.web.sessionToken}">
     <input type="hidden" id="confAppHost" value="${ec.web.getHostName(true)}">
     <input type="hidden" id="confAppRootPath" value="${ec.web.servletContext.contextPath}">
-    <#--<input type="hidden" id="confBasePath" value="${ec.web.servletContext.contextPath}/apps">-->
-    <input type="hidden" id="confBasePath" value="${zapps_root_app_path}">
+    <input type="hidden" id="confBasePath" value="${ec.web.servletContext.contextPath}/apps">
+<#--    <input type="hidden" id="confBasePath" value="${zapps_root_app_path}">-->
     <input type="hidden" id="confLinkBasePath" value="${ec.web.servletContext.contextPath}/zapps">
     <input type="hidden" id="confUserId" value="${ec.user.userId!''}">
     <input type="hidden" id="confLocale" value="${ec.user.locale.toLanguageTag()}">
@@ -49,7 +49,7 @@ along with this software (see the LICENSE.md file). If not, see
             <q-toolbar-title>${ec.resource.expand(headerTitleList?first, "")}</q-toolbar-title>
             </#if>
             -->
-            <q-toolbar-title><template v-if="navMenuList[0]">{{navMenuList[0].title}}</template></q-toolbar-title>
+            <q-toolbar-title><template v-if="navMenuList[1]">{{navMenuList[1].title}}</template></q-toolbar-title>
             <#-- NOTE: tried using q-breadcrumbs but last item with q-breadcrumbs--last class makes never clickable! -->
             <#--
             <template v-for="(navMenuItem, menuIndex) in navMenuList"><template v-if="menuIndex < (navMenuList.length - 1)">
@@ -166,134 +166,19 @@ along with this software (see the LICENSE.md file). If not, see
             </q-btn>
         </q-toolbar></q-header>
 
-<!--
-<q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200" :breakpoint="500" bordered content-class="bg-grey-1">
--->
+        <q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-3">
+            <q-scroll-area class="fit">
+                <q-list padding>
+                    <#--{{menuTreeData}}-->
+                    <m-menu-tree :menu-tree-data="menuTreeData" :show-spinner="loading"></m-menu-tree>
+                    <#--<m-menu-tree></m-menu-tree>-->
+                </q-list>
+            </q-scroll-area>
 
-<q-drawer v-model="leftOpen" :mini="leftOpen && miniState" :width="200" :breakpoint="500" bordered content-class="bg-grey-3">
-    <q-scroll-area class="fit">
-        <q-list padding>
-            <m-menu-tree></m-menu-tree>
-
-          <#--
-          <template v-if="navMenuList[0]">
-                <template v-for="(subscreen, subscreenIndex) in navMenuList[0].subscreens" >
-
-            <template v-if="navMenuList[1]">
-                <template v-for="(subscreen, subscreenIndex) in navMenuList[1].subscreens" >
-                    <q-item clickable v-ripple :active="subscreen.active" :to="subscreen.pathWithParams">
-                        <q-item-section avatar>
-                            <q-icon :name="(subscreen.imageType == 'icon')?subscreen.image:'img:' + subscreen.image"></q-icon>
-                        </q-item-section>
-                        <q-item-section>{{subscreen.title}}</q-item-section>
-                    </q-item>
-                    <q-separator></q-separator>
-                </template>
-            </template>
-            -->
-
-<!--
-            <q-item clickable v-ripple to="/zapps/PopcAdmin/Order/FindOrder" :active="1 === 1">
-                <q-item-section avatar>
-                    <q-icon name="o_assignment" />
-                </q-item-section>
-
-                <q-item-section>
-                    销售订单
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item active clickable v-ripple to="/qapps/PopcAdmin/Customer/FindCustomer">
-                <q-item-section avatar>
-                    <q-icon name="o_group" />
-                </q-item-section>
-
-                <q-item-section>
-                    客户管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Catalog/Product/FindProduct">
-                <q-item-section avatar>
-                    <q-icon name="o_category" />
-                </q-item-section>
-
-                <q-item-section>
-                    产品管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Asset/Asset/FindAsset">
-                <q-item-section avatar>
-                    <q-icon name="o_apartment" />
-                </q-item-section>
-
-                <q-item-section>
-                    库存管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Order/FindOrder">
-                <q-item-section avatar>
-                    <q-icon name="o_assignment_returned"/>
-                </q-item-section>
-
-                <q-item-section>
-                    采购管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Supplier/FindSupplier">
-                <q-item-section avatar>
-                    <q-icon name="o_local_offer" />
-                </q-item-section>
-
-                <q-item-section>
-                    供应商管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Manufacturing/Run/FindRun">
-                <q-item-section avatar>
-                    <q-icon name="o_room_preferences" />
-                </q-item-section>
-
-                <q-item-section>
-                    生产管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/PopcAdmin/Accounting/dashboard">
-                <q-item-section avatar>
-                    <q-icon name="o_account_balance" />
-                </q-item-section>
-
-                <q-item-section>
-                    财务管理
-                </q-item-section>
-            </q-item>
-            <q-separator></q-separator>
-            <q-item clickable v-ripple to="/qapps/system/dashboard">
-                <q-item-section avatar>
-                    <q-icon name="o_settings" />
-                </q-item-section>
-
-                <q-item-section>
-                    系统管理
-                </q-item-section>
-            </q-item>-->
-        </q-list>
-    </q-scroll-area>
-
-    <!--
-      in this case, we use a button (can be anything)
-      so that user can switch back
-      to mini-mode
-    -->
-    <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -14px">
-        <q-btn size="xs" round unelevated color="grey-4" text-color="grey" :icon="miniState?'chevron_right':'chevron_left'" @click="toggleMiniState"/>
-    </div>
-</q-drawer>
+            <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -14px">
+                <q-btn size="xs" round unelevated color="grey-4" text-color="grey" :icon="miniState?'chevron_right':'chevron_left'" @click="toggleMiniState"/>
+            </div>
+        </q-drawer>
 
         <q-page-container><q-page>
             <div class="q-pa-md" style="border-bottom: 1px solid rgba(0,0,0,0.12);">

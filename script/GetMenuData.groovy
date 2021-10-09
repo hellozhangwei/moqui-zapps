@@ -8,21 +8,27 @@ import org.moqui.impl.screen.ScreenDefinition.SubscreensItem
 
 @Field Logger logger = LoggerFactory.getLogger("GetMenuData")
 
-List menuDataList = sri.getMenuData(sri.screenUrlInfo.extraPathNameList)
-// sri.screenUrlInfo.extraPathNameList sample [apps, marble, Catalog, Product, FindProduct]
-//logger.info("================sri.screenUrlInfo.extraPathNameList========${sri.screenUrlInfo.extraPathNameList}=")
+//logger.info("=============sri.screenUrlInfo.extraPathNameList=========" + sri.screenUrlInfo.extraPathNameList)
+ScreenDefinition appsScreenDef = sri.sfi.getScreenDefinition("component://webroot/screen/webroot/apps.xml")
+def currentScreenDef = appsScreenDef
+def currentScreenPath = "/apps"
 
-//ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition("component://MarbleERP/screen/marble.xml")
-//def currentScreenPath = "/apps/marble"
+def subscreensItems = appsScreenDef.getSubscreensItemsSorted()
+def pathNameList = sri.screenUrlInfo.extraPathNameList
 
-//ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition("component://webroot/screen/webroot/apps.xml")
-//def currentScreenPath = "/apps"
-
-//ScreenDefinition currentScreenDef =sri.getRootScreenDef()
-//def currentScreenPath = ""
-
-ScreenDefinition currentScreenDef = sri.sfi.getScreenDefinition(zapps_root_app)
-def currentScreenPath = zapps_root_app_path
+//pathNameList is like [apps, wesys, dashboard]
+//find current active app
+if(pathNameList.size()>1) {
+    for(SubscreensItem subscreensItem:subscreensItems){
+        def appName = pathNameList[1]
+        //println ("===============appName===${appName}=========subscreensItem.name===${subscreensItem.name}==")
+        if(subscreensItem.name==appName) {
+            currentScreenDef = sri.sfi.getScreenDefinition(subscreensItem.location)
+            currentScreenPath = "/apps" + "/" + appName
+            break
+        }
+    }
+}
 
 def rootScreenMap = [:]
 rootScreenMap.name = currentScreenDef.getDefaultMenuName()
@@ -35,7 +41,7 @@ rootScreenMap.renderModes = currentScreenDef.renderModes
 getSubscreens(rootScreenMap)
 
 //menuDataList[0].subscreens = rootScreenMap.subscreens
-if (menuDataList != null) ec.web.sendJsonResponse(rootScreenMap)
+ec.web.sendJsonResponse(rootScreenMap)
 
 def getSubscreens(appsMenu) {
 
