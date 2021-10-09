@@ -216,6 +216,7 @@ zh,Appl. Type,应用类型
 zh,Applicable Payments,可核销付款单
 zh,Applicable Unpaid Invoices,可核销未付账单
 zh,Application,程序
+zh,Applications,应用
 zh,Applied,已应用
 zh,"Applied ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}, Unapplied ${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}","已核销 ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}，未核销${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}"
 zh,Applied Payments,已核销
