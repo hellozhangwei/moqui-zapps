@@ -18,6 +18,7 @@ along with this software (see the LICENSE.md file). If not, see
 
     <always-actions>
 
+       <!--
         <set field="zapps_root_app" value="component://webroot/screen/webroot/apps.xml"/>
         <set field="zapps_root_app_path" value="/apps"/>
 
@@ -32,7 +33,7 @@ along with this software (see the LICENSE.md file). If not, see
         <if condition="zappsRootAppEnum &amp;&amp; zappsRootAppPathEnum">
             <set field="zapps_root_app" from="zappsRootAppEnum.description"/>
             <set field="zapps_root_app_path" from="zappsRootAppPathEnum.description"/>
-        </if>
+        </if>-->
 
     </always-actions>
 
