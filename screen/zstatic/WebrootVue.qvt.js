@@ -2311,7 +2311,7 @@ moqui.webrootVue = new Vue({
         },
         stopProp: function (e) { e.stopPropagation(); },
         getNavHref: function(navIndex) {
-            if (!navIndex) navIndex = this.navMenuList.length - 1;
+            //if (!navIndex) navIndex = this.navMenuList.length - 1; //if navIndex==0, navIndex = [this.navMenuList.length - 1], this is not expected
             var navMenu = this.navMenuList[navIndex];
             if (navMenu.extraPathList && navMenu.extraPathList.length) {
                 var href = navMenu.path + '/' + navMenu.extraPathList.join('/');
