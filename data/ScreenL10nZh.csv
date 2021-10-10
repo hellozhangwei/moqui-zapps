@@ -236,6 +236,9 @@ zh,Are you sure you want to cancel this shipment?,确定要取消这个运单吗
 zh,Area Code,区号
 zh,Argentina,阿根廷
 zh,Armenia,亚美尼亚
+zh,Artifact Bins,构件箱
+zh,Artifact Stats,构件统计
+zh,Artifact Summary,构件摘要
 zh,Aruba,阿鲁巴岛
 zh,Asc,升序
 zh,Asset,资产
@@ -363,6 +366,7 @@ zh,Burundi,布隆迪
 zh,Business Analyst,业务分析师
 zh,Buyer,买方
 zh,CSV,CSV
+zh,Cache,缓存
 zh,Calc Price,计算的价格
 zh,Calendar,日历
 zh,Cambodia,柬埔寨
@@ -605,9 +609,11 @@ zh,DashboardSurvey,调查问卷
 zh,DashboardTitle,首页
 zh,DashboardWikiBlogs,Wiki博客
 zh,DashboardWikiContent,Wiki内容
+zh,Data Document,数据文档
 zh,Data Source,数据源
 zh,Data Source ID,数据源ID
 zh,Data Source Type,数据源类型
+zh,Data View,数据视图
 zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
@@ -685,9 +691,11 @@ zh,Edit Equipment,编辑设备
 zh,Edit Lots,编辑批次
 zh,Edit Note,编辑备注
 zh,Edit Part,编辑拆单
+zh,Edit Party,编辑参与方
 zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
 zh,Edit Payment ${partPaymentInfo.partPayment.paymentId},编辑付款单${partPaymentInfo.partPayment.paymentId}
 zh,Edit Physical Inventory,编辑库存盘点
+zh,Edit Request,编辑审批
 zh,Edit Shipment,编辑运单
 zh,Edit Vendor,编辑供应商
 zh,Edit Wiki Page,编辑维基页面
@@ -716,6 +724,7 @@ zh,Enter Setting,新建
 zh,Enter Store Setting,新建店铺配置
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
 zh,Enterprise,企业
+zh,Entity Sync,实体同步
 zh,Entry,登记
 zh,Entry Date,创建日期
 zh,Equals,等于
@@ -925,6 +934,7 @@ zh,HR Dashboard,人力仪表盘
 zh,Hainan,海南省
 zh,Haiti,海地
 zh,Has Role,角色包括
+zh,Hazelcast Info,Hazelcast信息
 zh,Header Image Path,头部图片地址
 zh,Heard And Mc Donald Islands,赫德和麦克唐纳德群岛
 zh,Hebei,河北省
@@ -973,6 +983,7 @@ zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
+zh,Instances,实例
 zh,Instrument,票据
 zh,Insurance Percent,保险百分比
 zh,Insurance Threshold,保险免赔额
@@ -1088,10 +1099,12 @@ zh,List,列表
 zh,Lithuania,立陶宛
 zh,Loc Type,位置类型
 zh,Locale,区域
+zh,Localization,本地化
 zh,Location,位置
 zh,Location Asset,库位资产
 zh,Location Types,位置类型
 zh,Locations,位置
+zh,Log Viewer,日志查看器
 zh,Longitude,经度
 zh,Look Back Days,回顾天数
 zh,Lookup Asset,查找资产
@@ -1605,6 +1618,7 @@ zh,Price,价格
 zh,Price History,价格历史
 zh,Prices,价格
 zh,Primary Entity,主实体
+zh,Print,打印
 zh,Priority,优先级
 zh,Priority:,优先级:
 zh,Process Item Responses,处理条目响应
@@ -1756,6 +1770,7 @@ zh,Recur Schedule,循环周期
 zh,Recurring,循环
 zh,Last Ordered Date,上一次订购日期
 zh,Auto Invoice,自动创建发票
+zh,Auto Screen,自动屏幕
 zh,Last Ordered Date will be updated over time as recurring Order Clones are created.,随着重复克隆订单的创建，上次订购日期将随着时间的推移而更新。
 zh,If Last Ordered Date is empty the next Order Clone will be created with the next batch.,如果上次订购日期为空，则将使用下一批创建下一个订单克隆。
 zh,"To not create the next Order Clone until the scheduled time, set this to now or any time since the last scheduled time.",要在预定时间之前不创建下一个订单克隆，请将其设置为现在或自上次预定时间以来的任何时间。
@@ -1832,6 +1847,7 @@ zh,Reset Selections,重置选择
 zh,Reset to Default,重置到默认
 zh,Resolution,解决
 zh,Resolution:,解决:
+zh,Resource Finder,资源管理器
 zh,Resp Code,响应代码
 zh,Response,响应
 zh,Response Amount,响应数量
@@ -1955,6 +1971,7 @@ zh,Search String Reference,搜索字符串参考
 zh,Search Vendors,搜索供应商
 zh,Search or Lookup by ID,全文检索或查找ID
 zh,SearchProductsTitle,批处理
+zh,Security,安全
 zh,Security Groups,安全组
 zh,Select,选择
 zh,Select Address,选择地址
@@ -1983,6 +2000,7 @@ zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serbia,塞尔维亚
 zh,Serial Number,序列号
+zh,Service Jobs,服务任务
 zh,Set,设置
 zh,Set Assignee,设置指派人
 zh,Set Authorized,设置为已验证
@@ -2123,6 +2141,7 @@ zh,System Administrator,系统管理员
 zh,System Architect,系统架构师
 zh,System Email,系统邮箱
 zh,SystemTitle,系统管理
+zh,Sys-Sys Messages,系统消息
 zh,TX,账目
 zh,TX Date,凭证日期
 zh,TX Entries,账目
@@ -2200,6 +2219,7 @@ zh,Transaction Entries,凭证分录
 zh,Transaction Reports,总帐交易报表
 zh,Transactions,会计凭证
 zh,Transfer Shipment List,调拨单列表
+zh,Thread List,线程列表
 zh,Trinidad And Tobago,特立尼达和多巴哥
 zh,Truck / Equipment,卡车/设备
 zh,Tunisia,突尼斯
@@ -2298,6 +2318,7 @@ zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Visibility,可见性
 zh,Visitor,游客
+zh,Visits,访问
 zh,Void Payment and Invoices,取消付款与账单应用
 zh,WH/Line,仓库/产线
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
