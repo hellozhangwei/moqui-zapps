@@ -830,7 +830,10 @@ zh,Find Entries,查询分录
 zh,Find Facility,设施查询
 zh,Find Feature,特征查询
 zh,Find Feature Group,特征组查询
+zh,Find Financial Account,金融账户查询
 zh,Find Individual Assets,资产明细查询
+zh,Find Invoice,账单查询
+zh,Find Gl Account,科目查询
 zh,Find Options,查找选项
 zh,Find Options required to view results,必须输入查询条件进行查找
 zh,Find Order,订单查询
@@ -843,10 +846,14 @@ zh,Find Product Store,店铺查询
 zh,Find Project,项目查询
 zh,Find Request,审批查询
 zh,Find Shipment,运单查询
+zh,Find Shipments,运单查询
 zh,Find Summary,摘要查询
+zh,Find Survey,问卷查询
 zh,Find Supplier,供应商查询
 zh,Find Task,任务查询
-zh,Find Tasks,查询任务
+zh,Find Tasks,任务查询
+zh,Find Time Period,期间查询
+zh,Find Transaction,凭证查询
 zh,FindSalesOrdersLink,销售订单
 zh,Finland,芬兰
 zh,First Name,姓
@@ -974,6 +981,7 @@ zh,"In-Process, Finalized, Sent, Acknowledged, Payment Received",处理中、已
 zh,Inactive Tasks,非活动任务
 zh,Income Statement,损益表
 zh,Incoming Refund Payments,收入退款
+zh,Incoming Shipments,入库单
 zh,"Incoming, Received, Approved, Payment Sent",收到、已收到、已批准、已付款
 zh,Index Space Pages,索引空间页面
 zh,India,印度
@@ -1109,7 +1117,9 @@ zh,Longitude,经度
 zh,Look Back Days,回顾天数
 zh,Lookup Asset,查找资产
 zh,Lookup by ID,按ID查找
+zh,"Lookup by ID for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Picklist, Production Run), GL Transaction",按ID查找:资产、设施、发票、订单、退货单、参与方、徽章、付款单、产品、运单、拣货单、生产计划
 zh,Lot,批次
+zh,Lot ID,批次ID
 zh,Lot Number,批次
 zh,LotTitle,批次
 zh,Lots,批次
@@ -1460,6 +1470,7 @@ zh,Other Receipts,其他入库
 zh,Other Role,其他角色
 zh,Outgoing,出去的
 zh,Outgoing Refund Payments,支出退款
+zh,Outgoing Shipments,出库单
 zh,Output,输出
 zh,Override (Cash) GL Account,覆盖（现金）科目
 zh,Override GL Account,覆盖GL科目
@@ -1813,6 +1824,7 @@ zh,Replacement Order,换货订单
 zh,Replacement Product,换货
 zh,Reply,回复
 zh,Report Builder,报表设计器
+zh,Report List,报表查询
 zh,Reporter,记者
 zh,Reports,报表
 zh,ReportsTitle,报表
@@ -2337,6 +2349,7 @@ zh,Wholesale - Professional,批发 - 专业
 zh,Wholesale - Retail Store,批发 - 零售店
 zh,Width,宽度
 zh,Wiki,维基
+zh,Wiki Blogs,维基博客
 zh,Wiki Blog Posts,维基博客文章
 zh,Wiki Page,维基页面
 zh,Wiki Pages,维基页面
