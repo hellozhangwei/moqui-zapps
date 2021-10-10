@@ -1,0 +1,42 @@
+moqui.basic.LocalizedMessage,demo
+locale,original,localized
+zh,Default Invoice Product Store ID,默认发票产品商店ID
+zh,Default Shipment Gateway Config ID,默认发货网关配置ID
+zh,Newer Inventory each Order,每个订单的新库存
+zh,Party Identification Type to use for Employees,用于员工的参与方标识类型
+zh,Payroll FLSA - Workday Begins At,工资单 FLSA - 工作日开始于
+zh,Payroll FLSA - Workweek Begins On,薪资 FLSA - 工作周开始
+zh,Payroll MWG - Calc Grouping,薪资 MWG - 计算分组
+zh,Payroll MWG - Calc Period,工资 MWG - 计算期
+zh,Payroll MWG - Check Hourly Entries,工资 MWG - 检查每小时条目
+zh,Payroll MWG - Check Minimum Wage,薪资 MWG - 检查最低工资
+zh,Payroll MWG - Makeup Group By Rate,工资 MWG - 化妆组按费率
+zh,Payroll OT - Double Time Premium,工资单 OT - 双倍时间保费
+zh,Payroll OT - Hourly if no RRP,工资 OT - 如果没有 RRP，则按小时计算
+zh,Payroll OT - Hourly use RRP,工资单 OT - 每小时使用 RRP
+zh,Payroll OT - Overtime Premium,薪资 OT - 加班费
+zh,Payroll RRP - Calc Period,薪资 RRP - 计算期
+zh,Payroll RRP - Exclude Breaks/NPT,薪资 RRP - 不包括中断/NPT
+zh,Payroll RRP - Include Hourly Pay,薪资 RRP - 包括时薪
+zh,Payroll RRP - Include Shift Differentials,薪资 RRP - 包括轮班差异
+zh,Payroll RRP - Pay Max(Hourly/RRP) on Piece Break,薪资 RRP - 计件时支付最高（每小时/RRP）
+zh,Payroll RRP - Pay RRP on Hourly Break/NPT,工资 RRP - 每小时休息/ NPT 支付 RRP
+zh,Payroll Stub - Combine Break/Hourly,工资存根 - 结合休息时间/小时
+zh,Payroll WC - Default Overrides Work Type,薪资 WC - 默认覆盖工作类型
+zh,Payroll WC - Default Risk Class,薪资 WC - 默认风险等级
+zh,Payroll WC - Include OT Premiums,工资 WC - 包括 OT 保费
+zh,Payroll WC - Include Shift Diff Premiums,薪资 WC - 包括轮班差异保费
+zh,Require Signature,需要签名
+zh,Single Lot per Order,每单单批
+zh,Template Location Financial Account Statement,模板位置财务帐户报表
+zh,Template Location Invoice Print,模板位置发票打印
+zh,Template Location Order Print,模板位置订单打印
+zh,Template Location Payment Check,模板位置付款支票
+zh,Template Location Payment Detail,模板位置付款明细
+zh,Template Location Receivable Statement,模板位置应收账款报表
+zh,Template Location Shipment By Package,模板位置按包裹发货
+zh,Template Location Shipment Insert,模板位置货件插入
+zh,Template Location Shipment Pack Sheet,模板位置装运包表
+zh,Template Location Shipment Pick Sheet,模板位置发货拣选表
+zh,Validate Address Gateway Config ID,验证地址网关配置 ID
+zh,Vault Payment Gateway Config ID,Vault 支付网关配置 ID
