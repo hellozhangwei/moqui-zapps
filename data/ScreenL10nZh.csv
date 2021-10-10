@@ -1,4 +1,4 @@
-moqui.basic.LocalizedMessage,demo
+moqui.basic.LocalizedMessage,seed
 locale,original,localized
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction",资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证
@@ -404,6 +404,7 @@ zh,Central African Republic,中非共和国
 zh,Chad,乍得
 zh,Change,改变
 zh,Change Password,修改密码
+zh,Change status to ${statusTransition.description}?,修改状态到【${statusTransition.description}】?
 zh,Check Num,检查数量
 zh,Check PDF,支票PDF
 zh,Check Reservations,检查预留
