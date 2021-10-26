@@ -55,6 +55,7 @@ zh,Actions,操作
 zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
 zh,Active Saved Find:,当前使用的查找:
 zh,Active Tasks,活动任务
+zh,Active Users,活动用户
 zh,Active Warehouse,当前仓库
 zh,Actual (d),实际天数
 zh,Actual (h),实际小时
@@ -237,8 +238,11 @@ zh,Area Code,区号
 zh,Argentina,阿根廷
 zh,Armenia,亚美尼亚
 zh,Artifact Bins,构件箱
+zh,Artifact Groups,构件组
 zh,Artifact Stats,构件统计
 zh,Artifact Summary,构件摘要
+zh,Artifact Hit Bins,构件点击箱
+zh,Artifact Hit Summary,构件点击摘要
 zh,Aruba,阿鲁巴岛
 zh,Asc,升序
 zh,Asset,资产
@@ -305,7 +309,7 @@ zh,Avg,平均
 zh,"Avg Rate ${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}","平均单价${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}"
 zh,Azerbaijan,阿塞拜疆
 zh,Back to Find Blog Post,返回到博客文章查询
-zh,Bad Actor (Banned),坏演员（被禁）
+zh,Bad Actor (Banned),危险分子（被禁）
 zh,Bahamas,巴哈马
 zh,Bahrain,巴林
 zh,Balance,余额
@@ -367,6 +371,8 @@ zh,Business Analyst,业务分析师
 zh,Buyer,买方
 zh,CSV,CSV
 zh,Cache,缓存
+zh,Cache List,缓存列表
+zh,Cache Mgmt,缓存管理
 zh,Calc Price,计算的价格
 zh,Calendar,日历
 zh,Cambodia,柬埔寨
@@ -610,11 +616,17 @@ zh,DashboardSurvey,调查问卷
 zh,DashboardTitle,首页
 zh,DashboardWikiBlogs,Wiki博客
 zh,DashboardWikiContent,Wiki内容
+zh,Data Admin,数据管理
 zh,Data Document,数据文档
+zh,Data Documents and Feeds,文档与数据
+zh,Data Export,数据倒出
+zh,Data Import,数据导入
+zh,Data Snapshots,数据快照
 zh,Data Source,数据源
 zh,Data Source ID,数据源ID
 zh,Data Source Type,数据源类型
 zh,Data View,数据视图
+zh,Data Views,数据视图
 zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
@@ -684,6 +696,7 @@ zh,Ecuador,厄瓜多尔
 zh,Edit,编辑
 zh,Edit Asset,编辑资产
 zh,Edit Attachment,编辑附件
+zh,Edit and Report Builder,文档编辑器
 zh,Edit Blog Post,编辑博客文章
 zh,Edit Blog Posts,编辑博客文章
 zh,Edit Client,编辑客户
@@ -725,7 +738,10 @@ zh,Enter Setting,新建
 zh,Enter Store Setting,新建店铺配置
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
 zh,Enterprise,企业
+zh,Entity Data Sync,实体数据同步
 zh,Entity Sync,实体同步
+zh,Entity Tools,实体工具
+zh,Entities,实体
 zh,Entry,登记
 zh,Entry Date,创建日期
 zh,Equals,等于
@@ -770,6 +786,7 @@ zh,Expenses,费用
 zh,Expert User,专家用户
 zh,Expiration,过期时间
 zh,Expire Date,过期时间
+zh,Export,导出
 zh,Export Fixed-Width Plain Text,导出固定宽度纯文本
 zh,Export Text,导出文本
 zh,Extension,扩展
@@ -799,6 +816,7 @@ zh,Feature ID,特征ID
 zh,Feature Type,特征类型
 zh,Features,特征
 zh,Fee Fills,费用填写
+zh,Feed Index,数据索引
 zh,Field,字段
 zh,Field Descriptions,字段描述
 zh,Field Name,字段名称
@@ -906,6 +924,7 @@ zh,Gateway Responses,网关响应
 zh,Gateway Type,网关类型
 zh,Gateways,网关
 zh,General Ledger,总账
+zh,General Tools,一般工具
 zh,Generate PDF,生成PDF文件
 zh,Georgia,乔治亚州
 zh,Germany,德国
@@ -976,6 +995,7 @@ zh,Identification,唯一标识
 zh,"If Quantity is less that current then asset records will be adjusted down oldest first, if greater then adjusted up newest first.",如果数量小于当前，则向下调整最早的资产记录。如果大于，则向上调整最新的资产记录。
 zh,Ignore Case,忽略大小写
 zh,Immediate?,立即？
+zh,Import,导入
 zh,In Planning - ${pstats.taskCountByStatusMap.WeInPlanning?:0},计划中 - ${pstats.taskCountByStatusMap.WeInPlanning?:0}
 zh,In Progress - ${pstats.taskCountByStatusMap.WeInProgress?:0},进行中 - ${pstats.taskCountByStatusMap.WeInProgress?:0}
 zh,"In-Process, Finalized, Sent, Acknowledged, Payment Received",处理中、已完成、已发送、已确认、已到款
@@ -984,6 +1004,7 @@ zh,Income Statement,损益表
 zh,Incoming Refund Payments,收入退款
 zh,Incoming Shipments,入库单
 zh,"Incoming, Received, Approved, Payment Sent",收到、已收到、已批准、已付款
+zh,Index,索引
 zh,Index Space Pages,索引空间页面
 zh,India,印度
 zh,Individual Assets,资产明细
@@ -992,10 +1013,12 @@ zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
+zh,Instance Mgmt,实例管理
 zh,Instances,实例
 zh,Instrument,票据
 zh,Insurance Percent,保险百分比
 zh,Insurance Threshold,保险免赔额
+zh,Integration Admin,集成管理
 zh,Internal Comments,内部注释
 zh,Internal Organization,内部组织
 zh,Internal Organization Relationships,内部组织关系
@@ -1067,6 +1090,8 @@ zh,Japan,日本
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
+zh,Jobs,任务
+zh,Jobs Runs,任务运行
 zh,Jordan,约旦
 zh,Journal,日记
 zh,Journal Name,日记账名称
@@ -1077,6 +1102,8 @@ zh,"Korea, Democratic People's Republic Of",朝鲜民主主义人民共和国
 zh,"Korea, Republic Of",大韩民国
 zh,Kuwait,科威特
 zh,Kyrgyzstan,吉尔吉斯斯坦
+zh,L10n: Messages,L10n: 消息
+zh,L10n: Entity Fields,L10n: 实体字段
 zh,Label ID,标签ID
 zh,"Labels will not be refunded automatically, refund manually if needed",标签不会自动退款，需要时手动退款
 zh,Labor Rates,工时费
@@ -1143,6 +1170,7 @@ zh,Manufactured,制造日期
 zh,Manufactured Date,制造日期
 zh,Manufacturer,制造商
 zh,ManufacturingTitle,制造管理
+zh,Marble ERP,理石ERP
 zh,Margin %,边际%
 zh,Margin Amount,边际收益
 zh,Margin Percent,边际收益百分比
@@ -1165,6 +1193,8 @@ zh,Memo,备忘录
 zh,Merge From ${partyId},从${partyId}合并
 zh,Message,消息
 zh,Message Remote,远端消息
+zh,Message Remotes,远端消息
+zh,Message Types,消息类型
 zh,Messages,沟通
 zh,Meta Description,Meta描述
 zh,Meta Keywords,Meta关键字
@@ -1631,6 +1661,8 @@ zh,Price History,价格历史
 zh,Prices,价格
 zh,Primary Entity,主实体
 zh,Print,打印
+zh,Print Jobs,打印任务
+zh,Printers,打印
 zh,Priority,优先级
 zh,Priority:,优先级:
 zh,Process Item Responses,处理条目响应
@@ -1731,6 +1763,7 @@ zh,Quantity Rejected,拒绝数量
 zh,Quantity Total,总数量
 zh,Quantity*,数量*
 zh,Quarter,季度
+zh,Query Stats,查询统计
 zh,Quick Add Items,创建账单
 zh,Quick Aging,快速账龄
 zh,Quick Items,快速条目
@@ -1742,6 +1775,7 @@ zh,Rate Type,单价类型
 zh,Rates,单价
 zh,Rates Modified,单价是否被修改
 zh,Re-Calc Prices,重新算价
+zh,Re-Init Elastic,重新初始化Elastic
 zh,Re-post Invoice,重新过账账单
 zh,Re-post Payment and Applications,重新过账付款单应用
 zh,Read By,读表人
@@ -1783,6 +1817,7 @@ zh,Recurring,循环
 zh,Last Ordered Date,上一次订购日期
 zh,Auto Invoice,自动创建发票
 zh,Auto Screen,自动屏幕
+zh,Auto Screens,自动屏幕
 zh,Last Ordered Date will be updated over time as recurring Order Clones are created.,随着重复克隆订单的创建，上次订购日期将随着时间的推移而更新。
 zh,If Last Ordered Date is empty the next Order Clone will be created with the next batch.,如果上次订购日期为空，则将使用下一批创建下一个订单克隆。
 zh,"To not create the next Order Clone until the scheduled time, set this to now or any time since the last scheduled time.",要在预定时间之前不创建下一个订单克隆，请将其设置为现在或自上次预定时间以来的任何时间。
@@ -1918,6 +1953,8 @@ zh,Russian Federation,俄罗斯联邦
 zh,Rwanda,卢旺达
 zh,SCA Code,SCA代码
 zh,SMTP Host is empty for EmailServer [${emailServer.emailServerId}],邮件服务器EmailServer [${emailServer.emailServerId}]设置中的SMTP主机不能为空
+zh,Snapshots,快照
+zh,SQL Runner,SQL运行器
 zh,Saint Kitts And Nevis,圣基茨和尼维斯
 zh,Saint Lucia,圣卢西亚
 zh,Saint Vincent And The Grenadines,圣文森特和格林纳丁斯
@@ -2013,7 +2050,9 @@ zh,Sequence,顺序
 zh,Sequence Num,顺序
 zh,Serbia,塞尔维亚
 zh,Serial Number,序列号
+zh,Server Admin,服务器管理
 zh,Service Jobs,服务任务
+zh,Services,服务
 zh,Set,设置
 zh,Set Assignee,设置指派人
 zh,Set Authorized,设置为已验证
@@ -2103,6 +2142,7 @@ zh,South Georgia And The South Sandwich Islands,南乔治亚岛和南桑威奇�
 zh,Space,空间
 zh,Space ID,空间ID
 zh,Spain,西班牙
+zh,Speed Test,速度测试
 zh,Sponsor,赞助
 zh,Sri Lanka,斯里兰卡
 zh,St. Helena,圣赫勒拿
@@ -2110,7 +2150,7 @@ zh,St. Pierre And Miquelon,圣皮埃尔和密克隆
 zh,Standard Cost,标准成本
 zh,Start Date,开始日期
 zh,Starting,开始
-zh,Statement PDF,清单PDF
+zh,Statement PDF,对账单PDF
 zh,Status,状态
 zh,Status:,状态:
 zh,Status Flow,状态流
@@ -2153,6 +2193,8 @@ zh,Syrian Arab Republic,阿拉伯叙利亚共和国
 zh,System Administrator,系统管理员
 zh,System Architect,系统架构师
 zh,System Email,系统邮箱
+zh,System Information,系统信息
+zh,System Messages,系统消息
 zh,SystemTitle,系统管理
 zh,Sys-Sys Messages,系统消息
 zh,TX,账目
