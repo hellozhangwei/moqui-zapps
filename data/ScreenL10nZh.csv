@@ -2227,7 +2227,7 @@ zh,Their Order Date,对方订单日期
 zh,Their Order ID,对方订单ID
 zh,These Roles enable system functionality when directly applied to a Party.,这些直接角色会触发系统的某些功能
 zh,This,当
-zh,This party has data merged from parties:,此参与方已合并自${party.mergedToPartyId}
+zh,This party has data merged from parties:,此参与方已合并自
 zh,This party was merged into ${party.mergedToPartyId},此参与方已被合并到${party.mergedToPartyId}
 zh,"This will update all GL transactions for this Asset including receipt, issuance, and physical inventory changes.",这将更新此资产的所有 GL 交易，包括收货、发货和实物库存更改。
 zh,Thread,线索
