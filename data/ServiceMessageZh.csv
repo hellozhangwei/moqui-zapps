@@ -1,0 +1,5 @@
+moqui.basic.LocalizedMessage,seed
+locale,original,localized
+zh,"Inventory not available, not updating order ${orderId}:${orderPartSeqId} product ${productId} for quantity ${quantity}",库存不可用，未能更新订单【${orderId}:${orderPartSeqId}】中的产品【${productId}】数量到${quantity}
+zh,"Inventory insufficient, not updating order ${orderId}:${orderPartSeqId} product ${productId} for quantity ${quantity}",库存不足，未能更新订单【${orderId}:${orderPartSeqId}】中的产品【${productId}】数量到${quantity}
+zh,"Inventory required but not all available, not placing order ${orderId}",需要库存但不是全部可用，未能下订订单【${orderId}】

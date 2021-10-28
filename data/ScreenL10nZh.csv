@@ -1358,6 +1358,7 @@ zh,No EmailTemplate record found for ID [${emailTemplateId}],邮件模板记录E
 zh,No Location,没有位置
 zh,No Location Asset,不在库位的资产
 zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
+zh,No Parent,无父条目
 zh,No account found for username ${username},用户名或者密码错误。${username}
 zh,No find parameters,choose some to save a new find or update existing
 zh,"No find parameters (or default), choose some in Find Options to save a new find or update existing",没有查询参数或者默认查询，点击查询选项并保存一个新的查询，或者跟新一个存在的查处。
@@ -1457,7 +1458,7 @@ zh,OrderApprovePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
 zh,OrderApprovePaymentAuthorizedLow,"验证金额或后续付款总额${ec.l10n.formatCurrency(totalAuthorized, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}"
 zh,OrderApprovePaymentPromisedLow,"承诺金额或以后付款总额${ec.l10n.formatCurrency(totalPromised, orderHeader.currencyUomId)}少于订单总额${ec.l10n.formatCurrency(orderHeader.grandTotal, orderHeader.currencyUomId)}"
 zh,OrderApproveShippingAddressTrust,"拆单${orderPart.orderPartSeqId} 配送地址 ${postalCm.address1}, ${postalCm.postalCode ?: '-'} 可信度为 ${trustLevelEnum.description}"
-zh,OrderApproveStoreManualApprove,==> 店铺设置为需要手动批准
+zh,OrderApproveStoreManualApprove,店铺设置为需要手动批准
 zh,OrderDetailConfirmCloseOrder,确定关闭订单吗? 如果没有条目被配送了，订单将会被取消。 如果订单条目已经被配送了一部分，那么订单条目数量将被修改为已配送的数量，订单将被设置为完成。
 zh,OrderDetailConfirmClosePart,确定要关闭拆单吗? 如果没有条目被配送了，拆单将会被取消。 如果拆单条目已经被配送了一部分，那么拆单条目数量将被修改为已配送的数量，拆单将被设置为完成。
 zh,OrderDetailItemBilled,"已开帐单数量${returnableOut.isProductItemType ? ec.l10n.format(returnableOut.invoiceQuantity, '#,##0.###') : ec.l10n.format(returnableOut.invoiceTotal, '#,##0.00')}"
@@ -2306,6 +2307,7 @@ zh,Unpaid Receivables,未支付的应收款
 zh,Update Address,更新
 zh,Update Cost & Owner,更新费用与拥有者
 zh,Update Header,更新订单头
+zh,Update Item,更新条目
 zh,Update Order,修改订单
 zh,Update Organization,更新组织
 zh,Update Package,修改包装箱
