@@ -231,6 +231,8 @@ zh,Appr Order Qty,已批准订单数
 zh,Approval,批准
 zh,Approve,批准
 zh,Approve Order Anyway,仍然批准
+zh,Approve Orders,批准订单
+zh,Approves orders matching current find options. Use the Find Options dialog to adjust as needed before doing this.,批准当前查找到的订单。使用【查找选项】调整所需的订单。
 zh,Approve Warnings,批准警告
 zh,Approved - ${pstats.taskCountByStatusMap.WeApproved?:0},已批准 - ${pstats.taskCountByStatusMap.WeApproved?:0}
 zh,Are you sure you want to cancel this shipment?,确定要取消这个运单吗？
@@ -404,7 +406,7 @@ zh,Category List,分类列表
 zh,Category Tree,分类树
 zh,Category Type,分类类型
 zh,CategoryTitle,分类
-zh,Catgories,分类
+zh,Categories,分类
 zh,Cayman Islands,开曼群岛
 zh,Central African Republic,中非共和国
 zh,Chad,乍得
@@ -453,6 +455,9 @@ zh,Clone Task,克隆任务
 zh,Close,关闭
 zh,Close Date,关闭日期
 zh,Close Order,关闭订单
+zh,Close Orders,关闭订单
+zh,Closes orders matching current find options. Use the Find Options dialog to adjust as needed before doing this.,关闭当前查找到的订单。使用【查找选项】调整所需的订单
+zh,Closing an order will cancel all items not yet shipped. If all items cancelled then the order will be Cancelled. If any item was shipped the order will be Completed.,关闭订单将取消所有尚未发货的条目。 如果所有条目都被取消，那么订单将被取消。 如果有任何条目已发货，则订单将完成。
 zh,Close Part,关闭拆单
 zh,Cocos (keeling) Islands,科科斯（基林）群岛
 zh,Code Expires,代码过期日
@@ -1691,7 +1696,7 @@ zh,ProductTitle,产品
 zh,Production Manager,产品经理
 zh,Production Runs,生产运行
 zh,Production Worker,生产工人
-zh,Products,产品
+zh,Products,产品查询
 zh,Products to Consume,预计消耗的产品
 zh,Products to Produce,预计产出的产品
 zh,Profile Url Path,客户资料URL
@@ -2015,8 +2020,8 @@ zh,Scheduled Finds,定时查询
 zh,Scheduled Maintenance,维护计划
 zh,Search + Lookup by ID,全文检索+ID查询
 zh,Search Any Field,检索任意字段
-zh,Search Products,产品查询
-zh,Search Projects,搜索项目
+zh,Search Products,产品检索
+zh,Search Projects,项目检索
 zh,Search Results,查找结果
 zh,Search String Reference,搜索字符串参考
 zh,Search Vendors,搜索供应商

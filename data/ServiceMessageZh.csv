@@ -3,3 +3,5 @@ locale,original,localized
 zh,"Inventory not available, not updating order ${orderId}:${orderPartSeqId} product ${productId} for quantity ${quantity}",库存不可用，未能更新订单【${orderId}:${orderPartSeqId}】中的产品【${productId}】数量到${quantity}
 zh,"Inventory insufficient, not updating order ${orderId}:${orderPartSeqId} product ${productId} for quantity ${quantity}",库存不足，未能更新订单【${orderId}:${orderPartSeqId}】中的产品【${productId}】数量到${quantity}
 zh,"Inventory required but not all available, not placing order ${orderId}",需要库存但不是全部可用，未能下订订单【${orderId}】
+zh,"Billing address ${billingAddress.address1}, ${billingAddress.postalCode} does not match shipping address",账单地址${billingAddress.address1} ${billingAddress.postalCode}与配送地址不一致
+zh,Required parameter missing (${pi.name}),缺少必要参数(${pi.name})

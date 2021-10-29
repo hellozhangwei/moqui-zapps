@@ -69,7 +69,7 @@ zh,Not Sent,未发送
 zh,Not Started,没有开始
 zh,Offered,已提供
 zh,On Hold,暂停
-zh,Open (Tentative),开放（暂定）
+zh,Open (Tentative),开始（暂定）
 zh,Opportunity,机会
 zh,Ordered,已订购
 zh,Other Error,其他错误
@@ -105,7 +105,7 @@ zh,Resolved,解决
 zh,Returned,回来
 zh,Reviewed,已审核
 zh,Running,跑步
-zh,Scheduled,预定
+zh,Scheduled,已安排
 zh,Send Failed,发送失败
 zh,Sending,发送
 zh,Sent,发送
