@@ -1391,6 +1391,7 @@ zh,Not all packages have Labels,不是所有的包裹都有标签
 zh,Not all packages have Tracking Codes,不是所有的包裹都有追踪码
 zh,"Not looking for child directory at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子目录"
 zh,"Not looking for child file at [${relativePath}] under space root page [${location}] because exists, isFile, etc are not supported","因不支持 exists, isFile,等等，未进行在根页面[${location}]下的目录[${relativePath}]查找子文件"
+zh,Not yet placed,还未下定
 zh,Notes,备注
 zh,Notifications,通知
 zh,Notified,通知
@@ -1998,6 +1999,7 @@ zh,Sales and Invoice Reports,销售与账单报告
 zh,SalesOpportunityTitle,销售机会
 zh,SalesOrderTitle,销售管理
 zh,Salvage Value,残值
+zh,Same,相同
 zh,Samoa,萨摩亚
 zh,San Marino,圣马力诺
 zh,Sao Tome And Principe,圣多美和普林西比
@@ -2096,6 +2098,7 @@ zh,Ship By,承运方
 zh,Ship Calc,计算运费
 zh,Ship Insure Reqd,需要运费险
 zh,Ship Method,配送方式
+zh,Ship To,配送至
 zh,Ship Work Effort ID,运送任务
 zh,Shipment,运单
 zh,Shipment ${shipmentId},运单${shipmentId}
@@ -2294,6 +2297,7 @@ zh,UOM Dimensions,度量
 zh,URL,URL
 zh,Uganda,乌干达
 zh,Ukraine,乌克兰
+zh,Unapply,撤销应用
 zh,Un-apply,撤销应用
 zh,Un-approve,撤销批准
 zh,Unapplied,未核销
