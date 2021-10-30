@@ -783,6 +783,8 @@ zh,Estonia,爱沙尼亚
 zh,Ethiopia,埃塞俄比亚
 zh,Example,样例
 zh,Example Feature,样例特征
+zh,Exclude Not in Pick Loc,不包括不在拣货位置的
+zh,Exclude On Picklist,不包括在拣货单的中
 zh,Executive,管理人员
 zh,Existing Invoice,存在的账单
 zh,Expectation,期望
@@ -1034,6 +1036,7 @@ zh,Interval Quantity,间隔数量
 zh,Inventory Asset,库存资产
 zh,Inventory Asset List,库存列表
 zh,Inventory Available,库存情况
+zh,Inventory Category,库存分类
 zh,Inventory Date,库存日期
 zh,Inventory Manager,库存经理
 zh,Inventory Status,库存状态
@@ -1143,6 +1146,7 @@ zh,Locale,区域
 zh,Localization,本地化
 zh,Location,位置
 zh,Location Asset,库位资产
+zh,Location ID,位置ID
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Log Viewer,日志查看器
@@ -1265,6 +1269,7 @@ zh,Net Income Year Over Year,年度净收入
 zh,Net Product,净产品
 zh,Netherlands,荷兰
 zh,Netherlands Antilles,荷属安的列斯
+zh,New,新
 zh,New %,新%
 zh,New Address,新地址
 zh,New Agreement,新合同
@@ -1529,12 +1534,13 @@ zh,Pack Shipment,包装运单
 zh,Pack/Issue Item,装箱/分发条目
 zh,Pack/Issue Items,装箱/分发条目
 zh,Package,包装箱
+zh,Package ${shipmentPackage.shipmentPackageSeqId},包装箱${shipmentPackage.shipmentPackageSeqId}
 zh,Package Tracking,包裹追踪
 zh,Packages,包装箱
 zh,Packed Date,打包日期
 zh,Packed/Issued,已装箱/已发货
 zh,"Packed/Issued: ${ec.l10n.format(sid.quantityTotal ?: 0, '#.##')}, Remaining: ${ec.l10n.format(quantityPackRemaining, '#.##')}  (Unit: ${productUom?.description ?: 'N/A'})","已装箱/已发货: ${ec.l10n.format(sid.quantityTotal ?: 0, '#.##')}, 剩余: ${ec.l10n.format(quantityPackRemaining, '#.##')}  (单位: ${productUom?.description ?: 'N/A'})"
-zh,Packer,封隔器
+zh,Packer,打包人
 zh,Page,页面
 zh,Page #,页 #
 zh,Page History,页面历史
@@ -1768,6 +1774,7 @@ zh,Quantity On Hand,在手数量
 zh,Quantity Reason,数量原因
 zh,Quantity Rejected,拒绝数量
 zh,Quantity Total,总数量
+zh,Quantity w/BOM Total,数量w/BOM总数
 zh,Quantity*,数量*
 zh,Quarter,季度
 zh,Query Stats,查询统计
@@ -2123,6 +2130,7 @@ zh,Shipping,配送
 zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,Shipping Address,配送地址
 zh,Shipping Address and Method,配送地址与方法
+zh,Shipping Gateway,运输网关
 zh,Shipping Gateways,运输网关
 zh,Shipping Instructions,运输指示
 zh,Shipping Options,配送选项

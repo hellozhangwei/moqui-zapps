@@ -100,7 +100,7 @@ zh,Amount Field Error,金额字段错误
 zh,Announcement,公告
 zh,Application Software,应用程序软件
 zh,Area,区域
-zh,Artist,艺术家
+zh,Artist,艺术
 zh,Assembling,组装
 zh,Asset (Good),资产（好）
 zh,Asset - Fixed Asset,资产 - 固定资产
@@ -151,7 +151,7 @@ zh,Block Group,块组
 zh,Boat,船
 zh,Bonus (Discretionary),奖金（酌情）
 zh,Bonus (Non-Discretionary),奖金（非全权决定）
-zh,Brand,牌
+zh,Brand,品牌
 zh,"Break Adjust (piece, etc)",“中断调整（件等）”
 zh,Break Hourly Earnings,休息时薪
 zh,Break RRP Earnings,打破 RRP 收益
@@ -159,7 +159,7 @@ zh,Browse Root (One),浏览根（一）
 zh,Budget,预算
 zh,Bug Fix,错误修复
 zh,Building,建筑
-zh,Bulk,大部分
+zh,Bulk,大块
 zh,Business Travel,商务旅行
 zh,Busy,忙碌的
 zh,COGS - Average Cost Adjustment,COGS - 平均成本调整
@@ -351,7 +351,7 @@ zh,Digger,挖掘机
 zh,Digital (download),数字（下载）
 zh,Digital Download,数字下载
 zh,Digital and Asset,数字资产
-zh,Dimension,尺寸
+zh,Dimension,三维
 zh,Direct Mail,直邮
 zh,Direct deposit,直接存款
 zh,Directions,路线
@@ -552,7 +552,7 @@ zh,Gross,总的
 zh,Gross Profit,毛利
 zh,Ground Commercial,地面商业
 zh,Ground Parcel,地面包裹
-zh,Group,团体
+zh,Group,组
 zh,HMAC SHA-256,HMAC SHA-256
 zh,HTML Body CSS Class,HTML 正文 CSS 类
 zh,HTML Text,HTML 文本
@@ -855,7 +855,7 @@ zh,Money Market,货币市场
 zh,Money Order,汇票
 zh,Monitor,监视器
 zh,Moqui Administrators,Moqui 管理员
-zh,Morgue,停尸房
+zh,Morgue,坏损
 zh,Motor (Common Carrier),电机（公共载体）
 zh,Move,移动
 zh,Municipality,市政府
@@ -875,7 +875,7 @@ zh,Net Operating Income,净营业收入
 zh,Net Revenue,净收入
 zh,Net Weight,净重
 zh,New Data,新数据
-zh,New Feature,新功能
+zh,New Feature,新特征
 zh,New Products (One),新产品（一）
 zh,"New Version, Replacement",“新版本，替换”
 zh,Newsletter,通讯
@@ -1347,7 +1347,7 @@ zh,Single,单身的
 zh,Single Lot Unavailable,单批不可用
 zh,Single Use Code,一次性使用的代码
 zh,Single or Married File Separate,单身或已婚文件分开
-zh,Size,尺寸
+zh,Size,尺码
 zh,Sketch,草图
 zh,Slotting Fees,进场费
 zh,Social Security Card,社会保障卡
@@ -1367,7 +1367,7 @@ zh,Special Instructions,特殊说明
 zh,Special Promo Price,特别促销价
 zh,Specification,规格
 zh,Spouse,伴侣
-zh,Staging,分期
+zh,Staging,转运
 zh,Standard,标准
 zh,"Standard (faster, may have gaps, per system)",“标准（更快，可能有差距，每个系统）”
 zh,State,状态
