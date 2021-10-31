@@ -596,7 +596,7 @@ zh,Dashboard,首页
 zh,DashboardAccounting,财务
 zh,DashboardApproved,已批准
 zh,DashboardAsset,资产
-zh,DashboardCatalog,分类
+zh,DashboardCatalog,品类
 zh,DashboardCustomers,客户
 zh,DashboardFacility,仓库
 zh,DashboardHold,已挂起
@@ -612,7 +612,7 @@ zh,DashboardPurchaseOrders,采购订单
 zh,DashboardReports,报表
 zh,DashboardRequests,审批
 zh,DashboardReturns,退换货
-zh,DashboardSalesOrders,采购订单
+zh,DashboardSalesOrders,销售订单
 zh,DashboardShipping,拣货
 zh,DashboardStores,店铺
 zh,DashboardSubmitted,已提交
