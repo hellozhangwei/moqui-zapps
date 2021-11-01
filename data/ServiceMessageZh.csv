@@ -5,3 +5,6 @@ zh,"Inventory insufficient, not updating order ${orderId}:${orderPartSeqId} prod
 zh,"Inventory required but not all available, not placing order ${orderId}",需要库存但不是全部可用，未能下订订单【${orderId}】
 zh,"Billing address ${billingAddress.address1}, ${billingAddress.postalCode} does not match shipping address",账单地址${billingAddress.address1} ${billingAddress.postalCode}与配送地址不一致
 zh,Required parameter missing (${pi.name}),缺少必要参数(${pi.name})
+zh,"No Asset, Container, Location, or Product found with ID ${scanId}",未找到ID为${scanId}的资产、容器、位置、产品
+zh,"Not posting Asset Receipt ${assetReceiptId}, Asset ${asset.assetId} has no Acquire Cost",资产${asset.assetId}没有成本，未过账资接收${assetReceiptId},
+#zh,"Item ${orderItem.orderItemSeqId} has ${ec.l10n.format(quantity, "0.##")} which is greater than ${bdPercAvailInv}% of available inventory (${ec.l10n.format(availableToPromiseTotal, "0.##")})",条目${orderItem.orderItemSeqId}数量为${ec.l10n.format(quantity, "0.##")}，它大于可用库存 (${ec.l10n.format(availableToPromiseTotal, "0.##")})的${bdPercAvailInv}%。

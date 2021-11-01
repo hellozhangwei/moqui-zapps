@@ -1243,6 +1243,8 @@ zh,Move Dialog,移动对话框
 zh,Move Link,移动链接
 zh,Move Qty,移动数量
 zh,Move Quantity,移动数量
+zh,Move to Existing Container,移动到现有容器
+zh,Move to New Container,移动到新容器
 zh,Mozambique,莫桑比克
 zh,My Account,个人中心
 zh,My Milestones,我的里程碑
@@ -1369,6 +1371,8 @@ zh,No Location,没有位置
 zh,No Location Asset,不在库位的资产
 zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
 zh,No Parent,无父条目
+zh,No locations or containers found for product,没有在位置或容器中找到产品
+zh,No product found in location,在库位为发现商品
 zh,No account found for username ${username},用户名或者密码错误。${username}
 zh,No find parameters,choose some to save a new find or update existing
 zh,"No find parameters (or default), choose some in Find Options to save a new find or update existing",没有查询参数或者默认查询，点击查询选项并保存一个新的查询，或者跟新一个存在的查处。
@@ -1638,6 +1642,7 @@ zh,Pick Container,拣货箱
 zh,Pick Loc Qty,拣货库位数量
 zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
+zh,Pick Locations,拣货位置
 zh,Pick Moves Needed,移位拣货
 zh,Picker,选择器
 zh,Picklist,拣货
@@ -1894,7 +1899,6 @@ zh,Require Inventory Location,需要库存位置
 zh,Require Password Change,要求修改密码
 zh,Required By,要求日期
 zh,Required By Date,要求日期
-zh,Required parameter missing (${pi.name}),必填变量(${pi.name})缺失!
 zh,"Res: ${ec.l10n.format(existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(existingRes.quantityNotIssued, null)}","预约: ${ec.l10n.format(existingRes.quantity, null)}, 不可用: ${ec.l10n.format(existingRes.quantityNotAvailable, null)}, 未发货: ${ec.l10n.format(existingRes.quantityNotIssued, null)}"
 zh,Res Cnt,预约次数
 zh,Res Qty,预约数量
@@ -2082,6 +2086,7 @@ zh,Set Quantities,设定数量
 zh,Set Requested,设置为已申请
 zh,Set Scheduled,设置为已安排
 zh,Set Shipped,设置为已发货
+zh,Set Shipped (Un-deliver),设置为已发货(未送达)
 zh,Set Shipping Address and Method,设置配送地址与方法
 zh,Set WH,设定仓库
 zh,Set as Delivered?,确定设置为已送达吗？
@@ -2296,6 +2301,8 @@ zh,Transfer Shipment List,调拨单列表
 zh,Thread List,线程列表
 zh,Trinidad And Tobago,特立尼达和多巴哥
 zh,Truck / Equipment,卡车/设备
+zh,Trust: ${contactInfo.postalTrustLevelEnum?.description ?: 'New'},信任级别: ${contactInfo.postalTrustLevelEnum?.description ?: '新'}
+zh,Trust: ${contactInfo.postalTrustLevelEnum?.description ?: 'New'}${contactInfo.postalContactMech.validateMessage?'*':''},信任级别: ${contactInfo.postalTrustLevelEnum?.description ?: '新'}${contactInfo.postalContactMech.validateMessage?'*':''}
 zh,Tunisia,突尼斯
 zh,Turkey,火鸡
 zh,Turkmenistan,土库曼斯坦
