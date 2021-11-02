@@ -74,6 +74,7 @@ zh,Add Assignment,添加指派
 zh,Add Assoc,添加关联
 zh,Add Attachment,添加附件
 zh,Add Authenticator App,添加认证App
+zh,Add Authorization,添加授权
 zh,Add Blog Post from Page,从页面添加博客文章
 zh,Add Blog Post with Text,用文本添加博客文章
 zh,Add Box Type,添加包装箱类型
@@ -90,9 +91,12 @@ zh,Add Dimension,添加尺寸
 zh,Add Direct Role,添加直接角色
 zh,Add Email Factor,添加邮箱因子
 zh,Add Equipment,添加设备
+zh,Add Ad-hoc Preference,添加临时偏好
+zh,Add Existing Preference,添加现有偏好
 zh,Add Feature,添加特征
 zh,Add Feature to All,添加产品特征
 zh,Add From Orders,从订单添加
+zh,Add Group,添加组
 zh,Add Identification,添加唯一标识
 zh,Add Item,添加条目
 zh,Add Location,添加位置
@@ -143,6 +147,7 @@ zh,Add To Feature Group,添加到特征组
 zh,Add To Product,添加到产品
 zh,Add To Request,添加到审批
 zh,Add UOM Dimension,添加度量
+zh,Add User,添加用户
 zh,Add User Assignment,添加用户
 zh,Add User Group,添加用户组
 zh,Add Vendor,添加供应商
@@ -223,6 +228,8 @@ zh,"Applied ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}, Unappl
 zh,Applied Payments,已核销
 zh,"Applied Payments ${ec.l10n.formatCurrency(appliedPaymentsTotal, invoice.currencyUomId)}, Unpaid ${ec.l10n.formatCurrency(unpaidTotal, invoice.currencyUomId)}","已核销${ec.l10n.formatCurrency(appliedPaymentsTotal, invoice.currencyUomId)}，未付${ec.l10n.formatCurrency(unpaidTotal, invoice.currencyUomId)}"
 zh,Apply,应用
+zh,Apply Ad-hoc Permission,应用临时权限
+zh,Apply Existing Permission,应用现有权限
 zh,Apply Feature,应用特征
 zh,Apply Feature Group,应用特征组
 zh,Apply New Feature,应用新特征
@@ -240,6 +247,7 @@ zh,Area Code,区号
 zh,Argentina,阿根廷
 zh,Armenia,亚美尼亚
 zh,Artifact Bins,构件箱
+zh,Artifact Group,构件组
 zh,Artifact Groups,构件组
 zh,Artifact Stats,构件统计
 zh,Artifact Summary,构件摘要
@@ -301,6 +309,9 @@ zh,Authenticate failed for user ${newUserAccount.username} because password was 
 zh,Authenticate failed for user [${newUserAccount.username}] because account requires password change [PWDCHG].,账号${newUserAccount.username}需修改密码。
 zh,Authentication Methods,认证方法
 zh,Author,作者
+zh,Authorizations,授权
+zh,Authz Type,授权类型
+zh,Authz Service Name,授权服务名称
 zh,Auto Approve Delay,自动批准推迟
 zh,Auto Payments Term,付款条款
 zh,Auto Res.,自动预约
@@ -517,6 +528,7 @@ zh,Country of Origin,源产地
 zh,Country/State,国家/省
 zh,Create Account,新账户
 zh,Create All Variants,创建全部变体
+zh,Create Artifact Group,创建构建组
 zh,Create Bank Account,新建银行账号
 zh,Create Container,创建容器
 zh,Create Container ID,创建容器ID
@@ -547,6 +559,8 @@ zh,Create Space,创建空间
 zh,Create Supplier Return,创建供应商退货
 zh,Create Team,创建团队
 zh,Create User,创建用户
+zh,Create User Account,创建账户
+zh,Create User Group,创建用户组
 zh,Create Variants,创建变体
 zh,Created Date,创建日期
 zh,Credit Account,退款账户
@@ -682,6 +696,7 @@ zh,Disable Shipping Calc,禁用运费计算
 zh,Disable Tax Calc,禁用税费计算
 zh,Disabled,禁用
 zh,Disabled?,禁用?
+zh,Disabled Date,禁用日期
 zh,Disallow Posting,禁止过账
 zh,Disc %,折扣%
 zh,Display ID,显示ID
@@ -749,6 +764,7 @@ zh,Enter Store Setting,新建店铺配置
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
 zh,Enterprise,企业
 zh,Entity Data Sync,实体数据同步
+zh,Entity Filter Sets,实体过滤集合
 zh,Entity Sync,实体同步
 zh,Entity Tools,实体工具
 zh,Entities,实体
@@ -814,6 +830,7 @@ zh,Facility*,设施*
 zh,FacilityTitle,仓库管理
 zh,Factor ID,因子ID
 zh,Factor Type,因子类型
+zh,Failed Logins,登录失败次数
 zh,Falkland Islands (malvinas),福克兰群岛（马尔维纳斯）
 zh,Family,家庭
 zh,Family Member,家庭成员
@@ -910,6 +927,7 @@ zh,"From ${ec.resource.expand('PartyNameTemplate','',fromParty)},","发信人：
 zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Factor ID,开始因子ID
+zh,From ID,开始ID
 zh,From Location,仓位
 zh,From Party,从
 zh,From Payment Method,从支付方式
@@ -917,6 +935,7 @@ zh,From Pool,源池
 zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,Fujian,福建省
+zh,Full Name,全名
 zh,Full Search,全文检索
 zh,Full search string: ${queryString?:''},全部查询字符串：${queryString?:''}
 zh,GL Account,总账科目
@@ -932,6 +951,7 @@ zh,Gateway,网关
 zh,Gateway Authorize,网关验证
 zh,Gateway Box ID,网关箱子ID
 zh,Gateway Box Type,网关箱子类型
+zh,Gateway CMD ID,网关CMD ID
 zh,Gateway Code,网关代码
 zh,Gateway Config,网关配置
 zh,Gateway Responses,网关响应
@@ -960,6 +980,10 @@ zh,Greenland,格陵兰
 zh,Grenada,格林纳达
 zh,Grey,灰
 zh,Gross Weight,毛重
+zh,Group ID,组ID
+zh,Group Type,组用类型
+zh,Group Users,组用户
+zh,Groups,组
 zh,Guadeloupe,瓜德罗普岛
 zh,Guam,关岛
 zh,Guangdong,广东省
@@ -1112,6 +1136,7 @@ zh,Journal,日记
 zh,Journal Name,日记账名称
 zh,Kazakhstan,哈萨克斯坦
 zh,Kenya,肯尼亚
+zh,Key,键
 zh,Kiribati,基里巴斯
 zh,"Korea, Democratic People's Republic Of",朝鲜民主主义人民共和国
 zh,"Korea, Republic Of",大韩民国
@@ -1325,6 +1350,7 @@ zh,New Password and New Password Verify do not match,两次录入的新密码不
 zh,New Payable,新应付
 zh,New Payment Gateway,新支付网关
 zh,New Payment for Invoice,新付款单
+zh,New Permission,新权限
 zh,New Person,新个人
 zh,New Person Customer,新建个人客户
 zh,New Person Supplier,新个人供应商
@@ -1591,6 +1617,7 @@ zh,Password,密码
 zh,Password incorrect for username ${username},用户名或者密码错误。${username}
 zh,Password needs ${minDigits} digit/number characters,密码需要至少${minDigits}位数字字符
 zh,Password needs ${minOthers} other characters (not letter or digit),密码需要至少${minOthers}位其它字符(非字母或数字)
+zh,Password Set Date,密码设置日期
 zh,Password shorter than ${minLength} characters,密码不能少于${minLength}个字符
 zh,Password updated for user ${userAccount.username},用户账号${userAccount.username}密码已更新
 zh,Password Verify,重复密码
@@ -1630,6 +1657,8 @@ zh,Period Days,期间天数
 zh,Period Name,期间名称
 zh,Period Num,期间编号
 zh,Periods,周期
+zh,Permission ID,权限ID
+zh,Permissions,权限
 zh,Peru,秘鲁
 zh,PhI Diff,调差
 zh,PhI Qty,调整
@@ -1683,6 +1712,7 @@ zh,Posted Amount Summary,过账金额概要
 zh,Posted Balance Summary,过账余额概要
 zh,Posted Date,过账日期
 zh,Pre-Paid Percent,预付发票百分比
+zh,Preferences,偏好
 zh,Previous,前
 zh,Pri,优先级
 zh,Price,价格
@@ -1811,6 +1841,8 @@ zh,Re-post Payment and Applications,重新过账付款单应用
 zh,Read By,读表人
 zh,Reading Date,读日期
 zh,Ready Date,准备日期
+zh,Really blacklist this address?,确定要加入黑名单吗？
+zh,Really greylist this address?,确定要加入灰名单吗？
 zh,Really hold order part?,确定要挂起拆单吗？
 zh,Reason,原因
 zh,Receipt Transactions,入库凭证
@@ -1850,6 +1882,7 @@ zh,Auto Invoice,自动创建发票
 zh,Auto Screen,自动屏幕
 zh,Auto Screens,自动屏幕
 zh,Last Ordered Date will be updated over time as recurring Order Clones are created.,随着重复克隆订单的创建，上次订购日期将随着时间的推移而更新。
+zh,IPs Allowed,允许IP
 zh,If Last Ordered Date is empty the next Order Clone will be created with the next batch.,如果上次订购日期为空，则将使用下一批创建下一个订单克隆。
 zh,"To not create the next Order Clone until the scheduled time, set this to now or any time since the last scheduled time.",要在预定时间之前不创建下一个订单克隆，请将其设置为现在或自上次预定时间以来的任何时间。
 #zh,Recurring orders in the Approved status will be automatically cloned according to the schedule and the clone will be automatically Placed. If there are no Approve Warnings the cloned order will be automatically Approved. If Auto Invoice is set to Y then if Approved will also create an Invoice for the Order.,处于已批准状态的重复订单将根据时间表自动克隆，并且克隆将自动放置。 如果没有批准警告，克隆的订单将自动获得批准。 如果 Auto Invoice 设置为 Y，则如果 Approved 也会为订单创建发票。
@@ -1905,6 +1938,7 @@ zh,Request Type,审批类型
 zh,RequestTitle,审批管理
 zh,Requests,审批
 zh,Requests (${requestCount}),审批(${requestCount})
+zh,Require Authc Factor,需要验证因子
 zh,Require Customer Role,需要客户角色
 zh,Require Inventory,需要库存
 zh,Require Inventory Location,需要库存位置
@@ -2104,6 +2138,7 @@ zh,Set WH,设定仓库
 zh,Set as Delivered?,确定设置为已送达吗？
 zh,Set as Delivered and generate invoice for order items if needed?,确定设置为已送达并同时为订单生产账单吗？
 zh,Set to Delivered? No additional items may be received once Delivered.,确定设置为已送达吗？不会有额外的条目被接收或发送。
+zh,Set trust level back to New?,设置信任级别为新？
 zh,Set as Shipped? If a Shipment Shipped email is configured it will be sent to the Customer.,确定设置为已发送吗？如果运单邮箱被设置怎会给客户发送邮件？
 zh,Setting Type,设置类型
 zh,Settings,设置
@@ -2241,6 +2276,8 @@ zh,TX Type,凭证类型
 zh,Taiwan,台湾省
 zh,Tajikistan,塔吉克斯坦
 zh,"Tanzania, United Republic Of",坦桑尼亚联合共和国
+zh,Tarpits (Use Velocity Limits),捕获(使用速度限制)
+zh,Tarpit Locks (Velocity Limits Reached),捕获锁定(达到速度限制)
 zh,Task ID,任务ID
 zh,Task Name,任务名
 zh,Task Summary,任务概要
@@ -2340,6 +2377,7 @@ zh,United Arab Emirates,阿拉伯联合酋长国
 zh,United Kingdom,英国
 zh,United States,美国
 zh,United States Minor Outlying Islands,美国本土外小岛屿
+zh,Unlist,移出名单
 zh,Unpaid Payables,未支付的应付款
 zh,Unpaid Receivables,未支付的应收款
 zh,Update Address,更新
@@ -2369,7 +2407,9 @@ zh,User ${username} does not have permission ${permission},用户${username}没�
 zh,User Account,用户账号
 zh,"User must change password before first login, even if password is set here.",用户在第一次登录是需要修改密码，即使密码已在此处已设置。
 zh,User Group,用户组
+zh,User Group Detail,用户组详情
 zh,User Group ID,用户组ID
+zh,User Group List,用户组列表
 zh,User Groups,用户组
 zh,User ID,用户ID
 zh,Username,用户名
