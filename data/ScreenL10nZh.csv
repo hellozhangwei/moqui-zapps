@@ -1047,6 +1047,7 @@ zh,Index Space Pages,索引空间页面
 zh,India,印度
 zh,Individual Assets,资产明细
 zh,Indonesia,印度尼西亚
+zh,Info,信息
 zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
@@ -1645,6 +1646,7 @@ zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
 zh,Payments,付款
 zh,Payments From,进款
+zh,Payments From (${fromPaymentCount}),进款
 zh,Payments To,出款
 zh,Payments To (${toPaymentCount}),付款单(${toPaymentCount})
 zh,Payments associated with this shipment through order or invoice will not be changed,通过订单或发票与此货件相关的付款将不会更改
