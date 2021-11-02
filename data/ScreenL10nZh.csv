@@ -307,6 +307,7 @@ zh,Auto Res.,自动预约
 zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
 zh,Auto Update Rates,自动更新单价
+zh,Available Balance,可用余额
 zh,Avg,平均
 zh,"Avg Rate ${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}","平均单价${ec.l10n.formatCurrency(pstats.clientAverageHourCost, project.costUomId, 2)}"
 zh,Azerbaijan,阿塞拜疆
@@ -315,6 +316,7 @@ zh,Bad Actor (Banned),危险分子（被禁）
 zh,Bahamas,巴哈马
 zh,Bahrain,巴林
 zh,Balance,余额
+zh,Balance Date,余额日期
 zh,Balance Sheet,资产负债表
 zh,Balance Sheet History,资产负债表历史
 zh,Bangladesh,孟加拉国
@@ -416,6 +418,8 @@ zh,Change status to ${statusTransition.description}?,修改状态到【${statusT
 zh,Check Num,检查数量
 zh,Check PDF,支票PDF
 zh,Check Reservations,检查预留
+zh,Checks,支票
+zh,Checks only available for payment methods owned by an Internal Organization,支票只对内部组织的支付方法可用
 zh,Checks PDF,检查PDF
 zh,Child Account,子客户
 zh,Child Categories,子分类
@@ -656,6 +660,7 @@ zh,"Defaults to 12, set to 0 to ignore",默认为12，0表示忽略
 zh,"Defaults to 5, set to 0 to ignore",默认为5，0表示忽略
 zh,Defaults to 0 (ignored),默认为0，表示忽略
 zh,Delegate,代表
+zh,Delete (Expire),删除（过期）
 zh,Delivery Date,送达日期
 zh,Denmark,丹麦
 zh,Department,部门
@@ -835,6 +840,8 @@ zh,"File ${filename} already exists, skipping document ${dataDocumentId}.",文�
 zh,"File ${filename} already exists, skipping entity ${en}.",文件 ${filename}已存在，跳过实体${en}。
 zh,File ${filename} already exists.,文件 ${filename}已经存在。
 zh,Filed By,申请人
+zh,Files,文件
+zh,Files only available for payment methods owned by an Internal Organization,文件只对内部组织的支付方法可用
 zh,Filter,过滤
 zh,Filter By,过滤
 zh,Financial Accounts,金融账户
@@ -1127,6 +1134,7 @@ zh,Latitude / Longitude,维度/经度
 zh,Latvia,拉脱维亚
 zh,Lead/Account,线索/客户
 zh,Lebanon,黎巴嫩
+zh,Ledger Balance,总账余额
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment List,借用出库单列表
 zh,Lesotho,莱索托
@@ -1602,12 +1610,15 @@ zh,Payment Information,付款信息
 zh,Payment Instrument,支付方式
 zh,Payment Instruments,支付方式
 zh,Payment Method,付款方式
+zh,Payment Method Details,付款方式详情
 zh,Payment Methods,付款方式
 zh,Payment Status,付款状态
 zh,Payment Terms,付款条件
 zh,Payment Type,支付类型
 zh,Payment Types,付款单类型
 zh,Payments,付款
+zh,Payments From,进款
+zh,Payments To,出款
 zh,Payments To (${toPaymentCount}),付款单(${toPaymentCount})
 zh,Payments associated with this shipment through order or invoice will not be changed,通过订单或发票与此货件相关的付款将不会更改
 zh,Payroll Other Payee,工资单 其他收款人
@@ -1834,6 +1845,7 @@ zh,Record Time,记录时间
 zh,Recur Schedule,循环周期
 zh,Recurring,循环
 zh,Last Ordered Date,上一次订购日期
+zh,Auto Delete,自动删除
 zh,Auto Invoice,自动创建发票
 zh,Auto Screen,自动屏幕
 zh,Auto Screens,自动屏幕
