@@ -541,6 +541,7 @@ zh,Create Lot,创建批次
 zh,Create Milestone,创建里程碑
 zh,Create Nest,创建下一个
 zh,Create Next,创建下一个
+zh,Create new order based on this one?,是要基于此订单创建一个新订单吗？
 zh,Create Page,创建页面
 zh,Create Payment,创建付款单
 zh,Create Physical Inventory,创建库存盘点
@@ -930,7 +931,7 @@ zh,From Container,原容器
 zh,From Date,开始日期
 zh,From Factor ID,开始因子ID
 zh,From ID,开始ID
-zh,From Location,仓位
+zh,From Location,从仓位
 zh,From Party,从
 zh,From Payment Method,从支付方式
 zh,From Pool,源池
@@ -1681,8 +1682,10 @@ zh,Physical Inventory Quantity,库存调整
 zh,Physical Quantity,实际数量
 zh,PhysicalInventoryTitle,盘点记录
 zh,Pick,拣货
+zh,Pick${pickContainer ? ' and Move to Container ' + (pickContainer.serialNumber ?: pickContainer.containerId) : ''},拣货${pickContainer ? '并移动到容器' + (pickContainer.serialNumber ?: pickContainer.containerId) : ''}
+zh,Pick & Move to Container,拣货并移动到容器
 zh,Pick Bin #,拣货箱#
-zh,Pick Container,拣货箱
+zh,Pick Container,拣货箱/托盘
 zh,Pick Loc Qty,拣货库位数量
 zh,Pick Location Moves,选择位置移动
 zh,Pick Location(s),拣货位置
@@ -2076,7 +2079,9 @@ zh,Saving,保存中...
 zh,"Scan Asset, Cont, Loc, Prod",扫描资产、容器、位置、产品
 zh,"Scan Asset, Cont, Loc, or Prod",扫描资产、容器、位置、产品
 zh,"Scan Asset, Container, Location, Product",扫描资产，容器，位置，产品
+zh,Scan From Location,扫码从位置
 zh,Scan Location,扫码位置
+zh,Scan Product,扫码产品
 zh,"Scan Prod, Loc, Cont",扫码产品、库位、容器
 zh,Scan Shipment ID,扫码运单ID
 zh,Scan To Location,扫码目的库位
