@@ -52,7 +52,7 @@ along with this software (see the LICENSE.md file). If not, see
             <q-toolbar-title>
                 <#assign headerLogoList = sri.getThemeValues("STRT_HEADER_LOGO")>
                 <#if headerLogoList?has_content>
-                    <img src="${sri.buildUrl(headerLogoList?first).getUrl()}" alt="Home" height="20"></img>
+                    <m-link href="/apps"><img src="${sri.buildUrl(headerLogoList?first).getUrl()}" alt="Home" height="20"></img></m-link>
                 </#if>
                 <template v-if="navMenuList[1]">{{navMenuList[1].title}}</template>
             </q-toolbar-title>
