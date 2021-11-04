@@ -74,6 +74,7 @@ zh,Actual Hours:,实际小时数:
 zh,Actual Start,实际开始
 zh,Add,添加
 zh,Add Address,添加邮寄地址
+zh,Add Adjustment,添加调整
 zh,Add Adjustment Item,添加调整条目
 zh,Add All to Category,添加产品到分类
 zh,Add Asset,添加资产
@@ -344,6 +345,7 @@ zh,Bad Actor (Banned),危险分子（被禁）
 zh,Bahamas,巴哈马
 zh,Bahrain,巴林
 zh,Balance,余额
+zh,"Balance: ${ec.l10n.formatCurrency(financialAccount.actualBalance, financialAccount.currencyUomId)}, Available: ${ec.l10n.formatCurrency(financialAccount.availableBalance, financialAccount.currencyUomId)}","余额: ${ec.l10n.formatCurrency(financialAccount.actualBalance, financialAccount.currencyUomId)}, 可用: ${ec.l10n.formatCurrency(financialAccount.availableBalance, financialAccount.currencyUomId)}"
 zh,Balance Date,余额日期
 zh,Balance Sheet,资产负债表
 zh,Balance Sheet History,资产负债表历史
@@ -583,7 +585,9 @@ zh,Create User Group,创建用户组
 zh,Create Variants,创建变体
 zh,Created Date,创建日期
 zh,Credit Account,退款账户
+zh,Credit Limit,信用限制
 zh,Credit Memo Invoice,红字发票
+zh,Credit Memo Invoice #${invoiceId},红字发票#${invoiceId}
 zh,Credits,贷
 zh,Croatia (local Name: Hrvatska),克罗地亚（当地名称：Hrvatska）
 zh,Cuba,古巴
@@ -749,6 +753,7 @@ zh,Edit Blog Post,编辑博客文章
 zh,Edit Blog Posts,编辑博客文章
 zh,Edit Client,编辑客户
 zh,Edit Content,编辑内容
+zh,Edit Customer,编辑客户
 zh,Edit Equipment,编辑设备
 zh,Edit Lots,编辑批次
 zh,Edit Note,编辑备注
@@ -759,6 +764,7 @@ zh,Edit Payment ${partPaymentInfo.partPayment.paymentId},编辑付款单${partPa
 zh,Edit Physical Inventory,编辑库存盘点
 zh,Edit Request,编辑审批
 zh,Edit Shipment,编辑运单
+zh,Edit Supplier,编辑供应商
 zh,Edit Vendor,编辑供应商
 zh,Edit Wiki Page,编辑维基页面
 zh,Effective Date,生效日
@@ -886,6 +892,7 @@ zh,Files only available for payment methods owned by an Internal Organization,�
 zh,Filter,过滤
 zh,Filter By,过滤
 zh,Financial Accounts,金融账户
+zh,Financial Account TX,金融账户凭证
 zh,Financial Acct Reasons,财务会计原因
 zh,Financial Acct Types,财务会计类型
 zh,Financial Info,财务
@@ -937,6 +944,7 @@ zh,Fixed Asset List,固定资产列表
 zh,FixedAssetTitle,固定资产
 zh,For,为
 zh,"For new lot enter Lot Number (and Dates), for existing select above",创建新的批次与日期。如使用现有批次，请选择上方的下拉框。
+zh,For Invoice,为账单
 zh,For This,为此
 zh,"For physical inventory assets are grouped by Product, Facility, Location, Lot, Owner, Pool, and Status.",对于实物库存，资产按产品、设施、位置、批次、所有者、池和状态分组。
 zh,Force Close,强制关闭
@@ -961,6 +969,7 @@ zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
 zh,Fujian,福建省
 zh,Full Name,全名
+zh,Full History PDF,全部历史PDF
 zh,Full Search,全文检索
 zh,Full search string: ${queryString?:''},全部查询字符串：${queryString?:''}
 zh,GL Account,总账科目
@@ -1698,6 +1707,7 @@ zh,Payroll Other Payee,工资单 其他收款人
 zh,PayrollPayeeInvoiceItemDescription,${payeeAdjustment.description} for ${partyDetail.firstName?:''} ${partyDetail.lastName?:''}${partyDetail.organizationName?:''} SSN ${partySsn?.idValue ?: 'N/A'} Ref ${payeeAdjustment.payeeReference ?: 'N/A'}
 zh,People,人员
 zh,People Assigned,指派人员
+zh,Performed By,执行人
 zh,Period,周期
 zh,Period Days,期间天数
 zh,Period Name,期间名称
@@ -1906,6 +1916,7 @@ zh,Receive Accepted,接收
 zh,Receive Direct,直接入库
 zh,Receive Entire Shipment,全部接收
 zh,Receive Non-serialized Inventory Direct,非序列化产品入库
+zh,Receive Notifications,接收提醒
 zh,Receive Product,接收产品
 zh,Receive Serialized Inventory Direct,序列化产品入库
 zh,Receive without Shipment,无入库单接收
@@ -1944,6 +1955,7 @@ zh,Refund Amount,退款金额
 zh,Refund Credit Trans,退款凭证
 zh,Refund For Payment ${payment.refundForPaymentId},账单${payment.refundForPaymentId}的退款单
 zh,Refund Payment,退款付款单
+zh,Refund Payment #${paymentId},退款单#${paymentId}
 zh,Refund Payments,退款付款单
 zh,Registrations,注册
 zh,Regulatory Agency,监管机构
@@ -1978,6 +1990,7 @@ zh,Report List,报表查询
 zh,Reporter,记者
 zh,Reports,报表
 zh,ReportsTitle,报表
+zh,Request ${requestId},审批${requestId}
 zh,Request #${requestId},审批#${requestId}
 zh,Request Date,审批日期
 zh,Request ID,审批ID
@@ -2019,6 +2032,7 @@ zh,Response Stats,响应统计
 zh,Responses,响应
 zh,Restrict Update,限制修改
 zh,Restrict View,限制查看
+zh,Results for ID '${lookupId}',ID'${lookupId}'的查找结果
 zh,"Results match any of Hours Past ETA, Days Since Packed, and Days Since Last Track (OR) and must match all other options selected (AND)",结果与 ETA 过去的小时数、打包后的天数和上次跟踪后的天数 (OR) 中的任何一个匹配，并且必须匹配所选的所有其他选项 (AND)
 zh,Ret Amount,退货数量
 zh,Ret Label,退货标签
@@ -2031,6 +2045,7 @@ zh,Return Item,退货条目
 zh,Return Price,退货价格
 zh,Return Quantity,退货数量
 zh,Return Shipments,退货运单
+zh,Return Shipment #${shipmentId},退货运单#${shipmentId}
 zh,Return Tracking,退货跟踪
 zh,Return Type,退货类型
 zh,Return to Customer List,返回客户列表
@@ -2040,6 +2055,7 @@ zh,Return to Find Order,返回订单查询
 zh,Return to Find Party,返回参与方查询
 zh,Return to Find Product,返回产品查询
 zh,Return to Find Product Store,返回店铺查询
+zh,Return to Find Request,返回审批查询
 zh,Return to Find Shipment,返回运单查询
 zh,Return to Find Supplier,返回供应商查询
 zh,Return to Find Payment,返回付款单查询
