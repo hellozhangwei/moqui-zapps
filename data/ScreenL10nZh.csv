@@ -13,6 +13,11 @@ zh,% of Sales,%占总销售额
 zh,(Asc),(升)
 zh,(Desc),(降)
 zh,- Hold Part,-挂起拆单
+zh,0 - ${periodDays} days,0 - ${periodDays}天
+zh,${periodDays+1} - ${periodDays*2} days,${periodDays+1} - ${periodDays*2}天
+zh,${periodDays*2+1} - ${periodDays*3} days,${periodDays*2+1} - ${periodDays*3}天
+zh,${periodDays*3+1} - ${periodDays*4} days,${periodDays*3+1} - ${periodDays*4}天
+zh,> ${periodDays*4} days,> ${periodDays*4}天
 zh,A reset password was sent by email to ${userAccount.emailAddress}. This password may only be used to change your password. Your current password is still valid.,重置密码已发送到邮箱${userAccount.emailAddress}，此重置密码仅做修改密码使用。你当前的密码仍然有效。
 zh,AR/AP,应收/应付
 zh,AR Aging Summary,应收账龄概要
@@ -87,6 +92,7 @@ zh,Add Comment,添加评论
 zh,Add Contact,添加
 zh,Add Content,添加
 zh,Add Dest. Address,添加目的地址
+zh,Add Detail,添加详情
 zh,Add Dimension,添加尺寸
 zh,Add Direct Role,添加直接角色
 zh,Add Email Factor,添加邮箱因子
@@ -98,6 +104,7 @@ zh,Add Feature to All,添加产品特征
 zh,Add From Orders,从订单添加
 zh,Add Group,添加组
 zh,Add Identification,添加唯一标识
+zh,Add Invoice Item,添加账单条目
 zh,Add Item,添加条目
 zh,Add Location,添加位置
 zh,Add Location Type,添加位置类型
@@ -232,7 +239,13 @@ zh,Apply Ad-hoc Permission,应用临时权限
 zh,Apply Existing Permission,应用现有权限
 zh,Apply Feature,应用特征
 zh,Apply Feature Group,应用特征组
+zh,Apply Invoice to Order,应用账单到订单
+zh,Apply Invoice to Shipment,应用账单到运单
+zh,Apply Item to Order,应用条目到订单
+zh,Apply Item to Shipment,应用条目到运单
 zh,Apply New Feature,应用新特征
+zh,Applied Qty,应用数量
+zh,Applied Total,应用总额
 zh,Apply to Category,应用到分类
 zh,Appr Order Qty,已批准订单数
 zh,Approval,批准
@@ -399,6 +412,7 @@ zh,Cancel,取消
 zh,Cancel Invoice and Payments,取消账单与付款单
 zh,Cancel Payment and Invoices,取消付款单与账单
 zh,Cancel Shipment,取消运单
+zh,Cancel this invoice and all payments applied to it?,取消此发票和所有应用到此发票的付款单？
 zh,Cancelled - ${pstats.taskCountByStatusMap.WeCancelled?:0},取消 - ${pstats.taskCountByStatusMap.WeCancelled?:0}
 zh,Capacity,容量
 zh,Capacity UOM,容量单位
@@ -1090,6 +1104,7 @@ zh,Invoice Item Summary,账单条目概要
 zh,Invoice Message,账单消息
 zh,Invoice Reconciliation,账单对账
 zh,Invoice Time,工时账单
+zh,"Invoice Total: ${ec.l10n.formatCurrency(invoice.invoiceTotal, invoice.currencyUomId)}, Unpaid: ${ec.l10n.formatCurrency(invoice.unpaidTotal, invoice.currencyUomId)}","账单总额: ${ec.l10n.formatCurrency(invoice.invoiceTotal, invoice.currencyUomId)}, 未付金额: ${ec.l10n.formatCurrency(invoice.unpaidTotal, invoice.currencyUomId)}"
 zh,Invoice Type,账单类型
 zh,Invoice Types,账单类型
 zh,Invoiced Quantity,发票中产品数量
@@ -1104,6 +1119,7 @@ zh,"Invoices associated with this shipment will be CANCELLED: ${invoiceIdSet.joi
 zh,Iran (islamic Republic Of),伊朗（伊斯兰共和国）
 zh,Iraq,伊拉克
 zh,Ireland,爱尔兰
+zh,Is Adjust,是否调整
 zh,Is Gift,礼物
 zh,Israel,以色列
 zh,Issuance,发行
@@ -1116,6 +1132,8 @@ zh,Issued and Invoiced,成交记录
 zh,Issued and Invoiced Report,已出货与已开票报表
 zh,Italy,意大利
 zh,Item,条目
+zh,Item ${invoiceItem.invoiceItemSeqId}: ${invoiceItem.description},条目${invoiceItem.invoiceItemSeqId}: ${invoiceItem.description}
+zh,Item Date,条目日期
 zh,Item Description,描述
 zh,Item Quantity,条目数量
 zh,Item Quantity From,条目数量从
@@ -1475,6 +1493,7 @@ zh,Opportunity Stage ID,机会阶段
 zh,Order,订单
 zh,Order #${orderId},订单#${orderId}
 zh,Order ${orderId},订单${orderId}
+zh,Order Amt,订单金额
 zh,Order By,排序次序
 zh,Order Clerk,订单文员
 zh,Order Count,订单数量
@@ -1492,6 +1511,7 @@ zh,Order Net Product,净产品销售额
 zh,Order Notes,订单备注
 zh,Order PDF,订单PDF
 zh,Order Part,拆单
+zh,Order Qty,订单数量
 zh,"Order Part ${orderPartInfo.orderPart.orderPartSeqId} Facility ${ec.resource.expand('FacilityNameTemplate', null, orderPartInfo.facility)}","拆单 ${orderPartInfo.orderPart.orderPartSeqId} 仓库 ${ec.resource.expand('FacilityNameTemplate', null, orderPartInfo.facility)}"
 zh,Order Parties,订单参与人
 zh,Order Party ID,订单参与人ID
@@ -1630,6 +1650,7 @@ zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
 zh,Path ${path} is not a directory.,路径${path}必须是个目录
 zh,Payable,应付
 zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
+zh,"Payable Invoice ${invoiceId} for ${ec.resource.expand('PartyNameTemplate', null, organizationParty)}","${ec.resource.expand('PartyNameTemplate', null, organizationParty)}应付账单票"
 zh,Payable Return Invoices,应付退货账单
 zh,Payable by Due Date,应付账单按过期日期
 zh,Payable by Invoice Date,应付账单按账单日期
@@ -1855,6 +1876,7 @@ zh,Reason,原因
 zh,Receipt Transactions,入库凭证
 zh,Receivable,应收
 zh,Receivable <strong>Invoices</strong>,应收<strong>账单</strong>
+zh,"Receivable Invoice ${invoiceId} for ${ec.resource.expand('PartyNameTemplate', null, organizationParty)}","${ec.resource.expand('PartyNameTemplate', null, organizationParty)}的应收账单"
 zh,Receivable Return Invoices,应收退货账单
 zh,Receivable by Due Date,应收按到期日期
 zh,Receivable by Invoice Date,应收按账单日期
@@ -1984,6 +2006,7 @@ zh,Ret Status,退货状态
 zh,Ret Tracking,退货追踪
 zh,Return ${returnId},退货单${returnId}
 zh,Return ID,退货ID
+zh,Return Item,退货条目
 zh,Return Price,退货价格
 zh,Return Quantity,退货数量
 zh,Return Shipments,退货运单
@@ -2112,6 +2135,7 @@ zh,Select a Report,选择一个报表
 zh,Selectable Features,可选特征
 zh,Selected Method,选择的方法
 zh,Send,发送
+zh,Send & Apply,发送并核销
 zh,Send &amp; Apply,发送并核销
 zh,Send Email,发邮件
 zh,Send Invoice Email,发账单邮件
