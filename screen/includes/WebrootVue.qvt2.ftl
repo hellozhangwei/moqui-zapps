@@ -49,7 +49,13 @@ along with this software (see the LICENSE.md file). If not, see
             <q-toolbar-title>${ec.resource.expand(headerTitleList?first, "")}</q-toolbar-title>
             </#if>
             -->
-            <q-toolbar-title><template v-if="navMenuList[1]">{{navMenuList[1].title}}</template></q-toolbar-title>
+            <q-toolbar-title>
+                <#assign headerLogoList = sri.getThemeValues("STRT_HEADER_LOGO")>
+                <#if headerLogoList?has_content>
+                    <img src="${sri.buildUrl(headerLogoList?first).getUrl()}" alt="Home" height="20"></img>
+                </#if>
+                <template v-if="navMenuList[1]">{{navMenuList[1].title}}</template>
+            </q-toolbar-title>
             <#-- NOTE: tried using q-breadcrumbs but last item with q-breadcrumbs--last class makes never clickable! -->
             <#--
             <template v-for="(navMenuItem, menuIndex) in navMenuList"><template v-if="menuIndex < (navMenuList.length - 1)">
