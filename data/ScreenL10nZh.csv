@@ -105,6 +105,7 @@ zh,Add Existing Preference,添加现有偏好
 zh,Add Feature,添加特征
 zh,Add Feature to All,添加产品特征
 zh,Add From Orders,从订单添加
+zh,Add GL Account,添加GL科目
 zh,Add Group,添加组
 zh,Add Identification,添加唯一标识
 zh,Add Invoice Item,添加账单条目
@@ -353,6 +354,7 @@ zh,Bangladesh,孟加拉国
 zh,Bank Accounts,银行账户
 zh,Bank Name,银行名称
 zh,Barbados,巴巴多斯
+zh,Base Currency,基础货币
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
 zh,Begins With,以...开始
 zh,Beijing,北京市
@@ -496,6 +498,7 @@ zh,Closing an order will cancel all items not yet shipped. If all items cancelle
 zh,Close Part,关闭拆单
 zh,Cocos (keeling) Islands,科科斯（基林）群岛
 zh,Code Expires,代码过期日
+zh,COGS Method,销货成本方法
 zh,Colombia,哥伦比亚
 zh,Column,列
 zh,Column Fields,列字段
@@ -585,7 +588,7 @@ zh,Create User Group,创建用户组
 zh,Create Variants,创建变体
 zh,Created Date,创建日期
 zh,Credit Account,退款账户
-zh,Credit Limit,信用限制
+zh,Credit Limit,信用额度
 zh,Credit Memo Invoice,红字发票
 zh,Credit Memo Invoice #${invoiceId},红字发票#${invoiceId}
 zh,Credits,贷
@@ -1990,6 +1993,7 @@ zh,Report List,报表查询
 zh,Reporter,记者
 zh,Reports,报表
 zh,ReportsTitle,报表
+zh,Req PW Change,需要修改密码
 zh,Request ${requestId},审批${requestId}
 zh,Request #${requestId},审批#${requestId}
 zh,Request Date,审批日期
@@ -2359,6 +2363,7 @@ zh,Tasks,任务
 zh,Tasks by Top Level,按顶级任务
 zh,Tax Authority,税务机关
 zh,Tax Calc,计算税费
+zh,Tax Form,税表
 zh,Tax Gateway,税费网关
 zh,Team,团队
 zh,Teams,团队
@@ -2480,6 +2485,7 @@ zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用�
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
 zh,"User must change password before first login, even if password is set here.",用户在第一次登录是需要修改密码，即使密码已在此处已设置。
+zh,User Full Name,用户全名
 zh,User Group,用户组
 zh,User Group Detail,用户组详情
 zh,User Group ID,用户组ID
