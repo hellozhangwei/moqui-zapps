@@ -519,8 +519,9 @@ zh,"Condition failed for transition [${location}], not running actions or redire
 zh,Congo,刚果
 zh,"Congo, The Democratic Republic Of The",刚果民主共和国
 zh,Consumable Shipment List,领用出库单列表
+zh,Consume Any,消耗任意
 zh,Consume Asset,消耗资产
-zh,Consume By Product,生产消耗
+zh,Consume by Product,生产消耗
 zh,Consumed by Production Run,生产消耗
 zh,Consumer,消费者
 zh,Contact Info,联系方式
@@ -765,6 +766,7 @@ zh,Edit Party,编辑参与方
 zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
 zh,Edit Payment ${partPaymentInfo.partPayment.paymentId},编辑付款单${partPaymentInfo.partPayment.paymentId}
 zh,Edit Physical Inventory,编辑库存盘点
+zh,Edit Production Run,编辑生产订单
 zh,Edit Request,编辑审批
 zh,Edit Shipment,编辑运单
 zh,Edit Supplier,编辑供应商
@@ -927,6 +929,7 @@ zh,Find Payment,付款单查询
 zh,Find Physical Inventory,库存盘点查询
 zh,Find Product,产品查询
 zh,Find Product Store,店铺查询
+zh,Find Production Runs,生产订单查询
 zh,Find Project,项目查询
 zh,Find Request,审批查询
 zh,Find Shipment,运单查询
@@ -1344,6 +1347,7 @@ zh,"NOTE: for accounting and other traceability record equipment purchase using 
 zh,NOTE: For invoices with no Due Date specified try running the report by Invoice Date.,注意：对于未指定到期日的发票，请尝试按发票日期运行报告。
 zh,NOTE: only receive inventory here if there is no Purchase Order and no Incoming Shipment for the inventory.,注意: 你应该在没有采购订单或者入库单的时候使用此功能。
 zh,NOTE: this should only be used to correct data as it rewrites the accounting history for this asset. Do not use to change ownership for a business transaction like a sale.,注意：这应该仅用于更正数据，因为它会重写此资产的会计历史记录。 不要用于更改销售等商业交易的所有权。
+zh,None,无
 zh,Name,名称
 zh,Name On Account,账户姓名
 zh,Name Prefix,名称前缀
@@ -1412,7 +1416,7 @@ zh,New Phone,新电话
 zh,New Picklist,新拣货单
 zh,New Price,新价格
 zh,New Product,新建产品
-zh,New Production Run,新建生产运行
+zh,New Production Run,新建生产订单
 zh,New Project,新项目
 zh,New Purchase Return Shipment,新采购退货出库单
 zh,New Purchase Shipment,新采购入库单
@@ -1809,7 +1813,7 @@ zh,Product*,产品*
 zh,ProductStoreTitle,店铺管理
 zh,ProductTitle,产品
 zh,Production Manager,产品经理
-zh,Production Runs,生产运行
+zh,Production Runs,生产订单
 zh,Production Worker,生产工人
 zh,Products,产品查询
 zh,Products to Consume,预计消耗的产品
@@ -2064,6 +2068,7 @@ zh,Return to Find Shipment,返回运单查询
 zh,Return to Find Supplier,返回供应商查询
 zh,Return to Find Payment,返回付款单查询
 zh,Return to Product List,返回产品列表
+zh,Return to Find Production Run,返回生产订单查询
 zh,Return to Sales Order List,返回销售订单列表
 zh,Returns,退货
 zh,Reunion,团圆
@@ -2536,6 +2541,8 @@ zh,Visitor,游客
 zh,Visits,访问
 zh,Void Payment and Invoices,取消付款与账单应用
 zh,WH/Line,仓库/产线
+zh,WH ATP,仓库可用
+zh,WH QOH,仓库在手
 zh,Wallis And Futuna Islands,瓦利斯和富图纳群岛
 zh,Warehouse Assets,仓库资产
 zh,Warning: destination address is incomplete or invalid according to address validation.,警告：目的地址不完整或这无效。

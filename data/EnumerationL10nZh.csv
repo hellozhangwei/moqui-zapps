@@ -108,7 +108,7 @@ zh,Asset - Inventory,资产 - 库存
 zh,Asset Issuance,资产发行
 zh,Asset Receipt,资产收据
 zh,Asset Usage (Rental),资产使用（出租）
-zh,Asset Use,资产用途
+zh,Asset Use,资产使用
 zh,Asset Variance,资产差异
 zh,Assets,资产
 zh,Attachment,依恋
@@ -1130,7 +1130,7 @@ zh,Product Template - Server,产品模板 - 服务器
 zh,Product Variant,产品变体
 zh,Production Line,生产线
 zh,Production Management,生产管理
-zh,Production Run,生产运行
+zh,Production Run,生产订单
 zh,Professional Services,专业的服务
 zh,Profit Loss,利润损失
 zh,Programming,编程
