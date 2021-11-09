@@ -60,6 +60,7 @@ zh,Act/Est:,实际/评估:
 zh,Action,操作
 zh,Actions,操作
 zh,Active Order Part: ${orderPartSeqId},活动的拆单: ${orderPartSeqId}
+zh,Active Package ${activePackageAndRouteSeg.shipmentPackageSeqId},活动的包装:${activePackageAndRouteSeg.shipmentPackageSeqId}
 zh,Active Saved Find:,当前使用的查找:
 zh,Active Tasks,活动任务
 zh,Active Users,活动用户
@@ -426,6 +427,7 @@ zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Cape Verde,佛得角
 zh,Card Number,卡号
+zh,Card Security Code,卡安全代码
 zh,Carrier,承运方
 zh,Carrier Code,承运方代码
 zh,Carrier Party,承运方
@@ -496,6 +498,7 @@ zh,Close Orders,关闭订单
 zh,Closes orders matching current find options. Use the Find Options dialog to adjust as needed before doing this.,关闭当前查找到的订单。使用【查找选项】调整所需的订单
 zh,Closing an order will cancel all items not yet shipped. If all items cancelled then the order will be Cancelled. If any item was shipped the order will be Completed.,关闭订单将取消所有尚未发货的条目。 如果所有条目都被取消，那么订单将被取消。 如果有任何条目已发货，则订单将完成。
 zh,Close Part,关闭拆单
+zh,Close Pkg ${shipmentPackageSeqId},关闭包装${shipmentPackageSeqId}
 zh,Cocos (keeling) Islands,科科斯（基林）群岛
 zh,Code Expires,代码过期日
 zh,COGS Method,销货成本方法
@@ -992,9 +995,11 @@ zh,Gateway Authorize,网关验证
 zh,Gateway Box ID,网关箱子ID
 zh,Gateway Box Type,网关箱子类型
 zh,Gateway CMD ID,网关CMD ID
+zh,Gateway Capture,网关捕获
 zh,Gateway Code,网关代码
 zh,Gateway Config,网关配置
 zh,Gateway Responses,网关响应
+zh,Gateway Release Auth,网关发布验证
 zh,Gateway Type,网关类型
 zh,Gateways,网关
 zh,General Ledger,总账
@@ -1002,6 +1007,7 @@ zh,General Tools,一般工具
 zh,Generate PDF,生成PDF文件
 zh,Georgia,乔治亚州
 zh,Germany,德国
+zh,Get Gateway Status,获取网关状态
 zh,Get Label,获取标签
 zh,Get Label Anyway,仍然获取标签
 zh,Get Labels,获取标签
@@ -1624,11 +1630,16 @@ zh,P-CB Gap,P-CB差距
 zh,PDF,PDF
 zh,POP Commerce Admin,POP Commerce管理
 zh,Pack,打包
+zh,Pack Completed,打包完成
 zh,Pack Date,装箱日期
 zh,Pack Item,打包条目
 zh,Pack Quantity,装箱数
+zh,Pack Qty,装箱数
 zh,Pack Screen,装箱
 zh,Pack Shipment,包装运单
+zh,Pack Shipment ${shipmentId},包装运单${shipmentId}
+zh,Pack Shipment - Items,包装运单 - 条目
+zh,Pack Shipment - Packages,包装运单 - 包装
 zh,Pack/Issue Item,装箱/分发条目
 zh,Pack/Issue Items,装箱/分发条目
 zh,Package,包装箱
