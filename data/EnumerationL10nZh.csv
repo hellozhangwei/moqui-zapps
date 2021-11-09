@@ -7,7 +7,7 @@ zh,04 Not as Expected,04 不如预期
 zh,05 Did not Fit/Wrong Size,05 不合适/尺寸错误
 zh,06 Duplicate Shipment,06 重复发货
 zh,"07 Gift, Not Wanted",《07 礼物，不想要》
-zh,08 Arrived Too Late,08 来得太晚
+zh,08 Arrived Too Late,08 到达太晚
 zh,09 Did not Want/Like,09 不想要/喜欢
 zh,10 Found Better Price,10 发现更好的价格
 zh,11 Poor Customer Service,11 糟糕的客户服务
@@ -329,8 +329,8 @@ zh,"Deductible, Discretionary Bonus",“免赔额，酌情奖金”
 zh,Deduction,扣除
 zh,Default Search (One),默认搜索（一）
 zh,Delete,删除
-zh,Delivered,发表
-zh,Delivered Good,交付良好
+zh,Delivered,已送达
+zh,Delivered Good,交付的货物
 zh,Delivers,提供
 zh,Delivery Info,送货信息
 zh,Density,密度
