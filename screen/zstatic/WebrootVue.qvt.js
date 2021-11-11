@@ -360,7 +360,7 @@ Vue.component('m-container-box', {
             '<span class="text-subtitle2" :class="expanded?\'text-secondary\':\'text-grey\'" v-if="title && title.length">{{title}}</span>' +
             '<slot name="header"></slot>' +
             '<q-space></q-space>' +
-            '<slot name="toolbar"></slot>' +
+            '<div class="q-gutter-x-xs"><slot name="toolbar"></slot></div>' +
             //'<q-separator />' +
         '</q-card-actions>' +
         '<q-slide-transition :duration="500"><div v-show="expanded">' +
