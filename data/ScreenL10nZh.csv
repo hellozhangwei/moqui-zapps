@@ -338,6 +338,7 @@ zh,Auto Payments Term,付款条款
 zh,Auto Res.,自动预约
 zh,Auto Reservation,自动预约
 zh,Auto Set,自动设置
+zh,Auto set status from Shipment statuses?,根据运单状态自动设置拣货单状态？
 zh,Auto Update Rates,自动更新单价
 zh,Available Balance,可用余额
 zh,Avg,平均
@@ -358,6 +359,7 @@ zh,Bank Name,银行名称
 zh,Barbados,巴巴多斯
 zh,Base Currency,基础货币
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
+zh,Begin (In Progress),开始(进行中)
 zh,Begins With,以...开始
 zh,Beijing,北京市
 zh,Belarus,白俄罗斯
@@ -958,6 +960,7 @@ zh,For Invoice,为账单
 zh,For This,为此
 zh,"For physical inventory assets are grouped by Product, Facility, Location, Lot, Owner, Pool, and Status.",对于实物库存，资产按产品、设施、位置、批次、所有者、池和状态分组。
 zh,Force Close,强制关闭
+zh,Force Complete,强制完成
 zh,Form,表单
 zh,Found issues with password so not updating,密码有问题，没有更新
 zh,France,法国
@@ -1992,6 +1995,7 @@ zh,Remove,移除
 zh,Remove Address?,删除地址？
 zh,Remove All from Category,从分类移除产品
 zh,Remove Feature from All,移除产品特征
+zh,Remove all Shipments in the Input and Scheduled statuses and set Picklist status to Complete (or Cancelled if no remaining Shipments or all remaining are Cancelled)?,删除输入和计划中的所有运单并将拣货单状态设置为完成（如果没有剩余运单或所有剩余运单都被取消，拣货清单则被设置为已取消）？
 zh,Remove from Load,移除设备
 zh,Rental Asset,租赁资产
 zh,Rental Return Shipment,租赁归还入库单
@@ -2272,7 +2276,7 @@ zh,Shipments In,进货量
 zh,Shipments Out,出货量
 zh,Shipments To,出库单
 zh,Shipments To (${toShipmentCount}),发货单(${toShipmentCount})
-zh,Shipping,配送
+zh,Shipping,配货
 zh,Shipping - Pick & Pack,运输 - 拣货与打包
 zh,Shipping Address,配送地址
 zh,Shipping Address and Method,配送地址与方法
