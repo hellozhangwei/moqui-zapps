@@ -99,6 +99,7 @@ zh,Add Dest. Address,添加目的地址
 zh,Add Detail,添加详情
 zh,Add Dimension,添加尺寸
 zh,Add Direct Role,添加直接角色
+zh,Add Email,添加邮件
 zh,Add Email Factor,添加邮箱因子
 zh,Add Equipment,添加设备
 zh,Add Ad-hoc Preference,添加临时偏好
@@ -786,6 +787,7 @@ zh,Email Administrator,电子邮件管理员
 zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
 zh,Email will be sent to ${userAccount.emailAddress} (username ${userAccount.username}),邮件将会被发送到${userAccount.emailAddress} (用户名 ${userAccount.username})
+zh,Email Purpose,邮件用途
 zh,Email Subject,邮件主题
 zh,Email Template,邮件模版
 zh,Email Type,邮件类型
