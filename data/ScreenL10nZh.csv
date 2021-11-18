@@ -785,6 +785,8 @@ zh,Email Addresses,邮箱
 zh,Email Administrator,电子邮件管理员
 zh,Email Export,邮件倒出
 zh,Email Messages,邮件消息
+zh,Email will be sent to ${userAccount.emailAddress} (username ${userAccount.username}),邮件将会被发送到${userAccount.emailAddress} (用户名 ${userAccount.username})
+zh,Email Subject,邮件主题
 zh,Email Template,邮件模版
 zh,Email Type,邮件类型
 zh,EmailServer [${emailServerId}] has no mailPassword,EmailServer [${emailServerId}]未定义邮箱密码
@@ -851,6 +853,7 @@ zh,Existing Invoice,存在的账单
 zh,Expectation,期望
 zh,Expected End Of Life,预计报废日期
 zh,Expenses,费用
+zh,Expense Invoice,费用账单
 zh,Expert User,专家用户
 zh,Expiration,过期时间
 zh,Expiration Date,过期日期
@@ -1140,6 +1143,8 @@ zh,Invoice Message,账单消息
 zh,Invoice Reconciliation,账单对账
 zh,Invoice Time,工时账单
 zh,"Invoice Total: ${ec.l10n.formatCurrency(invoice.invoiceTotal, invoice.currencyUomId)}, Unpaid: ${ec.l10n.formatCurrency(invoice.unpaidTotal, invoice.currencyUomId)}","账单总额: ${ec.l10n.formatCurrency(invoice.invoiceTotal, invoice.currencyUomId)}, 未付金额: ${ec.l10n.formatCurrency(invoice.unpaidTotal, invoice.currencyUomId)}"
+zh,Invoice Total,账单总额
+zh,"Invoice Total: ${ec.l10n.formatCurrency(invoiceTotal, invoice.currencyUomId)}","账单总额：${ec.l10n.formatCurrency(invoiceTotal, invoice.currencyUomId)}"
 zh,Invoice Type,账单类型
 zh,Invoice Types,账单类型
 zh,Invoiced Quantity,发票中产品数量
@@ -1473,6 +1478,7 @@ zh,No Location,没有位置
 zh,No Location Asset,不在库位的资产
 zh,No Order or Primary email found,没发现订单邮箱或者主邮箱
 zh,No Parent,无父条目
+zh,No Results Skip,无结果跳过
 zh,No locations or containers found for product,没有在位置或容器中找到产品
 zh,No product found in location,在库位为发现商品
 zh,No account found for username ${username},用户名或者密码错误。${username}
@@ -1594,6 +1600,7 @@ zh,OrderPlacePartNoVendor,拆单${orderPart.orderPartSeqId}没有供应商
 zh,OrderPlacePartPaymentIncomplete,"拆单${orderPart.orderPartSeqId}的付款金额(${ec.l10n.formatCurrency(paymentsTotal ?: 0.0, (String) orderHeader?.currencyUomId)})小于拆单的总金额 (${ec.l10n.formatCurrency(orderPart.partTotal ?: 0.0, (String) orderHeader?.currencyUomId)})"
 zh,Orders,订单
 zh,Orders per Pick,每单订单数
+zh,Orders to Be Picked,可拣货订单
 zh,Org,组织
 zh,Org Settings,组织设置
 zh,Organization Name,组织名称
@@ -1768,7 +1775,7 @@ zh,Picker,选择器
 zh,Picklist,拣货
 zh,Picklist PDF,拣货PDF
 zh,Picklist and Pack PDF,拣货与打包PDF
-zh,Picklists,拣货
+zh,Picklists,拣货单
 zh,Pickup Date,拣货日期
 zh,Piece Count,计件
 zh,Pitcairn,皮特凯恩
@@ -1997,6 +2004,7 @@ zh,Remove All from Category,从分类移除产品
 zh,Remove Feature from All,移除产品特征
 zh,Remove all Shipments in the Input and Scheduled statuses and set Picklist status to Complete (or Cancelled if no remaining Shipments or all remaining are Cancelled)?,删除输入和计划中的所有运单并将拣货单状态设置为完成（如果没有剩余运单或所有剩余运单都被取消，拣货清单则被设置为已取消）？
 zh,Remove from Load,移除设备
+zh,Render Mode,渲染模式
 zh,Rental Asset,租赁资产
 zh,Rental Return Shipment,租赁归还入库单
 zh,Rental Return Shipment List,租赁归还入库单列表
@@ -2159,6 +2167,7 @@ zh,Save,保存
 zh,Save Columns,保存列
 zh,Save New Find,保存新的查找
 zh,Save to Filename,保存文件名
+zh,Saved Find,已保存查找
 zh,Saved Finds,已保存查找
 zh,Saving,保存中...
 zh,"Scan Asset, Cont, Loc, Prod",扫描资产、容器、位置、产品
