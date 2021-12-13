@@ -5,7 +5,7 @@ locale,original,localized
 zh," - Res: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, Not Avail: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, Not Issued: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"," - 预约: ${ec.l10n.format(resInfo.existingRes.quantity, null)}, 不可用: ${ec.l10n.format(resInfo.existingRes.quantityNotAvailable, null)}, 未出货: ${ec.l10n.format(resInfo.existingRes.quantityNotIssued, null)}"
 zh," for Asset, Facility, Invoice, Order, Return, Party, Badge, Payment, Product, Shipment, Work Effort (Project, Task, Picklist, Production Run), GL Transaction",资产，设施，账单，订单，退货，参与者，徽章，付款单，产品，运单，工作量（项目，任务，拣货，生产运行），总账凭证
 zh,"${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)} at ${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')} (${statusItem?.description})","${ec.resource.expand('PartyNameOnlyTemplate','',msgFrom)}发送于${ec.l10n.format(nodeList_entry?.entryDate, 'yyyy-MM-dd HH:mm')}"
-zh,${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId},${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '移库' : 'Unknown Type'))}单#${shipmentId}
+zh,${isIncoming ? 'Incoming' : (isOutgoing ? 'Outgoing' : (isTransfer ? 'Transfer' : 'Unknown Type'))} Shipment #${shipmentId},${isIncoming ? '入库' : (isOutgoing ? '出库' : (isTransfer ? '调拨' : 'Unknown Type'))}单#${shipmentId}
 zh,${orderPartInfo.customerEmail ?: 'No Order or Primary email found'},${orderPartInfo.customerEmail ?: '未发现订单邮箱或者主邮箱'}
 zh,${orderPartInfo.isVendorInternalOrg ? 'Sales' : 'Purchase'} Order Part ${orderPart.orderPartSeqId},${orderPartInfo.isVendorInternalOrg ? '销售' : '采购'}订单拆单${orderPart.orderPartSeqId}
 zh,${pstats.projectDanger ? 'Danger' : (pstats.projectWarning ? 'Warning' : 'On Track')},${pstats.projectDanger ? '危险' : (pstats.projectWarning ? '警告' : '在轨')}
@@ -268,6 +268,7 @@ zh,Are you sure you want to cancel this shipment?,确定要取消这个运单吗
 zh,Area Code,区号
 zh,Argentina,阿根廷
 zh,Armenia,亚美尼亚
+zh,Arrival Date,到达日期
 zh,Artifact Bins,构件箱
 zh,Artifact Group,构件组
 zh,Artifact Groups,构件组
@@ -1249,6 +1250,7 @@ zh,Location ID,位置ID
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Log Viewer,日志查看器
+zh,Login As,登录此账号
 zh,Longitude,经度
 zh,Look Back Days,回顾天数
 zh,Lookup Asset,查找资产
@@ -1287,6 +1289,7 @@ zh,Marble ERP,理石ERP
 zh,Margin %,边际%
 zh,Margin Amount,边际收益
 zh,Margin Percent,边际收益百分比
+zh,Mark Viewed,标记为已查看
 zh,MarketingCampaignTitle,市场营销
 zh,Markup %,标记%
 zh,Markup Amt,标记总价
@@ -2516,6 +2519,7 @@ zh,User,用户
 zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用户${principalCollection.primaryPrincipal}不属于${roleName}角色
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
+zh,User Account Detail,用户账号详情
 zh,"User must change password before first login, even if password is set here.",用户在第一次登录是需要修改密码，即使密码已在此处已设置。
 zh,User Full Name,用户全名
 zh,User Group,用户组
