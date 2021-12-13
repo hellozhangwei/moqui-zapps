@@ -68,11 +68,14 @@ zh,Active Warehouse,当前仓库
 zh,Actual (d),实际天数
 zh,Actual (h),实际小时
 zh,Actual Arrival,实际到达
+zh,Actual Arrival Date,实际到达日期
 zh,Actual Complete,实际完成
+zh,Actual Date,实际日期
 zh,"Actual Cost ${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}","实际成本${ec.l10n.formatCurrency(project.actualClientCost, project.costUomId, 2)}"
 zh,Actual Hours,实际小时数
 zh,Actual Hours:,实际小时数:
 zh,Actual Start,实际开始
+zh,Actual Start Date,实际开始日期
 zh,Add,添加
 zh,Add Address,添加邮寄地址
 zh,Add Adjustment,添加调整
@@ -288,10 +291,14 @@ zh,Asset Class,资产分类
 zh,Asset Detail,资产详情
 zh,Asset ID,库存流水号
 zh,Asset Name,资产名称
-zh,Asset Owner,资产所有者
+zh,Asset Name,资产名称
+zh,Asset On Hand,在手资产
+zh,Asset On Hand Summary,在手资产概要
 zh,Asset Owner will default to Facility owner,资产拥有者默认为仓库拥有者
 zh,Asset Pool,资产池
+zh,Asset Receipt Transaction,资产收到凭证
 zh,Asset Reservations,预约资产
+zh,Asset Status by Receipt,收到资产状态
 zh,Asset Summary,资产摘要
 zh,Asset Summary Find,资产摘要查询
 zh,Asset Type,资产类型
@@ -689,6 +696,7 @@ zh,Data Views,数据视图
 zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
+zh,Days Since Receipt,自收货的天数
 zh,Days To Ship,发货天数
 zh,Days Since Last Track,自上一次追踪的天数
 zh,Days Since Packed,自打包以来的天数
@@ -717,6 +725,7 @@ zh,Department,部门
 zh,Departments,部门
 zh,Depreciation History,折旧历史
 zh,Desc,降序
+zh,Dest Facility,目的设施
 zh,Dest. Facility,收货仓
 zh,Destination Address,目的地址
 zh,Destination Facility,收货仓
@@ -986,6 +995,7 @@ zh,From Payment Method,从支付方式
 zh,From Pool,源池
 zh,From Role,从角色
 zh,From address is empty for EmailTemplate [${emailTemplateId}],邮件模板EmailTemplate [${emailTemplateId}]设置中的From地址不能为空
+zh,From or To Party,从或到参与者
 zh,Fujian,福建省
 zh,Full Name,全名
 zh,Full History PDF,全部历史PDF
@@ -1613,6 +1623,7 @@ zh,Organizer,组织者
 zh,Orig. ETA,原始预估
 zh,Origin Address,原地址
 zh,Origin Facility,发货仓
+zh,Origin or Dest Facility,源或目的设施
 zh,Original Currency,原货币类型
 zh,Original Currency Amount,原货币金额
 zh,Original Invoice ID,原始账单ID
@@ -1644,6 +1655,8 @@ zh,Owner Party,拥有者
 zh,Owner Party ID,拥有者ID
 zh,P-CB Gap,P-CB差距
 zh,PDF,PDF
+zh,Pkg Quantity,包裹数量
+zh,Pkg Weight,包裹重量
 zh,POP Commerce Admin,POP Commerce管理
 zh,Pack,打包
 zh,Pack Completed,打包完成
@@ -2077,6 +2090,7 @@ zh,Ret Message,退货消息
 zh,Ret Status,退货状态
 zh,Ret Tracking,退货追踪
 zh,Return ${returnId},退货单${returnId}
+zh,Return Display,退货显示
 zh,Return ID,退货ID
 zh,Return Item,退货条目
 zh,Return Price,退货价格
@@ -2084,6 +2098,7 @@ zh,Return Quantity,退货数量
 zh,Return Shipments,退货运单
 zh,Return Shipment #${shipmentId},退货运单#${shipmentId}
 zh,Return Tracking,退货跟踪
+zh,Return Tracking Status,退货跟踪状态
 zh,Return Type,退货类型
 zh,Return to Customer List,返回客户列表
 zh,Return to Find Facility,返回设施查询
@@ -2267,6 +2282,7 @@ zh,Ship Before,指定日期前
 zh,Ship Before Date,指定日期之后发货
 zh,Ship By,承运方
 zh,Ship Calc,计算运费
+zh,Ship Cost,运费
 zh,Ship Insure Reqd,需要运费险
 zh,Ship Method,配送方式
 zh,Ship To,配送至
@@ -2432,6 +2448,7 @@ zh,To Addresses,收件人
 zh,To assign check numbers select a bank account in From Payment Method (in Find Options).,要分配支票编号，请在“从付款方式”（在“查找选项”中）中选择一个银行帐户。
 zh,To Cancel,将取消
 zh,To Container,目的容器
+zh,To get results an option other than Actual Date and Status is required,需要实际日期和状态或其他查询条件才能得倒结果
 zh,To Location,目的位置
 zh,To Name,收件人
 zh,To Party,到
@@ -2454,6 +2471,7 @@ zh,Track Status,追踪状态
 zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
+zh,Tracking Status,追踪状态
 zh,Transaction Date,交易日期
 zh,Transaction Entries,凭证分录
 zh,Transaction Reports,总帐交易报表
