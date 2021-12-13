@@ -28,6 +28,7 @@ zh,Abbrev,缩写
 zh,Abbreviation,缩写
 zh,Account,账户
 zh,Account #,账户卡号
+zh,Account Balance,科目余额
 zh,Account Balance History,科目余额历史
 zh,Account Class,账户类
 zh,Account Code,科目代码
@@ -230,6 +231,7 @@ zh,Annual,年度
 zh,Annual Depr.,年度折旧
 zh,Any,任意
 zh,Any Carrier Method,全部配送方法
+zh,Any Carrier Method?,全部配送方法
 zh,Any Field,任意字段
 zh,Any HTML,任意HTML
 zh,"Any Role may be added here to organize parties for searching, etc but many are used to describe a Party's relationship to, or involvement with, other things in the system and have no effect when applied directly.",此处的角色可以用在搜索参与者，也可以用来定义参与者之间的关系，参与其他活动的角色。不会对系统流程阐述影响。
@@ -280,6 +282,7 @@ zh,Artifact Summary,构件摘要
 zh,Artifact Hit Bins,构件点击箱
 zh,Artifact Hit Summary,构件点击摘要
 zh,Aruba,阿鲁巴岛
+zh,As Of Date,截止日期
 zh,Asc,升序
 zh,Asset,资产
 zh,Asset ${existingRes.assetId},资产${existingRes.assetId}
@@ -369,6 +372,7 @@ zh,Barbados,巴巴多斯
 zh,Base Currency,基础货币
 zh,Because of password errors not creating account with username ${username},因密码错误，没有创建账号${username}
 zh,Begin (In Progress),开始(进行中)
+zh,Beginning Balance,期初余额
 zh,Begins With,以...开始
 zh,Beijing,北京市
 zh,Belarus,白俄罗斯
@@ -778,6 +782,7 @@ zh,Edit Customer,编辑客户
 zh,Edit Equipment,编辑设备
 zh,Edit Lots,编辑批次
 zh,Edit Note,编辑备注
+zh,Edit Parent Account,编辑父账户
 zh,Edit Part,编辑拆单
 zh,Edit Party,编辑参与方
 zh,Edit Part ${orderPart.orderPartSeqId},编辑拆单${orderPart.orderPartSeqId}
@@ -813,6 +818,7 @@ zh,Empty,为空
 zh,Enable Account,启用账号
 zh,End Date,结束日期
 zh,Ending,结束
+zh,Ending Balance,期末余额
 zh,Enter Setting,新建
 zh,Enter Store Setting,新建店铺配置
 zh,"Enter values for 2 of the 3 below, or just Hours or From and Thru will be set to now",填写3个中的2个，或者只填写小时数开始日期和结束日期会被设置成当前时间。
@@ -962,6 +968,7 @@ zh,Find Task,任务查询
 zh,Find Tasks,任务查询
 zh,Find Time Period,期间查询
 zh,Find Transaction,凭证查询
+zh,Find Transaction Entry,凭证分录查询
 zh,FindSalesOrdersLink,销售订单
 zh,Finland,芬兰
 zh,First Name,姓
@@ -1143,6 +1150,7 @@ zh,Inventory Status,库存状态
 zh,Inventory Valuation,库存估值
 zh,InventoryCheckTitle,盘点任务
 zh,Invoice,账单
+zh,Invoice/Ref,账单/参考
 zh,Invoice ${invoiceId},账单${invoiceId}
 zh,Invoice Aging Detail,账单账龄明细
 zh,Invoice Cost Percent,发票成本百分比
@@ -1197,6 +1205,7 @@ zh,Item Types,条目类型
 zh,Items,条目
 zh,"Items have been packed/issued, these will be un-packed and returned to inventory",条目已被打包或发出，这些将被拆包并退回库存
 zh,"Items have been received, all receipt quantities will be set to zero",条目已收到，收到的数量将被设置为0
+zh,Jrnl,日记
 zh,"JSON-RPC error with no message, code [${responseMap.error?.code}]","JSON-RPC无消息错误, 代码[${responseMap.error?.code}]"
 zh,JSON-RPC response was not a object/Map for service [${serviceName ?: method}]: ${jsonObj},服务[${serviceName ?: method}]的JSON-RPC的返回不是object或者Map: ${jsonObj}
 zh,Jamaica,牙买加
@@ -1236,6 +1245,7 @@ zh,Latitude / Longitude,维度/经度
 zh,Latvia,拉脱维亚
 zh,Lead/Account,线索/客户
 zh,Lebanon,黎巴嫩
+zh,Ledger,分类账
 zh,Ledger Balance,总账余额
 zh,Lend Return Shipment List,借用归还入库单列表
 zh,Lend Shipment List,借用出库单列表
@@ -1805,6 +1815,7 @@ zh,Placed Date,下定日期
 zh,Planned Maintenance,计划的维护
 zh,Please select a Facility,请选择一个设施
 zh,Please select a report,请选择一个报表
+zh,Pmt Ref,付款单参考
 zh,Poland,波兰
 zh,Pool,池
 zh,Pools,仓库池
@@ -1814,9 +1825,12 @@ zh,Position Class,职位
 zh,Postal,邮编
 zh,Postal Addresses,邮寄地址
 zh,Posted,已过账
+zh,Posted Amount,过账金额
 zh,Posted Amount Summary,过账金额概要
 zh,Posted Balance Summary,过账余额概要
 zh,Posted Date,过账日期
+zh,Posted Debits,借记
+zh,Posted Credits,贷记
 zh,Pre-Paid Percent,预付发票百分比
 zh,Preferences,偏好
 zh,Previous,前
@@ -2129,6 +2143,7 @@ zh,Root Page Directory,根页面目录
 zh,Root Page Location,根页面位置
 zh,Root Page Override,根页面覆盖
 zh,Routing #,路由号码
+zh,Run,运行
 zh,Run Date,运行日期
 zh,Run ID,运行ID
 zh,Run Pick PDF,生产拣货PDF
@@ -2263,6 +2278,7 @@ zh,Set WH,设定仓库
 zh,Set as Delivered?,确定设置为已送达吗？
 zh,Set as Delivered and generate invoice for order items if needed?,确定设置为已送达并同时为订单生产账单吗？
 zh,Set to Delivered? No additional items may be received once Delivered.,确定设置为已送达吗？不会有额外的条目被接收或发送。
+zh,Set to Y to show all Carrier Shipment Methods on Shipments instead of only Shipping Options for this Store,设置为Y显示所有的配送方式，否则只显示此店铺配置的配送方式。
 zh,Set trust level back to New?,设置信任级别为新？
 zh,Set as Shipped? If a Shipment Shipped email is configured it will be sent to the Customer.,确定设置为已发送吗？如果运单邮箱被设置怎会给客户发送邮件？
 zh,Setting Type,设置类型
@@ -2318,6 +2334,7 @@ zh,Shipping Phone,电话
 zh,ShippingTitle,拣货管理
 zh,Show Details,显示详情
 zh,Show Invoiced,显示已开票的
+zh,Show Reverses,显示反转
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
 zh,Sichuan,四川省
 zh,Sierra Leone,塞拉利昂
@@ -2472,6 +2489,7 @@ zh,Tracking,追踪
 zh,Tracking Code,追踪码
 zh,Tracking Codes,追踪码
 zh,Tracking Status,追踪状态
+zh,Trans Date,交易日期
 zh,Transaction Date,交易日期
 zh,Transaction Entries,凭证分录
 zh,Transaction Reports,总帐交易报表
