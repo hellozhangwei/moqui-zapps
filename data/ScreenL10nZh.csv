@@ -153,6 +153,7 @@ zh,Add Shipping Address,添加配送地址
 zh,Add Shipping Gateway,添加配送网关
 zh,Add Shipping Option,添加配送方法
 zh,Add Single Use Codes,添加单独用户代码
+zh,Add SMS Factor,添加短信因子
 zh,Add Store,添加店铺
 zh,Add Store Category,添加店铺分类
 zh,Add Survey Field,添加调查字段
@@ -277,10 +278,12 @@ zh,Arrival Date,到达日期
 zh,Artifact Bins,构件箱
 zh,Artifact Group,构件组
 zh,Artifact Groups,构件组
-zh,Artifact Stats,构件统计
-zh,Artifact Summary,构件摘要
 zh,Artifact Hit Bins,构件点击箱
 zh,Artifact Hit Summary,构件点击摘要
+zh,Artifact Stats,构件统计
+zh,Artifact Summary,构件摘要
+zh,Artifact Type Enum ID,构件类型ID
+zh,Artifact Name,构件名称
 zh,Aruba,阿鲁巴岛
 zh,As Of Date,截止日期
 zh,Asc,升序
@@ -1271,6 +1274,7 @@ zh,Location Types,位置类型
 zh,Locations,位置
 zh,Log Viewer,日志查看器
 zh,Login As,登录此账号
+zh,Login History,登录历史
 zh,Longitude,经度
 zh,Look Back Days,回顾天数
 zh,Lookup Asset,查找资产
@@ -1776,6 +1780,7 @@ zh,Peru,秘鲁
 zh,PhI Diff,调差
 zh,PhI Qty,调整
 zh,Philippines,菲律宾
+zh,Phone (for SMS),手机号码
 zh,Phone Numbers,电话
 zh,Phone Purpose,电话用途
 zh,"Phone, Email, and Other",电话，邮箱等
@@ -1998,6 +2003,8 @@ zh,Record Credit Memo,记录贷项凭证
 zh,Record Time,记录时间
 zh,Recur Schedule,循环周期
 zh,Recurring,循环
+zh,Release Date Time,释放时间
+zh,Release Now,立即释放
 zh,Last Ordered Date,上一次订购日期
 zh,Auto Delete,自动删除
 zh,Auto Invoice,自动创建发票
@@ -2384,6 +2391,7 @@ zh,Subject,主题
 zh,Submit,提交
 zh,Subscriber,订户
 zh,Subsidiary,子公司
+zh,Successful,成功
 zh,Sudan,苏丹
 zh,Summary,概要
 zh,Summary Options,销售统计过滤器
@@ -2604,6 +2612,7 @@ zh,View/Print,查看/打印
 zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Visibility,可见性
+zh,Visit,访问
 zh,Visitor,游客
 zh,Visits,访问
 zh,Void Payment and Invoices,取消付款与账单应用

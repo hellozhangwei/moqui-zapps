@@ -252,7 +252,7 @@ zh,Computer Software,计算机软件
 zh,Conference,会议
 zh,Configurable Good,可配置的好
 zh,Configurable Product Instance,可配置的产品实例
-zh,Consumable Shipment,消耗品运输
+zh,Consumable Shipment,领用出库单
 zh,Consume,消耗
 zh,Contact,接触
 zh,Contact Us,联系我们
@@ -751,8 +751,8 @@ zh,Lease/Rent Other,租赁/出租 其他
 zh,Lease/Rent Real Estate,租赁/出租房地产
 zh,Lease/Rent Vehicle,租赁/租赁车辆
 zh,Legal,合法的
-zh,Lend Return Shipment,借回货件
-zh,Lend Shipment,借货
+zh,Lend Return Shipment,借用归还入库单
+zh,Lend Shipment,借用出库单
 zh,Length,长度
 zh,Level 2/3 Data,2/3 级数据
 zh,Liabilities,负债
