@@ -506,6 +506,7 @@ zh,Client Piece Rate,客户计件单价
 zh,Clients,客户
 zh,Clone,克隆
 zh,Clone Accounting Settings,克隆会计设置
+zh,Clone Event,克隆事件
 zh,Clone Product,克隆产品
 zh,Clone Project,克隆项目
 zh,Clone Run,克隆运行
@@ -866,6 +867,7 @@ zh,Estimated Ship,预计发货时间
 zh,Estimated Start Date,预计开始日期
 zh,Estonia,爱沙尼亚
 zh,Ethiopia,埃塞俄比亚
+zh,Event Detail,事件详情
 zh,Example,样例
 zh,Example Feature,样例特征
 zh,Exclude Not in Pick Loc,不包括不在拣货位置的
