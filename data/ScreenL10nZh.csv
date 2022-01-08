@@ -445,7 +445,7 @@ zh,Cancelled - ${pstats.taskCountByStatusMap.WeCancelled?:0},取消 - ${pstats.t
 zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Cape Verde,佛得角
-zh,captcha,验证码
+zh,Captcha,验证码
 zh,Card Number,卡号
 zh,Card Security Code,卡安全代码
 zh,Carrier,承运方
