@@ -244,6 +244,7 @@ zh,Appl. Type,应用类型
 zh,Applicable Payments,可核销付款单
 zh,Applicable Unpaid Invoices,可核销未付账单
 zh,Application,程序
+zh,Application Instances,应用实例
 zh,Applications,应用
 zh,Applied,已应用
 zh,"Applied ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}, Unapplied ${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}","已核销 ${ec.l10n.formatCurrency(appliedTotal, payment.amountUomId)}，未核销${ec.l10n.formatCurrency(unappliedTotal, payment.amountUomId)}"
@@ -282,6 +283,8 @@ zh,Artifact Hit Bins,构件点击箱
 zh,Artifact Hit Summary,构件点击摘要
 zh,Artifact Stats,构件统计
 zh,Artifact Summary,构件摘要
+zh,Artifact Sub Type,构件子类型
+zh,Artifact Type,构件类型
 zh,Artifact Type Enum ID,构件类型ID
 zh,Artifact Name,构件名称
 zh,Aruba,阿鲁巴岛
@@ -389,6 +392,7 @@ zh,Billed Total,开票总额
 zh,Billing Country,国家
 zh,Billing Type,类型
 zh,Billing Zip,邮编
+zh,Bin Start,堆栈开始时间
 zh,Birth,生日
 zh,Birth Date,生日
 zh,Black,黑
@@ -469,6 +473,7 @@ zh,Central African Republic,中非共和国
 zh,Chad,乍得
 zh,Change,改变
 zh,Change Password,修改密码
+zh,Change Reason,修改原因
 zh,Change status to ${statusTransition.description}?,修改状态到【${statusTransition.description}】?
 zh,Check Num,检查数量
 zh,Check PDF,支票PDF
@@ -577,6 +582,7 @@ zh,Country/State,国家/省
 zh,Create Account,新账户
 zh,Create All Variants,创建全部变体
 zh,Create Artifact Group,创建构建组
+zh,Create App Instance,创建应用实例
 zh,Create Bank Account,新建银行账号
 zh,Create Container,创建容器
 zh,Create Container ID,创建容器ID
@@ -595,6 +601,7 @@ zh,Create Payment,创建付款单
 zh,Create Physical Inventory,创建库存盘点
 zh,Create Picklists,创建拣货单
 zh,Create Pool,创建池
+zh,Create Printer,创建打印机
 zh,Create Purchase Order,创建采购订单
 zh,Create Rate Amount,创建单价
 zh,Create Report,创建报表
@@ -618,6 +625,7 @@ zh,Credit Memo Invoice,红字发票
 zh,Credit Memo Invoice #${invoiceId},红字发票#${invoiceId}
 zh,Credits,贷
 zh,Croatia (local Name: Hrvatska),克罗地亚（当地名称：Hrvatska）
+zh,Cron Expression,Cron表达式
 zh,Cuba,古巴
 zh,Cur Qty,当前数量
 zh,Cur Total,当前合计
@@ -702,6 +710,8 @@ zh,Data Source ID,数据源ID
 zh,Data Source Type,数据源类型
 zh,Data View,数据视图
 zh,Data Views,数据视图
+zh,Database,数据库
+zh,Database Host,数据库主机
 zh,Date,日期
 zh,Date Moved,移动日期
 zh,Day,天
@@ -1040,6 +1050,10 @@ zh,General Tools,一般工具
 zh,Generate PDF,生成PDF文件
 zh,Georgia,乔治亚州
 zh,Germany,德国
+zh,Get Server Printers,获得服务器打印机
+zh,Get as CSV,下载CSV
+zh,Get as PDF,下载PDF
+zh,Get as XML,下载XML
 zh,Get Gateway Status,获取网关状态
 zh,Get Label,获取标签
 zh,Get Label Anyway,仍然获取标签
@@ -1086,12 +1100,14 @@ zh,Height,高度
 zh,Heilongjiang,黑龙江省
 zh,Henan,河南省
 zh,Hidden,隐藏
+zh,Hits,点击数
 zh,Hold,暂停
 zh,Holy See (vatican City State),罗马教廷（梵蒂冈城国）
 zh,Honduras,洪都拉斯
 zh,Hong Kong,香港
 zh,HongKong,香港特别行政区
-zh,Host,主持人
+zh,Host,主机
+zh,Host Name,主机名
 zh,Hosting Provider,托管服务提供商
 zh,Hours,小时数
 zh,Hours Budget,小时预算
@@ -1131,7 +1147,10 @@ zh,Initial Status,初始状态
 zh,Inner Mongolia,内蒙古自治区
 zh,Ins. Percent,保险百分比
 zh,Insert,插入
+zh,Instance,实例
+zh,Instance ID,实例ID
 zh,Instance Mgmt,实例管理
+zh,Instance Name,实例名称
 zh,Instances,实例
 zh,Instrument,票据
 zh,Insurance Percent,保险百分比
@@ -1219,6 +1238,7 @@ zh,Japan,日本
 zh,Jiangsu,江苏省
 zh,Jiangxi,江西省
 zh,Jilin,吉林省
+zh,Job Name,任务名称
 zh,Jobs,任务
 zh,Jobs Runs,任务运行
 zh,Jordan,约旦
@@ -1241,6 +1261,7 @@ zh,Lao People's Democratic Republic,老挝人民民主共和国
 zh,Last,上
 zh,Last/Next:Diff,前/后:差异
 zh,Last Check Number,上次检查数量
+zh,Last Hit,上次点击
 zh,Last Name,名
 zh,Last Track,最近追踪
 zh,Last Updated,最近更新
@@ -1552,6 +1573,7 @@ zh,OR Customer Account,或客户金融账户
 zh,OR Instrument,或支付工具
 zh,OR Interval UOM,或间隔UOM
 zh,Offset,偏离
+zh,Old,旧
 zh,Old Addresses,旧邮寄地址
 zh,Old Password,旧邮寄地址
 zh,Oman,阿曼
@@ -1673,6 +1695,9 @@ zh,Owner Party,拥有者
 zh,Owner Party ID,拥有者ID
 zh,P-CB Gap,P-CB差距
 zh,PDF,PDF
+zh,PK 1,主键1
+zh,PK 2,主键2
+zh,PK Rest,其他主键
 zh,Pkg Quantity,包裹数量
 zh,Pkg Weight,包裹重量
 zh,POP Commerce Admin,POP Commerce管理
@@ -1742,6 +1767,7 @@ zh,Password Verify,重复密码
 zh,Password was used in last ${historyLimit} passwords,密码已在前${historyLimit}次使用过
 zh,Path ${dirname} is not a directory.,路径${dirname}必须是个目录
 zh,Path ${path} is not a directory.,路径${path}必须是个目录
+zh,Paused,已暂停
 zh,Payable,应付
 zh,Payable <strong>Invoices</strong>,应付<strong>发票</strong>
 zh,"Payable Invoice ${invoiceId} for ${ec.resource.expand('PartyNameTemplate', null, organizationParty)}","${ec.resource.expand('PartyNameTemplate', null, organizationParty)}应付账单票"
@@ -1850,6 +1876,8 @@ zh,Prices,价格
 zh,Primary Entity,主实体
 zh,Print,打印
 zh,Print Jobs,打印任务
+zh,Printer List,打印机列表
+zh,Printer Name,打印机名称
 zh,Printers,打印
 zh,Priority,优先级
 zh,Priority:,优先级:
@@ -2270,6 +2298,9 @@ zh,Sequence Num,顺序
 zh,Serbia,塞尔维亚
 zh,Serial Number,序列号
 zh,Server Admin,服务器管理
+zh,Server Host,服务器主机
+zh,Server Port,服务器端口
+zh,Service Job List,服务任务列表
 zh,Service Jobs,服务任务
 zh,Services,服务
 zh,Set,设置
@@ -2356,6 +2387,7 @@ zh,Signature Required Type,需要签名类型
 zh,Singapore,新加坡
 zh,Size UOM,容量单位
 zh,Size/UOM,容量单位
+zh,Slow Hits,低速的点击
 zh,Slovakia (slovak Republic),斯洛伐克（斯洛伐克共和国）
 zh,Slovenia,斯洛文尼亚
 zh,Small Image,小图片
@@ -2423,6 +2455,7 @@ zh,System Administrator,系统管理员
 zh,System Architect,系统架构师
 zh,System Email,系统邮箱
 zh,System Information,系统信息
+zh,System Message List,系统消息列表
 zh,System Messages,系统消息
 zh,SystemTitle,系统管理
 zh,Sys-Sys Messages,系统消息
@@ -2570,6 +2603,7 @@ zh,User ${principalCollection.primaryPrincipal} is not in role ${roleName},用�
 zh,User ${username} does not have permission ${permission},用户${username}没有权限${permission}
 zh,User Account,用户账号
 zh,User Account Detail,用户账号详情
+zh,User Account List,用户账号列表
 zh,"User must change password before first login, even if password is set here.",用户在第一次登录是需要修改密码，即使密码已在此处已设置。
 zh,User Full Name,用户全名
 zh,User Group,用户组
@@ -2609,6 +2643,7 @@ zh,Vendors,供应商
 zh,Venezuela,委内瑞拉
 zh,Viet Nam,越南
 zh,View Charts,查看图表
+zh,View Document,查看文档
 zh,View Old,旧联系方式
 zh,View Pages,查看页面
 zh,View Space,查看空间
@@ -2619,6 +2654,7 @@ zh,Virgin Islands (british),维尔京群岛（英属）
 zh,Virgin Islands (u.s.),维尔京群岛（美国）
 zh,Visibility,可见性
 zh,Visit,访问
+zh,Visit List,访问列表
 zh,Visitor,游客
 zh,Visits,访问
 zh,Void Payment and Invoices,取消付款与账单应用
