@@ -445,6 +445,7 @@ zh,Cancelled - ${pstats.taskCountByStatusMap.WeCancelled?:0},取消 - ${pstats.t
 zh,Capacity,容量
 zh,Capacity UOM,容量单位
 zh,Cape Verde,佛得角
+zh,captcha,验证码
 zh,Card Number,卡号
 zh,Card Security Code,卡安全代码
 zh,Carrier,承运方
@@ -1273,6 +1274,7 @@ zh,Location ID,位置ID
 zh,Location Types,位置类型
 zh,Locations,位置
 zh,Log Viewer,日志查看器
+zh,Login,登录
 zh,Login As,登录此账号
 zh,Login History,登录历史
 zh,Longitude,经度
@@ -2091,6 +2093,7 @@ zh,Reset Pkg,重新装箱
 zh,Reset Reservations,重置预约
 zh,Reset Selections,重置选择
 zh,Reset to Default,重置到默认
+zh,Reset & Email Password,重置并发送密码
 zh,Resolution,解决
 zh,Resolution:,解决:
 zh,Resource Finder,资源管理器
@@ -2345,6 +2348,7 @@ zh,Show Reverses,显示反转
 zh,Show summary records with zero QOH and ATP,显示QOH与ATP为0的记录
 zh,Sichuan,四川省
 zh,Sierra Leone,塞拉利昂
+zh,Sign in,登录
 zh,Sign Req.,签名类型
 zh,Signature Required Type,需要签名类型
 zh,Singapore,新加坡
